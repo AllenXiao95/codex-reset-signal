@@ -2,6 +2,8 @@ node_modules/
 .next/
 out/
 dist/
+.vinext/
+.open-next/
 .env
 .env.local
 *.log

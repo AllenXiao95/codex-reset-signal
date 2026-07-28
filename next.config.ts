@@ -1,8 +1,4 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  output: "export",
-  outputFileTracingRoot: process.cwd(),
+const nextConfig = {
   poweredByHeader: false,
 };
 

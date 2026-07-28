@@ -2,30 +2,32 @@
   "name": "reset-signal",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Watch @thsottiaux for posts containing reset and send email or SMS alerts.",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "vinext dev",
+    "build": "vinext build",
     "postbuild": "node scripts/prepare-dist.mjs",
-    "start": "next start",
+    "start": "cross-env NODE_ENV=production vinext start",
     "monitor": "tsx src/cli.ts",
     "monitor:dry": "tsx src/cli.ts --dry-run",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "15.5.7",
-    "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "vinext": "^0.0.16"
   },
   "devDependencies": {
     "@types/node": "22.15.30",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
+    "cross-env": "^10.1.0",
     "tsx": "4.20.6",
     "typescript": "5.9.3",
-    "vitest": "3.2.4"
+    "vitest": "3.2.7"
   },
   "engines": {
     "node": ">=20"

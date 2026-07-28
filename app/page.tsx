@@ -1,27 +1,5 @@
-import { readFile } from "node:fs/promises";
-import path from "node:path";
+import stateData from "@/data/state.json";
 import type { MonitorState } from "@/src/types";
-
-const fallbackState: MonitorState = {
-  username: "thsottiaux",
-  keyword: "reset",
-  userId: null,
-  sinceId: null,
-  lastCheckedAt: null,
-  lastRunStatus: "waiting-for-first-run",
-  postsScanned: 0,
-  matches: [],
-};
-
-async function getState(): Promise<MonitorState> {
-  try {
-    return JSON.parse(
-      await readFile(path.join(process.cwd(), "data/state.json"), "utf8"),
-    ) as MonitorState;
-  } catch {
-    return fallbackState;
-  }
-}
 
 function ArrowIcon() {
   return (
@@ -43,8 +21,8 @@ function ChannelIcon({ kind }: { kind: "email" | "sms" }) {
   );
 }
 
-export default async function Home() {
-  const state = await getState();
+export default function Home() {
+  const state = stateData as MonitorState;
   const active = Boolean(state.lastCheckedAt);
   const checkedAt = state.lastCheckedAt
     ? new Intl.DateTimeFormat("zh-CN", {
