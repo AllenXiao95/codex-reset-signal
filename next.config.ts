@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  output: "export",
   outputFileTracingRoot: process.cwd(),
   poweredByHeader: false,
 };

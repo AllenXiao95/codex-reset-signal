@@ -38,7 +38,7 @@ svg {
   border-bottom: 1px solid var(--line);
 }
 .brand { display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 800; letter-spacing: .13em; }
-.brandMark { width: 25px; height: 25px; display: flex; align-items: end; gap: 3px; padding: 5px; background: var(--ink); border-radius: 50%; }
+.brandMark { width: 25px; height: 25px; display: flex; align-items: flex-end; gap: 3px; padding: 5px; background: var(--ink); border-radius: 50%; }
 .brandMark i { display: block; width: 3px; background: var(--acid); border-radius: 3px; }
 .brandMark i:nth-child(1) { height: 6px; }
 .brandMark i:nth-child(2) { height: 13px; }
@@ -134,7 +134,7 @@ svg {
 .secretGroup p { margin: 12px 0 0; color: #929087; font-size: 12px; line-height: 1.6; }
 
 .history { padding-block: 120px; }
-.historyHead { display: flex; align-items: end; justify-content: space-between; margin-bottom: 36px; }
+.historyHead { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 36px; }
 .historyHead h2 { margin: 16px 0 0; font-size: 46px; letter-spacing: -.05em; }
 .privacyNote { color: var(--muted); font-size: 11px; }
 .emptyState { min-height: 240px; display: flex; align-items: center; justify-content: center; gap: 45px; border: 1px solid var(--line); border-radius: 24px; background: rgba(255,255,255,.25); }
@@ -148,7 +148,7 @@ svg {
 .matchList a { display: grid; grid-template-columns: 120px 1fr 130px; gap: 20px; align-items: center; padding: 24px 0; border-bottom: 1px solid var(--line); }
 .matchList time { color: var(--muted); font-family: monospace; font-size: 11px; }
 .matchList p { margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; }
-.matchList a > span { display: flex; align-items: center; justify-content: end; gap: 6px; color: var(--muted); font-size: 10px; text-transform: uppercase; }
+.matchList a > span { display: flex; align-items: center; justify-content: flex-end; gap: 6px; color: var(--muted); font-size: 10px; text-transform: uppercase; }
 
 footer { min-height: 120px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); }
 footer p { color: var(--muted); font-size: 11px; }
