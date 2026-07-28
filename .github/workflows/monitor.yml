@@ -1,0 +1,56 @@
+name: Monitor X for reset
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: reset-signal-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+      X_USERNAME: thsottiaux
+      MATCH_WORD: reset
+      X_EXCLUDE_REPLIES: "false"
+      BOOTSTRAP_NOTIFY: "false"
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      EMAIL_TO: ${{ secrets.EMAIL_TO }}
+      TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+      TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+      TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+      SMS_TO: ${{ secrets.SMS_TO }}
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npm run monitor
+
+      - name: Persist monitor cursor
+        run: |
+          if git diff --quiet -- data/state.json; then
+            echo "No state change."
+            exit 0
+          fi
+          git config user.name "reset-signal[bot]"
+          git config user.email "reset-signal[bot]@users.noreply.github.com"
+          git add data/state.json
+          git commit -m "chore: update monitor state"
+          git push

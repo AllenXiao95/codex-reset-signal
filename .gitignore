@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.env
+.env.local
+*.log
+coverage/
+.DS_Store
+work/
+outputs/
+.playwright-cli/
+*.tsbuildinfo
+next-env.d.ts.bak
