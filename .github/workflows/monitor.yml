@@ -1,8 +1,6 @@
 name: Monitor X for reset
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
