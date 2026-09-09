@@ -20,7 +20,8 @@ describe("FxEmbed source", () => {
     expect(createPostSource({ ...config, xBearerToken: "unused" })).toBeInstanceOf(FxEmbedClient);
     expect(createPostSource({ ...config, sourceProvider: "x" })).toBeInstanceOf(XClient);
     expect(validateConfig({ ...config, sourceProvider: "x" })).toContain(
-      "X_BEARER_TOKEN is required when SOURCE_PROVIDER=x.");
+      "X_BEARER_TOKEN is required when SOURCE_PROVIDER=x.",
+    );
     expect(() => loadConfig({ SOURCE_PROVIDER: "typo" })).toThrow("SOURCE_PROVIDER");
   });
   it("resolves and validates the account without credentials", async () => {
@@ -49,6 +50,7 @@ describe("FxEmbed source", () => {
     const result = await new FxEmbedClient(fetcher).getPosts(options);
     expect(result.posts).toHaveLength(1);
     expect(result.newestId).toBe("150");
+    expect(result.latestObservedPost?.id).toBe("150");
     expect(result.posts[0]).toMatchObject({ text: full, createdAt: "2026-09-09T01:00:00.000Z",
       media: [{ mediaKey: "m", type: "photo", altText: "Diagram" }],
       url: "https://x.com/thsottiaux/status/150" });
@@ -57,10 +59,18 @@ describe("FxEmbed source", () => {
     expect(url.searchParams.has("since")).toBe(false);
     expect(url.searchParams.has("lang")).toBe(false);
   });
+  it("observes the latest authored post even when it is already at the checkpoint", async () => {
+    const fetcher = vi.fn().mockResolvedValue(page([post("150"), post("100")]));
+    const result = await new FxEmbedClient(fetcher).getPosts({ ...options, sinceId: "150" });
+    expect(result.posts).toEqual([]);
+    expect(result.newestId).toBeNull();
+    expect(result.latestObservedPost?.id).toBe("150");
+  });
   it("excludes replies on request", async () => {
     const fetcher = vi.fn().mockResolvedValue(page([post("150", { replying_to: { status: "80" } }), post("140")]));
     const result = await new FxEmbedClient(fetcher).getPosts({ ...options, excludeReplies: true });
     expect(result.posts.map(p => p.id)).toEqual(["140"]);
+    expect(result.latestObservedPost?.id).toBe("140");
     expect((fetcher.mock.calls[0][0] as URL).searchParams.has("with_replies")).toBe(false);
   });
   it("ignores old ancestors as stopping signals, deduplicates pages, and stops at an entirely old page", async () => {
@@ -71,6 +81,7 @@ describe("FxEmbed source", () => {
     const result = await new FxEmbedClient(fetcher).getPosts(options);
     expect(result.posts.map(p => p.id)).toEqual(["150", "120"]);
     expect(result.newestId).toBe("150");
+    expect(result.latestObservedPost?.id).toBe("150");
     expect(fetcher).toHaveBeenCalledTimes(3);
     expect((fetcher.mock.calls[1][0] as URL).searchParams.get("cursor")).toBe("two");
   });
@@ -85,7 +96,11 @@ describe("FxEmbed source", () => {
       .mockResolvedValueOnce(page([]));
     await new FxEmbedClient(fetcher).getPosts({ ...options, sinceId: null, bootstrap: true });
     expect(fetcher).toHaveBeenCalledOnce();
-    expect(await new FxEmbedClient(fetcher).getPosts(options)).toEqual({ posts: [], newestId: null });
+    expect(await new FxEmbedClient(fetcher).getPosts(options)).toEqual({
+      posts: [],
+      newestId: null,
+      latestObservedPost: null,
+    });
   });
   it.each([{}, { code: 429, results: [], cursor: {} }, { code: 200, results: [], cursor: {}, stale: true },
     { code: 200, results: [], cursor: {}, errors: ["partial"] },
