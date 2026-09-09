@@ -270,9 +270,6 @@ export default function ResetDashboard() {
   const resetSignal = status?.latest.reset ?? null;
   const resetEvent = eventFor(resetSignal, "reset");
   const bankSignal = status?.latest.bankCredit ?? null;
-  const bankEvent = eventFor(bankSignal, "bank_credit");
-  const expirySignal = status?.latest.bankExpiry ?? null;
-  const expiryEvent = eventFor(expirySignal, "bank_expiry");
   const observedPost = status?.latestObservedPost ?? null;
   const monitorHealth = health(status, now);
   const resetHero = resetHeroState(resetEvent, now);
@@ -360,16 +357,6 @@ export default function ResetDashboard() {
             <span>LAST BANK</span>
             <strong>{lastBank ? displayEventTime(lastBank.event, timezone) : bankAnnouncement ? `Announced ${bankAnnouncement}` : "No bank reset found"}</strong>
             <small>{lastBank ? lastBank.event.status : bankSignal ? "Landing time not confirmed" : "No bank reset in current history"}</small>
-          </article>
-          <article>
-            <span>BANK RESET</span>
-            <strong>{bankEvent?.time.start ? displayEventTime(bankEvent, timezone) : bankEvent ? "Banked reset announced" : "Not announced"}</strong>
-            <small>{bankEvent?.time.note ?? bankEvent?.status ?? "Not announced"}</small>
-          </article>
-          <article>
-            <span>BANK EXPIRY</span>
-            <strong>{displayEventTime(expiryEvent, timezone)}</strong>
-            <small>{expiryEvent?.status ?? "Not announced"}</small>
           </article>
           <article>
             <span>LATEST POST OBSERVED</span>
