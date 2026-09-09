@@ -84,7 +84,11 @@ export class FxEmbedClient implements PostSource {
     return body.user.id;
   }
 
-  async getPosts(options: GetPostsOptions): Promise<{ posts: XPost[]; newestId: string | null }> {
+  async getPosts(options: GetPostsOptions): Promise<{
+    posts: XPost[];
+    newestId: string | null;
+    latestObservedPost: XPost | null;
+  }> {
     if (!numericId(options.userId) || (options.sinceId != null && !numericId(options.sinceId)))
       throw new Error("Invalid FxEmbed checkpoint");
     const url = new URL(`https://api.fxtwitter.com/2/profile/id:${options.userId}/statuses`);
@@ -93,6 +97,7 @@ export class FxEmbedClient implements PostSource {
     const posts = new Map<string, XPost>();
     const cursors = new Set<string>();
     let newestId: string | null = null;
+    let latestObservedPost: XPost | null = null;
     for (let page = 0; page < 100; page++) {
       const body = await this.request(url);
       if (!Array.isArray(body.results) || !object(body.cursor) ||
@@ -108,8 +113,15 @@ export class FxEmbedClient implements PostSource {
         if (!pageNewest || BigInt(raw.id) > BigInt(pageNewest)) pageNewest = raw.id;
         if (raw.author.id !== options.userId || raw.reposted_by != null ||
             (options.excludeReplies && raw.replying_to != null)) continue;
-        if (options.sinceId && BigInt(raw.id) <= BigInt(options.sinceId)) continue;
+
+        // Observe the newest eligible authored post even when it is already at or
+        // behind the durable cursor. This keeps source health visible without
+        // rewinding sinceId or reprocessing historical posts.
         const post = normalizePost(raw, options.username);
+        if (!latestObservedPost || BigInt(post.id) > BigInt(latestObservedPost.id))
+          latestObservedPost = post;
+
+        if (options.sinceId && BigInt(raw.id) <= BigInt(options.sinceId)) continue;
         posts.set(post.id, post);
         if (!newestId || BigInt(post.id) > BigInt(newestId)) newestId = post.id;
       }
@@ -118,7 +130,7 @@ export class FxEmbedClient implements PostSource {
       const next = body.cursor.bottom;
       // Return only after the batch is complete; runMonitor commits atomically.
       if (options.bootstrap || reachedBoundary || !next)
-        return { posts: [...posts.values()], newestId };
+        return { posts: [...posts.values()], newestId, latestObservedPost };
       if (cursors.has(next)) throw new Error("FxEmbed pagination repeated; cursor not advanced");
       cursors.add(next);
       url.searchParams.set("cursor", next);
