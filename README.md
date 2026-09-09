@@ -12,15 +12,24 @@ This project is derived from [UynajGI/reset-signal](https://github.com/UynajGI/r
 ## What it does
 
 ```text
-GitHub Actions (~5 min)
+Scheduler
+  ├─ GitHub Actions schedule
+  └─ optional Cloudflare Cron → workflow_dispatch
+                    ↓
+               GitHub Actions
+                    ↓
+                  FxEmbed
+                    ↓
+             event extraction
+                    │
+        ┌───────────┴───────────┐
+        │                       │
+ detected signal          durable outbox
+        │                       │
+ public status       GitHub Summary / Telegram /
+        │             Discord / Webhook / Email / SMS
         ↓
-      FxEmbed
-        ↓
- event extraction
-        │
-        ├── detected signal ──→ public status ──→ Cloudflare dashboard
-        │
-        └── durable outbox ───→ GitHub Summary / Telegram / Discord / Webhook / Email / SMS
+Cloudflare dashboard
 ```
 
 Key properties:
@@ -38,8 +47,10 @@ Key properties:
 1. Enable Actions for the repository/fork.
 2. Manually run **Monitor X for reset** once to validate the setup.
 3. Open the run **Summary** to inspect the monitor result.
-4. The roughly five-minute schedule is enabled by default. Set repository variable `MONITOR_ENABLED=false` only when you want to disable scheduled runs; manual dispatch still remains available.
+4. The roughly five-minute GitHub schedule is enabled by default. Set repository variable `MONITOR_ENABLED=false` only when you want to disable GitHub's scheduled runs; manual `workflow_dispatch` still remains available.
 5. Configure optional external notification channels under **Settings → Secrets and variables → Actions** when needed.
+
+If Cloudflare Cron is used as the scheduler, set `MONITOR_ENABLED=false` as a **GitHub Repository Actions Variable** so only Cloudflare drives `workflow_dispatch`. See [docs/cloudflare.md](docs/cloudflare.md).
 
 The workflow checks out two branches:
 
@@ -113,27 +124,48 @@ Detected signals include parsed `events`, post creation time, detection time, or
 
 Cloudflare Workers is the primary hosted dashboard target. The repository already includes `wrangler.jsonc` and a Worker-compatible vinext entrypoint.
 
-### Recommended: deploy an existing fork/repository
+### Dashboard deployment
 
-If you already forked or own this repository, **do not use the Deploy to Cloudflare button**. That button is a template flow: Cloudflare clones the source into a **new GitHub/GitLab repository**, so it will report a repository-name conflict when `codex-reset-signal` already exists in your account.
+If you already forked or own this repository, use Cloudflare **Workers & Pages → Create application → Import a repository**. Do not use the Deploy to Cloudflare template button for an existing fork because that flow creates another GitHub/GitLab repository and can collide with the existing repository name.
 
-Use the existing-repository flow instead:
-
-1. Cloudflare Dashboard → **Workers & Pages** → **Create application**.
-2. Choose **Import a repository**.
-3. Select your existing `codex-reset-signal` repository/fork.
-4. Keep the repository root as the build root.
-5. Use:
+Use:
 
 ```text
 Build command:  npm run build
 Deploy command: npx wrangler deploy --config wrangler.jsonc
 ```
 
-6. Save and deploy. The initial Worker deployment needs no application-specific secret.
-7. After deployment, if this is a fork, add optional runtime variable `RESET_STATUS_URL` and point it to your fork's raw `monitor-state/status.json` URL.
+The initial dashboard deployment needs no application-specific secret.
 
-When connecting an existing Worker to Git, keep the Cloudflare Worker name consistent with the `name` in `wrangler.jsonc` (`codex-reset-signal`) or update both together.
+For a dedicated hostname, prefer a **Custom Domain** such as `reset.example.com`. The same Worker serves both `/` and `/api/status`, so no separate `/api/status` Worker Route is required. Keep personal domains out of `wrangler.jsonc` so forks do not inherit them.
+
+`RESET_STATUS_URL` is optional. The canonical maintainer deployment already defaults to this repository's public `monitor-state/status.json`; configure it only for a fork, renamed/moved repository, changed state path, or custom status backend.
+
+### Optional Cloudflare Cron scheduler
+
+GitHub's built-in schedule remains supported. If GitHub scheduled events are unreliable for a repository, use a separate lightweight Cloudflare scheduler Worker:
+
+```text
+Cloudflare Cron
+      ↓
+GitHub workflow_dispatch
+      ↓
+monitor.yml
+      ↓
+FxEmbed → monitor-state
+```
+
+The scheduler Worker needs only a Cloudflare Secret `GITHUB_TOKEN` with repository-scoped GitHub Actions write permission and a Cron Trigger such as `*/5 * * * *` (or an offset five-minute schedule). It does **not** need a Custom Domain or Worker Route.
+
+When Cloudflare Cron is the active clock, set GitHub repository Actions Variable:
+
+```text
+MONITOR_ENABLED=false
+```
+
+This disables only GitHub's own schedule; manual and Cloudflare-triggered `workflow_dispatch` remain available.
+
+Detailed setup, routing choices, token scope, Cron configuration, and verification are in **[docs/cloudflare.md](docs/cloudflare.md)**.
 
 ### Deploy Button: only when you want Cloudflare to create a new repository
 
@@ -153,9 +185,7 @@ npm run build
 npm run cloudflare:dry-run
 ```
 
-The Worker route `/api/status` reads the public runtime projection on demand, so a monitor update does **not** redeploy the website. `RESET_STATUS_URL` is optional: without it, the Worker reads this repository's status source; fork users can configure their own source later.
-
-The monitor itself remains on GitHub Actions or Docker. No KV, D1, SSE, or WebSocket is required for the dashboard.
+The Worker route `/api/status` reads the public runtime projection on demand, so a monitor update does **not** redeploy the website. No KV, D1, SSE, or WebSocket is required for the dashboard.
 
 ## GitHub Pages fallback
 
@@ -174,11 +204,11 @@ The primary supported build/deploy path remains Cloudflare Workers because the c
 | `SOURCE_TIMEZONE` | empty | Explicit assumption for source-local clock times without a timezone |
 | `INCLUDE_MENTIONS` | `true` | Keep clearly unconfirmed reset discussions/requests |
 | `X_EXCLUDE_REPLIES` | `false` | Exclude target-authored replies |
-| `MONITOR_ENABLED` | enabled unless `false` | Actions schedule opt-out switch |
+| `MONITOR_ENABLED` | enabled unless `false` | GitHub Repository Actions Variable; disables only GitHub's own schedule when set to `false` |
 | `BOOTSTRAP_NOTIFY` | `false` | Historical notification opt-in for local runs; Actions forces false |
 | `STATE_PATH` | `data/state.json` | Local runtime state path |
 | `PUBLIC_STATUS_PATH` | optional | Public projection path; Actions uses `runtime/status.json` |
-| `RESET_STATUS_URL` | project status source | Optional Cloudflare Worker status source override |
+| `RESET_STATUS_URL` | project status source | Optional Cloudflare dashboard Worker status-source override; maintainer normally leaves it unset |
 | `WEBHOOK_DEBUG` | `false` | Sanitized webhook hostname/status/timing diagnostics |
 | `POLL_INTERVAL_SECONDS` | `300` | Loop mode polling interval, minimum 60 seconds |
 
