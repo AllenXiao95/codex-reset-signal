@@ -39,7 +39,7 @@ export type PendingNotification = {
 };
 
 export type MonitorState = {
-  version?: 3;
+  version?: 2;
   outbox?: PendingNotification[];
   seen?: Record<string, string>;
   username: string;
