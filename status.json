@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T14:13:24.946Z",
+  "updatedAt": "2026-09-09T14:18:24.943Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-09T14:13:24.944Z",
-    "lastSuccessAt": "2026-09-09T14:13:24.944Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-09T14:18:24.940Z",
+    "lastSuccessAt": "2026-09-09T14:18:24.940Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2097560642400223387",
-    "text": "@MatthewBerman @sama Was I just the stepping stone",
-    "url": "https://x.com/thsottiaux/status/2097560642400223387",
-    "postCreatedAt": "2026-09-09T05:40:02.000Z"
+    "id": "2097690915230097638",
+    "text": "@theo Good luck Theo 🫡",
+    "url": "https://x.com/thsottiaux/status/2097690915230097638",
+    "postCreatedAt": "2026-09-09T14:17:42.000Z"
   },
   "latest": {
     "reset": {

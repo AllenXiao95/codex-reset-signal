@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2097560642400223387",
-  "lastCheckedAt": "2026-09-09T14:13:24.944Z",
-  "lastSuccessAt": "2026-09-09T14:13:24.944Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 21,
+  "sinceId": "2097690915230097638",
+  "lastCheckedAt": "2026-09-09T14:18:24.940Z",
+  "lastSuccessAt": "2026-09-09T14:18:24.940Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 22,
   "matches": [
     {
       "version": "b50e754a6dcfb2d10e42750477c3affac9d40364b3543919f0e537a0c5574e7b",
@@ -127,15 +127,16 @@
     "2097492424474165293": "9f2e9e4095f2b5a8d01f9d1cf93f770398e6e5ee025548c2bad28c4578dc1df6",
     "2097494113012863197": "0d5a03fa4c17429c09eb4000694ad37de29cde6d696a8fb84c6e37ecf9adcddc",
     "2097559315150426222": "be51a2bb1522e22535f71d6d9e0c36061c740bacdb09e458ea9d8fd75ddc802b",
-    "2097560642400223387": "47a12f7494b6847b9aa8f1146f2c4b57fc82ea5b6e52d6448f642459bbde8bc0"
+    "2097560642400223387": "47a12f7494b6847b9aa8f1146f2c4b57fc82ea5b6e52d6448f642459bbde8bc0",
+    "2097690915230097638": "89b3b64c483885fc5e1db6a8e9e450ceff1e2bf8449d388d007ae76028ed0003"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2097560642400223387",
-    "canonicalId": "2097560642400223387",
-    "text": "@MatthewBerman @sama Was I just the stepping stone",
-    "createdAt": "2026-09-09T05:40:02.000Z",
-    "url": "https://x.com/thsottiaux/status/2097560642400223387",
+    "id": "2097690915230097638",
+    "canonicalId": "2097690915230097638",
+    "text": "@theo Good luck Theo 🫡",
+    "createdAt": "2026-09-09T14:17:42.000Z",
+    "url": "https://x.com/thsottiaux/status/2097690915230097638",
     "media": []
   }
 }
