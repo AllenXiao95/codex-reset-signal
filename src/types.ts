@@ -57,6 +57,8 @@ export type AppConfig = {
   discordWebhookUrls: string[];
   webhookUrls: string[];
   webhookSecret?: string;
+  webhookDebug: boolean;
+  githubSummaryPath?: string;
   includeMentions: boolean;
   xBearerToken: string;
   username: string;
