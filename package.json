@@ -1,26 +1,30 @@
 {
-  "name": "reset-signal",
-  "version": "1.0.0",
+  "name": "codex-reset-signal",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
-  "description": "Watch @thsottiaux for posts containing reset and send email or SMS alerts.",
+  "description": "Monitor Tibo reset and bank announcements, extract event times, and notify bots in your timezone.",
   "license": "MIT",
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
     "postbuild": "node scripts/prepare-dist.mjs",
     "start": "cross-env NODE_ENV=production vinext start",
-    "monitor": "tsx src/cli.ts",
-    "monitor:dry": "tsx src/cli.ts --dry-run",
+    "monitor": "node --import tsx src/cli.ts",
+    "monitor:dry": "node --import tsx src/cli.ts --dry-run",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "monitor:loop": "node --import tsx src/cli.ts --loop"
   },
   "dependencies": {
+    "chrono-node": "^2.10.1",
+    "luxon": "^3.7.2",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "vinext": "^0.0.16"
   },
   "devDependencies": {
+    "@types/luxon": "^3.7.5",
     "@types/node": "22.15.30",
     "@types/react": "19.1.8",
     "@types/react-dom": "19.1.6",
@@ -30,6 +34,6 @@
     "vitest": "3.2.7"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }

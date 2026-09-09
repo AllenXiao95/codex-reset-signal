@@ -14,3 +14,7 @@ outputs/
 .playwright-cli/
 *.tsbuildinfo
 next-env.d.ts.bak
+state/
+*.lock.tmp
+data/*.lock
+data/*.tmp

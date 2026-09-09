@@ -45,3 +45,61 @@ describe("XClient", () => {
     expect(fetcher).toHaveBeenCalledOnce();
   });
 });
+
+describe("pagination", () => {
+  it("drains all pages using the same since_id and preserves the highest ID", async () => {
+    const fetcher = vi
+      .fn()
+      .mockResolvedValueOnce(
+        Response.json({
+          data: [{ id: "10", text: "reset" }],
+          meta: { next_token: "page2" },
+        }),
+      )
+      .mockResolvedValueOnce(
+        Response.json({ data: [{ id: "3", text: "reset" }], meta: {} }),
+      );
+    const result = await new XClient("secret", fetcher).getPosts({
+      userId: "42",
+      username: "thsottiaux",
+      sinceId: "1",
+    });
+    expect(result.posts.map((p) => p.id)).toEqual(["10", "3"]);
+    expect(result.newestId).toBe("10");
+    const url = fetcher.mock.calls[1][0] as URL;
+    expect(url.searchParams.get("since_id")).toBe("1");
+    expect(url.searchParams.get("pagination_token")).toBe("page2");
+  });
+  it("fails on partial API errors or repeated page tokens", async () => {
+    const fetcher = vi
+      .fn()
+      .mockImplementation(() =>
+        Promise.resolve(
+          Response.json({
+            data: [{ id: "10", text: "reset" }],
+            meta: { next_token: "repeat" },
+          }),
+        ),
+      );
+    await expect(
+      new XClient("secret", fetcher).getPosts({
+        userId: "42",
+        username: "thsottiaux",
+        sinceId: "1",
+      }),
+    ).rejects.toThrow("pagination incomplete");
+  });
+  it("does not treat a malformed successful response as an empty timeline", async () => {
+    const fetcher = vi
+      .fn()
+      .mockResolvedValue(
+        Response.json({}),
+      );
+    await expect(
+      new XClient("secret", fetcher).getPosts({
+        userId: "42",
+        username: "thsottiaux",
+      }),
+    ).rejects.toThrow("Invalid X timeline");
+  });
+});
