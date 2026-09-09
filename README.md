@@ -5,6 +5,8 @@
 [![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
 [![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
 
+**Live dashboard:** [https://reset.onlyax.com/](https://reset.onlyax.com/)
+
 Monitor public X posts from [Tibo (@thsottiaux)](https://x.com/thsottiaux), recognize reset / reset bank / banked reset signals, extract event times, and publish both notifications and a live timezone-aware dashboard.
 
 This project is derived from [UynajGI/reset-signal](https://github.com/UynajGI/reset-signal), preserving the upstream copyright notice and MIT license. It is not an official OpenAI, X, or Cloudflare service.
@@ -80,6 +82,8 @@ Each external channel must be configured completely or left blank. Generic webho
 
 ## Live dashboard
 
+Maintainer deployment: **[https://reset.onlyax.com/](https://reset.onlyax.com/)**
+
 The homepage answers the operational question first: **when is the latest reset?**
 
 It shows:
@@ -137,7 +141,7 @@ Deploy command: npx wrangler deploy --config wrangler.jsonc
 
 The initial dashboard deployment needs no application-specific secret.
 
-For a dedicated hostname, prefer a **Custom Domain** such as `reset.example.com`. The same Worker serves both `/` and `/api/status`, so no separate `/api/status` Worker Route is required. Keep personal domains out of `wrangler.jsonc` so forks do not inherit them.
+For a dedicated hostname, prefer a **Custom Domain**. The maintainer deployment currently uses [`reset.onlyax.com`](https://reset.onlyax.com/); forks should configure their own hostname. The same Worker serves both `/` and `/api/status`, so no separate `/api/status` Worker Route is required. The personal domain is intentionally not hard-coded into `wrangler.jsonc` so forks do not inherit it.
 
 `RESET_STATUS_URL` is optional. The canonical maintainer deployment already defaults to this repository's public `monitor-state/status.json`; configure it only for a fork, renamed/moved repository, changed state path, or custom status backend.
 

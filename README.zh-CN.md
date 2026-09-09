@@ -5,6 +5,8 @@
 [![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
 [![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
 
+**在线 Dashboard：** [https://reset.onlyax.com/](https://reset.onlyax.com/)
+
 监控 [Tibo（@thsottiaux）](https://x.com/thsottiaux) 的公开 X 帖子，识别 reset / reset bank / banked reset，解析事件时间，并同时提供主动通知与实时、可切换时区的 Dashboard。
 
 项目基于 [UynajGI/reset-signal](https://github.com/UynajGI/reset-signal) 二次开发，保留上游版权声明和 MIT 协议。项目不是 OpenAI、X 或 Cloudflare 的官方服务。
@@ -80,6 +82,8 @@ monitor-state
 
 ## 实时 Dashboard
 
+维护者当前部署：**[https://reset.onlyax.com/](https://reset.onlyax.com/)**
+
 首页优先回答实际使用问题：**最新 reset 是什么时候？**
 
 页面展示：
@@ -137,7 +141,7 @@ Deploy command: npx wrangler deploy --config wrangler.jsonc
 
 首次部署 Dashboard Worker 不需要填写本项目自己的 Secret。
 
-如果已经有 Cloudflare 域名，建议给 Dashboard 使用独立 **Custom Domain**，例如 `reset.example.com`。同一个 Worker 会同时处理 `/` 和 `/api/status`，因此不需要再给 `/api/status` 单独配置 Worker Route。个人域名也不应写死到 `wrangler.jsonc`，避免 Fork 用户继承。
+如果已经有 Cloudflare 域名，建议给 Dashboard 使用独立 **Custom Domain**。维护者当前使用 [`reset.onlyax.com`](https://reset.onlyax.com/)；Fork 用户应配置自己的域名。同一个 Worker 会同时处理 `/` 和 `/api/status`，因此不需要再给 `/api/status` 单独配置 Worker Route。个人域名不会写死到 `wrangler.jsonc`，避免 Fork 用户继承。
 
 `RESET_STATUS_URL` 是**可选项**。维护者当前部署默认已经读取 `AllenXiao95/codex-reset-signal` 的 `monitor-state/status.json`，所以只要仓库 owner/name、分支和路径不变，通常无需配置。只有 Fork、仓库改名/迁移、状态文件路径变化或改用其他状态源时才需要覆盖。
 
