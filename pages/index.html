@@ -61,7 +61,7 @@
 
   <main class="shell">
     <div class="topline">
-      <div><div class="eyebrow">Live public status</div><h1>Latest reset</h1></div>
+      <div><div class="eyebrow">Live public status</div><h1 id="reset-heading">Latest reset</h1></div>
       <div id="health" class="health waiting"><span class="dot"></span><span>Waiting</span></div>
     </div>
 
@@ -80,6 +80,11 @@
       </section>
 
       <aside class="side">
+        <section class="card">
+          <h2>Reset history</h2>
+          <div class="metric"><span>Last reset</span><strong id="last-reset">—</strong></div>
+          <div class="metric"><span>Last bank</span><strong id="last-bank">—</strong></div>
+        </section>
         <section class="card">
           <h2>Other signals</h2>
           <div class="metric"><span>Bank reset</span><strong id="bank-credit">—</strong></div>
@@ -156,13 +161,38 @@
         return formatMoment(time.start);
       }
       function countdown(event) {
-        if (!event?.time?.start || event.time.kind !== "exact") return "";
+        if (!event?.time?.start || !["exact","window"].includes(event.time.kind)) return "";
         const delta = new Date(event.time.start).getTime() - now;
         if (delta <= 0) return "";
-        const minutes = Math.floor(delta / 60000), hours = Math.floor(minutes / 60), days = Math.floor(hours / 24);
-        if (days) return `in ${days}d ${hours % 24}h`;
-        if (hours) return `in ${hours}h ${minutes % 60}m`;
-        return `in ${Math.max(1, minutes)}m`;
+        const totalSeconds = Math.max(1, Math.ceil(delta / 1000));
+        const seconds = totalSeconds % 60;
+        const totalMinutes = Math.floor(totalSeconds / 60);
+        const minutes = totalMinutes % 60;
+        const totalHours = Math.floor(totalMinutes / 60);
+        const hours = totalHours % 24;
+        const days = Math.floor(totalHours / 24);
+        const pad = (value) => String(value).padStart(2, "0");
+        if (days) return `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+        if (totalHours) return `${totalHours}h ${pad(minutes)}m ${pad(seconds)}s`;
+        return `${minutes}m ${pad(seconds)}s`;
+      }
+      function lastTimedEvent(type) {
+        if (!state) return null;
+        const signals = [state.latest?.reset, state.latest?.bankCredit, ...(Array.isArray(state.recent) ? state.recent : [])].filter(Boolean);
+        const seen = new Set();
+        const candidates = [];
+        for (const signal of signals) {
+          if (seen.has(signal.version)) continue;
+          seen.add(signal.version);
+          for (const event of signal.events || []) {
+            if (event.type !== type || !event.time?.start) continue;
+            const timestamp = new Date(event.time.start).getTime();
+            if (!Number.isFinite(timestamp) || timestamp > now) continue;
+            candidates.push({ event, timestamp });
+          }
+        }
+        candidates.sort((a, b) => b.timestamp - a.timestamp);
+        return candidates[0]?.event || null;
       }
       function safeHttps(raw) {
         try { const value = new URL(raw); return value.protocol === "https:" ? value.href : "https://x.com/thsottiaux"; }
@@ -193,11 +223,15 @@
       function render() {
         const resetSignal = state?.latest?.reset || null;
         const resetEvent = eventFrom(resetSignal, "reset");
+        const resetCountdown = countdown(resetEvent);
+        $("reset-heading").textContent = resetCountdown ? "Next reset" : "Latest reset";
         $("reset-status").textContent = resetEvent?.status || (resetSignal ? "announced" : "Waiting");
-        $("reset-time").textContent = displayEvent(resetEvent);
-        $("countdown").textContent = countdown(resetEvent);
+        $("reset-time").textContent = resetCountdown || displayEvent(resetEvent);
+        $("countdown").textContent = resetCountdown ? displayEvent(resetEvent) : "";
         $("reset-evidence").textContent = resetEvent?.evidence || resetSignal?.text || "Run the monitor once to populate the public status projection.";
         $("post-link").href = safeHttps(resetSignal?.url || "https://x.com/thsottiaux");
+        $("last-reset").textContent = displayEvent(lastTimedEvent("reset"));
+        $("last-bank").textContent = displayEvent(lastTimedEvent("bank_credit"));
         $("bank-credit").textContent = displayEvent(eventFrom(state?.latest?.bankCredit || null, "bank_credit"));
         $("bank-expiry").textContent = displayEvent(eventFrom(state?.latest?.bankExpiry || null, "bank_expiry"));
         $("last-checked").textContent = formatMoment(state?.monitor?.lastCheckedAt || null);
@@ -221,7 +255,8 @@
       }
 
       refresh();
-      setInterval(() => { now = Date.now(); render(); refresh(); }, 60000);
+      setInterval(() => { now = Date.now(); render(); }, 1000);
+      setInterval(refresh, 60000);
     })();
   </script>
 </body>
