@@ -4,8 +4,8 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2097560642400223387",
-  "lastCheckedAt": "2026-09-09T08:12:55.525Z",
-  "lastSuccessAt": "2026-09-09T08:12:55.525Z",
+  "lastCheckedAt": "2026-09-09T08:17:58.390Z",
+  "lastSuccessAt": "2026-09-09T08:17:58.390Z",
   "lastRunStatus": "checked-0-posts",
   "postsScanned": 21,
   "matches": [
@@ -129,5 +129,13 @@
     "2097559315150426222": "be51a2bb1522e22535f71d6d9e0c36061c740bacdb09e458ea9d8fd75ddc802b",
     "2097560642400223387": "47a12f7494b6847b9aa8f1146f2c4b57fc82ea5b6e52d6448f642459bbde8bc0"
   },
-  "eventParserVersion": 2
+  "eventParserVersion": 2,
+  "latestObservedPost": {
+    "id": "2097560642400223387",
+    "canonicalId": "2097560642400223387",
+    "text": "@MatthewBerman @sama Was I just the stepping stone",
+    "createdAt": "2026-09-09T05:40:02.000Z",
+    "url": "https://x.com/thsottiaux/status/2097560642400223387",
+    "media": []
+  }
 }
