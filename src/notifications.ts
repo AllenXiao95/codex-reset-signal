@@ -1,4 +1,5 @@
 import { createHash, createHmac } from "node:crypto";
+import { appendFile } from "node:fs/promises";
 import type { AppConfig, PendingNotification, XPost } from "./types";
 import { formatTime, type ResetEvent } from "./events";
 
@@ -97,6 +98,18 @@ export function createTargets(
     if (!response.ok) throw new Error(`Notification HTTP ${response.status}`);
     return response;
   };
+  if (config.githubSummaryPath)
+    add("github-actions", "job-summary", async (item) => {
+      const quoted = renderText(item.post, item.events, config.timezone)
+        .split("\n")
+        .map((line) => `> ${line}`)
+        .join("\n");
+      await appendFile(
+        config.githubSummaryPath!,
+        `### Reset Signal\n\n${quoted}\n\nDelivery ID: \`${item.key.slice(0, 16)}…\`\n\n`,
+        "utf8",
+      );
+    });
   for (const recipient of config.emailTo)
     add("email", recipient, async (item) => {
       await request(
@@ -191,7 +204,26 @@ export function createTargets(
       if (config.webhookSecret)
         headers["X-Reset-Signature"] =
           `sha256=${createHmac("sha256", config.webhookSecret).update(JSON.stringify(body)).digest("hex")}`;
-      await request(endpoint, body, headers);
+      const debugId = item.key.slice(0, 12);
+      const host = new URL(endpoint).hostname;
+      const startedAt = Date.now();
+      if (config.webhookDebug)
+        console.log(
+          `[webhook] sending ${debugId} to ${host} (signed=${config.webhookSecret ? "yes" : "no"})`,
+        );
+      try {
+        const response = await request(endpoint, body, headers);
+        if (config.webhookDebug)
+          console.log(
+            `[webhook] ${debugId} -> HTTP ${response.status} in ${Date.now() - startedAt}ms`,
+          );
+      } catch (error) {
+        if (config.webhookDebug)
+          console.error(
+            `[webhook] ${debugId} -> failed in ${Date.now() - startedAt}ms`,
+          );
+        throw error;
+      }
     });
   return targets;
 }
