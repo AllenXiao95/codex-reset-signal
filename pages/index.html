@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Reset Signal</title>
+  <meta name="description" content="Live reset and bank signals from @thsottiaux with browser-local timezone conversion." />
+  <style>
+    :root { --ink:#171714; --muted:#6b6961; --paper:#f3f0e8; --panel:#fffdf8; --line:#d6d2c8; --signal:#ff4f32; --acid:#d9ff43; --good:#238a4b; --warn:#a86b00; --bad:#b33a2b; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    .shell { width:min(1040px,calc(100% - 32px)); margin:0 auto; }
+    header { min-height:78px; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); gap:16px; }
+    .brand { font-weight:900; letter-spacing:.12em; font-size:13px; text-decoration:none; }
+    .links { display:flex; gap:18px; align-items:center; font-size:13px; }
+    .links a { text-decoration:none; color:var(--muted); }
+    main { padding:56px 0 80px; }
+    .topline { display:flex; justify-content:space-between; align-items:flex-end; gap:24px; margin-bottom:26px; }
+    .eyebrow { color:var(--muted); font-size:11px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { margin:8px 0 0; font-size:clamp(40px,7vw,72px); line-height:.95; letter-spacing:-.055em; }
+    .health { display:inline-flex; align-items:center; gap:8px; padding:9px 12px; border:1px solid var(--line); border-radius:999px; font-size:12px; font-weight:800; white-space:nowrap; }
+    .dot { width:8px; height:8px; border-radius:50%; background:#aaa; }
+    .healthy .dot { background:var(--good); } .delayed .dot { background:var(--warn); } .degraded .dot { background:var(--bad); }
+    .grid { display:grid; grid-template-columns:1.4fr .8fr; gap:18px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:24px; padding:26px; }
+    .hero { background:var(--ink); color:var(--panel); min-height:360px; display:flex; flex-direction:column; justify-content:space-between; }
+    .hero .eyebrow { color:#aaa89f; }
+    .event-status { display:inline-flex; width:max-content; padding:7px 10px; border-radius:999px; background:#292925; color:var(--acid); text-transform:uppercase; font-size:10px; font-weight:900; letter-spacing:.12em; }
+    .time { margin:18px 0 6px; font-size:clamp(34px,5vw,58px); line-height:1.02; letter-spacing:-.045em; }
+    .countdown { color:var(--acid); font-weight:800; min-height:22px; }
+    .evidence { margin:24px 0 0; color:#c8c6be; line-height:1.65; white-space:pre-wrap; overflow-wrap:anywhere; }
+    .hero-actions { display:flex; align-items:center; gap:16px; flex-wrap:wrap; margin-top:28px; }
+    .button { display:inline-flex; align-items:center; min-height:42px; padding:0 15px; border-radius:999px; background:var(--panel); color:var(--ink); font-size:13px; font-weight:850; text-decoration:none; }
+    .timezone { width:100%; background:#262622; color:var(--panel); border:1px solid #474740; border-radius:12px; padding:11px 12px; font:inherit; }
+    .side { display:grid; gap:18px; }
+    .side h2,.recent h2 { margin:0 0 18px; font-size:18px; }
+    .metric { padding:15px 0; border-top:1px solid var(--line); }
+    .metric:first-of-type { border-top:0; padding-top:0; }
+    .metric span { display:block; color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:.1em; }
+    .metric strong { display:block; margin-top:8px; font-size:15px; line-height:1.45; overflow-wrap:anywhere; }
+    .recent { margin-top:18px; }
+    .signal { display:grid; grid-template-columns:120px 1fr auto; gap:18px; align-items:start; padding:17px 0; border-top:1px solid var(--line); text-decoration:none; }
+    .signal:first-of-type { border-top:0; }
+    .signal time,.signal small { color:var(--muted); font-size:12px; }
+    .signal p { margin:0; line-height:1.55; overflow-wrap:anywhere; }
+    .empty,.error { color:var(--muted); line-height:1.6; }
+    footer { padding:28px 0 40px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; line-height:1.6; }
+    @media (max-width:760px) { .grid { grid-template-columns:1fr; } .topline { align-items:flex-start; flex-direction:column; } .signal { grid-template-columns:1fr; gap:7px; } header { align-items:flex-start; padding:20px 0; flex-direction:column; } }
+  </style>
+</head>
+<body>
+  <header class="shell">
+    <a class="brand" href="./">RESET SIGNAL</a>
+    <nav class="links">
+      <a id="repo-link" href="https://github.com/AllenXiao95/codex-reset-signal">GitHub</a>
+      <a href="https://x.com/thsottiaux">@thsottiaux</a>
+    </nav>
+  </header>
+
+  <main class="shell">
+    <div class="topline">
+      <div><div class="eyebrow">Live public status</div><h1>Latest reset</h1></div>
+      <div id="health" class="health waiting"><span class="dot"></span><span>Waiting</span></div>
+    </div>
+
+    <div class="grid">
+      <section class="card hero">
+        <div>
+          <div id="reset-status" class="event-status">Waiting</div>
+          <div id="reset-time" class="time">—</div>
+          <div id="countdown" class="countdown"></div>
+          <p id="reset-evidence" class="evidence">Run the monitor once to populate the public status projection.</p>
+        </div>
+        <div class="hero-actions">
+          <a id="post-link" class="button" href="https://x.com/thsottiaux" target="_blank" rel="noreferrer">View source</a>
+          <select id="timezone" class="timezone" aria-label="Display timezone"></select>
+        </div>
+      </section>
+
+      <aside class="side">
+        <section class="card">
+          <h2>Other signals</h2>
+          <div class="metric"><span>Bank reset</span><strong id="bank-credit">—</strong></div>
+          <div class="metric"><span>Bank expiry</span><strong id="bank-expiry">—</strong></div>
+        </section>
+        <section class="card">
+          <h2>Monitor</h2>
+          <div class="metric"><span>Last checked</span><strong id="last-checked">—</strong></div>
+          <div class="metric"><span>Last successful</span><strong id="last-success">—</strong></div>
+          <div class="metric"><span>Provider</span><strong id="provider">—</strong></div>
+          <div class="metric"><span>Status source</span><strong id="status-source">monitor-state/status.json</strong></div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="card recent">
+      <h2>Recent signals</h2>
+      <div id="recent"><p class="empty">No public signals yet.</p></div>
+    </section>
+  </main>
+
+  <footer class="shell">Static GitHub Pages fallback. Monitoring and notification delivery still run in GitHub Actions or Docker; this page only reads the public projection and converts UTC event times in your browser.</footer>
+
+  <script>
+    (() => {
+      const STORAGE_KEY = "reset-signal-timezone";
+      const DEFAULT_REPO = "AllenXiao95/codex-reset-signal";
+      const githubPages = location.hostname.endsWith(".github.io");
+      const inferredOwner = githubPages ? location.hostname.slice(0, -".github.io".length) : DEFAULT_REPO.split("/")[0];
+      const inferredRepo = githubPages ? (location.pathname.split("/").filter(Boolean)[0] || DEFAULT_REPO.split("/")[1]) : DEFAULT_REPO.split("/")[1];
+      const repo = `${inferredOwner}/${inferredRepo}`;
+      const statusUrl = `https://raw.githubusercontent.com/${repo}/monitor-state/status.json`;
+      const $ = (id) => document.getElementById(id);
+      $("repo-link").href = `https://github.com/${repo}`;
+      $("status-source").textContent = `${repo}@monitor-state/status.json`;
+
+      const commonZones = ["UTC","Asia/Shanghai","Asia/Tokyo","Asia/Singapore","Europe/London","Europe/Paris","America/New_York","America/Chicago","America/Denver","America/Los_Angeles"];
+      const autoZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+      let selected = localStorage.getItem(STORAGE_KEY) || "auto";
+      let state = null;
+      let now = Date.now();
+
+      const supportedZones = (() => {
+        try { return typeof Intl.supportedValuesOf === "function" ? Intl.supportedValuesOf("timeZone") : commonZones; }
+        catch { return commonZones; }
+      })();
+      const zones = [...new Set([autoZone, ...commonZones, ...supportedZones])];
+      const select = $("timezone");
+      const addOption = (value, label) => { const option = document.createElement("option"); option.value = value; option.textContent = label; select.appendChild(option); };
+      addOption("auto", `Auto · ${autoZone}`);
+      zones.forEach((zone) => addOption(zone, zone));
+      if (![...select.options].some((option) => option.value === selected)) selected = "auto";
+      select.value = selected;
+      select.addEventListener("change", () => { selected = select.value; localStorage.setItem(STORAGE_KEY, selected); render(); });
+      const zone = () => selected === "auto" ? autoZone : selected;
+
+      function formatMoment(iso, includeDate = true) {
+        if (!iso) return "—";
+        const date = new Date(iso);
+        if (Number.isNaN(date.getTime())) return "—";
+        const options = includeDate
+          ? { year:"numeric", month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZone:zone(), timeZoneName:"short" }
+          : { hour:"2-digit", minute:"2-digit", timeZone:zone(), timeZoneName:"short" };
+        return new Intl.DateTimeFormat(undefined, options).format(date);
+      }
+
+      function eventFrom(signal, type) { return signal?.events?.find((event) => event.type === type) || null; }
+      function displayEvent(event) {
+        if (!event) return "No confirmed signal";
+        const time = event.time || {};
+        if (!time.start) return "Time not confirmed";
+        if (time.kind === "window" && time.end) return `${formatMoment(time.start)} – ${formatMoment(time.end)}`;
+        if (time.kind === "date") return new Intl.DateTimeFormat(undefined, { year:"numeric", month:"short", day:"numeric", timeZone:zone() }).format(new Date(time.start));
+        return formatMoment(time.start);
+      }
+      function countdown(event) {
+        if (!event?.time?.start || event.time.kind !== "exact") return "";
+        const delta = new Date(event.time.start).getTime() - now;
+        if (delta <= 0) return "";
+        const minutes = Math.floor(delta / 60000), hours = Math.floor(minutes / 60), days = Math.floor(hours / 24);
+        if (days) return `in ${days}d ${hours % 24}h`;
+        if (hours) return `in ${hours}h ${minutes % 60}m`;
+        return `in ${Math.max(1, minutes)}m`;
+      }
+      function safeHttps(raw) {
+        try { const value = new URL(raw); return value.protocol === "https:" ? value.href : "https://x.com/thsottiaux"; }
+        catch { return "https://x.com/thsottiaux"; }
+      }
+      function health() {
+        if (!state?.monitor?.lastCheckedAt) return ["Waiting","waiting"];
+        if ((state.monitor.lastRunStatus || "").startsWith("failed")) return ["Degraded","degraded"];
+        const age = (now - new Date(state.monitor.lastCheckedAt).getTime()) / 60000;
+        if (age <= 15) return ["Healthy","healthy"];
+        if (age <= 30) return ["Delayed","delayed"];
+        return ["Stale","degraded"];
+      }
+
+      function renderRecent() {
+        const root = $("recent"); root.replaceChildren();
+        const recent = Array.isArray(state?.recent) ? state.recent : [];
+        if (!recent.length) { const p = document.createElement("p"); p.className = "empty"; p.textContent = "No public signals yet."; root.appendChild(p); return; }
+        recent.slice(0, 10).forEach((signal) => {
+          const a = document.createElement("a"); a.className = "signal"; a.href = safeHttps(signal.url); a.target = "_blank"; a.rel = "noreferrer";
+          const time = document.createElement("time"); time.textContent = formatMoment(signal.postCreatedAt || signal.detectedAt);
+          const text = document.createElement("p"); text.textContent = signal.text || "Signal";
+          const type = document.createElement("small"); type.textContent = (signal.events || []).map((event) => event.type).join(" + ") || "signal";
+          a.append(time, text, type); root.appendChild(a);
+        });
+      }
+
+      function render() {
+        const resetSignal = state?.latest?.reset || null;
+        const resetEvent = eventFrom(resetSignal, "reset");
+        $("reset-status").textContent = resetEvent?.status || (resetSignal ? "announced" : "Waiting");
+        $("reset-time").textContent = displayEvent(resetEvent);
+        $("countdown").textContent = countdown(resetEvent);
+        $("reset-evidence").textContent = resetEvent?.evidence || resetSignal?.text || "Run the monitor once to populate the public status projection.";
+        $("post-link").href = safeHttps(resetSignal?.url || "https://x.com/thsottiaux");
+        $("bank-credit").textContent = displayEvent(eventFrom(state?.latest?.bankCredit || null, "bank_credit"));
+        $("bank-expiry").textContent = displayEvent(eventFrom(state?.latest?.bankExpiry || null, "bank_expiry"));
+        $("last-checked").textContent = formatMoment(state?.monitor?.lastCheckedAt || null);
+        $("last-success").textContent = formatMoment(state?.monitor?.lastSuccessAt || null);
+        $("provider").textContent = state?.monitor?.provider || "—";
+        const [label, className] = health(); const badge = $("health"); badge.className = `health ${className}`; badge.lastElementChild.textContent = label;
+        renderRecent();
+      }
+
+      async function refresh() {
+        try {
+          const response = await fetch(`${statusUrl}?_=${Date.now()}`, { cache:"no-store" });
+          if (!response.ok) throw new Error(`HTTP ${response.status}`);
+          const value = await response.json();
+          if (value.schemaVersion !== 1) throw new Error("Unsupported status schema");
+          state = value; render();
+        } catch (error) {
+          const root = $("recent"); root.replaceChildren(); const p = document.createElement("p"); p.className = "error"; p.textContent = "Live status is temporarily unavailable. Check the monitor workflow and monitor-state branch."; root.appendChild(p);
+          $("health").className = "health degraded"; $("health").lastElementChild.textContent = "Unavailable";
+        }
+      }
+
+      refresh();
+      setInterval(() => { now = Date.now(); render(); refresh(); }, 60000);
+    })();
+  </script>
+</body>
+</html>
