@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2097824089323045037",
-  "lastCheckedAt": "2026-09-09T23:22:58.743Z",
-  "lastSuccessAt": "2026-09-09T23:22:58.743Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 25,
+  "sinceId": "2097829053147582782",
+  "lastCheckedAt": "2026-09-09T23:28:04.077Z",
+  "lastSuccessAt": "2026-09-09T23:28:04.077Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 26,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -158,15 +158,16 @@
     "2097690915230097638": "89b3b64c483885fc5e1db6a8e9e450ceff1e2bf8449d388d007ae76028ed0003",
     "2097746417012166816": "f7358def9d935f4ae4bbfaf6a79080aaf9d527752328aab3b205e81790fa7e25",
     "2097752790177370535": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
-    "2097824089323045037": "2772ed2ccabc187fa9cd47f3c04d23f1f9b8bb68c7734aac51415ac0544de8e6"
+    "2097824089323045037": "2772ed2ccabc187fa9cd47f3c04d23f1f9b8bb68c7734aac51415ac0544de8e6",
+    "2097829053147582782": "a99ab0cb33514856d2beadfd8dfc7136415bef83cb1b98b8fc7f1f8f4e66a910"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2097824089323045037",
-    "canonicalId": "2097824089323045037",
-    "text": "@TheHolyCoder @GergelyOrosz What’s in the box doesn’t matter, but what the box invariants are does (in/out contract, data access, security guarantees, …)",
-    "createdAt": "2026-09-09T23:06:53.000Z",
-    "url": "https://x.com/thsottiaux/status/2097824089323045037",
+    "id": "2097829053147582782",
+    "canonicalId": "2097829053147582782",
+    "text": "Happy to be building here with you all. Lots to explore",
+    "createdAt": "2026-09-09T23:26:36.000Z",
+    "url": "https://x.com/thsottiaux/status/2097829053147582782",
     "media": []
   }
 }

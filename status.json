@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T23:22:58.746Z",
+  "updatedAt": "2026-09-09T23:28:04.080Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-09T23:22:58.743Z",
-    "lastSuccessAt": "2026-09-09T23:22:58.743Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-09T23:28:04.077Z",
+    "lastSuccessAt": "2026-09-09T23:28:04.077Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2097824089323045037",
-    "text": "@TheHolyCoder @GergelyOrosz What’s in the box doesn’t matter, but what the box invariants are does (in/out contract, data access, security guarantees, …)",
-    "url": "https://x.com/thsottiaux/status/2097824089323045037",
-    "postCreatedAt": "2026-09-09T23:06:53.000Z"
+    "id": "2097829053147582782",
+    "text": "Happy to be building here with you all. Lots to explore",
+    "url": "https://x.com/thsottiaux/status/2097829053147582782",
+    "postCreatedAt": "2026-09-09T23:26:36.000Z"
   },
   "latest": {
     "reset": {
