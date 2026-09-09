@@ -321,7 +321,7 @@ export default function ResetDashboard() {
           <div className={styles.signalList}>
             {status.recent.map((signal) => (
               <a href={signal.url} target="_blank" rel="noreferrer" key={signal.version}>
-                <time>{signal.postCreatedAt ? formatMoment(signal.postCreatedAt, timezone) : "—"}</time>
+                <time>{signal.postCreatedAt ? formatMoment(signal.postCreatedAt, "UTC") : "—"}</time>
                 <div>
                   <strong>{signal.events.map((event) => `${event.type} · ${event.status}`).join(" / ")}</strong>
                   <p>{signal.text}</p>
