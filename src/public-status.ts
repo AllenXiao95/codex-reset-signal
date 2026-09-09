@@ -3,6 +3,7 @@ import { dirname } from "node:path";
 import type {
   MatchRecord,
   MonitorState,
+  PublicObservedPost,
   PublicSignal,
   PublicStatus,
 } from "./types";
@@ -17,6 +18,17 @@ function toPublicSignal(match: MatchRecord): PublicSignal {
     detectedAt: match.detectedAt,
     events: match.events,
     deliveryChannels: match.channels,
+  };
+}
+
+function toPublicObservedPost(state: MonitorState): PublicObservedPost | null {
+  const post = state.latestObservedPost;
+  if (!post) return null;
+  return {
+    id: post.id,
+    text: post.text,
+    url: post.url,
+    postCreatedAt: post.createdAt,
   };
 }
 
@@ -45,6 +57,7 @@ export function buildPublicStatus(
       lastSuccessAt: state.lastSuccessAt ?? null,
       lastRunStatus: state.lastRunStatus,
     },
+    latestObservedPost: toPublicObservedPost(state),
     latest: {
       reset: findLatest(matches, "reset"),
       bankCredit: findLatest(matches, "bank_credit"),
