@@ -12,9 +12,12 @@
     "start": "cross-env NODE_ENV=production vinext start",
     "monitor": "node --import tsx src/cli.ts",
     "monitor:dry": "node --import tsx src/cli.ts --dry-run",
+    "monitor:loop": "node --import tsx src/cli.ts --loop",
+    "webhook:debug": "node --import tsx src/webhook-debug.ts",
+    "cloudflare:dry-run": "npx --yes wrangler@4 deploy --dry-run --config wrangler.jsonc",
+    "deploy:cloudflare": "npm run build && npx --yes wrangler@4 deploy --config wrangler.jsonc",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit",
-    "monitor:loop": "node --import tsx src/cli.ts --loop"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "chrono-node": "^2.10.1",
