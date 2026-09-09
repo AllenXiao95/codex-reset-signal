@@ -9,6 +9,8 @@ import { readState, writeState } from "./state";
 import { createPostSource, type PostSource } from "./post-source";
 import { buildPublicStatus, writePublicStatus } from "./public-status";
 
+const EVENT_PARSER_VERSION = 2;
+
 type Dependencies = {
   source?: PostSource;
   /** @deprecated Use source. Kept for existing integrations. */
@@ -41,6 +43,48 @@ function detectedRecord(
   return { version, ...post, detectedAt, events, channels: [] };
 }
 
+function eventsForPost(post: XPost, config: AppConfig): MatchRecord["events"] {
+  return config.keyword.toLowerCase() === "reset"
+    ? extractEvents(post, config.sourceTimezone).filter(
+        (event) => config.includeMentions || event.type !== "mention",
+      )
+    : containsKeyword(post.text, config.keyword)
+      ? [
+          {
+            type: "mention" as const,
+            status: "uncertain" as const,
+            evidence: post.text,
+            time: {
+              kind: "unknown" as const,
+              start: null,
+              end: null,
+              evidence: post.text,
+            },
+          },
+        ]
+      : [];
+}
+
+function reprojectSavedMatches(state: MonitorState, config: AppConfig): void {
+  if (state.eventParserVersion === EVENT_PARSER_VERSION) return;
+  state.matches = state.matches
+    .map((match) => {
+      const post: XPost = {
+        id: match.id,
+        text: match.text,
+        createdAt: match.createdAt,
+        url: match.url,
+        media: match.media,
+      };
+      return { ...match, events: eventsForPost(post, config) };
+    })
+    .filter((match) => match.events.length > 0);
+  // Pending notifications intentionally keep the event payload captured when they
+  // entered the outbox. Parser migrations update public projections only and never
+  // create or resend historical deliveries.
+  state.eventParserVersion = EVENT_PARSER_VERSION;
+}
+
 export async function runMonitor(config: AppConfig, deps: Dependencies = {}): Promise<MonitorState> {
   await mkdir(dirname(config.statePath), { recursive: true });
   const lockPath = `${config.statePath}.lock`;
@@ -70,6 +114,9 @@ async function runLocked(config: AppConfig, deps: Dependencies): Promise<Monitor
   state.outbox ??= [];
   state.seen ??= {};
   state.lastSuccessAt ??= state.lastCheckedAt;
+  const parserChanged = state.eventParserVersion !== EVENT_PARSER_VERSION;
+  reprojectSavedMatches(state, config);
+  if (parserChanged && state.matches.length) await persist(config, state, now);
   const errors: string[] = [];
   let fetched: { posts: XPost[]; newestId: string | null } | undefined;
   const bootstrap = state.sinceId === null;
@@ -94,26 +141,7 @@ async function runLocked(config: AppConfig, deps: Dependencies): Promise<Monitor
       const version = postVersion(post);
       if (state.seen[identity] === version) continue;
       state.seen[identity] = version;
-      const events =
-        config.keyword.toLowerCase() === "reset"
-          ? extractEvents(post, config.sourceTimezone).filter(
-              (event) => config.includeMentions || event.type !== "mention",
-            )
-          : containsKeyword(post.text, config.keyword)
-            ? [
-                {
-                  type: "mention" as const,
-                  status: "uncertain" as const,
-                  evidence: post.text,
-                  time: {
-                    kind: "unknown" as const,
-                    start: null,
-                    end: null,
-                    evidence: post.text,
-                  },
-                },
-              ]
-            : [];
+      const events = eventsForPost(post, config);
 
       if (events.length) {
         if (!state.matches.some((match) => match.version === version)) {
