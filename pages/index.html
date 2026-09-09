@@ -86,11 +86,6 @@
           <div class="metric"><span>Last bank</span><strong id="last-bank">—</strong></div>
         </section>
         <section class="card">
-          <h2>Other signals</h2>
-          <div class="metric"><span>Bank reset</span><strong id="bank-credit">—</strong></div>
-          <div class="metric"><span>Bank expiry</span><strong id="bank-expiry">—</strong></div>
-        </section>
-        <section class="card">
           <h2>Monitor</h2>
           <div class="metric"><span>Latest post observed</span><strong id="latest-observed">—</strong></div>
           <div class="metric"><span>Last checked</span><strong id="last-checked">—</strong></div>
@@ -243,7 +238,6 @@
         const hero = resetHeroState(resetEvent);
         const resetCountdown = hero.showCountdown ? countdown(resetEvent) : "";
         const bankSignal = state?.latest?.bankCredit || null;
-        const bankEvent = eventFrom(bankSignal, "bank_credit");
         const lastBank = lastTimedEvent("bank_credit");
         const observed = state?.latestObservedPost || null;
         $("reset-heading").textContent = hero.kicker;
@@ -256,10 +250,6 @@
         $("last-bank").textContent = lastBank
           ? displayEvent(lastBank)
           : bankSignal?.postCreatedAt ? `Announced ${formatMoment(bankSignal.postCreatedAt)}` : "No bank reset found";
-        $("bank-credit").textContent = bankEvent?.time?.start
-          ? displayEvent(bankEvent)
-          : bankEvent ? "Banked reset announced" : "Not announced";
-        $("bank-expiry").textContent = displayEvent(eventFrom(state?.latest?.bankExpiry || null, "bank_expiry"));
         $("latest-observed").textContent = observed
           ? `${formatMoment(observed.postCreatedAt)} · ${observed.text}`
           : "No post observed";
