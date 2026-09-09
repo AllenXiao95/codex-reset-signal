@@ -80,7 +80,10 @@ describe("detected signal persistence", () => {
     const publicStatus = JSON.parse(await readFile(config.publicStatusPath!, "utf8"));
     expect(publicStatus.latestObservedPost.id).toBe("3");
     expect(publicStatus.latest.reset).toBeNull();
-    expect(publicStatus.recent).toEqual([]);
+    expect(publicStatus.recent.map((item: { id: string }) => item.id)).toEqual([
+      "2096035437299237298",
+    ]);
+    expect(publicStatus.recent[0].origin).toBe("historical_seed");
   });
 
   it("keeps a detected reset public when notification delivery fails", async () => {

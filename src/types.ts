@@ -64,6 +64,7 @@ export type PublicSignal = {
   detectedAt: string;
   events: ResetEvent[];
   deliveryChannels: string[];
+  origin?: "live" | "historical_seed";
 };
 
 export type PublicObservedPost = {

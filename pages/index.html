@@ -232,6 +232,7 @@
           const time = document.createElement("time"); time.textContent = formatMoment(signal.postCreatedAt || signal.detectedAt, true, "UTC");
           const text = document.createElement("p"); text.textContent = signal.text || "Signal";
           const type = document.createElement("small"); type.textContent = (signal.events || []).map((event) => event.type).join(" + ") || "signal";
+          if (signal.origin === "historical_seed") type.textContent += " · verified history";
           a.append(time, text, type); root.appendChild(a);
         });
       }
@@ -241,6 +242,9 @@
         const resetEvent = eventFrom(resetSignal, "reset");
         const hero = resetHeroState(resetEvent);
         const resetCountdown = hero.showCountdown ? countdown(resetEvent) : "";
+        const bankSignal = state?.latest?.bankCredit || null;
+        const bankEvent = eventFrom(bankSignal, "bank_credit");
+        const lastBank = lastTimedEvent("bank_credit");
         const observed = state?.latestObservedPost || null;
         $("reset-heading").textContent = hero.kicker;
         $("reset-status").textContent = hero.status;
@@ -249,8 +253,12 @@
         $("reset-evidence").textContent = resetEvent?.evidence || resetSignal?.text || "Run the monitor once to populate the public status projection.";
         $("post-link").href = safeHttps(resetSignal?.url || "https://x.com/thsottiaux");
         $("last-reset").textContent = displayEvent(lastTimedEvent("reset"));
-        $("last-bank").textContent = displayEvent(lastTimedEvent("bank_credit"));
-        $("bank-credit").textContent = displayEvent(eventFrom(state?.latest?.bankCredit || null, "bank_credit"));
+        $("last-bank").textContent = lastBank
+          ? displayEvent(lastBank)
+          : bankSignal?.postCreatedAt ? `Announced ${formatMoment(bankSignal.postCreatedAt)}` : "No bank reset found";
+        $("bank-credit").textContent = bankEvent?.time?.start
+          ? displayEvent(bankEvent)
+          : bankEvent ? "Banked reset announced" : "Not announced";
         $("bank-expiry").textContent = displayEvent(eventFrom(state?.latest?.bankExpiry || null, "bank_expiry"));
         $("latest-observed").textContent = observed
           ? `${formatMoment(observed.postCreatedAt)} · ${observed.text}`
