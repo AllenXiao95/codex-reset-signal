@@ -129,6 +129,7 @@
       let now = Date.now();
       let refreshTimer = null;
       let refreshController = null;
+      let lastSuccessfulRefreshAt = null;
 
       const supportedZones = (() => {
         try { return typeof Intl.supportedValuesOf === "function" ? Intl.supportedValuesOf("timeZone") : commonZones; }
@@ -245,7 +246,7 @@
       }
 
       async function refresh() {
-        if (document.hidden) return;
+        if (document.hidden) return false;
         refreshController?.abort();
         const controller = new AbortController();
         refreshController = controller;
@@ -254,23 +255,29 @@
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           const value = await response.json();
           if (value.schemaVersion !== 1) throw new Error("Unsupported status schema");
-          if (!controller.signal.aborted) { state = value; render(); }
+          if (!controller.signal.aborted) {
+            state = value;
+            lastSuccessfulRefreshAt = Date.now();
+            render();
+            return true;
+          }
         } catch (error) {
-          if (controller.signal.aborted) return;
+          if (controller.signal.aborted) return false;
           const root = $("recent"); root.replaceChildren(); const p = document.createElement("p"); p.className = "error"; p.textContent = "Live status is temporarily unavailable. Check the monitor workflow and monitor-state branch."; root.appendChild(p);
           $("health").className = "health degraded"; $("health").lastElementChild.textContent = "Unavailable";
         } finally {
           if (refreshController === controller) refreshController = null;
         }
+        return false;
       }
 
       function stopRefreshTimer() {
         if (refreshTimer !== null) { clearTimeout(refreshTimer); refreshTimer = null; }
       }
 
-      function scheduleRefresh() {
+      function scheduleRefresh(delay = REFRESH_INTERVAL_MS) {
         stopRefreshTimer();
-        if (!document.hidden) refreshTimer = setTimeout(() => void poll(), REFRESH_INTERVAL_MS);
+        if (!document.hidden) refreshTimer = setTimeout(() => void poll(), Math.max(0, delay));
       }
 
       async function poll() {
@@ -285,7 +292,18 @@
           refreshController = null;
           return;
         }
-        void poll();
+
+        if (lastSuccessfulRefreshAt === null) {
+          void poll();
+          return;
+        }
+
+        const elapsed = Date.now() - lastSuccessfulRefreshAt;
+        if (elapsed >= REFRESH_INTERVAL_MS) {
+          void poll();
+        } else {
+          scheduleRefresh(REFRESH_INTERVAL_MS - elapsed);
+        }
       });
 
       void poll();
