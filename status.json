@@ -1,33 +1,33 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T03:27:28.323Z",
+  "updatedAt": "2026-09-09T04:21:50.619Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-09T03:27:28.321Z",
-    "lastSuccessAt": "2026-09-09T03:27:28.321Z",
-    "lastRunStatus": "bootstrapped"
+    "lastCheckedAt": "2026-09-09T04:21:50.617Z",
+    "lastSuccessAt": "2026-09-09T04:21:50.617Z",
+    "lastRunStatus": "checked-0-posts"
   },
   "latest": {
     "reset": {
-      "version": "a47e815d8663324f2467116b8e9700de6ee8210355bf2859ae854dabb0124504",
-      "id": "2097043464538264003",
-      "text": "Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\n\nThanks for reading. We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender. The work week is about to start.\n\nLands around 6pm PST today.",
-      "url": "https://x.com/thsottiaux/status/2097043464538264003",
-      "postCreatedAt": "2026-09-07T19:24:57.000Z",
-      "detectedAt": "2026-09-09T03:27:28.165Z",
+      "version": "d7871012627c721649133d4093900656209c659585a7fa7d8d214a8c9ecf9f5d",
+      "id": "2097174560412246215",
+      "text": "All reset for everyone. Enjoy the week with Astra.",
+      "url": "https://x.com/thsottiaux/status/2097174560412246215",
+      "postCreatedAt": "2026-09-08T04:05:53.000Z",
+      "detectedAt": "2026-09-09T03:27:28.318Z",
       "events": [
         {
           "type": "reset",
-          "status": "announced",
-          "evidence": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender",
+          "status": "completed",
+          "evidence": "All reset for everyone",
           "time": {
-            "kind": "unknown",
-            "start": null,
+            "kind": "observed",
+            "start": "2026-09-08T04:05:53.000Z",
             "end": null,
-            "evidence": "3D",
-            "note": "原文未说明时区；可配置 SOURCE_TIMEZONE 并在通知中标记假设"
+            "evidence": "All reset for everyone",
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
           }
         }
       ],
@@ -92,15 +92,15 @@
       "detectedAt": "2026-09-09T03:27:28.318Z",
       "events": [
         {
-          "type": "mention",
-          "status": "uncertain",
+          "type": "reset",
+          "status": "completed",
           "evidence": "All reset for everyone",
           "time": {
-            "kind": "unknown",
-            "start": null,
+            "kind": "observed",
+            "start": "2026-09-08T04:05:53.000Z",
             "end": null,
             "evidence": "All reset for everyone",
-            "note": "原文没有可确定的时间"
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
           }
         }
       ],
@@ -116,14 +116,13 @@
       "events": [
         {
           "type": "reset",
-          "status": "announced",
+          "status": "scheduled",
           "evidence": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender",
           "time": {
-            "kind": "unknown",
-            "start": null,
+            "kind": "exact",
+            "start": "2026-09-08T02:00:00.000Z",
             "end": null,
-            "evidence": "3D",
-            "note": "原文未说明时区；可配置 SOURCE_TIMEZONE 并在通知中标记假设"
+            "evidence": "6pm PST today"
           }
         }
       ],
