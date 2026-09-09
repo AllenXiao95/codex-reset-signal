@@ -1,5 +1,10 @@
-import { describe, expect, it } from "vitest";
-import { renderEmail } from "../src/notifications";
+import { createHmac } from "node:crypto";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { describe, expect, it, vi } from "vitest";
+import { createTargets, renderEmail } from "../src/notifications";
+import { loadConfig, validateConfig } from "../src/config";
 
 describe("renderEmail", () => {
   it("escapes post content and includes media", () => {
@@ -28,10 +33,6 @@ describe("renderEmail", () => {
   });
 });
 
-import { createHmac } from "node:crypto";
-import { vi } from "vitest";
-import { createTargets } from "../src/notifications";
-import { loadConfig, validateConfig } from "../src/config";
 const item = {
   key: "version-123",
   post: {
@@ -88,6 +89,25 @@ describe("bot transports", () => {
         vi.fn().mockResolvedValue(Response.json({ ok: false })),
       )[0].send(item),
     ).rejects.toThrow("Telegram rejected");
+  });
+  it("uses GitHub Actions Job Summary as a built-in target", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "reset-signal-summary-"));
+    const summaryPath = join(dir, "summary.md");
+    try {
+      const config = loadConfig({ GITHUB_STEP_SUMMARY: summaryPath });
+      expect(validateConfig(config)).toEqual([]);
+      const target = createTargets(config).find(
+        (candidate) => candidate.channel === "github-actions",
+      );
+      expect(target).toBeDefined();
+      await target!.send(item);
+      const summary = await readFile(summaryPath, "utf8");
+      expect(summary).toContain("### Reset Signal");
+      expect(summary).toContain("Reset now @everyone");
+      expect(summary).toContain("version-123");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
   });
   it("validates bot-only configuration, timezones and endpoints", () => {
     const config = loadConfig({
