@@ -6,158 +6,188 @@
 [![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
 
-Monitor public X posts from [Tibo (@thsottiaux)](https://x.com/thsottiaux), recognize reset / reset bank / banked reset signals, extract event times, convert them to your target timezone, and deliver alerts through GitHub Actions, bots, generic webhooks, email, or SMS.
+Monitor public X posts from [Tibo (@thsottiaux)](https://x.com/thsottiaux), recognize reset / reset bank / banked reset signals, extract event times, and publish both notifications and a live timezone-aware dashboard.
 
 This project is derived from [UynajGI/reset-signal](https://github.com/UynajGI/reset-signal), preserving the upstream copyright notice and MIT license. It is not an official OpenAI, X, or Cloudflare service.
 
-## Features
+## What it does
 
-- Uses the public FxEmbed JSON API by default for regular posts, replies, and long-form posts. No X token or cookie is required. Official X API v2 remains an explicit optional source.
-- Filters timeline entries by numeric author ID, excludes pure reposts, and parses only the target author's own post text rather than quoted-post or conversation context.
-- Distinguishes quota resets, bank credits, bank expiry information, and explicitly unconfirmed reset-related discussions.
-- Resolves relative times from the **post publication time** and supports English dates, explicit timezones, Pacific daylight-saving rules, and time windows.
-- Uses IANA timezone names. The default output timezone is `Asia/Shanghai`; missing source timezones are not silently guessed.
-- Supports GitHub Actions Job Summary, Telegram, Discord, generic JSON webhooks, Resend email, and Twilio SMS.
-- Paginates new posts, persists an outbox, checkpoints delivery per target, and uses a single-process state lock.
-- First run establishes a cursor by default. Offline fixtures do not access the network, send notifications, or modify monitor state.
-- The dashboard can be imported directly to Cloudflare Workers. The monitor itself continues to run through GitHub Actions or Docker.
-
-## Offline validation first
-
-Node.js 22 or newer is required.
-
-```bash
-npm ci
-npm run monitor:dry
+```text
+GitHub Actions (~5 min)
+        ↓
+      FxEmbed
+        ↓
+ event extraction
+        │
+        ├── detected signal ──→ public status ──→ Cloudflare dashboard
+        │
+        └── durable outbox ───→ GitHub Summary / Telegram / Discord / Webhook / Email / SMS
 ```
 
-`fixtures/posts.json` contains synthetic examples only and must not be treated as real announcements.
+Key properties:
 
-```bash
-TARGET_TIMEZONE=America/New_York npm run monitor:dry
-npm run monitor:dry -- --input /path/to/posts.json
+- FxEmbed is the default source and needs no X token or cookie. Official X API v2 remains an explicit optional source.
+- Reset detection and notification delivery are separate. A Telegram/Webhook failure does not hide an already detected reset from the dashboard.
+- The first run parses the latest page for dashboard history but does **not** send historical notifications unless explicitly enabled locally.
+- Relative times are anchored to post publication time. Explicit source timezones, Pacific DST, exact times, windows, date-only events, observed announcement times, and unresolved times remain distinct.
+- Event timestamps are persisted canonically in UTC. The dashboard auto-detects the browser IANA timezone and also allows manual selection stored in `localStorage`.
+- Scheduled runtime state is stored on the dedicated `monitor-state` branch, not committed to `main`. Runtime commits therefore do not trigger normal `main` CI or Cloudflare rebuilds.
+- The public dashboard reads a small `status.json` projection. It never exposes cursor, seen-hash, outbox, recipient checkpoints, or credentials.
+
+## GitHub Actions monitoring
+
+1. Enable Actions for the repository/fork.
+2. Manually run **Monitor X for reset** once.
+3. Open the run **Summary** to inspect the monitor result.
+4. Set repository variable `MONITOR_ENABLED=true` to enable the roughly five-minute schedule.
+5. Configure optional external notification channels under **Settings → Secrets and variables → Actions**.
+
+The workflow checks out two branches:
+
+```text
+main
+  source code + workflow + dashboard
+
+monitor-state
+  state.json   # internal cursor / seen / outbox / delivery checkpoints
+  status.json  # public dashboard projection
 ```
 
-The input is an `XPost[]` array with fields matching the fixture: `id`, `text`, timezone-aware `createdAt`, `url`, and `media`.
-
-## GitHub Actions
-
-1. Enable workflows on the fork's **Actions** page.
-2. Optional: configure external notification channels under **Settings → Secrets and variables → Actions**. FxEmbed does not require `X_BEARER_TOKEN`, and no notification secret is required if you only want to verify the monitor in GitHub Actions.
-3. Set `TARGET_TIMEZONE` under Variables if needed. It defaults to `Asia/Shanghai`.
-4. After the code is on `main`, manually run **Monitor X for reset** once to establish the initial cursor.
-5. Open that workflow run's **Summary**. Every run publishes its monitor status there; reset signals are also rendered directly in the Job Summary.
-6. Set `MONITOR_ENABLED=true` under Variables to enable the roughly five-minute schedule. Set it back to `false` to pause scheduled checks.
-
-GitHub Actions Job Summary is a built-in notification target, so a first run no longer fails merely because Telegram, email, SMS, Discord, or webhook credentials are absent. External channels are optional extensions.
-
-Scheduled runs execute only from `main`. GitHub Actions schedules may be delayed and are not a hard real-time guarantee; inactive repositories may also have schedules disabled by GitHub. Use Docker for a more continuously controlled runtime.
-
-The default `SOURCE_PROVIDER=fxembed` uses a third-party public endpoint and currently needs no paid X API credential. **Zero X API cost does not mean every operating cost is zero**: hosting and notification providers may still charge. This project cannot guarantee FxEmbed availability, freshness, rate limits, or completeness.
-
-Only `SOURCE_PROVIDER=x` selects the official X API and requires an `X_BEARER_TOKEN` with access to the required user and post endpoints. A configured X token is not used as an automatic paid fallback when FxEmbed fails.
+`main` no longer receives a state commit every five minutes. GitHub Actions schedules may be delayed and are not a hard real-time SLA.
 
 ### Notification channels
 
 | Channel | Configuration |
 | --- | --- |
-| GitHub Actions | Automatic Job Summary target; no secret required |
+| GitHub Actions | Built-in Job Summary, no secret required |
 | Telegram | `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_IDS` |
 | Discord | `DISCORD_WEBHOOK_URLS` |
 | Generic webhook | `WEBHOOK_URLS`; optional `WEBHOOK_SECRET`, `WEBHOOK_DEBUG` |
 | Resend email | `RESEND_API_KEY`, `EMAIL_FROM`, `EMAIL_TO` |
 | Twilio SMS | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM`, `SMS_TO` |
 
-Each external channel must be configured completely or left entirely blank. Separate multiple destinations with commas.
+Each external channel must be configured completely or left blank. Generic webhook details are documented in [docs/webhook.md](docs/webhook.md).
 
-Feishu/Lark, WeCom, QQ/NoneBot, Apprise, and similar systems can consume the generic webhook through a small bridge. Their native bot URLs are **not** drop-in generic webhook endpoints because their payload contracts differ. See the [generic webhook contract](docs/webhook.md).
+## Live dashboard
 
-### Configuration
+The homepage now answers the operational question first: **when is the latest reset?**
 
-| Environment variable / Actions Variable | Default | Description |
-| --- | --- | --- |
-| `SOURCE_PROVIDER` | `fxembed` | `fxembed` (no X credential) or `x` (official X API); no automatic fallback |
-| `X_USERNAME` | `thsottiaux` | Target account |
-| `MATCH_WORD` | `reset` | Enables reset event parsing by default; custom words use whole-word matching |
-| `TARGET_TIMEZONE` | `Asia/Shanghai` | Output timezone, for example `Europe/London` |
-| `SOURCE_TIMEZONE` | empty | Explicit assumption for source-local clock times, for example `America/Los_Angeles` |
-| `INCLUDE_MENTIONS` | `true` | Include requests/discussions/negations that are clearly marked as unconfirmed |
-| `X_EXCLUDE_REPLIES` | `false` | Exclude replies authored by the target account |
-| `WEBHOOK_DEBUG` | `false` | Log sanitized webhook host/status/timing diagnostics without URL paths or secrets |
-| `MONITOR_ENABLED` | disabled | Actions only; `true` enables scheduled runs |
-| `BOOTSTRAP_NOTIFY` | `false` | Local only; optionally notify historical items during bootstrap. Actions forces this off |
-| `STATE_PATH` | `data/state.json` | Local only; Actions uses the default state file |
-| `POLL_INTERVAL_SECONDS` | `300` | Used by `--loop`; minimum 60 seconds |
+It shows:
 
-The first run reads a recent page to establish the baseline. Later FxEmbed runs follow `cursor.bottom` until an entire page is no newer than the previous checkpoint or no next page is available. Pagination loops and excessive page counts fail the batch and retry later; collection failures are never treated as “no new posts.”
+- latest reset event time and status;
+- latest bank-credit and bank-expiry signals;
+- original post evidence and link;
+- automatic or manually selected display timezone;
+- countdown for future exact reset times;
+- monitor health: `Healthy`, `Delayed`, `Stale`, or `Degraded`;
+- recent detected signals, independent of notification delivery success.
 
-Switching the same account between `fxembed` and `x` can reuse its numeric user ID, post IDs, and pending outbox. Use a new state file when changing the target account or keyword.
+Health is derived from both `lastRunStatus` and checkpoint freshness. A stale `lastCheckedAt` is not labeled active merely because it exists.
 
-## Cloudflare Workers import
+### Public status contract
 
-The repository includes `wrangler.jsonc` and a Worker-compatible vinext output entrypoint, so the **dashboard/web UI** can be imported into Cloudflare Workers.
+The dashboard consumes `monitor-state/status.json`, which contains only a public projection similar to:
+
+```json
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-09T03:00:00Z",
+  "username": "thsottiaux",
+  "monitor": {
+    "provider": "fxembed",
+    "lastCheckedAt": "2026-09-09T03:00:00Z",
+    "lastSuccessAt": "2026-09-09T03:00:00Z",
+    "lastRunStatus": "checked-2-posts"
+  },
+  "latest": {
+    "reset": null,
+    "bankCredit": null,
+    "bankExpiry": null
+  },
+  "recent": []
+}
+```
+
+Detected signals include parsed `events`, post creation time, detection time, original URL, and successful delivery channel names. Internal runtime state is not part of this contract.
+
+## Cloudflare Workers
+
+Cloudflare Workers is the primary hosted dashboard target. The repository includes `wrangler.jsonc` and a Worker-compatible vinext entrypoint.
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
 
-You can also use the Cloudflare dashboard and choose **Workers & Pages → Create → Import a repository**, then connect this repository. Recommended build settings:
+Cloudflare repository import settings:
 
 ```text
 Build command:  npm run build
 Deploy command: npx wrangler deploy --config wrangler.jsonc
 ```
 
-Validate the Worker bundle locally without deploying:
+Validate without deploying:
 
 ```bash
 npm ci
+npm test
+npm run typecheck
 npm run build
 npm run cloudflare:dry-run
 ```
 
-Deploy manually with Wrangler:
+The Worker route `/api/status` reads the public runtime projection on demand, so a monitor update does **not** redeploy the website. For a fork deployed to Cloudflare, set runtime variable `RESET_STATUS_URL` to that fork's raw `monitor-state/status.json` URL; otherwise the default points to this repository.
 
-```bash
-npm run deploy:cloudflare
-```
+The monitor itself remains on GitHub Actions or Docker. No KV, D1, Workers Cron, SSE, or WebSocket is required.
 
-**Scope:** this deploys the dashboard/web application only. It does not move `monitor.yml`, scheduled collection, outbound notifications, or `data/state.json` persistence into Workers. Monitoring still runs through GitHub Actions or Docker, and the deployed dashboard represents the state snapshot present at build time. Keeping those responsibilities separate avoids introducing a second KV/D1 state model merely for dashboard hosting.
+## GitHub Pages fallback
 
-## Generic webhook debugging
+GitHub Pages is intentionally a fallback, not a second backend. The dashboard client can fall back to the raw public status source when `/api/status` is unavailable. A Pages deployment therefore needs only a static frontend plus access to the fork's public `monitor-state/status.json`; no runtime monitor logic runs on Pages.
 
-Put one or more real HTTPS destinations in `WEBHOOK_URLS`, then run:
+The primary supported build/deploy path remains Cloudflare Workers because the current vinext build contains an SSR Worker entrypoint and API route. Keeping Pages secondary avoids maintaining two independent backend/state implementations.
 
-```bash
-WEBHOOK_DEBUG=true npm run webhook:debug
-```
+## Configuration
 
-The debug command uses synthetic data from `fixtures/posts.json`. It **does not contact X/FxEmbed or read/write monitor state, but it does send a real POST to every configured generic webhook**. A custom fixture can be supplied with:
-
-```bash
-WEBHOOK_DEBUG=true npm run webhook:debug -- --input /path/to/posts.json
-```
-
-Logs contain only the destination hostname, a short delivery-ID prefix, signing state, successful HTTP status, and elapsed time. They never include URL paths/query strings, secrets, headers, or provider response bodies. See [docs/webhook.md](docs/webhook.md) for the payload schema, HMAC verification, idempotency rules, and debugging checklist.
+| Variable | Default | Description |
+| --- | --- | --- |
+| `SOURCE_PROVIDER` | `fxembed` | `fxembed` or official `x`; no automatic paid fallback |
+| `X_USERNAME` | `thsottiaux` | Target X account |
+| `MATCH_WORD` | `reset` | Reset parser by default; custom terms use whole-word matching |
+| `TARGET_TIMEZONE` | `Asia/Shanghai` | Notification display timezone; dashboard has its own browser selection |
+| `SOURCE_TIMEZONE` | empty | Explicit assumption for source-local clock times without a timezone |
+| `INCLUDE_MENTIONS` | `true` | Keep clearly unconfirmed reset discussions/requests |
+| `X_EXCLUDE_REPLIES` | `false` | Exclude target-authored replies |
+| `MONITOR_ENABLED` | disabled | Actions schedule opt-in |
+| `BOOTSTRAP_NOTIFY` | `false` | Historical notification opt-in for local runs; Actions forces false |
+| `STATE_PATH` | `data/state.json` | Local runtime state path |
+| `PUBLIC_STATUS_PATH` | optional | Public projection path; Actions uses `runtime/status.json` |
+| `WEBHOOK_DEBUG` | `false` | Sanitized webhook hostname/status/timing diagnostics |
+| `POLL_INTERVAL_SECONDS` | `300` | Loop mode polling interval, minimum 60 seconds |
 
 ## Time parsing boundaries
 
 | Source text | Result |
 | --- | --- |
-| `in two hours` | post publication time + 2 hours |
-| `within the next hour` / `in the next hour` | window from publication time through one hour later |
-| `September 10, 2026 at 5pm PT` | interpreted using `America/Los_Angeles` and DST on the event date |
-| `tomorrow at 5pm` | unknown without a source timezone; explicitly marked as an assumption if `SOURCE_TIMEZONE` is configured |
-| `September 10 PT` | date range; no fabricated exact clock time |
-| `bank ... valid for 24 hours` | expiry duration is retained separately; no exact expiry is invented when the start is ambiguous |
-| `we have reset ...` | completed announcement; publication time may be shown as an observed time, not a verified account-credit time |
-| `soon` / multiple ambiguous times | retains source evidence and marks the time unresolved |
+| `in two hours` | publication time + 2 hours |
+| `within the next hour` | time window from publication through one hour later |
+| `September 10, 2026 at 5pm PT` | `America/Los_Angeles`, including DST on that date |
+| `tomorrow at 5pm` | unresolved unless a source timezone is explicit or configured |
+| `September 10 PT` | date range, not a fabricated exact time |
+| `bank ... valid for 24 hours` | separate expiry evidence; no exact expiry if the start is ambiguous |
+| `we have reset ...` | completed announcement; publication may be an observed time, not account credit time |
+| `soon` / multiple ambiguous times | unresolved with source evidence retained |
 
-The rule engine uses chrono-node for time candidates and Luxon for timezone conversion; it does not call an LLM. It is not a general language-understanding system. Complex conditionals, metaphors, cross-post replies containing only a time, times embedded in images, edits, deletions, and account-specific credit state are not fully solved. Alerts always retain the original post link for verification.
+The rule engine uses chrono-node and Luxon, not an LLM. Complex conditionals, image-only times, cross-post context, edits/deletions, and account-specific actual credit timing are not fully solved.
 
-## Local and Docker
+## Generic webhook debugging
+
+```bash
+WEBHOOK_DEBUG=true npm run webhook:debug
+```
+
+This uses synthetic fixtures, does not contact X/FxEmbed or mutate monitor state, but **does send a real POST** to configured `WEBHOOK_URLS`. Logs omit URL paths, query strings, credentials, headers, and response bodies.
+
+## Local / Docker
 
 ```bash
 cp .env.example .env
-# Configure at least one external target for a normal local monitor run.
 npm run monitor
 npm run monitor:loop
 ```
@@ -167,28 +197,16 @@ docker compose up -d --build
 docker compose logs -f monitor
 ```
 
-Docker persists state in a named volume. Do not run independent Actions and Docker instances against the same recipients unless you accept duplicate notifications. Do not delete the state volume merely to upgrade.
+Docker keeps runtime state in its own named volume. Do not run independent Actions and Docker instances against the same recipients unless duplicate delivery is acceptable.
 
-## Delivery semantics and recovery
+## Delivery and recovery semantics
 
-- Each candidate notification is persisted to the outbox before outbound delivery; each successful target is checkpointed immediately.
-- Restarting retries only unfinished targets. Persisted pending deliveries are still attempted when the post source is temporarily unavailable.
-- Target identifiers are hashed. State stores no token, email address, phone number, or webhook URL, but it does contain public post text.
-- Delivery is **at least once**. A lost response, a crash between provider acceptance and local checkpointing, or a failed Actions state push can still cause duplicates. Generic webhook consumers should deduplicate by `delivery_id`.
-- Actions attempts to persist checkpoints even after a notification failure. If Git persistence fails, `monitor-state-recovery` is uploaded as an artifact.
-- All failed targets are attempted once per run and retried later. There is no cross-provider exactly-once guarantee or hard real-time SLA.
-
-## Validation and research
-
-```bash
-npm test
-npm run typecheck
-npm run build
-npm run cloudflare:dry-run
-```
-
-Tests use mocked HTTP and temporary state files and do not send real notifications. See [research notes](docs/research.md) for the reuse/design scope and [FxEmbed source notes](docs/fxembed.md) for API behavior and failure boundaries.
+- Detected signals are persisted before notification attempts and immediately become eligible for the public projection.
+- Notification candidates enter a durable outbox before outbound delivery.
+- Successful targets are checkpointed individually; failed targets retry later.
+- Delivery remains **at least once**, not exactly once. Generic webhook consumers should deduplicate by `delivery_id`.
+- If Actions cannot push the isolated runtime branch, it uploads `monitor-state-recovery` containing both `state.json` and `status.json`.
 
 ## License
 
-[MIT](LICENSE). The upstream copyright notice is preserved, and added dependencies retain their respective licenses.
+[MIT](LICENSE). Upstream copyright notice is preserved.

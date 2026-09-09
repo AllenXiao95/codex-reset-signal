@@ -16,5 +16,7 @@ outputs/
 next-env.d.ts.bak
 state/
 *.lock.tmp
+data/state.json
+data/status.json
 data/*.lock
 data/*.tmp

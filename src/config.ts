@@ -35,6 +35,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     excludeReplies: toBoolean(env.X_EXCLUDE_REPLIES),
     bootstrapNotify: toBoolean(env.BOOTSTRAP_NOTIFY),
     statePath: env.STATE_PATH?.trim() || "data/state.json",
+    publicStatusPath: env.PUBLIC_STATUS_PATH?.trim() || undefined,
     resendApiKey: env.RESEND_API_KEY?.trim(),
     emailFrom: env.EMAIL_FROM?.trim(),
     emailTo: splitList(env.EMAIL_TO),

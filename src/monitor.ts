@@ -1,12 +1,13 @@
 import { createHash } from "node:crypto";
 import { mkdir, open, unlink } from "node:fs/promises";
 import { dirname } from "node:path";
-import type { AppConfig, MonitorState, XPost } from "./types";
+import type { AppConfig, MatchRecord, MonitorState, XPost } from "./types";
 import { extractEvents } from "./events";
 import { containsKeyword } from "./matcher";
 import { createTargets, type NotificationTarget } from "./notifications";
 import { readState, writeState } from "./state";
 import { createPostSource, type PostSource } from "./post-source";
+import { buildPublicStatus, writePublicStatus } from "./public-status";
 
 type Dependencies = {
   source?: PostSource;
@@ -15,22 +16,32 @@ type Dependencies = {
   targets?: NotificationTarget[];
   now?: () => Date;
 };
+
 export const postVersion = (post: XPost) =>
   createHash("sha256")
-    .update(
-      JSON.stringify([
-        post.canonicalId ?? post.id,
-        post.text,
-        post.createdAt,
-        post.media,
-      ]),
-    )
+    .update(JSON.stringify([post.canonicalId ?? post.id, post.text, post.createdAt, post.media]))
     .digest("hex");
 
-export async function runMonitor(
-  config: AppConfig,
-  deps: Dependencies = {},
-): Promise<MonitorState> {
+async function persist(config: AppConfig, state: MonitorState, now: () => Date): Promise<void> {
+  await writeState(config.statePath, state);
+  if (config.publicStatusPath) {
+    await writePublicStatus(
+      config.publicStatusPath,
+      buildPublicStatus(state, config.sourceProvider, now().toISOString()),
+    );
+  }
+}
+
+function detectedRecord(
+  post: XPost,
+  version: string,
+  events: MatchRecord["events"],
+  detectedAt: string,
+): MatchRecord {
+  return { version, ...post, detectedAt, events, channels: [] };
+}
+
+export async function runMonitor(config: AppConfig, deps: Dependencies = {}): Promise<MonitorState> {
   await mkdir(dirname(config.statePath), { recursive: true });
   const lockPath = `${config.statePath}.lock`;
   let lock;
@@ -38,9 +49,7 @@ export async function runMonitor(
     lock = await open(lockPath, "wx");
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "EEXIST")
-      throw new Error(
-        "Monitor state is locked; stop any active worker before removing a stale .lock file",
-      );
+      throw new Error("Monitor state is locked; stop any active worker before removing a stale .lock file");
     throw error;
   }
   try {
@@ -50,15 +59,9 @@ export async function runMonitor(
     await unlink(lockPath);
   }
 }
-async function runLocked(
-  config: AppConfig,
-  deps: Dependencies,
-): Promise<MonitorState> {
-  const state = await readState(
-    config.statePath,
-    config.username,
-    config.keyword,
-  );
+
+async function runLocked(config: AppConfig, deps: Dependencies): Promise<MonitorState> {
+  const state = await readState(config.statePath, config.username, config.keyword);
   const client = deps.source ?? deps.xClient ?? createPostSource(config);
   const targets = deps.targets ?? createTargets(config);
   if (!targets.length) throw new Error("No notification targets configured");
@@ -66,9 +69,11 @@ async function runLocked(
   state.version = 2;
   state.outbox ??= [];
   state.seen ??= {};
+  state.lastSuccessAt ??= state.lastCheckedAt;
   const errors: string[] = [];
   let fetched: { posts: XPost[]; newestId: string | null } | undefined;
   const bootstrap = state.sinceId === null;
+
   try {
     state.userId ??= await client.resolveUserId(config.username);
     fetched = await client.getPosts({
@@ -81,20 +86,18 @@ async function runLocked(
   } catch {
     errors.push(`${config.sourceProvider} collection failed; cursor not advanced`);
   }
+
   if (fetched) {
     const { posts, newestId } = fetched;
-    for (const post of [...posts].sort((a, b) =>
-      BigInt(a.id) < BigInt(b.id) ? -1 : 1,
-    )) {
+    for (const post of [...posts].sort((a, b) => (BigInt(a.id) < BigInt(b.id) ? -1 : 1))) {
       const identity = post.canonicalId ?? post.id;
       const version = postVersion(post);
       if (state.seen[identity] === version) continue;
       state.seen[identity] = version;
-      if (bootstrap && !config.bootstrapNotify) continue;
       const events =
         config.keyword.toLowerCase() === "reset"
           ? extractEvents(post, config.sourceTimezone).filter(
-              (e) => config.includeMentions || e.type !== "mention",
+              (event) => config.includeMentions || event.type !== "mention",
             )
           : containsKeyword(post.text, config.keyword)
             ? [
@@ -111,33 +114,47 @@ async function runLocked(
                 },
               ]
             : [];
-      if (events.length && !state.outbox.some((item) => item.key === version))
-        state.outbox.push({
-          key: version,
-          post,
-          events,
-          targets: targets.map((t) => t.id),
-          delivered: [],
-        });
+
+      if (events.length) {
+        if (!state.matches.some((match) => match.version === version)) {
+          state.matches = [
+            detectedRecord(post, version, events, now().toISOString()),
+            ...state.matches,
+          ].slice(0, 20);
+        }
+        // Bootstrap still detects recent signals for the dashboard, but historical
+        // notifications remain opt-in to prevent a noisy first deployment.
+        if (
+          (!bootstrap || config.bootstrapNotify) &&
+          !state.outbox.some((item) => item.key === version)
+        ) {
+          state.outbox.push({
+            key: version,
+            post,
+            events,
+            targets: targets.map((target) => target.id),
+            delivered: [],
+          });
+        }
+      }
     }
+
     state.sinceId =
       newestId && (!state.sinceId || BigInt(newestId) > BigInt(state.sinceId))
         ? newestId
         : state.sinceId;
     state.postsScanned += posts.length;
-    state.lastCheckedAt = now().toISOString();
-    state.lastRunStatus = bootstrap
-      ? "bootstrapped"
-      : `checked-${posts.length}-posts`;
-    // Cursor and durable outbox are committed together, before any outbound call.
-    await writeState(config.statePath, state);
+    const checkedAt = now().toISOString();
+    state.lastCheckedAt = checkedAt;
+    state.lastSuccessAt = checkedAt;
+    state.lastRunStatus = bootstrap ? "bootstrapped" : `checked-${posts.length}-posts`;
+    await persist(config, state, now);
   }
 
-  // Deliver existing pending items even when X is temporarily unavailable.
   for (const item of [...state.outbox]) {
     for (const targetId of item.targets) {
       if (item.delivered.includes(targetId)) continue;
-      const target = targets.find((t) => t.id === targetId);
+      const target = targets.find((candidate) => candidate.id === targetId);
       if (!target) {
         errors.push(
           "Pending target is no longer configured; restore its configuration or explicitly remove its pending delivery",
@@ -147,31 +164,28 @@ async function runLocked(
       try {
         await target.send(item);
       } catch {
-        errors.push(
-          `${target.channel} delivery failed; will retry on next run`,
-        );
+        errors.push(`${target.channel} delivery failed; will retry on next run`);
         continue;
       }
       item.delivered.push(targetId);
-      // A failed checkpoint must stop the run, not send subsequent notifications.
-      await writeState(config.statePath, state);
+      const match = state.matches.find((candidate) => candidate.version === item.key);
+      if (match) {
+        match.channels = item.delivered
+          .map((id) => targets.find((candidate) => candidate.id === id)?.channel)
+          .filter((channel): channel is string => Boolean(channel));
+        match.notifiedAt ??= now().toISOString();
+      }
+      await persist(config, state, now);
     }
     if (item.targets.every((id) => item.delivered.includes(id))) {
-      state.matches = [
-        {
-          ...item.post,
-          notifiedAt: now().toISOString(),
-          channels: item.targets.map((id) => id.split(":")[0]),
-        },
-        ...state.matches,
-      ].slice(0, 20);
-      state.outbox = state.outbox.filter((p) => p.key !== item.key);
-      await writeState(config.statePath, state);
+      state.outbox = state.outbox.filter((pending) => pending.key !== item.key);
+      await persist(config, state, now);
     }
   }
+
   state.seen = Object.fromEntries(Object.entries(state.seen).slice(-2000));
   if (errors.length) state.lastRunStatus = `failed-${errors.length}`;
-  await writeState(config.statePath, state);
+  await persist(config, state, now);
   if (errors.length) throw new Error([...new Set(errors)].join("; "));
   return state;
 }
