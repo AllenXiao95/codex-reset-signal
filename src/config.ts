@@ -26,6 +26,8 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     discordWebhookUrls: splitList(env.DISCORD_WEBHOOK_URLS),
     webhookUrls: splitList(env.WEBHOOK_URLS),
     webhookSecret: env.WEBHOOK_SECRET?.trim(),
+    webhookDebug: toBoolean(env.WEBHOOK_DEBUG),
+    githubSummaryPath: env.GITHUB_STEP_SUMMARY?.trim() || undefined,
     includeMentions: toBoolean(env.INCLUDE_MENTIONS, true),
     xBearerToken: env.X_BEARER_TOKEN?.trim() ?? "",
     username: env.X_USERNAME?.trim().replace(/^@/, "") || "thsottiaux",
@@ -108,6 +110,7 @@ export function validateConfig(
   }
   if (
     !options.offline &&
+    !config.githubSummaryPath &&
     !config.emailTo.length &&
     !config.smsTo.length &&
     !config.telegramChatIds.length &&
@@ -115,7 +118,7 @@ export function validateConfig(
     !config.webhookUrls.length
   ) {
     errors.push(
-      "Configure at least one notification channel (email, SMS, Telegram, Discord, or webhook).",
+      "Configure at least one notification channel (GitHub Actions summary, email, SMS, Telegram, Discord, or webhook).",
     );
   }
 
