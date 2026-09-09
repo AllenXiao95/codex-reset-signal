@@ -14,7 +14,7 @@ concurrency:
 
 jobs:
   monitor:
-    if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || vars.MONITOR_ENABLED == 'true')
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || vars.MONITOR_ENABLED != 'false')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
