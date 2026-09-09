@@ -12,15 +12,24 @@
 ## 工作方式
 
 ```text
-GitHub Actions（约每 5 分钟）
+Scheduler
+  ├─ GitHub Actions schedule
+  └─ 可选 Cloudflare Cron → workflow_dispatch
+                    ↓
+               GitHub Actions
+                    ↓
+                  FxEmbed
+                    ↓
+               reset 事件解析
+                    │
+        ┌───────────┴───────────┐
+        │                       │
+      检测事实               durable outbox
+        │                       │
+   public status       GitHub Summary / Telegram /
+        │               Discord / Webhook / 邮件 / 短信
         ↓
-      FxEmbed
-        ↓
-   reset 事件解析
-        │
-        ├── 检测事实 ──→ public status ──→ Cloudflare Dashboard
-        │
-        └── durable outbox ──→ GitHub Summary / Telegram / Discord / Webhook / 邮件 / 短信
+Cloudflare Dashboard
 ```
 
 核心语义：
@@ -38,8 +47,10 @@ GitHub Actions（约每 5 分钟）
 1. 在仓库/Fork 中启用 Actions。
 2. 手动运行一次 **Monitor X for reset** 验证配置。
 3. 打开运行记录的 **Summary** 查看状态。
-4. 约每五分钟一次的 schedule 默认启用；只有需要关闭定时执行时才设置仓库 Variable：`MONITOR_ENABLED=false`。手动 dispatch 不受影响。
+4. 约每五分钟一次的 GitHub schedule 默认启用；只有需要关闭 GitHub 自带定时执行时才设置仓库变量 `MONITOR_ENABLED=false`。手动 `workflow_dispatch` 不受影响。
 5. Telegram、Discord、Webhook、邮件或短信 Secret 均可后续按需配置。
+
+如果改用 Cloudflare Cron 负责调度，应把 `MONITOR_ENABLED=false` 设置为 **GitHub Repository Actions Variable**，让 Cloudflare 只负责触发 `workflow_dispatch`。完整配置见 [docs/cloudflare.md](docs/cloudflare.md)。
 
 工作流会同时 checkout 两个分支：
 
@@ -113,29 +124,55 @@ Dashboard 读取 `monitor-state/status.json`，仅保留公开展示所需字段
 
 Cloudflare Workers 是当前首选的 Dashboard 托管方式。仓库已包含 `wrangler.jsonc` 和 vinext Worker 入口。
 
-### 推荐：直接部署已有 Fork / 仓库
+### Dashboard 部署
 
-如果你已经 Fork 了这个项目，或者 GitHub 账号里已经存在 `codex-reset-signal`，**不要使用 Deploy to Cloudflare 按钮**。
+如果你已经 Fork 了这个项目，或者 GitHub 账号里已经存在 `codex-reset-signal`，应使用 Cloudflare **Workers & Pages → Create application → Import a repository**。不要对已有 Fork 使用 Deploy to Cloudflare 模板按钮，因为它会尝试再创建一个 GitHub/GitLab 仓库，从而可能出现同名仓库冲突。
 
-Cloudflare 的 Deploy Button 是模板复制流程：它会把源仓库再复制成一个**新的 GitHub/GitLab 仓库**。因此账号里已经存在同名仓库时，会出现“已存在具有该名称的存储库，请选择其他名称”。
-
-已有仓库应该走下面这条路径：
-
-1. Cloudflare Dashboard → **Workers & Pages** → **Create application**。
-2. 选择 **Import a repository**。
-3. 选择你现有的 `codex-reset-signal` Fork/仓库。
-4. Build root 保持仓库根目录。
-5. 使用：
+构建配置：
 
 ```text
 Build command:  npm run build
 Deploy command: npx wrangler deploy --config wrangler.jsonc
 ```
 
-6. 直接保存并部署。首次创建 Worker 不需要填写本项目自己的 Secret。
-7. 如果部署的是 Fork，部署完成后再添加可选 Runtime Variable `RESET_STATUS_URL`，指向你自己的 raw `monitor-state/status.json`。
+首次部署 Dashboard Worker 不需要填写本项目自己的 Secret。
 
-如果是把已有 Worker 连接到 Git 仓库，Cloudflare Worker 名称需要和 `wrangler.jsonc` 里的 `name`（当前为 `codex-reset-signal`）保持一致；如果需要改名，应两边一起改。
+如果已经有 Cloudflare 域名，建议给 Dashboard 使用独立 **Custom Domain**，例如 `reset.example.com`。同一个 Worker 会同时处理 `/` 和 `/api/status`，因此不需要再给 `/api/status` 单独配置 Worker Route。个人域名也不应写死到 `wrangler.jsonc`，避免 Fork 用户继承。
+
+`RESET_STATUS_URL` 是**可选项**。维护者当前部署默认已经读取 `AllenXiao95/codex-reset-signal` 的 `monitor-state/status.json`，所以只要仓库 owner/name、分支和路径不变，通常无需配置。只有 Fork、仓库改名/迁移、状态文件路径变化或改用其他状态源时才需要覆盖。
+
+### 可选 Cloudflare Cron Scheduler
+
+GitHub 自带 schedule 仍然受支持。如果某个仓库的 GitHub scheduled event 长期不可靠，可以单独创建一个极小的 Cloudflare Scheduler Worker：
+
+```text
+Cloudflare Cron
+      ↓
+GitHub workflow_dispatch
+      ↓
+monitor.yml
+      ↓
+FxEmbed → monitor-state
+```
+
+Scheduler Worker 只需要：
+
+- Cloudflare Secret：`GITHUB_TOKEN`，对应仅授权目标仓库、具有 GitHub Actions write 权限的 fine-grained token；
+- 一个 Cron Trigger，例如 `*/5 * * * *`，或者错峰的五分钟表达式；
+- 不需要 Custom Domain；
+- 不需要 Worker Route。
+
+当 Cloudflare Cron 成为实际调度时钟后，在 GitHub 仓库中设置：
+
+```text
+Settings → Secrets and variables → Actions → Variables
+
+MONITOR_ENABLED=false
+```
+
+这里的 `MONITOR_ENABLED` 是 **Repository Actions Variable**，不是 Environment Variable，也不是 Secret。它只关闭 GitHub 自己的 schedule；手动和 Cloudflare 触发的 `workflow_dispatch` 仍然可用。
+
+完整的 Dashboard 域名、Worker 路由、Cron、Token 权限、变量类型和验证步骤见 **[docs/cloudflare.md](docs/cloudflare.md)**。
 
 ### Deploy Button：仅适用于还没有自己的仓库
 
@@ -155,9 +192,7 @@ npm run build
 npm run cloudflare:dry-run
 ```
 
-Worker 的 `/api/status` 会在访问时读取 `monitor-state/status.json`，因此 monitor 更新状态时**不会重新部署网页**。`RESET_STATUS_URL` 是可选项：不配置时读取本仓库状态源，Fork 用户可以在部署完成后再补成自己的状态源。
-
-Monitor 本身仍由 GitHub Actions 或 Docker 运行。Dashboard 本身不需要 KV、D1、SSE 或 WebSocket。
+Worker 的 `/api/status` 会在访问时读取 `monitor-state/status.json`，因此 monitor 更新状态时**不会重新部署网页**。Dashboard 本身不需要 KV、D1、SSE 或 WebSocket。
 
 ## GitHub Pages fallback
 
@@ -176,11 +211,11 @@ GitHub Pages 仅作为静态 fallback，不作为第二套运行时后端。Dash
 | `SOURCE_TIMEZONE` | 空 | 原文无时区时的显式来源时区假设 |
 | `INCLUDE_MENTIONS` | `true` | 保留明确标记为未确认的 reset 讨论/请求 |
 | `X_EXCLUDE_REPLIES` | `false` | 是否排除目标账号回复 |
-| `MONITOR_ENABLED` | 除非为 `false` 否则启用 | Actions schedule 的 opt-out 开关 |
+| `MONITOR_ENABLED` | 除非为 `false` 否则启用 | GitHub Repository Actions Variable；设为 `false` 时只关闭 GitHub 自己的 schedule |
 | `BOOTSTRAP_NOTIFY` | `false` | 本地历史通知开关；Actions 强制关闭 |
 | `STATE_PATH` | `data/state.json` | 本地内部运行时状态路径 |
 | `PUBLIC_STATUS_PATH` | 可选 | 公共投影路径；Actions 使用 `runtime/status.json` |
-| `RESET_STATUS_URL` | 项目默认状态源 | Cloudflare Worker 可选的状态源覆盖 |
+| `RESET_STATUS_URL` | 项目默认状态源 | Cloudflare Dashboard Worker 的可选状态源覆盖；维护者通常无需配置 |
 | `WEBHOOK_DEBUG` | `false` | 输出脱敏 hostname/status/耗时信息 |
 | `POLL_INTERVAL_SECONDS` | `300` | loop 模式轮询间隔，最小 60 秒 |
 
