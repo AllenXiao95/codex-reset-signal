@@ -145,6 +145,19 @@ export function parseEventTime(
   };
 }
 
+function nearbyTimingClause(clauses: string[], index: number): string | null {
+  // Keep cross-sentence linking intentionally narrow. Some announcements put the
+  // actual clock in a short follow-up sentence such as "Lands around 6pm PST today."
+  for (let offset = 1; offset <= 2; offset += 1) {
+    const candidate = clauses[index + offset];
+    if (!candidate) break;
+    if (/\b(?:reset(?:s|ting)?|bank(?:ed)?)\b/i.test(candidate)) break;
+    if (/^(?:lands?|landing|eta|expected|scheduled)\b/i.test(candidate))
+      return candidate;
+  }
+  return null;
+}
+
 export function extractEvents(
   post: XPost,
   sourceTimezone?: string,
@@ -155,7 +168,7 @@ export function extractEvents(
     .map((s) => s.trim())
     .filter(Boolean);
   const events: ResetEvent[] = [];
-  for (const clause of clauses) {
+  for (const [index, clause] of clauses.entries()) {
     const bank = /\bbank(?:ed)?\b/i.test(clause);
     if (
       !/\breset(?:s|ting)?\b/i.test(clause) &&
@@ -179,7 +192,7 @@ export function extractEvents(
     const expiry =
       bank && /\b(?:expire[sd]?|expiry|expiration)\b/i.test(clause);
     const completed =
-      /\b(?:have|has|just|already)\s+(?:been\s+)?reset\b|\breset\s+(?:is\s+)?(?:complete|done)|\blimits?\s+(?:are|is|were|was)\s+(?:now\s+)?(?:fully\s+)?reset\b/i.test(
+      /\b(?:have|has|just|already)\s+(?:been\s+)?reset\b|\breset\s+(?:is\s+)?(?:complete|done)|\blimits?\s+(?:are|is|were|was)\s+(?:now\s+)?(?:fully\s+)?reset\b|\ball\s+(?:usage\s+)?reset\b/i.test(
         clause,
       );
     let type: ResetEvent["type"] = expiry
@@ -197,6 +210,13 @@ export function extractEvents(
         : null;
     if (validity) timingText = clause.slice(0, validity.index);
     let time = parseEventTime(timingText, post.createdAt, sourceTimezone);
+    if (time.kind === "unknown" && type === "reset") {
+      const linked = nearbyTimingClause(clauses, index);
+      if (linked) {
+        const linkedTime = parseEventTime(linked, post.createdAt, sourceTimezone);
+        if (linkedTime.kind !== "unknown") time = linkedTime;
+      }
+    }
     if (
       time.kind === "unknown" &&
       (completed || /\bnow\b/i.test(clause)) &&
