@@ -40,6 +40,7 @@ export type PendingNotification = {
 
 export type MonitorState = {
   version?: 2;
+  eventParserVersion?: number;
   outbox?: PendingNotification[];
   seen?: Record<string, string>;
   username: string;
