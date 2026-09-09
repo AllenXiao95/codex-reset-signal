@@ -14,6 +14,7 @@
     "monitor:dry": "node --import tsx src/cli.ts --dry-run",
     "monitor:loop": "node --import tsx src/cli.ts --loop",
     "webhook:debug": "node --import tsx src/webhook-debug.ts",
+    "pages:validate": "node scripts/validate-pages.mjs",
     "cloudflare:dry-run": "npx --yes wrangler@4 deploy --dry-run --config wrangler.jsonc",
     "deploy:cloudflare": "npm run build && npx --yes wrangler@4 deploy --config wrangler.jsonc",
     "test": "vitest run",
