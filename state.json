@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2097752790177370535",
-  "lastCheckedAt": "2026-09-09T23:02:59.804Z",
-  "lastSuccessAt": "2026-09-09T23:02:59.804Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 24,
+  "sinceId": "2097824089323045037",
+  "lastCheckedAt": "2026-09-09T23:07:56.796Z",
+  "lastSuccessAt": "2026-09-09T23:07:56.796Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 25,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -157,15 +157,16 @@
     "2097560642400223387": "47a12f7494b6847b9aa8f1146f2c4b57fc82ea5b6e52d6448f642459bbde8bc0",
     "2097690915230097638": "89b3b64c483885fc5e1db6a8e9e450ceff1e2bf8449d388d007ae76028ed0003",
     "2097746417012166816": "f7358def9d935f4ae4bbfaf6a79080aaf9d527752328aab3b205e81790fa7e25",
-    "2097752790177370535": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e"
+    "2097752790177370535": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
+    "2097824089323045037": "2772ed2ccabc187fa9cd47f3c04d23f1f9b8bb68c7734aac51415ac0544de8e6"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2097752790177370535",
-    "canonicalId": "2097752790177370535",
-    "text": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
-    "createdAt": "2026-09-09T18:23:34.000Z",
-    "url": "https://x.com/thsottiaux/status/2097752790177370535",
+    "id": "2097824089323045037",
+    "canonicalId": "2097824089323045037",
+    "text": "@TheHolyCoder @GergelyOrosz What’s in the box doesn’t matter, but what the box invariants are does (in/out contract, data access, security guarantees, …)",
+    "createdAt": "2026-09-09T23:06:53.000Z",
+    "url": "https://x.com/thsottiaux/status/2097824089323045037",
     "media": []
   }
 }
