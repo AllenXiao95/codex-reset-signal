@@ -15,6 +15,7 @@ export interface PostSource {
   getPosts(options: GetPostsOptions): Promise<{
     posts: XPost[];
     newestId: string | null;
+    latestObservedPost?: XPost | null;
   }>;
 }
 

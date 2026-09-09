@@ -55,6 +55,34 @@ describe("detected signal persistence", () => {
     expect(publicStatus.latest.reset.id).toBe("2");
   });
 
+  it("keeps the latest observed post public even when it is not a reset signal", async () => {
+    const { config, source } = await fixture(true);
+    const observed = {
+      id: "3",
+      text: "Demand for Astra is really unprecedented.",
+      createdAt: "2026-09-09T05:30:00Z",
+      url: "https://x.com/thsottiaux/status/3",
+      media: [],
+    };
+    source.getPosts.mockResolvedValue({
+      posts: [],
+      newestId: null,
+      latestObservedPost: observed,
+    });
+
+    const state = await runMonitor(config, {
+      source,
+      targets: [{ id: "summary", channel: "github-summary", send: vi.fn() }],
+    });
+
+    expect(state.matches).toEqual([]);
+    expect(state.latestObservedPost?.id).toBe("3");
+    const publicStatus = JSON.parse(await readFile(config.publicStatusPath!, "utf8"));
+    expect(publicStatus.latestObservedPost.id).toBe("3");
+    expect(publicStatus.latest.reset).toBeNull();
+    expect(publicStatus.recent).toEqual([]);
+  });
+
   it("keeps a detected reset public when notification delivery fails", async () => {
     const { config, source } = await fixture(true);
     await expect(

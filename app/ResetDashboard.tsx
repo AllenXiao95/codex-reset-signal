@@ -271,6 +271,7 @@ export default function ResetDashboard() {
   const bankEvent = eventFor(bankSignal, "bank_credit");
   const expirySignal = status?.latest.bankExpiry ?? null;
   const expiryEvent = eventFor(expirySignal, "bank_expiry");
+  const observedPost = status?.latestObservedPost ?? null;
   const monitorHealth = health(status, now);
   const resetCountdown = countdown(resetEvent, now);
   const lastReset = lastTimedEvent(status, "reset", now);
@@ -359,6 +360,11 @@ export default function ResetDashboard() {
             <span>BANK EXPIRY</span>
             <strong>{displayEventTime(expiryEvent, timezone)}</strong>
             <small>{expiryEvent?.status ?? "Not announced"}</small>
+          </article>
+          <article>
+            <span>LATEST POST OBSERVED</span>
+            <strong>{observedPost ? formatMoment(observedPost.postCreatedAt, timezone) : "No post observed"}</strong>
+            <small>{observedPost?.text ?? "No authored post has been observed from the source yet."}</small>
           </article>
           <article>
             <span>MONITOR</span>

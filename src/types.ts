@@ -43,6 +43,7 @@ export type MonitorState = {
   eventParserVersion?: number;
   outbox?: PendingNotification[];
   seen?: Record<string, string>;
+  latestObservedPost?: XPost | null;
   username: string;
   keyword: string;
   userId: string | null;
@@ -65,6 +66,13 @@ export type PublicSignal = {
   deliveryChannels: string[];
 };
 
+export type PublicObservedPost = {
+  id: string;
+  text: string;
+  url: string;
+  postCreatedAt: string | null;
+};
+
 export type PublicStatus = {
   schemaVersion: 1;
   updatedAt: string;
@@ -76,6 +84,7 @@ export type PublicStatus = {
     lastSuccessAt: string | null;
     lastRunStatus: string;
   };
+  latestObservedPost: PublicObservedPost | null;
   latest: {
     reset: PublicSignal | null;
     bankCredit: PublicSignal | null;

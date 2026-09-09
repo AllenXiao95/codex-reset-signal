@@ -65,6 +65,22 @@ function eventsForPost(post: XPost, config: AppConfig): MatchRecord["events"] {
       : [];
 }
 
+function newestPost(posts: XPost[]): XPost | null {
+  return posts.reduce<XPost | null>(
+    (latest, post) => !latest || BigInt(post.id) > BigInt(latest.id) ? post : latest,
+    null,
+  );
+}
+
+function updateLatestObservedPost(state: MonitorState, post: XPost | null): void {
+  if (!post) return;
+  if (
+    !state.latestObservedPost ||
+    BigInt(post.id) >= BigInt(state.latestObservedPost.id)
+  )
+    state.latestObservedPost = post;
+}
+
 function reprojectSavedMatches(state: MonitorState, config: AppConfig): void {
   if (state.eventParserVersion === EVENT_PARSER_VERSION) return;
   state.matches = state.matches
@@ -113,12 +129,13 @@ async function runLocked(config: AppConfig, deps: Dependencies): Promise<Monitor
   state.version = 2;
   state.outbox ??= [];
   state.seen ??= {};
+  state.latestObservedPost ??= null;
   state.lastSuccessAt ??= state.lastCheckedAt;
   const parserChanged = state.eventParserVersion !== EVENT_PARSER_VERSION;
   reprojectSavedMatches(state, config);
   if (parserChanged && state.matches.length) await persist(config, state, now);
   const errors: string[] = [];
-  let fetched: { posts: XPost[]; newestId: string | null } | undefined;
+  let fetched: Awaited<ReturnType<PostSource["getPosts"]>> | undefined;
   const bootstrap = state.sinceId === null;
 
   try {
@@ -136,6 +153,11 @@ async function runLocked(config: AppConfig, deps: Dependencies): Promise<Monitor
 
   if (fetched) {
     const { posts, newestId } = fetched;
+    updateLatestObservedPost(
+      state,
+      fetched.latestObservedPost ?? newestPost(posts),
+    );
+
     for (const post of [...posts].sort((a, b) => (BigInt(a.id) < BigInt(b.id) ? -1 : 1))) {
       const identity = post.canonicalId ?? post.id;
       const version = postVersion(post);

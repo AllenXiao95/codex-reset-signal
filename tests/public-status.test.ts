@@ -8,6 +8,13 @@ describe("public status projection", () => {
     state.lastCheckedAt = "2026-09-09T03:00:00Z";
     state.lastSuccessAt = "2026-09-09T03:00:00Z";
     state.lastRunStatus = "failed-1";
+    state.latestObservedPost = {
+      id: "3",
+      text: "Astra demand is unprecedented.",
+      createdAt: "2026-09-09T02:30:00Z",
+      url: "https://x.com/thsottiaux/status/3",
+      media: [],
+    };
     state.matches = [
       {
         version: "v1",
@@ -44,6 +51,13 @@ describe("public status projection", () => {
     expect(status.latest.reset?.events[0].time.start).toBe(
       "2026-09-09T03:00:00Z",
     );
+    expect(status.latestObservedPost).toEqual({
+      id: "3",
+      text: "Astra demand is unprecedented.",
+      postCreatedAt: "2026-09-09T02:30:00Z",
+      url: "https://x.com/thsottiaux/status/3",
+    });
+    expect(status.recent.map((item) => item.id)).toEqual(["2"]);
     expect(status.monitor.lastRunStatus).toBe("failed-1");
   });
 });
