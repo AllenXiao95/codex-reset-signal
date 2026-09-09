@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2097752790177370535",
-  "lastCheckedAt": "2026-09-09T18:27:56.374Z",
-  "lastSuccessAt": "2026-09-09T18:27:56.374Z",
-  "lastRunStatus": "checked-1-posts",
+  "lastCheckedAt": "2026-09-09T18:32:48.433Z",
+  "lastSuccessAt": "2026-09-09T18:32:48.433Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 24,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
       "id": "2097752790177370535",
-      "canonicalId": "2097752790177370535",
       "text": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
       "createdAt": "2026-09-09T18:23:34.000Z",
       "url": "https://x.com/thsottiaux/status/2097752790177370535",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-09-09T18:27:56.377Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-09-09T18:27:56.377Z"
+      ]
     },
     {
       "version": "b50e754a6dcfb2d10e42750477c3affac9d40364b3543919f0e537a0c5574e7b",
