@@ -92,6 +92,7 @@
         </section>
         <section class="card">
           <h2>Monitor</h2>
+          <div class="metric"><span>Latest post observed</span><strong id="latest-observed">—</strong></div>
           <div class="metric"><span>Last checked</span><strong id="last-checked">—</strong></div>
           <div class="metric"><span>Last successful</span><strong id="last-success">—</strong></div>
           <div class="metric"><span>Provider</span><strong id="provider">—</strong></div>
@@ -228,6 +229,7 @@
         const resetSignal = state?.latest?.reset || null;
         const resetEvent = eventFrom(resetSignal, "reset");
         const resetCountdown = countdown(resetEvent);
+        const observed = state?.latestObservedPost || null;
         $("reset-heading").textContent = resetCountdown ? "Next reset" : "Latest reset";
         $("reset-status").textContent = resetEvent?.status || (resetSignal ? "announced" : "Waiting");
         $("reset-time").textContent = resetCountdown || displayEvent(resetEvent);
@@ -238,6 +240,9 @@
         $("last-bank").textContent = displayEvent(lastTimedEvent("bank_credit"));
         $("bank-credit").textContent = displayEvent(eventFrom(state?.latest?.bankCredit || null, "bank_credit"));
         $("bank-expiry").textContent = displayEvent(eventFrom(state?.latest?.bankExpiry || null, "bank_expiry"));
+        $("latest-observed").textContent = observed
+          ? `${formatMoment(observed.postCreatedAt)} · ${observed.text}`
+          : "No post observed";
         $("last-checked").textContent = formatMoment(state?.monitor?.lastCheckedAt || null);
         $("last-success").textContent = formatMoment(state?.monitor?.lastSuccessAt || null);
         $("provider").textContent = state?.monitor?.provider || "—";
