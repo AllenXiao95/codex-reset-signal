@@ -8,6 +8,7 @@ import styles from "./dashboard.module.css";
 const RAW_STATUS_URL =
   "https://raw.githubusercontent.com/AllenXiao95/codex-reset-signal/monitor-state/status.json";
 const STORAGE_KEY = "reset-signal-timezone";
+const STATUS_REFRESH_INTERVAL_MS = 300_000;
 
 const commonZones = [
   "UTC",
@@ -139,17 +140,18 @@ function health(status: PublicStatus | null, now: number) {
   return { label: "Stale", className: styles.degraded };
 }
 
-async function loadStatus(): Promise<PublicStatus> {
+async function loadStatus(signal?: AbortSignal): Promise<PublicStatus> {
   const paths = ["/api/status", `${RAW_STATUS_URL}?_=${Date.now()}`];
   let lastError: unknown;
   for (const path of paths) {
     try {
-      const response = await fetch(path, { cache: "no-store" });
+      const response = await fetch(path, { cache: "no-store", signal });
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const value = (await response.json()) as PublicStatus;
       if (value.schemaVersion !== 1) throw new Error("Unsupported status schema");
       return value;
     } catch (error) {
+      if (signal?.aborted) throw error;
       lastError = error;
     }
   }
@@ -176,17 +178,68 @@ export default function ResetDashboard() {
   }, []);
 
   useEffect(() => {
-    const refresh = async () => {
-      try {
-        setStatus(await loadStatus());
-        setError(null);
-      } catch {
-        setError("Live status is temporarily unavailable.");
+    let timer: number | null = null;
+    let controller: AbortController | null = null;
+    let disposed = false;
+
+    const stopTimer = () => {
+      if (timer !== null) {
+        window.clearTimeout(timer);
+        timer = null;
       }
     };
-    void refresh();
-    const timer = window.setInterval(() => void refresh(), 60_000);
-    return () => window.clearInterval(timer);
+
+    const schedule = () => {
+      stopTimer();
+      if (!disposed && !document.hidden) {
+        timer = window.setTimeout(() => void poll(), STATUS_REFRESH_INTERVAL_MS);
+      }
+    };
+
+    const refresh = async () => {
+      if (disposed || document.hidden) return;
+      controller?.abort();
+      const current = new AbortController();
+      controller = current;
+      try {
+        const nextStatus = await loadStatus(current.signal);
+        if (!disposed && !current.signal.aborted) {
+          setStatus(nextStatus);
+          setError(null);
+        }
+      } catch (refreshError) {
+        if (!disposed && !current.signal.aborted) {
+          setError("Live status is temporarily unavailable.");
+        }
+      } finally {
+        if (controller === current) controller = null;
+      }
+    };
+
+    const poll = async () => {
+      await refresh();
+      schedule();
+    };
+
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        stopTimer();
+        controller?.abort();
+        controller = null;
+        return;
+      }
+      void poll();
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    void poll();
+
+    return () => {
+      disposed = true;
+      stopTimer();
+      controller?.abort();
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
   }, []);
 
   const timezone = timezoneChoice === "auto" ? autoTimezone : timezoneChoice;
