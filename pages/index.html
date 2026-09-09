@@ -141,13 +141,13 @@
       select.addEventListener("change", () => { selected = select.value; localStorage.setItem(STORAGE_KEY, selected); render(); });
       const zone = () => selected === "auto" ? autoZone : selected;
 
-      function formatMoment(iso, includeDate = true) {
+      function formatMoment(iso, includeDate = true, timezoneOverride = null) {
         if (!iso) return "—";
         const date = new Date(iso);
         if (Number.isNaN(date.getTime())) return "—";
         const options = includeDate
-          ? { year:"numeric", month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZone:zone(), timeZoneName:"short" }
-          : { hour:"2-digit", minute:"2-digit", timeZone:zone(), timeZoneName:"short" };
+          ? { year:"numeric", month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZone:timezoneOverride || zone(), timeZoneName:"short" }
+          : { hour:"2-digit", minute:"2-digit", timeZone:timezoneOverride || zone(), timeZoneName:"short" };
         return new Intl.DateTimeFormat(undefined, options).format(date).replace(/\bGMT\b/g, "UTC");
       }
 
@@ -213,7 +213,7 @@
         if (!recent.length) { const p = document.createElement("p"); p.className = "empty"; p.textContent = "No public signals yet."; root.appendChild(p); return; }
         recent.slice(0, 10).forEach((signal) => {
           const a = document.createElement("a"); a.className = "signal"; a.href = safeHttps(signal.url); a.target = "_blank"; a.rel = "noreferrer";
-          const time = document.createElement("time"); time.textContent = formatMoment(signal.postCreatedAt || signal.detectedAt);
+          const time = document.createElement("time"); time.textContent = formatMoment(signal.postCreatedAt || signal.detectedAt, true, "UTC");
           const text = document.createElement("p"); text.textContent = signal.text || "Signal";
           const type = document.createElement("small"); type.textContent = (signal.events || []).map((event) => event.type).join(" + ") || "signal";
           a.append(time, text, type); root.appendChild(a);
