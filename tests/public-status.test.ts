@@ -79,4 +79,11 @@ describe("public status projection", () => {
       time: { kind: "unknown", start: null },
     });
   });
+
+  it("does not inject Tibo history into a fork targeting another account", () => {
+    const state = emptyState("someone_else", "reset");
+    const status = buildPublicStatus(state, "fxembed");
+    expect(status.latest.bankCredit).toBeNull();
+    expect(status.recent).toEqual([]);
+  });
 });
