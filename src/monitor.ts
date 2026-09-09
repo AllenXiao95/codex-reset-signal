@@ -6,10 +6,12 @@ import { extractEvents } from "./events";
 import { containsKeyword } from "./matcher";
 import { createTargets, type NotificationTarget } from "./notifications";
 import { readState, writeState } from "./state";
-import { XClient } from "./x-client";
+import { createPostSource, type PostSource } from "./post-source";
 
 type Dependencies = {
-  xClient?: Pick<XClient, "getPosts" | "resolveUserId">;
+  source?: PostSource;
+  /** @deprecated Use source. Kept for existing integrations. */
+  xClient?: PostSource;
   targets?: NotificationTarget[];
   now?: () => Date;
 };
@@ -57,7 +59,7 @@ async function runLocked(
     config.username,
     config.keyword,
   );
-  const client = deps.xClient ?? new XClient(config.xBearerToken);
+  const client = deps.source ?? deps.xClient ?? createPostSource(config);
   const targets = deps.targets ?? createTargets(config);
   if (!targets.length) throw new Error("No notification targets configured");
   const now = deps.now ?? (() => new Date());
@@ -77,7 +79,7 @@ async function runLocked(
       bootstrap,
     });
   } catch {
-    errors.push("X collection failed; cursor not advanced");
+    errors.push(`${config.sourceProvider} collection failed; cursor not advanced`);
   }
   if (fetched) {
     const { posts, newestId } = fetched;

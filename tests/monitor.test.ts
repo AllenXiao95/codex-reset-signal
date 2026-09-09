@@ -2,6 +2,7 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { FxEmbedClient } from "../src/fxembed-client";
 import { loadConfig } from "../src/config";
 import { runMonitor } from "../src/monitor";
 import { emptyState, writeState } from "../src/state";
@@ -81,7 +82,7 @@ describe("durable monitor delivery", () => {
     await expect(runMonitor(config, deps)).rejects.toThrow();
     client.getPosts.mockRejectedValue(new Error());
     await expect(runMonitor(config, deps)).rejects.toThrow(
-      "X collection failed",
+      "fxembed collection failed",
     );
     expect(send).toHaveBeenCalledTimes(2);
     expect(JSON.parse(await readFile(config.statePath, "utf8")).outbox).toEqual(
@@ -130,5 +131,34 @@ describe("durable monitor delivery", () => {
     await expect(
       runMonitor({ ...config, username: "someone_else" }, deps),
     ).rejects.toThrow("different account");
+  });
+});
+
+
+describe("FxEmbed monitor integration", () => {
+  it("preserves checkpoints on a later-page failure, then recovers without duplicate delivery", async () => {
+    const { config } = await setup();
+    const response = (id: string, bottom: string | null) => Response.json({
+      code: 200, cursor: { bottom }, results: [{ type: "status", id,
+        author: { id: "42" }, text: post.text, created_at: post.createdAt }],
+    });
+    const fetcher = vi.fn()
+      .mockResolvedValueOnce(Response.json({ code: 200, user: { id: "42", screen_name: "thsottiaux" } }))
+      .mockResolvedValueOnce(response("2", "next"))
+      .mockResolvedValueOnce(new Response(null, { status: 503 }))
+      .mockResolvedValueOnce(response("2", "next"))
+      .mockResolvedValueOnce(response("1", null))
+      .mockResolvedValueOnce(response("2", "next"));
+    const send = vi.fn();
+    const deps = { source: new FxEmbedClient(fetcher), targets: [{ id: "a", channel: "fake", send }] };
+    await expect(runMonitor(config, deps)).rejects.toThrow("fxembed collection failed");
+    const failed = JSON.parse(await readFile(config.statePath, "utf8"));
+    expect(failed.sinceId).toBe("1");
+    expect(failed.lastCheckedAt).toBeNull();
+    expect(send).not.toHaveBeenCalled();
+    expect((await runMonitor(config, deps)).sinceId).toBe("2");
+    await runMonitor(config, deps);
+    expect(send).toHaveBeenCalledTimes(1);
+    expect(fetcher.mock.calls.every(([url]) => (url as URL).hostname === "api.fxtwitter.com")).toBe(true);
   });
 });

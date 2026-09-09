@@ -14,7 +14,11 @@ function toBoolean(value: string | undefined, fallback = false): boolean {
 }
 
 export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
+  const sourceProvider = env.SOURCE_PROVIDER?.trim().toLowerCase() || "fxembed";
+  if (sourceProvider !== "fxembed" && sourceProvider !== "x")
+    throw new Error("SOURCE_PROVIDER must be fxembed or x.");
   return {
+    sourceProvider,
     timezone: env.TARGET_TIMEZONE?.trim() || "Asia/Shanghai",
     sourceTimezone: env.SOURCE_TIMEZONE?.trim() || undefined,
     telegramBotToken: env.TELEGRAM_BOT_TOKEN?.trim(),
@@ -45,8 +49,8 @@ export function validateConfig(
 ): string[] {
   const errors: string[] = [];
 
-  if (!options.offline && !config.xBearerToken)
-    errors.push("X_BEARER_TOKEN is required.");
+  if (!options.offline && config.sourceProvider === "x" && !config.xBearerToken)
+    errors.push("X_BEARER_TOKEN is required when SOURCE_PROVIDER=x.");
   if (!/^[A-Za-z0-9_]{1,15}$/.test(config.username)) {
     errors.push("X_USERNAME must be a valid X handle.");
   }

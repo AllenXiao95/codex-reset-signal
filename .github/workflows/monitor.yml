@@ -19,6 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
+      SOURCE_PROVIDER: ${{ vars.SOURCE_PROVIDER || 'fxembed' }}
       X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
       X_USERNAME: ${{ vars.X_USERNAME || 'thsottiaux' }}
       MATCH_WORD: ${{ vars.MATCH_WORD || 'reset' }}

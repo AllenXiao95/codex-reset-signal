@@ -49,6 +49,7 @@ export type MonitorState = {
 };
 
 export type AppConfig = {
+  sourceProvider: "fxembed" | "x";
   timezone: string;
   sourceTimezone?: string;
   telegramBotToken?: string;
