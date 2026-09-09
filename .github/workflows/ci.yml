@@ -22,6 +22,12 @@ jobs:
       - run: npm test
       - run: npm run typecheck
       - run: npm run pages:validate
+      - name: Keep Cloudflare template zero-config
+        run: |
+          if grep -Eq '^[A-Za-z_][A-Za-z0-9_]*=' .env.example; then
+            echo ".env.example must not declare variables; Cloudflare treats them as first-deploy inputs."
+            exit 1
+          fi
       - run: npm run build
       - name: Validate Cloudflare Workers bundle
         run: npm run cloudflare:dry-run
