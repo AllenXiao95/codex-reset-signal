@@ -4,7 +4,6 @@
 
 [![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
 [![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
 
 Monitor public X posts from [Tibo (@thsottiaux)](https://x.com/thsottiaux), recognize reset / reset bank / banked reset signals, extract event times, and publish both notifications and a live timezone-aware dashboard.
 
@@ -37,10 +36,10 @@ Key properties:
 ## GitHub Actions monitoring
 
 1. Enable Actions for the repository/fork.
-2. Manually run **Monitor X for reset** once.
+2. Manually run **Monitor X for reset** once to validate the setup.
 3. Open the run **Summary** to inspect the monitor result.
-4. Set repository variable `MONITOR_ENABLED=true` to enable the roughly five-minute schedule.
-5. Configure optional external notification channels under **Settings → Secrets and variables → Actions**.
+4. The roughly five-minute schedule is enabled by default. Set repository variable `MONITOR_ENABLED=false` only when you want to disable scheduled runs; manual dispatch still remains available.
+5. Configure optional external notification channels under **Settings → Secrets and variables → Actions** when needed.
 
 The workflow checks out two branches:
 
@@ -70,7 +69,7 @@ Each external channel must be configured completely or left blank. Generic webho
 
 ## Live dashboard
 
-The homepage now answers the operational question first: **when is the latest reset?**
+The homepage answers the operational question first: **when is the latest reset?**
 
 It shows:
 
@@ -112,16 +111,37 @@ Detected signals include parsed `events`, post creation time, detection time, or
 
 ## Cloudflare Workers
 
-Cloudflare Workers is the primary hosted dashboard target. The repository includes `wrangler.jsonc` and a Worker-compatible vinext entrypoint.
+Cloudflare Workers is the primary hosted dashboard target. The repository already includes `wrangler.jsonc` and a Worker-compatible vinext entrypoint.
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
+### Recommended: deploy an existing fork/repository
 
-Cloudflare repository import settings:
+If you already forked or own this repository, **do not use the Deploy to Cloudflare button**. That button is a template flow: Cloudflare clones the source into a **new GitHub/GitLab repository**, so it will report a repository-name conflict when `codex-reset-signal` already exists in your account.
+
+Use the existing-repository flow instead:
+
+1. Cloudflare Dashboard → **Workers & Pages** → **Create application**.
+2. Choose **Import a repository**.
+3. Select your existing `codex-reset-signal` repository/fork.
+4. Keep the repository root as the build root.
+5. Use:
 
 ```text
 Build command:  npm run build
 Deploy command: npx wrangler deploy --config wrangler.jsonc
 ```
+
+6. Save and deploy. The initial Worker deployment needs no application-specific secret.
+7. After deployment, if this is a fork, add optional runtime variable `RESET_STATUS_URL` and point it to your fork's raw `monitor-state/status.json` URL.
+
+When connecting an existing Worker to Git, keep the Cloudflare Worker name consistent with the `name` in `wrangler.jsonc` (`codex-reset-signal`) or update both together.
+
+### Deploy Button: only when you want Cloudflare to create a new repository
+
+If you have **not** already forked/cloned this project into your GitHub/GitLab account and want Cloudflare to create a new repository for you, the template flow remains available:
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
+
+The repository keeps root `.env.example` assignment-free so the template flow does not ask for unrelated monitor notification secrets during first deployment. Full local/Docker monitor configuration lives in `monitor.env.example`.
 
 Validate without deploying:
 
@@ -133,9 +153,9 @@ npm run build
 npm run cloudflare:dry-run
 ```
 
-The Worker route `/api/status` reads the public runtime projection on demand, so a monitor update does **not** redeploy the website. For a fork deployed to Cloudflare, set runtime variable `RESET_STATUS_URL` to that fork's raw `monitor-state/status.json` URL; otherwise the default points to this repository.
+The Worker route `/api/status` reads the public runtime projection on demand, so a monitor update does **not** redeploy the website. `RESET_STATUS_URL` is optional: without it, the Worker reads this repository's status source; fork users can configure their own source later.
 
-The monitor itself remains on GitHub Actions or Docker. No KV, D1, Workers Cron, SSE, or WebSocket is required.
+The monitor itself remains on GitHub Actions or Docker. No KV, D1, SSE, or WebSocket is required for the dashboard.
 
 ## GitHub Pages fallback
 
@@ -154,10 +174,11 @@ The primary supported build/deploy path remains Cloudflare Workers because the c
 | `SOURCE_TIMEZONE` | empty | Explicit assumption for source-local clock times without a timezone |
 | `INCLUDE_MENTIONS` | `true` | Keep clearly unconfirmed reset discussions/requests |
 | `X_EXCLUDE_REPLIES` | `false` | Exclude target-authored replies |
-| `MONITOR_ENABLED` | disabled | Actions schedule opt-in |
+| `MONITOR_ENABLED` | enabled unless `false` | Actions schedule opt-out switch |
 | `BOOTSTRAP_NOTIFY` | `false` | Historical notification opt-in for local runs; Actions forces false |
 | `STATE_PATH` | `data/state.json` | Local runtime state path |
 | `PUBLIC_STATUS_PATH` | optional | Public projection path; Actions uses `runtime/status.json` |
+| `RESET_STATUS_URL` | project status source | Optional Cloudflare Worker status source override |
 | `WEBHOOK_DEBUG` | `false` | Sanitized webhook hostname/status/timing diagnostics |
 | `POLL_INTERVAL_SECONDS` | `300` | Loop mode polling interval, minimum 60 seconds |
 
@@ -187,7 +208,7 @@ This uses synthetic fixtures, does not contact X/FxEmbed or mutate monitor state
 ## Local / Docker
 
 ```bash
-cp .env.example .env
+cp monitor.env.example .env
 npm run monitor
 npm run monitor:loop
 ```
