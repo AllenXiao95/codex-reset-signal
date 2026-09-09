@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T08:37:57.837Z",
+  "updatedAt": "2026-09-09T08:42:52.988Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-09T08:37:57.835Z",
-    "lastSuccessAt": "2026-09-09T08:37:57.835Z",
+    "lastCheckedAt": "2026-09-09T08:42:52.986Z",
+    "lastSuccessAt": "2026-09-09T08:42:52.986Z",
     "lastRunStatus": "checked-0-posts"
   },
   "latestObservedPost": {
@@ -37,9 +37,33 @@
           }
         }
       ],
-      "deliveryChannels": []
+      "deliveryChannels": [],
+      "origin": "live"
     },
-    "bankCredit": null,
+    "bankCredit": {
+      "version": "history:2096035437299237298",
+      "id": "2096035437299237298",
+      "text": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day. Happy Astra day and enjoy a phenomenal weekend. PS: If you create the account or upgrade before 8pm PT you will get it too. Still time!",
+      "url": "https://x.com/thsottiaux/status/2096035437299237298",
+      "postCreatedAt": "2026-09-05T00:39:25.364Z",
+      "detectedAt": "2026-09-09T08:30:00.000Z",
+      "events": [
+        {
+          "type": "bank_credit",
+          "status": "announced",
+          "evidence": "we will do the full banked reset today too for all Plus, Pro and Business users",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Lands end of day",
+            "note": "Banked reset was promised by end of day, but no safe exact landing time is stated. The separate 8pm PT time is an eligibility cutoff for account creation or upgrade, not the bank-credit landing time."
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "historical_seed"
+    },
     "bankExpiry": null
   },
   "recent": [
@@ -64,7 +88,8 @@
           }
         }
       ],
-      "deliveryChannels": []
+      "deliveryChannels": [],
+      "origin": "live"
     },
     {
       "version": "83da6efba27a699e3da0bd2f5597fff04ac688939dacedde1a3d368dc3bd1c40",
@@ -87,7 +112,8 @@
           }
         }
       ],
-      "deliveryChannels": []
+      "deliveryChannels": [],
+      "origin": "live"
     },
     {
       "version": "d7871012627c721649133d4093900656209c659585a7fa7d8d214a8c9ecf9f5d",
@@ -110,7 +136,8 @@
           }
         }
       ],
-      "deliveryChannels": []
+      "deliveryChannels": [],
+      "origin": "live"
     },
     {
       "version": "a47e815d8663324f2467116b8e9700de6ee8210355bf2859ae854dabb0124504",
@@ -132,7 +159,32 @@
           }
         }
       ],
-      "deliveryChannels": []
+      "deliveryChannels": [],
+      "origin": "live"
+    },
+    {
+      "version": "history:2096035437299237298",
+      "id": "2096035437299237298",
+      "text": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day. Happy Astra day and enjoy a phenomenal weekend. PS: If you create the account or upgrade before 8pm PT you will get it too. Still time!",
+      "url": "https://x.com/thsottiaux/status/2096035437299237298",
+      "postCreatedAt": "2026-09-05T00:39:25.364Z",
+      "detectedAt": "2026-09-09T08:30:00.000Z",
+      "events": [
+        {
+          "type": "bank_credit",
+          "status": "announced",
+          "evidence": "we will do the full banked reset today too for all Plus, Pro and Business users",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Lands end of day",
+            "note": "Banked reset was promised by end of day, but no safe exact landing time is stated. The separate 8pm PT time is an eligibility cutoff for account creation or upgrade, not the bank-credit landing time."
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "historical_seed"
     }
   ]
 }
