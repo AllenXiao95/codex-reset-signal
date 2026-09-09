@@ -181,6 +181,7 @@ export default function ResetDashboard() {
     let timer: number | null = null;
     let controller: AbortController | null = null;
     let disposed = false;
+    let lastSuccessfulRefreshAt: number | null = null;
 
     const stopTimer = () => {
       if (timer !== null) {
@@ -189,15 +190,15 @@ export default function ResetDashboard() {
       }
     };
 
-    const schedule = () => {
+    const schedule = (delay = STATUS_REFRESH_INTERVAL_MS) => {
       stopTimer();
       if (!disposed && !document.hidden) {
-        timer = window.setTimeout(() => void poll(), STATUS_REFRESH_INTERVAL_MS);
+        timer = window.setTimeout(() => void poll(), Math.max(0, delay));
       }
     };
 
     const refresh = async () => {
-      if (disposed || document.hidden) return;
+      if (disposed || document.hidden) return false;
       controller?.abort();
       const current = new AbortController();
       controller = current;
@@ -206,6 +207,8 @@ export default function ResetDashboard() {
         if (!disposed && !current.signal.aborted) {
           setStatus(nextStatus);
           setError(null);
+          lastSuccessfulRefreshAt = Date.now();
+          return true;
         }
       } catch (refreshError) {
         if (!disposed && !current.signal.aborted) {
@@ -214,6 +217,7 @@ export default function ResetDashboard() {
       } finally {
         if (controller === current) controller = null;
       }
+      return false;
     };
 
     const poll = async () => {
@@ -228,7 +232,18 @@ export default function ResetDashboard() {
         controller = null;
         return;
       }
-      void poll();
+
+      if (lastSuccessfulRefreshAt === null) {
+        void poll();
+        return;
+      }
+
+      const elapsed = Date.now() - lastSuccessfulRefreshAt;
+      if (elapsed >= STATUS_REFRESH_INTERVAL_MS) {
+        void poll();
+      } else {
+        schedule(STATUS_REFRESH_INTERVAL_MS - elapsed);
+      }
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
