@@ -47,7 +47,9 @@ function formatMoment(iso: string | null, timezone: string): string {
     minute: "2-digit",
     timeZone: timezone,
     timeZoneName: "short",
-  }).format(date);
+  })
+    .format(date)
+    .replace(/\bGMT\b/g, "UTC");
 }
 
 function formatDate(iso: string | null, timezone: string): string {
