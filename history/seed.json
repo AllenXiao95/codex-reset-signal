@@ -1,0 +1,31 @@
+[
+  {
+    "id": "2096035437299237298",
+    "text": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day. Happy Astra day and enjoy a phenomenal weekend. PS: If you create the account or upgrade before 8pm PT you will get it too. Still time!",
+    "url": "https://x.com/thsottiaux/status/2096035437299237298",
+    "postCreatedAt": "2026-09-05T00:39:25.364Z",
+    "collectedAt": "2026-09-09T08:30:00.000Z",
+    "verification": {
+      "stopReason": "first previous full banked reset found while walking backward from the current live history",
+      "sources": [
+        "https://x.com/thsottiaux/status/2096035437299237298",
+        "https://aiplanwatch.com/codex/reset-history",
+        "https://texxr.com/handle/thsottiaux"
+      ]
+    },
+    "events": [
+      {
+        "type": "bank_credit",
+        "status": "announced",
+        "evidence": "we will do the full banked reset today too for all Plus, Pro and Business users",
+        "time": {
+          "kind": "unknown",
+          "start": null,
+          "end": null,
+          "evidence": "Lands end of day",
+          "note": "Banked reset was promised by end of day, but no safe exact landing time is stated. The separate 8pm PT time is an eligibility cutoff for account creation or upgrade, not the bank-credit landing time."
+        }
+      }
+    ]
+  }
+]
