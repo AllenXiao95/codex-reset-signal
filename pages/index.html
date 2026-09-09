@@ -148,7 +148,7 @@
         const options = includeDate
           ? { year:"numeric", month:"short", day:"numeric", hour:"2-digit", minute:"2-digit", timeZone:zone(), timeZoneName:"short" }
           : { hour:"2-digit", minute:"2-digit", timeZone:zone(), timeZoneName:"short" };
-        return new Intl.DateTimeFormat(undefined, options).format(date);
+        return new Intl.DateTimeFormat(undefined, options).format(date).replace(/\bGMT\b/g, "UTC");
       }
 
       function eventFrom(signal, type) { return signal?.events?.find((event) => event.type === type) || null; }
