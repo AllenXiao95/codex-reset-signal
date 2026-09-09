@@ -1,3 +1,4 @@
+import { IANAZone } from "luxon";
 import type { AppConfig } from "./types";
 
 function splitList(value: string | undefined): string[] {
@@ -14,6 +15,14 @@ function toBoolean(value: string | undefined, fallback = false): boolean {
 
 export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
   return {
+    timezone: env.TARGET_TIMEZONE?.trim() || "Asia/Shanghai",
+    sourceTimezone: env.SOURCE_TIMEZONE?.trim() || undefined,
+    telegramBotToken: env.TELEGRAM_BOT_TOKEN?.trim(),
+    telegramChatIds: splitList(env.TELEGRAM_CHAT_IDS),
+    discordWebhookUrls: splitList(env.DISCORD_WEBHOOK_URLS),
+    webhookUrls: splitList(env.WEBHOOK_URLS),
+    webhookSecret: env.WEBHOOK_SECRET?.trim(),
+    includeMentions: toBoolean(env.INCLUDE_MENTIONS, true),
     xBearerToken: env.X_BEARER_TOKEN?.trim() ?? "",
     username: env.X_USERNAME?.trim().replace(/^@/, "") || "thsottiaux",
     keyword: env.MATCH_WORD?.trim() || "reset",
@@ -30,10 +39,14 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
   };
 }
 
-export function validateConfig(config: AppConfig): string[] {
+export function validateConfig(
+  config: AppConfig,
+  options: { offline?: boolean } = {},
+): string[] {
   const errors: string[] = [];
 
-  if (!config.xBearerToken) errors.push("X_BEARER_TOKEN is required.");
+  if (!options.offline && !config.xBearerToken)
+    errors.push("X_BEARER_TOKEN is required.");
   if (!/^[A-Za-z0-9_]{1,15}$/.test(config.username)) {
     errors.push("X_USERNAME must be a valid X handle.");
   }
@@ -64,8 +77,42 @@ export function validateConfig(config: AppConfig): string[] {
     );
   }
 
-  if (!config.emailTo.length && !config.smsTo.length) {
-    errors.push("Configure at least one notification channel (email or SMS).");
+  if (!IANAZone.isValidZone(config.timezone))
+    errors.push("TARGET_TIMEZONE must be an IANA timezone.");
+  if (config.sourceTimezone && !IANAZone.isValidZone(config.sourceTimezone))
+    errors.push("SOURCE_TIMEZONE must be an IANA timezone.");
+  if (
+    Boolean(config.telegramBotToken) !== Boolean(config.telegramChatIds.length)
+  )
+    errors.push("Telegram requires TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_IDS.");
+  for (const raw of [...config.discordWebhookUrls, ...config.webhookUrls]) {
+    try {
+      const url = new URL(raw);
+      if (url.protocol !== "https:" || url.username || url.password)
+        throw new Error();
+      if (
+        config.discordWebhookUrls.includes(raw) &&
+        (!/^(?:canary\.|ptb\.)?discord(?:app)?\.com$/.test(url.hostname) ||
+          !/^\/api(?:\/v\d+)?\/webhooks\/\d+\/[^/]+$/.test(url.pathname))
+      )
+        throw new Error();
+    } catch {
+      errors.push(
+        "Webhook URLs must be HTTPS; Discord URLs must be valid Discord webhook endpoints.",
+      );
+    }
+  }
+  if (
+    !options.offline &&
+    !config.emailTo.length &&
+    !config.smsTo.length &&
+    !config.telegramChatIds.length &&
+    !config.discordWebhookUrls.length &&
+    !config.webhookUrls.length
+  ) {
+    errors.push(
+      "Configure at least one notification channel (email, SMS, Telegram, Discord, or webhook).",
+    );
   }
 
   return errors;

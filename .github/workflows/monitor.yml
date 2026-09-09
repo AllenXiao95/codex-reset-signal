@@ -2,6 +2,8 @@ name: Monitor X for reset
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "3-58/5 * * * *"
 
 permissions:
   contents: write
@@ -12,14 +14,24 @@ concurrency:
 
 jobs:
   monitor:
+    # Forks are inactive until the owner configures credentials and opts in.
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || vars.MONITOR_ENABLED == 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
       X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
-      X_USERNAME: thsottiaux
-      MATCH_WORD: reset
-      X_EXCLUDE_REPLIES: "false"
+      X_USERNAME: ${{ vars.X_USERNAME || 'thsottiaux' }}
+      MATCH_WORD: ${{ vars.MATCH_WORD || 'reset' }}
+      X_EXCLUDE_REPLIES: ${{ vars.X_EXCLUDE_REPLIES || 'false' }}
       BOOTSTRAP_NOTIFY: "false"
+      TARGET_TIMEZONE: ${{ vars.TARGET_TIMEZONE || 'Asia/Shanghai' }}
+      SOURCE_TIMEZONE: ${{ vars.SOURCE_TIMEZONE }}
+      INCLUDE_MENTIONS: ${{ vars.INCLUDE_MENTIONS || 'true' }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+      DISCORD_WEBHOOK_URLS: ${{ secrets.DISCORD_WEBHOOK_URLS }}
+      WEBHOOK_URLS: ${{ secrets.WEBHOOK_URLS }}
+      WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
       EMAIL_TO: ${{ secrets.EMAIL_TO }}
@@ -31,24 +43,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 1
-
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
-
       - run: npm ci
-      - run: npm run monitor
-
-      - name: Persist monitor cursor
+      - name: Run monitor
+        id: monitor
+        run: npm run monitor
+      - name: Persist cursor and delivery checkpoints even after notification failure
+        id: persist
+        if: always() && steps.monitor.outcome != 'skipped'
         run: |
           if git diff --quiet -- data/state.json; then
-            echo "No state change."
             exit 0
           fi
           git config user.name "reset-signal[bot]"
           git config user.email "reset-signal[bot]@users.noreply.github.com"
           git add data/state.json
           git commit -m "chore: update monitor state"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Keep recovery checkpoint if git persistence failed
+        if: failure() && steps.persist.outcome == 'failure'
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitor-state-recovery
+          path: data/state.json
+          retention-days: 7

@@ -21,7 +21,20 @@ export async function readState(
   keyword: string,
 ): Promise<MonitorState> {
   try {
-    return JSON.parse(await readFile(path, "utf8")) as MonitorState;
+    const state = JSON.parse(await readFile(path, "utf8")) as MonitorState;
+    if (state.username !== username || state.keyword !== keyword)
+      throw new Error(
+        "State belongs to a different account or keyword; use a new STATE_PATH",
+      );
+    if (
+      !Array.isArray(state.matches) ||
+      !Number.isFinite(state.postsScanned) ||
+      (state.sinceId !== null && !/^\d+$/.test(state.sinceId))
+    )
+      throw new Error("Invalid monitor state; restore a known-good backup");
+    if (state.version !== undefined && state.version !== 2)
+      throw new Error("Unsupported state version");
+    return state;
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "ENOENT") {
       return emptyState(username, keyword);
@@ -30,7 +43,10 @@ export async function readState(
   }
 }
 
-export async function writeState(path: string, state: MonitorState): Promise<void> {
+export async function writeState(
+  path: string,
+  state: MonitorState,
+): Promise<void> {
   await mkdir(dirname(path), { recursive: true });
   const temporaryPath = `${path}.tmp`;
   await writeFile(temporaryPath, `${JSON.stringify(state, null, 2)}\n`, "utf8");

@@ -1,0 +1,13 @@
+services:
+  monitor:
+    build: .
+    env_file: .env
+    environment:
+      STATE_PATH: /app/state/state.json
+    volumes:
+      - monitor-state:/app/state
+    init: true
+    restart: unless-stopped
+    stop_grace_period: 90s
+volumes:
+  monitor-state:

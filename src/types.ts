@@ -1,3 +1,4 @@
+import type { ResetEvent } from "./events";
 export type XMedia = {
   mediaKey: string;
   type: "photo" | "video" | "animated_gif" | string;
@@ -12,6 +13,7 @@ export type XPost = {
   createdAt: string | null;
   url: string;
   media: XMedia[];
+  canonicalId?: string;
 };
 
 export type MatchRecord = {
@@ -24,7 +26,18 @@ export type MatchRecord = {
   channels: string[];
 };
 
+export type PendingNotification = {
+  key: string;
+  post: XPost;
+  events: ResetEvent[];
+  targets: string[];
+  delivered: string[];
+};
+
 export type MonitorState = {
+  version?: 2;
+  outbox?: PendingNotification[];
+  seen?: Record<string, string>;
   username: string;
   keyword: string;
   userId: string | null;
@@ -36,6 +49,14 @@ export type MonitorState = {
 };
 
 export type AppConfig = {
+  timezone: string;
+  sourceTimezone?: string;
+  telegramBotToken?: string;
+  telegramChatIds: string[];
+  discordWebhookUrls: string[];
+  webhookUrls: string[];
+  webhookSecret?: string;
+  includeMentions: boolean;
   xBearerToken: string;
   username: string;
   keyword: string;

@@ -1,120 +1,197 @@
-import type { AppConfig, XPost } from "./types";
+import { createHash, createHmac } from "node:crypto";
+import type { AppConfig, PendingNotification, XPost } from "./types";
+import { formatTime, type ResetEvent } from "./events";
 
-function escapeHtml(value: string): string {
-  return value
+export type NotificationTarget = {
+  id: string;
+  channel: string;
+  send: (item: PendingNotification) => Promise<void>;
+};
+const digest = (value: string) =>
+  createHash("sha256").update(value).digest("hex");
+const escapeHtml = (value: string) =>
+  value
     .replaceAll("&", "&amp;")
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+const labels = {
+  reset: "额度重置",
+  bank_credit: "Bank 重置额度",
+  bank_expiry: "Bank 有效期",
+  mention: "Reset 相关讨论（未确认）",
+};
+const statuses = {
+  scheduled: "预告",
+  completed: "已宣布完成",
+  announced: "公告",
+  uncertain: "未确认",
+};
+export function renderText(
+  post: XPost,
+  events: ResetEvent[],
+  timezone: string,
+): string {
+  return [
+    `Reset Signal · @${new URL(post.url).pathname.split("/")[1]}`,
+    ...events.map(
+      (e) =>
+        `${labels[e.type]} · ${statuses[e.status]}\n${formatTime(e.time, timezone)}`,
+    ),
+    "",
+    post.text,
+    "",
+    post.url,
+  ].join("\n");
 }
-
-export function renderEmail(post: XPost, username: string, keyword: string): string {
-  const media = post.media
-    .map((item) => item.url || item.previewImageUrl)
-    .filter((url): url is string => Boolean(url))
+export function renderEmail(
+  post: XPost,
+  username: string,
+  keyword: string,
+  events: ResetEvent[] = [],
+  timezone = "Asia/Shanghai",
+): string {
+  const images = post.media
+    .map((m) => m.url || m.previewImageUrl)
+    .filter((url): url is string => Boolean(url) && /^https:\/\//i.test(url!))
     .map(
       (url) =>
-        `<img src="${escapeHtml(url)}" alt="Post media" style="display:block;width:100%;max-width:640px;border-radius:16px;margin:16px 0;" />`,
+        `<img src="${escapeHtml(url)}" alt="Post media" style="max-width:100%" />`,
     )
     .join("");
-
-  return `<!doctype html>
-<html><body style="margin:0;background:#f5f2ea;color:#181817;font-family:Arial,sans-serif">
-<div style="max-width:680px;margin:0 auto;padding:32px 20px">
-  <div style="font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#68665f">Reset Signal · @${escapeHtml(username)}</div>
-  <h1 style="font-size:32px;line-height:1.08;margin:16px 0">“${escapeHtml(keyword)}” detected.</h1>
-  <div style="background:#fff;border:1px solid #dedbd2;border-radius:20px;padding:24px">
-    <p style="font-size:18px;line-height:1.6;white-space:pre-wrap;margin-top:0">${escapeHtml(post.text)}</p>
-    ${media}
-    <a href="${escapeHtml(post.url)}" style="display:inline-block;background:#ff4f32;color:#fff;text-decoration:none;border-radius:999px;padding:12px 18px;font-weight:700">Open on X →</a>
-  </div>
-  <p style="font-size:12px;color:#77736b;margin-top:18px">Post ID ${escapeHtml(post.id)} · sent once by Reset Signal</p>
-</div></body></html>`;
+  return `<!doctype html><html><body><h1>Reset Signal · @${escapeHtml(username)} · ${escapeHtml(keyword)}</h1><pre style="white-space:pre-wrap">${escapeHtml(renderText(post, events, timezone))}</pre>${images}<a href="${escapeHtml(post.url)}">Open on X</a></body></html>`;
 }
 
-async function sendEmail(
+/** Recipient identity is hashed; no tokens, email addresses or URLs enter state. */
+export function createTargets(
   config: AppConfig,
-  post: XPost,
-  fetcher: typeof fetch,
-): Promise<void> {
-  if (!config.resendApiKey || !config.emailFrom || !config.emailTo.length) return;
-
-  const response = await fetcher("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${config.resendApiKey}`,
-      "Content-Type": "application/json",
-      "Idempotency-Key": `reset-signal-${post.id}`,
-    },
-    body: JSON.stringify({
-      from: config.emailFrom,
-      to: config.emailTo,
-      subject: `Reset Signal: @${config.username} mentioned “${config.keyword}”`,
-      html: renderEmail(post, config.username, config.keyword),
-      text: `${post.text}\n\n${post.url}`,
-    }),
-  });
-  if (!response.ok) {
-    throw new Error(`Resend failed (${response.status}): ${await response.text()}`);
-  }
-}
-
-async function sendSms(
-  config: AppConfig,
-  post: XPost,
-  fetcher: typeof fetch,
-): Promise<void> {
-  if (
-    !config.twilioAccountSid ||
-    !config.twilioAuthToken ||
-    !config.twilioFrom ||
-    !config.smsTo.length
-  ) {
-    return;
-  }
-
-  const endpoint = `https://api.twilio.com/2010-04-01/Accounts/${encodeURIComponent(
-    config.twilioAccountSid,
-  )}/Messages.json`;
-  const auth = Buffer.from(
-    `${config.twilioAccountSid}:${config.twilioAuthToken}`,
-  ).toString("base64");
-  const excerpt = post.text.length > 180 ? `${post.text.slice(0, 177)}…` : post.text;
-
-  for (const recipient of config.smsTo) {
-    const body = new URLSearchParams({
-      To: recipient,
-      From: config.twilioFrom,
-      Body: `Reset Signal — @${config.username}: ${excerpt}\n${post.url}`,
-    });
-    const response = await fetcher(endpoint, {
-      method: "POST",
-      headers: {
-        Authorization: `Basic ${auth}`,
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body,
-    });
-    if (!response.ok) {
-      throw new Error(`Twilio failed (${response.status}): ${await response.text()}`);
-    }
-  }
-}
-
-export async function notify(
-  config: AppConfig,
-  post: XPost,
   fetcher: typeof fetch = fetch,
-): Promise<string[]> {
-  const channels: string[] = [];
-  if (config.emailTo.length) {
-    await sendEmail(config, post, fetcher);
-    channels.push("email");
-  }
-  if (config.smsTo.length) {
-    await sendSms(config, post, fetcher);
-    channels.push("sms");
-  }
-  return channels;
+): NotificationTarget[] {
+  const targets: NotificationTarget[] = [];
+  const add = (
+    channel: string,
+    identity: string,
+    send: NotificationTarget["send"],
+  ) => {
+    const id = `${channel}:${digest(identity).slice(0, 24)}`;
+    if (!targets.some((t) => t.id === id)) targets.push({ id, channel, send });
+  };
+  const request = async (
+    url: string | URL,
+    body: unknown,
+    headers: Record<string, string> = {},
+  ) => {
+    let response: Response;
+    try {
+      response = await fetcher(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", ...headers },
+        body: JSON.stringify(body),
+        signal: AbortSignal.timeout(20_000),
+        redirect: "error",
+      });
+    } catch {
+      throw new Error("Notification request failed or timed out");
+    }
+    if (!response.ok) throw new Error(`Notification HTTP ${response.status}`);
+    return response;
+  };
+  for (const recipient of config.emailTo)
+    add("email", recipient, async (item) => {
+      await request(
+        "https://api.resend.com/emails",
+        {
+          from: config.emailFrom,
+          to: [recipient],
+          subject: `Reset Signal: @${config.username}`,
+          html: renderEmail(
+            item.post,
+            config.username,
+            config.keyword,
+            item.events,
+            config.timezone,
+          ),
+          text: renderText(item.post, item.events, config.timezone),
+        },
+        {
+          Authorization: `Bearer ${config.resendApiKey}`,
+          "Idempotency-Key": digest(`${item.key}:${recipient}`),
+        },
+      );
+    });
+  for (const recipient of config.smsTo)
+    add("sms", recipient, async (item) => {
+      const text = renderText(item.post, item.events, config.timezone);
+      let response: Response;
+      try {
+        response = await fetcher(
+          `https://api.twilio.com/2010-04-01/Accounts/${encodeURIComponent(config.twilioAccountSid!)}/Messages.json`,
+          {
+            method: "POST",
+            headers: {
+              Authorization: `Basic ${Buffer.from(`${config.twilioAccountSid}:${config.twilioAuthToken}`).toString("base64")}`,
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: new URLSearchParams({
+              To: recipient,
+              From: config.twilioFrom!,
+              Body: `${text.slice(0, 1200)}\n${item.post.url}`,
+            }),
+            signal: AbortSignal.timeout(20_000),
+            redirect: "error",
+          },
+        );
+      } catch {
+        throw new Error("SMS request failed or timed out");
+      }
+      if (!response.ok) throw new Error(`SMS HTTP ${response.status}`);
+    });
+  for (const chat of config.telegramChatIds)
+    add(
+      "telegram",
+      `${config.telegramBotToken?.split(":")[0]}:${chat}`,
+      async (item) => {
+        const response = await request(
+          `https://api.telegram.org/bot${config.telegramBotToken}/sendMessage`,
+          {
+            chat_id: chat,
+            text: `${renderText(item.post, item.events, config.timezone).slice(0, 3800)}\n${item.post.url}`,
+            link_preview_options: { is_disabled: true },
+          },
+        );
+        const result = (await response.json()) as { ok?: boolean };
+        if (!result.ok) throw new Error("Telegram rejected notification");
+      },
+    );
+  for (const endpoint of config.discordWebhookUrls)
+    add(
+      "discord",
+      new URL(endpoint).pathname.replace(/\/[^/]+$/, ""),
+      async (item) => {
+        const url = new URL(endpoint);
+        url.searchParams.set("wait", "true");
+        await request(url, {
+          content: `${renderText(item.post, item.events, config.timezone).slice(0, 1700)}\n${item.post.url}`,
+          allowed_mentions: { parse: [] },
+        });
+      },
+    );
+  for (const endpoint of config.webhookUrls)
+    add("webhook", endpoint, async (item) => {
+      const body = {
+        schema_version: 1,
+        delivery_id: item.key,
+        timezone: config.timezone,
+        post: item.post,
+        events: item.events,
+        text: renderText(item.post, item.events, config.timezone),
+      };
+      const headers: Record<string, string> = { "Idempotency-Key": item.key };
+      if (config.webhookSecret)
+        headers["X-Reset-Signature"] =
+          `sha256=${createHmac("sha256", config.webhookSecret).update(JSON.stringify(body)).digest("hex")}`;
+      await request(endpoint, body, headers);
+    });
+  return targets;
 }
