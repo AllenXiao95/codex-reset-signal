@@ -119,50 +119,50 @@ FxEmbed → parser → monitor-state
 
 This avoids duplicating the monitor implementation inside Cloudflare.
 
-### 4.1 Create a scheduler Worker
+### 4.1 Scheduler Worker is included in the repository
 
-Create a second Worker named, for example:
+The deployable scheduler runtime lives at:
 
 ```text
-codex-reset-signal-scheduler
+workers/scheduler/index.mjs
+workers/scheduler/wrangler.jsonc
 ```
 
-Use this minimal Worker:
+Its `scheduled()` handler calls GitHub's workflow-dispatch API for `monitor.yml`. The default target is the canonical repository and `main` branch.
 
-```js
-export default {
-  async scheduled(controller, env, ctx) {
-    const response = await fetch(
-      "https://api.github.com/repos/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/dispatches",
-      {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${env.GITHUB_TOKEN}`,
-          Accept: "application/vnd.github+json",
-          "X-GitHub-Api-Version": "2022-11-28",
-          "User-Agent": "codex-reset-signal-scheduler",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ ref: "main" }),
-      },
-    );
+The included Wrangler configuration also contains the offset five-minute Cron Trigger:
 
-    if (response.status !== 204) {
-      throw new Error(`GitHub workflow dispatch failed: ${response.status}`);
-    }
-  },
-};
+```text
+2,7,12,17,22,27,32,37,42,47,52,57 * * * *
 ```
 
-Fork users should replace the repository owner/name in the URL with their own repository.
+The scheduler Worker does not need a public HTTP endpoint, Custom Domain, or Worker Route. Cron invokes `scheduled()` directly.
 
-The scheduler Worker does not need a public HTTP endpoint, Custom Domain, or Worker Route. Cron invokes its `scheduled()` handler directly.
+Validate it without deploying:
+
+```bash
+npm run cloudflare:scheduler:dry-run
+```
+
+Deploy it:
+
+```bash
+npm run deploy:cloudflare:scheduler
+```
+
+Alternatively, connect a second Cloudflare Worker to the same repository and use this deploy command for that Worker:
+
+```text
+npx wrangler deploy --config workers/scheduler/wrangler.jsonc
+```
+
+The target Worker name is `codex-reset-signal-scheduler`.
 
 ### 4.2 Create the GitHub token
 
 Create a GitHub fine-grained personal access token restricted to the target repository.
 
-Recommended minimum repository permission:
+Minimum repository permission required for workflow dispatch:
 
 ```text
 Actions: Read and write
@@ -170,37 +170,69 @@ Actions: Read and write
 
 Do not grant unrelated write permissions.
 
-In the scheduler Worker, add the token as a Cloudflare **Secret**:
+In `codex-reset-signal-scheduler`, add the token as a Cloudflare **Secret**:
 
 ```text
 GITHUB_TOKEN=<fine-grained GitHub token>
 ```
 
-This is different from `RESET_STATUS_URL`:
+For the canonical maintainer deployment, that is the only required scheduler setting.
+
+Fork users can optionally override these normal Worker runtime variables:
+
+```text
+GITHUB_REPOSITORY=<owner>/<repo>
+GITHUB_WORKFLOW=monitor.yml
+GITHUB_REF=main
+```
+
+The defaults are:
+
+```text
+GITHUB_REPOSITORY=AllenXiao95/codex-reset-signal
+GITHUB_WORKFLOW=monitor.yml
+GITHUB_REF=main
+```
+
+The settings have different scopes and should not be mixed:
 
 | Setting | Platform | Type | Purpose |
 | --- | --- | --- | --- |
 | `RESET_STATUS_URL` | Cloudflare dashboard Worker | Runtime variable, optional | Override dashboard status source |
 | `GITHUB_TOKEN` | Cloudflare scheduler Worker | Secret | Authorize GitHub `workflow_dispatch` |
+| `GITHUB_REPOSITORY` | Cloudflare scheduler Worker | Runtime variable, optional | Override dispatch target for a fork |
 | `MONITOR_ENABLED` | GitHub Actions | Repository Actions Variable | Enable/disable GitHub's own schedule |
 
-### 4.3 Add the Cron Trigger
+### 4.3 What a Cron execution actually updates
 
-Open the scheduler Worker and add a Cron Trigger.
+A Cron execution does **not** create a new Cloudflare deployment. It invokes the already-deployed scheduler Worker.
 
-A simple five-minute schedule is:
-
-```text
-*/5 * * * *
-```
-
-An offset schedule avoids the top-of-minute pattern used by many jobs:
+Expected chain:
 
 ```text
-2,7,12,17,22,27,32,37,42,47,52,57 * * * *
+Cron event
+  ↓
+scheduler scheduled()
+  ↓
+POST GitHub workflow_dispatch
+  ↓
+new "Monitor X for reset" Actions run
+  ↓
+monitor updates monitor-state/state.json + status.json
+  ↓
+Dashboard /api/status reads the new status.json
 ```
 
-Cron schedules are interpreted in UTC. For a five-minute cadence, timezone does not change the behavior.
+The scheduler emits structured Worker logs for both stages:
+
+```text
+cron_started
+github_workflow_dispatch_succeeded
+```
+
+On current GitHub API versions, a successful dispatch response is HTTP 200 and can include the new workflow run ID and URL. The scheduler logs these values when present. Any non-2xx response fails the Cron invocation instead of silently succeeding.
+
+Cloudflare Cron Trigger changes can take several minutes to propagate globally, so allow up to about 15 minutes after first creating or modifying a trigger before treating absence of executions as a configuration failure.
 
 ## 5. Disable GitHub's own schedule when Cloudflare is the clock
 
@@ -232,7 +264,7 @@ To return to GitHub scheduling later, remove the variable or set it to a value o
 | Component | Domain / Route | Trigger | Configuration |
 | --- | --- | --- | --- |
 | `codex-reset-signal` dashboard Worker | Dedicated Custom Domain such as `reset.example.com` | HTTP requests | `RESET_STATUS_URL` only when overriding the default source |
-| `codex-reset-signal-scheduler` | None required | Cloudflare Cron | Secret `GITHUB_TOKEN` |
+| `codex-reset-signal-scheduler` | None required | Cloudflare Cron | Secret `GITHUB_TOKEN`; fork target variables optional |
 | GitHub `monitor.yml` | N/A | `workflow_dispatch`; built-in schedule optional | Repository variable `MONITOR_ENABLED=false` when Cloudflare Cron is active |
 
 The final data path is:
@@ -253,15 +285,33 @@ Cloudflare dashboard /api/status
 reset.example.com
 ```
 
-## 7. Verification
+## 7. Verification and troubleshooting
 
 After configuring the scheduler:
 
-1. Confirm the Cloudflare Cron Trigger exists.
-2. Confirm the scheduler Worker contains secret `GITHUB_TOKEN`.
-3. Confirm GitHub `MONITOR_ENABLED=false` is a Repository Actions Variable if Cloudflare is the active clock.
-4. Verify a new GitHub **Monitor X for reset** run appears with event `workflow_dispatch` after a Cron execution.
-5. Verify `monitor-state/status.json` receives a new `lastCheckedAt` / `lastSuccessAt` update.
-6. Open the custom dashboard domain and verify `/api/status` and the rendered monitor freshness agree.
+1. Confirm `codex-reset-signal-scheduler` is deployed with the repository's `workers/scheduler/index.mjs` code.
+2. Confirm its Cloudflare Secret `GITHUB_TOKEN` exists.
+3. Confirm its Cron Trigger exists.
+4. If Cloudflare is the active clock, confirm GitHub `MONITOR_ENABLED=false` is a Repository Actions Variable.
+5. Open Cloudflare Worker logs / Cron Past Events and look for `cron_started` followed by `github_workflow_dispatch_succeeded`.
+6. Verify a new GitHub **Monitor X for reset** run appears with event `workflow_dispatch`.
+7. Verify `monitor-state/status.json` receives a new `lastCheckedAt` / `lastSuccessAt` update.
+8. Open the custom dashboard domain and verify `/api/status` and the rendered monitor freshness agree.
 
-If Cloudflare Cron runs but no GitHub run appears, debug the scheduler token/dispatch request first. If the GitHub run appears but `monitor-state` does not update, debug the existing monitor workflow instead.
+Interpret failures by boundary:
+
+```text
+No Cron event/log
+  → Cron trigger not propagated/enabled or wrong Worker
+
+cron_started but dispatch failure
+  → GITHUB_TOKEN / Actions write permission / repository target problem
+
+GitHub workflow_dispatch appears but monitor-state does not update
+  → existing monitor.yml / FxEmbed / state persistence problem
+
+monitor-state updates but dashboard stays stale
+  → Dashboard status source/cache problem
+```
+
+Cloudflare Cron executions are runtime invocations, not deployments, so **Deployments** is not the place to verify each five-minute run.

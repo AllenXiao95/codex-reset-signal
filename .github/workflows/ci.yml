@@ -31,3 +31,5 @@ jobs:
       - run: npm run build
       - name: Validate Cloudflare Workers bundle
         run: npm run cloudflare:dry-run
+      - name: Validate Cloudflare scheduler Worker
+        run: npm run cloudflare:scheduler:dry-run
