@@ -1,4 +1,5 @@
 import type { ResetEvent } from "./events";
+
 export type XMedia = {
   mediaKey: string;
   type: "photo" | "video" | "animated_gif" | string;
@@ -17,12 +18,15 @@ export type XPost = {
 };
 
 export type MatchRecord = {
+  version: string;
   id: string;
   text: string;
   createdAt: string | null;
   url: string;
   media: XMedia[];
-  notifiedAt: string;
+  detectedAt: string;
+  events: ResetEvent[];
+  notifiedAt?: string;
   channels: string[];
 };
 
@@ -35,7 +39,7 @@ export type PendingNotification = {
 };
 
 export type MonitorState = {
-  version?: 2;
+  version?: 3;
   outbox?: PendingNotification[];
   seen?: Record<string, string>;
   username: string;
@@ -43,9 +47,40 @@ export type MonitorState = {
   userId: string | null;
   sinceId: string | null;
   lastCheckedAt: string | null;
+  lastSuccessAt?: string | null;
   lastRunStatus: string;
   postsScanned: number;
   matches: MatchRecord[];
+};
+
+export type PublicSignal = {
+  version: string;
+  id: string;
+  text: string;
+  url: string;
+  postCreatedAt: string | null;
+  detectedAt: string;
+  events: ResetEvent[];
+  deliveryChannels: string[];
+};
+
+export type PublicStatus = {
+  schemaVersion: 1;
+  updatedAt: string;
+  username: string;
+  keyword: string;
+  monitor: {
+    provider: "fxembed" | "x";
+    lastCheckedAt: string | null;
+    lastSuccessAt: string | null;
+    lastRunStatus: string;
+  };
+  latest: {
+    reset: PublicSignal | null;
+    bankCredit: PublicSignal | null;
+    bankExpiry: PublicSignal | null;
+  };
+  recent: PublicSignal[];
 };
 
 export type AppConfig = {
@@ -66,6 +101,7 @@ export type AppConfig = {
   excludeReplies: boolean;
   bootstrapNotify: boolean;
   statePath: string;
+  publicStatusPath?: string;
   resendApiKey?: string;
   emailFrom?: string;
   emailTo: string[];
