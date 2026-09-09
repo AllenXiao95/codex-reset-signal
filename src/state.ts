@@ -4,7 +4,7 @@ import type { MatchRecord, MonitorState } from "./types";
 
 export function emptyState(username: string, keyword: string): MonitorState {
   return {
-    version: 3,
+    version: 2,
     username,
     keyword,
     userId: null,
@@ -26,7 +26,9 @@ function migrateMatch(match: Record<string, unknown>): MatchRecord {
     typeof match.notifiedAt === "string" ? match.notifiedAt : undefined;
   return {
     version:
-      typeof match.version === "string" ? match.version : `legacy:${id}:${createdAt ?? "unknown"}`,
+      typeof match.version === "string"
+        ? match.version
+        : `legacy:${id}:${createdAt ?? "unknown"}`,
     id,
     text: String(match.text ?? ""),
     createdAt,
@@ -60,17 +62,26 @@ export async function readState(
     if (
       !Array.isArray(raw.matches) ||
       !Number.isFinite(raw.postsScanned) ||
-      (raw.sinceId !== null && raw.sinceId !== undefined && !/^\d+$/.test(String(raw.sinceId)))
+      (raw.sinceId !== null &&
+        raw.sinceId !== undefined &&
+        !/^\d+$/.test(String(raw.sinceId)))
     )
       throw new Error("Invalid monitor state; restore a known-good backup");
-    if (raw.version !== undefined && raw.version !== 2 && raw.version !== 3)
+    if (raw.version !== undefined && raw.version !== 2)
       throw new Error("Unsupported state version");
 
     const state = raw as unknown as MonitorState;
-    state.version = 3;
-    state.matches = raw.matches.map((match) => migrateMatch(match as Record<string, unknown>));
-    state.outbox = Array.isArray(raw.outbox) ? state.outbox : [];
-    state.seen = raw.seen && typeof raw.seen === "object" ? state.seen : {};
+    state.version = 2;
+    state.matches = raw.matches.map((match) =>
+      migrateMatch(match as Record<string, unknown>),
+    );
+    state.outbox = Array.isArray(raw.outbox)
+      ? (raw.outbox as MonitorState["outbox"])
+      : [];
+    state.seen =
+      raw.seen && typeof raw.seen === "object"
+        ? (raw.seen as Record<string, string>)
+        : {};
     state.lastSuccessAt =
       typeof raw.lastSuccessAt === "string"
         ? raw.lastSuccessAt
