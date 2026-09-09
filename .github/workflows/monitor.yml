@@ -14,9 +14,6 @@ concurrency:
 
 jobs:
   monitor:
-    # Forks are inactive until the owner opts in. GitHub Actions Job Summary is
-    # always available as a built-in notification target, so external secrets
-    # are optional for first-run/bootstrap verification.
     if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || vars.MONITOR_ENABLED == 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -31,6 +28,8 @@ jobs:
       SOURCE_TIMEZONE: ${{ vars.SOURCE_TIMEZONE }}
       INCLUDE_MENTIONS: ${{ vars.INCLUDE_MENTIONS || 'true' }}
       WEBHOOK_DEBUG: ${{ vars.WEBHOOK_DEBUG || 'false' }}
+      STATE_PATH: runtime/state.json
+      PUBLIC_STATUS_PATH: runtime/status.json
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
       DISCORD_WEBHOOK_URLS: ${{ secrets.DISCORD_WEBHOOK_URLS }}
@@ -45,9 +44,16 @@ jobs:
       SMS_TO: ${{ secrets.SMS_TO }}
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout application
+        uses: actions/checkout@v4
         with:
           ref: main
+          fetch-depth: 1
+      - name: Checkout isolated runtime state
+        uses: actions/checkout@v4
+        with:
+          ref: monitor-state
+          path: runtime
           fetch-depth: 1
       - uses: actions/setup-node@v4
         with:
@@ -60,23 +66,26 @@ jobs:
       - name: Publish GitHub Actions summary
         if: always() && steps.monitor.outcome != 'skipped'
         run: node scripts/actions-summary.mjs
-      - name: Persist cursor and delivery checkpoints even after notification failure
+      - name: Persist runtime state even after notification failure
         id: persist
         if: always() && steps.monitor.outcome != 'skipped'
+        working-directory: runtime
         run: |
-          if git diff --quiet -- data/state.json; then
+          if git diff --quiet -- state.json status.json; then
             exit 0
           fi
           git config user.name "reset-signal[bot]"
           git config user.email "reset-signal[bot]@users.noreply.github.com"
-          git add data/state.json
-          git commit -m "chore: update monitor state"
-          git pull --rebase origin main
-          git push origin HEAD:main
-      - name: Keep recovery checkpoint if git persistence failed
+          git add state.json status.json
+          git commit -m "chore: update monitor runtime state"
+          git pull --rebase origin monitor-state
+          git push origin HEAD:monitor-state
+      - name: Keep recovery checkpoint if runtime persistence failed
         if: failure() && steps.persist.outcome == 'failure'
         uses: actions/upload-artifact@v4
         with:
           name: monitor-state-recovery
-          path: data/state.json
+          path: |
+            runtime/state.json
+            runtime/status.json
           retention-days: 7
