@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2097690915230097638",
-  "lastCheckedAt": "2026-09-09T17:38:22.188Z",
-  "lastSuccessAt": "2026-09-09T17:38:22.188Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 22,
+  "sinceId": "2097746417012166816",
+  "lastCheckedAt": "2026-09-09T18:07:53.033Z",
+  "lastSuccessAt": "2026-09-09T18:07:53.033Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 23,
   "matches": [
     {
       "version": "b50e754a6dcfb2d10e42750477c3affac9d40364b3543919f0e537a0c5574e7b",
@@ -128,15 +128,16 @@
     "2097494113012863197": "0d5a03fa4c17429c09eb4000694ad37de29cde6d696a8fb84c6e37ecf9adcddc",
     "2097559315150426222": "be51a2bb1522e22535f71d6d9e0c36061c740bacdb09e458ea9d8fd75ddc802b",
     "2097560642400223387": "47a12f7494b6847b9aa8f1146f2c4b57fc82ea5b6e52d6448f642459bbde8bc0",
-    "2097690915230097638": "89b3b64c483885fc5e1db6a8e9e450ceff1e2bf8449d388d007ae76028ed0003"
+    "2097690915230097638": "89b3b64c483885fc5e1db6a8e9e450ceff1e2bf8449d388d007ae76028ed0003",
+    "2097746417012166816": "f7358def9d935f4ae4bbfaf6a79080aaf9d527752328aab3b205e81790fa7e25"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2097690915230097638",
-    "canonicalId": "2097690915230097638",
-    "text": "@theo Good luck Theo 🫡",
-    "createdAt": "2026-09-09T14:17:42.000Z",
-    "url": "https://x.com/thsottiaux/status/2097690915230097638",
+    "id": "2097746417012166816",
+    "canonicalId": "2097746417012166816",
+    "text": "Worth clarifying that this is flatly false and the two options are just two independent ways to opt-out.\n\nWe respect our users' choice whether to use their data to “improve our models for everyone” regardless of where they express that choice. Users can opt out in the in-app settings or indeed also in our privacy portal. They do not need to opt out in both places, and we will make this clearer in our Help Center.\n\nhttps://t.co/sv4uFuHC3W",
+    "createdAt": "2026-09-09T17:58:14.000Z",
+    "url": "https://x.com/thsottiaux/status/2097746417012166816",
     "media": []
   }
 }

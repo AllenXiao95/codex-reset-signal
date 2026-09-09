@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-09T17:38:22.191Z",
+  "updatedAt": "2026-09-09T18:07:53.035Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-09T17:38:22.188Z",
-    "lastSuccessAt": "2026-09-09T17:38:22.188Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-09T18:07:53.033Z",
+    "lastSuccessAt": "2026-09-09T18:07:53.033Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2097690915230097638",
-    "text": "@theo Good luck Theo 🫡",
-    "url": "https://x.com/thsottiaux/status/2097690915230097638",
-    "postCreatedAt": "2026-09-09T14:17:42.000Z"
+    "id": "2097746417012166816",
+    "text": "Worth clarifying that this is flatly false and the two options are just two independent ways to opt-out.\n\nWe respect our users' choice whether to use their data to “improve our models for everyone” regardless of where they express that choice. Users can opt out in the in-app settings or indeed also in our privacy portal. They do not need to opt out in both places, and we will make this clearer in our Help Center.\n\nhttps://t.co/sv4uFuHC3W",
+    "url": "https://x.com/thsottiaux/status/2097746417012166816",
+    "postCreatedAt": "2026-09-09T17:58:14.000Z"
   },
   "latest": {
     "reset": {
