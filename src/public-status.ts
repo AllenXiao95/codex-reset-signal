@@ -34,9 +34,16 @@ function toPublicObservedPost(state: MonitorState): PublicObservedPost | null {
   };
 }
 
-function mergeSignals(matches: MatchRecord[]): PublicSignal[] {
+function canonicalHistoryApplies(state: MonitorState): boolean {
+  return state.username.toLowerCase() === "thsottiaux" &&
+    state.keyword.toLowerCase() === "reset";
+}
+
+function mergeSignals(matches: MatchRecord[], history: PublicSignal[]): PublicSignal[] {
   const byId = new Map<string, PublicSignal>();
-  for (const signal of historicalSignals()) byId.set(signal.id, signal);
+  for (const signal of history) byId.set(signal.id, signal);
+  // Live state always wins if a future backfill or migration later contains the
+  // same source post as a repository seed.
   for (const match of matches) byId.set(match.id, toPublicSignal(match));
   return [...byId.values()].sort((a, b) => {
     if (/^\d+$/.test(a.id) && /^\d+$/.test(b.id)) {
@@ -63,7 +70,10 @@ export function buildPublicStatus(
   updatedAt = new Date().toISOString(),
 ): PublicStatus {
   const matches = state.matches.filter((match) => match.events.length > 0);
-  const signals = mergeSignals(matches);
+  const signals = mergeSignals(
+    matches,
+    canonicalHistoryApplies(state) ? historicalSignals() : [],
+  );
   return {
     schemaVersion: 1,
     updatedAt,
