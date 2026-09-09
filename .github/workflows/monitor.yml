@@ -14,7 +14,9 @@ concurrency:
 
 jobs:
   monitor:
-    # Forks are inactive until the owner configures credentials and opts in.
+    # Forks are inactive until the owner opts in. GitHub Actions Job Summary is
+    # always available as a built-in notification target, so external secrets
+    # are optional for first-run/bootstrap verification.
     if: github.ref == 'refs/heads/main' && (github.event_name == 'workflow_dispatch' || vars.MONITOR_ENABLED == 'true')
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -28,6 +30,7 @@ jobs:
       TARGET_TIMEZONE: ${{ vars.TARGET_TIMEZONE || 'Asia/Shanghai' }}
       SOURCE_TIMEZONE: ${{ vars.SOURCE_TIMEZONE }}
       INCLUDE_MENTIONS: ${{ vars.INCLUDE_MENTIONS || 'true' }}
+      WEBHOOK_DEBUG: ${{ vars.WEBHOOK_DEBUG || 'false' }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
       DISCORD_WEBHOOK_URLS: ${{ secrets.DISCORD_WEBHOOK_URLS }}
@@ -54,6 +57,9 @@ jobs:
       - name: Run monitor
         id: monitor
         run: npm run monitor
+      - name: Publish GitHub Actions summary
+        if: always() && steps.monitor.outcome != 'skipped'
+        run: node scripts/actions-summary.mjs
       - name: Persist cursor and delivery checkpoints even after notification failure
         id: persist
         if: always() && steps.monitor.outcome != 'skipped'
