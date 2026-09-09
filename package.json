@@ -16,7 +16,9 @@
     "webhook:debug": "node --import tsx src/webhook-debug.ts",
     "pages:validate": "node scripts/validate-pages.mjs",
     "cloudflare:dry-run": "npx --yes wrangler@4 deploy --dry-run --config wrangler.jsonc",
+    "cloudflare:scheduler:dry-run": "npx --yes wrangler@4 deploy --dry-run --config workers/scheduler/wrangler.jsonc",
     "deploy:cloudflare": "npm run build && npx --yes wrangler@4 deploy --config wrangler.jsonc",
+    "deploy:cloudflare:scheduler": "npx --yes wrangler@4 deploy --config workers/scheduler/wrangler.jsonc",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
