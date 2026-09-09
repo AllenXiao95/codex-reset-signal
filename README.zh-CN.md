@@ -4,7 +4,6 @@
 
 [![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
 [![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
 
 监控 [Tibo（@thsottiaux）](https://x.com/thsottiaux) 的公开 X 帖子，识别 reset / reset bank / banked reset，解析事件时间，并同时提供主动通知与实时、可切换时区的 Dashboard。
 
@@ -37,10 +36,10 @@ GitHub Actions（约每 5 分钟）
 ## GitHub Actions 定时监控
 
 1. 在仓库/Fork 中启用 Actions。
-2. 手动运行一次 **Monitor X for reset**。
+2. 手动运行一次 **Monitor X for reset** 验证配置。
 3. 打开运行记录的 **Summary** 查看状态。
-4. 设置仓库 Variable：`MONITOR_ENABLED=true`，开启约每五分钟一次的定时运行。
-5. 根据需要再配置 Telegram、Discord、Webhook、邮件或短信 Secret。
+4. 约每五分钟一次的 schedule 默认启用；只有需要关闭定时执行时才设置仓库 Variable：`MONITOR_ENABLED=false`。手动 dispatch 不受影响。
+5. Telegram、Discord、Webhook、邮件或短信 Secret 均可后续按需配置。
 
 工作流会同时 checkout 两个分支：
 
@@ -114,14 +113,37 @@ Dashboard 读取 `monitor-state/status.json`，仅保留公开展示所需字段
 
 Cloudflare Workers 是当前首选的 Dashboard 托管方式。仓库已包含 `wrangler.jsonc` 和 vinext Worker 入口。
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
+### 推荐：直接部署已有 Fork / 仓库
 
-Cloudflare 仓库导入建议配置：
+如果你已经 Fork 了这个项目，或者 GitHub 账号里已经存在 `codex-reset-signal`，**不要使用 Deploy to Cloudflare 按钮**。
+
+Cloudflare 的 Deploy Button 是模板复制流程：它会把源仓库再复制成一个**新的 GitHub/GitLab 仓库**。因此账号里已经存在同名仓库时，会出现“已存在具有该名称的存储库，请选择其他名称”。
+
+已有仓库应该走下面这条路径：
+
+1. Cloudflare Dashboard → **Workers & Pages** → **Create application**。
+2. 选择 **Import a repository**。
+3. 选择你现有的 `codex-reset-signal` Fork/仓库。
+4. Build root 保持仓库根目录。
+5. 使用：
 
 ```text
 Build command:  npm run build
 Deploy command: npx wrangler deploy --config wrangler.jsonc
 ```
+
+6. 直接保存并部署。首次创建 Worker 不需要填写本项目自己的 Secret。
+7. 如果部署的是 Fork，部署完成后再添加可选 Runtime Variable `RESET_STATUS_URL`，指向你自己的 raw `monitor-state/status.json`。
+
+如果是把已有 Worker 连接到 Git 仓库，Cloudflare Worker 名称需要和 `wrangler.jsonc` 里的 `name`（当前为 `codex-reset-signal`）保持一致；如果需要改名，应两边一起改。
+
+### Deploy Button：仅适用于还没有自己的仓库
+
+如果你的 GitHub/GitLab 账号里**还没有**这个项目，并且希望 Cloudflare 帮你自动创建一份新的仓库，可以使用模板部署：
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
+
+仓库根目录 `.env.example` 刻意不包含任何变量赋值，因此模板首次部署不会再要求填写 Telegram、Twilio、Resend 等 monitor 通知参数。完整的本地/Docker monitor 配置已经移动到 `monitor.env.example`。
 
 本地验证：
 
@@ -133,11 +155,9 @@ npm run build
 npm run cloudflare:dry-run
 ```
 
-Worker 的 `/api/status` 会在访问时读取 `monitor-state/status.json`，因此 monitor 更新状态时**不会重新部署网页**。
+Worker 的 `/api/status` 会在访问时读取 `monitor-state/status.json`，因此 monitor 更新状态时**不会重新部署网页**。`RESET_STATUS_URL` 是可选项：不配置时读取本仓库状态源，Fork 用户可以在部署完成后再补成自己的状态源。
 
-如果 Fork 后部署到 Cloudflare，需要设置 Worker Runtime Variable `RESET_STATUS_URL`，指向该 Fork 的 raw `monitor-state/status.json`；不配置时默认读取本仓库。
-
-Monitor 本身仍由 GitHub Actions 或 Docker 运行，目前不引入 KV、D1、Workers Cron、SSE 或 WebSocket。
+Monitor 本身仍由 GitHub Actions 或 Docker 运行。Dashboard 本身不需要 KV、D1、SSE 或 WebSocket。
 
 ## GitHub Pages fallback
 
@@ -156,10 +176,11 @@ GitHub Pages 仅作为静态 fallback，不作为第二套运行时后端。Dash
 | `SOURCE_TIMEZONE` | 空 | 原文无时区时的显式来源时区假设 |
 | `INCLUDE_MENTIONS` | `true` | 保留明确标记为未确认的 reset 讨论/请求 |
 | `X_EXCLUDE_REPLIES` | `false` | 是否排除目标账号回复 |
-| `MONITOR_ENABLED` | 未启用 | Actions 定时执行开关 |
+| `MONITOR_ENABLED` | 除非为 `false` 否则启用 | Actions schedule 的 opt-out 开关 |
 | `BOOTSTRAP_NOTIFY` | `false` | 本地历史通知开关；Actions 强制关闭 |
 | `STATE_PATH` | `data/state.json` | 本地内部运行时状态路径 |
 | `PUBLIC_STATUS_PATH` | 可选 | 公共投影路径；Actions 使用 `runtime/status.json` |
+| `RESET_STATUS_URL` | 项目默认状态源 | Cloudflare Worker 可选的状态源覆盖 |
 | `WEBHOOK_DEBUG` | `false` | 输出脱敏 hostname/status/耗时信息 |
 | `POLL_INTERVAL_SECONDS` | `300` | loop 模式轮询间隔，最小 60 秒 |
 
@@ -189,7 +210,7 @@ WEBHOOK_DEBUG=true npm run webhook:debug
 ## 本地 / Docker
 
 ```bash
-cp .env.example .env
+cp monitor.env.example .env
 npm run monitor
 npm run monitor:loop
 ```
