@@ -41,7 +41,7 @@ if (errors.length) {
     try {
       const state = await runMonitor(config);
       console.log(
-        `Checked @${state.username}; ${state.lastRunStatus}; ${state.outbox?.length ?? 0} pending.`,
+        `Checked @${state.username} via ${config.sourceProvider}; ${state.lastRunStatus}; ${state.outbox?.length ?? 0} pending.`,
       );
     } catch (error) {
       // Adapters redact provider responses and URL/token-bearing transport errors.

@@ -175,7 +175,7 @@ export default function Home() {
           </p>
           <a
             className="primaryButton light"
-            href="https://github.com/UynajGI/reset-signal#部署"
+            href="https://github.com/AllenXiao95/codex-reset-signal#github-actions-部署"
             target="_blank"
             rel="noreferrer"
           >
@@ -184,9 +184,9 @@ export default function Home() {
         </div>
         <div className="secretList">
           <div className="secretGroup">
-            <div className="secretHead"><span>必需</span><em>01</em></div>
-            <code>X_BEARER_TOKEN</code>
-            <p>来自 X Developer Portal 的 App-only Bearer Token。</p>
+            <div className="secretHead"><span>数据源</span><em>01</em></div>
+            <code>SOURCE_PROVIDER=fxembed</code>
+            <p>默认无需 X Token。仅显式选择官方 X API 时需要 X_BEARER_TOKEN，并可能产生 API 费用。</p>
           </div>
           <div className="secretGroup">
             <div className="secretHead"><span>邮件</span><em>02</em></div>

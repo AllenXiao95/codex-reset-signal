@@ -6,12 +6,13 @@
 
 ## 首版能力
 
-- 官方 X API v2 获取普通帖、回复和 Note Tweet 长文；不包含转帖。
+- 默认通过 FxEmbed 公开 JSON API 获取普通帖、回复和长文，无需 X Token 或 Cookie；官方 X API v2 作为显式可选数据源。
+- 按数字作者 ID 过滤时间线中的其他人、排除纯转帖；仅解析原帖正文，不拼接引用帖或对话上下文。
 - 区分额度重置、bank 发放、bank 有效期与未确认的相关讨论。
 - 相对时间以**发帖时间**为基准；支持英文日期、明确时区、太平洋夏令时、时间窗口。
 - 目标时区使用 IANA 名称，默认 `Asia/Shanghai`；无来源时区时不擅自补齐。
 - Telegram、Discord、通用 JSON Webhook、Resend 邮件、Twilio 短信。
-- 完整分页、持久化待发队列、逐目标投递检查点、单进程锁。
+- 分页获取新增内容、持久化待发队列、逐目标投递检查点、单进程锁。
 - 首次运行只建立游标；离线样例演示不联网、不发送消息、不修改状态。
 
 ## 先离线验证
@@ -35,14 +36,16 @@ npm run monitor:dry -- --input /path/to/posts.json
 ## GitHub Actions 部署
 
 1. 在 Fork 的 Actions 页面启用工作流。
-2. 在 Settings → Secrets and variables → Actions → Secrets 配置 `X_BEARER_TOKEN`，并至少配置一个通知渠道。
+2. 在 Settings → Secrets and variables → Actions → Secrets 配置至少一个通知渠道。默认 FxEmbed 不需要 `X_BEARER_TOKEN`。
 3. 在 Variables 中配置 `TARGET_TIMEZONE`，不填默认为 `Asia/Shanghai`。
 4. 将代码合并到 `main` 后，手动运行 **Monitor X for reset**，完成首次初始化。
 5. 在 Variables 中设置 `MONITOR_ENABLED=true`，开启约每五分钟一次的定时检查；改为 `false` 可暂停定时检查。
 
 定时任务只运行于 `main`。Actions 可能延迟，不能保证精确每五分钟；长期无仓库活动也可能被 GitHub 停用。需要更稳定的持续运行时，使用 Docker。
 
-X Token 必须能够调用 `GET /2/users/by/username/:username` 和 `GET /2/users/:id/tweets`。**开源代码不等于免费 X 数据源**：接口权限、配额和收费以 X 当前规则为准。本项目不会自动购买服务或兑换任何账号的 reset。
+默认 `SOURCE_PROVIDER=fxembed` 使用第三方公开接口，目前无需付费 API 凭证。**零 X API 费用不等于所有运行成本为零**：服务器、通知渠道等可能收费。FxEmbed 没有本项目可承诺的可用性或数据完整性保障，缓存、限流、接口变动都可能造成延迟或遗漏。
+
+只有显式设置 `SOURCE_PROVIDER=x` 才使用官方 X API，并要求 `X_BEARER_TOKEN` 能调用 `GET /2/users/by/username/:username` 和 `GET /2/users/:id/tweets`，收费以 X 当前规则为准。即使已配置 Token，FxEmbed 故障也**不会自动切换到付费接口**。
 
 ### 通知渠道 Secrets
 
@@ -64,6 +67,7 @@ Telegram 的接收者需要先启动机器人，或把机器人添加到有发�
 
 | 环境变量 / Actions Variable | 默认值 | 说明 |
 | --- | --- | --- |
+| `SOURCE_PROVIDER` | `fxembed` | `fxembed`（无需 X 凭证）或 `x`（官方付费 API）；无自动回退 |
 | `X_USERNAME` | `thsottiaux` | 目标账号 |
 | `MATCH_WORD` | `reset` | 默认启用 reset 事件解析；自定义词使用完整单词匹配 |
 | `TARGET_TIMEZONE` | `Asia/Shanghai` | 通知显示时区，如 `Europe/London` |
@@ -75,7 +79,11 @@ Telegram 的接收者需要先启动机器人，或把机器人添加到有发�
 | `STATE_PATH` | `data/state.json` | 仅本地；Actions 固定使用默认文件 |
 | `POLL_INTERVAL_SECONDS` | `300` | 仅 `--loop` 使用，最小 60 秒 |
 
-首次仅处理最近一页用于建立基线。初始化之后，所有新帖子分页获取完成，才会把游标与待发队列一起保存。更换账号或关键词时需要新状态文件，防止混用旧游标。
+首次仅处理最近一页用于建立基线。后续 FxEmbed 每页请求 100 条，但实际返回数量可能不同；沿 `cursor.bottom` 翻页，直到整页帖子均不晚于上次检查点，或服务端不再返回下一页。旧置顶帖或对话中的旧回复不会单独触发停止。分页循环或超过 100 页会报错，整批不提交，下一轮重试；不会把抓取失败当成没有新帖。
+
+该停止规则依赖时间线大体从新到旧；第三方若返回截断、无标记的过期缓存或严重乱序数据，本项目无法证明没有遗漏。不使用 FxEmbed 的单页 `since`/204 优化。
+
+同一账号在 `fxembed` 与 `x` 之间切换可以沿用数字用户 ID、帖子 ID、待发队列，不需删除状态。更换账号或关键词时使用新状态文件。切换前已经越过检查点的遗漏不会自动补齐；修改回复过滤选项也不会补发旧回复。
 
 ## 时间解析边界
 
@@ -96,7 +104,7 @@ Telegram 的接收者需要先启动机器人，或把机器人添加到有发�
 
 ```bash
 cp .env.example .env
-# 在 .env 中填入 X Token 和至少一个通知目标
+# 在 .env 中配置至少一个通知目标；默认无需 X Token
 npm run monitor        # 单次检查，自动读取 .env
 npm run monitor:loop   # 持续运行
 ```
@@ -113,9 +121,9 @@ Docker 使用命名卷持久化状态。不要同时在 Actions 和 Docker 中�
 ## 投递语义与故障恢复
 
 - 每条候选通知先写入 outbox，再向目标发送；成功后立即保存该目标的检查点。
-- 重启只重试未成功的目标。X 暂时不可用时，仍尝试投递已持久化的待发通知。
+- 重启只重试未成功的目标。数据源暂时不可用时，仍尝试投递已持久化的待发通知。
 - 目标标识经过哈希；状态文件不存 Token、邮箱、手机号或 Webhook URL，但包含公开帖子的内容。公开仓库中的状态文件同样公开。
-- 同一帖子及内容版本去重；如果 API 返回编辑版本，会重新判断。仅使用 `since_id` 不能保证发现所有旧帖编辑或删除。
+- 同一帖子及内容版本去重；如果 API 返回编辑版本，会重新判断。FxEmbed 当前仅返回检查点之后的帖子，不主动回看旧帖；官方 `since_id` 也不能保证发现所有旧帖编辑或删除。
 - 这是 **at-least-once** 投递：远端已收到但响应丢失、进程在响应后落盘前退出、Actions 保存状态失败，都仍可能造成重复。通用 Webhook 接收端应按 `delivery_id` 去重。Resend 另有服务商幂等键与其有效期限制。
 - Actions 即使通知步骤失败也会提交检查点；Git 保存失败时上传 `monitor-state-recovery` artifact。此时先暂停监控、恢复该状态到 `data/state.json`，再恢复运行，避免已投递消息重发。
 - 改掉一个仍有待发消息的通知目标时，旧任务会保持待处理并报错；请恢复旧配置或在备份后明确移除该任务，程序不静默丢弃。
@@ -131,7 +139,7 @@ npm run typecheck
 npm run build
 ```
 
-测试通过模拟 HTTP 与临时状态文件验证，不会发送真实消息。[选型记录](docs/research.md) 说明为什么复用上游以及首版范围。
+测试通过模拟 HTTP 与临时状态文件验证，不会发送真实消息。[选型记录](docs/research.md) 说明为什么复用上游以及首版范围；[FxEmbed 数据源说明](docs/fxembed.md) 记录接口、故障行为与验证边界。
 
 ## License
 
