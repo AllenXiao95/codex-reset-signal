@@ -22,6 +22,11 @@ const commonZones = [
   "America/Los_Angeles",
 ];
 
+type TimedSignalEvent = {
+  signal: PublicSignal;
+  event: ResetEvent;
+};
+
 function ArrowIcon() {
   return (
     <svg viewBox="0 0 16 16" aria-hidden="true">
@@ -73,15 +78,51 @@ function displayEventTime(event: ResetEvent | null, timezone: string): string {
 }
 
 function countdown(event: ResetEvent | null, now: number): string | null {
-  if (!event?.time.start || event.time.kind !== "exact") return null;
+  if (
+    !event?.time.start ||
+    !["exact", "window"].includes(event.time.kind)
+  )
+    return null;
   const delta = new Date(event.time.start).getTime() - now;
   if (delta <= 0) return null;
-  const minutes = Math.floor(delta / 60_000);
-  const hours = Math.floor(minutes / 60);
-  const days = Math.floor(hours / 24);
-  if (days) return `in ${days}d ${hours % 24}h`;
-  if (hours) return `in ${hours}h ${minutes % 60}m`;
-  return `in ${Math.max(1, minutes)}m`;
+  const totalSeconds = Math.max(1, Math.ceil(delta / 1000));
+  const seconds = totalSeconds % 60;
+  const totalMinutes = Math.floor(totalSeconds / 60);
+  const minutes = totalMinutes % 60;
+  const totalHours = Math.floor(totalMinutes / 60);
+  const hours = totalHours % 24;
+  const days = Math.floor(totalHours / 24);
+  const pad = (value: number) => String(value).padStart(2, "0");
+  if (days) return `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+  if (totalHours) return `${totalHours}h ${pad(minutes)}m ${pad(seconds)}s`;
+  return `${minutes}m ${pad(seconds)}s`;
+}
+
+function lastTimedEvent(
+  status: PublicStatus | null,
+  type: "reset" | "bank_credit",
+  now: number,
+): TimedSignalEvent | null {
+  if (!status) return null;
+  const signals = [
+    status.latest.reset,
+    status.latest.bankCredit,
+    ...status.recent,
+  ].filter((signal): signal is PublicSignal => Boolean(signal));
+  const seen = new Set<string>();
+  const candidates: Array<TimedSignalEvent & { timestamp: number }> = [];
+  for (const signal of signals) {
+    if (seen.has(signal.version)) continue;
+    seen.add(signal.version);
+    for (const event of signal.events) {
+      if (event.type !== type || !event.time.start) continue;
+      const timestamp = new Date(event.time.start).getTime();
+      if (!Number.isFinite(timestamp) || timestamp > now) continue;
+      candidates.push({ signal, event, timestamp });
+    }
+  }
+  candidates.sort((a, b) => b.timestamp - a.timestamp);
+  return candidates[0] ?? null;
 }
 
 function health(status: PublicStatus | null, now: number) {
@@ -128,6 +169,11 @@ export default function ResetDashboard() {
   }, []);
 
   useEffect(() => {
+    const timer = window.setInterval(() => setNow(Date.now()), 1000);
+    return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
     const refresh = async () => {
       try {
         setStatus(await loadStatus());
@@ -137,10 +183,7 @@ export default function ResetDashboard() {
       }
     };
     void refresh();
-    const timer = window.setInterval(() => {
-      setNow(Date.now());
-      void refresh();
-    }, 60_000);
+    const timer = window.setInterval(() => void refresh(), 60_000);
     return () => window.clearInterval(timer);
   }, []);
 
@@ -160,6 +203,8 @@ export default function ResetDashboard() {
   const expiryEvent = eventFor(expirySignal, "bank_expiry");
   const monitorHealth = health(status, now);
   const resetCountdown = countdown(resetEvent, now);
+  const lastReset = lastTimedEvent(status, "reset", now);
+  const lastBank = lastTimedEvent(status, "bank_credit", now);
 
   const changeTimezone = (value: string) => {
     setTimezoneChoice(value);
@@ -187,15 +232,15 @@ export default function ResetDashboard() {
 
       <section className={styles.hero} id="top">
         <div>
-          <div className={styles.kicker}>LATEST RESET</div>
+          <div className={styles.kicker}>{resetCountdown ? "NEXT RESET" : "LATEST RESET"}</div>
           <div className={styles.statusLine}>
             <span className={`${styles.dot} ${monitorHealth.className}`} />
             {monitorHealth.label}
           </div>
-          <h1>{displayEventTime(resetEvent, timezone)}</h1>
+          <h1>{resetCountdown ?? displayEventTime(resetEvent, timezone)}</h1>
           <div className={styles.heroMeta}>
             <strong>{resetEvent?.status ?? "No reset detected"}</strong>
-            {resetCountdown ? <span>{resetCountdown}</span> : null}
+            {resetCountdown ? <span>{displayEventTime(resetEvent, timezone)}</span> : null}
           </div>
           {resetSignal ? (
             <p className={styles.evidence}>{resetEvent?.evidence ?? resetSignal.text}</p>
@@ -225,6 +270,16 @@ export default function ResetDashboard() {
         </div>
 
         <aside className={styles.sidePanel}>
+          <article>
+            <span>LAST RESET</span>
+            <strong>{displayEventTime(lastReset?.event ?? null, timezone)}</strong>
+            <small>{lastReset?.event.status ?? "No past timed reset"}</small>
+          </article>
+          <article>
+            <span>LAST BANK</span>
+            <strong>{displayEventTime(lastBank?.event ?? null, timezone)}</strong>
+            <small>{lastBank?.event.status ?? "No past timed bank reset"}</small>
+          </article>
           <article>
             <span>BANK RESET</span>
             <strong>{displayEventTime(bankEvent, timezone)}</strong>
