@@ -1,112 +1,165 @@
 # Codex Reset Signal
 
-监控 [Tibo（@thsottiaux）](https://x.com/thsottiaux) 的公开 X 帖子，识别 reset / reset bank / banked reset，提取事件时间并转换为指定时区，通过机器人、邮件或短信通知。
+**English** | [简体中文](README.zh-CN.md)
 
-基于 [UynajGI/reset-signal](https://github.com/UynajGI/reset-signal) 二次开发，保留 MIT 协议和上游版权声明。项目不是 OpenAI 或 X 的官方服务。
+[![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
+[![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
 
-## 首版能力
+Monitor public X posts from [Tibo (@thsottiaux)](https://x.com/thsottiaux), recognize reset / reset bank / banked reset signals, extract event times, convert them to your target timezone, and deliver alerts through GitHub Actions, bots, generic webhooks, email, or SMS.
 
-- 默认通过 FxEmbed 公开 JSON API 获取普通帖、回复和长文，无需 X Token 或 Cookie；官方 X API v2 作为显式可选数据源。
-- 按数字作者 ID 过滤时间线中的其他人、排除纯转帖；仅解析原帖正文，不拼接引用帖或对话上下文。
-- 区分额度重置、bank 发放、bank 有效期与未确认的相关讨论。
-- 相对时间以**发帖时间**为基准；支持英文日期、明确时区、太平洋夏令时、时间窗口。
-- 目标时区使用 IANA 名称，默认 `Asia/Shanghai`；无来源时区时不擅自补齐。
-- Telegram、Discord、通用 JSON Webhook、Resend 邮件、Twilio 短信。
-- 分页获取新增内容、持久化待发队列、逐目标投递检查点、单进程锁。
-- 首次运行只建立游标；离线样例演示不联网、不发送消息、不修改状态。
+This project is derived from [UynajGI/reset-signal](https://github.com/UynajGI/reset-signal), preserving the upstream copyright notice and MIT license. It is not an official OpenAI, X, or Cloudflare service.
 
-## 先离线验证
+## Features
 
-需要 Node.js 22 或更新版本：
+- Uses the public FxEmbed JSON API by default for regular posts, replies, and long-form posts. No X token or cookie is required. Official X API v2 remains an explicit optional source.
+- Filters timeline entries by numeric author ID, excludes pure reposts, and parses only the target author's own post text rather than quoted-post or conversation context.
+- Distinguishes quota resets, bank credits, bank expiry information, and explicitly unconfirmed reset-related discussions.
+- Resolves relative times from the **post publication time** and supports English dates, explicit timezones, Pacific daylight-saving rules, and time windows.
+- Uses IANA timezone names. The default output timezone is `Asia/Shanghai`; missing source timezones are not silently guessed.
+- Supports GitHub Actions Job Summary, Telegram, Discord, generic JSON webhooks, Resend email, and Twilio SMS.
+- Paginates new posts, persists an outbox, checkpoints delivery per target, and uses a single-process state lock.
+- First run establishes a cursor by default. Offline fixtures do not access the network, send notifications, or modify monitor state.
+- The dashboard can be imported directly to Cloudflare Workers. The monitor itself continues to run through GitHub Actions or Docker.
+
+## Offline validation first
+
+Node.js 22 or newer is required.
 
 ```bash
 npm ci
 npm run monitor:dry
 ```
 
-内置 `fixtures/posts.json` 全部是合成示例，不能当作真实公告。
+`fixtures/posts.json` contains synthetic examples only and must not be treated as real announcements.
 
 ```bash
 TARGET_TIMEZONE=America/New_York npm run monitor:dry
 npm run monitor:dry -- --input /path/to/posts.json
 ```
 
-输入格式为 `XPost[]`，字段与示例一致：`id`、`text`、带时区的 `createdAt`、`url`、`media`。
+The input is an `XPost[]` array with fields matching the fixture: `id`, `text`, timezone-aware `createdAt`, `url`, and `media`.
 
-## GitHub Actions 部署
+## GitHub Actions
 
-1. 在 Fork 的 Actions 页面启用工作流。
-2. 在 Settings → Secrets and variables → Actions → Secrets 配置至少一个通知渠道。默认 FxEmbed 不需要 `X_BEARER_TOKEN`。
-3. 在 Variables 中配置 `TARGET_TIMEZONE`，不填默认为 `Asia/Shanghai`。
-4. 将代码合并到 `main` 后，手动运行 **Monitor X for reset**，完成首次初始化。
-5. 在 Variables 中设置 `MONITOR_ENABLED=true`，开启约每五分钟一次的定时检查；改为 `false` 可暂停定时检查。
+1. Enable workflows on the fork's **Actions** page.
+2. Optional: configure external notification channels under **Settings → Secrets and variables → Actions**. FxEmbed does not require `X_BEARER_TOKEN`, and no notification secret is required if you only want to verify the monitor in GitHub Actions.
+3. Set `TARGET_TIMEZONE` under Variables if needed. It defaults to `Asia/Shanghai`.
+4. After the code is on `main`, manually run **Monitor X for reset** once to establish the initial cursor.
+5. Open that workflow run's **Summary**. Every run publishes its monitor status there; reset signals are also rendered directly in the Job Summary.
+6. Set `MONITOR_ENABLED=true` under Variables to enable the roughly five-minute schedule. Set it back to `false` to pause scheduled checks.
 
-定时任务只运行于 `main`。Actions 可能延迟，不能保证精确每五分钟；长期无仓库活动也可能被 GitHub 停用。需要更稳定的持续运行时，使用 Docker。
+GitHub Actions Job Summary is a built-in notification target, so a first run no longer fails merely because Telegram, email, SMS, Discord, or webhook credentials are absent. External channels are optional extensions.
 
-默认 `SOURCE_PROVIDER=fxembed` 使用第三方公开接口，目前无需付费 API 凭证。**零 X API 费用不等于所有运行成本为零**：服务器、通知渠道等可能收费。FxEmbed 没有本项目可承诺的可用性或数据完整性保障，缓存、限流、接口变动都可能造成延迟或遗漏。
+Scheduled runs execute only from `main`. GitHub Actions schedules may be delayed and are not a hard real-time guarantee; inactive repositories may also have schedules disabled by GitHub. Use Docker for a more continuously controlled runtime.
 
-只有显式设置 `SOURCE_PROVIDER=x` 才使用官方 X API，并要求 `X_BEARER_TOKEN` 能调用 `GET /2/users/by/username/:username` 和 `GET /2/users/:id/tweets`，收费以 X 当前规则为准。即使已配置 Token，FxEmbed 故障也**不会自动切换到付费接口**。
+The default `SOURCE_PROVIDER=fxembed` uses a third-party public endpoint and currently needs no paid X API credential. **Zero X API cost does not mean every operating cost is zero**: hosting and notification providers may still charge. This project cannot guarantee FxEmbed availability, freshness, rate limits, or completeness.
 
-### 通知渠道 Secrets
+Only `SOURCE_PROVIDER=x` selects the official X API and requires an `X_BEARER_TOKEN` with access to the required user and post endpoints. A configured X token is not used as an automatic paid fallback when FxEmbed fails.
 
-每组必须完整配置；不使用的组全部留空。多个目标用英文逗号分隔。
+### Notification channels
 
-| 渠道 | Secrets |
+| Channel | Configuration |
 | --- | --- |
-| Telegram | `TELEGRAM_BOT_TOKEN`、`TELEGRAM_CHAT_IDS` |
+| GitHub Actions | Automatic Job Summary target; no secret required |
+| Telegram | `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_IDS` |
 | Discord | `DISCORD_WEBHOOK_URLS` |
-| 通用 Webhook | `WEBHOOK_URLS`；可选 `WEBHOOK_SECRET` |
-| Resend 邮件 | `RESEND_API_KEY`、`EMAIL_FROM`、`EMAIL_TO` |
-| Twilio 短信 | `TWILIO_ACCOUNT_SID`、`TWILIO_AUTH_TOKEN`、`TWILIO_FROM`、`SMS_TO` |
+| Generic webhook | `WEBHOOK_URLS`; optional `WEBHOOK_SECRET`, `WEBHOOK_DEBUG` |
+| Resend email | `RESEND_API_KEY`, `EMAIL_FROM`, `EMAIL_TO` |
+| Twilio SMS | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM`, `SMS_TO` |
 
-Telegram 的接收者需要先启动机器人，或把机器人添加到有发送权限的群组。Discord 使用频道的 incoming webhook。这里只实现出站通知，不实现聊天指令或用户订阅管理。
+Each external channel must be configured completely or left entirely blank. Separate multiple destinations with commas.
 
-飞书、企微、QQ / NoneBot 等可由自己的中转服务消费通用 Webhook；**不能直接把这些平台的原生机器人 URL 当成通用 Webhook**，它们需要各自的 payload 转换。参见 [Webhook 接入约定](docs/webhook.md)。
+Feishu/Lark, WeCom, QQ/NoneBot, Apprise, and similar systems can consume the generic webhook through a small bridge. Their native bot URLs are **not** drop-in generic webhook endpoints because their payload contracts differ. See the [generic webhook contract](docs/webhook.md).
 
-### 配置项
+### Configuration
 
-| 环境变量 / Actions Variable | 默认值 | 说明 |
+| Environment variable / Actions Variable | Default | Description |
 | --- | --- | --- |
-| `SOURCE_PROVIDER` | `fxembed` | `fxembed`（无需 X 凭证）或 `x`（官方付费 API）；无自动回退 |
-| `X_USERNAME` | `thsottiaux` | 目标账号 |
-| `MATCH_WORD` | `reset` | 默认启用 reset 事件解析；自定义词使用完整单词匹配 |
-| `TARGET_TIMEZONE` | `Asia/Shanghai` | 通知显示时区，如 `Europe/London` |
-| `SOURCE_TIMEZONE` | 空 | 无原文时区时的显式假设，如 `America/Los_Angeles`；通知会标明假设 |
-| `INCLUDE_MENTIONS` | `true` | 是否发送明确标记为未确认的请求、讨论、否定等相关内容；设 `false` 只接收规则判定的事件 |
-| `X_EXCLUDE_REPLIES` | `false` | 是否排除目标账号自己的回复 |
-| `MONITOR_ENABLED` | 未启用 | 仅 Actions 使用，`true` 开启定时运行 |
-| `BOOTSTRAP_NOTIFY` | `false` | 仅本地支持主动补发首批历史内容；Actions 固定关闭 |
-| `STATE_PATH` | `data/state.json` | 仅本地；Actions 固定使用默认文件 |
-| `POLL_INTERVAL_SECONDS` | `300` | 仅 `--loop` 使用，最小 60 秒 |
+| `SOURCE_PROVIDER` | `fxembed` | `fxembed` (no X credential) or `x` (official X API); no automatic fallback |
+| `X_USERNAME` | `thsottiaux` | Target account |
+| `MATCH_WORD` | `reset` | Enables reset event parsing by default; custom words use whole-word matching |
+| `TARGET_TIMEZONE` | `Asia/Shanghai` | Output timezone, for example `Europe/London` |
+| `SOURCE_TIMEZONE` | empty | Explicit assumption for source-local clock times, for example `America/Los_Angeles` |
+| `INCLUDE_MENTIONS` | `true` | Include requests/discussions/negations that are clearly marked as unconfirmed |
+| `X_EXCLUDE_REPLIES` | `false` | Exclude replies authored by the target account |
+| `WEBHOOK_DEBUG` | `false` | Log sanitized webhook host/status/timing diagnostics without URL paths or secrets |
+| `MONITOR_ENABLED` | disabled | Actions only; `true` enables scheduled runs |
+| `BOOTSTRAP_NOTIFY` | `false` | Local only; optionally notify historical items during bootstrap. Actions forces this off |
+| `STATE_PATH` | `data/state.json` | Local only; Actions uses the default state file |
+| `POLL_INTERVAL_SECONDS` | `300` | Used by `--loop`; minimum 60 seconds |
 
-首次仅处理最近一页用于建立基线。后续 FxEmbed 每页请求 100 条，但实际返回数量可能不同；沿 `cursor.bottom` 翻页，直到整页帖子均不晚于上次检查点，或服务端不再返回下一页。旧置顶帖或对话中的旧回复不会单独触发停止。分页循环或超过 100 页会报错，整批不提交，下一轮重试；不会把抓取失败当成没有新帖。
+The first run reads a recent page to establish the baseline. Later FxEmbed runs follow `cursor.bottom` until an entire page is no newer than the previous checkpoint or no next page is available. Pagination loops and excessive page counts fail the batch and retry later; collection failures are never treated as “no new posts.”
 
-该停止规则依赖时间线大体从新到旧；第三方若返回截断、无标记的过期缓存或严重乱序数据，本项目无法证明没有遗漏。不使用 FxEmbed 的单页 `since`/204 优化。
+Switching the same account between `fxembed` and `x` can reuse its numeric user ID, post IDs, and pending outbox. Use a new state file when changing the target account or keyword.
 
-同一账号在 `fxembed` 与 `x` 之间切换可以沿用数字用户 ID、帖子 ID、待发队列，不需删除状态。更换账号或关键词时使用新状态文件。切换前已经越过检查点的遗漏不会自动补齐；修改回复过滤选项也不会补发旧回复。
+## Cloudflare Workers import
 
-## 时间解析边界
+The repository includes `wrangler.jsonc` and a Worker-compatible vinext output entrypoint, so the **dashboard/web UI** can be imported into Cloudflare Workers.
 
-| 原文示例 | 结果 |
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/AllenXiao95/codex-reset-signal)
+
+You can also use the Cloudflare dashboard and choose **Workers & Pages → Create → Import a repository**, then connect this repository. Recommended build settings:
+
+```text
+Build command:  npm run build
+Deploy command: npx wrangler deploy --config wrangler.jsonc
+```
+
+Validate the Worker bundle locally without deploying:
+
+```bash
+npm ci
+npm run build
+npm run cloudflare:dry-run
+```
+
+Deploy manually with Wrangler:
+
+```bash
+npm run deploy:cloudflare
+```
+
+**Scope:** this deploys the dashboard/web application only. It does not move `monitor.yml`, scheduled collection, outbound notifications, or `data/state.json` persistence into Workers. Monitoring still runs through GitHub Actions or Docker, and the deployed dashboard represents the state snapshot present at build time. Keeping those responsibilities separate avoids introducing a second KV/D1 state model merely for dashboard hosting.
+
+## Generic webhook debugging
+
+Put one or more real HTTPS destinations in `WEBHOOK_URLS`, then run:
+
+```bash
+WEBHOOK_DEBUG=true npm run webhook:debug
+```
+
+The debug command uses synthetic data from `fixtures/posts.json`. It **does not contact X/FxEmbed or read/write monitor state, but it does send a real POST to every configured generic webhook**. A custom fixture can be supplied with:
+
+```bash
+WEBHOOK_DEBUG=true npm run webhook:debug -- --input /path/to/posts.json
+```
+
+Logs contain only the destination hostname, a short delivery-ID prefix, signing state, successful HTTP status, and elapsed time. They never include URL paths/query strings, secrets, headers, or provider response bodies. See [docs/webhook.md](docs/webhook.md) for the payload schema, HMAC verification, idempotency rules, and debugging checklist.
+
+## Time parsing boundaries
+
+| Source text | Result |
 | --- | --- |
-| `in two hours` | 发帖时间 + 2 小时 |
-| `within the next hour` / `in the next hour` | 发帖时刻到一小时后的窗口 |
-| `September 10, 2026 at 5pm PT` | 按 `America/Los_Angeles` 在事件日期的夏令时换算 |
-| `tomorrow at 5pm` | 未指定来源时区则标记未知；配置 `SOURCE_TIMEZONE` 后明确标记假设 |
-| `September 10 PT` | 日期范围，不生成虚假的精确时刻 |
-| `bank ... valid for 24 hours` | 单独保存有效期描述；起算点不明确时不推算精确到期时间 |
-| `we have reset ...` | 标记已完成；无具体时刻时展示公告发布时间，明确不是账户到账时间 |
-| `soon` / 多个无法消歧的时间 | 保留原文，标记时间未确定 |
+| `in two hours` | post publication time + 2 hours |
+| `within the next hour` / `in the next hour` | window from publication time through one hour later |
+| `September 10, 2026 at 5pm PT` | interpreted using `America/Los_Angeles` and DST on the event date |
+| `tomorrow at 5pm` | unknown without a source timezone; explicitly marked as an assumption if `SOURCE_TIMEZONE` is configured |
+| `September 10 PT` | date range; no fabricated exact clock time |
+| `bank ... valid for 24 hours` | expiry duration is retained separately; no exact expiry is invented when the start is ambiguous |
+| `we have reset ...` | completed announcement; publication time may be shown as an observed time, not a verified account-credit time |
+| `soon` / multiple ambiguous times | retains source evidence and marks the time unresolved |
 
-使用 chrono-node 提取时间候选、Luxon 做时区换算，规则引擎不调用 LLM。它不是通用语言理解系统：复杂条件句、隐喻、只有时间的跨帖回复、图片内时间、撤回与删除尚未完整处理。用户账号的实际到账情况不在监控范围内。通知始终带原帖链接供核对。
+The rule engine uses chrono-node for time candidates and Luxon for timezone conversion; it does not call an LLM. It is not a general language-understanding system. Complex conditionals, metaphors, cross-post replies containing only a time, times embedded in images, edits, deletions, and account-specific credit state are not fully solved. Alerts always retain the original post link for verification.
 
-## 本地与 Docker
+## Local and Docker
 
 ```bash
 cp .env.example .env
-# 在 .env 中配置至少一个通知目标；默认无需 X Token
-npm run monitor        # 单次检查，自动读取 .env
-npm run monitor:loop   # 持续运行
+# Configure at least one external target for a normal local monitor run.
+npm run monitor
+npm run monitor:loop
 ```
 
 ```bash
@@ -114,33 +167,28 @@ docker compose up -d --build
 docker compose logs -f monitor
 ```
 
-Docker 使用命名卷持久化状态。不要同时在 Actions 和 Docker 中向相同接收者运行两套独立状态的实例，否则会收到重复消息。不要删除状态卷来升级。
+Docker persists state in a named volume. Do not run independent Actions and Docker instances against the same recipients unless you accept duplicate notifications. Do not delete the state volume merely to upgrade.
 
-异常强制终止可能留下 `state.json.lock`。只有确认没有活跃进程后，才可删除锁文件并重启；程序不会自动抢占未知状态的锁。
+## Delivery semantics and recovery
 
-## 投递语义与故障恢复
+- Each candidate notification is persisted to the outbox before outbound delivery; each successful target is checkpointed immediately.
+- Restarting retries only unfinished targets. Persisted pending deliveries are still attempted when the post source is temporarily unavailable.
+- Target identifiers are hashed. State stores no token, email address, phone number, or webhook URL, but it does contain public post text.
+- Delivery is **at least once**. A lost response, a crash between provider acceptance and local checkpointing, or a failed Actions state push can still cause duplicates. Generic webhook consumers should deduplicate by `delivery_id`.
+- Actions attempts to persist checkpoints even after a notification failure. If Git persistence fails, `monitor-state-recovery` is uploaded as an artifact.
+- All failed targets are attempted once per run and retried later. There is no cross-provider exactly-once guarantee or hard real-time SLA.
 
-- 每条候选通知先写入 outbox，再向目标发送；成功后立即保存该目标的检查点。
-- 重启只重试未成功的目标。数据源暂时不可用时，仍尝试投递已持久化的待发通知。
-- 目标标识经过哈希；状态文件不存 Token、邮箱、手机号或 Webhook URL，但包含公开帖子的内容。公开仓库中的状态文件同样公开。
-- 同一帖子及内容版本去重；如果 API 返回编辑版本，会重新判断。FxEmbed 当前仅返回检查点之后的帖子，不主动回看旧帖；官方 `since_id` 也不能保证发现所有旧帖编辑或删除。
-- 这是 **at-least-once** 投递：远端已收到但响应丢失、进程在响应后落盘前退出、Actions 保存状态失败，都仍可能造成重复。通用 Webhook 接收端应按 `delivery_id` 去重。Resend 另有服务商幂等键与其有效期限制。
-- Actions 即使通知步骤失败也会提交检查点；Git 保存失败时上传 `monitor-state-recovery` artifact。此时先暂停监控、恢复该状态到 `data/state.json`，再恢复运行，避免已投递消息重发。
-- 改掉一个仍有待发消息的通知目标时，旧任务会保持待处理并报错；请恢复旧配置或在备份后明确移除该任务，程序不静默丢弃。
-- 同一轮所有失败目标都尝试一次，下一轮按轮询间隔重试。没有承诺跨服务商的 exactly-once 或实时 SLA。
-
-原有网页作为静态说明和仓库状态快照保留；它不是后台调度器，状态也不会因打开网页而自动刷新。运行监控使用上述 Actions 或 Docker。
-
-## 验证与研究
+## Validation and research
 
 ```bash
 npm test
 npm run typecheck
 npm run build
+npm run cloudflare:dry-run
 ```
 
-测试通过模拟 HTTP 与临时状态文件验证，不会发送真实消息。[选型记录](docs/research.md) 说明为什么复用上游以及首版范围；[FxEmbed 数据源说明](docs/fxembed.md) 记录接口、故障行为与验证边界。
+Tests use mocked HTTP and temporary state files and do not send real notifications. See [research notes](docs/research.md) for the reuse/design scope and [FxEmbed source notes](docs/fxembed.md) for API behavior and failure boundaries.
 
 ## License
 
-[MIT](LICENSE)。上游版权声明完整保留。新增依赖保留各自的许可证。
+[MIT](LICENSE). The upstream copyright notice is preserved, and added dependencies retain their respective licenses.
