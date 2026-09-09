@@ -9,19 +9,19 @@ describe("public status projection", () => {
     state.lastSuccessAt = "2026-09-09T03:00:00Z";
     state.lastRunStatus = "failed-1";
     state.latestObservedPost = {
-      id: "3",
+      id: "2098000000000000000",
       text: "Astra demand is unprecedented.",
       createdAt: "2026-09-09T02:30:00Z",
-      url: "https://x.com/thsottiaux/status/3",
+      url: "https://x.com/thsottiaux/status/2098000000000000000",
       media: [],
     };
     state.matches = [
       {
         version: "v1",
-        id: "2",
+        id: "2097000000000000000",
         text: "Codex will reset in two hours.",
         createdAt: "2026-09-09T01:00:00Z",
-        url: "https://x.com/thsottiaux/status/2",
+        url: "https://x.com/thsottiaux/status/2097000000000000000",
         media: [],
         detectedAt: "2026-09-09T03:00:00Z",
         channels: [],
@@ -46,18 +46,37 @@ describe("public status projection", () => {
       "fxembed",
       "2026-09-09T03:00:01Z",
     );
-    expect(status.latest.reset?.id).toBe("2");
+    expect(status.latest.reset?.id).toBe("2097000000000000000");
+    expect(status.latest.reset?.origin).toBe("live");
     expect(status.latest.reset?.deliveryChannels).toEqual([]);
     expect(status.latest.reset?.events[0].time.start).toBe(
       "2026-09-09T03:00:00Z",
     );
-    expect(status.latestObservedPost).toEqual({
-      id: "3",
-      text: "Astra demand is unprecedented.",
-      postCreatedAt: "2026-09-09T02:30:00Z",
-      url: "https://x.com/thsottiaux/status/3",
-    });
-    expect(status.recent.map((item) => item.id)).toEqual(["2"]);
+    expect(status.latestObservedPost?.id).toBe("2098000000000000000");
+    expect(status.recent.map((item) => item.id)).toEqual([
+      "2097000000000000000",
+      "2096035437299237298",
+    ]);
     expect(status.monitor.lastRunStatus).toBe("failed-1");
+  });
+
+  it("fills the previous verified banked reset without mutating live state", () => {
+    const state = emptyState("thsottiaux", "reset");
+    const status = buildPublicStatus(state, "fxembed");
+
+    expect(state.matches).toEqual([]);
+    expect(state.sinceId).toBeNull();
+    expect(state.outbox).toEqual([]);
+    expect(status.latest.bankCredit).toMatchObject({
+      id: "2096035437299237298",
+      origin: "historical_seed",
+      postCreatedAt: "2026-09-05T00:39:25.364Z",
+      deliveryChannels: [],
+    });
+    expect(status.latest.bankCredit?.events[0]).toMatchObject({
+      type: "bank_credit",
+      status: "announced",
+      time: { kind: "unknown", start: null },
+    });
   });
 });
