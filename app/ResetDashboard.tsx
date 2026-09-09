@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { PublicSignal, PublicStatus } from "@/src/types";
 import type { ResetEvent } from "@/src/events";
+import { isCompletedReset, resetHeroState } from "@/src/dashboard-state";
 import styles from "./dashboard.module.css";
 
 const RAW_STATUS_URL =
@@ -119,6 +120,7 @@ function lastTimedEvent(
     seen.add(signal.version);
     for (const event of signal.events) {
       if (event.type !== type || !event.time.start) continue;
+      if (type === "reset" && !isCompletedReset(event)) continue;
       const timestamp = new Date(event.time.start).getTime();
       if (!Number.isFinite(timestamp) || timestamp > now) continue;
       candidates.push({ signal, event, timestamp });
@@ -273,7 +275,10 @@ export default function ResetDashboard() {
   const expiryEvent = eventFor(expirySignal, "bank_expiry");
   const observedPost = status?.latestObservedPost ?? null;
   const monitorHealth = health(status, now);
-  const resetCountdown = countdown(resetEvent, now);
+  const resetHero = resetHeroState(resetEvent, now);
+  const resetCountdown = resetHero.showCountdown ? countdown(resetEvent, now) : null;
+  const resetHeadline = resetCountdown ??
+    (resetHero.showPlannedTime ? displayEventTime(resetEvent, timezone) : resetHero.status);
   const lastReset = lastTimedEvent(status, "reset", now);
   const lastBank = lastTimedEvent(status, "bank_credit", now);
 
@@ -303,16 +308,18 @@ export default function ResetDashboard() {
 
       <section className={styles.hero} id="top">
         <div>
-          <div className={styles.kicker}>{resetCountdown ? "NEXT RESET" : "LATEST RESET"}</div>
+          <div className={styles.kicker}>{resetHero.kicker}</div>
           <div className={styles.statusLine}>
             <span className={`${styles.dot} ${monitorHealth.className}`} />
             {monitorHealth.label}
           </div>
-          <h1>{resetCountdown ?? displayEventTime(resetEvent, timezone)}</h1>
-          <div className={styles.heroMeta}>
-            <strong>{resetEvent?.status ?? "No reset detected"}</strong>
-            {resetCountdown ? <span>{displayEventTime(resetEvent, timezone)}</span> : null}
-          </div>
+          <h1>{resetHeadline}</h1>
+          {resetHero.showPlannedTime ? (
+            <div className={styles.heroMeta}>
+              <strong>{resetHero.status}</strong>
+              {resetCountdown ? <span>{displayEventTime(resetEvent, timezone)}</span> : null}
+            </div>
+          ) : null}
           {resetSignal ? (
             <p className={styles.evidence}>{resetEvent?.evidence ?? resetSignal.text}</p>
           ) : (
@@ -336,7 +343,7 @@ export default function ResetDashboard() {
               </select>
             </label>
           </div>
-          {resetEvent?.time.note ? <p className={styles.note}>{resetEvent.time.note}</p> : null}
+          {resetHero.showPlannedTime && resetEvent?.time.note ? <p className={styles.note}>{resetEvent.time.note}</p> : null}
           {error ? <p className={styles.error}>{error}</p> : null}
         </div>
 
@@ -344,7 +351,7 @@ export default function ResetDashboard() {
           <article>
             <span>LAST RESET</span>
             <strong>{displayEventTime(lastReset?.event ?? null, timezone)}</strong>
-            <small>{lastReset?.event.status ?? "No past timed reset"}</small>
+            <small>{lastReset ? "Completed reset confirmation" : "No completed reset in current history"}</small>
           </article>
           <article>
             <span>LAST BANK</span>

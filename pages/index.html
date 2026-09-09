@@ -165,6 +165,16 @@
         if (time.kind === "date") return new Intl.DateTimeFormat(undefined, { year:"numeric", month:"short", day:"numeric", timeZone:zone() }).format(new Date(time.start));
         return formatMoment(time.start);
       }
+      function resetHeroState(event) {
+        if (!event) return { kicker:"Latest reset", status:"No reset signal", showPlannedTime:false, showCountdown:false };
+        const start = event.time?.start ? new Date(event.time.start).getTime() : NaN;
+        const hasFuturePlan = event.status === "scheduled" && Number.isFinite(start) && start > now && ["exact","window","date"].includes(event.time?.kind);
+        if (hasFuturePlan) return { kicker:"Next reset", status:"Reset scheduled", showPlannedTime:true, showCountdown:["exact","window"].includes(event.time.kind) };
+        if (event.status === "completed") return { kicker:"Latest reset", status:"Reset completed", showPlannedTime:false, showCountdown:false };
+        if (event.status === "scheduled") return { kicker:"Latest reset", status:"Reset expected · awaiting confirmation", showPlannedTime:false, showCountdown:false };
+        if (event.status === "announced") return { kicker:"Latest reset", status:"Reset announced · time not confirmed", showPlannedTime:false, showCountdown:false };
+        return { kicker:"Latest reset", status:"Reset signal uncertain", showPlannedTime:false, showCountdown:false };
+      }
       function countdown(event) {
         if (!event?.time?.start || !["exact","window"].includes(event.time.kind)) return "";
         const delta = new Date(event.time.start).getTime() - now;
@@ -191,6 +201,7 @@
           seen.add(signal.version);
           for (const event of signal.events || []) {
             if (event.type !== type || !event.time?.start) continue;
+            if (type === "reset" && event.status !== "completed") continue;
             const timestamp = new Date(event.time.start).getTime();
             if (!Number.isFinite(timestamp) || timestamp > now) continue;
             candidates.push({ event, timestamp });
@@ -228,11 +239,12 @@
       function render() {
         const resetSignal = state?.latest?.reset || null;
         const resetEvent = eventFrom(resetSignal, "reset");
-        const resetCountdown = countdown(resetEvent);
+        const hero = resetHeroState(resetEvent);
+        const resetCountdown = hero.showCountdown ? countdown(resetEvent) : "";
         const observed = state?.latestObservedPost || null;
-        $("reset-heading").textContent = resetCountdown ? "Next reset" : "Latest reset";
-        $("reset-status").textContent = resetEvent?.status || (resetSignal ? "announced" : "Waiting");
-        $("reset-time").textContent = resetCountdown || displayEvent(resetEvent);
+        $("reset-heading").textContent = hero.kicker;
+        $("reset-status").textContent = hero.status;
+        $("reset-time").textContent = resetCountdown || (hero.showPlannedTime ? displayEvent(resetEvent) : hero.status);
         $("countdown").textContent = resetCountdown ? displayEvent(resetEvent) : "";
         $("reset-evidence").textContent = resetEvent?.evidence || resetSignal?.text || "Run the monitor once to populate the public status projection.";
         $("post-link").href = safeHttps(resetSignal?.url || "https://x.com/thsottiaux");
