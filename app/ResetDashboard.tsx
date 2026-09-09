@@ -281,6 +281,9 @@ export default function ResetDashboard() {
     (resetHero.showPlannedTime ? displayEventTime(resetEvent, timezone) : resetHero.status);
   const lastReset = lastTimedEvent(status, "reset", now);
   const lastBank = lastTimedEvent(status, "bank_credit", now);
+  const bankAnnouncement = bankSignal?.postCreatedAt
+    ? formatMoment(bankSignal.postCreatedAt, timezone)
+    : null;
 
   const changeTimezone = (value: string) => {
     setTimezoneChoice(value);
@@ -355,13 +358,13 @@ export default function ResetDashboard() {
           </article>
           <article>
             <span>LAST BANK</span>
-            <strong>{displayEventTime(lastBank?.event ?? null, timezone)}</strong>
-            <small>{lastBank?.event.status ?? "No past timed bank reset"}</small>
+            <strong>{lastBank ? displayEventTime(lastBank.event, timezone) : bankAnnouncement ? `Announced ${bankAnnouncement}` : "No bank reset found"}</strong>
+            <small>{lastBank ? lastBank.event.status : bankSignal ? "Landing time not confirmed" : "No bank reset in current history"}</small>
           </article>
           <article>
             <span>BANK RESET</span>
-            <strong>{displayEventTime(bankEvent, timezone)}</strong>
-            <small>{bankEvent?.status ?? "Not announced"}</small>
+            <strong>{bankEvent?.time.start ? displayEventTime(bankEvent, timezone) : bankEvent ? "Banked reset announced" : "Not announced"}</strong>
+            <small>{bankEvent?.time.note ?? bankEvent?.status ?? "Not announced"}</small>
           </article>
           <article>
             <span>BANK EXPIRY</span>
@@ -407,7 +410,7 @@ export default function ResetDashboard() {
                   <strong>{signal.events.map((event) => `${event.type} · ${event.status}`).join(" / ")}</strong>
                   <p>{signal.text}</p>
                 </div>
-                <span>{signal.deliveryChannels.length ? signal.deliveryChannels.join(" + ") : "delivery pending / bootstrap"}</span>
+                <span>{signal.origin === "historical_seed" ? "verified history" : signal.deliveryChannels.length ? signal.deliveryChannels.join(" + ") : "delivery pending / bootstrap"}</span>
               </a>
             ))}
           </div>
