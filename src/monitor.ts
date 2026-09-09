@@ -19,21 +19,10 @@ type Dependencies = {
 
 export const postVersion = (post: XPost) =>
   createHash("sha256")
-    .update(
-      JSON.stringify([
-        post.canonicalId ?? post.id,
-        post.text,
-        post.createdAt,
-        post.media,
-      ]),
-    )
+    .update(JSON.stringify([post.canonicalId ?? post.id, post.text, post.createdAt, post.media]))
     .digest("hex");
 
-async function persist(
-  config: AppConfig,
-  state: MonitorState,
-  now: () => Date,
-): Promise<void> {
+async function persist(config: AppConfig, state: MonitorState, now: () => Date): Promise<void> {
   await writeState(config.statePath, state);
   if (config.publicStatusPath) {
     await writePublicStatus(
@@ -49,19 +38,10 @@ function detectedRecord(
   events: MatchRecord["events"],
   detectedAt: string,
 ): MatchRecord {
-  return {
-    version,
-    ...post,
-    detectedAt,
-    events,
-    channels: [],
-  };
+  return { version, ...post, detectedAt, events, channels: [] };
 }
 
-export async function runMonitor(
-  config: AppConfig,
-  deps: Dependencies = {},
-): Promise<MonitorState> {
+export async function runMonitor(config: AppConfig, deps: Dependencies = {}): Promise<MonitorState> {
   await mkdir(dirname(config.statePath), { recursive: true });
   const lockPath = `${config.statePath}.lock`;
   let lock;
@@ -69,9 +49,7 @@ export async function runMonitor(
     lock = await open(lockPath, "wx");
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === "EEXIST")
-      throw new Error(
-        "Monitor state is locked; stop any active worker before removing a stale .lock file",
-      );
+      throw new Error("Monitor state is locked; stop any active worker before removing a stale .lock file");
     throw error;
   }
   try {
@@ -82,20 +60,13 @@ export async function runMonitor(
   }
 }
 
-async function runLocked(
-  config: AppConfig,
-  deps: Dependencies,
-): Promise<MonitorState> {
-  const state = await readState(
-    config.statePath,
-    config.username,
-    config.keyword,
-  );
+async function runLocked(config: AppConfig, deps: Dependencies): Promise<MonitorState> {
+  const state = await readState(config.statePath, config.username, config.keyword);
   const client = deps.source ?? deps.xClient ?? createPostSource(config);
   const targets = deps.targets ?? createTargets(config);
   if (!targets.length) throw new Error("No notification targets configured");
   const now = deps.now ?? (() => new Date());
-  state.version = 3;
+  state.version = 2;
   state.outbox ??= [];
   state.seen ??= {};
   state.lastSuccessAt ??= state.lastCheckedAt;
@@ -118,9 +89,7 @@ async function runLocked(
 
   if (fetched) {
     const { posts, newestId } = fetched;
-    for (const post of [...posts].sort((a, b) =>
-      BigInt(a.id) < BigInt(b.id) ? -1 : 1,
-    )) {
+    for (const post of [...posts].sort((a, b) => (BigInt(a.id) < BigInt(b.id) ? -1 : 1))) {
       const identity = post.canonicalId ?? post.id;
       const version = postVersion(post);
       if (state.seen[identity] === version) continue;
@@ -178,15 +147,10 @@ async function runLocked(
     const checkedAt = now().toISOString();
     state.lastCheckedAt = checkedAt;
     state.lastSuccessAt = checkedAt;
-    state.lastRunStatus = bootstrap
-      ? "bootstrapped"
-      : `checked-${posts.length}-posts`;
-    // Cursor, detected signals and durable outbox are committed together before
-    // any outbound notification attempt.
+    state.lastRunStatus = bootstrap ? "bootstrapped" : `checked-${posts.length}-posts`;
     await persist(config, state, now);
   }
 
-  // Deliver existing pending items even when collection is temporarily unavailable.
   for (const item of [...state.outbox]) {
     for (const targetId of item.targets) {
       if (item.delivered.includes(targetId)) continue;
@@ -211,7 +175,6 @@ async function runLocked(
           .filter((channel): channel is string => Boolean(channel));
         match.notifiedAt ??= now().toISOString();
       }
-      // A failed checkpoint must stop the run, not send subsequent notifications.
       await persist(config, state, now);
     }
     if (item.targets.every((id) => item.delivered.includes(id))) {
