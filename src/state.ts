@@ -1,6 +1,6 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
-import type { MatchRecord, MonitorState } from "./types";
+import type { MatchRecord, MonitorState, XPost } from "./types";
 
 export function emptyState(username: string, keyword: string): MonitorState {
   return {
@@ -16,6 +16,7 @@ export function emptyState(username: string, keyword: string): MonitorState {
     matches: [],
     outbox: [],
     seen: {},
+    latestObservedPost: null,
   };
 }
 
@@ -45,6 +46,27 @@ function migrateMatch(match: Record<string, unknown>): MatchRecord {
     channels: Array.isArray(match.channels)
       ? match.channels.filter((value): value is string => typeof value === "string")
       : [],
+  };
+}
+
+function migrateObservedPost(value: unknown): XPost | null {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return null;
+  const raw = value as Record<string, unknown>;
+  if (
+    typeof raw.id !== "string" ||
+    !/^\d+$/.test(raw.id) ||
+    typeof raw.text !== "string" ||
+    typeof raw.url !== "string" ||
+    !(raw.createdAt === null || typeof raw.createdAt === "string")
+  )
+    return null;
+  return {
+    id: raw.id,
+    canonicalId: typeof raw.canonicalId === "string" ? raw.canonicalId : undefined,
+    text: raw.text,
+    createdAt: raw.createdAt as string | null,
+    url: raw.url,
+    media: Array.isArray(raw.media) ? (raw.media as XPost["media"]) : [],
   };
 }
 
@@ -82,6 +104,7 @@ export async function readState(
       raw.seen && typeof raw.seen === "object"
         ? (raw.seen as Record<string, string>)
         : {};
+    state.latestObservedPost = migrateObservedPost(raw.latestObservedPost);
     state.lastSuccessAt =
       typeof raw.lastSuccessAt === "string"
         ? raw.lastSuccessAt
