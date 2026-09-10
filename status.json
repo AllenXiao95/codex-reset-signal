@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T17:48:14.007Z",
+  "updatedAt": "2026-09-10T17:53:01.799Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T17:48:13.947Z",
-    "lastSuccessAt": "2026-09-10T17:48:13.947Z",
+    "lastCheckedAt": "2026-09-10T17:53:01.796Z",
+    "lastSuccessAt": "2026-09-10T17:53:01.796Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098105060186374280",
-    "text": "You can now build on top of the same voice system that we shipped to 1B users in ChatGPT.\n\nSo many fun applications of a full duplex system with solid toolcalling. Going back to text-only experiences after this feels harder than I had expected.",
-    "url": "https://x.com/thsottiaux/status/2098105060186374280",
-    "postCreatedAt": "2026-09-10T17:43:21.000Z"
+    "id": "2098106443748778164",
+    "text": "@Andy_AJT You could have spelled Astra\n\nAmazon\nStripe\nTesla\nRevolution\nOracle",
+    "url": "https://x.com/thsottiaux/status/2098106443748778164",
+    "postCreatedAt": "2026-09-10T17:48:51.000Z"
   },
   "latest": {
     "reset": {
