@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T19:23:03.647Z",
+  "updatedAt": "2026-09-10T19:28:07.813Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T19:23:03.645Z",
-    "lastSuccessAt": "2026-09-10T19:23:03.645Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-10T19:28:07.810Z",
+    "lastSuccessAt": "2026-09-10T19:28:07.810Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098127460567232568",
-    "text": "@chetaslua We have made no changes since the launch of Astra.",
-    "url": "https://x.com/thsottiaux/status/2098127460567232568",
-    "postCreatedAt": "2026-09-10T19:12:22.000Z"
+    "id": "2098131108001181952",
+    "text": "@TokenGremlin Gremlins being gremlins. No changes were made here. Same Astra as at launch",
+    "url": "https://x.com/thsottiaux/status/2098131108001181952",
+    "postCreatedAt": "2026-09-10T19:26:52.000Z"
   },
   "latest": {
     "reset": {
