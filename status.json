@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T18:13:01.590Z",
+  "updatedAt": "2026-09-10T18:17:58.438Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T18:13:01.588Z",
-    "lastSuccessAt": "2026-09-10T18:13:01.588Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-10T18:17:58.432Z",
+    "lastSuccessAt": "2026-09-10T18:17:58.432Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098106443748778164",
-    "text": "@Andy_AJT You could have spelled Astra\n\nAmazon\nStripe\nTesla\nRevolution\nOracle",
-    "url": "https://x.com/thsottiaux/status/2098106443748778164",
-    "postCreatedAt": "2026-09-10T17:48:51.000Z"
+    "id": "2098113585683808624",
+    "text": "To make sure our current users have an incredible experience and continued access to Astra, we are going to pause subscriptions to our $200 Pro plan. These put the most strain on our systems and we wanted to take the smallest step that allows us to continue giving the broadest access possible. All other plans and the api remain available.\n\nThere is no impact to existing accounts and we are working on adding more capacity as fast as we can. Thanks!",
+    "url": "https://x.com/thsottiaux/status/2098113585683808624",
+    "postCreatedAt": "2026-09-10T18:17:14.000Z"
   },
   "latest": {
     "reset": {
