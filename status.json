@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T22:12:57.363Z",
+  "updatedAt": "2026-09-10T22:18:01.425Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T22:12:57.360Z",
-    "lastSuccessAt": "2026-09-10T22:12:57.360Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-10T22:18:01.423Z",
+    "lastSuccessAt": "2026-09-10T22:18:01.423Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098170066089267439",
-    "text": "@adonis_singh Our yearly compute bill is quite a bit north of millions",
-    "url": "https://x.com/thsottiaux/status/2098170066089267439",
-    "postCreatedAt": "2026-09-10T22:01:40.000Z"
+    "id": "2098173464549151061",
+    "text": "@stalkermustang Interesting",
+    "url": "https://x.com/thsottiaux/status/2098173464549151061",
+    "postCreatedAt": "2026-09-10T22:15:10.000Z"
   },
   "latest": {
     "reset": {

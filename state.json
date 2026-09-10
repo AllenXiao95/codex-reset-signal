@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098170066089267439",
-  "lastCheckedAt": "2026-09-10T22:12:57.360Z",
-  "lastSuccessAt": "2026-09-10T22:12:57.360Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 38,
+  "sinceId": "2098173464549151061",
+  "lastCheckedAt": "2026-09-10T22:18:01.423Z",
+  "lastSuccessAt": "2026-09-10T22:18:01.423Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 39,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -171,15 +171,16 @@
     "2098131108001181952": "c00b4f590f809075929d969bce85407d3f0935e97756319448d3e3aac17ef2c1",
     "2098165551554240764": "e3207009f446ab8d25185823a2bb22e26892a75e9b140b5c516022a2d4b5dd6f",
     "2098169651956220384": "447814b8fce4e2b2847366ce18a88cef4572db0a63b3fb1706b2816cb0d5440f",
-    "2098170066089267439": "741fa0a7eb0ce7f85ae449891bd2de32c3c2f21d852bf34ddd5f29d011022825"
+    "2098170066089267439": "741fa0a7eb0ce7f85ae449891bd2de32c3c2f21d852bf34ddd5f29d011022825",
+    "2098173464549151061": "212be8caeaa7ca79d8218a42584343c3ffb622c897758577410b09773aedcf8f"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098170066089267439",
-    "canonicalId": "2098170066089267439",
-    "text": "@adonis_singh Our yearly compute bill is quite a bit north of millions",
-    "createdAt": "2026-09-10T22:01:40.000Z",
-    "url": "https://x.com/thsottiaux/status/2098170066089267439",
+    "id": "2098173464549151061",
+    "canonicalId": "2098173464549151061",
+    "text": "@stalkermustang Interesting",
+    "createdAt": "2026-09-10T22:15:10.000Z",
+    "url": "https://x.com/thsottiaux/status/2098173464549151061",
     "media": []
   }
 }
