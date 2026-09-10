@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T21:57:54.790Z",
+  "updatedAt": "2026-09-10T22:03:01.242Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T21:57:54.787Z",
-    "lastSuccessAt": "2026-09-10T21:57:54.787Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-10T22:03:01.239Z",
+    "lastSuccessAt": "2026-09-10T22:03:01.239Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2098165551554240764",
-    "text": "Do you pronounce it data or data? This is the way everyone makes dashboards and learns about the business at OpenAI. Can't live without it.",
-    "url": "https://x.com/thsottiaux/status/2098165551554240764",
-    "postCreatedAt": "2026-09-10T21:43:44.000Z"
+    "id": "2098170066089267439",
+    "text": "@adonis_singh Our yearly compute bill is quite a bit north of millions",
+    "url": "https://x.com/thsottiaux/status/2098170066089267439",
+    "postCreatedAt": "2026-09-10T22:01:40.000Z"
   },
   "latest": {
     "reset": {

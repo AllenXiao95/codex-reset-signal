@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098165551554240764",
-  "lastCheckedAt": "2026-09-10T21:57:54.787Z",
-  "lastSuccessAt": "2026-09-10T21:57:54.787Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 36,
+  "sinceId": "2098170066089267439",
+  "lastCheckedAt": "2026-09-10T22:03:01.239Z",
+  "lastSuccessAt": "2026-09-10T22:03:01.239Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 38,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -169,15 +169,17 @@
     "2098115478644523392": "5752b05b397bdc016b9ae17345d1f94e8ec7f3795b0d7cc2edc5da70bebd1026",
     "2098127460567232568": "4ae0b7ca5147aa499d3275c63e4f6e4d38aa1eb36fa39dbf874c63c8732612c7",
     "2098131108001181952": "c00b4f590f809075929d969bce85407d3f0935e97756319448d3e3aac17ef2c1",
-    "2098165551554240764": "e3207009f446ab8d25185823a2bb22e26892a75e9b140b5c516022a2d4b5dd6f"
+    "2098165551554240764": "e3207009f446ab8d25185823a2bb22e26892a75e9b140b5c516022a2d4b5dd6f",
+    "2098169651956220384": "447814b8fce4e2b2847366ce18a88cef4572db0a63b3fb1706b2816cb0d5440f",
+    "2098170066089267439": "741fa0a7eb0ce7f85ae449891bd2de32c3c2f21d852bf34ddd5f29d011022825"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098165551554240764",
-    "canonicalId": "2098165551554240764",
-    "text": "Do you pronounce it data or data? This is the way everyone makes dashboards and learns about the business at OpenAI. Can't live without it.",
-    "createdAt": "2026-09-10T21:43:44.000Z",
-    "url": "https://x.com/thsottiaux/status/2098165551554240764",
+    "id": "2098170066089267439",
+    "canonicalId": "2098170066089267439",
+    "text": "@adonis_singh Our yearly compute bill is quite a bit north of millions",
+    "createdAt": "2026-09-10T22:01:40.000Z",
+    "url": "https://x.com/thsottiaux/status/2098170066089267439",
     "media": []
   }
 }
