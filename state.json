@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098113585683808624",
-  "lastCheckedAt": "2026-09-10T18:23:03.215Z",
-  "lastSuccessAt": "2026-09-10T18:23:03.215Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 32,
+  "sinceId": "2098115478644523392",
+  "lastCheckedAt": "2026-09-10T18:28:00.802Z",
+  "lastSuccessAt": "2026-09-10T18:28:00.802Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 33,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -165,15 +165,16 @@
     "2097912273264095536": "1460ac83070d4345abb93db03633280e955b8f79cfa325c0b4114e4447fb88a0",
     "2098105060186374280": "32ba0827e8ab9a2cb47e772bc3efd0493e250eb049258bbd80e158df9d4544ed",
     "2098106443748778164": "9449e36db3ad0b95684ede90fb5e6abd3e4489d2d9a8a07c54bca1d303836018",
-    "2098113585683808624": "d8715206b3ef10f656cebd48ea3728d2056ff6f4b0c03ef21bf0ce5e51b24f80"
+    "2098113585683808624": "d8715206b3ef10f656cebd48ea3728d2056ff6f4b0c03ef21bf0ce5e51b24f80",
+    "2098115478644523392": "5752b05b397bdc016b9ae17345d1f94e8ec7f3795b0d7cc2edc5da70bebd1026"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098113585683808624",
-    "canonicalId": "2098113585683808624",
-    "text": "To make sure our current users have an incredible experience and continued access to Astra, we are going to pause subscriptions to our $200 Pro plan. These put the most strain on our systems and we wanted to take the smallest step that allows us to continue giving the broadest access possible. All other plans and the api remain available.\n\nThere is no impact to existing accounts and we are working on adding more capacity as fast as we can. Thanks!",
-    "createdAt": "2026-09-10T18:17:14.000Z",
-    "url": "https://x.com/thsottiaux/status/2098113585683808624",
+    "id": "2098115478644523392",
+    "canonicalId": "2098115478644523392",
+    "text": "@nudevise Shouldn’t have underestimated Astra",
+    "createdAt": "2026-09-10T18:24:45.000Z",
+    "url": "https://x.com/thsottiaux/status/2098115478644523392",
     "media": []
   }
 }
