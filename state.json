@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098115478644523392",
-  "lastCheckedAt": "2026-09-10T19:07:58.564Z",
-  "lastSuccessAt": "2026-09-10T19:07:58.564Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 33,
+  "sinceId": "2098127460567232568",
+  "lastCheckedAt": "2026-09-10T19:13:02.121Z",
+  "lastSuccessAt": "2026-09-10T19:13:02.121Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 34,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -166,15 +166,16 @@
     "2098105060186374280": "32ba0827e8ab9a2cb47e772bc3efd0493e250eb049258bbd80e158df9d4544ed",
     "2098106443748778164": "9449e36db3ad0b95684ede90fb5e6abd3e4489d2d9a8a07c54bca1d303836018",
     "2098113585683808624": "d8715206b3ef10f656cebd48ea3728d2056ff6f4b0c03ef21bf0ce5e51b24f80",
-    "2098115478644523392": "5752b05b397bdc016b9ae17345d1f94e8ec7f3795b0d7cc2edc5da70bebd1026"
+    "2098115478644523392": "5752b05b397bdc016b9ae17345d1f94e8ec7f3795b0d7cc2edc5da70bebd1026",
+    "2098127460567232568": "4ae0b7ca5147aa499d3275c63e4f6e4d38aa1eb36fa39dbf874c63c8732612c7"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098115478644523392",
-    "canonicalId": "2098115478644523392",
-    "text": "@nudevise Shouldn’t have underestimated Astra",
-    "createdAt": "2026-09-10T18:24:45.000Z",
-    "url": "https://x.com/thsottiaux/status/2098115478644523392",
+    "id": "2098127460567232568",
+    "canonicalId": "2098127460567232568",
+    "text": "@chetaslua We have made no changes since the launch of Astra.",
+    "createdAt": "2026-09-10T19:12:22.000Z",
+    "url": "https://x.com/thsottiaux/status/2098127460567232568",
     "media": []
   }
 }

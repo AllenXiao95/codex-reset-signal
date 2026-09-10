@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T19:07:58.567Z",
+  "updatedAt": "2026-09-10T19:13:02.365Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T19:07:58.564Z",
-    "lastSuccessAt": "2026-09-10T19:07:58.564Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-10T19:13:02.121Z",
+    "lastSuccessAt": "2026-09-10T19:13:02.121Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098115478644523392",
-    "text": "@nudevise Shouldn’t have underestimated Astra",
-    "url": "https://x.com/thsottiaux/status/2098115478644523392",
-    "postCreatedAt": "2026-09-10T18:24:45.000Z"
+    "id": "2098127460567232568",
+    "text": "@chetaslua We have made no changes since the launch of Astra.",
+    "url": "https://x.com/thsottiaux/status/2098127460567232568",
+    "postCreatedAt": "2026-09-10T19:12:22.000Z"
   },
   "latest": {
     "reset": {
