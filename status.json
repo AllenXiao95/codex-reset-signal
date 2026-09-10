@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T04:52:57.948Z",
+  "updatedAt": "2026-09-10T04:57:55.627Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T04:52:57.946Z",
-    "lastSuccessAt": "2026-09-10T04:52:57.946Z",
+    "lastCheckedAt": "2026-09-10T04:57:55.625Z",
+    "lastSuccessAt": "2026-09-10T04:57:55.625Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2097911169969213481",
-    "text": "@thdxr Great work.",
-    "url": "https://x.com/thsottiaux/status/2097911169969213481",
-    "postCreatedAt": "2026-09-10T04:52:54.000Z"
+    "id": "2097912273264095536",
+    "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
+    "url": "https://x.com/thsottiaux/status/2097912273264095536",
+    "postCreatedAt": "2026-09-10T04:57:17.000Z"
   },
   "latest": {
     "reset": {
