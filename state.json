@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2097912273264095536",
-  "lastCheckedAt": "2026-09-10T17:43:00.768Z",
-  "lastSuccessAt": "2026-09-10T17:43:00.768Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 29,
+  "sinceId": "2098105060186374280",
+  "lastCheckedAt": "2026-09-10T17:48:13.947Z",
+  "lastSuccessAt": "2026-09-10T17:48:13.947Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 30,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -162,15 +162,16 @@
     "2097829053147582782": "a99ab0cb33514856d2beadfd8dfc7136415bef83cb1b98b8fc7f1f8f4e66a910",
     "2097872245532094884": "7dc0848d0c97fa5b1f7b4a8cb6f036633e244ad9ea419aaccff8c300fa20f455",
     "2097911169969213481": "dd5811c6bfdb706997678ba940c62696149a6fb15b1bf922dcfa3d600e9e1fff",
-    "2097912273264095536": "1460ac83070d4345abb93db03633280e955b8f79cfa325c0b4114e4447fb88a0"
+    "2097912273264095536": "1460ac83070d4345abb93db03633280e955b8f79cfa325c0b4114e4447fb88a0",
+    "2098105060186374280": "32ba0827e8ab9a2cb47e772bc3efd0493e250eb049258bbd80e158df9d4544ed"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2097912273264095536",
-    "canonicalId": "2097912273264095536",
-    "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
-    "createdAt": "2026-09-10T04:57:17.000Z",
-    "url": "https://x.com/thsottiaux/status/2097912273264095536",
+    "id": "2098105060186374280",
+    "canonicalId": "2098105060186374280",
+    "text": "You can now build on top of the same voice system that we shipped to 1B users in ChatGPT.\n\nSo many fun applications of a full duplex system with solid toolcalling. Going back to text-only experiences after this feels harder than I had expected.",
+    "createdAt": "2026-09-10T17:43:21.000Z",
+    "url": "https://x.com/thsottiaux/status/2098105060186374280",
     "media": []
   }
 }

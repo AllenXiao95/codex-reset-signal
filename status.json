@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-10T17:43:00.770Z",
+  "updatedAt": "2026-09-10T17:48:14.007Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-10T17:43:00.768Z",
-    "lastSuccessAt": "2026-09-10T17:43:00.768Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-10T17:48:13.947Z",
+    "lastSuccessAt": "2026-09-10T17:48:13.947Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2097912273264095536",
-    "text": "One of the greatest joys is debating new model names with researchers. They come up with the most hilarious stuff",
-    "url": "https://x.com/thsottiaux/status/2097912273264095536",
-    "postCreatedAt": "2026-09-10T04:57:17.000Z"
+    "id": "2098105060186374280",
+    "text": "You can now build on top of the same voice system that we shipped to 1B users in ChatGPT.\n\nSo many fun applications of a full duplex system with solid toolcalling. Going back to text-only experiences after this feels harder than I had expected.",
+    "url": "https://x.com/thsottiaux/status/2098105060186374280",
+    "postCreatedAt": "2026-09-10T17:43:21.000Z"
   },
   "latest": {
     "reset": {
