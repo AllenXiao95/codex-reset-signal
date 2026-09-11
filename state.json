@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098238138334548260",
-  "lastCheckedAt": "2026-09-11T02:47:59.263Z",
-  "lastSuccessAt": "2026-09-11T02:47:59.263Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 42,
+  "sinceId": "2098242895195275735",
+  "lastCheckedAt": "2026-09-11T02:53:07.485Z",
+  "lastSuccessAt": "2026-09-11T02:53:07.485Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 43,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -175,15 +175,16 @@
     "2098173464549151061": "212be8caeaa7ca79d8218a42584343c3ffb622c897758577410b09773aedcf8f",
     "2098235345964089563": "314c6e74a3231584e4a12f2fad7e5eeab833f0c9d9dd3ea020c3ec1334bb0ab6",
     "2098236375770575011": "43bbcb74fc374b8efd8e965f4830bff419db7e798131ff2414723ec41e65d512",
-    "2098238138334548260": "c6ab8a964af949bec07102cbefd54a25cd104fd587d2f72f9071dab5262e61dd"
+    "2098238138334548260": "c6ab8a964af949bec07102cbefd54a25cd104fd587d2f72f9071dab5262e61dd",
+    "2098242895195275735": "f761bc4390af442fdfa096e042023433fae64eddb7fbf2ab2db86fd93658a4f1"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098238138334548260",
-    "canonicalId": "2098238138334548260",
-    "text": "Scaled agents on demand.\n\nThis is pretty much the infrastructure that runs under the hood for ChatGPT Work, all wrapped up in an API which you can use to get started in &lt; 1 min. Happy building.",
-    "createdAt": "2026-09-11T02:32:10.000Z",
-    "url": "https://x.com/thsottiaux/status/2098238138334548260",
+    "id": "2098242895195275735",
+    "canonicalId": "2098242895195275735",
+    "text": "@AzianMike @OpenAI I confirm the assignment was \"please launch this thing in two weeks, good luck\" and look, here we are",
+    "createdAt": "2026-09-11T02:51:04.000Z",
+    "url": "https://x.com/thsottiaux/status/2098242895195275735",
     "media": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T02:47:59.266Z",
+  "updatedAt": "2026-09-11T02:53:07.488Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-11T02:47:59.263Z",
-    "lastSuccessAt": "2026-09-11T02:47:59.263Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-11T02:53:07.485Z",
+    "lastSuccessAt": "2026-09-11T02:53:07.485Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098238138334548260",
-    "text": "Scaled agents on demand.\n\nThis is pretty much the infrastructure that runs under the hood for ChatGPT Work, all wrapped up in an API which you can use to get started in &lt; 1 min. Happy building.",
-    "url": "https://x.com/thsottiaux/status/2098238138334548260",
-    "postCreatedAt": "2026-09-11T02:32:10.000Z"
+    "id": "2098242895195275735",
+    "text": "@AzianMike @OpenAI I confirm the assignment was \"please launch this thing in two weeks, good luck\" and look, here we are",
+    "url": "https://x.com/thsottiaux/status/2098242895195275735",
+    "postCreatedAt": "2026-09-11T02:51:04.000Z"
   },
   "latest": {
     "reset": {
