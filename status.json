@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T16:13:24.347Z",
+  "updatedAt": "2026-09-11T16:18:15.633Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-11T16:13:24.345Z",
-    "lastSuccessAt": "2026-09-11T16:13:24.345Z",
+    "lastCheckedAt": "2026-09-11T16:18:15.630Z",
+    "lastSuccessAt": "2026-09-11T16:18:15.630Z",
     "lastRunStatus": "checked-0-posts"
   },
   "latestObservedPost": {
