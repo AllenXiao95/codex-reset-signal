@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T06:58:00.653Z",
+  "updatedAt": "2026-09-11T07:03:06.552Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-11T06:58:00.651Z",
-    "lastSuccessAt": "2026-09-11T06:58:00.651Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-11T07:03:06.549Z",
+    "lastSuccessAt": "2026-09-11T07:03:06.549Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098300998968357218",
-    "text": "Next week we’ll be retiring GPT-5.3-Codex-Spark. Can you believe we shipped a model named as such!!\n\nIt's had a good run and was a lot of fun, but usage has been declining and we have significantly better models now. Time to make room for the future.",
-    "url": "https://x.com/thsottiaux/status/2098300998968357218",
-    "postCreatedAt": "2026-09-11T06:41:57.000Z"
+    "id": "2098305309265875210",
+    "text": "@paradite_ “genius”",
+    "url": "https://x.com/thsottiaux/status/2098305309265875210",
+    "postCreatedAt": "2026-09-11T06:59:05.000Z"
   },
   "latest": {
     "reset": {
