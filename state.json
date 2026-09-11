@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2098300998968357218",
-  "lastCheckedAt": "2026-09-11T06:42:55.378Z",
-  "lastSuccessAt": "2026-09-11T06:42:55.378Z",
-  "lastRunStatus": "checked-2-posts",
+  "lastCheckedAt": "2026-09-11T06:47:53.187Z",
+  "lastSuccessAt": "2026-09-11T06:47:53.187Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 45,
   "matches": [
     {
       "version": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
       "id": "2098300424520687965",
-      "canonicalId": "2098300424520687965",
       "text": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
       "createdAt": "2026-09-11T06:39:40.000Z",
       "url": "https://x.com/thsottiaux/status/2098300424520687965",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-09-11T06:42:55.379Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-09-11T06:42:55.379Z"
+      ]
     },
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
