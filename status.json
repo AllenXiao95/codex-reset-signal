@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T02:22:54.027Z",
+  "updatedAt": "2026-09-11T02:27:53.616Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-11T02:22:54.025Z",
-    "lastSuccessAt": "2026-09-11T02:22:54.025Z",
+    "lastCheckedAt": "2026-09-11T02:27:53.613Z",
+    "lastSuccessAt": "2026-09-11T02:27:53.613Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098235345964089563",
-    "text": "@thdxr I thought you were not the CEO",
-    "url": "https://x.com/thsottiaux/status/2098235345964089563",
-    "postCreatedAt": "2026-09-11T02:21:04.000Z"
+    "id": "2098236375770575011",
+    "text": "@aubreystrobel Just checked and we do have a few weekly Codex users in the Vatican now",
+    "url": "https://x.com/thsottiaux/status/2098236375770575011",
+    "postCreatedAt": "2026-09-11T02:25:09.000Z"
   },
   "latest": {
     "reset": {

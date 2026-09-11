@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098235345964089563",
-  "lastCheckedAt": "2026-09-11T02:22:54.025Z",
-  "lastSuccessAt": "2026-09-11T02:22:54.025Z",
+  "sinceId": "2098236375770575011",
+  "lastCheckedAt": "2026-09-11T02:27:53.613Z",
+  "lastSuccessAt": "2026-09-11T02:27:53.613Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 40,
+  "postsScanned": 41,
   "matches": [
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
@@ -173,15 +173,16 @@
     "2098169651956220384": "447814b8fce4e2b2847366ce18a88cef4572db0a63b3fb1706b2816cb0d5440f",
     "2098170066089267439": "741fa0a7eb0ce7f85ae449891bd2de32c3c2f21d852bf34ddd5f29d011022825",
     "2098173464549151061": "212be8caeaa7ca79d8218a42584343c3ffb622c897758577410b09773aedcf8f",
-    "2098235345964089563": "314c6e74a3231584e4a12f2fad7e5eeab833f0c9d9dd3ea020c3ec1334bb0ab6"
+    "2098235345964089563": "314c6e74a3231584e4a12f2fad7e5eeab833f0c9d9dd3ea020c3ec1334bb0ab6",
+    "2098236375770575011": "43bbcb74fc374b8efd8e965f4830bff419db7e798131ff2414723ec41e65d512"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098235345964089563",
-    "canonicalId": "2098235345964089563",
-    "text": "@thdxr I thought you were not the CEO",
-    "createdAt": "2026-09-11T02:21:04.000Z",
-    "url": "https://x.com/thsottiaux/status/2098235345964089563",
+    "id": "2098236375770575011",
+    "canonicalId": "2098236375770575011",
+    "text": "@aubreystrobel Just checked and we do have a few weekly Codex users in the Vatican now",
+    "createdAt": "2026-09-11T02:25:09.000Z",
+    "url": "https://x.com/thsottiaux/status/2098236375770575011",
     "media": []
   }
 }
