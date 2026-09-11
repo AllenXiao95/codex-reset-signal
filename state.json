@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098242895195275735",
-  "lastCheckedAt": "2026-09-11T06:37:57.306Z",
-  "lastSuccessAt": "2026-09-11T06:37:57.306Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 43,
+  "sinceId": "2098300998968357218",
+  "lastCheckedAt": "2026-09-11T06:42:55.378Z",
+  "lastSuccessAt": "2026-09-11T06:42:55.378Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 45,
   "matches": [
+    {
+      "version": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
+      "id": "2098300424520687965",
+      "canonicalId": "2098300424520687965",
+      "text": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
+      "createdAt": "2026-09-11T06:39:40.000Z",
+      "url": "https://x.com/thsottiaux/status/2098300424520687965",
+      "media": [],
+      "detectedAt": "2026-09-11T06:42:55.377Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-09-11T06:42:55.379Z"
+    },
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
       "id": "2097752790177370535",
@@ -176,15 +204,17 @@
     "2098235345964089563": "314c6e74a3231584e4a12f2fad7e5eeab833f0c9d9dd3ea020c3ec1334bb0ab6",
     "2098236375770575011": "43bbcb74fc374b8efd8e965f4830bff419db7e798131ff2414723ec41e65d512",
     "2098238138334548260": "c6ab8a964af949bec07102cbefd54a25cd104fd587d2f72f9071dab5262e61dd",
-    "2098242895195275735": "f761bc4390af442fdfa096e042023433fae64eddb7fbf2ab2db86fd93658a4f1"
+    "2098242895195275735": "f761bc4390af442fdfa096e042023433fae64eddb7fbf2ab2db86fd93658a4f1",
+    "2098300424520687965": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
+    "2098300998968357218": "6eca78ce56e4de3d09d12841a719da92bf9a9f7a9ee88098046ad4f0feb2ab7e"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098242895195275735",
-    "canonicalId": "2098242895195275735",
-    "text": "@AzianMike @OpenAI I confirm the assignment was \"please launch this thing in two weeks, good luck\" and look, here we are",
-    "createdAt": "2026-09-11T02:51:04.000Z",
-    "url": "https://x.com/thsottiaux/status/2098242895195275735",
+    "id": "2098300998968357218",
+    "canonicalId": "2098300998968357218",
+    "text": "Next week we’ll be retiring GPT-5.3-Codex-Spark. Can you believe we shipped a model named as such!!\n\nIt's had a good run and was a lot of fun, but usage has been declining and we have significantly better models now. Time to make room for the future.",
+    "createdAt": "2026-09-11T06:41:57.000Z",
+    "url": "https://x.com/thsottiaux/status/2098300998968357218",
     "media": []
   }
 }

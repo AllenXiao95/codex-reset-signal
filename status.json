@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T06:37:57.309Z",
+  "updatedAt": "2026-09-11T06:42:55.413Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-11T06:37:57.306Z",
-    "lastSuccessAt": "2026-09-11T06:37:57.306Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-11T06:42:55.378Z",
+    "lastSuccessAt": "2026-09-11T06:42:55.378Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2098242895195275735",
-    "text": "@AzianMike @OpenAI I confirm the assignment was \"please launch this thing in two weeks, good luck\" and look, here we are",
-    "url": "https://x.com/thsottiaux/status/2098242895195275735",
-    "postCreatedAt": "2026-09-11T02:51:04.000Z"
+    "id": "2098300998968357218",
+    "text": "Next week we’ll be retiring GPT-5.3-Codex-Spark. Can you believe we shipped a model named as such!!\n\nIt's had a good run and was a lot of fun, but usage has been declining and we have significantly better models now. Time to make room for the future.",
+    "url": "https://x.com/thsottiaux/status/2098300998968357218",
+    "postCreatedAt": "2026-09-11T06:41:57.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,32 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
+      "id": "2098300424520687965",
+      "text": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
+      "url": "https://x.com/thsottiaux/status/2098300424520687965",
+      "postCreatedAt": "2026-09-11T06:39:40.000Z",
+      "detectedAt": "2026-09-11T06:42:55.377Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "deliveryChannels": [
+        "github-actions"
+      ],
+      "origin": "live"
+    },
     {
       "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
       "id": "2097752790177370535",
