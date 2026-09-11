@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-11T02:27:53.616Z",
+  "updatedAt": "2026-09-11T02:32:53.682Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-11T02:27:53.613Z",
-    "lastSuccessAt": "2026-09-11T02:27:53.613Z",
+    "lastCheckedAt": "2026-09-11T02:32:53.680Z",
+    "lastSuccessAt": "2026-09-11T02:32:53.680Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098236375770575011",
-    "text": "@aubreystrobel Just checked and we do have a few weekly Codex users in the Vatican now",
-    "url": "https://x.com/thsottiaux/status/2098236375770575011",
-    "postCreatedAt": "2026-09-11T02:25:09.000Z"
+    "id": "2098238138334548260",
+    "text": "Scaled agents on demand.\n\nThis is pretty much the infrastructure that runs under the hood for ChatGPT Work, all wrapped up in an API which you can use to get started in &lt; 1 min. Happy building.",
+    "url": "https://x.com/thsottiaux/status/2098238138334548260",
+    "postCreatedAt": "2026-09-11T02:32:10.000Z"
   },
   "latest": {
     "reset": {
