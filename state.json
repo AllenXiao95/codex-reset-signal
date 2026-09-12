@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098569976143806918",
-  "lastCheckedAt": "2026-09-12T01:47:26.711Z",
-  "lastSuccessAt": "2026-09-12T01:47:26.711Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 49,
+  "sinceId": "2098590070102245712",
+  "lastCheckedAt": "2026-09-12T01:52:29.499Z",
+  "lastSuccessAt": "2026-09-12T01:52:29.499Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 50,
   "matches": [
     {
       "version": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
@@ -209,15 +209,16 @@
     "2098305309265875210": "9415fc8ee5fcfce57cbbb34ead3002bfcee9069e1bcd31958021ada49e576058",
     "2098569020815650816": "62595ea191934d99836f76a253e91632cd0e97aaf243c05955a48bf8e4988f23",
     "2098569538510180712": "ed732d5a37b68bc9ae8f4e92c0054b8a19a4fa341048d305bb46f822db932a95",
-    "2098569976143806918": "339427b4c63999b7d4aafe2316ed1fad8ae938c893f1bd1eeb7624a596a08a70"
+    "2098569976143806918": "339427b4c63999b7d4aafe2316ed1fad8ae938c893f1bd1eeb7624a596a08a70",
+    "2098590070102245712": "ad593b81f4f7ed4da720d394f56256f4bb0151f78338019bf949257f3a9c1e48"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098569976143806918",
-    "canonicalId": "2098569976143806918",
-    "text": "Excited to welcome Aidan & @\nSasha from the Git AI team to OpenAI! \n\nThey are building in the open and have developed an open-source tool that helps developers understand how coding agents contribute to their codebase. \n\nTogether, we’ll make it easier for businesses to see where Codex is making a difference when working through problems for individuals and teams. We’ll also keep Git AI open source and continue investing in it.",
-    "createdAt": "2026-09-12T00:30:46.000Z",
-    "url": "https://x.com/thsottiaux/status/2098569976143806918",
+    "id": "2098590070102245712",
+    "canonicalId": "2098590070102245712",
+    "text": "@prz_chojecki Hasn’t changed",
+    "createdAt": "2026-09-12T01:50:37.000Z",
+    "url": "https://x.com/thsottiaux/status/2098590070102245712",
     "media": []
   }
 }

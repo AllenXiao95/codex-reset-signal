@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T01:47:26.714Z",
+  "updatedAt": "2026-09-12T01:52:29.505Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-12T01:47:26.711Z",
-    "lastSuccessAt": "2026-09-12T01:47:26.711Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-12T01:52:29.499Z",
+    "lastSuccessAt": "2026-09-12T01:52:29.499Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098569976143806918",
-    "text": "Excited to welcome Aidan & @\nSasha from the Git AI team to OpenAI! \n\nThey are building in the open and have developed an open-source tool that helps developers understand how coding agents contribute to their codebase. \n\nTogether, we’ll make it easier for businesses to see where Codex is making a difference when working through problems for individuals and teams. We’ll also keep Git AI open source and continue investing in it.",
-    "url": "https://x.com/thsottiaux/status/2098569976143806918",
-    "postCreatedAt": "2026-09-12T00:30:46.000Z"
+    "id": "2098590070102245712",
+    "text": "@prz_chojecki Hasn’t changed",
+    "url": "https://x.com/thsottiaux/status/2098590070102245712",
+    "postCreatedAt": "2026-09-12T01:50:37.000Z"
   },
   "latest": {
     "reset": {
