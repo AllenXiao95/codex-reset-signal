@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098613228486152223",
-  "lastCheckedAt": "2026-09-12T05:07:24.322Z",
-  "lastSuccessAt": "2026-09-12T05:07:24.322Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 52,
+  "sinceId": "2098639827084480864",
+  "lastCheckedAt": "2026-09-12T05:12:27.021Z",
+  "lastSuccessAt": "2026-09-12T05:12:27.021Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 53,
   "matches": [
     {
       "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
@@ -251,15 +251,16 @@
     "2098569976143806918": "339427b4c63999b7d4aafe2316ed1fad8ae938c893f1bd1eeb7624a596a08a70",
     "2098590070102245712": "ad593b81f4f7ed4da720d394f56256f4bb0151f78338019bf949257f3a9c1e48",
     "2098612714704891959": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
-    "2098613228486152223": "c16122e26f2440bdaaf5dbeae260dd3a9574d3e75c65d9f85e970fcea639ba06"
+    "2098613228486152223": "c16122e26f2440bdaaf5dbeae260dd3a9574d3e75c65d9f85e970fcea639ba06",
+    "2098639827084480864": "3555458e8b32dd567f40da7da9ed060f33473143a9ceb6060f09ab51f2665f72"
   },
   "eventParserVersion": 4,
   "latestObservedPost": {
-    "id": "2098613228486152223",
-    "canonicalId": "2098613228486152223",
-    "text": "@Andy_AJT @OpenAIDevs Ohhh, I miss that place",
-    "createdAt": "2026-09-12T03:22:38.000Z",
-    "url": "https://x.com/thsottiaux/status/2098613228486152223",
+    "id": "2098639827084480864",
+    "canonicalId": "2098639827084480864",
+    "text": "Astra powered ships this week\n\n- Images 2.5\n- GPT-Live-1\n- Agents API\n- Data Agent\n- ChatGPT for Financial Services\n\nand yet it’s not yet DevDay. Busy plans for next week too.",
+    "createdAt": "2026-09-12T05:08:20.000Z",
+    "url": "https://x.com/thsottiaux/status/2098639827084480864",
     "media": []
   }
 }
