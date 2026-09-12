@@ -19,31 +19,31 @@ it("reprojects saved matches after a parser upgrade without creating historical 
     STATE_PATH: join(dir, "state.json"),
     PUBLIC_STATUS_PATH: join(dir, "status.json"),
   });
-  const text = "All reset for everyone. Enjoy the week with Astra.";
+  const text = "Reset all propagated. Sweet dreams.";
   await writeState(config.statePath, {
     ...emptyState("thsottiaux", "reset"),
     sinceId: "2",
-    eventParserVersion: 1,
+    eventParserVersion: 4,
     matches: [
       {
         version: "old-version",
         id: "2",
         text,
-        createdAt: "2026-09-08T04:05:53.000Z",
+        createdAt: "2026-09-12T08:09:17.000Z",
         url: "https://x.com/thsottiaux/status/2",
         media: [],
-        detectedAt: "2026-09-08T04:06:00.000Z",
+        detectedAt: "2026-09-12T08:12:33.444Z",
         channels: [],
         events: [
           {
             type: "mention",
             status: "uncertain",
-            evidence: "All reset for everyone",
+            evidence: "Reset all propagated",
             time: {
               kind: "unknown",
               start: null,
               end: null,
-              evidence: "All reset for everyone",
+              evidence: "Reset all propagated",
             },
           },
         ],
@@ -63,11 +63,11 @@ it("reprojects saved matches after a parser upgrade without creating historical 
 
   expect(send).not.toHaveBeenCalled();
   expect(state.outbox).toEqual([]);
-  expect(state.eventParserVersion).toBe(4);
+  expect(state.eventParserVersion).toBe(5);
   expect(state.matches[0].events[0]).toMatchObject({
     type: "reset",
     status: "completed",
-    time: { kind: "observed", start: "2026-09-08T04:05:53.000Z" },
+    time: { kind: "observed", start: "2026-09-12T08:09:17.000Z" },
   });
   const publicStatus = JSON.parse(await readFile(config.publicStatusPath!, "utf8"));
   expect(publicStatus.latest.reset.id).toBe("2");
