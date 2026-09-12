@@ -97,6 +97,65 @@ describe("event and time semantics", () => {
   });
 });
 
+describe("reset assertion state", () => {
+  it.each([
+    "Reset all propagated.",
+    "All reset for everyone.",
+    "The reset is complete.",
+    "The reset has propagated.",
+    "Reset fully applied.",
+  ])("classifies strong completion: %s", (text) => {
+    expect(extractEvents(post(text))[0]).toMatchObject({
+      type: "reset",
+      status: "completed",
+      time: { kind: "observed" },
+    });
+  });
+
+  it.each([
+    "Will there be a reset?",
+    "Reset should be propagated now.",
+    "Reset is not fully propagated.",
+    "Maybe we reset tonight.",
+    "There is no schedule, only resets.",
+  ])("keeps weak, negative or hypothetical assertions uncertain: %s", (text) => {
+    expect(extractEvents(post(text))[0]).toMatchObject({
+      type: "mention",
+      status: "uncertain",
+    });
+  });
+
+  it("marks a future commitment without reliable time as announced", () => {
+    expect(extractEvents(post("We will do another reset."))[0]).toMatchObject({
+      type: "reset",
+      status: "announced",
+      time: { kind: "unknown" },
+    });
+  });
+
+  it("marks a future commitment with reliable time as scheduled", () => {
+    expect(
+      extractEvents(
+        post("Reset will land by midnight today.", "2026-09-12T03:20:36.000Z"),
+        "America/Los_Angeles",
+      )[0],
+    ).toMatchObject({
+      type: "reset",
+      status: "scheduled",
+      time: { kind: "exact", start: "2026-09-12T07:00:00.000Z" },
+    });
+  });
+
+  it("does not let a parsed date create an actionable reset", () => {
+    expect(
+      extractEvents(
+        post("The occasional reset was discussed on September 10."),
+        "America/Los_Angeles",
+      )[0],
+    ).toMatchObject({ type: "mention", status: "uncertain" });
+  });
+});
+
 it("keeps competing relative times uncertain", () => {
   expect(
     parseEventTime("reset in one hour or in two hours", "2026-09-09T01:00:00Z")
