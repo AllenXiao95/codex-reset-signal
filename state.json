@@ -3,16 +3,15 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098612714704891959",
-  "lastCheckedAt": "2026-09-12T03:22:27.737Z",
-  "lastSuccessAt": "2026-09-12T03:22:27.737Z",
+  "sinceId": "2098613228486152223",
+  "lastCheckedAt": "2026-09-12T03:27:33.148Z",
+  "lastSuccessAt": "2026-09-12T03:27:33.148Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 51,
+  "postsScanned": 52,
   "matches": [
     {
       "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
       "id": "2098612714704891959",
-      "canonicalId": "2098612714704891959",
       "text": "Hi Astra users. A reset and a quick update on quality issues that have been posted around.\n\nWorking with some of you, we have found and fixed the following issues:\n- Some skills written for previous models were triggering too often or preventing the model from checking its work.\n- An opt-in context management experiment that could cause early stops or replies to older messages. We've disabled it. Our rough estimate is that 4-5k users were affected by this experiment.\n- We've also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.\n\nWe’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.\n\nThe examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.\n\nAnd of course, a reset is also landing by midnight today.",
       "createdAt": "2026-09-12T03:20:36.000Z",
       "url": "https://x.com/thsottiaux/status/2098612714704891959",
@@ -44,10 +43,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-09-12T03:22:27.742Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-09-12T03:22:27.742Z"
+      ]
     },
     {
       "version": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
@@ -251,15 +250,16 @@
     "2098569538510180712": "ed732d5a37b68bc9ae8f4e92c0054b8a19a4fa341048d305bb46f822db932a95",
     "2098569976143806918": "339427b4c63999b7d4aafe2316ed1fad8ae938c893f1bd1eeb7624a596a08a70",
     "2098590070102245712": "ad593b81f4f7ed4da720d394f56256f4bb0151f78338019bf949257f3a9c1e48",
-    "2098612714704891959": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482"
+    "2098612714704891959": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
+    "2098613228486152223": "c16122e26f2440bdaaf5dbeae260dd3a9574d3e75c65d9f85e970fcea639ba06"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098612714704891959",
-    "canonicalId": "2098612714704891959",
-    "text": "Hi Astra users. A reset and a quick update on quality issues that have been posted around.\n\nWorking with some of you, we have found and fixed the following issues:\n- Some skills written for previous models were triggering too often or preventing the model from checking its work.\n- An opt-in context management experiment that could cause early stops or replies to older messages. We've disabled it. Our rough estimate is that 4-5k users were affected by this experiment.\n- We've also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.\n\nWe’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.\n\nThe examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.\n\nAnd of course, a reset is also landing by midnight today.",
-    "createdAt": "2026-09-12T03:20:36.000Z",
-    "url": "https://x.com/thsottiaux/status/2098612714704891959",
+    "id": "2098613228486152223",
+    "canonicalId": "2098613228486152223",
+    "text": "@Andy_AJT @OpenAIDevs Ohhh, I miss that place",
+    "createdAt": "2026-09-12T03:22:38.000Z",
+    "url": "https://x.com/thsottiaux/status/2098613228486152223",
     "media": []
   }
 }
