@@ -102,6 +102,9 @@ function reprojectSavedMatches(state: MonitorState, config: AppConfig): void {
       return { ...match, events: eventsForPost(post, config) };
     })
     .filter((match) => match.events.length > 0);
+  // Pending notifications intentionally keep the event payload captured when they
+  // entered the outbox. Parser migrations update public projections only and never
+  // create or resend historical deliveries.
   state.eventParserVersion = EVENT_PARSER_VERSION;
 }
 
@@ -157,23 +160,46 @@ async function runLocked(config: AppConfig, deps: Dependencies): Promise<Monitor
 
   if (fetched) {
     const { posts, newestId } = fetched;
-    updateLatestObservedPost(state, fetched.latestObservedPost ?? newestPost(posts));
+    updateLatestObservedPost(
+      state,
+      fetched.latestObservedPost ?? newestPost(posts),
+    );
+
     for (const post of [...posts].sort((a, b) => (BigInt(a.id) < BigInt(b.id) ? -1 : 1))) {
       const identity = post.canonicalId ?? post.id;
       const version = postVersion(post);
       if (state.seen[identity] === version) continue;
       state.seen[identity] = version;
       const events = eventsForPost(post, config);
+
       if (events.length) {
         if (!state.matches.some((match) => match.version === version)) {
-          state.matches = [detectedRecord(post, version, events, now().toISOString()), ...state.matches].slice(0, 20);
+          state.matches = [
+            detectedRecord(post, version, events, now().toISOString()),
+            ...state.matches,
+          ].slice(0, 20);
         }
-        if ((!bootstrap || config.bootstrapNotify) && !state.outbox.some((item) => item.key === version)) {
-          state.outbox.push({ key: version, post, events, targets: targets.map((target) => target.id), delivered: [] });
+        // Bootstrap still detects recent signals for the dashboard, but historical
+        // notifications remain opt-in to prevent a noisy first deployment.
+        if (
+          (!bootstrap || config.bootstrapNotify) &&
+          !state.outbox.some((item) => item.key === version)
+        ) {
+          state.outbox.push({
+            key: version,
+            post,
+            events,
+            targets: targets.map((target) => target.id),
+            delivered: [],
+          });
         }
       }
     }
-    state.sinceId = newestId && (!state.sinceId || BigInt(newestId) > BigInt(state.sinceId)) ? newestId : state.sinceId;
+
+    state.sinceId =
+      newestId && (!state.sinceId || BigInt(newestId) > BigInt(state.sinceId))
+        ? newestId
+        : state.sinceId;
     state.postsScanned += posts.length;
     const checkedAt = now().toISOString();
     state.lastCheckedAt = checkedAt;
@@ -186,17 +212,32 @@ async function runLocked(config: AppConfig, deps: Dependencies): Promise<Monitor
     for (const targetId of item.targets) {
       if (item.delivered.includes(targetId)) continue;
       const target = targets.find((candidate) => candidate.id === targetId);
-      if (!target) { errors.push("Pending target is no longer configured; restore its configuration or explicitly remove its pending delivery"); continue; }
-      try { await target.send(item); } catch { errors.push(`${target.channel} delivery failed; will retry on next run`); continue; }
+      if (!target) {
+        errors.push(
+          "Pending target is no longer configured; restore its configuration or explicitly remove its pending delivery",
+        );
+        continue;
+      }
+      try {
+        await target.send(item);
+      } catch {
+        errors.push(`${target.channel} delivery failed; will retry on next run`);
+        continue;
+      }
       item.delivered.push(targetId);
       const match = state.matches.find((candidate) => candidate.version === item.key);
       if (match) {
-        match.channels = item.delivered.map((id) => targets.find((candidate) => candidate.id === id)?.channel).filter((channel): channel is string => Boolean(channel));
+        match.channels = item.delivered
+          .map((id) => targets.find((candidate) => candidate.id === id)?.channel)
+          .filter((channel): channel is string => Boolean(channel));
         match.notifiedAt ??= now().toISOString();
       }
       await persist(config, state, now);
     }
-    if (item.targets.every((id) => item.delivered.includes(id))) { state.outbox = state.outbox.filter((pending) => pending.key !== item.key); await persist(config, state, now); }
+    if (item.targets.every((id) => item.delivered.includes(id))) {
+      state.outbox = state.outbox.filter((pending) => pending.key !== item.key);
+      await persist(config, state, now);
+    }
   }
 
   state.seen = Object.fromEntries(Object.entries(state.seen).slice(-2000));
