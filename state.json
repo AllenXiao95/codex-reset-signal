@@ -3,12 +3,52 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098590070102245712",
-  "lastCheckedAt": "2026-09-12T03:17:29.787Z",
-  "lastSuccessAt": "2026-09-12T03:17:29.787Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 50,
+  "sinceId": "2098612714704891959",
+  "lastCheckedAt": "2026-09-12T03:22:27.737Z",
+  "lastSuccessAt": "2026-09-12T03:22:27.737Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 51,
   "matches": [
+    {
+      "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
+      "id": "2098612714704891959",
+      "canonicalId": "2098612714704891959",
+      "text": "Hi Astra users. A reset and a quick update on quality issues that have been posted around.\n\nWorking with some of you, we have found and fixed the following issues:\n- Some skills written for previous models were triggering too often or preventing the model from checking its work.\n- An opt-in context management experiment that could cause early stops or replies to older messages. We've disabled it. Our rough estimate is that 4-5k users were affected by this experiment.\n- We've also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.\n\nWe’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.\n\nThe examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.\n\nAnd of course, a reset is also landing by midnight today.",
+      "createdAt": "2026-09-12T03:20:36.000Z",
+      "url": "https://x.com/thsottiaux/status/2098612714704891959",
+      "media": [],
+      "detectedAt": "2026-09-12T03:22:27.737Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "A reset and a quick update on quality issues that have been posted around",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "A reset and a quick update on quality issues that have been posted around",
+            "note": "原文没有可确定的时间"
+          }
+        },
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "And of course, a reset is also landing by midnight today",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "midnight today",
+            "note": "原文未说明时区；可配置 SOURCE_TIMEZONE 并在通知中标记假设"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-09-12T03:22:27.742Z"
+    },
     {
       "version": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
       "id": "2098300424520687965",
@@ -210,15 +250,16 @@
     "2098569020815650816": "62595ea191934d99836f76a253e91632cd0e97aaf243c05955a48bf8e4988f23",
     "2098569538510180712": "ed732d5a37b68bc9ae8f4e92c0054b8a19a4fa341048d305bb46f822db932a95",
     "2098569976143806918": "339427b4c63999b7d4aafe2316ed1fad8ae938c893f1bd1eeb7624a596a08a70",
-    "2098590070102245712": "ad593b81f4f7ed4da720d394f56256f4bb0151f78338019bf949257f3a9c1e48"
+    "2098590070102245712": "ad593b81f4f7ed4da720d394f56256f4bb0151f78338019bf949257f3a9c1e48",
+    "2098612714704891959": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482"
   },
   "eventParserVersion": 2,
   "latestObservedPost": {
-    "id": "2098590070102245712",
-    "canonicalId": "2098590070102245712",
-    "text": "@prz_chojecki Hasn’t changed",
-    "createdAt": "2026-09-12T01:50:37.000Z",
-    "url": "https://x.com/thsottiaux/status/2098590070102245712",
+    "id": "2098612714704891959",
+    "canonicalId": "2098612714704891959",
+    "text": "Hi Astra users. A reset and a quick update on quality issues that have been posted around.\n\nWorking with some of you, we have found and fixed the following issues:\n- Some skills written for previous models were triggering too often or preventing the model from checking its work.\n- An opt-in context management experiment that could cause early stops or replies to older messages. We've disabled it. Our rough estimate is that 4-5k users were affected by this experiment.\n- We've also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.\n\nWe’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.\n\nThe examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.\n\nAnd of course, a reset is also landing by midnight today.",
+    "createdAt": "2026-09-12T03:20:36.000Z",
+    "url": "https://x.com/thsottiaux/status/2098612714704891959",
     "media": []
   }
 }
