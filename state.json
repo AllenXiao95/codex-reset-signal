@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2098685691899027900",
-  "lastCheckedAt": "2026-09-12T08:12:33.444Z",
-  "lastSuccessAt": "2026-09-12T08:12:33.444Z",
-  "lastRunStatus": "checked-2-posts",
+  "lastCheckedAt": "2026-09-12T08:17:33.757Z",
+  "lastSuccessAt": "2026-09-12T08:17:33.757Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 55,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
       "id": "2098685367058612394",
-      "canonicalId": "2098685367058612394",
       "text": "Reset all propagated. Sweet dreams.",
       "createdAt": "2026-09-12T08:09:17.000Z",
       "url": "https://x.com/thsottiaux/status/2098685367058612394",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-09-12T08:12:33.448Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-09-12T08:12:33.448Z"
+      ]
     },
     {
       "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
