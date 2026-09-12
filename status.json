@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T04:17:32.155Z",
+  "updatedAt": "2026-09-12T04:22:36.315Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-12T04:17:32.152Z",
-    "lastSuccessAt": "2026-09-12T04:17:32.152Z",
+    "lastCheckedAt": "2026-09-12T04:22:36.313Z",
+    "lastSuccessAt": "2026-09-12T04:22:36.313Z",
     "lastRunStatus": "checked-0-posts"
   },
   "latestObservedPost": {
@@ -17,23 +17,35 @@
   },
   "latest": {
     "reset": {
-      "version": "d7871012627c721649133d4093900656209c659585a7fa7d8d214a8c9ecf9f5d",
-      "id": "2097174560412246215",
-      "text": "All reset for everyone. Enjoy the week with Astra.",
-      "url": "https://x.com/thsottiaux/status/2097174560412246215",
-      "postCreatedAt": "2026-09-08T04:05:53.000Z",
-      "detectedAt": "2026-09-09T03:27:28.318Z",
+      "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
+      "id": "2098612714704891959",
+      "text": "Hi Astra users. A reset and a quick update on quality issues that have been posted around.\n\nWorking with some of you, we have found and fixed the following issues:\n- Some skills written for previous models were triggering too often or preventing the model from checking its work.\n- An opt-in context management experiment that could cause early stops or replies to older messages. We've disabled it. Our rough estimate is that 4-5k users were affected by this experiment.\n- We've also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.\n\nWe’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.\n\nThe examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.\n\nAnd of course, a reset is also landing by midnight today.",
+      "url": "https://x.com/thsottiaux/status/2098612714704891959",
+      "postCreatedAt": "2026-09-12T03:20:36.000Z",
+      "detectedAt": "2026-09-12T03:22:27.737Z",
       "events": [
         {
-          "type": "reset",
-          "status": "completed",
-          "evidence": "All reset for everyone",
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "A reset and a quick update on quality issues that have been posted around",
           "time": {
-            "kind": "observed",
-            "start": "2026-09-08T04:05:53.000Z",
+            "kind": "unknown",
+            "start": null,
             "end": null,
-            "evidence": "All reset for everyone",
-            "note": "使用公告发布时间；不代表账户实际到账时刻"
+            "evidence": "A reset and a quick update on quality issues that have been posted around",
+            "note": "原文没有可确定的时间"
+          }
+        },
+        {
+          "type": "reset",
+          "status": "scheduled",
+          "evidence": "And of course, a reset is also landing by midnight today",
+          "time": {
+            "kind": "exact",
+            "start": "2026-09-12T07:00:00.000Z",
+            "end": null,
+            "evidence": "by midnight today",
+            "note": "“by midnight” 按 America/Los_Angeles 当日本地日终解释；这是截止时刻，不代表实际到账一定发生在该时刻"
           }
         }
       ],
@@ -88,21 +100,19 @@
           }
         },
         {
-          "type": "mention",
-          "status": "uncertain",
+          "type": "reset",
+          "status": "scheduled",
           "evidence": "And of course, a reset is also landing by midnight today",
           "time": {
-            "kind": "unknown",
-            "start": null,
+            "kind": "exact",
+            "start": "2026-09-12T07:00:00.000Z",
             "end": null,
-            "evidence": "midnight today",
-            "note": "原文未说明时区；可配置 SOURCE_TIMEZONE 并在通知中标记假设"
+            "evidence": "by midnight today",
+            "note": "“by midnight” 按 America/Los_Angeles 当日本地日终解释；这是截止时刻，不代表实际到账一定发生在该时刻"
           }
         }
       ],
-      "deliveryChannels": [
-        "github-actions"
-      ],
+      "deliveryChannels": [],
       "origin": "live"
     },
     {
@@ -126,9 +136,7 @@
           }
         }
       ],
-      "deliveryChannels": [
-        "github-actions"
-      ],
+      "deliveryChannels": [],
       "origin": "live"
     },
     {
@@ -152,9 +160,7 @@
           }
         }
       ],
-      "deliveryChannels": [
-        "github-actions"
-      ],
+      "deliveryChannels": [],
       "origin": "live"
     },
     {
@@ -242,10 +248,11 @@
           "status": "scheduled",
           "evidence": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender",
           "time": {
-            "kind": "exact",
-            "start": "2026-09-08T02:00:00.000Z",
-            "end": null,
-            "evidence": "6pm PST today"
+            "kind": "date",
+            "start": "2026-09-10T07:24:57.000Z",
+            "end": "2026-09-11T07:24:57.000Z",
+            "evidence": "3D",
+            "note": "按配置假设原文时区为 America/Los_Angeles"
           }
         }
       ],
