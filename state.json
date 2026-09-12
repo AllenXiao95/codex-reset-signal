@@ -4,8 +4,8 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2098685691899027900",
-  "lastCheckedAt": "2026-09-12T10:17:31.590Z",
-  "lastSuccessAt": "2026-09-12T10:17:31.590Z",
+  "lastCheckedAt": "2026-09-12T10:22:40.178Z",
+  "lastSuccessAt": "2026-09-12T10:22:40.178Z",
   "lastRunStatus": "checked-0-posts",
   "postsScanned": 55,
   "matches": [
@@ -19,15 +19,15 @@
       "detectedAt": "2026-09-12T08:12:33.444Z",
       "events": [
         {
-          "type": "mention",
-          "status": "uncertain",
+          "type": "reset",
+          "status": "completed",
           "evidence": "Reset all propagated",
           "time": {
-            "kind": "unknown",
-            "start": null,
+            "kind": "observed",
+            "start": "2026-09-12T08:09:17.000Z",
             "end": null,
             "evidence": "Reset all propagated",
-            "note": "原文没有可确定的时间"
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
           }
         }
       ],
@@ -54,7 +54,7 @@
             "start": null,
             "end": null,
             "evidence": "A reset and a quick update on quality issues that have been posted around",
-            "note": "原文没有可确定的时间"
+            "note": "未形成明确的重置承诺或完成确认"
           }
         },
         {
@@ -93,7 +93,7 @@
             "start": null,
             "end": null,
             "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
-            "note": "原文没有可确定的时间"
+            "note": "未形成明确的重置承诺或完成确认"
           }
         }
       ],
@@ -120,7 +120,7 @@
             "start": null,
             "end": null,
             "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex",
-            "note": "讨论、请求或否定，不代表已确认的重置"
+            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
           }
         }
       ],
@@ -147,7 +147,7 @@
             "start": null,
             "end": null,
             "evidence": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
-            "note": "原文没有可确定的时间"
+            "note": "未形成明确的重置承诺或完成确认"
           }
         }
       ],
@@ -171,7 +171,7 @@
             "start": null,
             "end": null,
             "evidence": "@FelipeFr1702 There is no schedule, only resets",
-            "note": "原文没有可确定的时间"
+            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
           }
         }
       ],
@@ -283,7 +283,7 @@
     "2098685367058612394": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
     "2098685691899027900": "2e03210dca0f86be9cbb02538812fb4b79c762f3881fc1e3a5c3cd7efb7b18e1"
   },
-  "eventParserVersion": 4,
+  "eventParserVersion": 5,
   "latestObservedPost": {
     "id": "2098685691899027900",
     "canonicalId": "2098685691899027900",
