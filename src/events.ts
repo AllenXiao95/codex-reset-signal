@@ -15,6 +15,28 @@ export type ResetEvent = {
   evidence: string;
   time: EventTime;
 };
+
+type ResetAssertion = "uncertain" | "completed" | "committed" | "mention";
+
+const uncertainAssertion =
+  /\?|\b(?:wish|hope|maybe|might|could|would|should|unless|if|may|please|not|never|won't|isn't|aren't|can't|cannot|don't|didn't|pending|waiting|failed|failing)\b|\bno\s+(?:schedule|plan|reset|confirmation)\b/i;
+const completedAssertion =
+  /\b(?:have|has|just|already)\s+(?:been\s+)?reset\b|\blimits?\s+(?:are|is|were|was)\s+(?:now\s+)?(?:fully\s+)?reset\b|\ball\s+(?:usage\s+)?reset\b|\breset(?:s|ting)?\b[^.!?]{0,80}\b(?:complete(?:d)?|done|finished|propagated|applied|landed)\b/i;
+const committedAssertion =
+  /\b(?:will|going\s+to|plan(?:ned|ning)?\s+to)\b[^.!?]{0,120}\breset(?:s|ting)?\b|\b(?:scheduled|expected)\b[^.!?]{0,40}\breset(?:s|ting)?\b|\breset(?:s|ting)?\b[^.!?]{0,120}\b(?:will|lands?|landing|scheduled|expected|propagating|rolling\s+out)\b|\bresetting\b|\breset(?:s|ting)?\b\s+(?:in|within|at|around|by|today|tonight|tomorrow)\b/i;
+
+/**
+ * Classify only whether a reset statement is asserted and its lifecycle state.
+ * Temporal parsing must never make an otherwise non-actionable mention actionable.
+ */
+function classifyResetAssertion(clause: string): ResetAssertion {
+  if (uncertainAssertion.test(clause)) return "uncertain";
+  // Future/commitment language wins over result words, e.g. "will be propagated".
+  if (committedAssertion.test(clause)) return "committed";
+  if (completedAssertion.test(clause)) return "completed";
+  return "mention";
+}
+
 const unknown = (evidence: string, note: string): EventTime => ({
   kind: "unknown",
   start: null,
@@ -183,6 +205,15 @@ function nearbyTimingClause(clauses: string[], index: number): string | null {
   return null;
 }
 
+function pushMention(events: ResetEvent[], clause: string, note: string): void {
+  events.push({
+    type: "mention",
+    status: "uncertain",
+    evidence: clause,
+    time: unknown(clause, note),
+  });
+}
+
 export function extractEvents(
   post: XPost,
   sourceTimezone?: string,
@@ -201,25 +232,27 @@ export function extractEvents(
     )
       continue;
     if (/\b(?:password|factory|router|database)\b/i.test(clause)) continue;
-    if (
-      /\?|\b(?:wish|hope|maybe|might|could|would|should|unless|if|may|please|not|never|won't|isn't|aren't|can't|cannot|don't|didn't)\b/i.test(
-        clause,
-      )
-    ) {
-      events.push({
-        type: "mention",
-        status: "uncertain",
-        evidence: clause,
-        time: unknown(clause, "讨论、请求或否定，不代表已确认的重置"),
-      });
+
+    const assertion = classifyResetAssertion(clause);
+    if (assertion === "uncertain") {
+      pushMention(events, clause, "讨论、请求、弱判断或否定，不代表已确认的重置");
       continue;
     }
+    // For ordinary reset events, assertion state decides whether an event exists.
+    // Bank events retain their existing grant/expiry semantics in this refactor.
+    if (!bank && assertion === "mention") {
+      pushMention(events, clause, "未形成明确的重置承诺或完成确认");
+      continue;
+    }
+
     const expiry =
       bank && /\b(?:expire[sd]?|expiry|expiration)\b/i.test(clause);
     const completed =
-      /\b(?:have|has|just|already)\s+(?:been\s+)?reset\b|\breset\s+(?:is\s+)?(?:complete|done)|\blimits?\s+(?:are|is|were|was)\s+(?:now\s+)?(?:fully\s+)?reset\b|\ball\s+(?:usage\s+)?reset\b/i.test(
-        clause,
-      );
+      bank
+        ? /\b(?:have|has|just|already)\s+(?:been\s+)?reset\b|\breset\s+(?:is\s+)?(?:complete|done)|\blimits?\s+(?:are|is|were|was)\s+(?:now\s+)?(?:fully\s+)?reset\b|\ball\s+(?:usage\s+)?reset\b/i.test(
+            clause,
+          )
+        : assertion === "completed";
     let type: ResetEvent["type"] = expiry
       ? "bank_expiry"
       : bank
@@ -244,7 +277,7 @@ export function extractEvents(
     }
     if (
       time.kind === "unknown" &&
-      (completed || /\bnow\b/i.test(clause)) &&
+      completed &&
       !/\b(?:at|tomorrow|yesterday|ago|next)\b/i.test(clause) &&
       post.createdAt &&
       DateTime.fromISO(post.createdAt).isValid
@@ -257,6 +290,23 @@ export function extractEvents(
         note: "使用公告发布时间；不代表账户实际到账时刻",
       };
     }
+
+    if (!bank) {
+      events.push({
+        type: "reset",
+        status:
+          assertion === "completed"
+            ? "completed"
+            : ["exact", "window", "date"].includes(time.kind)
+              ? "scheduled"
+              : "announced",
+        evidence: clause,
+        time,
+      });
+      continue;
+    }
+
+    // Preserve bank behavior: this refactor is intentionally scoped to reset assertions.
     const actionable =
       completed ||
       /\b(?:will|resetting|now|lands?|landing|credit|credited|adding|added|grant|granted|expire|expires)\b/i.test(
