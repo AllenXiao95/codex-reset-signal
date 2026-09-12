@@ -5,7 +5,8 @@
 [![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
 [![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
 
-**在线 Dashboard：** [https://reset.onlyax.com/](https://reset.onlyax.com/)
+**在线 Dashboard：** [https://reset.onlyax.com/](https://reset.onlyax.com/)  
+**RSS Feed：** [https://reset.onlyax.com/feed.xml](https://reset.onlyax.com/feed.xml)
 
 监控 [Tibo（@thsottiaux）](https://x.com/thsottiaux) 的公开 X 帖子，识别 reset / reset bank 信号、解析事件时间，并提供可切换时区的 Dashboard 和可选通知。
 
@@ -22,7 +23,9 @@ GitHub schedule
               FxEmbed
                 ↓
            reset 事件解析
-         ├─ public status → monitor-state/status.json → Dashboard
+         ├─ 公共投影
+         │    ├─ monitor-state/status.json → Dashboard
+         │    └─ monitor-state/feed.xml   → RSS / 自动化系统
          └─ outbox → GitHub Summary / Telegram / Discord / Webhook / 邮件 / 短信
 ```
 
@@ -31,6 +34,7 @@ GitHub schedule
 - 事件时间统一保存为 UTC，展示时再转换时区。
 - 运行时状态保存在独立 `monitor-state` 分支，不污染 `main`。
 - Dashboard **仅在页面可见时每 5 分钟刷新一次**；隐藏标签页停止请求，重新可见后立即刷新。
+- RSS 是 vendor-neutral 的 pull 接口；首版仅包含 `reset` 和 `bank_credit`，明确排除不确定的 `mention` 与 `bank_expiry`。
 
 ## 快速开始
 
@@ -46,8 +50,11 @@ GitHub schedule
 ```text
 monitor-state/
 ├─ state.json   # cursor / seen / outbox / delivery checkpoint
-└─ status.json  # Dashboard 公共状态
+├─ status.json  # Dashboard 公共状态
+└─ feed.xml     # reset + bank_credit 的 RSS 2.0 投影
 ```
+
+即使不部署 Dashboard，也可以直接消费 `monitor-state/feed.xml` 的 raw 文件。
 
 ### Cloudflare Dashboard
 
@@ -64,7 +71,13 @@ Dashboard 建议绑定独立 Custom Domain。当前维护者部署：
 https://reset.onlyax.com/
 ```
 
-`RESET_STATUS_URL` 是可选项；当前默认已经读取本仓库 `monitor-state/status.json`。
+同一部署会同时暴露：
+
+```text
+https://reset.onlyax.com/feed.xml
+```
+
+`RESET_STATUS_URL` 是可选项；当前默认已经读取本仓库 `monitor-state/status.json`。RSS 路由使用同一个公共状态源，因此第三方 fork 只需要把 `RESET_STATUS_URL` 指向自己的运行时分支，Dashboard 与 Feed 会一起切换。
 
 ### 可选 Cloudflare Scheduler
 
@@ -86,7 +99,7 @@ MONITOR_ENABLED=false
 
 完整说明：[docs/cloudflare.md](docs/cloudflare.md)
 
-## 通知渠道
+## 通知与扩展
 
 | 渠道 | 配置 |
 | --- | --- |
@@ -96,8 +109,33 @@ MONITOR_ENABLED=false
 | Webhook | `WEBHOOK_URLS`；可选 `WEBHOOK_SECRET` |
 | Resend 邮件 | `RESEND_API_KEY`、`EMAIL_FROM`、`EMAIL_TO` |
 | Twilio 短信 | `TWILIO_ACCOUNT_SID`、`TWILIO_AUTH_TOKEN`、`TWILIO_FROM`、`SMS_TO` |
+| RSS / Atom 消费端 | 订阅 `/feed.xml`；本项目不保存第三方通知平台凭据 |
 
 Webhook 说明：[docs/webhook.md](docs/webhook.md)
+
+### RSS → Server酱 / 方糖 / 其他通知系统
+
+RSS Feed 的目标是避免在本仓库继续累加供应商专用适配。需要方糖时，可以把 Feed 交给 RSSPush 或 Check酱，再在它们那里配置自己的 SendKey：
+
+```text
+codex-reset-signal /feed.xml
+        ↓
+RSSPush / Check酱
+        ↓
+Server酱 / 方糖
+        ↓
+微信 / 其他已配置渠道
+```
+
+同一个 Feed 也可以自由接入 FreshRSS、Miniflux、n8n、Huginn、IFTTT、Zapier 或自定义 RSS 客户端。若更看重低延迟 push 和明确的 delivery retry，则继续使用已有 Generic Webhook。
+
+Feed 语义：
+
+- 仅输出 `reset` 和 `bank_credit`；
+- 每个 `(post.id, event.type)` 对应一个 item；
+- GUID 固定为 `post.id:event.type`，避免 parser migration / reprojection 产生重复逻辑通知；
+- 有原帖时间时使用 `postCreatedAt` 作为 `pubDate`；
+- 每个 item 都链接回原始 X 帖子。
 
 ## 本地 / Docker
 
