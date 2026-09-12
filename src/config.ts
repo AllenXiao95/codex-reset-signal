@@ -17,10 +17,14 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
   const sourceProvider = env.SOURCE_PROVIDER?.trim().toLowerCase() || "fxembed";
   if (sourceProvider !== "fxembed" && sourceProvider !== "x")
     throw new Error("SOURCE_PROVIDER must be fxembed or x.");
+  const username = env.X_USERNAME?.trim().replace(/^@/, "") || "thsottiaux";
+  const sourceTimezone =
+    env.SOURCE_TIMEZONE?.trim() ||
+    (username.toLowerCase() === "thsottiaux" ? "America/Los_Angeles" : undefined);
   return {
     sourceProvider,
     timezone: env.TARGET_TIMEZONE?.trim() || "Asia/Shanghai",
-    sourceTimezone: env.SOURCE_TIMEZONE?.trim() || undefined,
+    sourceTimezone,
     telegramBotToken: env.TELEGRAM_BOT_TOKEN?.trim(),
     telegramChatIds: splitList(env.TELEGRAM_CHAT_IDS),
     discordWebhookUrls: splitList(env.DISCORD_WEBHOOK_URLS),
@@ -30,7 +34,7 @@ export function loadConfig(env: NodeJS.ProcessEnv = process.env): AppConfig {
     githubSummaryPath: env.GITHUB_STEP_SUMMARY?.trim() || undefined,
     includeMentions: toBoolean(env.INCLUDE_MENTIONS, true),
     xBearerToken: env.X_BEARER_TOKEN?.trim() ?? "",
-    username: env.X_USERNAME?.trim().replace(/^@/, "") || "thsottiaux",
+    username,
     keyword: env.MATCH_WORD?.trim() || "reset",
     excludeReplies: toBoolean(env.X_EXCLUDE_REPLIES),
     bootstrapNotify: toBoolean(env.BOOTSTRAP_NOTIFY),
