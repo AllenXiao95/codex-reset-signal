@@ -24,7 +24,7 @@ describe("public status projection", () => {
         url: "https://x.com/thsottiaux/status/2097000000000000000",
         media: [],
         detectedAt: "2026-09-09T03:00:00Z",
-        channels: [],
+        channels: ["github-actions", "email"],
         events: [
           {
             type: "reset",
@@ -48,7 +48,7 @@ describe("public status projection", () => {
     );
     expect(status.latest.reset?.id).toBe("2097000000000000000");
     expect(status.latest.reset?.origin).toBe("live");
-    expect(status.latest.reset?.deliveryChannels).toEqual([]);
+    expect(status.latest.reset?.deliveryChannels).toEqual(["email"]);
     expect(status.latest.reset?.events[0].time.start).toBe(
       "2026-09-09T03:00:00Z",
     );

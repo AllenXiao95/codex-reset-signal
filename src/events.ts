@@ -75,12 +75,31 @@ export function parseEventTime(
   }
   const pacific = /\b(?:PT|Pacific(?:\s+Time)?)\b/i.test(text);
   const sourceZone = pacific ? "America/Los_Angeles" : sourceTimezone;
+  const midnightDeadline = text.match(/\bby\s+midnight\s+(?:today|tonight)\b/i);
+  if (midnightDeadline) {
+    if (!sourceZone)
+      return unknown(
+        midnightDeadline[0],
+        "原文未说明时区；可配置 SOURCE_TIMEZONE 并在通知中标记假设",
+      );
+    const localRef = ref.setZone(sourceZone);
+    const deadline = localRef.startOf("day").plus({ days: 1 });
+    if (!deadline.isValid)
+      return unknown(midnightDeadline[0], "midnight 截止时间无法解析");
+    return {
+      kind: "exact",
+      start: deadline.toUTC().toISO(),
+      end: null,
+      evidence: midnightDeadline[0],
+      note: `“by midnight” 按 ${sourceZone} 当日本地日终解释；这是截止时刻，不代表实际到账一定发生在该时刻`,
+    };
+  }
   const base = sourceZone ? ref.setZone(sourceZone) : ref.toUTC();
   // chrono supplies candidate calendar fields; Luxon applies IANA rules on the event date.
   const parsed = chrono.en.casual.parse(
     text.replace(/\bPacific(?:\s+Time)?\b/gi, "PT"),
     { instant: ref.toJSDate(), timezone: base.offset },
-    { forwardDate: /\b(?:will|expires|scheduled|tomorrow|next)\b/i.test(text) },
+    { forwardDate: /\b(?:will|expires|scheduled|lands?|landing|tomorrow|next)\b/i.test(text) },
   );
   if (!parsed.length) return unknown(text, "原文没有可确定的时间");
   if (parsed.length > 1)
@@ -234,7 +253,7 @@ export function extractEvents(
     }
     const actionable =
       completed ||
-      /\b(?:will|resetting|now|credit|credited|adding|added|grant|granted|expire|expires)\b/i.test(
+      /\b(?:will|resetting|now|lands?|landing|credit|credited|adding|added|grant|granted|expire|expires)\b/i.test(
         clause,
       ) ||
       time.kind !== "unknown";

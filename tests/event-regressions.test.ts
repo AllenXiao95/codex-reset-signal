@@ -33,4 +33,24 @@ describe("real announcement regressions", () => {
     expect(reset.time.kind).toBe("observed");
     expect(reset.time.start).toBe("2026-09-08T04:05:53.000Z");
   });
+
+  it("treats the Sep 12 midnight landing announcement as a scheduled reset", () => {
+    const text = [
+      "Hi Astra users. A reset and a quick update on quality issues that have been posted around.",
+      "And of course, a reset is also landing by midnight today.",
+    ].join("\n\n");
+    const events = extractEvents(
+      post(text, "2026-09-12T03:20:36.000Z"),
+      "America/Los_Angeles",
+    );
+    const reset = events.find(
+      (event) => event.type === "reset" && event.status === "scheduled",
+    );
+
+    expect(reset).toBeDefined();
+    expect(reset?.evidence).toMatch(/landing by midnight today/i);
+    expect(reset?.time.kind).toBe("exact");
+    expect(reset?.time.start).toBe("2026-09-12T07:00:00.000Z");
+    expect(reset?.time.note).toMatch(/America\/Los_Angeles/);
+  });
 });

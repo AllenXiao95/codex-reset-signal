@@ -9,7 +9,7 @@ import { readState, writeState } from "./state";
 import { createPostSource, type PostSource } from "./post-source";
 import { buildPublicStatus, writePublicStatus } from "./public-status";
 
-const EVENT_PARSER_VERSION = 2;
+const EVENT_PARSER_VERSION = 3;
 
 type Dependencies = {
   source?: PostSource;
