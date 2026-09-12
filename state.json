@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098814684359270845",
-  "lastCheckedAt": "2026-09-12T22:42:30.666Z",
-  "lastSuccessAt": "2026-09-12T22:42:30.666Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 56,
+  "sinceId": "2098905968096719251",
+  "lastCheckedAt": "2026-09-12T22:47:30.586Z",
+  "lastSuccessAt": "2026-09-12T22:47:30.586Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 57,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -282,15 +282,16 @@
     "2098639827084480864": "3555458e8b32dd567f40da7da9ed060f33473143a9ceb6060f09ab51f2665f72",
     "2098685367058612394": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
     "2098685691899027900": "2e03210dca0f86be9cbb02538812fb4b79c762f3881fc1e3a5c3cd7efb7b18e1",
-    "2098814684359270845": "8964d4b25957af1fbf7439b14d8193f541f461e31b1bcde440480a9add757fbd"
+    "2098814684359270845": "8964d4b25957af1fbf7439b14d8193f541f461e31b1bcde440480a9add757fbd",
+    "2098905968096719251": "5d618f420ebcacc38268f24f330aec26fc494d3788c9de50f1a58b2618fc3cc4"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2098814684359270845",
-    "canonicalId": "2098814684359270845",
-    "text": "@tibo_maker Thanks for doing your part Tibo",
-    "createdAt": "2026-09-12T16:43:09.000Z",
-    "url": "https://x.com/thsottiaux/status/2098814684359270845",
+    "id": "2098905968096719251",
+    "canonicalId": "2098905968096719251",
+    "text": "@signulll Benefits All",
+    "createdAt": "2026-09-12T22:45:53.000Z",
+    "url": "https://x.com/thsottiaux/status/2098905968096719251",
     "media": []
   }
 }
