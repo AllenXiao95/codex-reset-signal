@@ -105,6 +105,12 @@ export function parseEventTime(
   if (parsed.length > 1)
     return unknown(text, "同一事件包含多个时间，需要核对原文");
   const result = parsed[0];
+  // chrono can read product/technical tokens such as "3D" as a calendar date when
+  // a source timezone is configured. A compact number+letter token is not safe
+  // timing evidence; rejecting it also lets a dedicated follow-up clause such as
+  // "Lands around 6pm PST today" become the authoritative event time.
+  if (/^\d+[A-Za-z]$/.test(result.text))
+    return unknown(result.text, "紧凑字母数字 token 不作为事件时间解析");
   const c = result.start;
   const explicitOffset = c.isCertain("timezoneOffset");
   if (!pacific && !explicitOffset && !sourceZone)
