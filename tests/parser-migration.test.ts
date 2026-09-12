@@ -63,7 +63,7 @@ it("reprojects saved matches after a parser upgrade without creating historical 
 
   expect(send).not.toHaveBeenCalled();
   expect(state.outbox).toEqual([]);
-  expect(state.eventParserVersion).toBe(2);
+  expect(state.eventParserVersion).toBe(3);
   expect(state.matches[0].events[0]).toMatchObject({
     type: "reset",
     status: "completed",
