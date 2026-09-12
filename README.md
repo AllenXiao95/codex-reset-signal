@@ -5,7 +5,8 @@
 [![CI](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/ci.yml)
 [![Monitor](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml/badge.svg)](https://github.com/AllenXiao95/codex-reset-signal/actions/workflows/monitor.yml)
 
-**Live dashboard:** [https://reset.onlyax.com/](https://reset.onlyax.com/)
+**Live dashboard:** [https://reset.onlyax.com/](https://reset.onlyax.com/)  
+**RSS feed:** [https://reset.onlyax.com/feed.xml](https://reset.onlyax.com/feed.xml)
 
 Monitor public X posts from [Tibo (@thsottiaux)](https://x.com/thsottiaux), detect reset / reset-bank signals, extract event times, and publish a timezone-aware dashboard plus optional notifications.
 
@@ -22,7 +23,9 @@ or Cloudflare Cron → workflow_dispatch
             FxEmbed
               ↓
        event extraction
-         ├─ public status → monitor-state/status.json → Dashboard
+         ├─ public projections
+         │    ├─ monitor-state/status.json → Dashboard
+         │    └─ monitor-state/feed.xml   → RSS / automation systems
          └─ outbox → GitHub Summary / Telegram / Discord / Webhook / Email / SMS
 ```
 
@@ -31,6 +34,7 @@ or Cloudflare Cron → workflow_dispatch
 - Event timestamps are stored in UTC and converted only for display.
 - Runtime state lives on the dedicated `monitor-state` branch, not `main`.
 - The dashboard polls status every **5 minutes while visible**. Hidden tabs stop polling and refresh immediately when visible again.
+- RSS is a vendor-neutral pull interface. The first feed version includes only `reset` and `bank_credit`; uncertain `mention` and `bank_expiry` events are excluded.
 
 ## Quick start
 
@@ -46,8 +50,11 @@ The monitor writes:
 ```text
 monitor-state/
 ├─ state.json   # internal cursor / seen / outbox / delivery checkpoints
-└─ status.json  # public dashboard projection
+├─ status.json  # public dashboard projection
+└─ feed.xml     # RSS 2.0 projection for reset + bank_credit signals
 ```
+
+The raw `monitor-state/feed.xml` can be consumed directly even without the dashboard deployment.
 
 ### Cloudflare dashboard
 
@@ -64,7 +71,13 @@ Use a dedicated Custom Domain for the dashboard. The maintainer deployment is:
 https://reset.onlyax.com/
 ```
 
-`RESET_STATUS_URL` is optional; the canonical deployment already defaults to this repository's `monitor-state/status.json`.
+The same deployment exposes the RSS feed at:
+
+```text
+https://reset.onlyax.com/feed.xml
+```
+
+`RESET_STATUS_URL` is optional; the canonical deployment already defaults to this repository's `monitor-state/status.json`. The RSS route renders from the same public status source, so forks can point the dashboard and feed at their own runtime branch with the same setting.
 
 ### Optional Cloudflare scheduler
 
@@ -84,7 +97,7 @@ This disables GitHub's own schedule but keeps manual and Cloudflare-triggered `w
 
 Full setup: [docs/cloudflare.md](docs/cloudflare.md)
 
-## Notifications
+## Notifications and integrations
 
 | Channel | Configuration |
 | --- | --- |
@@ -94,8 +107,33 @@ Full setup: [docs/cloudflare.md](docs/cloudflare.md)
 | Webhook | `WEBHOOK_URLS`; optional `WEBHOOK_SECRET` |
 | Resend | `RESEND_API_KEY`, `EMAIL_FROM`, `EMAIL_TO` |
 | Twilio SMS | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM`, `SMS_TO` |
+| RSS / Atom consumers | Subscribe to `/feed.xml`; no provider credential is stored by this project |
 
 Webhook details: [docs/webhook.md](docs/webhook.md)
+
+### RSS → ServerChan / other notification systems
+
+The RSS feed deliberately keeps provider-specific credentials out of this repository. To use ServerChan / 方糖, subscribe the feed in an RSS automation service such as RSSPush or Check酱, then configure your own SendKey there:
+
+```text
+codex-reset-signal /feed.xml
+        ↓
+RSSPush / Check酱
+        ↓
+ServerChan / 方糖
+        ↓
+WeChat / configured channels
+```
+
+The same feed can be consumed by FreshRSS, Miniflux, n8n, Huginn, IFTTT, Zapier, or a custom RSS client. Use the existing generic webhook instead when low-latency push and explicit delivery retry are more important than a vendor-neutral pull interface.
+
+Feed semantics:
+
+- only `reset` and `bank_credit` events are included;
+- one item is emitted per `(post.id, event.type)`;
+- item GUIDs are stable (`post.id:event.type`) so parser migrations do not create duplicate logical notifications;
+- the source post timestamp is used as `pubDate` when available;
+- every item links back to the original X post.
 
 ## Local / Docker
 

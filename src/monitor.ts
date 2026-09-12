@@ -1,13 +1,17 @@
 import { createHash } from "node:crypto";
 import { mkdir, open, unlink } from "node:fs/promises";
-import { dirname } from "node:path";
+import { dirname, join } from "node:path";
 import type { AppConfig, MatchRecord, MonitorState, XPost } from "./types";
 import { extractEvents } from "./events";
 import { containsKeyword } from "./matcher";
 import { createTargets, type NotificationTarget } from "./notifications";
 import { readState, writeState } from "./state";
 import { createPostSource, type PostSource } from "./post-source";
-import { buildPublicStatus, writePublicStatus } from "./public-status";
+import {
+  buildPublicStatus,
+  writePublicFeed,
+  writePublicStatus,
+} from "./public-status";
 
 const EVENT_PARSER_VERSION = 3;
 
@@ -27,10 +31,13 @@ export const postVersion = (post: XPost) =>
 async function persist(config: AppConfig, state: MonitorState, now: () => Date): Promise<void> {
   await writeState(config.statePath, state);
   if (config.publicStatusPath) {
-    await writePublicStatus(
-      config.publicStatusPath,
-      buildPublicStatus(state, config.sourceProvider, now().toISOString()),
+    const status = buildPublicStatus(
+      state,
+      config.sourceProvider,
+      now().toISOString(),
     );
+    await writePublicStatus(config.publicStatusPath, status);
+    await writePublicFeed(join(dirname(config.publicStatusPath), "feed.xml"), status);
   }
 }
 
