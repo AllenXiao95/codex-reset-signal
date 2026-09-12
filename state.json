@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098639827084480864",
-  "lastCheckedAt": "2026-09-12T08:07:27.469Z",
-  "lastSuccessAt": "2026-09-12T08:07:27.469Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 53,
+  "sinceId": "2098685691899027900",
+  "lastCheckedAt": "2026-09-12T08:12:33.444Z",
+  "lastSuccessAt": "2026-09-12T08:12:33.444Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 55,
   "matches": [
+    {
+      "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
+      "id": "2098685367058612394",
+      "canonicalId": "2098685367058612394",
+      "text": "Reset all propagated. Sweet dreams.",
+      "createdAt": "2026-09-12T08:09:17.000Z",
+      "url": "https://x.com/thsottiaux/status/2098685367058612394",
+      "media": [],
+      "detectedAt": "2026-09-12T08:12:33.444Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Reset all propagated",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Reset all propagated",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-09-12T08:12:33.448Z"
+    },
     {
       "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
       "id": "2098612714704891959",
@@ -252,15 +280,17 @@
     "2098590070102245712": "ad593b81f4f7ed4da720d394f56256f4bb0151f78338019bf949257f3a9c1e48",
     "2098612714704891959": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
     "2098613228486152223": "c16122e26f2440bdaaf5dbeae260dd3a9574d3e75c65d9f85e970fcea639ba06",
-    "2098639827084480864": "3555458e8b32dd567f40da7da9ed060f33473143a9ceb6060f09ab51f2665f72"
+    "2098639827084480864": "3555458e8b32dd567f40da7da9ed060f33473143a9ceb6060f09ab51f2665f72",
+    "2098685367058612394": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
+    "2098685691899027900": "2e03210dca0f86be9cbb02538812fb4b79c762f3881fc1e3a5c3cd7efb7b18e1"
   },
   "eventParserVersion": 4,
   "latestObservedPost": {
-    "id": "2098639827084480864",
-    "canonicalId": "2098639827084480864",
-    "text": "Astra powered ships this week\n\n- Images 2.5\n- GPT-Live-1\n- Agents API\n- Data Agent\n- ChatGPT for Financial Services\n\nand yet it’s not yet DevDay. Busy plans for next week too.",
-    "createdAt": "2026-09-12T05:08:20.000Z",
-    "url": "https://x.com/thsottiaux/status/2098639827084480864",
+    "id": "2098685691899027900",
+    "canonicalId": "2098685691899027900",
+    "text": "@rileybrown Tell me more",
+    "createdAt": "2026-09-12T08:10:35.000Z",
+    "url": "https://x.com/thsottiaux/status/2098685691899027900",
     "media": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T08:07:27.473Z",
+  "updatedAt": "2026-09-12T08:12:33.452Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-12T08:07:27.469Z",
-    "lastSuccessAt": "2026-09-12T08:07:27.469Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-12T08:12:33.444Z",
+    "lastSuccessAt": "2026-09-12T08:12:33.444Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2098639827084480864",
-    "text": "Astra powered ships this week\n\n- Images 2.5\n- GPT-Live-1\n- Agents API\n- Data Agent\n- ChatGPT for Financial Services\n\nand yet it’s not yet DevDay. Busy plans for next week too.",
-    "url": "https://x.com/thsottiaux/status/2098639827084480864",
-    "postCreatedAt": "2026-09-12T05:08:20.000Z"
+    "id": "2098685691899027900",
+    "text": "@rileybrown Tell me more",
+    "url": "https://x.com/thsottiaux/status/2098685691899027900",
+    "postCreatedAt": "2026-09-12T08:10:35.000Z"
   },
   "latest": {
     "reset": {
@@ -79,6 +79,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
+      "id": "2098685367058612394",
+      "text": "Reset all propagated. Sweet dreams.",
+      "url": "https://x.com/thsottiaux/status/2098685367058612394",
+      "postCreatedAt": "2026-09-12T08:09:17.000Z",
+      "detectedAt": "2026-09-12T08:12:33.444Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Reset all propagated",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Reset all propagated",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
       "id": "2098612714704891959",
