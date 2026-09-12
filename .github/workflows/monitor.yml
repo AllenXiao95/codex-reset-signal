@@ -71,12 +71,12 @@ jobs:
         if: always() && steps.monitor.outcome != 'skipped'
         working-directory: runtime
         run: |
-          if git diff --quiet -- state.json status.json; then
+          if [ -z "$(git status --porcelain -- state.json status.json feed.xml)" ]; then
             exit 0
           fi
           git config user.name "reset-signal[bot]"
           git config user.email "reset-signal[bot]@users.noreply.github.com"
-          git add state.json status.json
+          git add state.json status.json feed.xml
           git commit -m "chore: update monitor runtime state"
           git pull --rebase origin monitor-state
           git push origin HEAD:monitor-state
@@ -88,4 +88,5 @@ jobs:
           path: |
             runtime/state.json
             runtime/status.json
+            runtime/feed.xml
           retention-days: 7
