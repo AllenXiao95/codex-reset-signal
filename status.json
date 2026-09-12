@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-12T05:02:31.899Z",
+  "updatedAt": "2026-09-12T05:07:24.324Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-12T05:02:31.895Z",
-    "lastSuccessAt": "2026-09-12T05:02:31.895Z",
+    "lastCheckedAt": "2026-09-12T05:07:24.322Z",
+    "lastSuccessAt": "2026-09-12T05:07:24.322Z",
     "lastRunStatus": "checked-0-posts"
   },
   "latestObservedPost": {
@@ -248,11 +248,10 @@
           "status": "scheduled",
           "evidence": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender",
           "time": {
-            "kind": "date",
-            "start": "2026-09-10T07:24:57.000Z",
-            "end": "2026-09-11T07:24:57.000Z",
-            "evidence": "3D",
-            "note": "按配置假设原文时区为 America/Los_Angeles"
+            "kind": "exact",
+            "start": "2026-09-08T02:00:00.000Z",
+            "end": null,
+            "evidence": "6pm PST today"
           }
         }
       ],
