@@ -18,7 +18,7 @@ function toPublicSignal(match: MatchRecord): PublicSignal {
     postCreatedAt: match.createdAt,
     detectedAt: match.detectedAt,
     events: match.events,
-    deliveryChannels: match.channels,
+    deliveryChannels: match.channels.filter((channel) => channel !== "github-actions"),
     origin: "live",
   };
 }
