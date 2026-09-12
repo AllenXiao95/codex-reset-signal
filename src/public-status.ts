@@ -1,5 +1,6 @@
 import { mkdir, rename, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import { renderRssFeed } from "./feed";
 import { historicalSignals } from "./history";
 import type {
   MatchRecord,
@@ -95,12 +96,23 @@ export function buildPublicStatus(
   };
 }
 
+async function writeAtomically(path: string, content: string): Promise<void> {
+  await mkdir(dirname(path), { recursive: true });
+  const temporaryPath = `${path}.tmp`;
+  await writeFile(temporaryPath, content, "utf8");
+  await rename(temporaryPath, path);
+}
+
 export async function writePublicStatus(
   path: string,
   status: PublicStatus,
 ): Promise<void> {
-  await mkdir(dirname(path), { recursive: true });
-  const temporaryPath = `${path}.tmp`;
-  await writeFile(temporaryPath, `${JSON.stringify(status, null, 2)}\n`, "utf8");
-  await rename(temporaryPath, path);
+  await writeAtomically(path, `${JSON.stringify(status, null, 2)}\n`);
+}
+
+export async function writePublicFeed(
+  path: string,
+  status: PublicStatus,
+): Promise<void> {
+  await writeAtomically(path, renderRssFeed(status));
 }
