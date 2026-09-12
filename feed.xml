@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Codex Reset Signal · @thsottiaux</title>
+    <link>https://x.com/thsottiaux</link>
+    <description>Actionable reset and bank-credit signals detected by codex-reset-signal.</description>
+    <lastBuildDate>Sat, 12 Sep 2026 05:02:31 GMT</lastBuildDate>
+    <generator>codex-reset-signal</generator>
+    <item>
+      <guid isPermaLink="false">2098612714704891959:reset</guid>
+      <title>Reset · scheduled · @thsottiaux</title>
+      <link>https://x.com/thsottiaux/status/2098612714704891959</link>
+      <pubDate>Sat, 12 Sep 2026 03:20:36 GMT</pubDate>
+      <category>reset</category>
+      <description>Reset · scheduled
+Time: 2026-09-12T07:00:00.000Z
+Note: “by midnight” 按 America/Los_Angeles 当日本地日终解释；这是截止时刻，不代表实际到账一定发生在该时刻
+Evidence: And of course, a reset is also landing by midnight today
+
+Hi Astra users. A reset and a quick update on quality issues that have been posted around.
+
+Working with some of you, we have found and fixed the following issues:
+- Some skills written for previous models were triggering too often or preventing the model from checking its work.
+- An opt-in context management experiment that could cause early stops or replies to older messages. We&apos;ve disabled it. Our rough estimate is that 4-5k users were affected by this experiment.
+- We&apos;ve also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.
+
+We’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.
+
+The examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.
+
+And of course, a reset is also landing by midnight today.</description>
+    </item>
+    <item>
+      <guid isPermaLink="false">2097174560412246215:reset</guid>
+      <title>Reset · completed · @thsottiaux</title>
+      <link>https://x.com/thsottiaux/status/2097174560412246215</link>
+      <pubDate>Tue, 08 Sep 2026 04:05:53 GMT</pubDate>
+      <category>reset</category>
+      <description>Reset · completed
+Time: 2026-09-08T04:05:53.000Z
+Note: 使用公告发布时间；不代表账户实际到账时刻
+Evidence: All reset for everyone
+
+All reset for everyone. Enjoy the week with Astra.</description>
+    </item>
+    <item>
+      <guid isPermaLink="false">2097043464538264003:reset</guid>
+      <title>Reset · scheduled · @thsottiaux</title>
+      <link>https://x.com/thsottiaux/status/2097043464538264003</link>
+      <pubDate>Mon, 07 Sep 2026 19:24:57 GMT</pubDate>
+      <category>reset</category>
+      <description>Reset · scheduled
+Time: 2026-09-10T07:24:57.000Z → 2026-09-11T07:24:57.000Z
+Note: 按配置假设原文时区为 America/Los_Angeles
+Evidence: We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender
+
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+
+Thanks for reading. We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender. The work week is about to start.
+
+Lands around 6pm PST today.</description>
+    </item>
+    <item>
+      <guid isPermaLink="false">2096035437299237298:bank_credit</guid>
+      <title>Bank credit · announced · @thsottiaux</title>
+      <link>https://x.com/thsottiaux/status/2096035437299237298</link>
+      <pubDate>Sat, 05 Sep 2026 00:39:25 GMT</pubDate>
+      <category>bank_credit</category>
+      <description>Bank credit · announced
+Timing: Lands end of day
+Note: Banked reset was promised by end of day, but no safe exact landing time is stated. The separate 8pm PT time is an eligibility cutoff for account creation or upgrade, not the bank-credit landing time.
+Evidence: we will do the full banked reset today too for all Plus, Pro and Business users
+
+Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day. Happy Astra day and enjoy a phenomenal weekend. PS: If you create the account or upgrade before 8pm PT you will get it too. Still time!</description>
+    </item>
+  </channel>
+</rss>
