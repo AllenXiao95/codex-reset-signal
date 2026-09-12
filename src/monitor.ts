@@ -13,7 +13,7 @@ import {
   writePublicStatus,
 } from "./public-status";
 
-const EVENT_PARSER_VERSION = 4;
+const EVENT_PARSER_VERSION = 5;
 
 type Dependencies = {
   source?: PostSource;

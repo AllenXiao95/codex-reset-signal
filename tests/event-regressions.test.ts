@@ -35,6 +35,16 @@ describe("real announcement regressions", () => {
     expect(reset.time.start).toBe("2026-09-08T04:05:53.000Z");
   });
 
+  it("treats 'Reset all propagated' as a completed reset", () => {
+    const reset = extractEvents(
+      post("Reset all propagated. Sweet dreams.", "2026-09-12T08:09:17.000Z"),
+    )[0];
+    expect(reset.type).toBe("reset");
+    expect(reset.status).toBe("completed");
+    expect(reset.time.kind).toBe("observed");
+    expect(reset.time.start).toBe("2026-09-12T08:09:17.000Z");
+  });
+
   it("treats the Sep 12 midnight landing announcement as a scheduled reset", () => {
     const text = [
       "Hi Astra users. A reset and a quick update on quality issues that have been posted around.",
