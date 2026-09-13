@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2098905968096719251",
-  "lastCheckedAt": "2026-09-13T01:57:27.918Z",
-  "lastSuccessAt": "2026-09-13T01:57:27.918Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 57,
+  "sinceId": "2098954268963479958",
+  "lastCheckedAt": "2026-09-13T02:02:23.073Z",
+  "lastSuccessAt": "2026-09-13T02:02:23.073Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 58,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -283,15 +283,16 @@
     "2098685367058612394": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
     "2098685691899027900": "2e03210dca0f86be9cbb02538812fb4b79c762f3881fc1e3a5c3cd7efb7b18e1",
     "2098814684359270845": "8964d4b25957af1fbf7439b14d8193f541f461e31b1bcde440480a9add757fbd",
-    "2098905968096719251": "5d618f420ebcacc38268f24f330aec26fc494d3788c9de50f1a58b2618fc3cc4"
+    "2098905968096719251": "5d618f420ebcacc38268f24f330aec26fc494d3788c9de50f1a58b2618fc3cc4",
+    "2098954268963479958": "5ee3805f4a6e5b88664dddeae81814ae2082a74c9bdddf51a8e40212e4d59f5f"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2098905968096719251",
-    "canonicalId": "2098905968096719251",
-    "text": "@signulll Benefits All",
-    "createdAt": "2026-09-12T22:45:53.000Z",
-    "url": "https://x.com/thsottiaux/status/2098905968096719251",
+    "id": "2098954268963479958",
+    "canonicalId": "2098954268963479958",
+    "text": "@LDT0545 Is that a threat?",
+    "createdAt": "2026-09-13T01:57:49.000Z",
+    "url": "https://x.com/thsottiaux/status/2098954268963479958",
     "media": []
   }
 }

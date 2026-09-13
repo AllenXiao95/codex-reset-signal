@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-13T01:57:27.922Z",
+  "updatedAt": "2026-09-13T02:02:23.077Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-13T01:57:27.918Z",
-    "lastSuccessAt": "2026-09-13T01:57:27.918Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-13T02:02:23.073Z",
+    "lastSuccessAt": "2026-09-13T02:02:23.073Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098905968096719251",
-    "text": "@signulll Benefits All",
-    "url": "https://x.com/thsottiaux/status/2098905968096719251",
-    "postCreatedAt": "2026-09-12T22:45:53.000Z"
+    "id": "2098954268963479958",
+    "text": "@LDT0545 Is that a threat?",
+    "url": "https://x.com/thsottiaux/status/2098954268963479958",
+    "postCreatedAt": "2026-09-13T01:57:49.000Z"
   },
   "latest": {
     "reset": {
