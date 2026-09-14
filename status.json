@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-14T06:57:30.238Z",
+  "updatedAt": "2026-09-14T07:02:39.714Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-14T06:57:30.229Z",
-    "lastSuccessAt": "2026-09-14T06:57:30.229Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-14T07:02:39.710Z",
+    "lastSuccessAt": "2026-09-14T07:02:39.710Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2098954268963479958",
-    "text": "@LDT0545 Is that a threat?",
-    "url": "https://x.com/thsottiaux/status/2098954268963479958",
-    "postCreatedAt": "2026-09-13T01:57:49.000Z"
+    "id": "2099393115241300166",
+    "text": "What’s a feature we should remove from Codex that isn’t useful anymore?",
+    "url": "https://x.com/thsottiaux/status/2099393115241300166",
+    "postCreatedAt": "2026-09-14T07:01:38.000Z"
   },
   "latest": {
     "reset": {
