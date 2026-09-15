@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T15:32:41.192Z",
+  "updatedAt": "2026-09-15T15:37:35.336Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-15T15:32:41.189Z",
-    "lastSuccessAt": "2026-09-15T15:32:41.189Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-15T15:37:35.332Z",
+    "lastSuccessAt": "2026-09-15T15:37:35.332Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2099757649730691202",
-    "text": "@MikelEcheve Am I talking to Astra or Luna?",
-    "url": "https://x.com/thsottiaux/status/2099757649730691202",
-    "postCreatedAt": "2026-09-15T07:10:09.000Z"
+    "id": "2099884278733787199",
+    "text": "@AndyJScott We will figure that out in the coming 2 weeks",
+    "url": "https://x.com/thsottiaux/status/2099884278733787199",
+    "postCreatedAt": "2026-09-15T15:33:20.000Z"
   },
   "latest": {
     "reset": {
