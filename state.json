@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2099884278733787199",
-  "lastCheckedAt": "2026-09-15T15:37:35.332Z",
-  "lastSuccessAt": "2026-09-15T15:37:35.332Z",
+  "sinceId": "2099886370319978506",
+  "lastCheckedAt": "2026-09-15T15:42:29.558Z",
+  "lastSuccessAt": "2026-09-15T15:42:29.558Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 68,
+  "postsScanned": 69,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -294,15 +294,16 @@
     "2099745615118991548": "d4dd83e5e2b271786605440df2724b8ef9840b401130504e03e637825cc8d97a",
     "2099756963429245110": "e21c6292abf6acf0c2e73fa1c3d38d5c72d8bbca9144ebf591da64d33b175723",
     "2099757649730691202": "faeb435334a25ed9d7dc0cc4d2c858967c26eb5a5d5d01b4097b54c4aa1f8d78",
-    "2099884278733787199": "c3c102e8ffeb9c0041e68c989ec7ba9f8c72dcf58d2f479aa2ab0653dbc7a548"
+    "2099884278733787199": "c3c102e8ffeb9c0041e68c989ec7ba9f8c72dcf58d2f479aa2ab0653dbc7a548",
+    "2099886370319978506": "6cd63dfe80313d29fc166aa331ccfe8fda7b4962ebb3a5f10d6af52b8372a19b"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2099884278733787199",
-    "canonicalId": "2099884278733787199",
-    "text": "@AndyJScott We will figure that out in the coming 2 weeks",
-    "createdAt": "2026-09-15T15:33:20.000Z",
-    "url": "https://x.com/thsottiaux/status/2099884278733787199",
+    "id": "2099886370319978506",
+    "canonicalId": "2099886370319978506",
+    "text": "@nicoletang0717 Can’t believe this was filmed this weekend, neck tattoos and all",
+    "createdAt": "2026-09-15T15:41:39.000Z",
+    "url": "https://x.com/thsottiaux/status/2099886370319978506",
     "media": []
   }
 }

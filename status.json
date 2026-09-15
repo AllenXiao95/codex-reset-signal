@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T15:37:35.336Z",
+  "updatedAt": "2026-09-15T15:42:29.563Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-15T15:37:35.332Z",
-    "lastSuccessAt": "2026-09-15T15:37:35.332Z",
+    "lastCheckedAt": "2026-09-15T15:42:29.558Z",
+    "lastSuccessAt": "2026-09-15T15:42:29.558Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2099884278733787199",
-    "text": "@AndyJScott We will figure that out in the coming 2 weeks",
-    "url": "https://x.com/thsottiaux/status/2099884278733787199",
-    "postCreatedAt": "2026-09-15T15:33:20.000Z"
+    "id": "2099886370319978506",
+    "text": "@nicoletang0717 Can’t believe this was filmed this weekend, neck tattoos and all",
+    "url": "https://x.com/thsottiaux/status/2099886370319978506",
+    "postCreatedAt": "2026-09-15T15:41:39.000Z"
   },
   "latest": {
     "reset": {
