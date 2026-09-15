@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2099745615118991548",
-  "lastCheckedAt": "2026-09-15T07:07:26.276Z",
-  "lastSuccessAt": "2026-09-15T07:07:26.276Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 65,
+  "sinceId": "2099757649730691202",
+  "lastCheckedAt": "2026-09-15T07:12:25.544Z",
+  "lastSuccessAt": "2026-09-15T07:12:25.544Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 67,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -291,15 +291,17 @@
     "2099394561076568290": "c72bfbce81f80b93ea0a4ce98e7e12d80ef0fb4137711da8b5673853c2e6ed3a",
     "2099741116925096020": "40f32081bc09040da0fdc7f8ad7023ad94efe131da6811d89334a7b1449492ed",
     "2099744972195131850": "06bf18aba2ae660572a253f795efa52aff439d56f815a7af3ca43289a0e7b39e",
-    "2099745615118991548": "d4dd83e5e2b271786605440df2724b8ef9840b401130504e03e637825cc8d97a"
+    "2099745615118991548": "d4dd83e5e2b271786605440df2724b8ef9840b401130504e03e637825cc8d97a",
+    "2099756963429245110": "e21c6292abf6acf0c2e73fa1c3d38d5c72d8bbca9144ebf591da64d33b175723",
+    "2099757649730691202": "faeb435334a25ed9d7dc0cc4d2c858967c26eb5a5d5d01b4097b54c4aa1f8d78"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2099745615118991548",
-    "canonicalId": "2099745615118991548",
-    "text": "@thdxr I would even say it's over 9000",
-    "createdAt": "2026-09-15T06:22:20.000Z",
-    "url": "https://x.com/thsottiaux/status/2099745615118991548",
+    "id": "2099757649730691202",
+    "canonicalId": "2099757649730691202",
+    "text": "@MikelEcheve Am I talking to Astra or Luna?",
+    "createdAt": "2026-09-15T07:10:09.000Z",
+    "url": "https://x.com/thsottiaux/status/2099757649730691202",
     "media": []
   }
 }

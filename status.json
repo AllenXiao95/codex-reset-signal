@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T07:07:26.280Z",
+  "updatedAt": "2026-09-15T07:12:25.548Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-15T07:07:26.276Z",
-    "lastSuccessAt": "2026-09-15T07:07:26.276Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-15T07:12:25.544Z",
+    "lastSuccessAt": "2026-09-15T07:12:25.544Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2099745615118991548",
-    "text": "@thdxr I would even say it's over 9000",
-    "url": "https://x.com/thsottiaux/status/2099745615118991548",
-    "postCreatedAt": "2026-09-15T06:22:20.000Z"
+    "id": "2099757649730691202",
+    "text": "@MikelEcheve Am I talking to Astra or Luna?",
+    "url": "https://x.com/thsottiaux/status/2099757649730691202",
+    "postCreatedAt": "2026-09-15T07:10:09.000Z"
   },
   "latest": {
     "reset": {
