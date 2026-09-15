@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T06:02:23.330Z",
+  "updatedAt": "2026-09-15T06:07:31.615Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-15T06:02:23.326Z",
-    "lastSuccessAt": "2026-09-15T06:02:23.326Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-15T06:07:31.613Z",
+    "lastSuccessAt": "2026-09-15T06:07:31.613Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2099394561076568290",
-    "text": "@olegakbarov What’s your actual critique of the design?",
-    "url": "https://x.com/thsottiaux/status/2099394561076568290",
-    "postCreatedAt": "2026-09-14T07:07:22.000Z"
+    "id": "2099741116925096020",
+    "text": "@hanghuang_ So they can play videogames",
+    "url": "https://x.com/thsottiaux/status/2099741116925096020",
+    "postCreatedAt": "2026-09-15T06:04:28.000Z"
   },
   "latest": {
     "reset": {
