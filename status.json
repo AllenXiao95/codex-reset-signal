@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T15:42:29.563Z",
+  "updatedAt": "2026-09-15T15:47:26.800Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-15T15:42:29.558Z",
-    "lastSuccessAt": "2026-09-15T15:42:29.558Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-15T15:47:26.796Z",
+    "lastSuccessAt": "2026-09-15T15:47:26.796Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2099886370319978506",
-    "text": "@nicoletang0717 Can’t believe this was filmed this weekend, neck tattoos and all",
-    "url": "https://x.com/thsottiaux/status/2099886370319978506",
-    "postCreatedAt": "2026-09-15T15:41:39.000Z"
+    "id": "2099887016569876809",
+    "text": "@Jaytel Hi 👋",
+    "url": "https://x.com/thsottiaux/status/2099887016569876809",
+    "postCreatedAt": "2026-09-15T15:44:13.000Z"
   },
   "latest": {
     "reset": {
