@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2099741116925096020",
-  "lastCheckedAt": "2026-09-15T06:17:22.593Z",
-  "lastSuccessAt": "2026-09-15T06:17:22.593Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 63,
+  "sinceId": "2099745615118991548",
+  "lastCheckedAt": "2026-09-15T06:22:30.816Z",
+  "lastSuccessAt": "2026-09-15T06:22:30.816Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 65,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -289,15 +289,17 @@
     "2099393997026582791": "3825528100ccdf4404c21b775ba643ad8b23fbf77977d7dd30a66c49a1d92a48",
     "2099394367744356554": "6e2770c78a654b27eec419bbecf8b2a4f1237960a76b5334f2f33e9ad93a35ad",
     "2099394561076568290": "c72bfbce81f80b93ea0a4ce98e7e12d80ef0fb4137711da8b5673853c2e6ed3a",
-    "2099741116925096020": "40f32081bc09040da0fdc7f8ad7023ad94efe131da6811d89334a7b1449492ed"
+    "2099741116925096020": "40f32081bc09040da0fdc7f8ad7023ad94efe131da6811d89334a7b1449492ed",
+    "2099744972195131850": "06bf18aba2ae660572a253f795efa52aff439d56f815a7af3ca43289a0e7b39e",
+    "2099745615118991548": "d4dd83e5e2b271786605440df2724b8ef9840b401130504e03e637825cc8d97a"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2099741116925096020",
-    "canonicalId": "2099741116925096020",
-    "text": "@hanghuang_ So they can play videogames",
-    "createdAt": "2026-09-15T06:04:28.000Z",
-    "url": "https://x.com/thsottiaux/status/2099741116925096020",
+    "id": "2099745615118991548",
+    "canonicalId": "2099745615118991548",
+    "text": "@thdxr I would even say it's over 9000",
+    "createdAt": "2026-09-15T06:22:20.000Z",
+    "url": "https://x.com/thsottiaux/status/2099745615118991548",
     "media": []
   }
 }

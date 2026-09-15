@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T06:17:22.623Z",
+  "updatedAt": "2026-09-15T06:22:30.823Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-15T06:17:22.593Z",
-    "lastSuccessAt": "2026-09-15T06:17:22.593Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-15T06:22:30.816Z",
+    "lastSuccessAt": "2026-09-15T06:22:30.816Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2099741116925096020",
-    "text": "@hanghuang_ So they can play videogames",
-    "url": "https://x.com/thsottiaux/status/2099741116925096020",
-    "postCreatedAt": "2026-09-15T06:04:28.000Z"
+    "id": "2099745615118991548",
+    "text": "@thdxr I would even say it's over 9000",
+    "url": "https://x.com/thsottiaux/status/2099745615118991548",
+    "postCreatedAt": "2026-09-15T06:22:20.000Z"
   },
   "latest": {
     "reset": {
