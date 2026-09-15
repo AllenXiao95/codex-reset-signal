@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15T18:03:25.065Z",
+  "updatedAt": "2026-09-15T18:07:34.089Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-15T18:03:25.061Z",
-    "lastSuccessAt": "2026-09-15T18:03:25.061Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-15T18:07:34.085Z",
+    "lastSuccessAt": "2026-09-15T18:07:34.085Z",
+    "lastRunStatus": "checked-3-posts"
   },
   "latestObservedPost": {
-    "id": "2099887016569876809",
-    "text": "@Jaytel Hi 👋",
-    "url": "https://x.com/thsottiaux/status/2099887016569876809",
-    "postCreatedAt": "2026-09-15T15:44:13.000Z"
+    "id": "2099923055636250714",
+    "text": "@AdamHoltererer Don’t you dare give pets. That’s not necessary",
+    "url": "https://x.com/thsottiaux/status/2099923055636250714",
+    "postCreatedAt": "2026-09-15T18:07:25.000Z"
   },
   "latest": {
     "reset": {
