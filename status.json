@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T07:12:44.042Z",
+  "updatedAt": "2026-09-16T07:17:38.395Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-16T07:12:44.038Z",
-    "lastSuccessAt": "2026-09-16T07:12:44.038Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-16T07:17:38.391Z",
+    "lastSuccessAt": "2026-09-16T07:17:38.391Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2099923055636250714",
-    "text": "@AdamHoltererer Don’t you dare give pets. That’s not necessary",
-    "url": "https://x.com/thsottiaux/status/2099923055636250714",
-    "postCreatedAt": "2026-09-15T18:07:25.000Z"
+    "id": "2100121084817502216",
+    "text": "11pm on a Tuesday, big startup energy https://t.co/JZcrZraqhY",
+    "url": "https://x.com/thsottiaux/status/2100121084817502216",
+    "postCreatedAt": "2026-09-16T07:14:19.000Z"
   },
   "latest": {
     "reset": {
