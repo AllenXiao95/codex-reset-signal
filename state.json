@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2100295443620007993",
-  "lastCheckedAt": "2026-09-16T18:52:36.240Z",
-  "lastSuccessAt": "2026-09-16T18:52:36.240Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 77,
+  "sinceId": "2100297380968997327",
+  "lastCheckedAt": "2026-09-16T18:57:38.335Z",
+  "lastSuccessAt": "2026-09-16T18:57:38.335Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 78,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -303,15 +303,16 @@
     "2099923055636250714": "0d6bde4394fa6b29d44c800f699c9c518467733a03cbcebb28a10a2b5aca009a",
     "2100121084817502216": "97ab3adcbb54a84d378f73b4d95361ff15dc0ca53c11586097f536572c8b07d0",
     "2100122479947817059": "4d870f1a0574f62576e2e5cd536132c4830a797029ea966d3b84860f94bf6b43",
-    "2100295443620007993": "25d284b7a3330c707a6dcc8b00900578d350250573d9c5da2296d64928b57fd4"
+    "2100295443620007993": "25d284b7a3330c707a6dcc8b00900578d350250573d9c5da2296d64928b57fd4",
+    "2100297380968997327": "a85dad5c0a6e77abd9b833d478de96859052d9b524bb976e4b95d3e88597a2d9"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2100295443620007993",
-    "canonicalId": "2100295443620007993",
-    "text": "What is ChatGPT",
-    "createdAt": "2026-09-16T18:47:10.000Z",
-    "url": "https://x.com/thsottiaux/status/2100295443620007993",
+    "id": "2100297380968997327",
+    "canonicalId": "2100297380968997327",
+    "text": "Astra\n\n✅ Fast\n✅ Frontier\n✅ Efficient\n✅ For everyone",
+    "createdAt": "2026-09-16T18:54:51.000Z",
+    "url": "https://x.com/thsottiaux/status/2100297380968997327",
     "media": []
   }
 }
