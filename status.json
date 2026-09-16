@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16T18:42:45.014Z",
+  "updatedAt": "2026-09-16T18:47:46.019Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-16T18:42:45.011Z",
-    "lastSuccessAt": "2026-09-16T18:42:45.011Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-16T18:47:46.015Z",
+    "lastSuccessAt": "2026-09-16T18:47:46.015Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2100122479947817059",
-    "text": "Astra, as seen by Imagegen https://t.co/b3La6ZCY5O",
-    "url": "https://x.com/thsottiaux/status/2100122479947817059",
-    "postCreatedAt": "2026-09-16T07:19:52.000Z"
+    "id": "2100295443620007993",
+    "text": "What is ChatGPT",
+    "url": "https://x.com/thsottiaux/status/2100295443620007993",
+    "postCreatedAt": "2026-09-16T18:47:10.000Z"
   },
   "latest": {
     "reset": {

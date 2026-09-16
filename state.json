@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2100122479947817059",
-  "lastCheckedAt": "2026-09-16T18:42:45.011Z",
-  "lastSuccessAt": "2026-09-16T18:42:45.011Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 76,
+  "sinceId": "2100295443620007993",
+  "lastCheckedAt": "2026-09-16T18:47:46.015Z",
+  "lastSuccessAt": "2026-09-16T18:47:46.015Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 77,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -302,23 +302,16 @@
     "2099922755655479624": "d22a93fd168f65a23d47d372f9050f7b696f6c1d8ec55bf8e60f4a3d5f409312",
     "2099923055636250714": "0d6bde4394fa6b29d44c800f699c9c518467733a03cbcebb28a10a2b5aca009a",
     "2100121084817502216": "97ab3adcbb54a84d378f73b4d95361ff15dc0ca53c11586097f536572c8b07d0",
-    "2100122479947817059": "4d870f1a0574f62576e2e5cd536132c4830a797029ea966d3b84860f94bf6b43"
+    "2100122479947817059": "4d870f1a0574f62576e2e5cd536132c4830a797029ea966d3b84860f94bf6b43",
+    "2100295443620007993": "25d284b7a3330c707a6dcc8b00900578d350250573d9c5da2296d64928b57fd4"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2100122479947817059",
-    "canonicalId": "2100122479947817059",
-    "text": "Astra, as seen by Imagegen https://t.co/b3La6ZCY5O",
-    "createdAt": "2026-09-16T07:19:52.000Z",
-    "url": "https://x.com/thsottiaux/status/2100122479947817059",
-    "media": [
-      {
-        "mediaKey": "2100122443901968384",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HSUiPF2aIAA99cn.jpg?name=orig",
-        "previewImageUrl": null,
-        "altText": null
-      }
-    ]
+    "id": "2100295443620007993",
+    "canonicalId": "2100295443620007993",
+    "text": "What is ChatGPT",
+    "createdAt": "2026-09-16T18:47:10.000Z",
+    "url": "https://x.com/thsottiaux/status/2100295443620007993",
+    "media": []
   }
 }
