@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2100474870044016922",
-  "lastCheckedAt": "2026-09-17T17:57:40.068Z",
-  "lastSuccessAt": "2026-09-17T17:57:40.068Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 84,
+  "sinceId": "2100645454245720513",
+  "lastCheckedAt": "2026-09-17T18:02:59.717Z",
+  "lastSuccessAt": "2026-09-17T18:02:59.717Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 85,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -310,15 +310,16 @@
     "2100461944860020851": "b38b9564138c989d8ea22ee1bf5dcd7bd52d63b6f7a1767fcf7730eeb17934e4",
     "2100473666635280768": "94a6cc0cb89f76fe6552f459041b3833ce6330ded8ac6e68dc88ee6556fb3bb3",
     "2100474737420111956": "000dc3b7bbbe91a845723d17aa3310b97072ed2634e4fdcc287a79840d4a410c",
-    "2100474870044016922": "c467f8724043781bc12fd55faca5100e7c96b5ad736f70decc9bcd328cdfbc5a"
+    "2100474870044016922": "c467f8724043781bc12fd55faca5100e7c96b5ad736f70decc9bcd328cdfbc5a",
+    "2100645454245720513": "6ea87ec313e26fc74bb5ac39d9ae7413a263b19e1f3a327976a4ab430f3a1395"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2100474870044016922",
-    "canonicalId": "2100474870044016922",
-    "text": "@Yuchenj_UW Welcome to the shipping era",
-    "createdAt": "2026-09-17T06:40:08.000Z",
-    "url": "https://x.com/thsottiaux/status/2100474870044016922",
+    "id": "2100645454245720513",
+    "canonicalId": "2100645454245720513",
+    "text": "Has anyone yet tried to get Astra and Fable to agree on the perfect styleguide? And then host it somewhere with a web mcp.",
+    "createdAt": "2026-09-17T17:57:59.000Z",
+    "url": "https://x.com/thsottiaux/status/2100645454245720513",
     "media": []
   }
 }
