@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T05:47:38.279Z",
+  "updatedAt": "2026-09-17T05:52:34.936Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-17T05:47:38.238Z",
-    "lastSuccessAt": "2026-09-17T05:47:38.238Z",
+    "lastCheckedAt": "2026-09-17T05:52:34.933Z",
+    "lastSuccessAt": "2026-09-17T05:52:34.933Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2100461541145587999",
-    "text": "@theo @sama Fair",
-    "url": "https://x.com/thsottiaux/status/2100461541145587999",
-    "postCreatedAt": "2026-09-17T05:47:10.000Z"
+    "id": "2100461944860020851",
+    "text": "@tlxue Pretty cool!",
+    "url": "https://x.com/thsottiaux/status/2100461944860020851",
+    "postCreatedAt": "2026-09-17T05:48:47.000Z"
   },
   "latest": {
     "reset": {
