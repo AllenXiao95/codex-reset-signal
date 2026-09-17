@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2100473666635280768",
-  "lastCheckedAt": "2026-09-17T06:37:49.101Z",
-  "lastSuccessAt": "2026-09-17T06:37:49.101Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 82,
+  "sinceId": "2100474870044016922",
+  "lastCheckedAt": "2026-09-17T06:42:41.131Z",
+  "lastSuccessAt": "2026-09-17T06:42:41.131Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 84,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -308,15 +308,17 @@
     "2100363668051603608": "c266eeffa4de708086a2cf6604913f2e8101f3c651003fcf27f45a38cd7d569e",
     "2100461541145587999": "2c7c329de8dc584f1f90cda76dc0fe8cf9b99689c9e458148e7adb53db2a09cc",
     "2100461944860020851": "b38b9564138c989d8ea22ee1bf5dcd7bd52d63b6f7a1767fcf7730eeb17934e4",
-    "2100473666635280768": "94a6cc0cb89f76fe6552f459041b3833ce6330ded8ac6e68dc88ee6556fb3bb3"
+    "2100473666635280768": "94a6cc0cb89f76fe6552f459041b3833ce6330ded8ac6e68dc88ee6556fb3bb3",
+    "2100474737420111956": "000dc3b7bbbe91a845723d17aa3310b97072ed2634e4fdcc287a79840d4a410c",
+    "2100474870044016922": "c467f8724043781bc12fd55faca5100e7c96b5ad736f70decc9bcd328cdfbc5a"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2100473666635280768",
-    "canonicalId": "2100473666635280768",
-    "text": "@zdogmode Revenue happened",
-    "createdAt": "2026-09-17T06:35:21.000Z",
-    "url": "https://x.com/thsottiaux/status/2100473666635280768",
+    "id": "2100474870044016922",
+    "canonicalId": "2100474870044016922",
+    "text": "@Yuchenj_UW Welcome to the shipping era",
+    "createdAt": "2026-09-17T06:40:08.000Z",
+    "url": "https://x.com/thsottiaux/status/2100474870044016922",
     "media": []
   }
 }

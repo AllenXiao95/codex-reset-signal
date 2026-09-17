@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T06:37:49.105Z",
+  "updatedAt": "2026-09-17T06:42:41.135Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-17T06:37:49.101Z",
-    "lastSuccessAt": "2026-09-17T06:37:49.101Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-17T06:42:41.131Z",
+    "lastSuccessAt": "2026-09-17T06:42:41.131Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2100473666635280768",
-    "text": "@zdogmode Revenue happened",
-    "url": "https://x.com/thsottiaux/status/2100473666635280768",
-    "postCreatedAt": "2026-09-17T06:35:21.000Z"
+    "id": "2100474870044016922",
+    "text": "@Yuchenj_UW Welcome to the shipping era",
+    "url": "https://x.com/thsottiaux/status/2100474870044016922",
+    "postCreatedAt": "2026-09-17T06:40:08.000Z"
   },
   "latest": {
     "reset": {
