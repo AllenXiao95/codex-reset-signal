@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T18:12:38.782Z",
+  "updatedAt": "2026-09-17T18:17:43.984Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-17T18:12:38.778Z",
-    "lastSuccessAt": "2026-09-17T18:12:38.778Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-17T18:17:43.980Z",
+    "lastSuccessAt": "2026-09-17T18:17:43.980Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2100645454245720513",
-    "text": "Has anyone yet tried to get Astra and Fable to agree on the perfect styleguide? And then host it somewhere with a web mcp.",
-    "url": "https://x.com/thsottiaux/status/2100645454245720513",
-    "postCreatedAt": "2026-09-17T17:57:59.000Z"
+    "id": "2100649624860254629",
+    "text": "@vlinx_soft See you at DevDay",
+    "url": "https://x.com/thsottiaux/status/2100649624860254629",
+    "postCreatedAt": "2026-09-17T18:14:33.000Z"
   },
   "latest": {
     "reset": {
