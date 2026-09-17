@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2100363668051603608",
-  "lastCheckedAt": "2026-09-17T05:42:38.016Z",
-  "lastSuccessAt": "2026-09-17T05:42:38.016Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 79,
+  "sinceId": "2100461541145587999",
+  "lastCheckedAt": "2026-09-17T05:47:38.238Z",
+  "lastSuccessAt": "2026-09-17T05:47:38.238Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 80,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -305,15 +305,16 @@
     "2100122479947817059": "4d870f1a0574f62576e2e5cd536132c4830a797029ea966d3b84860f94bf6b43",
     "2100295443620007993": "25d284b7a3330c707a6dcc8b00900578d350250573d9c5da2296d64928b57fd4",
     "2100297380968997327": "a85dad5c0a6e77abd9b833d478de96859052d9b524bb976e4b95d3e88597a2d9",
-    "2100363668051603608": "c266eeffa4de708086a2cf6604913f2e8101f3c651003fcf27f45a38cd7d569e"
+    "2100363668051603608": "c266eeffa4de708086a2cf6604913f2e8101f3c651003fcf27f45a38cd7d569e",
+    "2100461541145587999": "2c7c329de8dc584f1f90cda76dc0fe8cf9b99689c9e458148e7adb53db2a09cc"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2100363668051603608",
-    "canonicalId": "2100363668051603608",
-    "text": "Sometimes physics can't be cheated",
-    "createdAt": "2026-09-16T23:18:15.000Z",
-    "url": "https://x.com/thsottiaux/status/2100363668051603608",
+    "id": "2100461541145587999",
+    "canonicalId": "2100461541145587999",
+    "text": "@theo @sama Fair",
+    "createdAt": "2026-09-17T05:47:10.000Z",
+    "url": "https://x.com/thsottiaux/status/2100461541145587999",
     "media": []
   }
 }

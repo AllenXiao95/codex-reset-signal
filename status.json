@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-17T05:42:38.020Z",
+  "updatedAt": "2026-09-17T05:47:38.279Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-17T05:42:38.016Z",
-    "lastSuccessAt": "2026-09-17T05:42:38.016Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-17T05:47:38.238Z",
+    "lastSuccessAt": "2026-09-17T05:47:38.238Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2100363668051603608",
-    "text": "Sometimes physics can't be cheated",
-    "url": "https://x.com/thsottiaux/status/2100363668051603608",
-    "postCreatedAt": "2026-09-16T23:18:15.000Z"
+    "id": "2100461541145587999",
+    "text": "@theo @sama Fair",
+    "url": "https://x.com/thsottiaux/status/2100461541145587999",
+    "postCreatedAt": "2026-09-17T05:47:10.000Z"
   },
   "latest": {
     "reset": {
