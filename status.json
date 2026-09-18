@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T16:27:35.829Z",
+  "updatedAt": "2026-09-18T16:32:35.643Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-18T16:27:35.825Z",
-    "lastSuccessAt": "2026-09-18T16:27:35.825Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-18T16:32:35.639Z",
+    "lastSuccessAt": "2026-09-18T16:32:35.639Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2100821375812530458",
-    "text": "@RoCastilloF Thanks for having me and nice hoodie Rodrigo 👀",
-    "url": "https://x.com/thsottiaux/status/2100821375812530458",
-    "postCreatedAt": "2026-09-18T05:37:02.000Z"
+    "id": "2100985777962537277",
+    "text": "@hegargarcia Good prompt",
+    "url": "https://x.com/thsottiaux/status/2100985777962537277",
+    "postCreatedAt": "2026-09-18T16:30:18.000Z"
   },
   "latest": {
     "reset": {

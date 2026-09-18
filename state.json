@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2100821375812530458",
-  "lastCheckedAt": "2026-09-18T16:27:35.825Z",
-  "lastSuccessAt": "2026-09-18T16:27:35.825Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 87,
+  "sinceId": "2100985777962537277",
+  "lastCheckedAt": "2026-09-18T16:32:35.639Z",
+  "lastSuccessAt": "2026-09-18T16:32:35.639Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 88,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -313,15 +313,16 @@
     "2100474870044016922": "c467f8724043781bc12fd55faca5100e7c96b5ad736f70decc9bcd328cdfbc5a",
     "2100645454245720513": "6ea87ec313e26fc74bb5ac39d9ae7413a263b19e1f3a327976a4ab430f3a1395",
     "2100649624860254629": "8f51561f00f044670edaa30d68d097b23c42aec496d7bcc495bb29125b1f9132",
-    "2100821375812530458": "4ace037ab2ec8e5dcc4c529309138048548b16bc6eb5715c2e2a08c51efb5c57"
+    "2100821375812530458": "4ace037ab2ec8e5dcc4c529309138048548b16bc6eb5715c2e2a08c51efb5c57",
+    "2100985777962537277": "d45bea224009e0a7f8b8b13fcf3397b92a979f90f0c42bb99f2947024b3d1ad5"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2100821375812530458",
-    "canonicalId": "2100821375812530458",
-    "text": "@RoCastilloF Thanks for having me and nice hoodie Rodrigo 👀",
-    "createdAt": "2026-09-18T05:37:02.000Z",
-    "url": "https://x.com/thsottiaux/status/2100821375812530458",
+    "id": "2100985777962537277",
+    "canonicalId": "2100985777962537277",
+    "text": "@hegargarcia Good prompt",
+    "createdAt": "2026-09-18T16:30:18.000Z",
+    "url": "https://x.com/thsottiaux/status/2100985777962537277",
     "media": []
   }
 }
