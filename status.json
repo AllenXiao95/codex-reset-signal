@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T20:57:37.835Z",
+  "updatedAt": "2026-09-18T21:02:51.973Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-18T20:57:37.831Z",
-    "lastSuccessAt": "2026-09-18T20:57:37.831Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-18T21:02:51.969Z",
+    "lastSuccessAt": "2026-09-18T21:02:51.969Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2101026876647170092",
-    "text": "@trq212 Yay! This is the way. Come to the light",
-    "url": "https://x.com/thsottiaux/status/2101026876647170092",
-    "postCreatedAt": "2026-09-18T19:13:37.000Z"
+    "id": "2101054196703522861",
+    "text": "@6monthsAgoInAI I remember that",
+    "url": "https://x.com/thsottiaux/status/2101054196703522861",
+    "postCreatedAt": "2026-09-18T21:02:10.000Z"
   },
   "latest": {
     "reset": {
