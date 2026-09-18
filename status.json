@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-18T05:32:37.222Z",
+  "updatedAt": "2026-09-18T05:37:39.556Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-18T05:32:37.220Z",
-    "lastSuccessAt": "2026-09-18T05:32:37.220Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-18T05:37:39.552Z",
+    "lastSuccessAt": "2026-09-18T05:37:39.552Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2100649624860254629",
-    "text": "@vlinx_soft See you at DevDay",
-    "url": "https://x.com/thsottiaux/status/2100649624860254629",
-    "postCreatedAt": "2026-09-17T18:14:33.000Z"
+    "id": "2100821375812530458",
+    "text": "@RoCastilloF Thanks for having me and nice hoodie Rodrigo 👀",
+    "url": "https://x.com/thsottiaux/status/2100821375812530458",
+    "postCreatedAt": "2026-09-18T05:37:02.000Z"
   },
   "latest": {
     "reset": {
