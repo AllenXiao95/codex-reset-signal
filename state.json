@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2100985777962537277",
-  "lastCheckedAt": "2026-09-18T19:12:57.957Z",
-  "lastSuccessAt": "2026-09-18T19:12:57.957Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 88,
+  "sinceId": "2101026876647170092",
+  "lastCheckedAt": "2026-09-18T19:17:46.240Z",
+  "lastSuccessAt": "2026-09-18T19:17:46.240Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 89,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -314,15 +314,16 @@
     "2100645454245720513": "6ea87ec313e26fc74bb5ac39d9ae7413a263b19e1f3a327976a4ab430f3a1395",
     "2100649624860254629": "8f51561f00f044670edaa30d68d097b23c42aec496d7bcc495bb29125b1f9132",
     "2100821375812530458": "4ace037ab2ec8e5dcc4c529309138048548b16bc6eb5715c2e2a08c51efb5c57",
-    "2100985777962537277": "d45bea224009e0a7f8b8b13fcf3397b92a979f90f0c42bb99f2947024b3d1ad5"
+    "2100985777962537277": "d45bea224009e0a7f8b8b13fcf3397b92a979f90f0c42bb99f2947024b3d1ad5",
+    "2101026876647170092": "20edefebf9217fd846832d26ffa3366913825de03a966fdd623480504373fbba"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2100985777962537277",
-    "canonicalId": "2100985777962537277",
-    "text": "@hegargarcia Good prompt",
-    "createdAt": "2026-09-18T16:30:18.000Z",
-    "url": "https://x.com/thsottiaux/status/2100985777962537277",
+    "id": "2101026876647170092",
+    "canonicalId": "2101026876647170092",
+    "text": "@trq212 Yay! This is the way. Come to the light",
+    "createdAt": "2026-09-18T19:13:37.000Z",
+    "url": "https://x.com/thsottiaux/status/2101026876647170092",
     "media": []
   }
 }
