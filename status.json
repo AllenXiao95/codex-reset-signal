@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19T16:47:34.041Z",
+  "updatedAt": "2026-09-19T16:52:33.268Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-19T16:47:34.036Z",
-    "lastSuccessAt": "2026-09-19T16:47:34.036Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-19T16:52:33.264Z",
+    "lastSuccessAt": "2026-09-19T16:52:33.264Z",
+    "lastRunStatus": "checked-3-posts"
   },
   "latestObservedPost": {
-    "id": "2101352396140278226",
-    "text": "@GergelyOrosz Let’s celebrate this change! Positive reinforcement!",
-    "url": "https://x.com/thsottiaux/status/2101352396140278226",
-    "postCreatedAt": "2026-09-19T16:47:07.000Z"
+    "id": "2101353743275135306",
+    "text": "@hiarun02 Always improving",
+    "url": "https://x.com/thsottiaux/status/2101353743275135306",
+    "postCreatedAt": "2026-09-19T16:52:28.000Z"
   },
   "latest": {
     "reset": {
