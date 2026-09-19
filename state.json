@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101353743275135306",
-  "lastCheckedAt": "2026-09-19T16:52:33.264Z",
-  "lastSuccessAt": "2026-09-19T16:52:33.264Z",
-  "lastRunStatus": "checked-3-posts",
-  "postsScanned": 103,
+  "sinceId": "2101354419829010896",
+  "lastCheckedAt": "2026-09-19T16:57:46.453Z",
+  "lastSuccessAt": "2026-09-19T16:57:46.453Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 104,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -329,15 +329,16 @@
     "2101352396140278226": "ff87db14ab09b279efb8e6425967f5d372b84b7661a729ade30c980ed7cf27a8",
     "2101352781219258527": "87da2021e23ba76fdb8d8224d9b0f3373594dfd581a8d3b6f5f876ba858b0634",
     "2101353058110480808": "ae39997e286555bf790559bba0471384d3792cd06aef8e8cb9f9b2bbdec84304",
-    "2101353743275135306": "bc17c48b0905e579ca62fb3a057f9e8fff3e4927d38e9f4e1aba49eed252858e"
+    "2101353743275135306": "bc17c48b0905e579ca62fb3a057f9e8fff3e4927d38e9f4e1aba49eed252858e",
+    "2101354419829010896": "916766c2fdad08e3a27da13ab92631acb812a1f53a816b7ba702d92847e900e1"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101353743275135306",
-    "canonicalId": "2101353743275135306",
-    "text": "@hiarun02 Always improving",
-    "createdAt": "2026-09-19T16:52:28.000Z",
-    "url": "https://x.com/thsottiaux/status/2101353743275135306",
+    "id": "2101354419829010896",
+    "canonicalId": "2101354419829010896",
+    "text": "@anah_sahh did you bail or at least show him codex before?",
+    "createdAt": "2026-09-19T16:55:09.000Z",
+    "url": "https://x.com/thsottiaux/status/2101354419829010896",
     "media": []
   }
 }
