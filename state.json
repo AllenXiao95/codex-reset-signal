@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101158751290233190",
-  "lastCheckedAt": "2026-09-19T16:42:45.097Z",
-  "lastSuccessAt": "2026-09-19T16:42:45.097Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 99,
+  "sinceId": "2101352396140278226",
+  "lastCheckedAt": "2026-09-19T16:47:34.036Z",
+  "lastSuccessAt": "2026-09-19T16:47:34.036Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 100,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -325,15 +325,16 @@
     "2101156788011962700": "8788aff7018df9f4caa91ecdbd3988eca53aca8e7985bceb59358f576f256b31",
     "2101157729037586694": "98355bc3b2f02233a948d992d536ec681cee052cb575e0ba124e2e4bdd3cc183",
     "2101158161994699036": "42aaa28539f6d30ae7753c438f436db8cd3475b9d5ad7acd6adc2d04eeb7544e",
-    "2101158751290233190": "d11a3fc39289c1c480e566c338b43c9bf1bd58e7bbdb5af7399d84cf5a0c21e7"
+    "2101158751290233190": "d11a3fc39289c1c480e566c338b43c9bf1bd58e7bbdb5af7399d84cf5a0c21e7",
+    "2101352396140278226": "ff87db14ab09b279efb8e6425967f5d372b84b7661a729ade30c980ed7cf27a8"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101158751290233190",
-    "canonicalId": "2101158751290233190",
-    "text": "@kr0der Tibo from wish dot com",
-    "createdAt": "2026-09-19T03:57:38.000Z",
-    "url": "https://x.com/thsottiaux/status/2101158751290233190",
+    "id": "2101352396140278226",
+    "canonicalId": "2101352396140278226",
+    "text": "@GergelyOrosz Let’s celebrate this change! Positive reinforcement!",
+    "createdAt": "2026-09-19T16:47:07.000Z",
+    "url": "https://x.com/thsottiaux/status/2101352396140278226",
     "media": []
   }
 }
