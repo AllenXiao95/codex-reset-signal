@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19T03:52:38.128Z",
+  "updatedAt": "2026-09-19T03:57:39.805Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-19T03:52:38.123Z",
-    "lastSuccessAt": "2026-09-19T03:52:38.123Z",
-    "lastRunStatus": "checked-2-posts"
+    "lastCheckedAt": "2026-09-19T03:57:39.802Z",
+    "lastSuccessAt": "2026-09-19T03:57:39.802Z",
+    "lastRunStatus": "checked-3-posts"
   },
   "latestObservedPost": {
-    "id": "2101156788011962700",
-    "text": "@gadi_neelesh @ChrisGPT What else do you want",
-    "url": "https://x.com/thsottiaux/status/2101156788011962700",
-    "postCreatedAt": "2026-09-19T03:49:50.000Z"
+    "id": "2101158751290233190",
+    "text": "@kr0der Tibo from wish dot com",
+    "url": "https://x.com/thsottiaux/status/2101158751290233190",
+    "postCreatedAt": "2026-09-19T03:57:38.000Z"
   },
   "latest": {
     "reset": {
