@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101354419829010896",
-  "lastCheckedAt": "2026-09-19T21:57:32.993Z",
-  "lastSuccessAt": "2026-09-19T21:57:32.993Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 104,
+  "sinceId": "2101431497437950458",
+  "lastCheckedAt": "2026-09-19T22:02:47.534Z",
+  "lastSuccessAt": "2026-09-19T22:02:47.534Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 105,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -330,15 +330,16 @@
     "2101352781219258527": "87da2021e23ba76fdb8d8224d9b0f3373594dfd581a8d3b6f5f876ba858b0634",
     "2101353058110480808": "ae39997e286555bf790559bba0471384d3792cd06aef8e8cb9f9b2bbdec84304",
     "2101353743275135306": "bc17c48b0905e579ca62fb3a057f9e8fff3e4927d38e9f4e1aba49eed252858e",
-    "2101354419829010896": "916766c2fdad08e3a27da13ab92631acb812a1f53a816b7ba702d92847e900e1"
+    "2101354419829010896": "916766c2fdad08e3a27da13ab92631acb812a1f53a816b7ba702d92847e900e1",
+    "2101431497437950458": "ca5f6ce6c5e7faca2a6c3d8fb4b5e3f2de50b77af608b0305fada847803e0fc7"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101354419829010896",
-    "canonicalId": "2101354419829010896",
-    "text": "@anah_sahh did you bail or at least show him codex before?",
-    "createdAt": "2026-09-19T16:55:09.000Z",
-    "url": "https://x.com/thsottiaux/status/2101354419829010896",
+    "id": "2101431497437950458",
+    "canonicalId": "2101431497437950458",
+    "text": "2026 is the year of linux desktop",
+    "createdAt": "2026-09-19T22:01:26.000Z",
+    "url": "https://x.com/thsottiaux/status/2101431497437950458",
     "media": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19T21:57:32.999Z",
+  "updatedAt": "2026-09-19T22:02:47.538Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-19T21:57:32.993Z",
-    "lastSuccessAt": "2026-09-19T21:57:32.993Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-19T22:02:47.534Z",
+    "lastSuccessAt": "2026-09-19T22:02:47.534Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2101354419829010896",
-    "text": "@anah_sahh did you bail or at least show him codex before?",
-    "url": "https://x.com/thsottiaux/status/2101354419829010896",
-    "postCreatedAt": "2026-09-19T16:55:09.000Z"
+    "id": "2101431497437950458",
+    "text": "2026 is the year of linux desktop",
+    "url": "https://x.com/thsottiaux/status/2101431497437950458",
+    "postCreatedAt": "2026-09-19T22:01:26.000Z"
   },
   "latest": {
     "reset": {
