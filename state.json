@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101431497437950458",
-  "lastCheckedAt": "2026-09-19T22:02:47.534Z",
-  "lastSuccessAt": "2026-09-19T22:02:47.534Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 105,
+  "sinceId": "2101432860892901859",
+  "lastCheckedAt": "2026-09-19T22:07:34.892Z",
+  "lastSuccessAt": "2026-09-19T22:07:34.892Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 107,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -331,15 +331,17 @@
     "2101353058110480808": "ae39997e286555bf790559bba0471384d3792cd06aef8e8cb9f9b2bbdec84304",
     "2101353743275135306": "bc17c48b0905e579ca62fb3a057f9e8fff3e4927d38e9f4e1aba49eed252858e",
     "2101354419829010896": "916766c2fdad08e3a27da13ab92631acb812a1f53a816b7ba702d92847e900e1",
-    "2101431497437950458": "ca5f6ce6c5e7faca2a6c3d8fb4b5e3f2de50b77af608b0305fada847803e0fc7"
+    "2101431497437950458": "ca5f6ce6c5e7faca2a6c3d8fb4b5e3f2de50b77af608b0305fada847803e0fc7",
+    "2101432368682983749": "d309dfc4ba6fa4ca5f8db95bf81b1010f35ce08a041a901c5e4af24767a34c0f",
+    "2101432860892901859": "338e9a35c1ee087254fd697f79ed39ee90c5f603d8b701b5d643b780d204c159"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101431497437950458",
-    "canonicalId": "2101431497437950458",
-    "text": "2026 is the year of linux desktop",
-    "createdAt": "2026-09-19T22:01:26.000Z",
-    "url": "https://x.com/thsottiaux/status/2101431497437950458",
+    "id": "2101432860892901859",
+    "canonicalId": "2101432860892901859",
+    "text": "@cherry_mx_reds Clearly not me",
+    "createdAt": "2026-09-19T22:06:51.000Z",
+    "url": "https://x.com/thsottiaux/status/2101432860892901859",
     "media": []
   }
 }

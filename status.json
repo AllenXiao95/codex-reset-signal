@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19T22:02:47.538Z",
+  "updatedAt": "2026-09-19T22:07:34.896Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-19T22:02:47.534Z",
-    "lastSuccessAt": "2026-09-19T22:02:47.534Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-19T22:07:34.892Z",
+    "lastSuccessAt": "2026-09-19T22:07:34.892Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2101431497437950458",
-    "text": "2026 is the year of linux desktop",
-    "url": "https://x.com/thsottiaux/status/2101431497437950458",
-    "postCreatedAt": "2026-09-19T22:01:26.000Z"
+    "id": "2101432860892901859",
+    "text": "@cherry_mx_reds Clearly not me",
+    "url": "https://x.com/thsottiaux/status/2101432860892901859",
+    "postCreatedAt": "2026-09-19T22:06:51.000Z"
   },
   "latest": {
     "reset": {
