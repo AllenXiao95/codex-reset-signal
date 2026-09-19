@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101125563448705092",
-  "lastCheckedAt": "2026-09-19T01:47:36.538Z",
-  "lastSuccessAt": "2026-09-19T01:47:36.538Z",
+  "sinceId": "2101126440469344384",
+  "lastCheckedAt": "2026-09-19T01:52:36.875Z",
+  "lastSuccessAt": "2026-09-19T01:52:36.875Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 93,
+  "postsScanned": 94,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -319,15 +319,16 @@
     "2101054196703522861": "ff1a33deb7f952ffdfc4e8e7d62cccd78502f50a63daa743cb5cb2937921cf18",
     "2101055411394904265": "835045f98084a515643317c96898107cf71c4acb3284116dcd97733397d41149",
     "2101124031567262054": "3a6e8b9c79b2237077fafa1b8732e973ab3882e962ac2351e2e25b7488e954d2",
-    "2101125563448705092": "a988778f600d8fccf3cba1dfaaf757e84db97e9d1d4009468f2482825bb99345"
+    "2101125563448705092": "a988778f600d8fccf3cba1dfaaf757e84db97e9d1d4009468f2482825bb99345",
+    "2101126440469344384": "842e51890185d068796c09c4ef9d404fbf9358b941126c3e2c95185c6e6702c2"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101125563448705092",
-    "canonicalId": "2101125563448705092",
-    "text": "@MatthewBerman It's already named chat",
-    "createdAt": "2026-09-19T01:45:46.000Z",
-    "url": "https://x.com/thsottiaux/status/2101125563448705092",
+    "id": "2101126440469344384",
+    "canonicalId": "2101126440469344384",
+    "text": "@ChrisGPT We have content for maybe 3 dev days",
+    "createdAt": "2026-09-19T01:49:15.000Z",
+    "url": "https://x.com/thsottiaux/status/2101126440469344384",
     "media": []
   }
 }

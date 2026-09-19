@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19T01:47:36.545Z",
+  "updatedAt": "2026-09-19T01:52:36.879Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-19T01:47:36.538Z",
-    "lastSuccessAt": "2026-09-19T01:47:36.538Z",
+    "lastCheckedAt": "2026-09-19T01:52:36.875Z",
+    "lastSuccessAt": "2026-09-19T01:52:36.875Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2101125563448705092",
-    "text": "@MatthewBerman It's already named chat",
-    "url": "https://x.com/thsottiaux/status/2101125563448705092",
-    "postCreatedAt": "2026-09-19T01:45:46.000Z"
+    "id": "2101126440469344384",
+    "text": "@ChrisGPT We have content for maybe 3 dev days",
+    "url": "https://x.com/thsottiaux/status/2101126440469344384",
+    "postCreatedAt": "2026-09-19T01:49:15.000Z"
   },
   "latest": {
     "reset": {
