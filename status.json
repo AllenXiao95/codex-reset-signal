@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-19T03:47:35.915Z",
+  "updatedAt": "2026-09-19T03:52:38.128Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-19T03:47:35.911Z",
-    "lastSuccessAt": "2026-09-19T03:47:35.911Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-19T03:52:38.123Z",
+    "lastSuccessAt": "2026-09-19T03:52:38.123Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2101126440469344384",
-    "text": "@ChrisGPT We have content for maybe 3 dev days",
-    "url": "https://x.com/thsottiaux/status/2101126440469344384",
-    "postCreatedAt": "2026-09-19T01:49:15.000Z"
+    "id": "2101156788011962700",
+    "text": "@gadi_neelesh @ChrisGPT What else do you want",
+    "url": "https://x.com/thsottiaux/status/2101156788011962700",
+    "postCreatedAt": "2026-09-19T03:49:50.000Z"
   },
   "latest": {
     "reset": {
