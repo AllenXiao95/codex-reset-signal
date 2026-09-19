@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101055411394904265",
-  "lastCheckedAt": "2026-09-19T01:37:39.113Z",
-  "lastSuccessAt": "2026-09-19T01:37:39.113Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 91,
+  "sinceId": "2101124031567262054",
+  "lastCheckedAt": "2026-09-19T01:42:35.844Z",
+  "lastSuccessAt": "2026-09-19T01:42:35.844Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 92,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -317,15 +317,16 @@
     "2100985777962537277": "d45bea224009e0a7f8b8b13fcf3397b92a979f90f0c42bb99f2947024b3d1ad5",
     "2101026876647170092": "20edefebf9217fd846832d26ffa3366913825de03a966fdd623480504373fbba",
     "2101054196703522861": "ff1a33deb7f952ffdfc4e8e7d62cccd78502f50a63daa743cb5cb2937921cf18",
-    "2101055411394904265": "835045f98084a515643317c96898107cf71c4acb3284116dcd97733397d41149"
+    "2101055411394904265": "835045f98084a515643317c96898107cf71c4acb3284116dcd97733397d41149",
+    "2101124031567262054": "3a6e8b9c79b2237077fafa1b8732e973ab3882e962ac2351e2e25b7488e954d2"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101055411394904265",
-    "canonicalId": "2101055411394904265",
-    "text": "@argofowl 👋",
-    "createdAt": "2026-09-18T21:07:00.000Z",
-    "url": "https://x.com/thsottiaux/status/2101055411394904265",
+    "id": "2101124031567262054",
+    "canonicalId": "2101124031567262054",
+    "text": "@pvncher i'm so dev for hype day",
+    "createdAt": "2026-09-19T01:39:40.000Z",
+    "url": "https://x.com/thsottiaux/status/2101124031567262054",
     "media": []
   }
 }
