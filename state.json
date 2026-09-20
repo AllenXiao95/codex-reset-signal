@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101448279712207203",
-  "lastCheckedAt": "2026-09-20T04:37:45.204Z",
-  "lastSuccessAt": "2026-09-20T04:37:45.204Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 108,
+  "sinceId": "2101531597820596462",
+  "lastCheckedAt": "2026-09-20T04:42:38.219Z",
+  "lastSuccessAt": "2026-09-20T04:42:38.219Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 109,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -334,15 +334,16 @@
     "2101431497437950458": "ca5f6ce6c5e7faca2a6c3d8fb4b5e3f2de50b77af608b0305fada847803e0fc7",
     "2101432368682983749": "d309dfc4ba6fa4ca5f8db95bf81b1010f35ce08a041a901c5e4af24767a34c0f",
     "2101432860892901859": "338e9a35c1ee087254fd697f79ed39ee90c5f603d8b701b5d643b780d204c159",
-    "2101448279712207203": "b6fb5b7e9fce2cfee2f0f77fa0a8b7d6448cbfc240addb3c0ea3e6225be28846"
+    "2101448279712207203": "b6fb5b7e9fce2cfee2f0f77fa0a8b7d6448cbfc240addb3c0ea3e6225be28846",
+    "2101531597820596462": "72f3e7a9980eeaa29869663a436b9f6221a17746e1e498f26a7d8c77f4d4bfeb"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101448279712207203",
-    "canonicalId": "2101448279712207203",
-    "text": "@alexandr_wang You missed the long way to go part of the quote",
-    "createdAt": "2026-09-19T23:08:07.000Z",
-    "url": "https://x.com/thsottiaux/status/2101448279712207203",
+    "id": "2101531597820596462",
+    "canonicalId": "2101531597820596462",
+    "text": "@_dylanga Billions",
+    "createdAt": "2026-09-20T04:39:12.000Z",
+    "url": "https://x.com/thsottiaux/status/2101531597820596462",
     "media": []
   }
 }
