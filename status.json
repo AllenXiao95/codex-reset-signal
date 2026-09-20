@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-20T06:07:37.119Z",
+  "updatedAt": "2026-09-20T06:12:33.515Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-20T06:07:37.116Z",
-    "lastSuccessAt": "2026-09-20T06:07:37.116Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-20T06:12:33.511Z",
+    "lastSuccessAt": "2026-09-20T06:12:33.511Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2101531597820596462",
-    "text": "@_dylanga Billions",
-    "url": "https://x.com/thsottiaux/status/2101531597820596462",
-    "postCreatedAt": "2026-09-20T04:39:12.000Z"
+    "id": "2101554478940070162",
+    "text": "@argofowl Mind sharing your instructions?",
+    "url": "https://x.com/thsottiaux/status/2101554478940070162",
+    "postCreatedAt": "2026-09-20T06:10:07.000Z"
   },
   "latest": {
     "reset": {

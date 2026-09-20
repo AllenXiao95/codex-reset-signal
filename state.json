@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101531597820596462",
-  "lastCheckedAt": "2026-09-20T06:07:37.116Z",
-  "lastSuccessAt": "2026-09-20T06:07:37.116Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 109,
+  "sinceId": "2101554478940070162",
+  "lastCheckedAt": "2026-09-20T06:12:33.511Z",
+  "lastSuccessAt": "2026-09-20T06:12:33.511Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 110,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -335,15 +335,16 @@
     "2101432368682983749": "d309dfc4ba6fa4ca5f8db95bf81b1010f35ce08a041a901c5e4af24767a34c0f",
     "2101432860892901859": "338e9a35c1ee087254fd697f79ed39ee90c5f603d8b701b5d643b780d204c159",
     "2101448279712207203": "b6fb5b7e9fce2cfee2f0f77fa0a8b7d6448cbfc240addb3c0ea3e6225be28846",
-    "2101531597820596462": "72f3e7a9980eeaa29869663a436b9f6221a17746e1e498f26a7d8c77f4d4bfeb"
+    "2101531597820596462": "72f3e7a9980eeaa29869663a436b9f6221a17746e1e498f26a7d8c77f4d4bfeb",
+    "2101554478940070162": "d9efff766ecbac0a3967549cf5b2dc04b843d4450958017a92188a17d2f0d4c3"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101531597820596462",
-    "canonicalId": "2101531597820596462",
-    "text": "@_dylanga Billions",
-    "createdAt": "2026-09-20T04:39:12.000Z",
-    "url": "https://x.com/thsottiaux/status/2101531597820596462",
+    "id": "2101554478940070162",
+    "canonicalId": "2101554478940070162",
+    "text": "@argofowl Mind sharing your instructions?",
+    "createdAt": "2026-09-20T06:10:07.000Z",
+    "url": "https://x.com/thsottiaux/status/2101554478940070162",
     "media": []
   }
 }
