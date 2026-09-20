@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-20T20:32:33.378Z",
+  "updatedAt": "2026-09-20T20:38:12.753Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-20T20:32:33.374Z",
-    "lastSuccessAt": "2026-09-20T20:32:33.374Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-20T20:38:12.748Z",
+    "lastSuccessAt": "2026-09-20T20:38:12.748Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2101738915564851585",
-    "text": "@alexandr_wang @Muse @joshginsberg Did you make the video or did the corposlops help out",
-    "url": "https://x.com/thsottiaux/status/2101738915564851585",
-    "postCreatedAt": "2026-09-20T18:23:00.000Z"
+    "id": "2101772015028130032",
+    "text": "@Ananth7e Most folks have been very nice! Love this community",
+    "url": "https://x.com/thsottiaux/status/2101772015028130032",
+    "postCreatedAt": "2026-09-20T20:34:32.000Z"
   },
   "latest": {
     "reset": {

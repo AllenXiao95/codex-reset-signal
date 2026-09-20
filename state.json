@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101738915564851585",
-  "lastCheckedAt": "2026-09-20T20:32:33.374Z",
-  "lastSuccessAt": "2026-09-20T20:32:33.374Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 111,
+  "sinceId": "2101772015028130032",
+  "lastCheckedAt": "2026-09-20T20:38:12.748Z",
+  "lastSuccessAt": "2026-09-20T20:38:12.748Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 112,
   "matches": [
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
@@ -337,15 +337,16 @@
     "2101448279712207203": "b6fb5b7e9fce2cfee2f0f77fa0a8b7d6448cbfc240addb3c0ea3e6225be28846",
     "2101531597820596462": "72f3e7a9980eeaa29869663a436b9f6221a17746e1e498f26a7d8c77f4d4bfeb",
     "2101554478940070162": "d9efff766ecbac0a3967549cf5b2dc04b843d4450958017a92188a17d2f0d4c3",
-    "2101738915564851585": "8709d099828e763044bbc0feb67ee581628764c08534380a0d3228bd82ed44b0"
+    "2101738915564851585": "8709d099828e763044bbc0feb67ee581628764c08534380a0d3228bd82ed44b0",
+    "2101772015028130032": "0937b9c66c57a7d474d6ff5dd5eaf92526aa43ea36e59bac1806cccd2be26980"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101738915564851585",
-    "canonicalId": "2101738915564851585",
-    "text": "@alexandr_wang @Muse @joshginsberg Did you make the video or did the corposlops help out",
-    "createdAt": "2026-09-20T18:23:00.000Z",
-    "url": "https://x.com/thsottiaux/status/2101738915564851585",
+    "id": "2101772015028130032",
+    "canonicalId": "2101772015028130032",
+    "text": "@Ananth7e Most folks have been very nice! Love this community",
+    "createdAt": "2026-09-20T20:34:32.000Z",
+    "url": "https://x.com/thsottiaux/status/2101772015028130032",
     "media": []
   }
 }
