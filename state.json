@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2102466463156285686",
-  "lastCheckedAt": "2026-09-22T19:42:35.794Z",
-  "lastSuccessAt": "2026-09-22T19:42:35.794Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 128,
+  "sinceId": "2102484207163584745",
+  "lastCheckedAt": "2026-09-22T19:47:39.709Z",
+  "lastSuccessAt": "2026-09-22T19:47:39.709Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 129,
   "matches": [
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
@@ -408,15 +408,16 @@
     "2102463847714247142": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
     "2102464575790854290": "4402aeed92157c31f8dedf82b6437bca4db34f125d1eb9a1d28ea10d865541e1",
     "2102466361398378912": "5609117312568e7c031f87de14893b0cef647b747ea615690792a3920892125a",
-    "2102466463156285686": "254a7b1073155e6a1398385d87414ab6c3c166d96917d9d0d0257fb3028bf945"
+    "2102466463156285686": "254a7b1073155e6a1398385d87414ab6c3c166d96917d9d0d0257fb3028bf945",
+    "2102484207163584745": "6fa04db8c8313dc8225c8c65c9c3a7dfa18439c8e5444c67bde3d8372e4eec00"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2102466463156285686",
-    "canonicalId": "2102466463156285686",
-    "text": "@omarbnjl pizza plutot",
-    "createdAt": "2026-09-22T18:34:01.000Z",
-    "url": "https://x.com/thsottiaux/status/2102466463156285686",
+    "id": "2102484207163584745",
+    "canonicalId": "2102484207163584745",
+    "text": "@amorriscode u2!",
+    "createdAt": "2026-09-22T19:44:31.000Z",
+    "url": "https://x.com/thsottiaux/status/2102484207163584745",
     "media": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T19:42:35.797Z",
+  "updatedAt": "2026-09-22T19:47:39.713Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T19:42:35.794Z",
-    "lastSuccessAt": "2026-09-22T19:42:35.794Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T19:47:39.709Z",
+    "lastSuccessAt": "2026-09-22T19:47:39.709Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2102466463156285686",
-    "text": "@omarbnjl pizza plutot",
-    "url": "https://x.com/thsottiaux/status/2102466463156285686",
-    "postCreatedAt": "2026-09-22T18:34:01.000Z"
+    "id": "2102484207163584745",
+    "text": "@amorriscode u2!",
+    "url": "https://x.com/thsottiaux/status/2102484207163584745",
+    "postCreatedAt": "2026-09-22T19:44:31.000Z"
   },
   "latest": {
     "reset": {
