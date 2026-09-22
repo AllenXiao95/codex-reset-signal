@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T06:27:35.757Z",
+  "updatedAt": "2026-09-22T06:32:40.642Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T06:27:35.753Z",
-    "lastSuccessAt": "2026-09-22T06:27:35.753Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T06:32:40.638Z",
+    "lastSuccessAt": "2026-09-22T06:32:40.638Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2102254445082116335",
-    "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
-    "url": "https://x.com/thsottiaux/status/2102254445082116335",
-    "postCreatedAt": "2026-09-22T04:31:32.000Z"
+    "id": "2102284586713522193",
+    "text": "@Cch_Chichieh Burn those tokens",
+    "url": "https://x.com/thsottiaux/status/2102284586713522193",
+    "postCreatedAt": "2026-09-22T06:31:18.000Z"
   },
   "latest": {
     "reset": {
