@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T20:32:34.255Z",
+  "updatedAt": "2026-09-22T20:37:44.242Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T20:32:34.252Z",
-    "lastSuccessAt": "2026-09-22T20:32:34.252Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T20:37:42.986Z",
+    "lastSuccessAt": "2026-09-22T20:37:42.986Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2102484207163584745",
-    "text": "@amorriscode u2!",
-    "url": "https://x.com/thsottiaux/status/2102484207163584745",
-    "postCreatedAt": "2026-09-22T19:44:31.000Z"
+    "id": "2102497184805720459",
+    "text": "@viticci It’s good to want it all",
+    "url": "https://x.com/thsottiaux/status/2102497184805720459",
+    "postCreatedAt": "2026-09-22T20:36:06.000Z"
   },
   "latest": {
     "reset": {

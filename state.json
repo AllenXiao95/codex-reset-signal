@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2102484207163584745",
-  "lastCheckedAt": "2026-09-22T20:32:34.252Z",
-  "lastSuccessAt": "2026-09-22T20:32:34.252Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 129,
+  "sinceId": "2102497184805720459",
+  "lastCheckedAt": "2026-09-22T20:37:42.986Z",
+  "lastSuccessAt": "2026-09-22T20:37:42.986Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 130,
   "matches": [
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
@@ -409,15 +409,16 @@
     "2102464575790854290": "4402aeed92157c31f8dedf82b6437bca4db34f125d1eb9a1d28ea10d865541e1",
     "2102466361398378912": "5609117312568e7c031f87de14893b0cef647b747ea615690792a3920892125a",
     "2102466463156285686": "254a7b1073155e6a1398385d87414ab6c3c166d96917d9d0d0257fb3028bf945",
-    "2102484207163584745": "6fa04db8c8313dc8225c8c65c9c3a7dfa18439c8e5444c67bde3d8372e4eec00"
+    "2102484207163584745": "6fa04db8c8313dc8225c8c65c9c3a7dfa18439c8e5444c67bde3d8372e4eec00",
+    "2102497184805720459": "bc6c68cda139fc2d4d9bc4c9b0577083f038eef1d8b2eb9c593a3d82942c0af8"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2102484207163584745",
-    "canonicalId": "2102484207163584745",
-    "text": "@amorriscode u2!",
-    "createdAt": "2026-09-22T19:44:31.000Z",
-    "url": "https://x.com/thsottiaux/status/2102484207163584745",
+    "id": "2102497184805720459",
+    "canonicalId": "2102497184805720459",
+    "text": "@viticci It’s good to want it all",
+    "createdAt": "2026-09-22T20:36:06.000Z",
+    "url": "https://x.com/thsottiaux/status/2102497184805720459",
     "media": []
   }
 }
