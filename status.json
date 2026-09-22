@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T04:27:35.937Z",
+  "updatedAt": "2026-09-22T04:32:36.644Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T04:27:35.933Z",
-    "lastSuccessAt": "2026-09-22T04:27:35.933Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T04:32:36.635Z",
+    "lastSuccessAt": "2026-09-22T04:32:36.635Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2101921202436702657",
-    "text": "@melvindvivas 👁️codex👁️",
-    "url": "https://x.com/thsottiaux/status/2101921202436702657",
-    "postCreatedAt": "2026-09-21T06:27:21.000Z"
+    "id": "2102254445082116335",
+    "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
+    "url": "https://x.com/thsottiaux/status/2102254445082116335",
+    "postCreatedAt": "2026-09-22T04:31:32.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235",
+      "id": "2102254445082116335",
+      "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
+      "url": "https://x.com/thsottiaux/status/2102254445082116335",
+      "postCreatedAt": "2026-09-22T04:31:32.000Z",
+      "detectedAt": "2026-09-22T04:32:36.635Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "We are almost Tuesday and I promised a reset for Tuesday",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "We are almost Tuesday and I promised a reset for Tuesday",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
       "id": "2098685367058612394",

@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2101921202436702657",
-  "lastCheckedAt": "2026-09-22T04:27:35.933Z",
-  "lastSuccessAt": "2026-09-22T04:27:35.933Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 115,
+  "sinceId": "2102254445082116335",
+  "lastCheckedAt": "2026-09-22T04:32:36.635Z",
+  "lastSuccessAt": "2026-09-22T04:32:36.635Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 117,
   "matches": [
+    {
+      "version": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235",
+      "id": "2102254445082116335",
+      "canonicalId": "2102254445082116335",
+      "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
+      "createdAt": "2026-09-22T04:31:32.000Z",
+      "url": "https://x.com/thsottiaux/status/2102254445082116335",
+      "media": [],
+      "detectedAt": "2026-09-22T04:32:36.635Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "We are almost Tuesday and I promised a reset for Tuesday",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "We are almost Tuesday and I promised a reset for Tuesday",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-09-22T04:32:36.639Z"
+    },
     {
       "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
       "id": "2098685367058612394",
@@ -341,15 +369,17 @@
     "2101772015028130032": "0937b9c66c57a7d474d6ff5dd5eaf92526aa43ea36e59bac1806cccd2be26980",
     "2101920329346195690": "7e3a584fce38e85dec9bde837d4abf1431ea778f64c4c34b7bcffeed2920afa8",
     "2101920928070562029": "3db8b86220e231a05bc8b137489eac2225f220874e89961e21175b033fa66030",
-    "2101921202436702657": "141d8f2a0ddd8232a1400e2bc0f20501a12b07d36b7954073848202a022499c2"
+    "2101921202436702657": "141d8f2a0ddd8232a1400e2bc0f20501a12b07d36b7954073848202a022499c2",
+    "2102253723879670183": "73a2be1ec071064da5b8e3b20f1c5fead8f358ffcc140fb9328f70943917f3c5",
+    "2102254445082116335": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2101921202436702657",
-    "canonicalId": "2101921202436702657",
-    "text": "@melvindvivas 👁️codex👁️",
-    "createdAt": "2026-09-21T06:27:21.000Z",
-    "url": "https://x.com/thsottiaux/status/2101921202436702657",
+    "id": "2102254445082116335",
+    "canonicalId": "2102254445082116335",
+    "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
+    "createdAt": "2026-09-22T04:31:32.000Z",
+    "url": "https://x.com/thsottiaux/status/2102254445082116335",
     "media": []
   }
 }
