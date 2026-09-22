@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2102464575790854290",
-  "lastCheckedAt": "2026-09-22T18:32:51.089Z",
-  "lastSuccessAt": "2026-09-22T18:32:51.089Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 126,
+  "sinceId": "2102466463156285686",
+  "lastCheckedAt": "2026-09-22T18:37:34.504Z",
+  "lastSuccessAt": "2026-09-22T18:37:34.504Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 128,
   "matches": [
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
@@ -406,15 +406,17 @@
     "2102292452329820272": "2a16d78b92b162c4e52e8f157cfbfdf3c1db045a461ece74037abed12f11bb91",
     "2102440619616682120": "a5766a0b38b6aa3e67fa591f0b26fe82e6c3295ed3c53972609faa1fc92ed647",
     "2102463847714247142": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
-    "2102464575790854290": "4402aeed92157c31f8dedf82b6437bca4db34f125d1eb9a1d28ea10d865541e1"
+    "2102464575790854290": "4402aeed92157c31f8dedf82b6437bca4db34f125d1eb9a1d28ea10d865541e1",
+    "2102466361398378912": "5609117312568e7c031f87de14893b0cef647b747ea615690792a3920892125a",
+    "2102466463156285686": "254a7b1073155e6a1398385d87414ab6c3c166d96917d9d0d0257fb3028bf945"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2102464575790854290",
-    "canonicalId": "2102464575790854290",
-    "text": "@haydenderrico Luna, but better",
-    "createdAt": "2026-09-22T18:26:31.000Z",
-    "url": "https://x.com/thsottiaux/status/2102464575790854290",
+    "id": "2102466463156285686",
+    "canonicalId": "2102466463156285686",
+    "text": "@omarbnjl pizza plutot",
+    "createdAt": "2026-09-22T18:34:01.000Z",
+    "url": "https://x.com/thsottiaux/status/2102466463156285686",
     "media": []
   }
 }

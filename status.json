@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T18:32:51.093Z",
+  "updatedAt": "2026-09-22T18:37:34.509Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T18:32:51.089Z",
-    "lastSuccessAt": "2026-09-22T18:32:51.089Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T18:37:34.504Z",
+    "lastSuccessAt": "2026-09-22T18:37:34.504Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2102464575790854290",
-    "text": "@haydenderrico Luna, but better",
-    "url": "https://x.com/thsottiaux/status/2102464575790854290",
-    "postCreatedAt": "2026-09-22T18:26:31.000Z"
+    "id": "2102466463156285686",
+    "text": "@omarbnjl pizza plutot",
+    "url": "https://x.com/thsottiaux/status/2102466463156285686",
+    "postCreatedAt": "2026-09-22T18:34:01.000Z"
   },
   "latest": {
     "reset": {
