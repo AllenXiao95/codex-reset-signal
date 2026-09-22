@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T06:57:43.940Z",
+  "updatedAt": "2026-09-22T07:02:45.659Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T06:57:43.935Z",
-    "lastSuccessAt": "2026-09-22T06:57:43.935Z",
+    "lastCheckedAt": "2026-09-22T07:02:45.286Z",
+    "lastSuccessAt": "2026-09-22T07:02:45.286Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2102290126344974551",
-    "text": "@FintechKristen @ajambrosino Negroni is on you",
-    "url": "https://x.com/thsottiaux/status/2102290126344974551",
-    "postCreatedAt": "2026-09-22T06:53:19.000Z"
+    "id": "2102292452329820272",
+    "text": "@steipete Huge!!",
+    "url": "https://x.com/thsottiaux/status/2102292452329820272",
+    "postCreatedAt": "2026-09-22T07:02:33.000Z"
   },
   "latest": {
     "reset": {
