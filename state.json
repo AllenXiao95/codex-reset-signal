@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2102501670647472147",
-  "lastCheckedAt": "2026-09-22T21:22:34.675Z",
-  "lastSuccessAt": "2026-09-22T21:22:34.675Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 132,
+  "sinceId": "2102509629536346422",
+  "lastCheckedAt": "2026-09-22T21:27:35.918Z",
+  "lastSuccessAt": "2026-09-22T21:27:35.918Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 134,
   "matches": [
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
@@ -412,15 +412,17 @@
     "2102484207163584745": "6fa04db8c8313dc8225c8c65c9c3a7dfa18439c8e5444c67bde3d8372e4eec00",
     "2102497184805720459": "bc6c68cda139fc2d4d9bc4c9b0577083f038eef1d8b2eb9c593a3d82942c0af8",
     "2102501432884891720": "e8a16ea3dce6d1df9621e6614d096b15d0460356f507ce0d4b06a0e1560a641e",
-    "2102501670647472147": "8622091f6f7092175c61b31fe333d570410aecb4c7aba6a73574ef244788879e"
+    "2102501670647472147": "8622091f6f7092175c61b31fe333d570410aecb4c7aba6a73574ef244788879e",
+    "2102509507415048245": "f141725af82fd8a714fd2907a6911f4ee03d1e5e78b74489e3b523d8bb147398",
+    "2102509629536346422": "c8c8f01901fd675ae9ffc12145860dabd53d0347e9b8701b8ff2931a6f9842a9"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2102501670647472147",
-    "canonicalId": "2102501670647472147",
-    "text": "@weswinder No benchmaxxing here, just a better model all around.",
-    "createdAt": "2026-09-22T20:53:55.000Z",
-    "url": "https://x.com/thsottiaux/status/2102501670647472147",
+    "id": "2102509629536346422",
+    "canonicalId": "2102509629536346422",
+    "text": "@PawelHuryn Interesting results!",
+    "createdAt": "2026-09-22T21:25:33.000Z",
+    "url": "https://x.com/thsottiaux/status/2102509629536346422",
     "media": []
   }
 }

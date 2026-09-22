@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T21:22:34.679Z",
+  "updatedAt": "2026-09-22T21:27:36.109Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T21:22:34.675Z",
-    "lastSuccessAt": "2026-09-22T21:22:34.675Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T21:27:35.918Z",
+    "lastSuccessAt": "2026-09-22T21:27:35.918Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2102501670647472147",
-    "text": "@weswinder No benchmaxxing here, just a better model all around.",
-    "url": "https://x.com/thsottiaux/status/2102501670647472147",
-    "postCreatedAt": "2026-09-22T20:53:55.000Z"
+    "id": "2102509629536346422",
+    "text": "@PawelHuryn Interesting results!",
+    "url": "https://x.com/thsottiaux/status/2102509629536346422",
+    "postCreatedAt": "2026-09-22T21:25:33.000Z"
   },
   "latest": {
     "reset": {
