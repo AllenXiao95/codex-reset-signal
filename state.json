@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2102284586713522193",
-  "lastCheckedAt": "2026-09-22T06:47:38.746Z",
-  "lastSuccessAt": "2026-09-22T06:47:38.746Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 119,
+  "sinceId": "2102289624945352906",
+  "lastCheckedAt": "2026-09-22T06:52:42.468Z",
+  "lastSuccessAt": "2026-09-22T06:52:42.468Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 121,
   "matches": [
     {
       "version": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235",
@@ -372,15 +372,17 @@
     "2102253723879670183": "73a2be1ec071064da5b8e3b20f1c5fead8f358ffcc140fb9328f70943917f3c5",
     "2102254445082116335": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235",
     "2102284352801427520": "2fb2ce29d8999249010de6c3090e370fb098afe08f24de781f4708d817c9d246",
-    "2102284586713522193": "bfc6de5155fa4bdbae49f243fd8f831cbdc3f374d6f127558a080bf837b1422e"
+    "2102284586713522193": "bfc6de5155fa4bdbae49f243fd8f831cbdc3f374d6f127558a080bf837b1422e",
+    "2102289383068180659": "b3359d8aaa3c1bf0957515dd8b5380014d0fe341bc75169e6259a0cd2a1607ec",
+    "2102289624945352906": "d9141514e258e117226023d66d55633f41adeb65ecc367583cf169e9c15c0c71"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2102284586713522193",
-    "canonicalId": "2102284586713522193",
-    "text": "@Cch_Chichieh Burn those tokens",
-    "createdAt": "2026-09-22T06:31:18.000Z",
-    "url": "https://x.com/thsottiaux/status/2102284586713522193",
+    "id": "2102289624945352906",
+    "canonicalId": "2102289624945352906",
+    "text": "@matteing Sergio is indeed on fire",
+    "createdAt": "2026-09-22T06:51:19.000Z",
+    "url": "https://x.com/thsottiaux/status/2102289624945352906",
     "media": []
   }
 }
