@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T18:22:39.564Z",
+  "updatedAt": "2026-09-22T18:27:42.688Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T18:22:39.560Z",
-    "lastSuccessAt": "2026-09-22T18:22:39.560Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T18:27:42.680Z",
+    "lastSuccessAt": "2026-09-22T18:27:42.680Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2102440619616682120",
-    "text": "We have been focusing on efficiency and intelligence for all. \n\nVery proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
-    "url": "https://x.com/thsottiaux/status/2102440619616682120",
-    "postCreatedAt": "2026-09-22T16:51:19.000Z"
+    "id": "2102464575790854290",
+    "text": "@haydenderrico Luna, but better",
+    "url": "https://x.com/thsottiaux/status/2102464575790854290",
+    "postCreatedAt": "2026-09-22T18:26:31.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
+      "id": "2102463847714247142",
+      "text": "GPT-6 Sol and Luna are out. Not only are they a very significant improvement across the board, but also in writing and general \"you know when you try it\" quality. \n\nWe are also permanently reducing the API price by 50% making both of them viable for a ton of new usecases and making your usage go further too, even on the subscriptions.\n\nAnd one more thing. We are loading a banked reset into all accounts of our Plus, Pro and Business users. Let's go!\n\nhttps://t.co/00DRh1sRrO",
+      "url": "https://x.com/thsottiaux/status/2102463847714247142",
+      "postCreatedAt": "2026-09-22T18:23:37.000Z",
+      "detectedAt": "2026-09-22T18:27:42.680Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "We are loading a banked reset into all accounts of our Plus, Pro and Business users",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "We are loading a banked reset into all accounts of our Plus, Pro and Business users",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235",
       "id": "2102254445082116335",
