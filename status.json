@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T20:52:41.235Z",
+  "updatedAt": "2026-09-22T20:57:37.271Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T20:52:41.230Z",
-    "lastSuccessAt": "2026-09-22T20:52:41.230Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T20:57:37.267Z",
+    "lastSuccessAt": "2026-09-22T20:57:37.267Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2102497184805720459",
-    "text": "@viticci It’s good to want it all",
-    "url": "https://x.com/thsottiaux/status/2102497184805720459",
-    "postCreatedAt": "2026-09-22T20:36:06.000Z"
+    "id": "2102501670647472147",
+    "text": "@weswinder No benchmaxxing here, just a better model all around.",
+    "url": "https://x.com/thsottiaux/status/2102501670647472147",
+    "postCreatedAt": "2026-09-22T20:53:55.000Z"
   },
   "latest": {
     "reset": {
