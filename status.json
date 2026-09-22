@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-22T16:47:43.746Z",
+  "updatedAt": "2026-09-22T16:52:41.278Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-22T16:47:43.742Z",
-    "lastSuccessAt": "2026-09-22T16:47:43.742Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-22T16:52:41.274Z",
+    "lastSuccessAt": "2026-09-22T16:52:41.274Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2102292452329820272",
-    "text": "@steipete Huge!!",
-    "url": "https://x.com/thsottiaux/status/2102292452329820272",
-    "postCreatedAt": "2026-09-22T07:02:33.000Z"
+    "id": "2102440619616682120",
+    "text": "We have been focusing on efficiency and intelligence for all. \n\nVery proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
+    "url": "https://x.com/thsottiaux/status/2102440619616682120",
+    "postCreatedAt": "2026-09-22T16:51:19.000Z"
   },
   "latest": {
     "reset": {

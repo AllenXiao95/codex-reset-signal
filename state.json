@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2102292452329820272",
-  "lastCheckedAt": "2026-09-22T16:47:43.742Z",
-  "lastSuccessAt": "2026-09-22T16:47:43.742Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 123,
+  "sinceId": "2102440619616682120",
+  "lastCheckedAt": "2026-09-22T16:52:41.274Z",
+  "lastSuccessAt": "2026-09-22T16:52:41.274Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 124,
   "matches": [
     {
       "version": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235",
@@ -376,15 +376,16 @@
     "2102289383068180659": "b3359d8aaa3c1bf0957515dd8b5380014d0fe341bc75169e6259a0cd2a1607ec",
     "2102289624945352906": "d9141514e258e117226023d66d55633f41adeb65ecc367583cf169e9c15c0c71",
     "2102290126344974551": "5704c4b03bf02fa00e0525668000d820473448b3361175345758a6aa12fe550b",
-    "2102292452329820272": "2a16d78b92b162c4e52e8f157cfbfdf3c1db045a461ece74037abed12f11bb91"
+    "2102292452329820272": "2a16d78b92b162c4e52e8f157cfbfdf3c1db045a461ece74037abed12f11bb91",
+    "2102440619616682120": "a5766a0b38b6aa3e67fa591f0b26fe82e6c3295ed3c53972609faa1fc92ed647"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2102292452329820272",
-    "canonicalId": "2102292452329820272",
-    "text": "@steipete Huge!!",
-    "createdAt": "2026-09-22T07:02:33.000Z",
-    "url": "https://x.com/thsottiaux/status/2102292452329820272",
+    "id": "2102440619616682120",
+    "canonicalId": "2102440619616682120",
+    "text": "We have been focusing on efficiency and intelligence for all. \n\nVery proud of the team. Only possible when you have incredible models at the top end of the capability that you can then use to make a big difference in everything else.",
+    "createdAt": "2026-09-22T16:51:19.000Z",
+    "url": "https://x.com/thsottiaux/status/2102440619616682120",
     "media": []
   }
 }
