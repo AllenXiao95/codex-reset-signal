@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-23T17:32:32.165Z",
+  "updatedAt": "2026-09-23T17:37:35.904Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-23T17:32:32.159Z",
-    "lastSuccessAt": "2026-09-23T17:32:32.159Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-23T17:37:35.899Z",
+    "lastSuccessAt": "2026-09-23T17:37:35.899Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2102509629536346422",
-    "text": "@PawelHuryn Interesting results!",
-    "url": "https://x.com/thsottiaux/status/2102509629536346422",
-    "postCreatedAt": "2026-09-22T21:25:33.000Z"
+    "id": "2102814202117411196",
+    "text": "Voice! I've gotten so used to just call ChatGPT and talk about all the work, check on emails, do some coding, manage my calendar and it works across the full ecosystem of plugins, including 3P developed plugins.",
+    "url": "https://x.com/thsottiaux/status/2102814202117411196",
+    "postCreatedAt": "2026-09-23T17:35:48.000Z"
   },
   "latest": {
     "reset": {
