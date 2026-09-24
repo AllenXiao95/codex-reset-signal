@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24T05:37:33.135Z",
+  "updatedAt": "2026-09-24T05:42:37.395Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-24T05:37:33.130Z",
-    "lastSuccessAt": "2026-09-24T05:37:33.130Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-24T05:42:37.323Z",
+    "lastSuccessAt": "2026-09-24T05:42:37.323Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2102982591628648784",
-    "text": "@alexandr_wang good one",
-    "url": "https://x.com/thsottiaux/status/2102982591628648784",
-    "postCreatedAt": "2026-09-24T04:44:56.000Z"
+    "id": "2102996313780736363",
+    "text": "Can't wait for DevDay next Tuesday.\n\nSome really fun stuff, but also many many things that should change the way you work. It's been our most ambitious sprint and Astra has really made new things possible in such short amounts of time.",
+    "url": "https://x.com/thsottiaux/status/2102996313780736363",
+    "postCreatedAt": "2026-09-24T05:39:27.000Z"
   },
   "latest": {
     "reset": {
