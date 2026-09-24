@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-24T04:42:44.912Z",
+  "updatedAt": "2026-09-24T04:47:32.170Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-24T04:42:44.905Z",
-    "lastSuccessAt": "2026-09-24T04:42:44.905Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-24T04:47:32.165Z",
+    "lastSuccessAt": "2026-09-24T04:47:32.165Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2102890573481050167",
-    "text": "@_simonsmith Seeing the future",
-    "url": "https://x.com/thsottiaux/status/2102890573481050167",
-    "postCreatedAt": "2026-09-23T22:39:17.000Z"
+    "id": "2102982591628648784",
+    "text": "@alexandr_wang good one",
+    "url": "https://x.com/thsottiaux/status/2102982591628648784",
+    "postCreatedAt": "2026-09-24T04:44:56.000Z"
   },
   "latest": {
     "reset": {

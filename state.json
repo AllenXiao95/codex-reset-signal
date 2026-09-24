@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2102890573481050167",
-  "lastCheckedAt": "2026-09-24T04:42:44.905Z",
-  "lastSuccessAt": "2026-09-24T04:42:44.905Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 138,
+  "sinceId": "2102982591628648784",
+  "lastCheckedAt": "2026-09-24T04:47:32.165Z",
+  "lastSuccessAt": "2026-09-24T04:47:32.165Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 139,
   "matches": [
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
@@ -418,15 +418,16 @@
     "2102814202117411196": "e363dcf7c02da44ea1d98416e73676b27ec0b6aeae71e7e25c5901ff3c474e30",
     "2102884039145521487": "5ff92b285f2f525ce201b5cce27d2b46672a90d34f454d87df559e0c9b6ad7ec",
     "2102884137749315973": "f17508488cb765f746e9a82708c9f5d8221901b95f130e92a8f59858c7afe1f7",
-    "2102890573481050167": "062c2895bb7f6b0ce709525e613262b3a5ad605196b61c7fa020e2edeb5092c9"
+    "2102890573481050167": "062c2895bb7f6b0ce709525e613262b3a5ad605196b61c7fa020e2edeb5092c9",
+    "2102982591628648784": "c658b7027c8f30b37912f8049349fddd16ee6d05bfa766dc32c07dd54d0c7dad"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2102890573481050167",
-    "canonicalId": "2102890573481050167",
-    "text": "@_simonsmith Seeing the future",
-    "createdAt": "2026-09-23T22:39:17.000Z",
-    "url": "https://x.com/thsottiaux/status/2102890573481050167",
+    "id": "2102982591628648784",
+    "canonicalId": "2102982591628648784",
+    "text": "@alexandr_wang good one",
+    "createdAt": "2026-09-24T04:44:56.000Z",
+    "url": "https://x.com/thsottiaux/status/2102982591628648784",
     "media": []
   }
 }
