@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2103620061156290622",
-  "lastCheckedAt": "2026-09-25T23:07:35.742Z",
-  "lastSuccessAt": "2026-09-25T23:07:35.742Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 142,
+  "sinceId": "2103622639386574979",
+  "lastCheckedAt": "2026-09-25T23:12:33.461Z",
+  "lastSuccessAt": "2026-09-25T23:12:33.461Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 143,
   "matches": [
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
@@ -422,15 +422,16 @@
     "2102982591628648784": "c658b7027c8f30b37912f8049349fddd16ee6d05bfa766dc32c07dd54d0c7dad",
     "2102996313780736363": "0c1b8a19393e68d3034f8a875bf49e1c1863bb9ca78b7e0067ffe11de0f3e8d3",
     "2103375711797211460": "fe642d2009e374814c501fa37515af7e6a045733df127020952730c53f02158b",
-    "2103620061156290622": "ac2026406aabca0be9c47b02b55450e2cd4296c9c31f17fd3f467392078794c0"
+    "2103620061156290622": "ac2026406aabca0be9c47b02b55450e2cd4296c9c31f17fd3f467392078794c0",
+    "2103622639386574979": "88aca0042890e50f3f5a67bd23847d99e02da53cf63a73266af0e4780dfcc48c"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2103620061156290622",
-    "canonicalId": "2103620061156290622",
-    "text": "We are aware that codex is down and are working hard to bring back normal service.",
-    "createdAt": "2026-09-25T22:58:00.000Z",
-    "url": "https://x.com/thsottiaux/status/2103620061156290622",
+    "id": "2103622639386574979",
+    "canonicalId": "2103622639386574979",
+    "text": "o no :(",
+    "createdAt": "2026-09-25T23:08:15.000Z",
+    "url": "https://x.com/thsottiaux/status/2103622639386574979",
     "media": []
   }
 }
