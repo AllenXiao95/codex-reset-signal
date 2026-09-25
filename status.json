@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-25T22:57:36.256Z",
+  "updatedAt": "2026-09-25T23:02:36.294Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-25T22:57:36.251Z",
-    "lastSuccessAt": "2026-09-25T22:57:36.251Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-25T23:02:36.290Z",
+    "lastSuccessAt": "2026-09-25T23:02:36.290Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2103375711797211460",
-    "text": "Been a bit quiet here because internal Slack has been hilarious lately and because we are all locked in on DevDay. Tuesday will be fun.",
-    "url": "https://x.com/thsottiaux/status/2103375711797211460",
-    "postCreatedAt": "2026-09-25T06:47:03.000Z"
+    "id": "2103620061156290622",
+    "text": "We are aware that codex is down and are working hard to bring back normal service.",
+    "url": "https://x.com/thsottiaux/status/2103620061156290622",
+    "postCreatedAt": "2026-09-25T22:58:00.000Z"
   },
   "latest": {
     "reset": {
