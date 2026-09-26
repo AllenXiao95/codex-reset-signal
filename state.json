@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2103911959544610829",
-  "lastCheckedAt": "2026-09-26T18:18:20.679Z",
-  "lastSuccessAt": "2026-09-26T18:18:20.679Z",
-  "lastRunStatus": "checked-1-posts",
+  "lastCheckedAt": "2026-09-26T18:23:20.513Z",
+  "lastSuccessAt": "2026-09-26T18:23:20.513Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 145,
   "matches": [
     {
       "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
       "id": "2103911959544610829",
-      "canonicalId": "2103911959544610829",
       "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
       "createdAt": "2026-09-26T18:17:54.000Z",
       "url": "https://x.com/thsottiaux/status/2103911959544610829",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-09-26T18:18:20.685Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-09-26T18:18:20.685Z"
+      ]
     },
     {
       "version": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe",
