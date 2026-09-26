@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-26T18:13:27.970Z",
+  "updatedAt": "2026-09-26T18:18:20.689Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-26T18:13:27.966Z",
-    "lastSuccessAt": "2026-09-26T18:13:27.966Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-26T18:18:20.679Z",
+    "lastSuccessAt": "2026-09-26T18:18:20.679Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2103637477760311522",
-    "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
-    "url": "https://x.com/thsottiaux/status/2103637477760311522",
-    "postCreatedAt": "2026-09-26T00:07:13.000Z"
+    "id": "2103911959544610829",
+    "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
+    "url": "https://x.com/thsottiaux/status/2103911959544610829",
+    "postCreatedAt": "2026-09-26T18:17:54.000Z"
   },
   "latest": {
     "reset": {
-      "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
-      "id": "2098685367058612394",
-      "text": "Reset all propagated. Sweet dreams.",
-      "url": "https://x.com/thsottiaux/status/2098685367058612394",
-      "postCreatedAt": "2026-09-12T08:09:17.000Z",
-      "detectedAt": "2026-09-12T08:12:33.444Z",
+      "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
+      "id": "2103911959544610829",
+      "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
+      "url": "https://x.com/thsottiaux/status/2103911959544610829",
+      "postCreatedAt": "2026-09-26T18:17:54.000Z",
+      "detectedAt": "2026-09-26T18:18:20.679Z",
       "events": [
         {
           "type": "reset",
           "status": "completed",
-          "evidence": "Reset all propagated",
+          "evidence": "Resets all propagated",
           "time": {
             "kind": "observed",
-            "start": "2026-09-12T08:09:17.000Z",
+            "start": "2026-09-26T18:17:54.000Z",
             "end": null,
-            "evidence": "Reset all propagated",
+            "evidence": "Resets all propagated",
             "note": "使用公告发布时间；不代表账户实际到账时刻"
           }
         }
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
+      "id": "2103911959544610829",
+      "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
+      "url": "https://x.com/thsottiaux/status/2103911959544610829",
+      "postCreatedAt": "2026-09-26T18:17:54.000Z",
+      "detectedAt": "2026-09-26T18:18:20.679Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "completed",
+          "evidence": "Resets all propagated",
+          "time": {
+            "kind": "observed",
+            "start": "2026-09-26T18:17:54.000Z",
+            "end": null,
+            "evidence": "Resets all propagated",
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe",
       "id": "2103637477760311522",

@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2103637477760311522",
-  "lastCheckedAt": "2026-09-26T18:13:27.966Z",
-  "lastSuccessAt": "2026-09-26T18:13:27.966Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 144,
+  "sinceId": "2103911959544610829",
+  "lastCheckedAt": "2026-09-26T18:18:20.679Z",
+  "lastSuccessAt": "2026-09-26T18:18:20.679Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 145,
   "matches": [
+    {
+      "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
+      "id": "2103911959544610829",
+      "canonicalId": "2103911959544610829",
+      "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
+      "createdAt": "2026-09-26T18:17:54.000Z",
+      "url": "https://x.com/thsottiaux/status/2103911959544610829",
+      "media": [],
+      "detectedAt": "2026-09-26T18:18:20.679Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "completed",
+          "evidence": "Resets all propagated",
+          "time": {
+            "kind": "observed",
+            "start": "2026-09-26T18:17:54.000Z",
+            "end": null,
+            "evidence": "Resets all propagated",
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-09-26T18:18:20.685Z"
+    },
     {
       "version": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe",
       "id": "2103637477760311522",
@@ -451,15 +479,16 @@
     "2103375711797211460": "fe642d2009e374814c501fa37515af7e6a045733df127020952730c53f02158b",
     "2103620061156290622": "ac2026406aabca0be9c47b02b55450e2cd4296c9c31f17fd3f467392078794c0",
     "2103622639386574979": "88aca0042890e50f3f5a67bd23847d99e02da53cf63a73266af0e4780dfcc48c",
-    "2103637477760311522": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe"
+    "2103637477760311522": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe",
+    "2103911959544610829": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2103637477760311522",
-    "canonicalId": "2103637477760311522",
-    "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
-    "createdAt": "2026-09-26T00:07:13.000Z",
-    "url": "https://x.com/thsottiaux/status/2103637477760311522",
+    "id": "2103911959544610829",
+    "canonicalId": "2103911959544610829",
+    "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
+    "createdAt": "2026-09-26T18:17:54.000Z",
+    "url": "https://x.com/thsottiaux/status/2103911959544610829",
     "media": []
   }
 }
