@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2103954577817260036",
-  "lastCheckedAt": "2026-09-26T21:33:20.184Z",
-  "lastSuccessAt": "2026-09-26T21:33:20.184Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 148,
+  "sinceId": "2103962250885390436",
+  "lastCheckedAt": "2026-09-26T21:38:25.966Z",
+  "lastSuccessAt": "2026-09-26T21:38:25.966Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 150,
   "matches": [
     {
       "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
@@ -482,15 +482,17 @@
     "2103911959544610829": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
     "2103953907278045548": "fbbac449332c323b672935ab4e7bb022cf584800e9064618e2b8243bdc1a6d09",
     "2103954313068642787": "fa0e112d8a1472d200bc774f3fcaffe93e2f2af5e0d572d8084080971b8bc0a2",
-    "2103954577817260036": "21c4ff69da6a0c25c62063124ac7e72d283cde248e5b69ce3cba374143442f57"
+    "2103954577817260036": "21c4ff69da6a0c25c62063124ac7e72d283cde248e5b69ce3cba374143442f57",
+    "2103961852153913371": "d09326c8f1da279fa0c79beaa92449ea76081852782f2c9b9380b1bb3c916984",
+    "2103962250885390436": "c96e52626cb02ebd022f987289c81d91d9f43e2a726a34caaee706ab7c663cd4"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2103954577817260036",
-    "canonicalId": "2103954577817260036",
-    "text": "@antigravity Plan mode was cool in 2025, might still be cool, but was particularly cool in 2025",
-    "createdAt": "2026-09-26T21:07:15.000Z",
-    "url": "https://x.com/thsottiaux/status/2103954577817260036",
+    "id": "2103962250885390436",
+    "canonicalId": "2103962250885390436",
+    "text": "@angelbrodin Are those Udon or just plain Noodles",
+    "createdAt": "2026-09-26T21:37:44.000Z",
+    "url": "https://x.com/thsottiaux/status/2103962250885390436",
     "media": []
   }
 }

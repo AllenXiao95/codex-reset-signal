@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-26T21:33:20.300Z",
+  "updatedAt": "2026-09-26T21:38:25.970Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-26T21:33:20.184Z",
-    "lastSuccessAt": "2026-09-26T21:33:20.184Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-26T21:38:25.966Z",
+    "lastSuccessAt": "2026-09-26T21:38:25.966Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2103954577817260036",
-    "text": "@antigravity Plan mode was cool in 2025, might still be cool, but was particularly cool in 2025",
-    "url": "https://x.com/thsottiaux/status/2103954577817260036",
-    "postCreatedAt": "2026-09-26T21:07:15.000Z"
+    "id": "2103962250885390436",
+    "text": "@angelbrodin Are those Udon or just plain Noodles",
+    "url": "https://x.com/thsottiaux/status/2103962250885390436",
+    "postCreatedAt": "2026-09-26T21:37:44.000Z"
   },
   "latest": {
     "reset": {
