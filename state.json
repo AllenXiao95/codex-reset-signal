@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2103911959544610829",
-  "lastCheckedAt": "2026-09-26T21:03:53.799Z",
-  "lastSuccessAt": "2026-09-26T21:03:53.799Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 145,
+  "sinceId": "2103954577817260036",
+  "lastCheckedAt": "2026-09-26T21:08:23.515Z",
+  "lastSuccessAt": "2026-09-26T21:08:23.515Z",
+  "lastRunStatus": "checked-3-posts",
+  "postsScanned": 148,
   "matches": [
     {
       "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
@@ -479,15 +479,18 @@
     "2103620061156290622": "ac2026406aabca0be9c47b02b55450e2cd4296c9c31f17fd3f467392078794c0",
     "2103622639386574979": "88aca0042890e50f3f5a67bd23847d99e02da53cf63a73266af0e4780dfcc48c",
     "2103637477760311522": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe",
-    "2103911959544610829": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452"
+    "2103911959544610829": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
+    "2103953907278045548": "fbbac449332c323b672935ab4e7bb022cf584800e9064618e2b8243bdc1a6d09",
+    "2103954313068642787": "fa0e112d8a1472d200bc774f3fcaffe93e2f2af5e0d572d8084080971b8bc0a2",
+    "2103954577817260036": "21c4ff69da6a0c25c62063124ac7e72d283cde248e5b69ce3cba374143442f57"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2103911959544610829",
-    "canonicalId": "2103911959544610829",
-    "text": "Resets all propagated. That will be all. Have a fantastic weekend.",
-    "createdAt": "2026-09-26T18:17:54.000Z",
-    "url": "https://x.com/thsottiaux/status/2103911959544610829",
+    "id": "2103954577817260036",
+    "canonicalId": "2103954577817260036",
+    "text": "@antigravity Plan mode was cool in 2025, might still be cool, but was particularly cool in 2025",
+    "createdAt": "2026-09-26T21:07:15.000Z",
+    "url": "https://x.com/thsottiaux/status/2103954577817260036",
     "media": []
   }
 }
