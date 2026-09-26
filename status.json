@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-26T00:02:33.819Z",
+  "updatedAt": "2026-09-26T00:07:32.441Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-26T00:02:33.815Z",
-    "lastSuccessAt": "2026-09-26T00:02:33.815Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-26T00:07:32.430Z",
+    "lastSuccessAt": "2026-09-26T00:07:32.430Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2103622639386574979",
-    "text": "o no :(",
-    "url": "https://x.com/thsottiaux/status/2103622639386574979",
-    "postCreatedAt": "2026-09-25T23:08:15.000Z"
+    "id": "2103637477760311522",
+    "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
+    "url": "https://x.com/thsottiaux/status/2103637477760311522",
+    "postCreatedAt": "2026-09-26T00:07:13.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe",
+      "id": "2103637477760311522",
+      "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
+      "url": "https://x.com/thsottiaux/status/2103637477760311522",
+      "postCreatedAt": "2026-09-26T00:07:13.000Z",
+      "detectedAt": "2026-09-26T00:07:32.430Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "we’ll reset usage limits for all paid users across codex and ChatGPT work",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "we’ll reset usage limits for all paid users across codex and ChatGPT work",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
       "id": "2102463847714247142",
