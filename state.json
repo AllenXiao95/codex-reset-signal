@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2103963215885701493",
-  "lastCheckedAt": "2026-09-26T21:43:22.460Z",
-  "lastSuccessAt": "2026-09-26T21:43:22.460Z",
-  "lastRunStatus": "checked-1-posts",
+  "lastCheckedAt": "2026-09-26T21:48:20.151Z",
+  "lastSuccessAt": "2026-09-26T21:48:20.151Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 151,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
       "id": "2103963215885701493",
-      "canonicalId": "2103963215885701493",
       "text": "@giadotai Sorry Gia. More resets coming next week",
       "createdAt": "2026-09-26T21:41:35.000Z",
       "url": "https://x.com/thsottiaux/status/2103963215885701493",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-09-26T21:43:22.465Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-09-26T21:43:22.465Z"
+      ]
     },
     {
       "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
