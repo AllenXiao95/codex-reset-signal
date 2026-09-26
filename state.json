@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2103637477760311522",
-  "lastCheckedAt": "2026-09-26T00:07:32.430Z",
-  "lastSuccessAt": "2026-09-26T00:07:32.430Z",
-  "lastRunStatus": "checked-1-posts",
+  "lastCheckedAt": "2026-09-26T00:12:36.168Z",
+  "lastSuccessAt": "2026-09-26T00:12:36.168Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 144,
   "matches": [
     {
       "version": "fe032afe05c5aa6956f6cdc5955ff3d20e12ab796852e5073df907c5450300fe",
       "id": "2103637477760311522",
-      "canonicalId": "2103637477760311522",
       "text": "o yes… we’re back in action and we’ll reset usage limits for all paid users across codex and ChatGPT work\n\nsorry about the brief disruption!\n\n(and yes we have a special spare codex when things are down to help us out)",
       "createdAt": "2026-09-26T00:07:13.000Z",
       "url": "https://x.com/thsottiaux/status/2103637477760311522",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-09-26T00:07:32.435Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-09-26T00:07:32.435Z"
+      ]
     },
     {
       "version": "3302b1fc9d9d5428a0e870204cc326c54d52f7e515e885bb408f9615ef5b23c4",
