@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-26T21:38:25.970Z",
+  "updatedAt": "2026-09-26T21:43:22.471Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-26T21:38:25.966Z",
-    "lastSuccessAt": "2026-09-26T21:38:25.966Z",
-    "lastRunStatus": "checked-2-posts"
+    "lastCheckedAt": "2026-09-26T21:43:22.460Z",
+    "lastSuccessAt": "2026-09-26T21:43:22.460Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2103962250885390436",
-    "text": "@angelbrodin Are those Udon or just plain Noodles",
-    "url": "https://x.com/thsottiaux/status/2103962250885390436",
-    "postCreatedAt": "2026-09-26T21:37:44.000Z"
+    "id": "2103963215885701493",
+    "text": "@giadotai Sorry Gia. More resets coming next week",
+    "url": "https://x.com/thsottiaux/status/2103963215885701493",
+    "postCreatedAt": "2026-09-26T21:41:35.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
+      "id": "2103963215885701493",
+      "text": "@giadotai Sorry Gia. More resets coming next week",
+      "url": "https://x.com/thsottiaux/status/2103963215885701493",
+      "postCreatedAt": "2026-09-26T21:41:35.000Z",
+      "detectedAt": "2026-09-26T21:43:22.460Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "More resets coming next week",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "More resets coming next week",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
       "id": "2103911959544610829",

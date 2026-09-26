@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2103962250885390436",
-  "lastCheckedAt": "2026-09-26T21:38:25.966Z",
-  "lastSuccessAt": "2026-09-26T21:38:25.966Z",
-  "lastRunStatus": "checked-2-posts",
-  "postsScanned": 150,
+  "sinceId": "2103963215885701493",
+  "lastCheckedAt": "2026-09-26T21:43:22.460Z",
+  "lastSuccessAt": "2026-09-26T21:43:22.460Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 151,
   "matches": [
+    {
+      "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
+      "id": "2103963215885701493",
+      "canonicalId": "2103963215885701493",
+      "text": "@giadotai Sorry Gia. More resets coming next week",
+      "createdAt": "2026-09-26T21:41:35.000Z",
+      "url": "https://x.com/thsottiaux/status/2103963215885701493",
+      "media": [],
+      "detectedAt": "2026-09-26T21:43:22.460Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "More resets coming next week",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "More resets coming next week",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-09-26T21:43:22.465Z"
+    },
     {
       "version": "d261afc190875454fd0bc3dcd8f9295084e6dd74731c61ed6c149b223620b452",
       "id": "2103911959544610829",
@@ -484,15 +512,16 @@
     "2103954313068642787": "fa0e112d8a1472d200bc774f3fcaffe93e2f2af5e0d572d8084080971b8bc0a2",
     "2103954577817260036": "21c4ff69da6a0c25c62063124ac7e72d283cde248e5b69ce3cba374143442f57",
     "2103961852153913371": "d09326c8f1da279fa0c79beaa92449ea76081852782f2c9b9380b1bb3c916984",
-    "2103962250885390436": "c96e52626cb02ebd022f987289c81d91d9f43e2a726a34caaee706ab7c663cd4"
+    "2103962250885390436": "c96e52626cb02ebd022f987289c81d91d9f43e2a726a34caaee706ab7c663cd4",
+    "2103963215885701493": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2103962250885390436",
-    "canonicalId": "2103962250885390436",
-    "text": "@angelbrodin Are those Udon or just plain Noodles",
-    "createdAt": "2026-09-26T21:37:44.000Z",
-    "url": "https://x.com/thsottiaux/status/2103962250885390436",
+    "id": "2103963215885701493",
+    "canonicalId": "2103963215885701493",
+    "text": "@giadotai Sorry Gia. More resets coming next week",
+    "createdAt": "2026-09-26T21:41:35.000Z",
+    "url": "https://x.com/thsottiaux/status/2103963215885701493",
     "media": []
   }
 }
