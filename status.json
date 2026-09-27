@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-27T20:53:23.130Z",
+  "updatedAt": "2026-09-27T20:58:21.205Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-27T20:53:23.126Z",
-    "lastSuccessAt": "2026-09-27T20:53:23.126Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-27T20:58:20.996Z",
+    "lastSuccessAt": "2026-09-27T20:58:20.996Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2104313314901958706",
-    "text": "@scottstts 🙈",
-    "url": "https://x.com/thsottiaux/status/2104313314901958706",
-    "postCreatedAt": "2026-09-27T20:52:45.000Z"
+    "id": "2104313777013526880",
+    "text": "@Vincent_AINotes Hitting the gym, brb on Tuesday",
+    "url": "https://x.com/thsottiaux/status/2104313777013526880",
+    "postCreatedAt": "2026-09-27T20:54:35.000Z"
   },
   "latest": {
     "reset": {
