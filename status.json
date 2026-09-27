@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-27T06:48:23.891Z",
+  "updatedAt": "2026-09-27T06:53:17.265Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-27T06:48:23.886Z",
-    "lastSuccessAt": "2026-09-27T06:48:23.886Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-27T06:53:17.262Z",
+    "lastSuccessAt": "2026-09-27T06:53:17.262Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2103963215885701493",
-    "text": "@giadotai Sorry Gia. More resets coming next week",
-    "url": "https://x.com/thsottiaux/status/2103963215885701493",
-    "postCreatedAt": "2026-09-26T21:41:35.000Z"
+    "id": "2104101496606618082",
+    "text": "@yacineMTB We’re perma locked in. No code red necessary.",
+    "url": "https://x.com/thsottiaux/status/2104101496606618082",
+    "postCreatedAt": "2026-09-27T06:51:03.000Z"
   },
   "latest": {
     "reset": {

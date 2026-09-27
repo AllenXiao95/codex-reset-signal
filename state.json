@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2103963215885701493",
-  "lastCheckedAt": "2026-09-27T06:48:23.886Z",
-  "lastSuccessAt": "2026-09-27T06:48:23.886Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 151,
+  "sinceId": "2104101496606618082",
+  "lastCheckedAt": "2026-09-27T06:53:17.262Z",
+  "lastSuccessAt": "2026-09-27T06:53:17.262Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 153,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -512,15 +512,17 @@
     "2103954577817260036": "21c4ff69da6a0c25c62063124ac7e72d283cde248e5b69ce3cba374143442f57",
     "2103961852153913371": "d09326c8f1da279fa0c79beaa92449ea76081852782f2c9b9380b1bb3c916984",
     "2103962250885390436": "c96e52626cb02ebd022f987289c81d91d9f43e2a726a34caaee706ab7c663cd4",
-    "2103963215885701493": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0"
+    "2103963215885701493": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
+    "2104100881100890402": "4948815b5afab7b579f72b5d742490570957b27e4f2caae28b5a30f484b04c49",
+    "2104101496606618082": "60fd74cebffa3fca72b492ec95d2f77b32c46a7356b4d5c00887638602c301fe"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2103963215885701493",
-    "canonicalId": "2103963215885701493",
-    "text": "@giadotai Sorry Gia. More resets coming next week",
-    "createdAt": "2026-09-26T21:41:35.000Z",
-    "url": "https://x.com/thsottiaux/status/2103963215885701493",
+    "id": "2104101496606618082",
+    "canonicalId": "2104101496606618082",
+    "text": "@yacineMTB We’re perma locked in. No code red necessary.",
+    "createdAt": "2026-09-27T06:51:03.000Z",
+    "url": "https://x.com/thsottiaux/status/2104101496606618082",
     "media": []
   }
 }
