@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-28T06:53:26.372Z",
+  "updatedAt": "2026-09-28T06:58:24.275Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-28T06:53:26.366Z",
-    "lastSuccessAt": "2026-09-28T06:53:26.366Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-28T06:58:24.271Z",
+    "lastSuccessAt": "2026-09-28T06:58:24.271Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2104462923661988233",
-    "text": "@imjustnewatai 007 even",
-    "url": "https://x.com/thsottiaux/status/2104462923661988233",
-    "postCreatedAt": "2026-09-28T06:47:14.000Z"
+    "id": "2104465709384491519",
+    "text": "Sunday vibes. See you at Fort Mason soon 🎮👩‍💻 https://t.co/dIBCN92aS0",
+    "url": "https://x.com/thsottiaux/status/2104465709384491519",
+    "postCreatedAt": "2026-09-28T06:58:18.000Z"
   },
   "latest": {
     "reset": {

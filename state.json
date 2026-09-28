@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104462923661988233",
-  "lastCheckedAt": "2026-09-28T06:53:26.366Z",
-  "lastSuccessAt": "2026-09-28T06:53:26.366Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 163,
+  "sinceId": "2104465709384491519",
+  "lastCheckedAt": "2026-09-28T06:58:24.271Z",
+  "lastSuccessAt": "2026-09-28T06:58:24.271Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 164,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -524,15 +524,24 @@
     "2104451970983768270": "215db01dd26a9673b98fd2312a36d7141b9527f78d381c84effc6b67a99f9407",
     "2104462572644888780": "39976ba5d171f4ab15bec73b73498cf3ae662bce29a3cb20963715b21135c9a4",
     "2104462713296683467": "77cc6cc67941e6c11d120797764d41acc96703d29201d5c305730dc4b53fefe0",
-    "2104462923661988233": "09fe9fe79b85bf5c68504cf917393ae5e8ecec188b43729f7b939c2441219344"
+    "2104462923661988233": "09fe9fe79b85bf5c68504cf917393ae5e8ecec188b43729f7b939c2441219344",
+    "2104465709384491519": "ba3e2d57753dad8594b3d1ade4123d98fde2a316bcd626b94d7b7fa54b165aab"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104462923661988233",
-    "canonicalId": "2104462923661988233",
-    "text": "@imjustnewatai 007 even",
-    "createdAt": "2026-09-28T06:47:14.000Z",
-    "url": "https://x.com/thsottiaux/status/2104462923661988233",
-    "media": []
+    "id": "2104465709384491519",
+    "canonicalId": "2104465709384491519",
+    "text": "Sunday vibes. See you at Fort Mason soon 🎮👩‍💻 https://t.co/dIBCN92aS0",
+    "createdAt": "2026-09-28T06:58:18.000Z",
+    "url": "https://x.com/thsottiaux/status/2104465709384491519",
+    "media": [
+      {
+        "mediaKey": "2104465098903539712",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HTSP24ZaUAABJzn.jpg?name=orig",
+        "previewImageUrl": null,
+        "altText": null
+      }
+    ]
   }
 }
