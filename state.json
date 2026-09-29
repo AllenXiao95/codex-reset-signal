@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104838506363408740",
-  "lastCheckedAt": "2026-09-29T13:58:20.876Z",
-  "lastSuccessAt": "2026-09-29T13:58:20.876Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 168,
+  "sinceId": "2104934849970913519",
+  "lastCheckedAt": "2026-09-29T14:03:34.546Z",
+  "lastSuccessAt": "2026-09-29T14:03:34.546Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 169,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -529,15 +529,16 @@
     "2104467346945675347": "489ddceb5add14672eae6c665ee89afacf849871f05d026286098dc5dff2c973",
     "2104823812042940713": "292afd3bcc24bdf7bd9f61e773adbd8fa1ae4de4cb5d8a152a9af6bc6c214499",
     "2104827790440935508": "c37da276b05aeefe9749e21687762d8c9c222b71e305748ceb2c6bb1ba367af7",
-    "2104838506363408740": "7b1533ea95ecf407a9f49efa5fb152c606b69d4e181502fec33b6e3af917e234"
+    "2104838506363408740": "7b1533ea95ecf407a9f49efa5fb152c606b69d4e181502fec33b6e3af917e234",
+    "2104934849970913519": "e4d05009850eb37eb3982f7d45c791b90f820e2a2e27f8992f720a21e25ab2ac"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104838506363408740",
-    "canonicalId": "2104838506363408740",
-    "text": "That was yesterday, today is DevDay. And it's all good news. I'm surprised we've kept it all under wraps.",
-    "createdAt": "2026-09-29T07:39:40.000Z",
-    "url": "https://x.com/thsottiaux/status/2104838506363408740",
+    "id": "2104934849970913519",
+    "canonicalId": "2104934849970913519",
+    "text": "@theo And then I ran to Theo and whispered in his right ear “wake up Theo, it’s DevDay today”",
+    "createdAt": "2026-09-29T14:02:30.000Z",
+    "url": "https://x.com/thsottiaux/status/2104934849970913519",
     "media": []
   }
 }
