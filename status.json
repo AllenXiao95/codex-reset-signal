@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T15:48:18.273Z",
+  "updatedAt": "2026-09-29T15:53:23.826Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T15:43:27.053Z",
-    "lastSuccessAt": "2026-09-29T15:43:27.053Z",
-    "lastRunStatus": "failed-1"
+    "lastCheckedAt": "2026-09-29T15:53:23.822Z",
+    "lastSuccessAt": "2026-09-29T15:53:23.822Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2104952602710638877",
-    "text": "@jukan05 Hello, this is Tibo, you’ve reached the wrong company. Let me redirect you to …",
-    "url": "https://x.com/thsottiaux/status/2104952602710638877",
-    "postCreatedAt": "2026-09-29T15:13:03.000Z"
+    "id": "2104961497055240633",
+    "text": "https://t.co/3zfRsyb9A9",
+    "url": "https://x.com/thsottiaux/status/2104961497055240633",
+    "postCreatedAt": "2026-09-29T15:48:23.000Z"
   },
   "latest": {
     "reset": {
