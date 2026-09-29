@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104989161774322009",
-  "lastCheckedAt": "2026-09-29T17:44:00.156Z",
-  "lastSuccessAt": "2026-09-29T17:44:00.156Z",
-  "lastRunStatus": "checked-2-posts",
-  "postsScanned": 180,
+  "sinceId": "2104991529416999243",
+  "lastCheckedAt": "2026-09-29T17:48:21.760Z",
+  "lastSuccessAt": "2026-09-29T17:48:21.760Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 181,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -541,15 +541,16 @@
     "2104986448269279399": "cd624b935d5a2146cc6f9b35fe9d8dbc95d90b4d1ba738225d2db0dcf4203cff",
     "2104987594719461796": "86fa273b11a446a1dcb4f988b9a66fb56a53371f34f286c9682e8c207c0174a8",
     "2104988071188148495": "ec807629983e5ceb61ed21364b0fe628904abd9319db9b883848b79afa5c69dd",
-    "2104989161774322009": "ac5dd7073df71ebfe51e7730b65325e5fce19c8c1ca1ba3a85357b688f342f87"
+    "2104989161774322009": "ac5dd7073df71ebfe51e7730b65325e5fce19c8c1ca1ba3a85357b688f342f87",
+    "2104991529416999243": "4ac0e6ffac42eee0c98e7e06283975d01649acdec0d321ac1a669f3c4d8b40ed"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104989161774322009",
-    "canonicalId": "2104989161774322009",
-    "text": "Dots are included in all Pro, Business Premium and Enterprise plans. This includes the Pro 100 plan. We’ll be looking to further expand access soon.",
-    "createdAt": "2026-09-29T17:38:19.000Z",
-    "url": "https://x.com/thsottiaux/status/2104989161774322009",
+    "id": "2104991529416999243",
+    "canonicalId": "2104991529416999243",
+    "text": "You can now use your ChatGPT subscription directly in over 60 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Lovable, and many more.\n\nSign in with ChatGPT and go.",
+    "createdAt": "2026-09-29T17:47:44.000Z",
+    "url": "https://x.com/thsottiaux/status/2104991529416999243",
     "media": []
   }
 }
