@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105006253986738615",
-  "lastCheckedAt": "2026-09-29T18:48:28.016Z",
-  "lastSuccessAt": "2026-09-29T18:48:28.016Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 185,
+  "sinceId": "2105007775676072381",
+  "lastCheckedAt": "2026-09-29T18:53:29.311Z",
+  "lastSuccessAt": "2026-09-29T18:53:29.311Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 187,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -546,15 +546,17 @@
     "2104991765904375896": "1a534dd0b8939c0ed11b0ac23709493ee560ab0c79c2cd9131cebc939dcc204e",
     "2104992080095564111": "0c2acb9134805b3a379534307492a3944791fc590b242090fc274d6992e16fef",
     "2104994835212226681": "86954533e6afb129bffa0fb600aa01b58d953643f46503302fba9df5e3b88469",
-    "2105006253986738615": "f0626c084ef775300803c6df1fabc91f017761b056251abdb845861435e3da75"
+    "2105006253986738615": "f0626c084ef775300803c6df1fabc91f017761b056251abdb845861435e3da75",
+    "2105007628460109953": "ef36aa2b89187409c0015ced28e4d7590f3b64ba02d4b535533b1a2d102364bb",
+    "2105007775676072381": "1f8ab25837a9dc81f939ad8632388f00d3638cbf2bd119356163a9cf1da35b21"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105006253986738615",
-    "canonicalId": "2105006253986738615",
-    "text": "You can now use your ChatGPT subscription directly in over 16 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Notion, and many more.\n\nSign in with ChatGPT and go.",
-    "createdAt": "2026-09-29T18:46:14.000Z",
-    "url": "https://x.com/thsottiaux/status/2105006253986738615",
+    "id": "2105007775676072381",
+    "canonicalId": "2105007775676072381",
+    "text": "https://t.co/iGEVhhzt9V",
+    "createdAt": "2026-09-29T18:52:17.000Z",
+    "url": "https://x.com/thsottiaux/status/2105007775676072381",
     "media": []
   }
 }

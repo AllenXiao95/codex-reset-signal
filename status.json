@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T18:48:28.020Z",
+  "updatedAt": "2026-09-29T18:53:29.319Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T18:48:28.016Z",
-    "lastSuccessAt": "2026-09-29T18:48:28.016Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-29T18:53:29.311Z",
+    "lastSuccessAt": "2026-09-29T18:53:29.311Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105006253986738615",
-    "text": "You can now use your ChatGPT subscription directly in over 16 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Notion, and many more.\n\nSign in with ChatGPT and go.",
-    "url": "https://x.com/thsottiaux/status/2105006253986738615",
-    "postCreatedAt": "2026-09-29T18:46:14.000Z"
+    "id": "2105007775676072381",
+    "text": "https://t.co/iGEVhhzt9V",
+    "url": "https://x.com/thsottiaux/status/2105007775676072381",
+    "postCreatedAt": "2026-09-29T18:52:17.000Z"
   },
   "latest": {
     "reset": {
