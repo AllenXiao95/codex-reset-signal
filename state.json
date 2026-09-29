@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104991529416999243",
-  "lastCheckedAt": "2026-09-29T17:48:21.760Z",
-  "lastSuccessAt": "2026-09-29T17:48:21.760Z",
-  "lastRunStatus": "failed-1",
-  "postsScanned": 181,
+  "sinceId": "2104992080095564111",
+  "lastCheckedAt": "2026-09-29T17:58:38.196Z",
+  "lastSuccessAt": "2026-09-29T17:58:38.196Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 183,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -542,15 +542,25 @@
     "2104987594719461796": "86fa273b11a446a1dcb4f988b9a66fb56a53371f34f286c9682e8c207c0174a8",
     "2104988071188148495": "ec807629983e5ceb61ed21364b0fe628904abd9319db9b883848b79afa5c69dd",
     "2104989161774322009": "ac5dd7073df71ebfe51e7730b65325e5fce19c8c1ca1ba3a85357b688f342f87",
-    "2104991529416999243": "4ac0e6ffac42eee0c98e7e06283975d01649acdec0d321ac1a669f3c4d8b40ed"
+    "2104991529416999243": "4ac0e6ffac42eee0c98e7e06283975d01649acdec0d321ac1a669f3c4d8b40ed",
+    "2104991765904375896": "1a534dd0b8939c0ed11b0ac23709493ee560ab0c79c2cd9131cebc939dcc204e",
+    "2104992080095564111": "0c2acb9134805b3a379534307492a3944791fc590b242090fc274d6992e16fef"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104991529416999243",
-    "canonicalId": "2104991529416999243",
-    "text": "You can now use your ChatGPT subscription directly in over 60 partners products. No little rules, you can just use all your included usage right there. This includes things such as Devin, OpenCode, Lovable, and many more.\n\nSign in with ChatGPT and go.",
-    "createdAt": "2026-09-29T17:47:44.000Z",
-    "url": "https://x.com/thsottiaux/status/2104991529416999243",
-    "media": []
+    "id": "2104992080095564111",
+    "canonicalId": "2104992080095564111",
+    "text": "Little summary https://t.co/HQ9Ut3cgSh",
+    "createdAt": "2026-09-29T17:49:55.000Z",
+    "url": "https://x.com/thsottiaux/status/2104992080095564111",
+    "media": [
+      {
+        "mediaKey": "2104992062072655872",
+        "type": "photo",
+        "url": "https://pbs.twimg.com/media/HTZvILLbkAAm1Yx.jpg?name=orig",
+        "previewImageUrl": null,
+        "altText": null
+      }
+    ]
   }
 }
