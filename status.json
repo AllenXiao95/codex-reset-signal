@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T20:53:26.006Z",
+  "updatedAt": "2026-09-29T20:58:27.681Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T20:53:26.002Z",
-    "lastSuccessAt": "2026-09-29T20:53:26.002Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-29T20:58:27.468Z",
+    "lastSuccessAt": "2026-09-29T20:58:27.468Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105028036240552179",
-    "text": "Read this on thread on ChatGPT Space if you only read one thing about it.",
-    "url": "https://x.com/thsottiaux/status/2105028036240552179",
-    "postCreatedAt": "2026-09-29T20:12:48.000Z"
+    "id": "2105039500149948878",
+    "text": "https://t.co/Sxz6BvUjXr",
+    "url": "https://x.com/thsottiaux/status/2105039500149948878",
+    "postCreatedAt": "2026-09-29T20:58:21.000Z"
   },
   "latest": {
     "reset": {
