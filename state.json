@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104986448269279399",
-  "lastCheckedAt": "2026-09-29T17:28:19.500Z",
-  "lastSuccessAt": "2026-09-29T17:28:19.500Z",
-  "lastRunStatus": "checked-2-posts",
-  "postsScanned": 177,
+  "sinceId": "2104987594719461796",
+  "lastCheckedAt": "2026-09-29T17:33:24.500Z",
+  "lastSuccessAt": "2026-09-29T17:33:24.500Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 178,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -538,15 +538,16 @@
     "2104981170685616361": "fb72572436724e0097750e7995314169549b1645ac9ccf9b1b682fd78c71ff88",
     "2104983716049379472": "a9b29567a3527e2a585691143731f8c975f721100dcdb733e24e5020bd47474c",
     "2104986027953930613": "08c4c34ed6fc7c231fa1153164a4e4556bc05e51b45c9231a49f2dce45f2edf7",
-    "2104986448269279399": "cd624b935d5a2146cc6f9b35fe9d8dbc95d90b4d1ba738225d2db0dcf4203cff"
+    "2104986448269279399": "cd624b935d5a2146cc6f9b35fe9d8dbc95d90b4d1ba738225d2db0dcf4203cff",
+    "2104987594719461796": "86fa273b11a446a1dcb4f988b9a66fb56a53371f34f286c9682e8c207c0174a8"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104986448269279399",
-    "canonicalId": "2104986448269279399",
-    "text": "Decisions API, for lightning fast constrained decision making powered by Luna. Supports visual inputs, and tuned to be able to make decisions in less than a few hundreds of milliseconds end to end.",
-    "createdAt": "2026-09-29T17:27:32.000Z",
-    "url": "https://x.com/thsottiaux/status/2104986448269279399",
+    "id": "2104987594719461796",
+    "canonicalId": "2104987594719461796",
+    "text": "Launching a new Codex Cloud, much improved from last year. With configurable cloud environments, it’s impossible to go back to building on your laptop once you’ve taken the time to configure it.\n\nAgents API, the same tech powering all our cloud agents, including dots, is also now in preview and supports computer use. It allows you to build the same incredible products we are making available today.",
+    "createdAt": "2026-09-29T17:32:06.000Z",
+    "url": "https://x.com/thsottiaux/status/2104987594719461796",
     "media": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T17:28:19.504Z",
+  "updatedAt": "2026-09-29T17:33:24.504Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T17:28:19.500Z",
-    "lastSuccessAt": "2026-09-29T17:28:19.500Z",
-    "lastRunStatus": "checked-2-posts"
+    "lastCheckedAt": "2026-09-29T17:33:24.500Z",
+    "lastSuccessAt": "2026-09-29T17:33:24.500Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2104986448269279399",
-    "text": "Decisions API, for lightning fast constrained decision making powered by Luna. Supports visual inputs, and tuned to be able to make decisions in less than a few hundreds of milliseconds end to end.",
-    "url": "https://x.com/thsottiaux/status/2104986448269279399",
-    "postCreatedAt": "2026-09-29T17:27:32.000Z"
+    "id": "2104987594719461796",
+    "text": "Launching a new Codex Cloud, much improved from last year. With configurable cloud environments, it’s impossible to go back to building on your laptop once you’ve taken the time to configure it.\n\nAgents API, the same tech powering all our cloud agents, including dots, is also now in preview and supports computer use. It allows you to build the same incredible products we are making available today.",
+    "url": "https://x.com/thsottiaux/status/2104987594719461796",
+    "postCreatedAt": "2026-09-29T17:32:06.000Z"
   },
   "latest": {
     "reset": {
