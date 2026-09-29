@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T21:03:27.904Z",
+  "updatedAt": "2026-09-29T21:08:20.296Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T21:03:27.678Z",
-    "lastSuccessAt": "2026-09-29T21:03:27.678Z",
-    "lastRunStatus": "checked-4-posts"
+    "lastCheckedAt": "2026-09-29T21:08:20.292Z",
+    "lastSuccessAt": "2026-09-29T21:08:20.292Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105040722613412135",
-    "text": "@alexandr_wang I had a different one in mind, but not going to post",
-    "url": "https://x.com/thsottiaux/status/2105040722613412135",
-    "postCreatedAt": "2026-09-29T21:03:12.000Z"
+    "id": "2105041299934187874",
+    "text": "Full recap of all the announcements\n\nhttps://t.co/KGwZP3g6UC",
+    "url": "https://x.com/thsottiaux/status/2105041299934187874",
+    "postCreatedAt": "2026-09-29T21:05:30.000Z"
   },
   "latest": {
     "reset": {
