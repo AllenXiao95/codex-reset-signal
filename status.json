@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T14:08:30.623Z",
+  "updatedAt": "2026-09-29T14:13:29.957Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T14:08:30.618Z",
-    "lastSuccessAt": "2026-09-29T14:08:30.618Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-29T14:13:29.953Z",
+    "lastSuccessAt": "2026-09-29T14:13:29.953Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2104934849970913519",
-    "text": "@theo And then I ran to Theo and whispered in his right ear “wake up Theo, it’s DevDay today”",
-    "url": "https://x.com/thsottiaux/status/2104934849970913519",
-    "postCreatedAt": "2026-09-29T14:02:30.000Z"
+    "id": "2104936468624105813",
+    "text": "@imnotchalk 👀",
+    "url": "https://x.com/thsottiaux/status/2104936468624105813",
+    "postCreatedAt": "2026-09-29T14:08:56.000Z"
   },
   "latest": {
     "reset": {

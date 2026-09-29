@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104934849970913519",
-  "lastCheckedAt": "2026-09-29T14:08:30.618Z",
-  "lastSuccessAt": "2026-09-29T14:08:30.618Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 169,
+  "sinceId": "2104936468624105813",
+  "lastCheckedAt": "2026-09-29T14:13:29.953Z",
+  "lastSuccessAt": "2026-09-29T14:13:29.953Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 170,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -530,15 +530,16 @@
     "2104823812042940713": "292afd3bcc24bdf7bd9f61e773adbd8fa1ae4de4cb5d8a152a9af6bc6c214499",
     "2104827790440935508": "c37da276b05aeefe9749e21687762d8c9c222b71e305748ceb2c6bb1ba367af7",
     "2104838506363408740": "7b1533ea95ecf407a9f49efa5fb152c606b69d4e181502fec33b6e3af917e234",
-    "2104934849970913519": "e4d05009850eb37eb3982f7d45c791b90f820e2a2e27f8992f720a21e25ab2ac"
+    "2104934849970913519": "e4d05009850eb37eb3982f7d45c791b90f820e2a2e27f8992f720a21e25ab2ac",
+    "2104936468624105813": "8f5e24b167131dfdf62ab30ebfe9cd29db7bac0cba7fcc0aeb9810ee91e8dc4b"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104934849970913519",
-    "canonicalId": "2104934849970913519",
-    "text": "@theo And then I ran to Theo and whispered in his right ear “wake up Theo, it’s DevDay today”",
-    "createdAt": "2026-09-29T14:02:30.000Z",
-    "url": "https://x.com/thsottiaux/status/2104934849970913519",
+    "id": "2104936468624105813",
+    "canonicalId": "2104936468624105813",
+    "text": "@imnotchalk 👀",
+    "createdAt": "2026-09-29T14:08:56.000Z",
+    "url": "https://x.com/thsottiaux/status/2104936468624105813",
     "media": []
   }
 }
