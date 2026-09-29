@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104467346945675347",
-  "lastCheckedAt": "2026-09-29T06:38:19.023Z",
-  "lastSuccessAt": "2026-09-29T06:38:19.023Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 165,
+  "sinceId": "2104823812042940713",
+  "lastCheckedAt": "2026-09-29T06:43:19.849Z",
+  "lastSuccessAt": "2026-09-29T06:43:19.849Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 166,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -526,15 +526,16 @@
     "2104462713296683467": "77cc6cc67941e6c11d120797764d41acc96703d29201d5c305730dc4b53fefe0",
     "2104462923661988233": "09fe9fe79b85bf5c68504cf917393ae5e8ecec188b43729f7b939c2441219344",
     "2104465709384491519": "ba3e2d57753dad8594b3d1ade4123d98fde2a316bcd626b94d7b7fa54b165aab",
-    "2104467346945675347": "489ddceb5add14672eae6c665ee89afacf849871f05d026286098dc5dff2c973"
+    "2104467346945675347": "489ddceb5add14672eae6c665ee89afacf849871f05d026286098dc5dff2c973",
+    "2104823812042940713": "292afd3bcc24bdf7bd9f61e773adbd8fa1ae4de4cb5d8a152a9af6bc6c214499"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104467346945675347",
-    "canonicalId": "2104467346945675347",
-    "text": "Taken by none other than the incredible @ah20im",
-    "createdAt": "2026-09-28T07:04:49.000Z",
-    "url": "https://x.com/thsottiaux/status/2104467346945675347",
+    "id": "2104823812042940713",
+    "canonicalId": "2104823812042940713",
+    "text": "Hi,\n\nTomorrow we are re-opening the Pro $200 subscriptions to new subscribers, but together with it we are also changing how we calculate the usage for it. In effect, if you do the math, it will net out at half the dollar in API spend compared to the old Pro $200 plan. \n\nNow that it's said, let me explain why this is happening and why you will still get more work done than if you were on the Pro $200 subscription one month ago.\n\n(a) We didn't want to compromise in other ways and are committing to not reintroducing the 5h limit, so that you can fully use the weekly usage when you want.\n(b) On the subscription, we guarantee that over time you always get more work done and with an increasing level of quality. This means that you will continue to get more value per dollar spent as a result of models getting more efficient and us passing down the improvements in the form of API price reductions.\n(c) We don't want to put an incentive on ourselves to artificially inflate the API list prices to make it look like you are getting a lot (and workaround it through discounts, etc). Instead we want to continue to both rapidly reduce prices and increase capabilities of models on the API. This week we introduced GPT-6 Sol and GPT-6 Luna at 50% of their previous price. Over time, we see prices go low enough that it makes sense for most to buy usage as needed without there being a significant gap between what you get in a subscription and what you get in the API for a dollar spent.\n(d) Tomorrow, we are adding more things to the subscription that won't draw on the usage, I won't reveal what that is yet.\n\nI wanted to be transparent before all the big announcements tomorrow. Lots of new exciting things are coming to the subscriptions that will make it super compelling, but I wanted to make sure to share this change ahead of time so you can all understand it before we shower you with good news.\n\nCodexingly,\nTibo",
+    "createdAt": "2026-09-29T06:41:17.000Z",
+    "url": "https://x.com/thsottiaux/status/2104823812042940713",
     "media": []
   }
 }
