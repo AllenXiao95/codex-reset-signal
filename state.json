@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105013661534454145",
-  "lastCheckedAt": "2026-09-29T20:08:18.772Z",
-  "lastSuccessAt": "2026-09-29T20:08:18.772Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 188,
+  "sinceId": "2105028036240552179",
+  "lastCheckedAt": "2026-09-29T20:13:20.181Z",
+  "lastSuccessAt": "2026-09-29T20:13:20.181Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 189,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -549,15 +549,16 @@
     "2105006253986738615": "f0626c084ef775300803c6df1fabc91f017761b056251abdb845861435e3da75",
     "2105007628460109953": "ef36aa2b89187409c0015ced28e4d7590f3b64ba02d4b535533b1a2d102364bb",
     "2105007775676072381": "1f8ab25837a9dc81f939ad8632388f00d3638cbf2bd119356163a9cf1da35b21",
-    "2105013661534454145": "34b2128614b47891514dc78a0c77368db5602c86565605d578a3c54df17a5ab1"
+    "2105013661534454145": "34b2128614b47891514dc78a0c77368db5602c86565605d578a3c54df17a5ab1",
+    "2105028036240552179": "8f99c5b3c9498de4164d5e57ff9acbb60b84fec6761c1f4ecfa8ab65d885e1a0"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105013661534454145",
-    "canonicalId": "2105013661534454145",
-    "text": "@badlogicgames yw, keep on rocking",
-    "createdAt": "2026-09-29T19:15:40.000Z",
-    "url": "https://x.com/thsottiaux/status/2105013661534454145",
+    "id": "2105028036240552179",
+    "canonicalId": "2105028036240552179",
+    "text": "Read this on thread on ChatGPT Space if you only read one thing about it.",
+    "createdAt": "2026-09-29T20:12:48.000Z",
+    "url": "https://x.com/thsottiaux/status/2105028036240552179",
     "media": []
   }
 }

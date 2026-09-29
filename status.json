@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T20:08:18.776Z",
+  "updatedAt": "2026-09-29T20:13:20.185Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T20:08:18.772Z",
-    "lastSuccessAt": "2026-09-29T20:08:18.772Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-29T20:13:20.181Z",
+    "lastSuccessAt": "2026-09-29T20:13:20.181Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105013661534454145",
-    "text": "@badlogicgames yw, keep on rocking",
-    "url": "https://x.com/thsottiaux/status/2105013661534454145",
-    "postCreatedAt": "2026-09-29T19:15:40.000Z"
+    "id": "2105028036240552179",
+    "text": "Read this on thread on ChatGPT Space if you only read one thing about it.",
+    "url": "https://x.com/thsottiaux/status/2105028036240552179",
+    "postCreatedAt": "2026-09-29T20:12:48.000Z"
   },
   "latest": {
     "reset": {
