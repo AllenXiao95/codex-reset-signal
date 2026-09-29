@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104961497055240633",
-  "lastCheckedAt": "2026-09-29T17:03:36.147Z",
-  "lastSuccessAt": "2026-09-29T17:03:36.147Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 173,
+  "sinceId": "2104981170685616361",
+  "lastCheckedAt": "2026-09-29T17:08:27.652Z",
+  "lastSuccessAt": "2026-09-29T17:08:27.652Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 174,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -534,23 +534,16 @@
     "2104936468624105813": "8f5e24b167131dfdf62ab30ebfe9cd29db7bac0cba7fcc0aeb9810ee91e8dc4b",
     "2104951965184925941": "b75cac3e5d5ed353e57fe983619140ab5dbe9d6bd5f7758eb03ff957b3a281d8",
     "2104952602710638877": "a1a62b65d2a35c172f40235b739f25a835fd13b24da162d02554f2141eb0779f",
-    "2104961497055240633": "f0e811255f8d301bbc6a0f6f5154c3eb35861c1a39005acb7f13add2aeb4cc88"
+    "2104961497055240633": "f0e811255f8d301bbc6a0f6f5154c3eb35861c1a39005acb7f13add2aeb4cc88",
+    "2104981170685616361": "fb72572436724e0097750e7995314169549b1645ac9ccf9b1b682fd78c71ff88"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104961497055240633",
-    "canonicalId": "2104961497055240633",
-    "text": "https://t.co/3zfRsyb9A9",
-    "createdAt": "2026-09-29T15:48:23.000Z",
-    "url": "https://x.com/thsottiaux/status/2104961497055240633",
-    "media": [
-      {
-        "mediaKey": "2104961479346982913",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HTZTUBpbkAE_KCC.jpg?name=orig",
-        "previewImageUrl": null,
-        "altText": null
-      }
-    ]
+    "id": "2104981170685616361",
+    "canonicalId": "2104981170685616361",
+    "text": "Announcing dots. Dots work 24/7 for you, learn from your feedback, have their own computer, browser and can be connected to over 4k apps in our ecosystem.\n\nThey’re powered by Astra our best model yet. Included in your Pro plan, without drawing down on any of your usage. You can even call a dot while it’s working.\n\nWe’re getting you started with your primary dot today and soon you’ll be able to create entire teams of them.",
+    "createdAt": "2026-09-29T17:06:34.000Z",
+    "url": "https://x.com/thsottiaux/status/2104981170685616361",
+    "media": []
   }
 }
