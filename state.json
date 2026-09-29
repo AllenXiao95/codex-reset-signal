@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104827790440935508",
-  "lastCheckedAt": "2026-09-29T07:38:20.652Z",
-  "lastSuccessAt": "2026-09-29T07:38:20.652Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 167,
+  "sinceId": "2104838506363408740",
+  "lastCheckedAt": "2026-09-29T07:43:29.798Z",
+  "lastSuccessAt": "2026-09-29T07:43:29.798Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 168,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -528,15 +528,16 @@
     "2104465709384491519": "ba3e2d57753dad8594b3d1ade4123d98fde2a316bcd626b94d7b7fa54b165aab",
     "2104467346945675347": "489ddceb5add14672eae6c665ee89afacf849871f05d026286098dc5dff2c973",
     "2104823812042940713": "292afd3bcc24bdf7bd9f61e773adbd8fa1ae4de4cb5d8a152a9af6bc6c214499",
-    "2104827790440935508": "c37da276b05aeefe9749e21687762d8c9c222b71e305748ceb2c6bb1ba367af7"
+    "2104827790440935508": "c37da276b05aeefe9749e21687762d8c9c222b71e305748ceb2c6bb1ba367af7",
+    "2104838506363408740": "7b1533ea95ecf407a9f49efa5fb152c606b69d4e181502fec33b6e3af917e234"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104827790440935508",
-    "canonicalId": "2104827790440935508",
-    "text": "@mecp Agreed",
-    "createdAt": "2026-09-29T06:57:05.000Z",
-    "url": "https://x.com/thsottiaux/status/2104827790440935508",
+    "id": "2104838506363408740",
+    "canonicalId": "2104838506363408740",
+    "text": "That was yesterday, today is DevDay. And it's all good news. I'm surprised we've kept it all under wraps.",
+    "createdAt": "2026-09-29T07:39:40.000Z",
+    "url": "https://x.com/thsottiaux/status/2104838506363408740",
     "media": []
   }
 }
