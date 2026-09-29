@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T17:38:25.423Z",
+  "updatedAt": "2026-09-29T17:44:00.162Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T17:33:24.500Z",
-    "lastSuccessAt": "2026-09-29T17:33:24.500Z",
-    "lastRunStatus": "failed-1"
+    "lastCheckedAt": "2026-09-29T17:44:00.156Z",
+    "lastSuccessAt": "2026-09-29T17:44:00.156Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2104987594719461796",
-    "text": "Launching a new Codex Cloud, much improved from last year. With configurable cloud environments, it’s impossible to go back to building on your laptop once you’ve taken the time to configure it.\n\nAgents API, the same tech powering all our cloud agents, including dots, is also now in preview and supports computer use. It allows you to build the same incredible products we are making available today.",
-    "url": "https://x.com/thsottiaux/status/2104987594719461796",
-    "postCreatedAt": "2026-09-29T17:32:06.000Z"
+    "id": "2104989161774322009",
+    "text": "Dots are included in all Pro, Business Premium and Enterprise plans. This includes the Pro 100 plan. We’ll be looking to further expand access soon.",
+    "url": "https://x.com/thsottiaux/status/2104989161774322009",
+    "postCreatedAt": "2026-09-29T17:38:19.000Z"
   },
   "latest": {
     "reset": {
