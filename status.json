@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T19:13:26.931Z",
+  "updatedAt": "2026-09-29T19:18:45.165Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T19:13:26.927Z",
-    "lastSuccessAt": "2026-09-29T19:13:26.927Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-29T19:18:45.161Z",
+    "lastSuccessAt": "2026-09-29T19:18:45.161Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105007775676072381",
-    "text": "https://t.co/iGEVhhzt9V",
-    "url": "https://x.com/thsottiaux/status/2105007775676072381",
-    "postCreatedAt": "2026-09-29T18:52:17.000Z"
+    "id": "2105013661534454145",
+    "text": "@badlogicgames yw, keep on rocking",
+    "url": "https://x.com/thsottiaux/status/2105013661534454145",
+    "postCreatedAt": "2026-09-29T19:15:40.000Z"
   },
   "latest": {
     "reset": {
