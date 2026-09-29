@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104983716049379472",
-  "lastCheckedAt": "2026-09-29T17:23:24.967Z",
-  "lastSuccessAt": "2026-09-29T17:23:24.967Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 175,
+  "sinceId": "2104986448269279399",
+  "lastCheckedAt": "2026-09-29T17:28:19.500Z",
+  "lastSuccessAt": "2026-09-29T17:28:19.500Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 177,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -536,15 +536,17 @@
     "2104952602710638877": "a1a62b65d2a35c172f40235b739f25a835fd13b24da162d02554f2141eb0779f",
     "2104961497055240633": "f0e811255f8d301bbc6a0f6f5154c3eb35861c1a39005acb7f13add2aeb4cc88",
     "2104981170685616361": "fb72572436724e0097750e7995314169549b1645ac9ccf9b1b682fd78c71ff88",
-    "2104983716049379472": "a9b29567a3527e2a585691143731f8c975f721100dcdb733e24e5020bd47474c"
+    "2104983716049379472": "a9b29567a3527e2a585691143731f8c975f721100dcdb733e24e5020bd47474c",
+    "2104986027953930613": "08c4c34ed6fc7c231fa1153164a4e4556bc05e51b45c9231a49f2dce45f2edf7",
+    "2104986448269279399": "cd624b935d5a2146cc6f9b35fe9d8dbc95d90b4d1ba738225d2db0dcf4203cff"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104983716049379472",
-    "canonicalId": "2104983716049379472",
-    "text": "Announcing ChatGPT Space, a collection of new collaborative experiences right in ChatGPT. \n\nEdit rich notes with live visualizations together with others and your dots. Whether it’s a TODO list to delegate, a product plan or meeting notes. Working with others and your agents is seamless and they also be automatically kept up to date in the background. For developers, this is AGENTS.md taken one step further.",
-    "createdAt": "2026-09-29T17:16:41.000Z",
-    "url": "https://x.com/thsottiaux/status/2104983716049379472",
+    "id": "2104986448269279399",
+    "canonicalId": "2104986448269279399",
+    "text": "Decisions API, for lightning fast constrained decision making powered by Luna. Supports visual inputs, and tuned to be able to make decisions in less than a few hundreds of milliseconds end to end.",
+    "createdAt": "2026-09-29T17:27:32.000Z",
+    "url": "https://x.com/thsottiaux/status/2104986448269279399",
     "media": []
   }
 }

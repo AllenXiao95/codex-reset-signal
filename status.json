@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-29T17:23:24.971Z",
+  "updatedAt": "2026-09-29T17:28:19.504Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-29T17:23:24.967Z",
-    "lastSuccessAt": "2026-09-29T17:23:24.967Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-29T17:28:19.500Z",
+    "lastSuccessAt": "2026-09-29T17:28:19.500Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2104983716049379472",
-    "text": "Announcing ChatGPT Space, a collection of new collaborative experiences right in ChatGPT. \n\nEdit rich notes with live visualizations together with others and your dots. Whether it’s a TODO list to delegate, a product plan or meeting notes. Working with others and your agents is seamless and they also be automatically kept up to date in the background. For developers, this is AGENTS.md taken one step further.",
-    "url": "https://x.com/thsottiaux/status/2104983716049379472",
-    "postCreatedAt": "2026-09-29T17:16:41.000Z"
+    "id": "2104986448269279399",
+    "text": "Decisions API, for lightning fast constrained decision making powered by Luna. Supports visual inputs, and tuned to be able to make decisions in less than a few hundreds of milliseconds end to end.",
+    "url": "https://x.com/thsottiaux/status/2104986448269279399",
+    "postCreatedAt": "2026-09-29T17:27:32.000Z"
   },
   "latest": {
     "reset": {
