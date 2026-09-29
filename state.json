@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2104936468624105813",
-  "lastCheckedAt": "2026-09-29T15:08:32.791Z",
-  "lastSuccessAt": "2026-09-29T15:08:32.791Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 170,
+  "sinceId": "2104952602710638877",
+  "lastCheckedAt": "2026-09-29T15:13:33.397Z",
+  "lastSuccessAt": "2026-09-29T15:13:33.397Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 172,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -531,15 +531,17 @@
     "2104827790440935508": "c37da276b05aeefe9749e21687762d8c9c222b71e305748ceb2c6bb1ba367af7",
     "2104838506363408740": "7b1533ea95ecf407a9f49efa5fb152c606b69d4e181502fec33b6e3af917e234",
     "2104934849970913519": "e4d05009850eb37eb3982f7d45c791b90f820e2a2e27f8992f720a21e25ab2ac",
-    "2104936468624105813": "8f5e24b167131dfdf62ab30ebfe9cd29db7bac0cba7fcc0aeb9810ee91e8dc4b"
+    "2104936468624105813": "8f5e24b167131dfdf62ab30ebfe9cd29db7bac0cba7fcc0aeb9810ee91e8dc4b",
+    "2104951965184925941": "b75cac3e5d5ed353e57fe983619140ab5dbe9d6bd5f7758eb03ff957b3a281d8",
+    "2104952602710638877": "a1a62b65d2a35c172f40235b739f25a835fd13b24da162d02554f2141eb0779f"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2104936468624105813",
-    "canonicalId": "2104936468624105813",
-    "text": "@imnotchalk 👀",
-    "createdAt": "2026-09-29T14:08:56.000Z",
-    "url": "https://x.com/thsottiaux/status/2104936468624105813",
+    "id": "2104952602710638877",
+    "canonicalId": "2104952602710638877",
+    "text": "@jukan05 Hello, this is Tibo, you’ve reached the wrong company. Let me redirect you to …",
+    "createdAt": "2026-09-29T15:13:03.000Z",
+    "url": "https://x.com/thsottiaux/status/2104952602710638877",
     "media": []
   }
 }
