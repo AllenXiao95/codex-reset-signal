@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T06:48:20.807Z",
+  "updatedAt": "2026-09-30T06:53:26.163Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T06:48:20.802Z",
-    "lastSuccessAt": "2026-09-30T06:48:20.802Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-30T06:53:26.158Z",
+    "lastSuccessAt": "2026-09-30T06:53:26.158Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105178959327756396",
-    "text": "What’s up dot",
-    "url": "https://x.com/thsottiaux/status/2105178959327756396",
-    "postCreatedAt": "2026-09-30T06:12:30.000Z"
+    "id": "2105189201679630385",
+    "text": "@_ak_111 Basically",
+    "url": "https://x.com/thsottiaux/status/2105189201679630385",
+    "postCreatedAt": "2026-09-30T06:53:12.000Z"
   },
   "latest": {
     "reset": {

@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105178959327756396",
-  "lastCheckedAt": "2026-09-30T06:48:20.802Z",
-  "lastSuccessAt": "2026-09-30T06:48:20.802Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 220,
+  "sinceId": "2105189201679630385",
+  "lastCheckedAt": "2026-09-30T06:53:26.158Z",
+  "lastSuccessAt": "2026-09-30T06:53:26.158Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 222,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -581,15 +581,17 @@
     "2105175197821399122": "bcdaa42ec10e779284c0bf261322df37046800ca3db5c102ac51141419109ff2",
     "2105176198469087516": "7d8493650a9d7af647ed89cca20caa4712222a163d20765cea302c0454bfbe92",
     "2105176545304436942": "c30a39a0cacccc490e12b5c7bdc49b79cd0cc16cd141679b9ee81980a9a5d011",
-    "2105178959327756396": "966c937e5a0060a60eb4595fbc3fb8b7073c227d23b7f56c1c78306e926e31d5"
+    "2105178959327756396": "966c937e5a0060a60eb4595fbc3fb8b7073c227d23b7f56c1c78306e926e31d5",
+    "2105188957437002208": "7cedb58ce60e722aa96a3488c8d4ffa4c6ce14e77a27269f14d5a7fcc849d152",
+    "2105189201679630385": "2799f3f557146fa0719b8479f6f196b2a2e1341fafaf8626392777749e8a602d"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105178959327756396",
-    "canonicalId": "2105178959327756396",
-    "text": "What’s up dot",
-    "createdAt": "2026-09-30T06:12:30.000Z",
-    "url": "https://x.com/thsottiaux/status/2105178959327756396",
+    "id": "2105189201679630385",
+    "canonicalId": "2105189201679630385",
+    "text": "@_ak_111 Basically",
+    "createdAt": "2026-09-30T06:53:12.000Z",
+    "url": "https://x.com/thsottiaux/status/2105189201679630385",
     "media": []
   }
 }
