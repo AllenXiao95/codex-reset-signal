@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105189201679630385",
-  "lastCheckedAt": "2026-09-30T14:33:27.107Z",
-  "lastSuccessAt": "2026-09-30T14:33:27.107Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 222,
+  "sinceId": "2105305239398285514",
+  "lastCheckedAt": "2026-09-30T14:38:24.349Z",
+  "lastSuccessAt": "2026-09-30T14:38:24.349Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 223,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -583,15 +583,16 @@
     "2105176545304436942": "c30a39a0cacccc490e12b5c7bdc49b79cd0cc16cd141679b9ee81980a9a5d011",
     "2105178959327756396": "966c937e5a0060a60eb4595fbc3fb8b7073c227d23b7f56c1c78306e926e31d5",
     "2105188957437002208": "7cedb58ce60e722aa96a3488c8d4ffa4c6ce14e77a27269f14d5a7fcc849d152",
-    "2105189201679630385": "2799f3f557146fa0719b8479f6f196b2a2e1341fafaf8626392777749e8a602d"
+    "2105189201679630385": "2799f3f557146fa0719b8479f6f196b2a2e1341fafaf8626392777749e8a602d",
+    "2105305239398285514": "d1e32b043b98c6452869f1087c8c07a09607abf8fb518fc5e9df73c28835c765"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105189201679630385",
-    "canonicalId": "2105189201679630385",
-    "text": "@_ak_111 Basically",
-    "createdAt": "2026-09-30T06:53:12.000Z",
-    "url": "https://x.com/thsottiaux/status/2105189201679630385",
+    "id": "2105305239398285514",
+    "canonicalId": "2105305239398285514",
+    "text": "@charlielamb @OpenAI I watched it live while reading through the oncall channel my dot had just flagged to me. Prod went down 5 mins before the demo. Memorable for sure.",
+    "createdAt": "2026-09-30T14:34:18.000Z",
+    "url": "https://x.com/thsottiaux/status/2105305239398285514",
     "media": []
   }
 }

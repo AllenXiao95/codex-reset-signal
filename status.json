@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T14:33:27.112Z",
+  "updatedAt": "2026-09-30T14:38:24.571Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T14:33:27.107Z",
-    "lastSuccessAt": "2026-09-30T14:33:27.107Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-30T14:38:24.349Z",
+    "lastSuccessAt": "2026-09-30T14:38:24.349Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105189201679630385",
-    "text": "@_ak_111 Basically",
-    "url": "https://x.com/thsottiaux/status/2105189201679630385",
-    "postCreatedAt": "2026-09-30T06:53:12.000Z"
+    "id": "2105305239398285514",
+    "text": "@charlielamb @OpenAI I watched it live while reading through the oncall channel my dot had just flagged to me. Prod went down 5 mins before the demo. Memorable for sure.",
+    "url": "https://x.com/thsottiaux/status/2105305239398285514",
+    "postCreatedAt": "2026-09-30T14:34:18.000Z"
   },
   "latest": {
     "reset": {
