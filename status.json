@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T03:43:22.924Z",
+  "updatedAt": "2026-09-30T03:48:17.507Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T03:43:22.921Z",
-    "lastSuccessAt": "2026-09-30T03:43:22.921Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-30T03:48:17.502Z",
+    "lastSuccessAt": "2026-09-30T03:48:17.502Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105124771310739821",
-    "text": "@iruletheworldmo The tokens must flow",
-    "url": "https://x.com/thsottiaux/status/2105124771310739821",
-    "postCreatedAt": "2026-09-30T02:37:11.000Z"
+    "id": "2105141623315374507",
+    "text": "@frantzfries Outfluffed",
+    "url": "https://x.com/thsottiaux/status/2105141623315374507",
+    "postCreatedAt": "2026-09-30T03:44:09.000Z"
   },
   "latest": {
     "reset": {
