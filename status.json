@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T05:48:23.746Z",
+  "updatedAt": "2026-09-30T05:53:22.667Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T05:48:23.741Z",
-    "lastSuccessAt": "2026-09-30T05:48:23.741Z",
+    "lastCheckedAt": "2026-09-30T05:53:22.662Z",
+    "lastSuccessAt": "2026-09-30T05:53:22.662Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105172665095069886",
-    "text": "@NicolasZu Well said",
-    "url": "https://x.com/thsottiaux/status/2105172665095069886",
-    "postCreatedAt": "2026-09-30T05:47:30.000Z"
+    "id": "2105173168281506088",
+    "text": "@kr0der Yes, check email",
+    "url": "https://x.com/thsottiaux/status/2105173168281506088",
+    "postCreatedAt": "2026-09-30T05:49:30.000Z"
   },
   "latest": {
     "reset": {
