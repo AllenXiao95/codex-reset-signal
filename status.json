@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T17:23:21.709Z",
+  "updatedAt": "2026-09-30T17:28:21.683Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T17:23:21.704Z",
-    "lastSuccessAt": "2026-09-30T17:23:21.704Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-30T17:28:21.680Z",
+    "lastSuccessAt": "2026-09-30T17:28:21.680Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105344482149613853",
-    "text": "You can enroll here: https://t.co/kjNgDoLCWz",
-    "url": "https://x.com/thsottiaux/status/2105344482149613853",
-    "postCreatedAt": "2026-09-30T17:10:14.000Z"
+    "id": "2105348026416140781",
+    "text": "Hi! What would you like to see us ship for dots and space in the next two weeks? Or how can we improve things in other parts of the product.",
+    "url": "https://x.com/thsottiaux/status/2105348026416140781",
+    "postCreatedAt": "2026-09-30T17:24:19.000Z"
   },
   "latest": {
     "reset": {
