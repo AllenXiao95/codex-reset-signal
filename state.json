@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105308727947755599",
-  "lastCheckedAt": "2026-09-30T14:48:31.011Z",
-  "lastSuccessAt": "2026-09-30T14:48:31.011Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 224,
+  "sinceId": "2105309464492691524",
+  "lastCheckedAt": "2026-09-30T14:53:36.945Z",
+  "lastSuccessAt": "2026-09-30T14:53:36.945Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 226,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -585,15 +585,17 @@
     "2105188957437002208": "7cedb58ce60e722aa96a3488c8d4ffa4c6ce14e77a27269f14d5a7fcc849d152",
     "2105189201679630385": "2799f3f557146fa0719b8479f6f196b2a2e1341fafaf8626392777749e8a602d",
     "2105305239398285514": "d1e32b043b98c6452869f1087c8c07a09607abf8fb518fc5e9df73c28835c765",
-    "2105308727947755599": "2dccb826737787ff5c42ea41110f5b02677b5094f6cba9c59ed6ba82da4112a4"
+    "2105308727947755599": "2dccb826737787ff5c42ea41110f5b02677b5094f6cba9c59ed6ba82da4112a4",
+    "2105308913176658267": "b9baeeca7de38d9b141808a269f2d463b39e9bdf83fa01daabe7dfe963e8b31b",
+    "2105309464492691524": "43103c5ddcee9ea8c0daa1585991fbeb6ec46b26b6ed08e46d4f9099d4e75e1b"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105308727947755599",
-    "canonicalId": "2105308727947755599",
-    "text": "@themikebwebb @bot We’re fixing this",
-    "createdAt": "2026-09-30T14:48:10.000Z",
-    "url": "https://x.com/thsottiaux/status/2105308727947755599",
+    "id": "2105309464492691524",
+    "canonicalId": "2105309464492691524",
+    "text": "@thekitze Technically correct",
+    "createdAt": "2026-09-30T14:51:05.000Z",
+    "url": "https://x.com/thsottiaux/status/2105309464492691524",
     "media": []
   }
 }
