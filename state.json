@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105120499177230798",
-  "lastCheckedAt": "2026-09-30T02:23:30.704Z",
-  "lastSuccessAt": "2026-09-30T02:23:30.704Z",
+  "sinceId": "2105122298646888806",
+  "lastCheckedAt": "2026-09-30T02:28:18.243Z",
+  "lastSuccessAt": "2026-09-30T02:28:18.243Z",
   "lastRunStatus": "checked-2-posts",
-  "postsScanned": 208,
+  "postsScanned": 210,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -569,15 +569,17 @@
     "2105108807693246808": "d2379a00b869acff62a03a07213442a2daeb3c09c52f3973430cb59fa5464cae",
     "2105109005135962589": "47534618aa7db78861ee849bafbc7c5668440a3fc155661006539dc8e2d3666d",
     "2105120226027450685": "64c2bd9cbd9b5bc2a089cdd6425f3a04878b233d62a50f4845ed045a1c3c718c",
-    "2105120499177230798": "1389bb6321c9f67503b8006b5c5c3c1140d5bcf6ec277a3351c74ae884f30feb"
+    "2105120499177230798": "1389bb6321c9f67503b8006b5c5c3c1140d5bcf6ec277a3351c74ae884f30feb",
+    "2105121970883076422": "7c89f88c70563ae7832f5e60fa9a0f4e6f8d95e2d62b363e1a763da5029308d2",
+    "2105122298646888806": "b35955b2fb8e7d9003990444844eb36d83b89595541ddd3fceb892e812eb5616"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105120499177230798",
-    "canonicalId": "2105120499177230798",
-    "text": "@nnennahacks @MaxHudlberger @OpenAIDevs @OpenAI 👋",
-    "createdAt": "2026-09-30T02:20:12.000Z",
-    "url": "https://x.com/thsottiaux/status/2105120499177230798",
+    "id": "2105122298646888806",
+    "canonicalId": "2105122298646888806",
+    "text": "@cmd_shiftbusra Could barely believe it when Busra made this come to life. Pure talent",
+    "createdAt": "2026-09-30T02:27:21.000Z",
+    "url": "https://x.com/thsottiaux/status/2105122298646888806",
     "media": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T02:23:30.713Z",
+  "updatedAt": "2026-09-30T02:28:18.248Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T02:23:30.704Z",
-    "lastSuccessAt": "2026-09-30T02:23:30.704Z",
+    "lastCheckedAt": "2026-09-30T02:28:18.243Z",
+    "lastSuccessAt": "2026-09-30T02:28:18.243Z",
     "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105120499177230798",
-    "text": "@nnennahacks @MaxHudlberger @OpenAIDevs @OpenAI 👋",
-    "url": "https://x.com/thsottiaux/status/2105120499177230798",
-    "postCreatedAt": "2026-09-30T02:20:12.000Z"
+    "id": "2105122298646888806",
+    "text": "@cmd_shiftbusra Could barely believe it when Busra made this come to life. Pure talent",
+    "url": "https://x.com/thsottiaux/status/2105122298646888806",
+    "postCreatedAt": "2026-09-30T02:27:21.000Z"
   },
   "latest": {
     "reset": {
