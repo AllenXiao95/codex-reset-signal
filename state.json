@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105097443847332188",
-  "lastCheckedAt": "2026-09-30T01:03:17.137Z",
-  "lastSuccessAt": "2026-09-30T01:03:17.137Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 197,
+  "sinceId": "2105102312167575701",
+  "lastCheckedAt": "2026-09-30T01:08:28.101Z",
+  "lastSuccessAt": "2026-09-30T01:08:28.101Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 198,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -558,15 +558,16 @@
     "2105040569924002048": "0838fd88e0658df536c8ccb81f153cb1dc7b6432689b4c4e70168eb7d6799c2d",
     "2105040722613412135": "68093c81284dc30791f8745de6329ea008f45c8dae57a2f45b88c866de73d14a",
     "2105041299934187874": "9bd7a527a9eabf4cbddce6a8e46a87bc24075649487932331ed483eb98fc3fcc",
-    "2105097443847332188": "b05bdb7e702290d37f0104e15be8d5eb19bf6ac1c30b9618b01f1a4e0314094e"
+    "2105097443847332188": "b05bdb7e702290d37f0104e15be8d5eb19bf6ac1c30b9618b01f1a4e0314094e",
+    "2105102312167575701": "d39302991de09970e789bee8d4d7f4a2337b8cf091d15406435ba6c43c3b0d56"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105097443847332188",
-    "canonicalId": "2105097443847332188",
-    "text": "@signulll Transparency is important to me",
-    "createdAt": "2026-09-30T00:48:36.000Z",
-    "url": "https://x.com/thsottiaux/status/2105097443847332188",
+    "id": "2105102312167575701",
+    "canonicalId": "2105102312167575701",
+    "text": "I got community noted, but the note is wrong 😅\n\nYour primary dot is included in your plan and will be available 24/7. If you ask it to create a codex task for you, that one will be drawing usage as usual. But when your dot does work directly, that uses nothing and is all on top of your plans usage. In the future you will be able to increase the speed and allow your dot to have more bandwidth, this will be a paid feature, but the baseline functionality will always just be included in your plan.",
+    "createdAt": "2026-09-30T01:07:56.000Z",
+    "url": "https://x.com/thsottiaux/status/2105102312167575701",
     "media": []
   }
 }
