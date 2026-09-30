@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T01:13:20.891Z",
+  "updatedAt": "2026-09-30T01:18:18.239Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T01:13:20.887Z",
-    "lastSuccessAt": "2026-09-30T01:13:20.887Z",
+    "lastCheckedAt": "2026-09-30T01:18:18.236Z",
+    "lastSuccessAt": "2026-09-30T01:18:18.236Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105102820706058498",
-    "text": "It was so nice to connect with so many of you in person at DevDay. Immaculate vibes from the crowd and fun to see so many build things throughout the day.",
-    "url": "https://x.com/thsottiaux/status/2105102820706058498",
-    "postCreatedAt": "2026-09-30T01:09:58.000Z"
+    "id": "2105103752185458869",
+    "text": "@kunchenguid Good coverage!!! Thank you for tuning in and re-sharing this nicely",
+    "url": "https://x.com/thsottiaux/status/2105103752185458869",
+    "postCreatedAt": "2026-09-30T01:13:40.000Z"
   },
   "latest": {
     "reset": {
