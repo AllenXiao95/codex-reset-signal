@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105106052874375281",
-  "lastCheckedAt": "2026-09-30T01:23:22.025Z",
-  "lastSuccessAt": "2026-09-30T01:23:22.025Z",
-  "lastRunStatus": "checked-2-posts",
-  "postsScanned": 202,
+  "sinceId": "2105106575866364103",
+  "lastCheckedAt": "2026-09-30T01:28:22.604Z",
+  "lastSuccessAt": "2026-09-30T01:28:22.604Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 203,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -563,15 +563,16 @@
     "2105102820706058498": "a8baa4fd9b02b13bf6e048cdec3145c0f8529880e973e32394a60311e817ffa9",
     "2105103752185458869": "f45daca42a6c933225f2501c187c4c8b3125a32400cabfec131a7027f1feb94a",
     "2105105086506840421": "07f1b642f8864689d763652d0615325a9f61410b4b1c205e7cd8a25038e810e3",
-    "2105106052874375281": "23c1a73657204df7bd325947e64ca4cbc6eb123071b766ca8a95c3aa2564c882"
+    "2105106052874375281": "23c1a73657204df7bd325947e64ca4cbc6eb123071b766ca8a95c3aa2564c882",
+    "2105106575866364103": "505b330b559f5bf62a7bb91218b6891a111bb327738953241b4b6225693af068"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105106052874375281",
-    "canonicalId": "2105106052874375281",
-    "text": "@NickADobos Sleeper hit",
-    "createdAt": "2026-09-30T01:22:48.000Z",
-    "url": "https://x.com/thsottiaux/status/2105106052874375281",
+    "id": "2105106575866364103",
+    "canonicalId": "2105106575866364103",
+    "text": "@tenobrus Why are you shilling OpenAI. Must be paid or something",
+    "createdAt": "2026-09-30T01:24:53.000Z",
+    "url": "https://x.com/thsottiaux/status/2105106575866364103",
     "media": []
   }
 }
