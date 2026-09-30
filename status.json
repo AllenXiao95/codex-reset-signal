@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T17:08:32.359Z",
+  "updatedAt": "2026-09-30T17:13:34.631Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T17:08:32.353Z",
-    "lastSuccessAt": "2026-09-30T17:08:32.353Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-30T17:13:34.622Z",
+    "lastSuccessAt": "2026-09-30T17:13:34.622Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105310973532012793",
-    "text": "@weswinder Careful, sending the dot police",
-    "url": "https://x.com/thsottiaux/status/2105310973532012793",
-    "postCreatedAt": "2026-09-30T14:57:05.000Z"
+    "id": "2105344482149613853",
+    "text": "You can enroll here: https://t.co/kjNgDoLCWz",
+    "url": "https://x.com/thsottiaux/status/2105344482149613853",
+    "postCreatedAt": "2026-09-30T17:10:14.000Z"
   },
   "latest": {
     "reset": {
