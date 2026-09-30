@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T01:08:28.106Z",
+  "updatedAt": "2026-09-30T01:13:20.891Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T01:08:28.101Z",
-    "lastSuccessAt": "2026-09-30T01:08:28.101Z",
+    "lastCheckedAt": "2026-09-30T01:13:20.887Z",
+    "lastSuccessAt": "2026-09-30T01:13:20.887Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105102312167575701",
-    "text": "I got community noted, but the note is wrong 😅\n\nYour primary dot is included in your plan and will be available 24/7. If you ask it to create a codex task for you, that one will be drawing usage as usual. But when your dot does work directly, that uses nothing and is all on top of your plans usage. In the future you will be able to increase the speed and allow your dot to have more bandwidth, this will be a paid feature, but the baseline functionality will always just be included in your plan.",
-    "url": "https://x.com/thsottiaux/status/2105102312167575701",
-    "postCreatedAt": "2026-09-30T01:07:56.000Z"
+    "id": "2105102820706058498",
+    "text": "It was so nice to connect with so many of you in person at DevDay. Immaculate vibes from the crowd and fun to see so many build things throughout the day.",
+    "url": "https://x.com/thsottiaux/status/2105102820706058498",
+    "postCreatedAt": "2026-09-30T01:09:58.000Z"
   },
   "latest": {
     "reset": {
