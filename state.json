@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105109005135962589",
-  "lastCheckedAt": "2026-09-30T02:18:26.498Z",
-  "lastSuccessAt": "2026-09-30T02:18:26.498Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 206,
+  "sinceId": "2105120499177230798",
+  "lastCheckedAt": "2026-09-30T02:23:30.704Z",
+  "lastSuccessAt": "2026-09-30T02:23:30.704Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 208,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -567,15 +567,17 @@
     "2105106575866364103": "505b330b559f5bf62a7bb91218b6891a111bb327738953241b4b6225693af068",
     "2105108212219572319": "f3983c34eebc990f7ae4948af1ec90ae70d1121018d7b3b4fac592c8c2b2600c",
     "2105108807693246808": "d2379a00b869acff62a03a07213442a2daeb3c09c52f3973430cb59fa5464cae",
-    "2105109005135962589": "47534618aa7db78861ee849bafbc7c5668440a3fc155661006539dc8e2d3666d"
+    "2105109005135962589": "47534618aa7db78861ee849bafbc7c5668440a3fc155661006539dc8e2d3666d",
+    "2105120226027450685": "64c2bd9cbd9b5bc2a089cdd6425f3a04878b233d62a50f4845ed045a1c3c718c",
+    "2105120499177230798": "1389bb6321c9f67503b8006b5c5c3c1140d5bcf6ec277a3351c74ae884f30feb"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105109005135962589",
-    "canonicalId": "2105109005135962589",
-    "text": "@danshipper @every @sama Always fun working with you!",
-    "createdAt": "2026-09-30T01:34:32.000Z",
-    "url": "https://x.com/thsottiaux/status/2105109005135962589",
+    "id": "2105120499177230798",
+    "canonicalId": "2105120499177230798",
+    "text": "@nnennahacks @MaxHudlberger @OpenAIDevs @OpenAI 👋",
+    "createdAt": "2026-09-30T02:20:12.000Z",
+    "url": "https://x.com/thsottiaux/status/2105120499177230798",
     "media": []
   }
 }
