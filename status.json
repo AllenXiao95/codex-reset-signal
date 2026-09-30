@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T02:28:18.248Z",
+  "updatedAt": "2026-09-30T02:33:24.813Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T02:28:18.243Z",
-    "lastSuccessAt": "2026-09-30T02:28:18.243Z",
-    "lastRunStatus": "checked-2-posts"
+    "lastCheckedAt": "2026-09-30T02:33:24.235Z",
+    "lastSuccessAt": "2026-09-30T02:33:24.235Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105122298646888806",
-    "text": "@cmd_shiftbusra Could barely believe it when Busra made this come to life. Pure talent",
-    "url": "https://x.com/thsottiaux/status/2105122298646888806",
-    "postCreatedAt": "2026-09-30T02:27:21.000Z"
+    "id": "2105122693721010600",
+    "text": "@The_Alex That’s Dippin’",
+    "url": "https://x.com/thsottiaux/status/2105122693721010600",
+    "postCreatedAt": "2026-09-30T02:28:56.000Z"
   },
   "latest": {
     "reset": {
