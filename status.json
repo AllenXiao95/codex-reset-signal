@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T05:58:19.403Z",
+  "updatedAt": "2026-09-30T06:03:22.629Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T05:58:19.389Z",
-    "lastSuccessAt": "2026-09-30T05:58:19.389Z",
+    "lastCheckedAt": "2026-09-30T06:03:22.623Z",
+    "lastSuccessAt": "2026-09-30T06:03:22.623Z",
     "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105175197821399122",
-    "text": "@neuroswish Your mental model is wrong. Your dot might be busy, just like you sometimes are.",
-    "url": "https://x.com/thsottiaux/status/2105175197821399122",
-    "postCreatedAt": "2026-09-30T05:57:34.000Z"
+    "id": "2105176545304436942",
+    "text": "@rennsong Rennie and Benny are unstoppable",
+    "url": "https://x.com/thsottiaux/status/2105176545304436942",
+    "postCreatedAt": "2026-09-30T06:02:55.000Z"
   },
   "latest": {
     "reset": {

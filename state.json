@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105175197821399122",
-  "lastCheckedAt": "2026-09-30T05:58:19.389Z",
-  "lastSuccessAt": "2026-09-30T05:58:19.389Z",
+  "sinceId": "2105176545304436942",
+  "lastCheckedAt": "2026-09-30T06:03:22.623Z",
+  "lastSuccessAt": "2026-09-30T06:03:22.623Z",
   "lastRunStatus": "checked-2-posts",
-  "postsScanned": 217,
+  "postsScanned": 219,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -578,15 +578,17 @@
     "2105172665095069886": "5a3f008f87b9dfcd1efec1c678f0590a4a40f1ef5d8b4761d3031069cd2b73d6",
     "2105173168281506088": "d4b9920e5b8646f91d1a18924b9e515d14112260473433f1a938ca8e03c59b83",
     "2105174607439544669": "b5d097ef54d5d104beba21347791dff9a9f2dca6e4de73a6933d749028c0909a",
-    "2105175197821399122": "bcdaa42ec10e779284c0bf261322df37046800ca3db5c102ac51141419109ff2"
+    "2105175197821399122": "bcdaa42ec10e779284c0bf261322df37046800ca3db5c102ac51141419109ff2",
+    "2105176198469087516": "7d8493650a9d7af647ed89cca20caa4712222a163d20765cea302c0454bfbe92",
+    "2105176545304436942": "c30a39a0cacccc490e12b5c7bdc49b79cd0cc16cd141679b9ee81980a9a5d011"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105175197821399122",
-    "canonicalId": "2105175197821399122",
-    "text": "@neuroswish Your mental model is wrong. Your dot might be busy, just like you sometimes are.",
-    "createdAt": "2026-09-30T05:57:34.000Z",
-    "url": "https://x.com/thsottiaux/status/2105175197821399122",
+    "id": "2105176545304436942",
+    "canonicalId": "2105176545304436942",
+    "text": "@rennsong Rennie and Benny are unstoppable",
+    "createdAt": "2026-09-30T06:02:55.000Z",
+    "url": "https://x.com/thsottiaux/status/2105176545304436942",
     "media": []
   }
 }
