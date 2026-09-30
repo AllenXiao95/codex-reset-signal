@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T05:53:22.667Z",
+  "updatedAt": "2026-09-30T05:58:19.403Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T05:53:22.662Z",
-    "lastSuccessAt": "2026-09-30T05:53:22.662Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-30T05:58:19.389Z",
+    "lastSuccessAt": "2026-09-30T05:58:19.389Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105173168281506088",
-    "text": "@kr0der Yes, check email",
-    "url": "https://x.com/thsottiaux/status/2105173168281506088",
-    "postCreatedAt": "2026-09-30T05:49:30.000Z"
+    "id": "2105175197821399122",
+    "text": "@neuroswish Your mental model is wrong. Your dot might be busy, just like you sometimes are.",
+    "url": "https://x.com/thsottiaux/status/2105175197821399122",
+    "postCreatedAt": "2026-09-30T05:57:34.000Z"
   },
   "latest": {
     "reset": {
