@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T01:28:22.608Z",
+  "updatedAt": "2026-09-30T01:33:18.316Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T01:28:22.604Z",
-    "lastSuccessAt": "2026-09-30T01:28:22.604Z",
+    "lastCheckedAt": "2026-09-30T01:33:18.312Z",
+    "lastSuccessAt": "2026-09-30T01:33:18.312Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105106575866364103",
-    "text": "@tenobrus Why are you shilling OpenAI. Must be paid or something",
-    "url": "https://x.com/thsottiaux/status/2105106575866364103",
-    "postCreatedAt": "2026-09-30T01:24:53.000Z"
+    "id": "2105108212219572319",
+    "text": "@abdellahbrc No delays, all rolled out today. Just a question of how many of you adopt a dot.",
+    "url": "https://x.com/thsottiaux/status/2105108212219572319",
+    "postCreatedAt": "2026-09-30T01:31:23.000Z"
   },
   "latest": {
     "reset": {
