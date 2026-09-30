@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T20:28:26.781Z",
+  "updatedAt": "2026-09-30T20:33:27.108Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T20:28:26.776Z",
-    "lastSuccessAt": "2026-09-30T20:28:26.776Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-09-30T20:33:27.103Z",
+    "lastSuccessAt": "2026-09-30T20:33:27.103Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105394350784237874",
-    "text": "@AbdoKerdawy @OpenAI @OpenAIDevs Agree, except the cursing, be nice to your dot!",
-    "url": "https://x.com/thsottiaux/status/2105394350784237874",
-    "postCreatedAt": "2026-09-30T20:28:24.000Z"
+    "id": "2105395200248156556",
+    "text": "Asked my dot to paint me. After sending me something cartoonish, I asked it to try a bit harder and to find a recent picture of me on the internet. It did better.\n\nBelow video is me clicking through my dot's computer. https://t.co/AutVg2erlh",
+    "url": "https://x.com/thsottiaux/status/2105395200248156556",
+    "postCreatedAt": "2026-09-30T20:31:46.000Z"
   },
   "latest": {
     "reset": {

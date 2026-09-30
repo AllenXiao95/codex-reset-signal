@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105394350784237874",
-  "lastCheckedAt": "2026-09-30T20:28:26.776Z",
-  "lastSuccessAt": "2026-09-30T20:28:26.776Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 231,
+  "sinceId": "2105395200248156556",
+  "lastCheckedAt": "2026-09-30T20:33:27.103Z",
+  "lastSuccessAt": "2026-09-30T20:33:27.103Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 233,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -592,15 +592,25 @@
     "2105344469923221941": "85e8ecadb7e100c1e8f5751ceed2c2b6084b033a582b04ce6abc5514f8eb9f39",
     "2105344482149613853": "dc404d75b872e869725888f792be375de838fe829bb9ae8993c5ced71883b49a",
     "2105348026416140781": "59260f12a004285633bd03768bc0ed730a3da161ad7772c072c23f81acc8b6af",
-    "2105394350784237874": "83acc130ad1183368e34b6f90d71445d97a0272db9ae8d5c651672311bb093c1"
+    "2105394350784237874": "83acc130ad1183368e34b6f90d71445d97a0272db9ae8d5c651672311bb093c1",
+    "2105394405238886517": "8d07b94aba88907e2ad6651f28f9f150315560d826975a3614511fc02982f4ed",
+    "2105395200248156556": "c1db6de3a6a6ecd54b8b49510c0b6a96b736e465f94dfe438d86335bc050ff01"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105394350784237874",
-    "canonicalId": "2105394350784237874",
-    "text": "@AbdoKerdawy @OpenAI @OpenAIDevs Agree, except the cursing, be nice to your dot!",
-    "createdAt": "2026-09-30T20:28:24.000Z",
-    "url": "https://x.com/thsottiaux/status/2105394350784237874",
-    "media": []
+    "id": "2105395200248156556",
+    "canonicalId": "2105395200248156556",
+    "text": "Asked my dot to paint me. After sending me something cartoonish, I asked it to try a bit harder and to find a recent picture of me on the internet. It did better.\n\nBelow video is me clicking through my dot's computer. https://t.co/AutVg2erlh",
+    "createdAt": "2026-09-30T20:31:46.000Z",
+    "url": "https://x.com/thsottiaux/status/2105395200248156556",
+    "media": [
+      {
+        "mediaKey": "2105394980500209665",
+        "type": "video",
+        "url": "https://video.twimg.com/amplify_video/2105394980500209665/vid/avc1/2088x1810/E-2B9FheB4T6z6Be.mp4?tag=29",
+        "previewImageUrl": "https://pbs.twimg.com/amplify_video_thumb/2105394980500209665/img/ipn_-DM5p6pP_UVX.jpg",
+        "altText": null
+      }
+    ]
   }
 }
