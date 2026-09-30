@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-30T00:48:14.609Z",
+  "updatedAt": "2026-09-30T00:53:20.927Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-09-30T00:48:14.605Z",
-    "lastSuccessAt": "2026-09-30T00:48:14.605Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-09-30T00:53:20.924Z",
+    "lastSuccessAt": "2026-09-30T00:53:20.924Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105041299934187874",
-    "text": "Full recap of all the announcements\n\nhttps://t.co/KGwZP3g6UC",
-    "url": "https://x.com/thsottiaux/status/2105041299934187874",
-    "postCreatedAt": "2026-09-29T21:05:30.000Z"
+    "id": "2105097443847332188",
+    "text": "@signulll Transparency is important to me",
+    "url": "https://x.com/thsottiaux/status/2105097443847332188",
+    "postCreatedAt": "2026-09-30T00:48:36.000Z"
   },
   "latest": {
     "reset": {
