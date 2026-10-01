@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T00:33:22.409Z",
+  "updatedAt": "2026-10-01T00:38:19.684Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T00:33:22.405Z",
-    "lastSuccessAt": "2026-10-01T00:33:22.405Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T00:38:19.636Z",
+    "lastSuccessAt": "2026-10-01T00:38:19.636Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105395200248156556",
-    "text": "Asked my dot to paint me. After sending me something cartoonish, I asked it to try a bit harder and to find a recent picture of me on the internet. It did better.\n\nBelow video is me clicking through my dot's computer. https://t.co/AutVg2erlh",
-    "url": "https://x.com/thsottiaux/status/2105395200248156556",
-    "postCreatedAt": "2026-09-30T20:31:46.000Z"
+    "id": "2105456105954648292",
+    "text": "@OdraivK Hi, what can I do for you today",
+    "url": "https://x.com/thsottiaux/status/2105456105954648292",
+    "postCreatedAt": "2026-10-01T00:33:47.000Z"
   },
   "latest": {
     "reset": {
