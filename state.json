@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105718931235508277",
-  "lastCheckedAt": "2026-10-01T18:32:39.541Z",
-  "lastSuccessAt": "2026-10-01T18:32:39.541Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 245,
+  "sinceId": "2105727933579137159",
+  "lastCheckedAt": "2026-10-01T18:37:32.083Z",
+  "lastSuccessAt": "2026-10-01T18:37:32.083Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 246,
   "matches": [
     {
       "version": "167a269c5773a9f503592fe0b0b5df1cde533a29f9c0c1145fa8cac12081882e",
@@ -633,15 +633,16 @@
     "2105689002905153761": "6a2bfd9c2bdf977f1884766159b77e51f02688e2a62da5b0334beeda6a518694",
     "2105689875655897093": "1c1f12e0c04665ad9faba6e706ce43d49cdf9546e55017f275c4d2df8f4165e2",
     "2105718728658993153": "cd3b6d38fde16001b4e161b3c6774967adea32475418a6ee1bc154557865b19f",
-    "2105718931235508277": "d888041f52b8a264d80decb8c4c9571ece15c80157dbabe05180807b9228e3db"
+    "2105718931235508277": "d888041f52b8a264d80decb8c4c9571ece15c80157dbabe05180807b9228e3db",
+    "2105727933579137159": "643604c2cea109ff310502feb25066096085b2c798d4b1c132008ffa2f595c0d"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105718931235508277",
-    "canonicalId": "2105718931235508277",
-    "text": "@midotalks He gets it",
-    "createdAt": "2026-10-01T17:58:10.000Z",
-    "url": "https://x.com/thsottiaux/status/2105718931235508277",
+    "id": "2105727933579137159",
+    "canonicalId": "2105727933579137159",
+    "text": "@vigyso Good thread on details of Sign in with ChatGPT and how the subscription can be used in my partner products",
+    "createdAt": "2026-10-01T18:33:56.000Z",
+    "url": "https://x.com/thsottiaux/status/2105727933579137159",
     "media": []
   }
 }

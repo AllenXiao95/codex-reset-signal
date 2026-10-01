@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T18:32:39.546Z",
+  "updatedAt": "2026-10-01T18:37:32.088Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T18:32:39.541Z",
-    "lastSuccessAt": "2026-10-01T18:32:39.541Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T18:37:32.083Z",
+    "lastSuccessAt": "2026-10-01T18:37:32.083Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105718931235508277",
-    "text": "@midotalks He gets it",
-    "url": "https://x.com/thsottiaux/status/2105718931235508277",
-    "postCreatedAt": "2026-10-01T17:58:10.000Z"
+    "id": "2105727933579137159",
+    "text": "@vigyso Good thread on details of Sign in with ChatGPT and how the subscription can be used in my partner products",
+    "url": "https://x.com/thsottiaux/status/2105727933579137159",
+    "postCreatedAt": "2026-10-01T18:33:56.000Z"
   },
   "latest": {
     "reset": {
