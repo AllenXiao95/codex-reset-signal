@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T17:57:34.268Z",
+  "updatedAt": "2026-10-01T18:03:07.491Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T17:57:34.262Z",
-    "lastSuccessAt": "2026-10-01T17:57:34.262Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T18:03:07.474Z",
+    "lastSuccessAt": "2026-10-01T18:03:07.474Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105689875655897093",
-    "text": "@The_Alex We’re going to fix this but it’s a bit funny as your dot literally has to decide whether to pick up or not and sometimes it might just be busy with something else 👀",
-    "url": "https://x.com/thsottiaux/status/2105689875655897093",
-    "postCreatedAt": "2026-10-01T16:02:42.000Z"
+    "id": "2105718931235508277",
+    "text": "@midotalks He gets it",
+    "url": "https://x.com/thsottiaux/status/2105718931235508277",
+    "postCreatedAt": "2026-10-01T17:58:10.000Z"
   },
   "latest": {
     "reset": {
