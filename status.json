@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T15:57:39.797Z",
+  "updatedAt": "2026-10-01T16:03:11.040Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T15:57:39.683Z",
-    "lastSuccessAt": "2026-10-01T15:57:39.683Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T16:03:11.036Z",
+    "lastSuccessAt": "2026-10-01T16:03:11.036Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105672058269212820",
-    "text": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
-    "url": "https://x.com/thsottiaux/status/2105672058269212820",
-    "postCreatedAt": "2026-10-01T14:51:54.000Z"
+    "id": "2105689875655897093",
+    "text": "@The_Alex We’re going to fix this but it’s a bit funny as your dot literally has to decide whether to pick up or not and sometimes it might just be busy with something else 👀",
+    "url": "https://x.com/thsottiaux/status/2105689875655897093",
+    "postCreatedAt": "2026-10-01T16:02:42.000Z"
   },
   "latest": {
     "reset": {

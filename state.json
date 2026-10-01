@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105672058269212820",
-  "lastCheckedAt": "2026-10-01T15:57:39.683Z",
-  "lastSuccessAt": "2026-10-01T15:57:39.683Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 241,
+  "sinceId": "2105689875655897093",
+  "lastCheckedAt": "2026-10-01T16:03:11.036Z",
+  "lastSuccessAt": "2026-10-01T16:03:11.036Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 243,
   "matches": [
     {
       "version": "167a269c5773a9f503592fe0b0b5df1cde533a29f9c0c1145fa8cac12081882e",
@@ -629,15 +629,17 @@
     "2105519686280790252": "26483251cb928009acf384c91f2d544fe7918fd760745adb03507a01c0ba0fad",
     "2105522533139452359": "0d87331efee515368cc94083bb34d2a991ed735dcbe93cc2f1132bd815e017a2",
     "2105670256094326849": "4a5852fc176f960e9c92a18c869fdb867e84341d9c817188c5253b05d040876d",
-    "2105672058269212820": "167a269c5773a9f503592fe0b0b5df1cde533a29f9c0c1145fa8cac12081882e"
+    "2105672058269212820": "167a269c5773a9f503592fe0b0b5df1cde533a29f9c0c1145fa8cac12081882e",
+    "2105689002905153761": "6a2bfd9c2bdf977f1884766159b77e51f02688e2a62da5b0334beeda6a518694",
+    "2105689875655897093": "1c1f12e0c04665ad9faba6e706ce43d49cdf9546e55017f275c4d2df8f4165e2"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105672058269212820",
-    "canonicalId": "2105672058269212820",
-    "text": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
-    "createdAt": "2026-10-01T14:51:54.000Z",
-    "url": "https://x.com/thsottiaux/status/2105672058269212820",
+    "id": "2105689875655897093",
+    "canonicalId": "2105689875655897093",
+    "text": "@The_Alex We’re going to fix this but it’s a bit funny as your dot literally has to decide whether to pick up or not and sometimes it might just be busy with something else 👀",
+    "createdAt": "2026-10-01T16:02:42.000Z",
+    "url": "https://x.com/thsottiaux/status/2105689875655897093",
     "media": []
   }
 }
