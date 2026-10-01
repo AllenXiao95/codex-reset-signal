@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T14:43:29.192Z",
+  "updatedAt": "2026-10-01T14:48:19.134Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T14:43:29.188Z",
-    "lastSuccessAt": "2026-10-01T14:43:29.188Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T14:48:19.129Z",
+    "lastSuccessAt": "2026-10-01T14:48:19.129Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105522533139452359",
-    "text": "@jxnlco I was going to say, last year. But no… it was this year.",
-    "url": "https://x.com/thsottiaux/status/2105522533139452359",
-    "postCreatedAt": "2026-10-01T04:57:45.000Z"
+    "id": "2105670256094326849",
+    "text": "@_simonsmith We built dots to help get real work done. Lots to come that will improve them further over the days and weeks.",
+    "url": "https://x.com/thsottiaux/status/2105670256094326849",
+    "postCreatedAt": "2026-10-01T14:44:45.000Z"
   },
   "latest": {
     "reset": {
