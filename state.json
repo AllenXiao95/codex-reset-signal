@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105519686280790252",
-  "lastCheckedAt": "2026-10-01T04:53:21.248Z",
-  "lastSuccessAt": "2026-10-01T04:53:21.248Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 238,
+  "sinceId": "2105522533139452359",
+  "lastCheckedAt": "2026-10-01T04:58:20.434Z",
+  "lastSuccessAt": "2026-10-01T04:58:20.434Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 239,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -599,15 +599,16 @@
     "2105464274747527543": "c702d80f6cafdd4c4acdd5aa2eb7b7e0939d6b4080a5acad6ee7d8c2708416d7",
     "2105489877727064272": "d7599a59dde41f51191d377c38469de21de2728047f57247a86950724a736054",
     "2105519215092584786": "a32abb5412a4708c46647dcd6dcd5e6e1def994a31b1d08289bb1e36e98fafe1",
-    "2105519686280790252": "26483251cb928009acf384c91f2d544fe7918fd760745adb03507a01c0ba0fad"
+    "2105519686280790252": "26483251cb928009acf384c91f2d544fe7918fd760745adb03507a01c0ba0fad",
+    "2105522533139452359": "0d87331efee515368cc94083bb34d2a991ed735dcbe93cc2f1132bd815e017a2"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105519686280790252",
-    "canonicalId": "2105519686280790252",
-    "text": "@imjustnewatai For the Pro 200 shenanigans",
-    "createdAt": "2026-10-01T04:46:26.000Z",
-    "url": "https://x.com/thsottiaux/status/2105519686280790252",
+    "id": "2105522533139452359",
+    "canonicalId": "2105522533139452359",
+    "text": "@jxnlco I was going to say, last year. But no… it was this year.",
+    "createdAt": "2026-10-01T04:57:45.000Z",
+    "url": "https://x.com/thsottiaux/status/2105522533139452359",
     "media": []
   }
 }

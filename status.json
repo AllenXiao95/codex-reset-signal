@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T04:53:21.252Z",
+  "updatedAt": "2026-10-01T04:58:20.438Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T04:53:21.248Z",
-    "lastSuccessAt": "2026-10-01T04:53:21.248Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T04:58:20.434Z",
+    "lastSuccessAt": "2026-10-01T04:58:20.434Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105519686280790252",
-    "text": "@imjustnewatai For the Pro 200 shenanigans",
-    "url": "https://x.com/thsottiaux/status/2105519686280790252",
-    "postCreatedAt": "2026-10-01T04:46:26.000Z"
+    "id": "2105522533139452359",
+    "text": "@jxnlco I was going to say, last year. But no… it was this year.",
+    "url": "https://x.com/thsottiaux/status/2105522533139452359",
+    "postCreatedAt": "2026-10-01T04:57:45.000Z"
   },
   "latest": {
     "reset": {
