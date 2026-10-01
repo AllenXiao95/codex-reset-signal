@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105670256094326849",
-  "lastCheckedAt": "2026-10-01T14:48:19.129Z",
-  "lastSuccessAt": "2026-10-01T14:48:19.129Z",
+  "sinceId": "2105672058269212820",
+  "lastCheckedAt": "2026-10-01T14:53:35.381Z",
+  "lastSuccessAt": "2026-10-01T14:53:35.381Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 240,
+  "postsScanned": 241,
   "matches": [
+    {
+      "version": "167a269c5773a9f503592fe0b0b5df1cde533a29f9c0c1145fa8cac12081882e",
+      "id": "2105672058269212820",
+      "canonicalId": "2105672058269212820",
+      "text": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
+      "createdAt": "2026-10-01T14:51:54.000Z",
+      "url": "https://x.com/thsottiaux/status/2105672058269212820",
+      "media": [],
+      "detectedAt": "2026-10-01T14:53:35.381Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-01T14:53:35.384Z"
+    },
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
       "id": "2103963215885701493",
@@ -601,15 +629,16 @@
     "2105519215092584786": "a32abb5412a4708c46647dcd6dcd5e6e1def994a31b1d08289bb1e36e98fafe1",
     "2105519686280790252": "26483251cb928009acf384c91f2d544fe7918fd760745adb03507a01c0ba0fad",
     "2105522533139452359": "0d87331efee515368cc94083bb34d2a991ed735dcbe93cc2f1132bd815e017a2",
-    "2105670256094326849": "4a5852fc176f960e9c92a18c869fdb867e84341d9c817188c5253b05d040876d"
+    "2105670256094326849": "4a5852fc176f960e9c92a18c869fdb867e84341d9c817188c5253b05d040876d",
+    "2105672058269212820": "167a269c5773a9f503592fe0b0b5df1cde533a29f9c0c1145fa8cac12081882e"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105670256094326849",
-    "canonicalId": "2105670256094326849",
-    "text": "@_simonsmith We built dots to help get real work done. Lots to come that will improve them further over the days and weeks.",
-    "createdAt": "2026-10-01T14:44:45.000Z",
-    "url": "https://x.com/thsottiaux/status/2105670256094326849",
+    "id": "2105672058269212820",
+    "canonicalId": "2105672058269212820",
+    "text": "Because usage on your primary dot is virtually unlimited at the moment, I can’t really give a reset. I need to come up with something new fast.",
+    "createdAt": "2026-10-01T14:51:54.000Z",
+    "url": "https://x.com/thsottiaux/status/2105672058269212820",
     "media": []
   }
 }
