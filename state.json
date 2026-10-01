@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105456105954648292",
-  "lastCheckedAt": "2026-10-01T01:03:21.217Z",
-  "lastSuccessAt": "2026-10-01T01:03:21.217Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 234,
+  "sinceId": "2105464274747527543",
+  "lastCheckedAt": "2026-10-01T01:08:19.281Z",
+  "lastSuccessAt": "2026-10-01T01:08:19.281Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 235,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -595,15 +595,16 @@
     "2105394350784237874": "83acc130ad1183368e34b6f90d71445d97a0272db9ae8d5c651672311bb093c1",
     "2105394405238886517": "8d07b94aba88907e2ad6651f28f9f150315560d826975a3614511fc02982f4ed",
     "2105395200248156556": "c1db6de3a6a6ecd54b8b49510c0b6a96b736e465f94dfe438d86335bc050ff01",
-    "2105456105954648292": "e51bf1f1d7ec27a60745915f0804426bdd411f212de03149c83185f7969eab64"
+    "2105456105954648292": "e51bf1f1d7ec27a60745915f0804426bdd411f212de03149c83185f7969eab64",
+    "2105464274747527543": "c702d80f6cafdd4c4acdd5aa2eb7b7e0939d6b4080a5acad6ee7d8c2708416d7"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105456105954648292",
-    "canonicalId": "2105456105954648292",
-    "text": "@OdraivK Hi, what can I do for you today",
-    "createdAt": "2026-10-01T00:33:47.000Z",
-    "url": "https://x.com/thsottiaux/status/2105456105954648292",
+    "id": "2105464274747527543",
+    "canonicalId": "2105464274747527543",
+    "text": "GPT-6.1 Sol is our most demanded model pretty much ever both across both the API and subscriptions. \n\nWithin ChatGPT & Codex, we were under heavy load, but have brough more capacity online and the speed should get much better in the coming hours, reaching almost twice the speed compared to what we served yesterday.",
+    "createdAt": "2026-10-01T01:06:15.000Z",
+    "url": "https://x.com/thsottiaux/status/2105464274747527543",
     "media": []
   }
 }
