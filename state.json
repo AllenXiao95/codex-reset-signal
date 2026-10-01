@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105489877727064272",
-  "lastCheckedAt": "2026-10-01T04:43:22.423Z",
-  "lastSuccessAt": "2026-10-01T04:43:22.423Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 236,
+  "sinceId": "2105519686280790252",
+  "lastCheckedAt": "2026-10-01T04:48:22.720Z",
+  "lastSuccessAt": "2026-10-01T04:48:22.720Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 238,
   "matches": [
     {
       "version": "6318f9d8a246e13f79341d9899d5506a36c826782b7fa20a328fe7948e26e8a0",
@@ -597,15 +597,17 @@
     "2105395200248156556": "c1db6de3a6a6ecd54b8b49510c0b6a96b736e465f94dfe438d86335bc050ff01",
     "2105456105954648292": "e51bf1f1d7ec27a60745915f0804426bdd411f212de03149c83185f7969eab64",
     "2105464274747527543": "c702d80f6cafdd4c4acdd5aa2eb7b7e0939d6b4080a5acad6ee7d8c2708416d7",
-    "2105489877727064272": "d7599a59dde41f51191d377c38469de21de2728047f57247a86950724a736054"
+    "2105489877727064272": "d7599a59dde41f51191d377c38469de21de2728047f57247a86950724a736054",
+    "2105519215092584786": "a32abb5412a4708c46647dcd6dcd5e6e1def994a31b1d08289bb1e36e98fafe1",
+    "2105519686280790252": "26483251cb928009acf384c91f2d544fe7918fd760745adb03507a01c0ba0fad"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105489877727064272",
-    "canonicalId": "2105489877727064272",
-    "text": "@_bgian @OpenAI Thanks for playing",
-    "createdAt": "2026-10-01T02:47:59.000Z",
-    "url": "https://x.com/thsottiaux/status/2105489877727064272",
+    "id": "2105519686280790252",
+    "canonicalId": "2105519686280790252",
+    "text": "@imjustnewatai For the Pro 200 shenanigans",
+    "createdAt": "2026-10-01T04:46:26.000Z",
+    "url": "https://x.com/thsottiaux/status/2105519686280790252",
     "media": []
   }
 }

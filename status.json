@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T04:43:22.562Z",
+  "updatedAt": "2026-10-01T04:48:22.724Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T04:43:22.423Z",
-    "lastSuccessAt": "2026-10-01T04:43:22.423Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T04:48:22.720Z",
+    "lastSuccessAt": "2026-10-01T04:48:22.720Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2105489877727064272",
-    "text": "@_bgian @OpenAI Thanks for playing",
-    "url": "https://x.com/thsottiaux/status/2105489877727064272",
-    "postCreatedAt": "2026-10-01T02:47:59.000Z"
+    "id": "2105519686280790252",
+    "text": "@imjustnewatai For the Pro 200 shenanigans",
+    "url": "https://x.com/thsottiaux/status/2105519686280790252",
+    "postCreatedAt": "2026-10-01T04:46:26.000Z"
   },
   "latest": {
     "reset": {
