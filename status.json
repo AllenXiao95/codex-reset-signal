@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-01T02:43:26.807Z",
+  "updatedAt": "2026-10-01T02:48:24.436Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-01T02:43:26.770Z",
-    "lastSuccessAt": "2026-10-01T02:43:26.770Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-01T02:48:24.143Z",
+    "lastSuccessAt": "2026-10-01T02:48:24.143Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105464274747527543",
-    "text": "GPT-6.1 Sol is our most demanded model pretty much ever both across both the API and subscriptions. \n\nWithin ChatGPT & Codex, we were under heavy load, but have brough more capacity online and the speed should get much better in the coming hours, reaching almost twice the speed compared to what we served yesterday.",
-    "url": "https://x.com/thsottiaux/status/2105464274747527543",
-    "postCreatedAt": "2026-10-01T01:06:15.000Z"
+    "id": "2105489877727064272",
+    "text": "@_bgian @OpenAI Thanks for playing",
+    "url": "https://x.com/thsottiaux/status/2105489877727064272",
+    "postCreatedAt": "2026-10-01T02:47:59.000Z"
   },
   "latest": {
     "reset": {
