@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105862010521219406",
-  "lastCheckedAt": "2026-10-02T03:27:27.999Z",
-  "lastSuccessAt": "2026-10-02T03:27:27.999Z",
+  "sinceId": "2105863294267560169",
+  "lastCheckedAt": "2026-10-02T03:32:26.594Z",
+  "lastSuccessAt": "2026-10-02T03:32:26.594Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 251,
+  "postsScanned": 252,
   "matches": [
     {
       "version": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
@@ -665,23 +665,16 @@
     "2105843550936302055": "be4ef67e6234fa2d1e56397b05a89406e4e32dc58dbea9ce3c5df2c5b6e23808",
     "2105843926221660585": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
     "2105844753522938214": "57a754146e42496c71069641f06419f292b6dcf6ba78516de25471889709916d",
-    "2105862010521219406": "c1af6ce59169319b6d2376f4a18d54ec00a47ce9d966697389e924515c982549"
+    "2105862010521219406": "c1af6ce59169319b6d2376f4a18d54ec00a47ce9d966697389e924515c982549",
+    "2105863294267560169": "65814c6e837a6906e7a57795247cc6b9a11d7db60737e89754ff046d8113e790"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105862010521219406",
-    "canonicalId": "2105862010521219406",
-    "text": "You can ask your dot to \"create a pet and set it as your avatar\". It can be based on an idea, an image or pretty much anything. Here is my dot https://t.co/OhwcfuwfQJ",
-    "createdAt": "2026-10-02T03:26:42.000Z",
-    "url": "https://x.com/thsottiaux/status/2105862010521219406",
-    "media": [
-      {
-        "mediaKey": "2105861768027521024",
-        "type": "video",
-        "url": "https://video.twimg.com/amplify_video/2105861768027521024/vid/avc1/1680x1442/dm7kReZpStIzuHZV.mp4?tag=29",
-        "previewImageUrl": "https://pbs.twimg.com/amplify_video_thumb/2105861768027521024/img/rHIlvxph9WJEkWXF.jpg",
-        "altText": null
-      }
-    ]
+    "id": "2105863294267560169",
+    "canonicalId": "2105863294267560169",
+    "text": "@dextune Please bask",
+    "createdAt": "2026-10-02T03:31:49.000Z",
+    "url": "https://x.com/thsottiaux/status/2105863294267560169",
+    "media": []
   }
 }
