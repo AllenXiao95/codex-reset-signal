@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105843926221660585",
-  "lastCheckedAt": "2026-10-02T02:17:26.113Z",
-  "lastSuccessAt": "2026-10-02T02:17:26.113Z",
-  "lastRunStatus": "failed-1",
-  "postsScanned": 249,
+  "sinceId": "2105844753522938214",
+  "lastCheckedAt": "2026-10-02T02:27:32.023Z",
+  "lastSuccessAt": "2026-10-02T02:27:32.023Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 250,
   "matches": [
     {
       "version": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
@@ -663,15 +663,16 @@
     "2105727933579137159": "643604c2cea109ff310502feb25066096085b2c798d4b1c132008ffa2f595c0d",
     "2105828364879876207": "74c85f0dda4c2262d5da0c6b3b008a1cd655b0b1fd689579b901a1284dfa63b6",
     "2105843550936302055": "be4ef67e6234fa2d1e56397b05a89406e4e32dc58dbea9ce3c5df2c5b6e23808",
-    "2105843926221660585": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884"
+    "2105843926221660585": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
+    "2105844753522938214": "57a754146e42496c71069641f06419f292b6dcf6ba78516de25471889709916d"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105843926221660585",
-    "canonicalId": "2105843926221660585",
-    "text": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
-    "createdAt": "2026-10-02T02:14:51.000Z",
-    "url": "https://x.com/thsottiaux/status/2105843926221660585",
+    "id": "2105844753522938214",
+    "canonicalId": "2105844753522938214",
+    "text": "@ziwenxu_ Sir Dot Claw",
+    "createdAt": "2026-10-02T02:18:08.000Z",
+    "url": "https://x.com/thsottiaux/status/2105844753522938214",
     "media": []
   }
 }

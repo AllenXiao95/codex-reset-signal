@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T02:22:26.616Z",
+  "updatedAt": "2026-10-02T02:27:32.029Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-02T02:17:26.113Z",
-    "lastSuccessAt": "2026-10-02T02:17:26.113Z",
-    "lastRunStatus": "failed-1"
+    "lastCheckedAt": "2026-10-02T02:27:32.023Z",
+    "lastSuccessAt": "2026-10-02T02:27:32.023Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105843926221660585",
-    "text": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
-    "url": "https://x.com/thsottiaux/status/2105843926221660585",
-    "postCreatedAt": "2026-10-02T02:14:51.000Z"
+    "id": "2105844753522938214",
+    "text": "@ziwenxu_ Sir Dot Claw",
+    "url": "https://x.com/thsottiaux/status/2105844753522938214",
+    "postCreatedAt": "2026-10-02T02:18:08.000Z"
   },
   "latest": {
     "reset": {
