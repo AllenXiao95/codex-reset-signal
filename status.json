@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T03:32:26.598Z",
+  "updatedAt": "2026-10-02T03:37:27.207Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-02T03:32:26.594Z",
-    "lastSuccessAt": "2026-10-02T03:32:26.594Z",
+    "lastCheckedAt": "2026-10-02T03:37:27.201Z",
+    "lastSuccessAt": "2026-10-02T03:37:27.201Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105863294267560169",
-    "text": "@dextune Please bask",
-    "url": "https://x.com/thsottiaux/status/2105863294267560169",
-    "postCreatedAt": "2026-10-02T03:31:49.000Z"
+    "id": "2105863620433453166",
+    "text": "@hugospdx Wrong strategy?",
+    "url": "https://x.com/thsottiaux/status/2105863620433453166",
+    "postCreatedAt": "2026-10-02T03:33:06.000Z"
   },
   "latest": {
     "reset": {
