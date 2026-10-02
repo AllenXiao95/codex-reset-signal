@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105727933579137159",
-  "lastCheckedAt": "2026-10-02T01:12:28.008Z",
-  "lastSuccessAt": "2026-10-02T01:12:28.008Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 246,
+  "sinceId": "2105828364879876207",
+  "lastCheckedAt": "2026-10-02T01:17:22.517Z",
+  "lastSuccessAt": "2026-10-02T01:17:22.517Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 247,
   "matches": [
     {
       "version": "167a269c5773a9f503592fe0b0b5df1cde533a29f9c0c1145fa8cac12081882e",
@@ -634,15 +634,16 @@
     "2105689875655897093": "1c1f12e0c04665ad9faba6e706ce43d49cdf9546e55017f275c4d2df8f4165e2",
     "2105718728658993153": "cd3b6d38fde16001b4e161b3c6774967adea32475418a6ee1bc154557865b19f",
     "2105718931235508277": "d888041f52b8a264d80decb8c4c9571ece15c80157dbabe05180807b9228e3db",
-    "2105727933579137159": "643604c2cea109ff310502feb25066096085b2c798d4b1c132008ffa2f595c0d"
+    "2105727933579137159": "643604c2cea109ff310502feb25066096085b2c798d4b1c132008ffa2f595c0d",
+    "2105828364879876207": "74c85f0dda4c2262d5da0c6b3b008a1cd655b0b1fd689579b901a1284dfa63b6"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105727933579137159",
-    "canonicalId": "2105727933579137159",
-    "text": "@vigyso Good thread on details of Sign in with ChatGPT and how the subscription can be used in my partner products",
-    "createdAt": "2026-10-01T18:33:56.000Z",
-    "url": "https://x.com/thsottiaux/status/2105727933579137159",
+    "id": "2105828364879876207",
+    "canonicalId": "2105828364879876207",
+    "text": "@QuinnyPig And it will get better every day",
+    "createdAt": "2026-10-02T01:13:01.000Z",
+    "url": "https://x.com/thsottiaux/status/2105828364879876207",
     "media": []
   }
 }

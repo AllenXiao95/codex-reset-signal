@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T01:12:28.013Z",
+  "updatedAt": "2026-10-02T01:17:22.522Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-02T01:12:28.008Z",
-    "lastSuccessAt": "2026-10-02T01:12:28.008Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-02T01:17:22.517Z",
+    "lastSuccessAt": "2026-10-02T01:17:22.517Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105727933579137159",
-    "text": "@vigyso Good thread on details of Sign in with ChatGPT and how the subscription can be used in my partner products",
-    "url": "https://x.com/thsottiaux/status/2105727933579137159",
-    "postCreatedAt": "2026-10-01T18:33:56.000Z"
+    "id": "2105828364879876207",
+    "text": "@QuinnyPig And it will get better every day",
+    "url": "https://x.com/thsottiaux/status/2105828364879876207",
+    "postCreatedAt": "2026-10-02T01:13:01.000Z"
   },
   "latest": {
     "reset": {
