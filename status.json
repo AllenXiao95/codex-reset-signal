@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T15:37:31.748Z",
+  "updatedAt": "2026-10-02T15:42:37.766Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-02T15:37:31.743Z",
-    "lastSuccessAt": "2026-10-02T15:37:31.743Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-02T15:42:37.743Z",
+    "lastSuccessAt": "2026-10-02T15:42:37.743Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105899634032025682",
-    "text": "Down to 6110 unread from the over 9000 unread emails just earlier. Will get to inbox zero with clean filters within the next 48 hours. Dot has accepted the challenge.",
-    "url": "https://x.com/thsottiaux/status/2105899634032025682",
-    "postCreatedAt": "2026-10-02T05:56:13.000Z"
+    "id": "2106046594277954010",
+    "text": "@koltregaskes Team is working on most of these, stay tuned!",
+    "url": "https://x.com/thsottiaux/status/2106046594277954010",
+    "postCreatedAt": "2026-10-02T15:40:11.000Z"
   },
   "latest": {
     "reset": {
