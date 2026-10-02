@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106046594277954010",
-  "lastCheckedAt": "2026-10-02T21:17:32.567Z",
-  "lastSuccessAt": "2026-10-02T21:17:32.567Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 255,
+  "sinceId": "2106131810921136451",
+  "lastCheckedAt": "2026-10-02T21:22:29.062Z",
+  "lastSuccessAt": "2026-10-02T21:22:29.062Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 256,
   "matches": [
+    {
+      "version": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
+      "id": "2106131810921136451",
+      "canonicalId": "2106131810921136451",
+      "text": "Reset all propagated. Enjoy.",
+      "createdAt": "2026-10-02T21:18:48.000Z",
+      "url": "https://x.com/thsottiaux/status/2106131810921136451",
+      "media": [],
+      "detectedAt": "2026-10-02T21:22:29.062Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "completed",
+          "evidence": "Reset all propagated",
+          "time": {
+            "kind": "observed",
+            "start": "2026-10-02T21:18:48.000Z",
+            "end": null,
+            "evidence": "Reset all propagated",
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-02T21:22:29.235Z"
+    },
     {
       "version": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
       "id": "2105843926221660585",
@@ -669,15 +697,16 @@
     "2105863294267560169": "65814c6e837a6906e7a57795247cc6b9a11d7db60737e89754ff046d8113e790",
     "2105863620433453166": "42b5440076de7e93bb927f97fe7e53d2c2cb7e884a20f80babb0dac4f8fbd236",
     "2105899634032025682": "69cde66200dd895a5a64b32587f2a5a4de3cc94d260dd9f0fce342f96f6118ec",
-    "2106046594277954010": "b166dfe94f606abcc95397f7fab6541c899f0dfc919fc05644844c0df9da934a"
+    "2106046594277954010": "b166dfe94f606abcc95397f7fab6541c899f0dfc919fc05644844c0df9da934a",
+    "2106131810921136451": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106046594277954010",
-    "canonicalId": "2106046594277954010",
-    "text": "@koltregaskes Team is working on most of these, stay tuned!",
-    "createdAt": "2026-10-02T15:40:11.000Z",
-    "url": "https://x.com/thsottiaux/status/2106046594277954010",
+    "id": "2106131810921136451",
+    "canonicalId": "2106131810921136451",
+    "text": "Reset all propagated. Enjoy.",
+    "createdAt": "2026-10-02T21:18:48.000Z",
+    "url": "https://x.com/thsottiaux/status/2106131810921136451",
     "media": []
   }
 }

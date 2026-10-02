@@ -1,38 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T21:17:32.579Z",
+  "updatedAt": "2026-10-02T21:22:29.334Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-02T21:17:32.567Z",
-    "lastSuccessAt": "2026-10-02T21:17:32.567Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-02T21:22:29.062Z",
+    "lastSuccessAt": "2026-10-02T21:22:29.062Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106046594277954010",
-    "text": "@koltregaskes Team is working on most of these, stay tuned!",
-    "url": "https://x.com/thsottiaux/status/2106046594277954010",
-    "postCreatedAt": "2026-10-02T15:40:11.000Z"
+    "id": "2106131810921136451",
+    "text": "Reset all propagated. Enjoy.",
+    "url": "https://x.com/thsottiaux/status/2106131810921136451",
+    "postCreatedAt": "2026-10-02T21:18:48.000Z"
   },
   "latest": {
     "reset": {
-      "version": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
-      "id": "2105843926221660585",
-      "text": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
-      "url": "https://x.com/thsottiaux/status/2105843926221660585",
-      "postCreatedAt": "2026-10-02T02:14:51.000Z",
-      "detectedAt": "2026-10-02T02:17:26.112Z",
+      "version": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
+      "id": "2106131810921136451",
+      "text": "Reset all propagated. Enjoy.",
+      "url": "https://x.com/thsottiaux/status/2106131810921136451",
+      "postCreatedAt": "2026-10-02T21:18:48.000Z",
+      "detectedAt": "2026-10-02T21:22:29.062Z",
       "events": [
         {
           "type": "reset",
-          "status": "scheduled",
-          "evidence": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts",
+          "status": "completed",
+          "evidence": "Reset all propagated",
           "time": {
-            "kind": "exact",
-            "start": "2026-10-02T18:00:00.000Z",
+            "kind": "observed",
+            "start": "2026-10-02T21:18:48.000Z",
             "end": null,
-            "evidence": "tomorrow 10am PST"
+            "evidence": "Reset all propagated",
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
           }
         }
       ],
@@ -66,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
+      "id": "2106131810921136451",
+      "text": "Reset all propagated. Enjoy.",
+      "url": "https://x.com/thsottiaux/status/2106131810921136451",
+      "postCreatedAt": "2026-10-02T21:18:48.000Z",
+      "detectedAt": "2026-10-02T21:22:29.062Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "completed",
+          "evidence": "Reset all propagated",
+          "time": {
+            "kind": "observed",
+            "start": "2026-10-02T21:18:48.000Z",
+            "end": null,
+            "evidence": "Reset all propagated",
+            "note": "使用公告发布时间；不代表账户实际到账时刻"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
       "id": "2105843926221660585",
