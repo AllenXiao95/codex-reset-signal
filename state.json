@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2105863620433453166",
-  "lastCheckedAt": "2026-10-02T05:52:27.313Z",
-  "lastSuccessAt": "2026-10-02T05:52:27.313Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 253,
+  "sinceId": "2105899634032025682",
+  "lastCheckedAt": "2026-10-02T05:57:32.787Z",
+  "lastSuccessAt": "2026-10-02T05:57:32.787Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 254,
   "matches": [
     {
       "version": "b02c185e6d38a85aef44055aeecbb23e288971261e952c941d61762839440884",
@@ -667,15 +667,16 @@
     "2105844753522938214": "57a754146e42496c71069641f06419f292b6dcf6ba78516de25471889709916d",
     "2105862010521219406": "c1af6ce59169319b6d2376f4a18d54ec00a47ce9d966697389e924515c982549",
     "2105863294267560169": "65814c6e837a6906e7a57795247cc6b9a11d7db60737e89754ff046d8113e790",
-    "2105863620433453166": "42b5440076de7e93bb927f97fe7e53d2c2cb7e884a20f80babb0dac4f8fbd236"
+    "2105863620433453166": "42b5440076de7e93bb927f97fe7e53d2c2cb7e884a20f80babb0dac4f8fbd236",
+    "2105899634032025682": "69cde66200dd895a5a64b32587f2a5a4de3cc94d260dd9f0fce342f96f6118ec"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2105863620433453166",
-    "canonicalId": "2105863620433453166",
-    "text": "@hugospdx Wrong strategy?",
-    "createdAt": "2026-10-02T03:33:06.000Z",
-    "url": "https://x.com/thsottiaux/status/2105863620433453166",
+    "id": "2105899634032025682",
+    "canonicalId": "2105899634032025682",
+    "text": "Down to 6110 unread from the over 9000 unread emails just earlier. Will get to inbox zero with clean filters within the next 48 hours. Dot has accepted the challenge.",
+    "createdAt": "2026-10-02T05:56:13.000Z",
+    "url": "https://x.com/thsottiaux/status/2105899634032025682",
     "media": []
   }
 }
