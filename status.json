@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-02T03:22:38.688Z",
+  "updatedAt": "2026-10-02T03:27:28.004Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-02T03:22:38.683Z",
-    "lastSuccessAt": "2026-10-02T03:22:38.683Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-02T03:27:27.999Z",
+    "lastSuccessAt": "2026-10-02T03:27:27.999Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2105844753522938214",
-    "text": "@ziwenxu_ Sir Dot Claw",
-    "url": "https://x.com/thsottiaux/status/2105844753522938214",
-    "postCreatedAt": "2026-10-02T02:18:08.000Z"
+    "id": "2105862010521219406",
+    "text": "You can ask your dot to \"create a pet and set it as your avatar\". It can be based on an idea, an image or pretty much anything. Here is my dot https://t.co/OhwcfuwfQJ",
+    "url": "https://x.com/thsottiaux/status/2105862010521219406",
+    "postCreatedAt": "2026-10-02T03:26:42.000Z"
   },
   "latest": {
     "reset": {
