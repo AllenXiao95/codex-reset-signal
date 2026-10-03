@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106253534132089110",
-  "lastCheckedAt": "2026-10-03T05:27:28.115Z",
-  "lastSuccessAt": "2026-10-03T05:27:28.115Z",
+  "sinceId": "2106255580772061332",
+  "lastCheckedAt": "2026-10-03T05:32:29.944Z",
+  "lastSuccessAt": "2026-10-03T05:32:29.944Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 265,
+  "postsScanned": 266,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -733,15 +733,16 @@
     "2106239912932692085": "ea534537611ab5f47a6874e8f64f95b8f0886097d1a8a68c066b4ecbc4261bdd",
     "2106250124863389920": "e6ec211d2463e5ef0632b3275eaf6fed2a8cf1c36c6dba08ce2eab5438e44e12",
     "2106252868307271752": "5a320ed6c1c759986388d87bacc92ec68edc80225b5766ab672e3749814f5141",
-    "2106253534132089110": "6492fe57923153ae7785eb81b4174cd2978e428924316c41ef53db099654376a"
+    "2106253534132089110": "6492fe57923153ae7785eb81b4174cd2978e428924316c41ef53db099654376a",
+    "2106255580772061332": "0b3a1c5978ab909db8a52bd2dcaa728a76e2af14ca79a05478a2576ae472d3f3"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106253534132089110",
-    "canonicalId": "2106253534132089110",
-    "text": "@Shekswess Unlimited atm",
-    "createdAt": "2026-10-03T05:22:29.000Z",
-    "url": "https://x.com/thsottiaux/status/2106253534132089110",
+    "id": "2106255580772061332",
+    "canonicalId": "2106255580772061332",
+    "text": "@poteto The 3-day old dots are shaking and quaking",
+    "createdAt": "2026-10-03T05:30:37.000Z",
+    "url": "https://x.com/thsottiaux/status/2106255580772061332",
     "media": []
   }
 }
