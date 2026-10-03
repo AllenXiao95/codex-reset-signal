@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T21:42:25.255Z",
+  "updatedAt": "2026-10-03T21:52:26.933Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T21:42:25.249Z",
-    "lastSuccessAt": "2026-10-03T21:42:25.249Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-10-03T21:52:26.929Z",
+    "lastSuccessAt": "2026-10-03T21:52:26.929Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2106499926956060984",
-    "text": "@poteto i had french fries for lunch",
-    "url": "https://x.com/thsottiaux/status/2106499926956060984",
-    "postCreatedAt": "2026-10-03T21:41:34.000Z"
+    "id": "2106501204285239560",
+    "text": "If we were to add one more sidebar, what should be in it",
+    "url": "https://x.com/thsottiaux/status/2106501204285239560",
+    "postCreatedAt": "2026-10-03T21:46:38.000Z"
   },
   "latest": {
     "reset": {
