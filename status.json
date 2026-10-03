@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T05:37:27.365Z",
+  "updatedAt": "2026-10-03T05:42:28.350Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T05:37:27.336Z",
-    "lastSuccessAt": "2026-10-03T05:37:27.336Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-03T05:42:28.344Z",
+    "lastSuccessAt": "2026-10-03T05:42:28.344Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106255580772061332",
-    "text": "@poteto The 3-day old dots are shaking and quaking",
-    "url": "https://x.com/thsottiaux/status/2106255580772061332",
-    "postCreatedAt": "2026-10-03T05:30:37.000Z"
+    "id": "2106257453679808676",
+    "text": "@poteto Hey now. You don’t know what we’re releasing next week",
+    "url": "https://x.com/thsottiaux/status/2106257453679808676",
+    "postCreatedAt": "2026-10-03T05:38:03.000Z"
   },
   "latest": {
     "reset": {
