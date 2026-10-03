@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T05:07:35.576Z",
+  "updatedAt": "2026-10-03T05:12:29.860Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T05:07:35.572Z",
-    "lastSuccessAt": "2026-10-03T05:07:35.572Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-03T05:12:29.856Z",
+    "lastSuccessAt": "2026-10-03T05:12:29.856Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106239912932692085",
-    "text": "@_architected Yeah no, that was my bad for not propagating it at 10am quite perfectly. This is something that will be better planned next time, apologies.",
-    "url": "https://x.com/thsottiaux/status/2106239912932692085",
-    "postCreatedAt": "2026-10-03T04:28:21.000Z"
+    "id": "2106250124863389920",
+    "text": "@rileybrown You’re hired",
+    "url": "https://x.com/thsottiaux/status/2106250124863389920",
+    "postCreatedAt": "2026-10-03T05:08:56.000Z"
   },
   "latest": {
     "reset": {

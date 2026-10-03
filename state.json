@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106239912932692085",
-  "lastCheckedAt": "2026-10-03T05:07:35.572Z",
-  "lastSuccessAt": "2026-10-03T05:07:35.572Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 262,
+  "sinceId": "2106250124863389920",
+  "lastCheckedAt": "2026-10-03T05:12:29.856Z",
+  "lastSuccessAt": "2026-10-03T05:12:29.856Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 263,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -730,15 +730,16 @@
     "2106227571088392653": "6db593cbe3b994d3f972719f8acb6063e7e1cf364e19d1b7e1f5288d4d0e9add",
     "2106233145163141249": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
     "2106239435461579088": "4d49eb152447068584fd550e2ab2b2afd9c8a1c662cbc62e0eef661288ff010f",
-    "2106239912932692085": "ea534537611ab5f47a6874e8f64f95b8f0886097d1a8a68c066b4ecbc4261bdd"
+    "2106239912932692085": "ea534537611ab5f47a6874e8f64f95b8f0886097d1a8a68c066b4ecbc4261bdd",
+    "2106250124863389920": "e6ec211d2463e5ef0632b3275eaf6fed2a8cf1c36c6dba08ce2eab5438e44e12"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106239912932692085",
-    "canonicalId": "2106239912932692085",
-    "text": "@_architected Yeah no, that was my bad for not propagating it at 10am quite perfectly. This is something that will be better planned next time, apologies.",
-    "createdAt": "2026-10-03T04:28:21.000Z",
-    "url": "https://x.com/thsottiaux/status/2106239912932692085",
+    "id": "2106250124863389920",
+    "canonicalId": "2106250124863389920",
+    "text": "@rileybrown You’re hired",
+    "createdAt": "2026-10-03T05:08:56.000Z",
+    "url": "https://x.com/thsottiaux/status/2106250124863389920",
     "media": []
   }
 }
