@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T05:17:24.423Z",
+  "updatedAt": "2026-10-03T05:22:24.530Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T05:17:24.420Z",
-    "lastSuccessAt": "2026-10-03T05:17:24.420Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-03T05:22:24.524Z",
+    "lastSuccessAt": "2026-10-03T05:22:24.524Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106250124863389920",
-    "text": "@rileybrown You’re hired",
-    "url": "https://x.com/thsottiaux/status/2106250124863389920",
-    "postCreatedAt": "2026-10-03T05:08:56.000Z"
+    "id": "2106252868307271752",
+    "text": "Fortunately our future models will be much better at code deletion and simplification. Just in time",
+    "url": "https://x.com/thsottiaux/status/2106252868307271752",
+    "postCreatedAt": "2026-10-03T05:19:50.000Z"
   },
   "latest": {
     "reset": {
