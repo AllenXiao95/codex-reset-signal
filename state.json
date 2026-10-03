@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106227571088392653",
-  "lastCheckedAt": "2026-10-03T03:57:26.053Z",
-  "lastSuccessAt": "2026-10-03T03:57:26.053Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 259,
+  "sinceId": "2106233145163141249",
+  "lastCheckedAt": "2026-10-03T04:02:27.379Z",
+  "lastSuccessAt": "2026-10-03T04:02:27.379Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 260,
   "matches": [
+    {
+      "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
+      "id": "2106233145163141249",
+      "canonicalId": "2106233145163141249",
+      "text": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
+      "createdAt": "2026-10-03T04:01:28.000Z",
+      "url": "https://x.com/thsottiaux/status/2106233145163141249",
+      "media": [],
+      "detectedAt": "2026-10-03T04:02:27.379Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "announced",
+          "evidence": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-03T04:02:27.384Z"
+    },
     {
       "version": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
       "id": "2106131810921136451",
@@ -700,15 +728,16 @@
     "2106131810921136451": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
     "2106224612271112207": "63a663b1cc9c924ccbf2422fe8a6eb9446235c98adb50dc91f48fd1552397ffb",
     "2106226725428572371": "3616f603c6c01df7af64ea86400eca426e116c6f578a5b29352d1aa47d86a57e",
-    "2106227571088392653": "6db593cbe3b994d3f972719f8acb6063e7e1cf364e19d1b7e1f5288d4d0e9add"
+    "2106227571088392653": "6db593cbe3b994d3f972719f8acb6063e7e1cf364e19d1b7e1f5288d4d0e9add",
+    "2106233145163141249": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106227571088392653",
-    "canonicalId": "2106227571088392653",
-    "text": "@atelicinvest Pretty bad for the GPUs. We’re going to need more compute",
-    "createdAt": "2026-10-03T03:39:19.000Z",
-    "url": "https://x.com/thsottiaux/status/2106227571088392653",
+    "id": "2106233145163141249",
+    "canonicalId": "2106233145163141249",
+    "text": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
+    "createdAt": "2026-10-03T04:01:28.000Z",
+    "url": "https://x.com/thsottiaux/status/2106233145163141249",
     "media": []
   }
 }
