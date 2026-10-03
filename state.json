@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2106233145163141249",
-  "lastCheckedAt": "2026-10-03T04:02:27.379Z",
-  "lastSuccessAt": "2026-10-03T04:02:27.379Z",
-  "lastRunStatus": "checked-1-posts",
+  "lastCheckedAt": "2026-10-03T04:07:28.212Z",
+  "lastSuccessAt": "2026-10-03T04:07:28.212Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 260,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
       "id": "2106233145163141249",
-      "canonicalId": "2106233145163141249",
       "text": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
       "createdAt": "2026-10-03T04:01:28.000Z",
       "url": "https://x.com/thsottiaux/status/2106233145163141249",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-03T04:02:27.384Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-03T04:02:27.384Z"
+      ]
     },
     {
       "version": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
