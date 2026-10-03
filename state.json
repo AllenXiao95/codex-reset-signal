@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106226725428572371",
-  "lastCheckedAt": "2026-10-03T03:37:24.813Z",
-  "lastSuccessAt": "2026-10-03T03:37:24.813Z",
+  "sinceId": "2106227571088392653",
+  "lastCheckedAt": "2026-10-03T03:42:30.444Z",
+  "lastSuccessAt": "2026-10-03T03:42:30.444Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 258,
+  "postsScanned": 259,
   "matches": [
     {
       "version": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
@@ -699,15 +699,16 @@
     "2106046594277954010": "b166dfe94f606abcc95397f7fab6541c899f0dfc919fc05644844c0df9da934a",
     "2106131810921136451": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
     "2106224612271112207": "63a663b1cc9c924ccbf2422fe8a6eb9446235c98adb50dc91f48fd1552397ffb",
-    "2106226725428572371": "3616f603c6c01df7af64ea86400eca426e116c6f578a5b29352d1aa47d86a57e"
+    "2106226725428572371": "3616f603c6c01df7af64ea86400eca426e116c6f578a5b29352d1aa47d86a57e",
+    "2106227571088392653": "6db593cbe3b994d3f972719f8acb6063e7e1cf364e19d1b7e1f5288d4d0e9add"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106226725428572371",
-    "canonicalId": "2106226725428572371",
-    "text": "Pretty sure there are more dots than bots already in this little world.\n\nCool thing is that we’re improving them everyday and they learn directly from your feedback.",
-    "createdAt": "2026-10-03T03:35:57.000Z",
-    "url": "https://x.com/thsottiaux/status/2106226725428572371",
+    "id": "2106227571088392653",
+    "canonicalId": "2106227571088392653",
+    "text": "@atelicinvest Pretty bad for the GPUs. We’re going to need more compute",
+    "createdAt": "2026-10-03T03:39:19.000Z",
+    "url": "https://x.com/thsottiaux/status/2106227571088392653",
     "media": []
   }
 }

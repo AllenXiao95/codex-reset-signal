@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T03:37:24.818Z",
+  "updatedAt": "2026-10-03T03:42:30.448Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T03:37:24.813Z",
-    "lastSuccessAt": "2026-10-03T03:37:24.813Z",
+    "lastCheckedAt": "2026-10-03T03:42:30.444Z",
+    "lastSuccessAt": "2026-10-03T03:42:30.444Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106226725428572371",
-    "text": "Pretty sure there are more dots than bots already in this little world.\n\nCool thing is that we’re improving them everyday and they learn directly from your feedback.",
-    "url": "https://x.com/thsottiaux/status/2106226725428572371",
-    "postCreatedAt": "2026-10-03T03:35:57.000Z"
+    "id": "2106227571088392653",
+    "text": "@atelicinvest Pretty bad for the GPUs. We’re going to need more compute",
+    "url": "https://x.com/thsottiaux/status/2106227571088392653",
+    "postCreatedAt": "2026-10-03T03:39:19.000Z"
   },
   "latest": {
     "reset": {
