@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T21:37:32.705Z",
+  "updatedAt": "2026-10-03T21:42:25.255Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T21:37:32.567Z",
-    "lastSuccessAt": "2026-10-03T21:37:32.567Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-03T21:42:25.249Z",
+    "lastSuccessAt": "2026-10-03T21:42:25.249Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106439068557144179",
-    "text": "What’s one thing that’s missing in codex that you wish we had?",
-    "url": "https://x.com/thsottiaux/status/2106439068557144179",
-    "postCreatedAt": "2026-10-03T17:39:44.000Z"
+    "id": "2106499926956060984",
+    "text": "@poteto i had french fries for lunch",
+    "url": "https://x.com/thsottiaux/status/2106499926956060984",
+    "postCreatedAt": "2026-10-03T21:41:34.000Z"
   },
   "latest": {
     "reset": {
