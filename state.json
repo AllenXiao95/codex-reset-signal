@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106257453679808676",
-  "lastCheckedAt": "2026-10-03T17:37:39.843Z",
-  "lastSuccessAt": "2026-10-03T17:37:39.843Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 267,
+  "sinceId": "2106439068557144179",
+  "lastCheckedAt": "2026-10-03T17:42:36.660Z",
+  "lastSuccessAt": "2026-10-03T17:42:36.660Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 268,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -735,15 +735,16 @@
     "2106252868307271752": "5a320ed6c1c759986388d87bacc92ec68edc80225b5766ab672e3749814f5141",
     "2106253534132089110": "6492fe57923153ae7785eb81b4174cd2978e428924316c41ef53db099654376a",
     "2106255580772061332": "0b3a1c5978ab909db8a52bd2dcaa728a76e2af14ca79a05478a2576ae472d3f3",
-    "2106257453679808676": "9c994ca901764a407f4289da37208db829cae9d3d516238421deeae46fc383bb"
+    "2106257453679808676": "9c994ca901764a407f4289da37208db829cae9d3d516238421deeae46fc383bb",
+    "2106439068557144179": "16122f6a2196aa6c18bdc19dfb993287b9e4960375644c605a9419636f9003d0"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106257453679808676",
-    "canonicalId": "2106257453679808676",
-    "text": "@poteto Hey now. You don’t know what we’re releasing next week",
-    "createdAt": "2026-10-03T05:38:03.000Z",
-    "url": "https://x.com/thsottiaux/status/2106257453679808676",
+    "id": "2106439068557144179",
+    "canonicalId": "2106439068557144179",
+    "text": "What’s one thing that’s missing in codex that you wish we had?",
+    "createdAt": "2026-10-03T17:39:44.000Z",
+    "url": "https://x.com/thsottiaux/status/2106439068557144179",
     "media": []
   }
 }
