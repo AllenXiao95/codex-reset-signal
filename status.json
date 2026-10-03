@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T04:22:52.479Z",
+  "updatedAt": "2026-10-03T04:27:26.896Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T04:22:52.475Z",
-    "lastSuccessAt": "2026-10-03T04:22:52.475Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-03T04:27:26.679Z",
+    "lastSuccessAt": "2026-10-03T04:27:26.679Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106233145163141249",
-    "text": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
-    "url": "https://x.com/thsottiaux/status/2106233145163141249",
-    "postCreatedAt": "2026-10-03T04:01:28.000Z"
+    "id": "2106239435461579088",
+    "text": "All fixed. Surprising number of Pro 500 users on here.",
+    "url": "https://x.com/thsottiaux/status/2106239435461579088",
+    "postCreatedAt": "2026-10-03T04:26:28.000Z"
   },
   "latest": {
     "reset": {

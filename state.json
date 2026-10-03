@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106233145163141249",
-  "lastCheckedAt": "2026-10-03T04:22:52.475Z",
-  "lastSuccessAt": "2026-10-03T04:22:52.475Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 260,
+  "sinceId": "2106239435461579088",
+  "lastCheckedAt": "2026-10-03T04:27:26.679Z",
+  "lastSuccessAt": "2026-10-03T04:27:26.679Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 261,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -728,15 +728,16 @@
     "2106224612271112207": "63a663b1cc9c924ccbf2422fe8a6eb9446235c98adb50dc91f48fd1552397ffb",
     "2106226725428572371": "3616f603c6c01df7af64ea86400eca426e116c6f578a5b29352d1aa47d86a57e",
     "2106227571088392653": "6db593cbe3b994d3f972719f8acb6063e7e1cf364e19d1b7e1f5288d4d0e9add",
-    "2106233145163141249": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1"
+    "2106233145163141249": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
+    "2106239435461579088": "4d49eb152447068584fd550e2ab2b2afd9c8a1c662cbc62e0eef661288ff010f"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106233145163141249",
-    "canonicalId": "2106233145163141249",
-    "text": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
-    "createdAt": "2026-10-03T04:01:28.000Z",
-    "url": "https://x.com/thsottiaux/status/2106233145163141249",
+    "id": "2106239435461579088",
+    "canonicalId": "2106239435461579088",
+    "text": "All fixed. Surprising number of Pro 500 users on here.",
+    "createdAt": "2026-10-03T04:26:28.000Z",
+    "url": "https://x.com/thsottiaux/status/2106239435461579088",
     "media": []
   }
 }
