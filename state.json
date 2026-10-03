@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106252868307271752",
-  "lastCheckedAt": "2026-10-03T05:22:24.524Z",
-  "lastSuccessAt": "2026-10-03T05:22:24.524Z",
+  "sinceId": "2106253534132089110",
+  "lastCheckedAt": "2026-10-03T05:27:28.115Z",
+  "lastSuccessAt": "2026-10-03T05:27:28.115Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 264,
+  "postsScanned": 265,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -732,15 +732,16 @@
     "2106239435461579088": "4d49eb152447068584fd550e2ab2b2afd9c8a1c662cbc62e0eef661288ff010f",
     "2106239912932692085": "ea534537611ab5f47a6874e8f64f95b8f0886097d1a8a68c066b4ecbc4261bdd",
     "2106250124863389920": "e6ec211d2463e5ef0632b3275eaf6fed2a8cf1c36c6dba08ce2eab5438e44e12",
-    "2106252868307271752": "5a320ed6c1c759986388d87bacc92ec68edc80225b5766ab672e3749814f5141"
+    "2106252868307271752": "5a320ed6c1c759986388d87bacc92ec68edc80225b5766ab672e3749814f5141",
+    "2106253534132089110": "6492fe57923153ae7785eb81b4174cd2978e428924316c41ef53db099654376a"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106252868307271752",
-    "canonicalId": "2106252868307271752",
-    "text": "Fortunately our future models will be much better at code deletion and simplification. Just in time",
-    "createdAt": "2026-10-03T05:19:50.000Z",
-    "url": "https://x.com/thsottiaux/status/2106252868307271752",
+    "id": "2106253534132089110",
+    "canonicalId": "2106253534132089110",
+    "text": "@Shekswess Unlimited atm",
+    "createdAt": "2026-10-03T05:22:29.000Z",
+    "url": "https://x.com/thsottiaux/status/2106253534132089110",
     "media": []
   }
 }

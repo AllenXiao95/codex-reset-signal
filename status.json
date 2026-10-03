@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T05:22:24.530Z",
+  "updatedAt": "2026-10-03T05:27:28.120Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T05:22:24.524Z",
-    "lastSuccessAt": "2026-10-03T05:22:24.524Z",
+    "lastCheckedAt": "2026-10-03T05:27:28.115Z",
+    "lastSuccessAt": "2026-10-03T05:27:28.115Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106252868307271752",
-    "text": "Fortunately our future models will be much better at code deletion and simplification. Just in time",
-    "url": "https://x.com/thsottiaux/status/2106252868307271752",
-    "postCreatedAt": "2026-10-03T05:19:50.000Z"
+    "id": "2106253534132089110",
+    "text": "@Shekswess Unlimited atm",
+    "url": "https://x.com/thsottiaux/status/2106253534132089110",
+    "postCreatedAt": "2026-10-03T05:22:29.000Z"
   },
   "latest": {
     "reset": {
