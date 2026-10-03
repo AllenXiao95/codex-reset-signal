@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-03T03:27:28.953Z",
+  "updatedAt": "2026-10-03T03:32:28.435Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-03T03:27:28.948Z",
-    "lastSuccessAt": "2026-10-03T03:27:28.948Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-03T03:32:28.431Z",
+    "lastSuccessAt": "2026-10-03T03:32:28.431Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106131810921136451",
-    "text": "Reset all propagated. Enjoy.",
-    "url": "https://x.com/thsottiaux/status/2106131810921136451",
-    "postCreatedAt": "2026-10-02T21:18:48.000Z"
+    "id": "2106224612271112207",
+    "text": "@charliermarsh Good dot",
+    "url": "https://x.com/thsottiaux/status/2106224612271112207",
+    "postCreatedAt": "2026-10-03T03:27:33.000Z"
   },
   "latest": {
     "reset": {
