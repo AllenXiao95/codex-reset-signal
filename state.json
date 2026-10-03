@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106224612271112207",
-  "lastCheckedAt": "2026-10-03T03:32:28.431Z",
-  "lastSuccessAt": "2026-10-03T03:32:28.431Z",
+  "sinceId": "2106226725428572371",
+  "lastCheckedAt": "2026-10-03T03:37:24.813Z",
+  "lastSuccessAt": "2026-10-03T03:37:24.813Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 257,
+  "postsScanned": 258,
   "matches": [
     {
       "version": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
@@ -698,15 +698,16 @@
     "2105899634032025682": "69cde66200dd895a5a64b32587f2a5a4de3cc94d260dd9f0fce342f96f6118ec",
     "2106046594277954010": "b166dfe94f606abcc95397f7fab6541c899f0dfc919fc05644844c0df9da934a",
     "2106131810921136451": "5b85ac7fbd8b721dd409dd96202e65a3b4d0b33e20fe297a4360df356c97b617",
-    "2106224612271112207": "63a663b1cc9c924ccbf2422fe8a6eb9446235c98adb50dc91f48fd1552397ffb"
+    "2106224612271112207": "63a663b1cc9c924ccbf2422fe8a6eb9446235c98adb50dc91f48fd1552397ffb",
+    "2106226725428572371": "3616f603c6c01df7af64ea86400eca426e116c6f578a5b29352d1aa47d86a57e"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106224612271112207",
-    "canonicalId": "2106224612271112207",
-    "text": "@charliermarsh Good dot",
-    "createdAt": "2026-10-03T03:27:33.000Z",
-    "url": "https://x.com/thsottiaux/status/2106224612271112207",
+    "id": "2106226725428572371",
+    "canonicalId": "2106226725428572371",
+    "text": "Pretty sure there are more dots than bots already in this little world.\n\nCool thing is that we’re improving them everyday and they learn directly from your feedback.",
+    "createdAt": "2026-10-03T03:35:57.000Z",
+    "url": "https://x.com/thsottiaux/status/2106226725428572371",
     "media": []
   }
 }
