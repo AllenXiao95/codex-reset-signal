@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106239435461579088",
-  "lastCheckedAt": "2026-10-03T04:27:26.679Z",
-  "lastSuccessAt": "2026-10-03T04:27:26.679Z",
+  "sinceId": "2106239912932692085",
+  "lastCheckedAt": "2026-10-03T04:33:01.896Z",
+  "lastSuccessAt": "2026-10-03T04:33:01.896Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 261,
+  "postsScanned": 262,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -729,15 +729,16 @@
     "2106226725428572371": "3616f603c6c01df7af64ea86400eca426e116c6f578a5b29352d1aa47d86a57e",
     "2106227571088392653": "6db593cbe3b994d3f972719f8acb6063e7e1cf364e19d1b7e1f5288d4d0e9add",
     "2106233145163141249": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
-    "2106239435461579088": "4d49eb152447068584fd550e2ab2b2afd9c8a1c662cbc62e0eef661288ff010f"
+    "2106239435461579088": "4d49eb152447068584fd550e2ab2b2afd9c8a1c662cbc62e0eef661288ff010f",
+    "2106239912932692085": "ea534537611ab5f47a6874e8f64f95b8f0886097d1a8a68c066b4ecbc4261bdd"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106239435461579088",
-    "canonicalId": "2106239435461579088",
-    "text": "All fixed. Surprising number of Pro 500 users on here.",
-    "createdAt": "2026-10-03T04:26:28.000Z",
-    "url": "https://x.com/thsottiaux/status/2106239435461579088",
+    "id": "2106239912932692085",
+    "canonicalId": "2106239912932692085",
+    "text": "@_architected Yeah no, that was my bad for not propagating it at 10am quite perfectly. This is something that will be better planned next time, apologies.",
+    "createdAt": "2026-10-03T04:28:21.000Z",
+    "url": "https://x.com/thsottiaux/status/2106239912932692085",
     "media": []
   }
 }
