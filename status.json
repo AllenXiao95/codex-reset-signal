@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T04:52:22.540Z",
+  "updatedAt": "2026-10-04T04:57:24.608Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T04:52:22.535Z",
-    "lastSuccessAt": "2026-10-04T04:52:22.535Z",
+    "lastCheckedAt": "2026-10-04T04:57:24.604Z",
+    "lastSuccessAt": "2026-10-04T04:57:24.604Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106607456130592861",
-    "text": "@_ak_111 6.1 sol ultrafast",
-    "url": "https://x.com/thsottiaux/status/2106607456130592861",
-    "postCreatedAt": "2026-10-04T04:48:51.000Z"
+    "id": "2106609390577156384",
+    "text": "@hiarun02 There is a full usage dashboard in the app now! Let me know what’s missing if anything, will fix",
+    "url": "https://x.com/thsottiaux/status/2106609390577156384",
+    "postCreatedAt": "2026-10-04T04:56:32.000Z"
   },
   "latest": {
     "reset": {
