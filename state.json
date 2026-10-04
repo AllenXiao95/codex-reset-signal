@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106605571168510149",
-  "lastCheckedAt": "2026-10-04T04:47:22.873Z",
-  "lastSuccessAt": "2026-10-04T04:47:22.873Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 279,
+  "sinceId": "2106607456130592861",
+  "lastCheckedAt": "2026-10-04T04:52:22.535Z",
+  "lastSuccessAt": "2026-10-04T04:52:22.535Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 280,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -747,15 +747,16 @@
     "2106593009806815429": "d5267a3556703f74f5457a102e76b737b8da600df8de6cde226082746603ad9a",
     "2106602729875685780": "4163eefa442201df7b058fdfd15e8192e60b5b4571b7e88487f54df8694f80f6",
     "2106603980386394123": "27a0e2052f7ca79856d0a86c82c84c124239acfc1b31c63e40e520c1dc3ed667",
-    "2106605571168510149": "d8de347ffdc23e0e3b8777ac311e8ac582a2cd27543d5943786cf889afa460bc"
+    "2106605571168510149": "d8de347ffdc23e0e3b8777ac311e8ac582a2cd27543d5943786cf889afa460bc",
+    "2106607456130592861": "dcb0b5bb0e38eb51dfcfc78253c1594bd8524c6b62fe9398c546e72623ce9972"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106605571168510149",
-    "canonicalId": "2106605571168510149",
-    "text": "@davis7 6.1 sol ultrafast that is",
-    "createdAt": "2026-10-04T04:41:21.000Z",
-    "url": "https://x.com/thsottiaux/status/2106605571168510149",
+    "id": "2106607456130592861",
+    "canonicalId": "2106607456130592861",
+    "text": "@_ak_111 6.1 sol ultrafast",
+    "createdAt": "2026-10-04T04:48:51.000Z",
+    "url": "https://x.com/thsottiaux/status/2106607456130592861",
     "media": []
   }
 }

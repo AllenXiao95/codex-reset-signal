@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T04:47:22.878Z",
+  "updatedAt": "2026-10-04T04:52:22.540Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T04:47:22.873Z",
-    "lastSuccessAt": "2026-10-04T04:47:22.873Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T04:52:22.535Z",
+    "lastSuccessAt": "2026-10-04T04:52:22.535Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106605571168510149",
-    "text": "@davis7 6.1 sol ultrafast that is",
-    "url": "https://x.com/thsottiaux/status/2106605571168510149",
-    "postCreatedAt": "2026-10-04T04:41:21.000Z"
+    "id": "2106607456130592861",
+    "text": "@_ak_111 6.1 sol ultrafast",
+    "url": "https://x.com/thsottiaux/status/2106607456130592861",
+    "postCreatedAt": "2026-10-04T04:48:51.000Z"
   },
   "latest": {
     "reset": {
