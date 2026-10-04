@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T23:42:29.639Z",
+  "updatedAt": "2026-10-04T23:47:23.968Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T23:42:29.635Z",
-    "lastSuccessAt": "2026-10-04T23:42:29.635Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T23:47:23.962Z",
+    "lastSuccessAt": "2026-10-04T23:47:23.962Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2106858787151995288",
-    "text": "@buildwithsid You're hired",
-    "url": "https://x.com/thsottiaux/status/2106858787151995288",
-    "postCreatedAt": "2026-10-04T21:27:33.000Z"
+    "id": "2106893863663321520",
+    "text": "@karrisaarinen Always loved linear!",
+    "url": "https://x.com/thsottiaux/status/2106893863663321520",
+    "postCreatedAt": "2026-10-04T23:46:55.000Z"
   },
   "latest": {
     "reset": {

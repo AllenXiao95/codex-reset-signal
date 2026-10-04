@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106858787151995288",
-  "lastCheckedAt": "2026-10-04T23:42:29.635Z",
-  "lastSuccessAt": "2026-10-04T23:42:29.635Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 288,
+  "sinceId": "2106893863663321520",
+  "lastCheckedAt": "2026-10-04T23:47:23.962Z",
+  "lastSuccessAt": "2026-10-04T23:47:23.962Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 290,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -783,15 +783,17 @@
     "2106845241357824205": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
     "2106845738814849339": "56df9b61f319fa659dfc9b91d4f5750c51d0a43f1028d89e0523daea934f67bc",
     "2106858395370389784": "08be59ea1322a1f0c03a1b7f15bee5940bc79dfc626c9032c43e1146af12b006",
-    "2106858787151995288": "207f9085994482707d5ffb5f803b085b101db9b7bd9da9b0cf93bf8558561d76"
+    "2106858787151995288": "207f9085994482707d5ffb5f803b085b101db9b7bd9da9b0cf93bf8558561d76",
+    "2106893559962144962": "fe37fd83d311acb04b295db731c6a4dbef4b414180bb3f6e1e7879b5a6dcc3af",
+    "2106893863663321520": "11b0032106a1f7c108c9f7b943261eb811600420a2aca589fcae929a0d1510ce"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106858787151995288",
-    "canonicalId": "2106858787151995288",
-    "text": "@buildwithsid You're hired",
-    "createdAt": "2026-10-04T21:27:33.000Z",
-    "url": "https://x.com/thsottiaux/status/2106858787151995288",
+    "id": "2106893863663321520",
+    "canonicalId": "2106893863663321520",
+    "text": "@karrisaarinen Always loved linear!",
+    "createdAt": "2026-10-04T23:46:55.000Z",
+    "url": "https://x.com/thsottiaux/status/2106893863663321520",
     "media": []
   }
 }
