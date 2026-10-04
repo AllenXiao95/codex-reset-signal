@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T15:27:32.576Z",
+  "updatedAt": "2026-10-04T15:32:29.851Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T15:27:32.531Z",
-    "lastSuccessAt": "2026-10-04T15:27:32.531Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T15:32:29.846Z",
+    "lastSuccessAt": "2026-10-04T15:32:29.846Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106610099720720811",
-    "text": "All right, we’re locking in. Only things being worked on are simplifications, more efficiency for more usage, groundbreaking features or new models. \n\nSometimes you have to invest ahead of the curve, but feedback is clear that you all want things to get simpler. On it.",
-    "url": "https://x.com/thsottiaux/status/2106610099720720811",
-    "postCreatedAt": "2026-10-04T04:59:21.000Z"
+    "id": "2106769163620671823",
+    "text": "@argofowl Heard",
+    "url": "https://x.com/thsottiaux/status/2106769163620671823",
+    "postCreatedAt": "2026-10-04T15:31:25.000Z"
   },
   "latest": {
     "reset": {
