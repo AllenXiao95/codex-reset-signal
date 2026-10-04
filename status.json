@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T00:42:27.992Z",
+  "updatedAt": "2026-10-04T00:47:26.946Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T00:42:27.986Z",
-    "lastSuccessAt": "2026-10-04T00:42:27.986Z",
+    "lastCheckedAt": "2026-10-04T00:47:26.941Z",
+    "lastSuccessAt": "2026-10-04T00:47:26.941Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106544544892518815",
-    "text": "@atelicinvest Dots are persistent agents that carry context across the single conversation. You can call it in the middle of work and then catch it later via slack or text in the app, it’s the same dot talking to you.",
-    "url": "https://x.com/thsottiaux/status/2106544544892518815",
-    "postCreatedAt": "2026-10-04T00:38:51.000Z"
+    "id": "2106546689012281771",
+    "text": "@Baconbrix Interesting position you’re taking there mister Bacon. Now let’s see what someone can do with the ChatGPT subscription or the Grok subscription. 👀",
+    "url": "https://x.com/thsottiaux/status/2106546689012281771",
+    "postCreatedAt": "2026-10-04T00:47:23.000Z"
   },
   "latest": {
     "reset": {

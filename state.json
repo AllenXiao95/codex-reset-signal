@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106544544892518815",
-  "lastCheckedAt": "2026-10-04T00:42:27.986Z",
-  "lastSuccessAt": "2026-10-04T00:42:27.986Z",
+  "sinceId": "2106546689012281771",
+  "lastCheckedAt": "2026-10-04T00:47:26.941Z",
+  "lastSuccessAt": "2026-10-04T00:47:26.941Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 274,
+  "postsScanned": 275,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -742,15 +742,16 @@
     "2106501204285239560": "b201b36accbbacd725d41991a08ef01a2b1a272a5201c1a890fd8e501b8aa95d",
     "2106541589007114420": "0ce3daaad910d2923cc677b30c3d6d775ee1a38442a1b1bdff8cc714e5905c85",
     "2106543375088488596": "6b5bdac9f70f05f4eb1c0426514c31ed739533831ad98c1e37b9a4d2bfbc4d6a",
-    "2106544544892518815": "3c5ae118b80061c046bd87bcc50c657de037686265badf56c35d7112f87b8f7c"
+    "2106544544892518815": "3c5ae118b80061c046bd87bcc50c657de037686265badf56c35d7112f87b8f7c",
+    "2106546689012281771": "df2957ccb835cb2a7fe35172bedfe309a04b4b46559482fc9ac9c20cd7efa1b8"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106544544892518815",
-    "canonicalId": "2106544544892518815",
-    "text": "@atelicinvest Dots are persistent agents that carry context across the single conversation. You can call it in the middle of work and then catch it later via slack or text in the app, it’s the same dot talking to you.",
-    "createdAt": "2026-10-04T00:38:51.000Z",
-    "url": "https://x.com/thsottiaux/status/2106544544892518815",
+    "id": "2106546689012281771",
+    "canonicalId": "2106546689012281771",
+    "text": "@Baconbrix Interesting position you’re taking there mister Bacon. Now let’s see what someone can do with the ChatGPT subscription or the Grok subscription. 👀",
+    "createdAt": "2026-10-04T00:47:23.000Z",
+    "url": "https://x.com/thsottiaux/status/2106546689012281771",
     "media": []
   }
 }
