@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T04:27:27.459Z",
+  "updatedAt": "2026-10-04T04:32:35.544Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T04:27:27.455Z",
-    "lastSuccessAt": "2026-10-04T04:27:27.455Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T04:32:35.535Z",
+    "lastSuccessAt": "2026-10-04T04:32:35.535Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106593009806815429",
-    "text": "@macintogdev Ah, perfection",
-    "url": "https://x.com/thsottiaux/status/2106593009806815429",
-    "postCreatedAt": "2026-10-04T03:51:26.000Z"
+    "id": "2106602729875685780",
+    "text": "I have never in my life achieved inbox zero until I just made it an active goal for my dot to help get it done. Let’s see how long it lasts, but it’s a great feeling. https://t.co/qHlFmfSIX5",
+    "url": "https://x.com/thsottiaux/status/2106602729875685780",
+    "postCreatedAt": "2026-10-04T04:30:04.000Z"
   },
   "latest": {
     "reset": {
