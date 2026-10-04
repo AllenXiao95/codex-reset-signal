@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T00:37:22.642Z",
+  "updatedAt": "2026-10-04T00:42:27.992Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T00:37:22.601Z",
-    "lastSuccessAt": "2026-10-04T00:37:22.601Z",
+    "lastCheckedAt": "2026-10-04T00:42:27.986Z",
+    "lastSuccessAt": "2026-10-04T00:42:27.986Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106543375088488596",
-    "text": "@davis7 6.1 coming soon",
-    "url": "https://x.com/thsottiaux/status/2106543375088488596",
-    "postCreatedAt": "2026-10-04T00:34:12.000Z"
+    "id": "2106544544892518815",
+    "text": "@atelicinvest Dots are persistent agents that carry context across the single conversation. You can call it in the middle of work and then catch it later via slack or text in the app, it’s the same dot talking to you.",
+    "url": "https://x.com/thsottiaux/status/2106544544892518815",
+    "postCreatedAt": "2026-10-04T00:38:51.000Z"
   },
   "latest": {
     "reset": {
