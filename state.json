@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106893863663321520",
-  "lastCheckedAt": "2026-10-04T23:47:23.962Z",
-  "lastSuccessAt": "2026-10-04T23:47:23.962Z",
+  "sinceId": "2106894683523928229",
+  "lastCheckedAt": "2026-10-04T23:52:22.908Z",
+  "lastSuccessAt": "2026-10-04T23:52:22.908Z",
   "lastRunStatus": "checked-2-posts",
-  "postsScanned": 290,
+  "postsScanned": 292,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -785,15 +785,17 @@
     "2106858395370389784": "08be59ea1322a1f0c03a1b7f15bee5940bc79dfc626c9032c43e1146af12b006",
     "2106858787151995288": "207f9085994482707d5ffb5f803b085b101db9b7bd9da9b0cf93bf8558561d76",
     "2106893559962144962": "fe37fd83d311acb04b295db731c6a4dbef4b414180bb3f6e1e7879b5a6dcc3af",
-    "2106893863663321520": "11b0032106a1f7c108c9f7b943261eb811600420a2aca589fcae929a0d1510ce"
+    "2106893863663321520": "11b0032106a1f7c108c9f7b943261eb811600420a2aca589fcae929a0d1510ce",
+    "2106894238541918707": "4413df23d2b3ce0dadfdd1a3a0c99a0b065fb3417e5a98f7d1da6509681fa56b",
+    "2106894683523928229": "b23403d7115c61d3d976bc15233d13c4ae92f5b8c544245b5814c01aa0ca387e"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106893863663321520",
-    "canonicalId": "2106893863663321520",
-    "text": "@karrisaarinen Always loved linear!",
-    "createdAt": "2026-10-04T23:46:55.000Z",
-    "url": "https://x.com/thsottiaux/status/2106893863663321520",
+    "id": "2106894683523928229",
+    "canonicalId": "2106894683523928229",
+    "text": "@Yuchenj_UW We're still early indeed!",
+    "createdAt": "2026-10-04T23:50:11.000Z",
+    "url": "https://x.com/thsottiaux/status/2106894683523928229",
     "media": []
   }
 }

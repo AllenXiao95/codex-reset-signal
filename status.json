@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T23:47:23.968Z",
+  "updatedAt": "2026-10-04T23:52:23.435Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T23:47:23.962Z",
-    "lastSuccessAt": "2026-10-04T23:47:23.962Z",
+    "lastCheckedAt": "2026-10-04T23:52:22.908Z",
+    "lastSuccessAt": "2026-10-04T23:52:22.908Z",
     "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2106893863663321520",
-    "text": "@karrisaarinen Always loved linear!",
-    "url": "https://x.com/thsottiaux/status/2106893863663321520",
-    "postCreatedAt": "2026-10-04T23:46:55.000Z"
+    "id": "2106894683523928229",
+    "text": "@Yuchenj_UW We're still early indeed!",
+    "url": "https://x.com/thsottiaux/status/2106894683523928229",
+    "postCreatedAt": "2026-10-04T23:50:11.000Z"
   },
   "latest": {
     "reset": {
