@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106858395370389784",
-  "lastCheckedAt": "2026-10-04T21:27:26.464Z",
-  "lastSuccessAt": "2026-10-04T21:27:26.464Z",
+  "sinceId": "2106858787151995288",
+  "lastCheckedAt": "2026-10-04T21:32:28.289Z",
+  "lastSuccessAt": "2026-10-04T21:32:28.289Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 287,
+  "postsScanned": 288,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -782,15 +782,16 @@
     "2106842998214717876": "ce45c63dfbac5399618ed68aed9e07c10ec0364e537077d85f4b9bff60aea62b",
     "2106845241357824205": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
     "2106845738814849339": "56df9b61f319fa659dfc9b91d4f5750c51d0a43f1028d89e0523daea934f67bc",
-    "2106858395370389784": "08be59ea1322a1f0c03a1b7f15bee5940bc79dfc626c9032c43e1146af12b006"
+    "2106858395370389784": "08be59ea1322a1f0c03a1b7f15bee5940bc79dfc626c9032c43e1146af12b006",
+    "2106858787151995288": "207f9085994482707d5ffb5f803b085b101db9b7bd9da9b0cf93bf8558561d76"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106858395370389784",
-    "canonicalId": "2106858395370389784",
-    "text": "@poteto that was a really quick fold",
-    "createdAt": "2026-10-04T21:25:59.000Z",
-    "url": "https://x.com/thsottiaux/status/2106858395370389784",
+    "id": "2106858787151995288",
+    "canonicalId": "2106858787151995288",
+    "text": "@buildwithsid You're hired",
+    "createdAt": "2026-10-04T21:27:33.000Z",
+    "url": "https://x.com/thsottiaux/status/2106858787151995288",
     "media": []
   }
 }

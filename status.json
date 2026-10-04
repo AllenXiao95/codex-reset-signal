@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T21:27:26.468Z",
+  "updatedAt": "2026-10-04T21:32:28.294Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T21:27:26.464Z",
-    "lastSuccessAt": "2026-10-04T21:27:26.464Z",
+    "lastCheckedAt": "2026-10-04T21:32:28.289Z",
+    "lastSuccessAt": "2026-10-04T21:32:28.289Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106858395370389784",
-    "text": "@poteto that was a really quick fold",
-    "url": "https://x.com/thsottiaux/status/2106858395370389784",
-    "postCreatedAt": "2026-10-04T21:25:59.000Z"
+    "id": "2106858787151995288",
+    "text": "@buildwithsid You're hired",
+    "url": "https://x.com/thsottiaux/status/2106858787151995288",
+    "postCreatedAt": "2026-10-04T21:27:33.000Z"
   },
   "latest": {
     "reset": {
