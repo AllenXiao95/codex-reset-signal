@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106845738814849339",
-  "lastCheckedAt": "2026-10-04T21:22:29.689Z",
-  "lastSuccessAt": "2026-10-04T21:22:29.689Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 286,
+  "sinceId": "2106858395370389784",
+  "lastCheckedAt": "2026-10-04T21:27:26.464Z",
+  "lastSuccessAt": "2026-10-04T21:27:26.464Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 287,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -781,15 +781,16 @@
     "2106769163620671823": "36c901e01fb1136f81e75381132c28063d025059b8f596e79eb1edc821cf16e4",
     "2106842998214717876": "ce45c63dfbac5399618ed68aed9e07c10ec0364e537077d85f4b9bff60aea62b",
     "2106845241357824205": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
-    "2106845738814849339": "56df9b61f319fa659dfc9b91d4f5750c51d0a43f1028d89e0523daea934f67bc"
+    "2106845738814849339": "56df9b61f319fa659dfc9b91d4f5750c51d0a43f1028d89e0523daea934f67bc",
+    "2106858395370389784": "08be59ea1322a1f0c03a1b7f15bee5940bc79dfc626c9032c43e1146af12b006"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106845738814849339",
-    "canonicalId": "2106845738814849339",
-    "text": "@poteto I challenge you to do the same\n\nhttps://t.co/aUNDJbJ9y2",
-    "createdAt": "2026-10-04T20:35:42.000Z",
-    "url": "https://x.com/thsottiaux/status/2106845738814849339",
+    "id": "2106858395370389784",
+    "canonicalId": "2106858395370389784",
+    "text": "@poteto that was a really quick fold",
+    "createdAt": "2026-10-04T21:25:59.000Z",
+    "url": "https://x.com/thsottiaux/status/2106858395370389784",
     "media": []
   }
 }

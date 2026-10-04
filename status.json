@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T21:22:29.694Z",
+  "updatedAt": "2026-10-04T21:27:26.468Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T21:22:29.689Z",
-    "lastSuccessAt": "2026-10-04T21:22:29.689Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T21:27:26.464Z",
+    "lastSuccessAt": "2026-10-04T21:27:26.464Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106845738814849339",
-    "text": "@poteto I challenge you to do the same\n\nhttps://t.co/aUNDJbJ9y2",
-    "url": "https://x.com/thsottiaux/status/2106845738814849339",
-    "postCreatedAt": "2026-10-04T20:35:42.000Z"
+    "id": "2106858395370389784",
+    "text": "@poteto that was a really quick fold",
+    "url": "https://x.com/thsottiaux/status/2106858395370389784",
+    "postCreatedAt": "2026-10-04T21:25:59.000Z"
   },
   "latest": {
     "reset": {
