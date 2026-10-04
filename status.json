@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T00:32:25.026Z",
+  "updatedAt": "2026-10-04T00:37:22.642Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T00:32:25.018Z",
-    "lastSuccessAt": "2026-10-04T00:32:25.018Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T00:37:22.601Z",
+    "lastSuccessAt": "2026-10-04T00:37:22.601Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106541589007114420",
-    "text": "@Voxyz_ai Glad you like it! Anything we can improve?",
-    "url": "https://x.com/thsottiaux/status/2106541589007114420",
-    "postCreatedAt": "2026-10-04T00:27:07.000Z"
+    "id": "2106543375088488596",
+    "text": "@davis7 6.1 coming soon",
+    "url": "https://x.com/thsottiaux/status/2106543375088488596",
+    "postCreatedAt": "2026-10-04T00:34:12.000Z"
   },
   "latest": {
     "reset": {
