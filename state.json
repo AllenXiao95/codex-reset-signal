@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106842998214717876",
-  "lastCheckedAt": "2026-10-04T20:32:29.412Z",
-  "lastSuccessAt": "2026-10-04T20:32:29.412Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 284,
+  "sinceId": "2106845738814849339",
+  "lastCheckedAt": "2026-10-04T20:37:29.275Z",
+  "lastSuccessAt": "2026-10-04T20:37:29.275Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 286,
   "matches": [
+    {
+      "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
+      "id": "2106845241357824205",
+      "canonicalId": "2106845241357824205",
+      "text": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
+      "createdAt": "2026-10-04T20:33:43.000Z",
+      "url": "https://x.com/thsottiaux/status/2106845241357824205",
+      "media": [],
+      "detectedAt": "2026-10-04T20:37:29.275Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-04T20:37:29.280Z"
+    },
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
       "id": "2106233145163141249",
@@ -752,15 +780,17 @@
     "2106609390577156384": "910bff1e812c9cfc1fc234e98069cc62a9be2e025a6b588f0c5ca3bcf13d40c5",
     "2106610099720720811": "896a6d1f19cbebdda316ad3fc92961afd928c39f87e48698cb60edbb4c8f79e9",
     "2106769163620671823": "36c901e01fb1136f81e75381132c28063d025059b8f596e79eb1edc821cf16e4",
-    "2106842998214717876": "ce45c63dfbac5399618ed68aed9e07c10ec0364e537077d85f4b9bff60aea62b"
+    "2106842998214717876": "ce45c63dfbac5399618ed68aed9e07c10ec0364e537077d85f4b9bff60aea62b",
+    "2106845241357824205": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
+    "2106845738814849339": "56df9b61f319fa659dfc9b91d4f5750c51d0a43f1028d89e0523daea934f67bc"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106842998214717876",
-    "canonicalId": "2106842998214717876",
-    "text": "@nabeelqu Locked in",
-    "createdAt": "2026-10-04T20:24:48.000Z",
-    "url": "https://x.com/thsottiaux/status/2106842998214717876",
+    "id": "2106845738814849339",
+    "canonicalId": "2106845738814849339",
+    "text": "@poteto I challenge you to do the same\n\nhttps://t.co/aUNDJbJ9y2",
+    "createdAt": "2026-10-04T20:35:42.000Z",
+    "url": "https://x.com/thsottiaux/status/2106845738814849339",
     "media": []
   }
 }

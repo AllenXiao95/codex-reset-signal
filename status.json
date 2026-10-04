@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T20:32:29.417Z",
+  "updatedAt": "2026-10-04T20:37:29.286Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T20:32:29.412Z",
-    "lastSuccessAt": "2026-10-04T20:32:29.412Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T20:37:29.275Z",
+    "lastSuccessAt": "2026-10-04T20:37:29.275Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2106842998214717876",
-    "text": "@nabeelqu Locked in",
-    "url": "https://x.com/thsottiaux/status/2106842998214717876",
-    "postCreatedAt": "2026-10-04T20:24:48.000Z"
+    "id": "2106845738814849339",
+    "text": "@poteto I challenge you to do the same\n\nhttps://t.co/aUNDJbJ9y2",
+    "url": "https://x.com/thsottiaux/status/2106845738814849339",
+    "postCreatedAt": "2026-10-04T20:35:42.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
+      "id": "2106845241357824205",
+      "text": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset. Let the improvements begin.",
+      "url": "https://x.com/thsottiaux/status/2106845241357824205",
+      "postCreatedAt": "2026-10-04T20:33:43.000Z",
+      "detectedAt": "2026-10-04T20:37:29.275Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Over the next 28 days, each day we’ll either ship one thing that is a clear improvement and relevant for most codex/work users or ship a full reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
       "id": "2106233145163141249",
