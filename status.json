@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T04:32:35.544Z",
+  "updatedAt": "2026-10-04T04:37:27.142Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T04:32:35.535Z",
-    "lastSuccessAt": "2026-10-04T04:32:35.535Z",
+    "lastCheckedAt": "2026-10-04T04:37:27.010Z",
+    "lastSuccessAt": "2026-10-04T04:37:27.010Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106602729875685780",
-    "text": "I have never in my life achieved inbox zero until I just made it an active goal for my dot to help get it done. Let’s see how long it lasts, but it’s a great feeling. https://t.co/qHlFmfSIX5",
-    "url": "https://x.com/thsottiaux/status/2106602729875685780",
-    "postCreatedAt": "2026-10-04T04:30:04.000Z"
+    "id": "2106603980386394123",
+    "text": "What it did\n\n- delete all categories of email that were not needed for me to keep, validating them in batch\n- identify labels for types of work that I do and label all the emails appropriately\n- walked me through emails that needed a reply, searching for relevant context in the background to help get things right\n\nand in the process I was able to go through a lot of feedback and requests people send me directly through email. It was a good Saturday.",
+    "url": "https://x.com/thsottiaux/status/2106603980386394123",
+    "postCreatedAt": "2026-10-04T04:35:02.000Z"
   },
   "latest": {
     "reset": {

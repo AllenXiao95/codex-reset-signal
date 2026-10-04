@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106602729875685780",
-  "lastCheckedAt": "2026-10-04T04:32:35.535Z",
-  "lastSuccessAt": "2026-10-04T04:32:35.535Z",
+  "sinceId": "2106603980386394123",
+  "lastCheckedAt": "2026-10-04T04:37:27.010Z",
+  "lastSuccessAt": "2026-10-04T04:37:27.010Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 277,
+  "postsScanned": 278,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -745,23 +745,16 @@
     "2106544544892518815": "3c5ae118b80061c046bd87bcc50c657de037686265badf56c35d7112f87b8f7c",
     "2106546689012281771": "df2957ccb835cb2a7fe35172bedfe309a04b4b46559482fc9ac9c20cd7efa1b8",
     "2106593009806815429": "d5267a3556703f74f5457a102e76b737b8da600df8de6cde226082746603ad9a",
-    "2106602729875685780": "4163eefa442201df7b058fdfd15e8192e60b5b4571b7e88487f54df8694f80f6"
+    "2106602729875685780": "4163eefa442201df7b058fdfd15e8192e60b5b4571b7e88487f54df8694f80f6",
+    "2106603980386394123": "27a0e2052f7ca79856d0a86c82c84c124239acfc1b31c63e40e520c1dc3ed667"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106602729875685780",
-    "canonicalId": "2106602729875685780",
-    "text": "I have never in my life achieved inbox zero until I just made it an active goal for my dot to help get it done. Let’s see how long it lasts, but it’s a great feeling. https://t.co/qHlFmfSIX5",
-    "createdAt": "2026-10-04T04:30:04.000Z",
-    "url": "https://x.com/thsottiaux/status/2106602729875685780",
-    "media": [
-      {
-        "mediaKey": "2106602465798078464",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HTwnyAjbQAA-rcA.jpg?name=orig",
-        "previewImageUrl": null,
-        "altText": null
-      }
-    ]
+    "id": "2106603980386394123",
+    "canonicalId": "2106603980386394123",
+    "text": "What it did\n\n- delete all categories of email that were not needed for me to keep, validating them in batch\n- identify labels for types of work that I do and label all the emails appropriately\n- walked me through emails that needed a reply, searching for relevant context in the background to help get things right\n\nand in the process I was able to go through a lot of feedback and requests people send me directly through email. It was a good Saturday.",
+    "createdAt": "2026-10-04T04:35:02.000Z",
+    "url": "https://x.com/thsottiaux/status/2106603980386394123",
+    "media": []
   }
 }
