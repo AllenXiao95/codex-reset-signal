@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106609390577156384",
-  "lastCheckedAt": "2026-10-04T04:57:24.604Z",
-  "lastSuccessAt": "2026-10-04T04:57:24.604Z",
+  "sinceId": "2106610099720720811",
+  "lastCheckedAt": "2026-10-04T05:02:24.331Z",
+  "lastSuccessAt": "2026-10-04T05:02:24.331Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 281,
+  "postsScanned": 282,
   "matches": [
     {
       "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
@@ -749,15 +749,16 @@
     "2106603980386394123": "27a0e2052f7ca79856d0a86c82c84c124239acfc1b31c63e40e520c1dc3ed667",
     "2106605571168510149": "d8de347ffdc23e0e3b8777ac311e8ac582a2cd27543d5943786cf889afa460bc",
     "2106607456130592861": "dcb0b5bb0e38eb51dfcfc78253c1594bd8524c6b62fe9398c546e72623ce9972",
-    "2106609390577156384": "910bff1e812c9cfc1fc234e98069cc62a9be2e025a6b588f0c5ca3bcf13d40c5"
+    "2106609390577156384": "910bff1e812c9cfc1fc234e98069cc62a9be2e025a6b588f0c5ca3bcf13d40c5",
+    "2106610099720720811": "896a6d1f19cbebdda316ad3fc92961afd928c39f87e48698cb60edbb4c8f79e9"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106609390577156384",
-    "canonicalId": "2106609390577156384",
-    "text": "@hiarun02 There is a full usage dashboard in the app now! Let me know what’s missing if anything, will fix",
-    "createdAt": "2026-10-04T04:56:32.000Z",
-    "url": "https://x.com/thsottiaux/status/2106609390577156384",
+    "id": "2106610099720720811",
+    "canonicalId": "2106610099720720811",
+    "text": "All right, we’re locking in. Only things being worked on are simplifications, more efficiency for more usage, groundbreaking features or new models. \n\nSometimes you have to invest ahead of the curve, but feedback is clear that you all want things to get simpler. On it.",
+    "createdAt": "2026-10-04T04:59:21.000Z",
+    "url": "https://x.com/thsottiaux/status/2106610099720720811",
     "media": []
   }
 }
