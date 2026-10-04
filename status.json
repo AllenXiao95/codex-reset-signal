@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-04T00:23:00.231Z",
+  "updatedAt": "2026-10-04T00:27:25.478Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-04T00:23:00.227Z",
-    "lastSuccessAt": "2026-10-04T00:23:00.227Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-04T00:27:25.472Z",
+    "lastSuccessAt": "2026-10-04T00:27:25.472Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106501204285239560",
-    "text": "If we were to add one more sidebar, what should be in it",
-    "url": "https://x.com/thsottiaux/status/2106501204285239560",
-    "postCreatedAt": "2026-10-03T21:46:38.000Z"
+    "id": "2106541589007114420",
+    "text": "@Voxyz_ai Glad you like it! Anything we can improve?",
+    "url": "https://x.com/thsottiaux/status/2106541589007114420",
+    "postCreatedAt": "2026-10-04T00:27:07.000Z"
   },
   "latest": {
     "reset": {
