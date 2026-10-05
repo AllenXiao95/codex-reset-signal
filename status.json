@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T17:17:33.304Z",
+  "updatedAt": "2026-10-05T17:22:34.112Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-05T17:17:33.254Z",
-    "lastSuccessAt": "2026-10-05T17:17:33.254Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-05T17:22:34.105Z",
+    "lastSuccessAt": "2026-10-05T17:22:34.105Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2106967126250791091",
-    "text": "@hiarun02 Facts",
-    "url": "https://x.com/thsottiaux/status/2106967126250791091",
-    "postCreatedAt": "2026-10-05T04:38:03.000Z"
+    "id": "2107159119107146237",
+    "text": "Reaching 50 TPS instead of 30TPS, with also the most optimized tokenizer out there. And the models are quite the efficient ones in terms of number of tokens needed to get things done!",
+    "url": "https://x.com/thsottiaux/status/2107159119107146237",
+    "postCreatedAt": "2026-10-05T17:20:57.000Z"
   },
   "latest": {
     "reset": {

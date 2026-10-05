@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106967126250791091",
-  "lastCheckedAt": "2026-10-05T17:17:33.254Z",
-  "lastSuccessAt": "2026-10-05T17:17:33.254Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 298,
+  "sinceId": "2107159119107146237",
+  "lastCheckedAt": "2026-10-05T17:22:34.105Z",
+  "lastSuccessAt": "2026-10-05T17:22:34.105Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 300,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -793,15 +793,17 @@
     "2106959403782184960": "0ba9c8b054d905dc3bdb6d8dbafac93dd95ed9e3f05f983b0e0ab387a6117485",
     "2106963521561083946": "f1de81143f19fbedd8f1069f7fa09511358452a26ac16f527d87163d3edfef72",
     "2106966244314567159": "d536bbb05a20de080c95663775f2bed1fe9be1d8fd333b80f61842353566a9f0",
-    "2106967126250791091": "f3f86e3f33d56b258c75d7f7c808f72a7d3bcee3cafa4e1af0d5ae8af7ce9645"
+    "2106967126250791091": "f3f86e3f33d56b258c75d7f7c808f72a7d3bcee3cafa4e1af0d5ae8af7ce9645",
+    "2107158998495748264": "5738b873d54e874ad02db8783310a861d219c7ae5aacdd7a7beab2ef7338d225",
+    "2107159119107146237": "0f466aa0e1e7ba4c0c40a55a6803edec2dd12dd5e388870ff3f448c118301f90"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106967126250791091",
-    "canonicalId": "2106967126250791091",
-    "text": "@hiarun02 Facts",
-    "createdAt": "2026-10-05T04:38:03.000Z",
-    "url": "https://x.com/thsottiaux/status/2106967126250791091",
+    "id": "2107159119107146237",
+    "canonicalId": "2107159119107146237",
+    "text": "Reaching 50 TPS instead of 30TPS, with also the most optimized tokenizer out there. And the models are quite the efficient ones in terms of number of tokens needed to get things done!",
+    "createdAt": "2026-10-05T17:20:57.000Z",
+    "url": "https://x.com/thsottiaux/status/2107159119107146237",
     "media": []
   }
 }
