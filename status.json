@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T04:37:28.871Z",
+  "updatedAt": "2026-10-05T04:42:31.227Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-05T04:37:28.865Z",
-    "lastSuccessAt": "2026-10-05T04:37:28.865Z",
+    "lastCheckedAt": "2026-10-05T04:42:31.222Z",
+    "lastSuccessAt": "2026-10-05T04:42:31.222Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106966244314567159",
-    "text": "@alexkehr Congrats!!",
-    "url": "https://x.com/thsottiaux/status/2106966244314567159",
-    "postCreatedAt": "2026-10-05T04:34:32.000Z"
+    "id": "2106967126250791091",
+    "text": "@hiarun02 Facts",
+    "url": "https://x.com/thsottiaux/status/2106967126250791091",
+    "postCreatedAt": "2026-10-05T04:38:03.000Z"
   },
   "latest": {
     "reset": {
