@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106963521561083946",
-  "lastCheckedAt": "2026-10-05T04:32:22.524Z",
-  "lastSuccessAt": "2026-10-05T04:32:22.524Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 296,
+  "sinceId": "2106966244314567159",
+  "lastCheckedAt": "2026-10-05T04:37:28.865Z",
+  "lastSuccessAt": "2026-10-05T04:37:28.865Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 297,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -791,15 +791,16 @@
     "2106957975147676025": "8d4cb4ab8ec00bcf30eb879dbc2aed7fd6ddc970f15466f7268d8dd02fd82d2e",
     "2106958559695282202": "785887ddf78711ee7997c37c76a6dcc71e27587941cda3e4a2dbdb291e995286",
     "2106959403782184960": "0ba9c8b054d905dc3bdb6d8dbafac93dd95ed9e3f05f983b0e0ab387a6117485",
-    "2106963521561083946": "f1de81143f19fbedd8f1069f7fa09511358452a26ac16f527d87163d3edfef72"
+    "2106963521561083946": "f1de81143f19fbedd8f1069f7fa09511358452a26ac16f527d87163d3edfef72",
+    "2106966244314567159": "d536bbb05a20de080c95663775f2bed1fe9be1d8fd333b80f61842353566a9f0"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106963521561083946",
-    "canonicalId": "2106963521561083946",
-    "text": "@AlexBerish @OpenAI @sama Everything is indeed coordinated through Slack",
-    "createdAt": "2026-10-05T04:23:43.000Z",
-    "url": "https://x.com/thsottiaux/status/2106963521561083946",
+    "id": "2106966244314567159",
+    "canonicalId": "2106966244314567159",
+    "text": "@alexkehr Congrats!!",
+    "createdAt": "2026-10-05T04:34:32.000Z",
+    "url": "https://x.com/thsottiaux/status/2106966244314567159",
     "media": []
   }
 }
