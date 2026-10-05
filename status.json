@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T04:02:28.686Z",
+  "updatedAt": "2026-10-05T04:07:23.231Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-05T04:02:28.681Z",
-    "lastSuccessAt": "2026-10-05T04:02:28.681Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-10-05T04:07:23.226Z",
+    "lastSuccessAt": "2026-10-05T04:07:23.226Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2106957975147676025",
-    "text": "@fawnunwrap Don’t feel bad. It’s part of the fun and I’m here for it.",
-    "url": "https://x.com/thsottiaux/status/2106957975147676025",
-    "postCreatedAt": "2026-10-05T04:01:41.000Z"
+    "id": "2106959403782184960",
+    "text": "@ai_for_success Claudex AI Space by Google",
+    "url": "https://x.com/thsottiaux/status/2106959403782184960",
+    "postCreatedAt": "2026-10-05T04:07:21.000Z"
   },
   "latest": {
     "reset": {
