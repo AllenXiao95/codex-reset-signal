@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107185534359761051",
-  "lastCheckedAt": "2026-10-05T19:33:14.194Z",
-  "lastSuccessAt": "2026-10-05T19:33:14.194Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 301,
+  "sinceId": "2107200530477101461",
+  "lastCheckedAt": "2026-10-05T20:13:53.607Z",
+  "lastSuccessAt": "2026-10-05T20:13:53.607Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 302,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -796,15 +796,16 @@
     "2106967126250791091": "f3f86e3f33d56b258c75d7f7c808f72a7d3bcee3cafa4e1af0d5ae8af7ce9645",
     "2107158998495748264": "5738b873d54e874ad02db8783310a861d219c7ae5aacdd7a7beab2ef7338d225",
     "2107159119107146237": "0f466aa0e1e7ba4c0c40a55a6803edec2dd12dd5e388870ff3f448c118301f90",
-    "2107185534359761051": "71e5ecd97dbe1c616e6fd13eca83836504d07c8c38a9e6f2451d7e226942e044"
+    "2107185534359761051": "71e5ecd97dbe1c616e6fd13eca83836504d07c8c38a9e6f2451d7e226942e044",
+    "2107200530477101461": "a23a25b9603d4e38b1d3ada6162808e2b745adc951d858bfd370199a95684d01"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107185534359761051",
-    "canonicalId": "2107185534359761051",
-    "text": "@karrisaarinen @OpenAI @linear Nice avatar",
-    "createdAt": "2026-10-05T19:05:55.000Z",
-    "url": "https://x.com/thsottiaux/status/2107185534359761051",
+    "id": "2107200530477101461",
+    "canonicalId": "2107200530477101461",
+    "text": "Sergio is cooking up magic with collaborative space right in ChatGPT. Improving leaps and bounds every day.",
+    "createdAt": "2026-10-05T20:05:31.000Z",
+    "url": "https://x.com/thsottiaux/status/2107200530477101461",
     "media": []
   }
 }

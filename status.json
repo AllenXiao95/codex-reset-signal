@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T19:33:14.199Z",
+  "updatedAt": "2026-10-05T20:13:53.611Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-05T19:33:14.194Z",
-    "lastSuccessAt": "2026-10-05T19:33:14.194Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-05T20:13:53.607Z",
+    "lastSuccessAt": "2026-10-05T20:13:53.607Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107185534359761051",
-    "text": "@karrisaarinen @OpenAI @linear Nice avatar",
-    "url": "https://x.com/thsottiaux/status/2107185534359761051",
-    "postCreatedAt": "2026-10-05T19:05:55.000Z"
+    "id": "2107200530477101461",
+    "text": "Sergio is cooking up magic with collaborative space right in ChatGPT. Improving leaps and bounds every day.",
+    "url": "https://x.com/thsottiaux/status/2107200530477101461",
+    "postCreatedAt": "2026-10-05T20:05:31.000Z"
   },
   "latest": {
     "reset": {
