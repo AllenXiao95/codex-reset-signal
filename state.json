@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2106959403782184960",
-  "lastCheckedAt": "2026-10-05T04:22:35.007Z",
-  "lastSuccessAt": "2026-10-05T04:22:35.007Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 295,
+  "sinceId": "2106963521561083946",
+  "lastCheckedAt": "2026-10-05T04:27:25.858Z",
+  "lastSuccessAt": "2026-10-05T04:27:25.858Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 296,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -790,15 +790,16 @@
     "2106894683523928229": "b23403d7115c61d3d976bc15233d13c4ae92f5b8c544245b5814c01aa0ca387e",
     "2106957975147676025": "8d4cb4ab8ec00bcf30eb879dbc2aed7fd6ddc970f15466f7268d8dd02fd82d2e",
     "2106958559695282202": "785887ddf78711ee7997c37c76a6dcc71e27587941cda3e4a2dbdb291e995286",
-    "2106959403782184960": "0ba9c8b054d905dc3bdb6d8dbafac93dd95ed9e3f05f983b0e0ab387a6117485"
+    "2106959403782184960": "0ba9c8b054d905dc3bdb6d8dbafac93dd95ed9e3f05f983b0e0ab387a6117485",
+    "2106963521561083946": "f1de81143f19fbedd8f1069f7fa09511358452a26ac16f527d87163d3edfef72"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2106959403782184960",
-    "canonicalId": "2106959403782184960",
-    "text": "@ai_for_success Claudex AI Space by Google",
-    "createdAt": "2026-10-05T04:07:21.000Z",
-    "url": "https://x.com/thsottiaux/status/2106959403782184960",
+    "id": "2106963521561083946",
+    "canonicalId": "2106963521561083946",
+    "text": "@AlexBerish @OpenAI @sama Everything is indeed coordinated through Slack",
+    "createdAt": "2026-10-05T04:23:43.000Z",
+    "url": "https://x.com/thsottiaux/status/2106963521561083946",
     "media": []
   }
 }

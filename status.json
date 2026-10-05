@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-05T04:22:35.013Z",
+  "updatedAt": "2026-10-05T04:27:25.864Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-05T04:22:35.007Z",
-    "lastSuccessAt": "2026-10-05T04:22:35.007Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-05T04:27:25.858Z",
+    "lastSuccessAt": "2026-10-05T04:27:25.858Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2106959403782184960",
-    "text": "@ai_for_success Claudex AI Space by Google",
-    "url": "https://x.com/thsottiaux/status/2106959403782184960",
-    "postCreatedAt": "2026-10-05T04:07:21.000Z"
+    "id": "2106963521561083946",
+    "text": "@AlexBerish @OpenAI @sama Everything is indeed coordinated through Slack",
+    "url": "https://x.com/thsottiaux/status/2106963521561083946",
+    "postCreatedAt": "2026-10-05T04:23:43.000Z"
   },
   "latest": {
     "reset": {
