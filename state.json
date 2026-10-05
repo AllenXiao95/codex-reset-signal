@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107159119107146237",
-  "lastCheckedAt": "2026-10-05T19:03:07.335Z",
-  "lastSuccessAt": "2026-10-05T19:03:07.335Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 300,
+  "sinceId": "2107185534359761051",
+  "lastCheckedAt": "2026-10-05T19:07:40.733Z",
+  "lastSuccessAt": "2026-10-05T19:07:40.733Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 301,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -795,15 +795,16 @@
     "2106966244314567159": "d536bbb05a20de080c95663775f2bed1fe9be1d8fd333b80f61842353566a9f0",
     "2106967126250791091": "f3f86e3f33d56b258c75d7f7c808f72a7d3bcee3cafa4e1af0d5ae8af7ce9645",
     "2107158998495748264": "5738b873d54e874ad02db8783310a861d219c7ae5aacdd7a7beab2ef7338d225",
-    "2107159119107146237": "0f466aa0e1e7ba4c0c40a55a6803edec2dd12dd5e388870ff3f448c118301f90"
+    "2107159119107146237": "0f466aa0e1e7ba4c0c40a55a6803edec2dd12dd5e388870ff3f448c118301f90",
+    "2107185534359761051": "71e5ecd97dbe1c616e6fd13eca83836504d07c8c38a9e6f2451d7e226942e044"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107159119107146237",
-    "canonicalId": "2107159119107146237",
-    "text": "Reaching 50 TPS instead of 30TPS, with also the most optimized tokenizer out there. And the models are quite the efficient ones in terms of number of tokens needed to get things done!",
-    "createdAt": "2026-10-05T17:20:57.000Z",
-    "url": "https://x.com/thsottiaux/status/2107159119107146237",
+    "id": "2107185534359761051",
+    "canonicalId": "2107185534359761051",
+    "text": "@karrisaarinen @OpenAI @linear Nice avatar",
+    "createdAt": "2026-10-05T19:05:55.000Z",
+    "url": "https://x.com/thsottiaux/status/2107185534359761051",
     "media": []
   }
 }
