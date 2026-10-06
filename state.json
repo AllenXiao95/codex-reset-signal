@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107310074209407069",
-  "lastCheckedAt": "2026-10-06T03:22:24.081Z",
-  "lastSuccessAt": "2026-10-06T03:22:24.081Z",
+  "sinceId": "2107311729768353844",
+  "lastCheckedAt": "2026-10-06T03:27:28.173Z",
+  "lastSuccessAt": "2026-10-06T03:27:28.173Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 310,
+  "postsScanned": 311,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -805,15 +805,16 @@
     "2107295543563362784": "f221b6d6d41ebd2e4d1ffaa3eca55512cc219a55edca434dd44f0c57bc8314a5",
     "2107295839655952486": "10c66d81264e5cde19ff144eb8695069bb18fd3b1e2fef469b80c8153e558348",
     "2107301501215613206": "373d3c49d899078568658644f7e87f11d6f6738adb0c2f9c6fc8572e6467f702",
-    "2107310074209407069": "e6f9b924777763d17f57b72ab657205e078c657de17966ae52b381dfcd732014"
+    "2107310074209407069": "e6f9b924777763d17f57b72ab657205e078c657de17966ae52b381dfcd732014",
+    "2107311729768353844": "62e952bfa72fedaf8b6e35b06596868a87fb7db5207bc126bf221e147c0b0e8c"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107310074209407069",
-    "canonicalId": "2107310074209407069",
-    "text": "@poteto @bot It’s the only thing you’re talking about. I recognize the obsession",
-    "createdAt": "2026-10-06T03:20:48.000Z",
-    "url": "https://x.com/thsottiaux/status/2107310074209407069",
+    "id": "2107311729768353844",
+    "canonicalId": "2107311729768353844",
+    "text": "This might have been my best day so far at oai. Ridiculous amounts of fun and intensity. Future is bright",
+    "createdAt": "2026-10-06T03:27:22.000Z",
+    "url": "https://x.com/thsottiaux/status/2107311729768353844",
     "media": []
   }
 }
