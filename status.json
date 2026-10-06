@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T21:37:28.430Z",
+  "updatedAt": "2026-10-06T21:42:25.410Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T21:37:28.425Z",
-    "lastSuccessAt": "2026-10-06T21:37:28.425Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T21:42:25.405Z",
+    "lastSuccessAt": "2026-10-06T21:42:25.405Z",
+    "lastRunStatus": "checked-3-posts"
   },
   "latestObservedPost": {
-    "id": "2107579151322591412",
-    "text": "@MerkleGhost @SSHCodes OK fake tibo",
-    "url": "https://x.com/thsottiaux/status/2107579151322591412",
-    "postCreatedAt": "2026-10-06T21:10:01.000Z"
+    "id": "2107587158001496242",
+    "text": "@itsmattfranco It must be done",
+    "url": "https://x.com/thsottiaux/status/2107587158001496242",
+    "postCreatedAt": "2026-10-06T21:41:50.000Z"
   },
   "latest": {
     "reset": {
