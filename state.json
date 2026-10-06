@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107575657014468879",
-  "lastCheckedAt": "2026-10-06T20:57:25.411Z",
-  "lastSuccessAt": "2026-10-06T20:57:25.411Z",
-  "lastRunStatus": "checked-2-posts",
-  "postsScanned": 329,
+  "sinceId": "2107576143285219799",
+  "lastCheckedAt": "2026-10-06T21:02:27.549Z",
+  "lastSuccessAt": "2026-10-06T21:02:27.549Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 330,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -824,15 +824,16 @@
     "2107558288934216153": "ac56e63acb6c1e540ca772efc407435eada1f32eb715b0bdef56ae03670958a3",
     "2107573405553938664": "7a033d513dabda66ae854de4cc1400ffc0d285b74d10808088b30a0ccbb41de4",
     "2107574912349303197": "64e00f290e868dad0ad08db7ae57d081ff9b8e1f96b0efe242642cb46be40383",
-    "2107575657014468879": "2d660456dca4d926cdd0ef0d07b9d87373f5b793374d0df11276a98273c83d9d"
+    "2107575657014468879": "2d660456dca4d926cdd0ef0d07b9d87373f5b793374d0df11276a98273c83d9d",
+    "2107576143285219799": "1cdb305fcf1fb2d8ef3f4a3f30715be9b019f8e46f285e2ff6e59a95c878df33"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107575657014468879",
-    "canonicalId": "2107575657014468879",
-    "text": "Roundup of Day 2/\n\n2.1/ Approve for me (auto-review) is now included and does not use usage. Can be between 2-10% of plan when used. Also better for you.\n2.2/ Simplified API for builders.\n2.3/ Meeting notes integrated.\n2.4/ Decisions API live for builders. Will use in the app to improve the experience.",
-    "createdAt": "2026-10-06T20:56:08.000Z",
-    "url": "https://x.com/thsottiaux/status/2107575657014468879",
+    "id": "2107576143285219799",
+    "canonicalId": "2107576143285219799",
+    "text": "Vote",
+    "createdAt": "2026-10-06T20:58:04.000Z",
+    "url": "https://x.com/thsottiaux/status/2107576143285219799",
     "media": []
   }
 }
