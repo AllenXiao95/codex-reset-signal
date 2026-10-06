@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T22:02:26.849Z",
+  "updatedAt": "2026-10-06T22:07:26.962Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T22:02:26.844Z",
-    "lastSuccessAt": "2026-10-06T22:02:26.844Z",
+    "lastCheckedAt": "2026-10-06T22:07:26.954Z",
+    "lastSuccessAt": "2026-10-06T22:07:26.954Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107592271952748814",
-    "text": "@adonis_singh Is this how the internet works 👀",
-    "url": "https://x.com/thsottiaux/status/2107592271952748814",
-    "postCreatedAt": "2026-10-06T22:02:09.000Z"
+    "id": "2107592473048715573",
+    "text": "@TokenGremlin I accept your vote",
+    "url": "https://x.com/thsottiaux/status/2107592473048715573",
+    "postCreatedAt": "2026-10-06T22:02:57.000Z"
   },
   "latest": {
     "reset": {

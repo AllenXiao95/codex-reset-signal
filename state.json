@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107592271952748814",
-  "lastCheckedAt": "2026-10-06T22:02:26.844Z",
-  "lastSuccessAt": "2026-10-06T22:02:26.844Z",
+  "sinceId": "2107592473048715573",
+  "lastCheckedAt": "2026-10-06T22:07:26.954Z",
+  "lastSuccessAt": "2026-10-06T22:07:26.954Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 340,
+  "postsScanned": 341,
   "matches": [
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
@@ -889,15 +889,16 @@
     "2107587158001496242": "fa0ee587ce97bfddf93f5199b3419abb29adda965a908698a215e82f7ba07f5f",
     "2107587334661378382": "fd0c79e63da2c0ec5a5713a30acc8560d240d22772dbd68a7aadd5111a6e2758",
     "2107587734810525809": "6c5cb274fa3057fe4d17cc7082b55d984603809acb9ec453b4b841dabe782851",
-    "2107592271952748814": "062c7944f8e063035ff94630816647241c545dc7c13b7ca6129409b644519805"
+    "2107592271952748814": "062c7944f8e063035ff94630816647241c545dc7c13b7ca6129409b644519805",
+    "2107592473048715573": "3cf177e9f8fc9213f215b133bdaed7a709e0e92612f1816998d83f4c9d3b968a"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107592271952748814",
-    "canonicalId": "2107592271952748814",
-    "text": "@adonis_singh Is this how the internet works 👀",
-    "createdAt": "2026-10-06T22:02:09.000Z",
-    "url": "https://x.com/thsottiaux/status/2107592271952748814",
+    "id": "2107592473048715573",
+    "canonicalId": "2107592473048715573",
+    "text": "@TokenGremlin I accept your vote",
+    "createdAt": "2026-10-06T22:02:57.000Z",
+    "url": "https://x.com/thsottiaux/status/2107592473048715573",
     "media": []
   }
 }
