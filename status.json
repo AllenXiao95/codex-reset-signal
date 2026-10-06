@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T02:42:37.620Z",
+  "updatedAt": "2026-10-06T02:47:23.315Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T02:42:37.615Z",
-    "lastSuccessAt": "2026-10-06T02:42:37.615Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T02:47:23.309Z",
+    "lastSuccessAt": "2026-10-06T02:47:23.309Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107295839655952486",
-    "text": "The real story is this one",
-    "url": "https://x.com/thsottiaux/status/2107295839655952486",
-    "postCreatedAt": "2026-10-06T02:24:14.000Z"
+    "id": "2107301501215613206",
+    "text": "@kimmonismus You can be part of the judge panel for the 28 days",
+    "url": "https://x.com/thsottiaux/status/2107301501215613206",
+    "postCreatedAt": "2026-10-06T02:46:44.000Z"
   },
   "latest": {
     "reset": {

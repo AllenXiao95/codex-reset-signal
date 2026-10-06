@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107295839655952486",
-  "lastCheckedAt": "2026-10-06T02:42:37.615Z",
-  "lastSuccessAt": "2026-10-06T02:42:37.615Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 308,
+  "sinceId": "2107301501215613206",
+  "lastCheckedAt": "2026-10-06T02:47:23.309Z",
+  "lastSuccessAt": "2026-10-06T02:47:23.309Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 309,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -803,15 +803,16 @@
     "2107295089416708515": "f5b5e0c2b8f5c1ea51c8d47f39f5fe6a2395379757103964f1af84b8a050cc17",
     "2107295306794905929": "b2981cdb24eb0222965d936d8822e9112ef9b3ab40e6505a7636d7a19cf68596",
     "2107295543563362784": "f221b6d6d41ebd2e4d1ffaa3eca55512cc219a55edca434dd44f0c57bc8314a5",
-    "2107295839655952486": "10c66d81264e5cde19ff144eb8695069bb18fd3b1e2fef469b80c8153e558348"
+    "2107295839655952486": "10c66d81264e5cde19ff144eb8695069bb18fd3b1e2fef469b80c8153e558348",
+    "2107301501215613206": "373d3c49d899078568658644f7e87f11d6f6738adb0c2f9c6fc8572e6467f702"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107295839655952486",
-    "canonicalId": "2107295839655952486",
-    "text": "The real story is this one",
-    "createdAt": "2026-10-06T02:24:14.000Z",
-    "url": "https://x.com/thsottiaux/status/2107295839655952486",
+    "id": "2107301501215613206",
+    "canonicalId": "2107301501215613206",
+    "text": "@kimmonismus You can be part of the judge panel for the 28 days",
+    "createdAt": "2026-10-06T02:46:44.000Z",
+    "url": "https://x.com/thsottiaux/status/2107301501215613206",
     "media": []
   }
 }
