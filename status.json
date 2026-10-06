@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T21:42:25.410Z",
+  "updatedAt": "2026-10-06T21:47:33.832Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T21:42:25.405Z",
-    "lastSuccessAt": "2026-10-06T21:42:25.405Z",
-    "lastRunStatus": "checked-3-posts"
+    "lastCheckedAt": "2026-10-06T21:47:33.826Z",
+    "lastSuccessAt": "2026-10-06T21:47:33.826Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2107587158001496242",
-    "text": "@itsmattfranco It must be done",
-    "url": "https://x.com/thsottiaux/status/2107587158001496242",
-    "postCreatedAt": "2026-10-06T21:41:50.000Z"
+    "id": "2107587734810525809",
+    "text": "@poteto Lines of code as a measure for productivity?",
+    "url": "https://x.com/thsottiaux/status/2107587734810525809",
+    "postCreatedAt": "2026-10-06T21:44:07.000Z"
   },
   "latest": {
     "reset": {

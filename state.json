@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107587158001496242",
-  "lastCheckedAt": "2026-10-06T21:42:25.405Z",
-  "lastSuccessAt": "2026-10-06T21:42:25.405Z",
-  "lastRunStatus": "checked-3-posts",
-  "postsScanned": 337,
+  "sinceId": "2107587734810525809",
+  "lastCheckedAt": "2026-10-06T21:47:33.826Z",
+  "lastSuccessAt": "2026-10-06T21:47:33.826Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 339,
   "matches": [
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
@@ -886,15 +886,17 @@
     "2107579151322591412": "56ac28f37f539989f126ac69f0a6e2dfdfc464bc77bb5fc665277daf4fac65f9",
     "2107586339860631980": "99da11d2fa88ff11185e263814680c22f6e9af722f15d7c99a9f581cf791b3ea",
     "2107586622766366739": "dd70bf9b6401b198f63d2cb8041353b5fe04ab1bced95028510e217facf0c232",
-    "2107587158001496242": "fa0ee587ce97bfddf93f5199b3419abb29adda965a908698a215e82f7ba07f5f"
+    "2107587158001496242": "fa0ee587ce97bfddf93f5199b3419abb29adda965a908698a215e82f7ba07f5f",
+    "2107587334661378382": "fd0c79e63da2c0ec5a5713a30acc8560d240d22772dbd68a7aadd5111a6e2758",
+    "2107587734810525809": "6c5cb274fa3057fe4d17cc7082b55d984603809acb9ec453b4b841dabe782851"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107587158001496242",
-    "canonicalId": "2107587158001496242",
-    "text": "@itsmattfranco It must be done",
-    "createdAt": "2026-10-06T21:41:50.000Z",
-    "url": "https://x.com/thsottiaux/status/2107587158001496242",
+    "id": "2107587734810525809",
+    "canonicalId": "2107587734810525809",
+    "text": "@poteto Lines of code as a measure for productivity?",
+    "createdAt": "2026-10-06T21:44:07.000Z",
+    "url": "https://x.com/thsottiaux/status/2107587734810525809",
     "media": []
   }
 }
