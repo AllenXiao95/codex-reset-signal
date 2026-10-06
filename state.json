@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2107579151322591412",
-  "lastCheckedAt": "2026-10-06T21:12:29.355Z",
-  "lastSuccessAt": "2026-10-06T21:12:29.355Z",
-  "lastRunStatus": "checked-3-posts",
+  "lastCheckedAt": "2026-10-06T21:17:22.580Z",
+  "lastSuccessAt": "2026-10-06T21:17:22.580Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 334,
   "matches": [
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
       "id": "2107578625419866469",
-      "canonicalId": "2107578625419866469",
       "text": "Four updates or a reset. Or both. How was day 2.",
       "createdAt": "2026-10-06T21:07:55.000Z",
       "url": "https://x.com/thsottiaux/status/2107578625419866469",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-06T21:12:29.362Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-06T21:12:29.362Z"
+      ]
     },
     {
       "version": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397",
