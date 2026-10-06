@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T19:32:29.883Z",
+  "updatedAt": "2026-10-06T19:37:30.489Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T19:32:29.879Z",
-    "lastSuccessAt": "2026-10-06T19:32:29.879Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T19:37:30.485Z",
+    "lastSuccessAt": "2026-10-06T19:37:30.485Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107548725359104441",
-    "text": "Day 2.2/\n\nOK this one is smaller, but we removed some friction for when building on the API. Happy building.",
-    "url": "https://x.com/thsottiaux/status/2107548725359104441",
-    "postCreatedAt": "2026-10-06T19:09:07.000Z"
+    "id": "2107555660548468830",
+    "text": "@poteto What if bot goes down https://t.co/YwJk5thEbw",
+    "url": "https://x.com/thsottiaux/status/2107555660548468830",
+    "postCreatedAt": "2026-10-06T19:36:40.000Z"
   },
   "latest": {
     "reset": {
