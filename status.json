@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T03:17:21.826Z",
+  "updatedAt": "2026-10-06T03:22:24.086Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T03:17:21.823Z",
-    "lastSuccessAt": "2026-10-06T03:17:21.823Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T03:22:24.081Z",
+    "lastSuccessAt": "2026-10-06T03:22:24.081Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107301501215613206",
-    "text": "@kimmonismus You can be part of the judge panel for the 28 days",
-    "url": "https://x.com/thsottiaux/status/2107301501215613206",
-    "postCreatedAt": "2026-10-06T02:46:44.000Z"
+    "id": "2107310074209407069",
+    "text": "@poteto @bot It’s the only thing you’re talking about. I recognize the obsession",
+    "url": "https://x.com/thsottiaux/status/2107310074209407069",
+    "postCreatedAt": "2026-10-06T03:20:48.000Z"
   },
   "latest": {
     "reset": {
