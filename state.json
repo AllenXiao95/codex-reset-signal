@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107599996225007892",
-  "lastCheckedAt": "2026-10-06T22:42:27.817Z",
-  "lastSuccessAt": "2026-10-06T22:42:27.817Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 343,
+  "sinceId": "2107603154699173997",
+  "lastCheckedAt": "2026-10-06T22:47:25.416Z",
+  "lastSuccessAt": "2026-10-06T22:47:25.416Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 344,
   "matches": [
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
@@ -892,15 +892,16 @@
     "2107592271952748814": "062c7944f8e063035ff94630816647241c545dc7c13b7ca6129409b644519805",
     "2107592473048715573": "3cf177e9f8fc9213f215b133bdaed7a709e0e92612f1816998d83f4c9d3b968a",
     "2107597780352950624": "a012fe81e40786b212f190ce737b6bfb0c5f5ae22e9c5d4c92a1ccca2e726b4c",
-    "2107599996225007892": "d7420c9a5abb979a66736e166bb327f867ff67e76cce27d11bc5f5038abc6506"
+    "2107599996225007892": "d7420c9a5abb979a66736e166bb327f867ff67e76cce27d11bc5f5038abc6506",
+    "2107603154699173997": "26a9eff8157d9bd4882a18b86260e867abadf00bb9cdaf7a1aab3638c8627d1d"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107599996225007892",
-    "canonicalId": "2107599996225007892",
-    "text": "To calibrate",
-    "createdAt": "2026-10-06T22:32:51.000Z",
-    "url": "https://x.com/thsottiaux/status/2107599996225007892",
+    "id": "2107603154699173997",
+    "canonicalId": "2107603154699173997",
+    "text": "@ShaneMac @poteto mind looking into this one? Could use some PRs",
+    "createdAt": "2026-10-06T22:45:24.000Z",
+    "url": "https://x.com/thsottiaux/status/2107603154699173997",
     "media": []
   }
 }

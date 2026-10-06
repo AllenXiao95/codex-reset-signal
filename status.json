@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T22:42:27.825Z",
+  "updatedAt": "2026-10-06T22:47:25.426Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T22:42:27.817Z",
-    "lastSuccessAt": "2026-10-06T22:42:27.817Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T22:47:25.416Z",
+    "lastSuccessAt": "2026-10-06T22:47:25.416Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107599996225007892",
-    "text": "To calibrate",
-    "url": "https://x.com/thsottiaux/status/2107599996225007892",
-    "postCreatedAt": "2026-10-06T22:32:51.000Z"
+    "id": "2107603154699173997",
+    "text": "@ShaneMac @poteto mind looking into this one? Could use some PRs",
+    "url": "https://x.com/thsottiaux/status/2107603154699173997",
+    "postCreatedAt": "2026-10-06T22:45:24.000Z"
   },
   "latest": {
     "reset": {
