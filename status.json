@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T21:57:26.035Z",
+  "updatedAt": "2026-10-06T22:02:26.849Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T21:57:25.909Z",
-    "lastSuccessAt": "2026-10-06T21:57:25.909Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T22:02:26.844Z",
+    "lastSuccessAt": "2026-10-06T22:02:26.844Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107587734810525809",
-    "text": "@poteto Lines of code as a measure for productivity?",
-    "url": "https://x.com/thsottiaux/status/2107587734810525809",
-    "postCreatedAt": "2026-10-06T21:44:07.000Z"
+    "id": "2107592271952748814",
+    "text": "@adonis_singh Is this how the internet works 👀",
+    "url": "https://x.com/thsottiaux/status/2107592271952748814",
+    "postCreatedAt": "2026-10-06T22:02:09.000Z"
   },
   "latest": {
     "reset": {
