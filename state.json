@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107311729768353844",
-  "lastCheckedAt": "2026-10-06T03:32:30.038Z",
-  "lastSuccessAt": "2026-10-06T03:32:30.038Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 311,
+  "sinceId": "2107314076993155297",
+  "lastCheckedAt": "2026-10-06T03:37:31.200Z",
+  "lastSuccessAt": "2026-10-06T03:37:31.200Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 312,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -806,15 +806,16 @@
     "2107295839655952486": "10c66d81264e5cde19ff144eb8695069bb18fd3b1e2fef469b80c8153e558348",
     "2107301501215613206": "373d3c49d899078568658644f7e87f11d6f6738adb0c2f9c6fc8572e6467f702",
     "2107310074209407069": "e6f9b924777763d17f57b72ab657205e078c657de17966ae52b381dfcd732014",
-    "2107311729768353844": "62e952bfa72fedaf8b6e35b06596868a87fb7db5207bc126bf221e147c0b0e8c"
+    "2107311729768353844": "62e952bfa72fedaf8b6e35b06596868a87fb7db5207bc126bf221e147c0b0e8c",
+    "2107314076993155297": "d91bdf6ba30e740de0ac980f4ebbb63afe6c3d4cc998658d22e02c22ff1805c1"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107311729768353844",
-    "canonicalId": "2107311729768353844",
-    "text": "This might have been my best day so far at oai. Ridiculous amounts of fun and intensity. Future is bright",
-    "createdAt": "2026-10-06T03:27:22.000Z",
-    "url": "https://x.com/thsottiaux/status/2107311729768353844",
+    "id": "2107314076993155297",
+    "canonicalId": "2107314076993155297",
+    "text": "@gazzzzzzman 3 cups a day",
+    "createdAt": "2026-10-06T03:36:42.000Z",
+    "url": "https://x.com/thsottiaux/status/2107314076993155297",
     "media": []
   }
 }
