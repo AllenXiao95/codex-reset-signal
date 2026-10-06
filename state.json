@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107555660548468830",
-  "lastCheckedAt": "2026-10-06T19:42:35.604Z",
-  "lastSuccessAt": "2026-10-06T19:42:35.604Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 325,
+  "sinceId": "2107558288934216153",
+  "lastCheckedAt": "2026-10-06T19:52:25.819Z",
+  "lastSuccessAt": "2026-10-06T19:52:25.819Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 326,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -820,23 +820,16 @@
     "2107504197012988007": "3c5e11ca775eecfc492d1b81a6ee5df2bae9319287ee1133b136f721ec037856",
     "2107517084884521030": "25e4ecb7aa412cd7bcd79529f062e4c64e812b2e15443fa0f9baa4f4e0c5e700",
     "2107548725359104441": "025e3bc9d9d5345adef9b99d8147a9ff6a4e1c43638c2374453f80ea07dbbd28",
-    "2107555660548468830": "856fb3899cacf4a8588c7829850ffb388d3c780c8177c2c46e34c8d25e8588c8"
+    "2107555660548468830": "856fb3899cacf4a8588c7829850ffb388d3c780c8177c2c46e34c8d25e8588c8",
+    "2107558288934216153": "ac56e63acb6c1e540ca772efc407435eada1f32eb715b0bdef56ae03670958a3"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107555660548468830",
-    "canonicalId": "2107555660548468830",
-    "text": "@poteto What if bot goes down https://t.co/YwJk5thEbw",
-    "createdAt": "2026-10-06T19:36:40.000Z",
-    "url": "https://x.com/thsottiaux/status/2107555660548468830",
-    "media": [
-      {
-        "mediaKey": "2107555312450584576",
-        "type": "photo",
-        "url": "https://pbs.twimg.com/media/HT-KY-8awAAi25d.jpg?name=orig",
-        "previewImageUrl": null,
-        "altText": null
-      }
-    ]
+    "id": "2107558288934216153",
+    "canonicalId": "2107558288934216153",
+    "text": "@babayagatwt No dodge, just three updates today",
+    "createdAt": "2026-10-06T19:47:07.000Z",
+    "url": "https://x.com/thsottiaux/status/2107558288934216153",
+    "media": []
   }
 }
