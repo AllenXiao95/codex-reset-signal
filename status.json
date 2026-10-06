@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T21:02:27.553Z",
+  "updatedAt": "2026-10-06T21:07:33.423Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T21:02:27.549Z",
-    "lastSuccessAt": "2026-10-06T21:02:27.549Z",
+    "lastCheckedAt": "2026-10-06T21:07:33.408Z",
+    "lastSuccessAt": "2026-10-06T21:07:33.408Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107576143285219799",
-    "text": "Vote",
-    "url": "https://x.com/thsottiaux/status/2107576143285219799",
-    "postCreatedAt": "2026-10-06T20:58:04.000Z"
+    "id": "2107577536779870210",
+    "text": "@The_Alex I do like giving resets",
+    "url": "https://x.com/thsottiaux/status/2107577536779870210",
+    "postCreatedAt": "2026-10-06T21:03:36.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397",
+      "id": "2107577536779870210",
+      "text": "@The_Alex I do like giving resets",
+      "url": "https://x.com/thsottiaux/status/2107577536779870210",
+      "postCreatedAt": "2026-10-06T21:03:36.000Z",
+      "detectedAt": "2026-10-06T21:07:33.408Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "@The_Alex I do like giving resets",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "@The_Alex I do like giving resets",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
       "id": "2106845241357824205",

@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107576143285219799",
-  "lastCheckedAt": "2026-10-06T21:02:27.549Z",
-  "lastSuccessAt": "2026-10-06T21:02:27.549Z",
+  "sinceId": "2107577536779870210",
+  "lastCheckedAt": "2026-10-06T21:07:33.408Z",
+  "lastSuccessAt": "2026-10-06T21:07:33.408Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 330,
+  "postsScanned": 331,
   "matches": [
+    {
+      "version": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397",
+      "id": "2107577536779870210",
+      "canonicalId": "2107577536779870210",
+      "text": "@The_Alex I do like giving resets",
+      "createdAt": "2026-10-06T21:03:36.000Z",
+      "url": "https://x.com/thsottiaux/status/2107577536779870210",
+      "media": [],
+      "detectedAt": "2026-10-06T21:07:33.408Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "@The_Alex I do like giving resets",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "@The_Alex I do like giving resets",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-06T21:07:33.413Z"
+    },
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
       "id": "2106845241357824205",
@@ -825,15 +853,16 @@
     "2107573405553938664": "7a033d513dabda66ae854de4cc1400ffc0d285b74d10808088b30a0ccbb41de4",
     "2107574912349303197": "64e00f290e868dad0ad08db7ae57d081ff9b8e1f96b0efe242642cb46be40383",
     "2107575657014468879": "2d660456dca4d926cdd0ef0d07b9d87373f5b793374d0df11276a98273c83d9d",
-    "2107576143285219799": "1cdb305fcf1fb2d8ef3f4a3f30715be9b019f8e46f285e2ff6e59a95c878df33"
+    "2107576143285219799": "1cdb305fcf1fb2d8ef3f4a3f30715be9b019f8e46f285e2ff6e59a95c878df33",
+    "2107577536779870210": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107576143285219799",
-    "canonicalId": "2107576143285219799",
-    "text": "Vote",
-    "createdAt": "2026-10-06T20:58:04.000Z",
-    "url": "https://x.com/thsottiaux/status/2107576143285219799",
+    "id": "2107577536779870210",
+    "canonicalId": "2107577536779870210",
+    "text": "@The_Alex I do like giving resets",
+    "createdAt": "2026-10-06T21:03:36.000Z",
+    "url": "https://x.com/thsottiaux/status/2107577536779870210",
     "media": []
   }
 }
