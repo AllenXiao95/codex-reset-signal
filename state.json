@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107592473048715573",
-  "lastCheckedAt": "2026-10-06T22:22:24.390Z",
-  "lastSuccessAt": "2026-10-06T22:22:24.390Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 341,
+  "sinceId": "2107597780352950624",
+  "lastCheckedAt": "2026-10-06T22:27:27.037Z",
+  "lastSuccessAt": "2026-10-06T22:27:27.037Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 342,
   "matches": [
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
@@ -890,15 +890,16 @@
     "2107587334661378382": "fd0c79e63da2c0ec5a5713a30acc8560d240d22772dbd68a7aadd5111a6e2758",
     "2107587734810525809": "6c5cb274fa3057fe4d17cc7082b55d984603809acb9ec453b4b841dabe782851",
     "2107592271952748814": "062c7944f8e063035ff94630816647241c545dc7c13b7ca6129409b644519805",
-    "2107592473048715573": "3cf177e9f8fc9213f215b133bdaed7a709e0e92612f1816998d83f4c9d3b968a"
+    "2107592473048715573": "3cf177e9f8fc9213f215b133bdaed7a709e0e92612f1816998d83f4c9d3b968a",
+    "2107597780352950624": "a012fe81e40786b212f190ce737b6bfb0c5f5ae22e9c5d4c92a1ccca2e726b4c"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107592473048715573",
-    "canonicalId": "2107592473048715573",
-    "text": "@TokenGremlin I accept your vote",
-    "createdAt": "2026-10-06T22:02:57.000Z",
-    "url": "https://x.com/thsottiaux/status/2107592473048715573",
+    "id": "2107597780352950624",
+    "canonicalId": "2107597780352950624",
+    "text": "Completely unrelated to the rest of the ships today, but our models did solve some important math problems and the team documented it in the following blogpost. Remarkable new era of scientific progress.\n\nhttps://t.co/AYSuteVNiA",
+    "createdAt": "2026-10-06T22:24:02.000Z",
+    "url": "https://x.com/thsottiaux/status/2107597780352950624",
     "media": []
   }
 }

@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T22:22:24.395Z",
+  "updatedAt": "2026-10-06T22:27:27.041Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T22:22:24.390Z",
-    "lastSuccessAt": "2026-10-06T22:22:24.390Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T22:27:27.037Z",
+    "lastSuccessAt": "2026-10-06T22:27:27.037Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107592473048715573",
-    "text": "@TokenGremlin I accept your vote",
-    "url": "https://x.com/thsottiaux/status/2107592473048715573",
-    "postCreatedAt": "2026-10-06T22:02:57.000Z"
+    "id": "2107597780352950624",
+    "text": "Completely unrelated to the rest of the ships today, but our models did solve some important math problems and the team documented it in the following blogpost. Remarkable new era of scientific progress.\n\nhttps://t.co/AYSuteVNiA",
+    "url": "https://x.com/thsottiaux/status/2107597780352950624",
+    "postCreatedAt": "2026-10-06T22:24:02.000Z"
   },
   "latest": {
     "reset": {
