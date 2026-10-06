@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107504197012988007",
-  "lastCheckedAt": "2026-10-06T17:02:53.835Z",
-  "lastSuccessAt": "2026-10-06T17:02:53.835Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 322,
+  "sinceId": "2107517084884521030",
+  "lastCheckedAt": "2026-10-06T17:07:28.244Z",
+  "lastSuccessAt": "2026-10-06T17:07:28.244Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 323,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -817,15 +817,16 @@
     "2107370001837773172": "676c1a2a5baa6fc15ef2378e4e1e4937bd97181af17bb888e0f41f95f9dfb764",
     "2107370852564021582": "2355282d94e31a15eda72302448df9c3ea626b66913f1224331515f6c9e1b7ef",
     "2107378093635899886": "ab7b2a7b747e4cce2fa1433b445a51aaf3aa93e8e795c520495091eca75e34f9",
-    "2107504197012988007": "3c5e11ca775eecfc492d1b81a6ee5df2bae9319287ee1133b136f721ec037856"
+    "2107504197012988007": "3c5e11ca775eecfc492d1b81a6ee5df2bae9319287ee1133b136f721ec037856",
+    "2107517084884521030": "25e4ecb7aa412cd7bcd79529f062e4c64e812b2e15443fa0f9baa4f4e0c5e700"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107504197012988007",
-    "canonicalId": "2107504197012988007",
-    "text": "Auto-review is the “Approve for me” permission mode.  To use it, open the permissions menu below the composer and select  “Approve for me”.",
-    "createdAt": "2026-10-06T16:12:10.000Z",
-    "url": "https://x.com/thsottiaux/status/2107504197012988007",
+    "id": "2107517084884521030",
+    "canonicalId": "2107517084884521030",
+    "text": "@nicdunz wowza",
+    "createdAt": "2026-10-06T17:03:23.000Z",
+    "url": "https://x.com/thsottiaux/status/2107517084884521030",
     "media": []
   }
 }
