@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107320000554123426",
-  "lastCheckedAt": "2026-10-06T04:02:24.528Z",
-  "lastSuccessAt": "2026-10-06T04:02:24.528Z",
+  "sinceId": "2107320918200693212",
+  "lastCheckedAt": "2026-10-06T04:07:27.833Z",
+  "lastSuccessAt": "2026-10-06T04:07:27.833Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 315,
+  "postsScanned": 316,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -810,15 +810,16 @@
     "2107314076993155297": "d91bdf6ba30e740de0ac980f4ebbb63afe6c3d4cc998658d22e02c22ff1805c1",
     "2107314411975381479": "22446f36d8dc90f37ba8634e8495713ab52897047df10f2a0b4ec6d49ae73e6d",
     "2107314912963989821": "f3361f8396336723e4e5620cf7a75a313fd09d1423a80a2247eb09a970a54bfc",
-    "2107320000554123426": "8e33d9b48f3045feedba217fda839babba7a7092b5432ade2b6fa09f403a08d5"
+    "2107320000554123426": "8e33d9b48f3045feedba217fda839babba7a7092b5432ade2b6fa09f403a08d5",
+    "2107320918200693212": "6027f24faec8772df294725bfd96bee5263b9db6af38d7500f0b45ea81dadd31"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107320000554123426",
-    "canonicalId": "2107320000554123426",
-    "text": "@poteto @bot Will be even more blissful to manage both",
-    "createdAt": "2026-10-06T04:00:14.000Z",
-    "url": "https://x.com/thsottiaux/status/2107320000554123426",
+    "id": "2107320918200693212",
+    "canonicalId": "2107320918200693212",
+    "text": "@badlogicgames Blackboard",
+    "createdAt": "2026-10-06T04:03:53.000Z",
+    "url": "https://x.com/thsottiaux/status/2107320918200693212",
     "media": []
   }
 }
