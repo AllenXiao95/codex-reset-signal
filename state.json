@@ -3,16 +3,43 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107577536779870210",
-  "lastCheckedAt": "2026-10-06T21:07:33.408Z",
-  "lastSuccessAt": "2026-10-06T21:07:33.408Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 331,
+  "sinceId": "2107579151322591412",
+  "lastCheckedAt": "2026-10-06T21:12:29.355Z",
+  "lastSuccessAt": "2026-10-06T21:12:29.355Z",
+  "lastRunStatus": "checked-3-posts",
+  "postsScanned": 334,
   "matches": [
+    {
+      "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
+      "id": "2107578625419866469",
+      "canonicalId": "2107578625419866469",
+      "text": "Four updates or a reset. Or both. How was day 2.",
+      "createdAt": "2026-10-06T21:07:55.000Z",
+      "url": "https://x.com/thsottiaux/status/2107578625419866469",
+      "media": [],
+      "detectedAt": "2026-10-06T21:12:29.355Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Four updates or a reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Four updates or a reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-06T21:12:29.362Z"
+    },
     {
       "version": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397",
       "id": "2107577536779870210",
-      "canonicalId": "2107577536779870210",
       "text": "@The_Alex I do like giving resets",
       "createdAt": "2026-10-06T21:03:36.000Z",
       "url": "https://x.com/thsottiaux/status/2107577536779870210",
@@ -32,10 +59,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-06T21:07:33.413Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-06T21:07:33.413Z"
+      ]
     },
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -854,15 +881,18 @@
     "2107574912349303197": "64e00f290e868dad0ad08db7ae57d081ff9b8e1f96b0efe242642cb46be40383",
     "2107575657014468879": "2d660456dca4d926cdd0ef0d07b9d87373f5b793374d0df11276a98273c83d9d",
     "2107576143285219799": "1cdb305fcf1fb2d8ef3f4a3f30715be9b019f8e46f285e2ff6e59a95c878df33",
-    "2107577536779870210": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397"
+    "2107577536779870210": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397",
+    "2107578625419866469": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
+    "2107578816638177408": "d61aacc31acb93dff67f579fb44ad00233e53cd6f2010a347561dad4d1c05a26",
+    "2107579151322591412": "56ac28f37f539989f126ac69f0a6e2dfdfc464bc77bb5fc665277daf4fac65f9"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107577536779870210",
-    "canonicalId": "2107577536779870210",
-    "text": "@The_Alex I do like giving resets",
-    "createdAt": "2026-10-06T21:03:36.000Z",
-    "url": "https://x.com/thsottiaux/status/2107577536779870210",
+    "id": "2107579151322591412",
+    "canonicalId": "2107579151322591412",
+    "text": "@MerkleGhost @SSHCodes OK fake tibo",
+    "createdAt": "2026-10-06T21:10:01.000Z",
+    "url": "https://x.com/thsottiaux/status/2107579151322591412",
     "media": []
   }
 }

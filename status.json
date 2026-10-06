@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T21:07:33.423Z",
+  "updatedAt": "2026-10-06T21:12:29.368Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T21:07:33.408Z",
-    "lastSuccessAt": "2026-10-06T21:07:33.408Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-10-06T21:12:29.355Z",
+    "lastSuccessAt": "2026-10-06T21:12:29.355Z",
+    "lastRunStatus": "checked-3-posts"
   },
   "latestObservedPost": {
-    "id": "2107577536779870210",
-    "text": "@The_Alex I do like giving resets",
-    "url": "https://x.com/thsottiaux/status/2107577536779870210",
-    "postCreatedAt": "2026-10-06T21:03:36.000Z"
+    "id": "2107579151322591412",
+    "text": "@MerkleGhost @SSHCodes OK fake tibo",
+    "url": "https://x.com/thsottiaux/status/2107579151322591412",
+    "postCreatedAt": "2026-10-06T21:10:01.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
+      "id": "2107578625419866469",
+      "text": "Four updates or a reset. Or both. How was day 2.",
+      "url": "https://x.com/thsottiaux/status/2107578625419866469",
+      "postCreatedAt": "2026-10-06T21:07:55.000Z",
+      "detectedAt": "2026-10-06T21:12:29.355Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Four updates or a reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Four updates or a reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "57d0a1b4fe4b21e48d44e65af02de747a6399d988694606b367b04bca8c38397",
       "id": "2107577536779870210",
@@ -532,30 +556,6 @@
       ],
       "deliveryChannels": [],
       "origin": "live"
-    },
-    {
-      "version": "history:2096035437299237298",
-      "id": "2096035437299237298",
-      "text": "Because we are beyond happy to have Astra rolled out today ahead of schedule and you have been super patient with us (not really, but it’s ok!)… we will do the full banked reset today too for all Plus, Pro and Business users. Lands end of day. Happy Astra day and enjoy a phenomenal weekend. PS: If you create the account or upgrade before 8pm PT you will get it too. Still time!",
-      "url": "https://x.com/thsottiaux/status/2096035437299237298",
-      "postCreatedAt": "2026-09-05T00:39:25.364Z",
-      "detectedAt": "2026-09-09T08:30:00.000Z",
-      "events": [
-        {
-          "type": "bank_credit",
-          "status": "announced",
-          "evidence": "we will do the full banked reset today too for all Plus, Pro and Business users",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "Lands end of day",
-            "note": "Banked reset was promised by end of day, but no safe exact landing time is stated. The separate 8pm PT time is an eligibility cutoff for account creation or upgrade, not the bank-credit landing time."
-          }
-        }
-      ],
-      "deliveryChannels": [],
-      "origin": "historical_seed"
     }
   ]
 }
