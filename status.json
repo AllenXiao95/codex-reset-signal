@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T07:47:26.092Z",
+  "updatedAt": "2026-10-06T07:53:04.931Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T07:47:26.086Z",
-    "lastSuccessAt": "2026-10-06T07:47:26.086Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T07:53:04.928Z",
+    "lastSuccessAt": "2026-10-06T07:53:04.928Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107370852564021582",
-    "text": "Use auto-review instead of full-access. Not a trade-off anymore and you'll sleep more peacefully",
-    "url": "https://x.com/thsottiaux/status/2107370852564021582",
-    "postCreatedAt": "2026-10-06T07:22:18.000Z"
+    "id": "2107378093635899886",
+    "text": "Settings → General → Permissions → Auto-review https://t.co/KC2nwWOCi9",
+    "url": "https://x.com/thsottiaux/status/2107378093635899886",
+    "postCreatedAt": "2026-10-06T07:51:05.000Z"
   },
   "latest": {
     "reset": {
