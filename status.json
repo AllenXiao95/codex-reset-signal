@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T02:17:26.880Z",
+  "updatedAt": "2026-10-06T02:22:23.169Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T02:17:26.874Z",
-    "lastSuccessAt": "2026-10-06T02:17:26.874Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-10-06T02:22:23.161Z",
+    "lastSuccessAt": "2026-10-06T02:22:23.161Z",
+    "lastRunStatus": "checked-3-posts"
   },
   "latestObservedPost": {
-    "id": "2107294063011733505",
-    "text": "@stalkermustang Sent you a DM for how you’re measuring\n\nhttps://t.co/wjBpP2k3cT",
-    "url": "https://x.com/thsottiaux/status/2107294063011733505",
-    "postCreatedAt": "2026-10-06T02:17:10.000Z"
+    "id": "2107295306794905929",
+    "text": "@nicdunz Facts",
+    "url": "https://x.com/thsottiaux/status/2107295306794905929",
+    "postCreatedAt": "2026-10-06T02:22:07.000Z"
   },
   "latest": {
     "reset": {

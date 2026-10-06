@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107294063011733505",
-  "lastCheckedAt": "2026-10-06T02:17:26.874Z",
-  "lastSuccessAt": "2026-10-06T02:17:26.874Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 303,
+  "sinceId": "2107295306794905929",
+  "lastCheckedAt": "2026-10-06T02:22:23.161Z",
+  "lastSuccessAt": "2026-10-06T02:22:23.161Z",
+  "lastRunStatus": "checked-3-posts",
+  "postsScanned": 306,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -798,15 +798,18 @@
     "2107159119107146237": "0f466aa0e1e7ba4c0c40a55a6803edec2dd12dd5e388870ff3f448c118301f90",
     "2107185534359761051": "71e5ecd97dbe1c616e6fd13eca83836504d07c8c38a9e6f2451d7e226942e044",
     "2107200530477101461": "a23a25b9603d4e38b1d3ada6162808e2b745adc951d858bfd370199a95684d01",
-    "2107294063011733505": "d5a9da91a411aeb5cacf9a74f5d90864303e37184080ca56102c4790d92bdd3f"
+    "2107294063011733505": "d5a9da91a411aeb5cacf9a74f5d90864303e37184080ca56102c4790d92bdd3f",
+    "2107294414091759840": "d272cef8ccb348e4853f9ffb6e3d4c85bcbc0ccc241a0986913beaac395810d6",
+    "2107295089416708515": "f5b5e0c2b8f5c1ea51c8d47f39f5fe6a2395379757103964f1af84b8a050cc17",
+    "2107295306794905929": "b2981cdb24eb0222965d936d8822e9112ef9b3ab40e6505a7636d7a19cf68596"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107294063011733505",
-    "canonicalId": "2107294063011733505",
-    "text": "@stalkermustang Sent you a DM for how you’re measuring\n\nhttps://t.co/wjBpP2k3cT",
-    "createdAt": "2026-10-06T02:17:10.000Z",
-    "url": "https://x.com/thsottiaux/status/2107294063011733505",
+    "id": "2107295306794905929",
+    "canonicalId": "2107295306794905929",
+    "text": "@nicdunz Facts",
+    "createdAt": "2026-10-06T02:22:07.000Z",
+    "url": "https://x.com/thsottiaux/status/2107295306794905929",
     "media": []
   }
 }
