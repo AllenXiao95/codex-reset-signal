@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107200530477101461",
-  "lastCheckedAt": "2026-10-06T02:12:24.999Z",
-  "lastSuccessAt": "2026-10-06T02:12:24.999Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 302,
+  "sinceId": "2107294063011733505",
+  "lastCheckedAt": "2026-10-06T02:17:26.874Z",
+  "lastSuccessAt": "2026-10-06T02:17:26.874Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 303,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -797,15 +797,16 @@
     "2107158998495748264": "5738b873d54e874ad02db8783310a861d219c7ae5aacdd7a7beab2ef7338d225",
     "2107159119107146237": "0f466aa0e1e7ba4c0c40a55a6803edec2dd12dd5e388870ff3f448c118301f90",
     "2107185534359761051": "71e5ecd97dbe1c616e6fd13eca83836504d07c8c38a9e6f2451d7e226942e044",
-    "2107200530477101461": "a23a25b9603d4e38b1d3ada6162808e2b745adc951d858bfd370199a95684d01"
+    "2107200530477101461": "a23a25b9603d4e38b1d3ada6162808e2b745adc951d858bfd370199a95684d01",
+    "2107294063011733505": "d5a9da91a411aeb5cacf9a74f5d90864303e37184080ca56102c4790d92bdd3f"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107200530477101461",
-    "canonicalId": "2107200530477101461",
-    "text": "Sergio is cooking up magic with collaborative space right in ChatGPT. Improving leaps and bounds every day.",
-    "createdAt": "2026-10-05T20:05:31.000Z",
-    "url": "https://x.com/thsottiaux/status/2107200530477101461",
+    "id": "2107294063011733505",
+    "canonicalId": "2107294063011733505",
+    "text": "@stalkermustang Sent you a DM for how you’re measuring\n\nhttps://t.co/wjBpP2k3cT",
+    "createdAt": "2026-10-06T02:17:10.000Z",
+    "url": "https://x.com/thsottiaux/status/2107294063011733505",
     "media": []
   }
 }

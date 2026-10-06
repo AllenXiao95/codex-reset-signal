@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T02:12:25.002Z",
+  "updatedAt": "2026-10-06T02:17:26.880Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T02:12:24.999Z",
-    "lastSuccessAt": "2026-10-06T02:12:24.999Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T02:17:26.874Z",
+    "lastSuccessAt": "2026-10-06T02:17:26.874Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107200530477101461",
-    "text": "Sergio is cooking up magic with collaborative space right in ChatGPT. Improving leaps and bounds every day.",
-    "url": "https://x.com/thsottiaux/status/2107200530477101461",
-    "postCreatedAt": "2026-10-05T20:05:31.000Z"
+    "id": "2107294063011733505",
+    "text": "@stalkermustang Sent you a DM for how you’re measuring\n\nhttps://t.co/wjBpP2k3cT",
+    "url": "https://x.com/thsottiaux/status/2107294063011733505",
+    "postCreatedAt": "2026-10-06T02:17:10.000Z"
   },
   "latest": {
     "reset": {
