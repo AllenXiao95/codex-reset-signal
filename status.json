@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T07:17:24.482Z",
+  "updatedAt": "2026-10-06T07:22:32.153Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T07:17:24.339Z",
-    "lastSuccessAt": "2026-10-06T07:17:24.339Z",
+    "lastCheckedAt": "2026-10-06T07:22:32.147Z",
+    "lastSuccessAt": "2026-10-06T07:22:32.147Z",
     "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2107368786353398184",
-    "text": "You can read about the feature here: https://t.co/bbJM07iNtf",
-    "url": "https://x.com/thsottiaux/status/2107368786353398184",
-    "postCreatedAt": "2026-10-06T07:14:06.000Z"
+    "id": "2107370852564021582",
+    "text": "Use auto-review instead of full-access. Not a trade-off anymore and you'll sleep more peacefully",
+    "url": "https://x.com/thsottiaux/status/2107370852564021582",
+    "postCreatedAt": "2026-10-06T07:22:18.000Z"
   },
   "latest": {
     "reset": {

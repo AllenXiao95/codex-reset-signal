@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107368786353398184",
-  "lastCheckedAt": "2026-10-06T07:17:24.339Z",
-  "lastSuccessAt": "2026-10-06T07:17:24.339Z",
+  "sinceId": "2107370852564021582",
+  "lastCheckedAt": "2026-10-06T07:22:32.147Z",
+  "lastSuccessAt": "2026-10-06T07:22:32.147Z",
   "lastRunStatus": "checked-2-posts",
-  "postsScanned": 318,
+  "postsScanned": 320,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -813,15 +813,17 @@
     "2107320000554123426": "8e33d9b48f3045feedba217fda839babba7a7092b5432ade2b6fa09f403a08d5",
     "2107320918200693212": "6027f24faec8772df294725bfd96bee5263b9db6af38d7500f0b45ea81dadd31",
     "2107368734981517634": "94753233df1ac0faf02dc8283e218679ba74f4792b4a49660c328e577948f985",
-    "2107368786353398184": "671256981be4a7f06bb287e123c49029a573751f2535a4605c0e30897162fe34"
+    "2107368786353398184": "671256981be4a7f06bb287e123c49029a573751f2535a4605c0e30897162fe34",
+    "2107370001837773172": "676c1a2a5baa6fc15ef2378e4e1e4937bd97181af17bb888e0f41f95f9dfb764",
+    "2107370852564021582": "2355282d94e31a15eda72302448df9c3ea626b66913f1224331515f6c9e1b7ef"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107368786353398184",
-    "canonicalId": "2107368786353398184",
-    "text": "You can read about the feature here: https://t.co/bbJM07iNtf",
-    "createdAt": "2026-10-06T07:14:06.000Z",
-    "url": "https://x.com/thsottiaux/status/2107368786353398184",
+    "id": "2107370852564021582",
+    "canonicalId": "2107370852564021582",
+    "text": "Use auto-review instead of full-access. Not a trade-off anymore and you'll sleep more peacefully",
+    "createdAt": "2026-10-06T07:22:18.000Z",
+    "url": "https://x.com/thsottiaux/status/2107370852564021582",
     "media": []
   }
 }
