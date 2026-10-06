@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-06T22:32:28.231Z",
+  "updatedAt": "2026-10-06T22:37:28.852Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-06T22:32:28.224Z",
-    "lastSuccessAt": "2026-10-06T22:32:28.224Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-06T22:37:28.847Z",
+    "lastSuccessAt": "2026-10-06T22:37:28.847Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107597780352950624",
-    "text": "Completely unrelated to the rest of the ships today, but our models did solve some important math problems and the team documented it in the following blogpost. Remarkable new era of scientific progress.\n\nhttps://t.co/AYSuteVNiA",
-    "url": "https://x.com/thsottiaux/status/2107597780352950624",
-    "postCreatedAt": "2026-10-06T22:24:02.000Z"
+    "id": "2107599996225007892",
+    "text": "To calibrate",
+    "url": "https://x.com/thsottiaux/status/2107599996225007892",
+    "postCreatedAt": "2026-10-06T22:32:51.000Z"
   },
   "latest": {
     "reset": {
