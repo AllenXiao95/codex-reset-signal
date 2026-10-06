@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107320918200693212",
-  "lastCheckedAt": "2026-10-06T07:12:25.178Z",
-  "lastSuccessAt": "2026-10-06T07:12:25.178Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 316,
+  "sinceId": "2107368786353398184",
+  "lastCheckedAt": "2026-10-06T07:17:24.339Z",
+  "lastSuccessAt": "2026-10-06T07:17:24.339Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 318,
   "matches": [
     {
       "version": "634cee8d4bc3c33cda61db1b50c369936dd953aad5b9f2f8e910166b36a2efeb",
@@ -811,15 +811,17 @@
     "2107314411975381479": "22446f36d8dc90f37ba8634e8495713ab52897047df10f2a0b4ec6d49ae73e6d",
     "2107314912963989821": "f3361f8396336723e4e5620cf7a75a313fd09d1423a80a2247eb09a970a54bfc",
     "2107320000554123426": "8e33d9b48f3045feedba217fda839babba7a7092b5432ade2b6fa09f403a08d5",
-    "2107320918200693212": "6027f24faec8772df294725bfd96bee5263b9db6af38d7500f0b45ea81dadd31"
+    "2107320918200693212": "6027f24faec8772df294725bfd96bee5263b9db6af38d7500f0b45ea81dadd31",
+    "2107368734981517634": "94753233df1ac0faf02dc8283e218679ba74f4792b4a49660c328e577948f985",
+    "2107368786353398184": "671256981be4a7f06bb287e123c49029a573751f2535a4605c0e30897162fe34"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107320918200693212",
-    "canonicalId": "2107320918200693212",
-    "text": "@badlogicgames Blackboard",
-    "createdAt": "2026-10-06T04:03:53.000Z",
-    "url": "https://x.com/thsottiaux/status/2107320918200693212",
+    "id": "2107368786353398184",
+    "canonicalId": "2107368786353398184",
+    "text": "You can read about the feature here: https://t.co/bbJM07iNtf",
+    "createdAt": "2026-10-06T07:14:06.000Z",
+    "url": "https://x.com/thsottiaux/status/2107368786353398184",
     "media": []
   }
 }
