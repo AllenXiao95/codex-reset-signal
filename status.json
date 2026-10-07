@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T19:12:30.034Z",
+  "updatedAt": "2026-10-07T19:17:39.052Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-07T19:12:30.029Z",
-    "lastSuccessAt": "2026-10-07T19:12:30.029Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-07T19:17:39.046Z",
+    "lastSuccessAt": "2026-10-07T19:17:39.046Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107700139066593612",
-    "text": "@clyons Hmmm, muse is that you",
-    "url": "https://x.com/thsottiaux/status/2107700139066593612",
-    "postCreatedAt": "2026-10-07T05:10:46.000Z"
+    "id": "2107912709715132482",
+    "text": "We're going beyond text and are releasing a new version of GPT-6 to all users in ChatGPT. Lots of model and infra improvements coming together here to scale it to 1.2B users!",
+    "url": "https://x.com/thsottiaux/status/2107912709715132482",
+    "postCreatedAt": "2026-10-07T19:15:27.000Z"
   },
   "latest": {
     "reset": {

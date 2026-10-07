@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107700139066593612",
-  "lastCheckedAt": "2026-10-07T19:12:30.029Z",
-  "lastSuccessAt": "2026-10-07T19:12:30.029Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 355,
+  "sinceId": "2107912709715132482",
+  "lastCheckedAt": "2026-10-07T19:17:39.046Z",
+  "lastSuccessAt": "2026-10-07T19:17:39.046Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 356,
   "matches": [
     {
       "version": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
@@ -932,15 +932,16 @@
     "2107676900894417277": "76d00f880da89b88e344c6a5b7375ed50c75ea5e2a0274de161c5535012b7ec0",
     "2107699068499841309": "b96f4d9678f3d0c5db31b4ed03e2c14bb79cb50a5418368a8e725dfecec38331",
     "2107699167808356482": "ef1f4f39c57213854ea26c2a4c82275afea740e0b3370599bb617cf46415af1e",
-    "2107700139066593612": "9b643e77335a315497c969ee5ccf8004d17241b664cc70ffb5fb5234b3710ccf"
+    "2107700139066593612": "9b643e77335a315497c969ee5ccf8004d17241b664cc70ffb5fb5234b3710ccf",
+    "2107912709715132482": "a025218b1fd504fff2d0f4f9e459f0f983b4d4adaa22af7e1ccb02c12852c384"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107700139066593612",
-    "canonicalId": "2107700139066593612",
-    "text": "@clyons Hmmm, muse is that you",
-    "createdAt": "2026-10-07T05:10:46.000Z",
-    "url": "https://x.com/thsottiaux/status/2107700139066593612",
+    "id": "2107912709715132482",
+    "canonicalId": "2107912709715132482",
+    "text": "We're going beyond text and are releasing a new version of GPT-6 to all users in ChatGPT. Lots of model and infra improvements coming together here to scale it to 1.2B users!",
+    "createdAt": "2026-10-07T19:15:27.000Z",
+    "url": "https://x.com/thsottiaux/status/2107912709715132482",
     "media": []
   }
 }
