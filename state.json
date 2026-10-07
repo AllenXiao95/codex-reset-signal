@@ -3,16 +3,15 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107676261099426030",
-  "lastCheckedAt": "2026-10-07T03:37:24.268Z",
-  "lastSuccessAt": "2026-10-07T03:37:24.268Z",
+  "sinceId": "2107676900894417277",
+  "lastCheckedAt": "2026-10-07T03:42:25.440Z",
+  "lastSuccessAt": "2026-10-07T03:42:25.440Z",
   "lastRunStatus": "checked-2-posts",
-  "postsScanned": 350,
+  "postsScanned": 352,
   "matches": [
     {
       "version": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
       "id": "2107676072871600470",
-      "canonicalId": "2107676072871600470",
       "text": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
       "createdAt": "2026-10-07T03:35:09.000Z",
       "url": "https://x.com/thsottiaux/status/2107676072871600470",
@@ -56,10 +55,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-07T03:37:24.271Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-07T03:37:24.271Z"
+      ]
     },
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
@@ -928,15 +927,17 @@
     "2107647667925135663": "ccac698116c177027945d1041808e709fa89c9f67e43fb6f659a2df5607896a8",
     "2107647946032664948": "6daa968070aa33eb301b68ac2f48cd5aae06c2695c99fe690ffcdc09d3de69dc",
     "2107676072871600470": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
-    "2107676261099426030": "7e658c02c6b9e37ebd1c303374bf80c4f9096a53418b804f55dac215d7583161"
+    "2107676261099426030": "7e658c02c6b9e37ebd1c303374bf80c4f9096a53418b804f55dac215d7583161",
+    "2107676653895967106": "3e915bccabf104772f44d0eb16128aecda04b5766ca91868f0233cf2d0c037f3",
+    "2107676900894417277": "76d00f880da89b88e344c6a5b7375ed50c75ea5e2a0274de161c5535012b7ec0"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107676261099426030",
-    "canonicalId": "2107676261099426030",
-    "text": "And we won't unship the improvements. You get to have your cake and eat it too. See you tomorrow for Day 3!",
-    "createdAt": "2026-10-07T03:35:54.000Z",
-    "url": "https://x.com/thsottiaux/status/2107676261099426030",
+    "id": "2107676900894417277",
+    "canonicalId": "2107676900894417277",
+    "text": "@ForwardEditor It ended well",
+    "createdAt": "2026-10-07T03:38:26.000Z",
+    "url": "https://x.com/thsottiaux/status/2107676900894417277",
     "media": []
   }
 }

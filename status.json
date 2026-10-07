@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T03:37:24.276Z",
+  "updatedAt": "2026-10-07T03:42:25.513Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-07T03:37:24.268Z",
-    "lastSuccessAt": "2026-10-07T03:37:24.268Z",
+    "lastCheckedAt": "2026-10-07T03:42:25.440Z",
+    "lastSuccessAt": "2026-10-07T03:42:25.440Z",
     "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2107676261099426030",
-    "text": "And we won't unship the improvements. You get to have your cake and eat it too. See you tomorrow for Day 3!",
-    "url": "https://x.com/thsottiaux/status/2107676261099426030",
-    "postCreatedAt": "2026-10-07T03:35:54.000Z"
+    "id": "2107676900894417277",
+    "text": "@ForwardEditor It ended well",
+    "url": "https://x.com/thsottiaux/status/2107676900894417277",
+    "postCreatedAt": "2026-10-07T03:38:26.000Z"
   },
   "latest": {
     "reset": {
