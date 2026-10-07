@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T05:07:27.178Z",
+  "updatedAt": "2026-10-07T05:12:31.110Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-07T05:07:26.980Z",
-    "lastSuccessAt": "2026-10-07T05:07:26.980Z",
-    "lastRunStatus": "checked-2-posts"
+    "lastCheckedAt": "2026-10-07T05:12:31.104Z",
+    "lastSuccessAt": "2026-10-07T05:12:31.104Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107699167808356482",
-    "text": "@athyuttamre 👀",
-    "url": "https://x.com/thsottiaux/status/2107699167808356482",
-    "postCreatedAt": "2026-10-07T05:06:55.000Z"
+    "id": "2107700139066593612",
+    "text": "@clyons Hmmm, muse is that you",
+    "url": "https://x.com/thsottiaux/status/2107700139066593612",
+    "postCreatedAt": "2026-10-07T05:10:46.000Z"
   },
   "latest": {
     "reset": {
