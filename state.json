@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107912709715132482",
-  "lastCheckedAt": "2026-10-07T19:17:39.046Z",
-  "lastSuccessAt": "2026-10-07T19:17:39.046Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 356,
+  "sinceId": "2107913738791596286",
+  "lastCheckedAt": "2026-10-07T19:22:34.135Z",
+  "lastSuccessAt": "2026-10-07T19:22:34.135Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 358,
   "matches": [
+    {
+      "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
+      "id": "2107913674593644711",
+      "canonicalId": "2107913674593644711",
+      "text": "Day 3/\n\nThe big one is GPT-6 in Chat, but today is also a little celebration day with a new high of 40M active users across Codex and ChatGPT Work.\n\nLoading a banked reset in everyone's paid accounts. See you again tomorrow!",
+      "createdAt": "2026-10-07T19:19:17.000Z",
+      "url": "https://x.com/thsottiaux/status/2107913674593644711",
+      "media": [],
+      "detectedAt": "2026-10-07T19:22:34.134Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Loading a banked reset in everyone's paid accounts",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Loading a banked reset in everyone's paid accounts",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-07T19:22:34.139Z"
+    },
     {
       "version": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
       "id": "2107676072871600470",
@@ -550,30 +578,6 @@
         }
       ],
       "channels": []
-    },
-    {
-      "version": "d7871012627c721649133d4093900656209c659585a7fa7d8d214a8c9ecf9f5d",
-      "id": "2097174560412246215",
-      "text": "All reset for everyone. Enjoy the week with Astra.",
-      "createdAt": "2026-09-08T04:05:53.000Z",
-      "url": "https://x.com/thsottiaux/status/2097174560412246215",
-      "media": [],
-      "detectedAt": "2026-09-09T03:27:28.318Z",
-      "events": [
-        {
-          "type": "reset",
-          "status": "completed",
-          "evidence": "All reset for everyone",
-          "time": {
-            "kind": "observed",
-            "start": "2026-09-08T04:05:53.000Z",
-            "end": null,
-            "evidence": "All reset for everyone",
-            "note": "使用公告发布时间；不代表账户实际到账时刻"
-          }
-        }
-      ],
-      "channels": []
     }
   ],
   "outbox": [],
@@ -933,15 +937,17 @@
     "2107699068499841309": "b96f4d9678f3d0c5db31b4ed03e2c14bb79cb50a5418368a8e725dfecec38331",
     "2107699167808356482": "ef1f4f39c57213854ea26c2a4c82275afea740e0b3370599bb617cf46415af1e",
     "2107700139066593612": "9b643e77335a315497c969ee5ccf8004d17241b664cc70ffb5fb5234b3710ccf",
-    "2107912709715132482": "a025218b1fd504fff2d0f4f9e459f0f983b4d4adaa22af7e1ccb02c12852c384"
+    "2107912709715132482": "a025218b1fd504fff2d0f4f9e459f0f983b4d4adaa22af7e1ccb02c12852c384",
+    "2107913674593644711": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
+    "2107913738791596286": "ab8bcef0ede211af9d7d603a283cd8df1f301e3c5c5bc7c1cf1f5cd9952ea254"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107912709715132482",
-    "canonicalId": "2107912709715132482",
-    "text": "We're going beyond text and are releasing a new version of GPT-6 to all users in ChatGPT. Lots of model and infra improvements coming together here to scale it to 1.2B users!",
-    "createdAt": "2026-10-07T19:15:27.000Z",
-    "url": "https://x.com/thsottiaux/status/2107912709715132482",
+    "id": "2107913738791596286",
+    "canonicalId": "2107913738791596286",
+    "text": "Will be there by EOD PST.",
+    "createdAt": "2026-10-07T19:19:33.000Z",
+    "url": "https://x.com/thsottiaux/status/2107913738791596286",
     "media": []
   }
 }
