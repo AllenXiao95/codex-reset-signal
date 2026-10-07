@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2107913738791596286",
-  "lastCheckedAt": "2026-10-07T19:22:34.135Z",
-  "lastSuccessAt": "2026-10-07T19:22:34.135Z",
-  "lastRunStatus": "checked-2-posts",
+  "lastCheckedAt": "2026-10-07T19:27:27.463Z",
+  "lastSuccessAt": "2026-10-07T19:27:27.463Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 358,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
       "id": "2107913674593644711",
-      "canonicalId": "2107913674593644711",
       "text": "Day 3/\n\nThe big one is GPT-6 in Chat, but today is also a little celebration day with a new high of 40M active users across Codex and ChatGPT Work.\n\nLoading a banked reset in everyone's paid accounts. See you again tomorrow!",
       "createdAt": "2026-10-07T19:19:17.000Z",
       "url": "https://x.com/thsottiaux/status/2107913674593644711",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-07T19:22:34.139Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-07T19:22:34.139Z"
+      ]
     },
     {
       "version": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
