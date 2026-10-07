@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T03:32:29.811Z",
+  "updatedAt": "2026-10-07T03:37:24.276Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-07T03:32:29.589Z",
-    "lastSuccessAt": "2026-10-07T03:32:29.589Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-07T03:37:24.268Z",
+    "lastSuccessAt": "2026-10-07T03:37:24.268Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2107647946032664948",
-    "text": "@ForwardEditor Or it will end very well?",
-    "url": "https://x.com/thsottiaux/status/2107647946032664948",
-    "postCreatedAt": "2026-10-07T01:43:23.000Z"
+    "id": "2107676261099426030",
+    "text": "And we won't unship the improvements. You get to have your cake and eat it too. See you tomorrow for Day 3!",
+    "url": "https://x.com/thsottiaux/status/2107676261099426030",
+    "postCreatedAt": "2026-10-07T03:35:54.000Z"
   },
   "latest": {
     "reset": {
@@ -67,6 +67,54 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
+      "id": "2107676072871600470",
+      "text": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
+      "url": "https://x.com/thsottiaux/status/2107676072871600470",
+      "postCreatedAt": "2026-10-07T03:35:09.000Z",
+      "detectedAt": "2026-10-07T03:37:24.268Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        },
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        },
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "the reset has been processed",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "the reset has been processed",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
       "id": "2107578625419866469",
@@ -528,29 +576,6 @@
             "end": null,
             "evidence": "All reset for everyone",
             "note": "使用公告发布时间；不代表账户实际到账时刻"
-          }
-        }
-      ],
-      "deliveryChannels": [],
-      "origin": "live"
-    },
-    {
-      "version": "a47e815d8663324f2467116b8e9700de6ee8210355bf2859ae854dabb0124504",
-      "id": "2097043464538264003",
-      "text": "Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\n\nThanks for reading. We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender. The work week is about to start.\n\nLands around 6pm PST today.",
-      "url": "https://x.com/thsottiaux/status/2097043464538264003",
-      "postCreatedAt": "2026-09-07T19:24:57.000Z",
-      "detectedAt": "2026-09-09T03:27:28.165Z",
-      "events": [
-        {
-          "type": "reset",
-          "status": "scheduled",
-          "evidence": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender",
-          "time": {
-            "kind": "exact",
-            "start": "2026-09-08T02:00:00.000Z",
-            "end": null,
-            "evidence": "6pm PST today"
           }
         }
       ],

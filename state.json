@@ -3,12 +3,64 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107647946032664948",
-  "lastCheckedAt": "2026-10-07T03:32:29.589Z",
-  "lastSuccessAt": "2026-10-07T03:32:29.589Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 348,
+  "sinceId": "2107676261099426030",
+  "lastCheckedAt": "2026-10-07T03:37:24.268Z",
+  "lastSuccessAt": "2026-10-07T03:37:24.268Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 350,
   "matches": [
+    {
+      "version": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
+      "id": "2107676072871600470",
+      "canonicalId": "2107676072871600470",
+      "text": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset. I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment.\n\nTherefore ... the reset has been processed. Enjoy!",
+      "createdAt": "2026-10-07T03:35:09.000Z",
+      "url": "https://x.com/thsottiaux/status/2107676072871600470",
+      "media": [],
+      "detectedAt": "2026-10-07T03:37:24.268Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "We shipped four things that were deemed good to great and some math proofs, but the vote is clear and the community demands a reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        },
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "I did calibrate it and it *seems* that the game is rigged in reset's favor, but such are the rules at the moment",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        },
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "the reset has been processed",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "the reset has been processed",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-07T03:37:24.271Z"
+    },
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
       "id": "2107578625419866469",
@@ -523,29 +575,6 @@
         }
       ],
       "channels": []
-    },
-    {
-      "version": "a47e815d8663324f2467116b8e9700de6ee8210355bf2859ae854dabb0124504",
-      "id": "2097043464538264003",
-      "text": "Never gonna give you up\nNever gonna let you down\nNever gonna run around and desert you\nNever gonna make you cry\nNever gonna say goodbye\nNever gonna tell a lie and hurt you\n\nThanks for reading. We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender. The work week is about to start.\n\nLands around 6pm PST today.",
-      "createdAt": "2026-09-07T19:24:57.000Z",
-      "url": "https://x.com/thsottiaux/status/2097043464538264003",
-      "media": [],
-      "detectedAt": "2026-09-09T03:27:28.165Z",
-      "events": [
-        {
-          "type": "reset",
-          "status": "scheduled",
-          "evidence": "We will do a global reset of the usage for all paid subscriptions so that you can keep enjoying Astra after burning through all of it doing fun 3D modeling in blender",
-          "time": {
-            "kind": "exact",
-            "start": "2026-09-08T02:00:00.000Z",
-            "end": null,
-            "evidence": "6pm PST today"
-          }
-        }
-      ],
-      "channels": []
     }
   ],
   "outbox": [],
@@ -897,15 +926,17 @@
     "2107613966692409653": "139eab92ccf566952230f4e7a5b182c51772c74b7c47b10e22eec4ec3ab8c814",
     "2107628890550399465": "2654d38a94e7dfdc44bc3a3cdfc0684225c7f6e37f9e6f136f91452470843aad",
     "2107647667925135663": "ccac698116c177027945d1041808e709fa89c9f67e43fb6f659a2df5607896a8",
-    "2107647946032664948": "6daa968070aa33eb301b68ac2f48cd5aae06c2695c99fe690ffcdc09d3de69dc"
+    "2107647946032664948": "6daa968070aa33eb301b68ac2f48cd5aae06c2695c99fe690ffcdc09d3de69dc",
+    "2107676072871600470": "2f73d5d9fccb3a4eddab62adf9e52a79c2f89312d74d5f3da3190a909a0bb8cc",
+    "2107676261099426030": "7e658c02c6b9e37ebd1c303374bf80c4f9096a53418b804f55dac215d7583161"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107647946032664948",
-    "canonicalId": "2107647946032664948",
-    "text": "@ForwardEditor Or it will end very well?",
-    "createdAt": "2026-10-07T01:43:23.000Z",
-    "url": "https://x.com/thsottiaux/status/2107647946032664948",
+    "id": "2107676261099426030",
+    "canonicalId": "2107676261099426030",
+    "text": "And we won't unship the improvements. You get to have your cake and eat it too. See you tomorrow for Day 3!",
+    "createdAt": "2026-10-07T03:35:54.000Z",
+    "url": "https://x.com/thsottiaux/status/2107676261099426030",
     "media": []
   }
 }
