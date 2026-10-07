@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107647667925135663",
-  "lastCheckedAt": "2026-10-07T01:42:23.432Z",
-  "lastSuccessAt": "2026-10-07T01:42:23.432Z",
+  "sinceId": "2107647946032664948",
+  "lastCheckedAt": "2026-10-07T01:47:24.093Z",
+  "lastSuccessAt": "2026-10-07T01:47:24.093Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 347,
+  "postsScanned": 348,
   "matches": [
     {
       "version": "85892387eb9ff7a95c526efcebe49b7e7ad48687dd700357c70170e063af22d3",
@@ -896,15 +896,16 @@
     "2107603154699173997": "26a9eff8157d9bd4882a18b86260e867abadf00bb9cdaf7a1aab3638c8627d1d",
     "2107613966692409653": "139eab92ccf566952230f4e7a5b182c51772c74b7c47b10e22eec4ec3ab8c814",
     "2107628890550399465": "2654d38a94e7dfdc44bc3a3cdfc0684225c7f6e37f9e6f136f91452470843aad",
-    "2107647667925135663": "ccac698116c177027945d1041808e709fa89c9f67e43fb6f659a2df5607896a8"
+    "2107647667925135663": "ccac698116c177027945d1041808e709fa89c9f67e43fb6f659a2df5607896a8",
+    "2107647946032664948": "6daa968070aa33eb301b68ac2f48cd5aae06c2695c99fe690ffcdc09d3de69dc"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107647667925135663",
-    "canonicalId": "2107647667925135663",
-    "text": "@stevenheidel @OpenAI This is how quickly *Steven* moves",
-    "createdAt": "2026-10-07T01:42:16.000Z",
-    "url": "https://x.com/thsottiaux/status/2107647667925135663",
+    "id": "2107647946032664948",
+    "canonicalId": "2107647946032664948",
+    "text": "@ForwardEditor Or it will end very well?",
+    "createdAt": "2026-10-07T01:43:23.000Z",
+    "url": "https://x.com/thsottiaux/status/2107647946032664948",
     "media": []
   }
 }

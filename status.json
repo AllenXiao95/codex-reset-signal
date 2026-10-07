@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-07T01:42:23.437Z",
+  "updatedAt": "2026-10-07T01:47:24.100Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-07T01:42:23.432Z",
-    "lastSuccessAt": "2026-10-07T01:42:23.432Z",
+    "lastCheckedAt": "2026-10-07T01:47:24.093Z",
+    "lastSuccessAt": "2026-10-07T01:47:24.093Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2107647667925135663",
-    "text": "@stevenheidel @OpenAI This is how quickly *Steven* moves",
-    "url": "https://x.com/thsottiaux/status/2107647667925135663",
-    "postCreatedAt": "2026-10-07T01:42:16.000Z"
+    "id": "2107647946032664948",
+    "text": "@ForwardEditor Or it will end very well?",
+    "url": "https://x.com/thsottiaux/status/2107647946032664948",
+    "postCreatedAt": "2026-10-07T01:43:23.000Z"
   },
   "latest": {
     "reset": {
