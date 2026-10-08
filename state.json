@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108017418136330678",
-  "lastCheckedAt": "2026-10-08T03:42:28.897Z",
-  "lastSuccessAt": "2026-10-08T03:42:28.897Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 360,
+  "sinceId": "2108040921044639779",
+  "lastCheckedAt": "2026-10-08T03:47:22.955Z",
+  "lastSuccessAt": "2026-10-08T03:47:22.955Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 361,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -940,15 +940,16 @@
     "2107913674593644711": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
     "2107913738791596286": "ab8bcef0ede211af9d7d603a283cd8df1f301e3c5c5bc7c1cf1f5cd9952ea254",
     "2108014292910113006": "1e404e311460340880dd06d1ab5327ac60f255236e4ceaba5b360147c35ffafe",
-    "2108017418136330678": "45e2bce194f6726a37efa334a5d7f59541ed9b84c3c78503b715f9c8292929a9"
+    "2108017418136330678": "45e2bce194f6726a37efa334a5d7f59541ed9b84c3c78503b715f9c8292929a9",
+    "2108040921044639779": "58d6712253d9c04226ead097962fba57a4f81a3de93db7262bd48f57b2ac8290"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108017418136330678",
-    "canonicalId": "2108017418136330678",
-    "text": "@poteto Goodbye Grok models",
-    "createdAt": "2026-10-08T02:11:32.000Z",
-    "url": "https://x.com/thsottiaux/status/2108017418136330678",
+    "id": "2108040921044639779",
+    "canonicalId": "2108040921044639779",
+    "text": "Confirmed landed across all accounts. How are we doing so far?",
+    "createdAt": "2026-10-08T03:44:55.000Z",
+    "url": "https://x.com/thsottiaux/status/2108040921044639779",
     "media": []
   }
 }
