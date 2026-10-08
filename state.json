@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108046065857679614",
-  "lastCheckedAt": "2026-10-08T04:07:27.716Z",
-  "lastSuccessAt": "2026-10-08T04:07:27.716Z",
+  "sinceId": "2108046671309685096",
+  "lastCheckedAt": "2026-10-08T04:12:26.897Z",
+  "lastSuccessAt": "2026-10-08T04:12:26.897Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 362,
+  "postsScanned": 363,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -942,15 +942,16 @@
     "2108014292910113006": "1e404e311460340880dd06d1ab5327ac60f255236e4ceaba5b360147c35ffafe",
     "2108017418136330678": "45e2bce194f6726a37efa334a5d7f59541ed9b84c3c78503b715f9c8292929a9",
     "2108040921044639779": "58d6712253d9c04226ead097962fba57a4f81a3de93db7262bd48f57b2ac8290",
-    "2108046065857679614": "fa93b5b91418b1ea571586aeadf08d047b9dcb89c0126dac6dc73fbc3707ec17"
+    "2108046065857679614": "fa93b5b91418b1ea571586aeadf08d047b9dcb89c0126dac6dc73fbc3707ec17",
+    "2108046671309685096": "df0f46cb96fe67544ad94675eb0ae1aba934f68b7afe5c81991d83d4636c88b2"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108046065857679614",
-    "canonicalId": "2108046065857679614",
-    "text": "@CristianRus4 Haha",
-    "createdAt": "2026-10-08T04:05:22.000Z",
-    "url": "https://x.com/thsottiaux/status/2108046065857679614",
+    "id": "2108046671309685096",
+    "canonicalId": "2108046671309685096",
+    "text": "@mitchellh Chungus, we should have thought of that name",
+    "createdAt": "2026-10-08T04:07:46.000Z",
+    "url": "https://x.com/thsottiaux/status/2108046671309685096",
     "media": []
   }
 }
