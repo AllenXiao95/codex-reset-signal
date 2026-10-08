@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T02:07:33.041Z",
+  "updatedAt": "2026-10-08T02:12:28.592Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-08T02:07:33.033Z",
-    "lastSuccessAt": "2026-10-08T02:07:33.033Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-08T02:12:28.586Z",
+    "lastSuccessAt": "2026-10-08T02:12:28.586Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108014292910113006",
-    "text": "@poteto You really had to sleep on that one",
-    "url": "https://x.com/thsottiaux/status/2108014292910113006",
-    "postCreatedAt": "2026-10-08T01:59:07.000Z"
+    "id": "2108017418136330678",
+    "text": "@poteto Goodbye Grok models",
+    "url": "https://x.com/thsottiaux/status/2108017418136330678",
+    "postCreatedAt": "2026-10-08T02:11:32.000Z"
   },
   "latest": {
     "reset": {
