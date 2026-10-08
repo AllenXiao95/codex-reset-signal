@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T19:12:43.153Z",
+  "updatedAt": "2026-10-08T19:17:30.542Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-08T19:12:43.146Z",
-    "lastSuccessAt": "2026-10-08T19:12:43.146Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-08T19:17:30.532Z",
+    "lastSuccessAt": "2026-10-08T19:17:30.532Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108199520836485472",
-    "text": "@GergelyOrosz Back to work then @poteto. May the b/dots thrive in this world.",
-    "url": "https://x.com/thsottiaux/status/2108199520836485472",
-    "postCreatedAt": "2026-10-08T14:15:08.000Z"
+    "id": "2108275041276420573",
+    "text": "Day 4/\n\nWe have improved steering to be instant, leading to the model now reacting much faster to adjustments you make, allowing you to course-correct direction in realtime and not have the model waste effort.\n\nAlso releasing GPT-6.1 Sol ultrafast. The two work very well together.",
+    "url": "https://x.com/thsottiaux/status/2108275041276420573",
+    "postCreatedAt": "2026-10-08T19:15:14.000Z"
   },
   "latest": {
     "reset": {
