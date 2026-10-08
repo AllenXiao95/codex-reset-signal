@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2107913738791596286",
-  "lastCheckedAt": "2026-10-08T01:57:25.508Z",
-  "lastSuccessAt": "2026-10-08T01:57:25.508Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 358,
+  "sinceId": "2108014292910113006",
+  "lastCheckedAt": "2026-10-08T02:02:28.720Z",
+  "lastSuccessAt": "2026-10-08T02:02:28.720Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 359,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -938,15 +938,16 @@
     "2107700139066593612": "9b643e77335a315497c969ee5ccf8004d17241b664cc70ffb5fb5234b3710ccf",
     "2107912709715132482": "a025218b1fd504fff2d0f4f9e459f0f983b4d4adaa22af7e1ccb02c12852c384",
     "2107913674593644711": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
-    "2107913738791596286": "ab8bcef0ede211af9d7d603a283cd8df1f301e3c5c5bc7c1cf1f5cd9952ea254"
+    "2107913738791596286": "ab8bcef0ede211af9d7d603a283cd8df1f301e3c5c5bc7c1cf1f5cd9952ea254",
+    "2108014292910113006": "1e404e311460340880dd06d1ab5327ac60f255236e4ceaba5b360147c35ffafe"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2107913738791596286",
-    "canonicalId": "2107913738791596286",
-    "text": "Will be there by EOD PST.",
-    "createdAt": "2026-10-07T19:19:33.000Z",
-    "url": "https://x.com/thsottiaux/status/2107913738791596286",
+    "id": "2108014292910113006",
+    "canonicalId": "2108014292910113006",
+    "text": "@poteto You really had to sleep on that one",
+    "createdAt": "2026-10-08T01:59:07.000Z",
+    "url": "https://x.com/thsottiaux/status/2108014292910113006",
     "media": []
   }
 }
