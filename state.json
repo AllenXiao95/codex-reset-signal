@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108067119980319111",
-  "lastCheckedAt": "2026-10-08T06:17:29.919Z",
-  "lastSuccessAt": "2026-10-08T06:17:29.919Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 366,
+  "sinceId": "2108080036725354918",
+  "lastCheckedAt": "2026-10-08T06:23:12.691Z",
+  "lastSuccessAt": "2026-10-08T06:23:12.691Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 367,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -946,15 +946,16 @@
     "2108046671309685096": "df0f46cb96fe67544ad94675eb0ae1aba934f68b7afe5c81991d83d4636c88b2",
     "2108064454831427702": "9db3edec0a34c01aa7a6e270cacdc8cc0437bb85de32eda4cae1e359d9d8f9ef",
     "2108064684549230815": "0876462888bcc6f6052f670ef0ab8c91e2f94e208b1657aff1ab44b267b24eb5",
-    "2108067119980319111": "3099f52e705369b47ab7319a736c9d8f81829d7298e62f7122df94997932bf4b"
+    "2108067119980319111": "3099f52e705369b47ab7319a736c9d8f81829d7298e62f7122df94997932bf4b",
+    "2108080036725354918": "452511710f9edc43a9ade2aaea380bce441e0dc53fe39c3e5965b308788aac91"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108067119980319111",
-    "canonicalId": "2108067119980319111",
-    "text": "@bot @poteto So smart. Figured out by itself who needs it",
-    "createdAt": "2026-10-08T05:29:02.000Z",
-    "url": "https://x.com/thsottiaux/status/2108067119980319111",
+    "id": "2108080036725354918",
+    "canonicalId": "2108080036725354918",
+    "text": "@poteto @bot lmao 💀 get it to work on your models",
+    "createdAt": "2026-10-08T06:20:21.000Z",
+    "url": "https://x.com/thsottiaux/status/2108080036725354918",
     "media": []
   }
 }

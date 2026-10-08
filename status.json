@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T06:17:29.924Z",
+  "updatedAt": "2026-10-08T06:23:12.696Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-08T06:17:29.919Z",
-    "lastSuccessAt": "2026-10-08T06:17:29.919Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-08T06:23:12.691Z",
+    "lastSuccessAt": "2026-10-08T06:23:12.691Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108067119980319111",
-    "text": "@bot @poteto So smart. Figured out by itself who needs it",
-    "url": "https://x.com/thsottiaux/status/2108067119980319111",
-    "postCreatedAt": "2026-10-08T05:29:02.000Z"
+    "id": "2108080036725354918",
+    "text": "@poteto @bot lmao 💀 get it to work on your models",
+    "url": "https://x.com/thsottiaux/status/2108080036725354918",
+    "postCreatedAt": "2026-10-08T06:20:21.000Z"
   },
   "latest": {
     "reset": {
