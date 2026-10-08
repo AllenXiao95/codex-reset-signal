@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T14:12:44.070Z",
+  "updatedAt": "2026-10-08T14:18:04.796Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-08T14:12:44.064Z",
-    "lastSuccessAt": "2026-10-08T14:12:44.064Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-08T14:18:04.791Z",
+    "lastSuccessAt": "2026-10-08T14:18:04.791Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108086116683526498",
-    "text": "@Angaisb_ Ah.. spoiled my Day 17",
-    "url": "https://x.com/thsottiaux/status/2108086116683526498",
-    "postCreatedAt": "2026-10-08T06:44:31.000Z"
+    "id": "2108199520836485472",
+    "text": "@GergelyOrosz Back to work then @poteto. May the b/dots thrive in this world.",
+    "url": "https://x.com/thsottiaux/status/2108199520836485472",
+    "postCreatedAt": "2026-10-08T14:15:08.000Z"
   },
   "latest": {
     "reset": {
