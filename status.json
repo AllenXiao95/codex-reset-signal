@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T06:42:33.437Z",
+  "updatedAt": "2026-10-08T06:47:21.863Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-08T06:42:33.430Z",
-    "lastSuccessAt": "2026-10-08T06:42:33.430Z",
+    "lastCheckedAt": "2026-10-08T06:47:21.859Z",
+    "lastSuccessAt": "2026-10-08T06:47:21.859Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108084615349170480",
-    "text": "Day 3 (encore)/\n\nWe silently re-shipped codex cloud. It’s pretty good now",
-    "url": "https://x.com/thsottiaux/status/2108084615349170480",
-    "postCreatedAt": "2026-10-08T06:38:33.000Z"
+    "id": "2108086116683526498",
+    "text": "@Angaisb_ Ah.. spoiled my Day 17",
+    "url": "https://x.com/thsottiaux/status/2108086116683526498",
+    "postCreatedAt": "2026-10-08T06:44:31.000Z"
   },
   "latest": {
     "reset": {
