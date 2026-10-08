@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T05:17:27.833Z",
+  "updatedAt": "2026-10-08T05:22:28.278Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-08T05:17:27.619Z",
-    "lastSuccessAt": "2026-10-08T05:17:27.619Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-08T05:22:28.273Z",
+    "lastSuccessAt": "2026-10-08T05:22:28.273Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2108046671309685096",
-    "text": "@mitchellh Chungus, we should have thought of that name",
-    "url": "https://x.com/thsottiaux/status/2108046671309685096",
-    "postCreatedAt": "2026-10-08T04:07:46.000Z"
+    "id": "2108064684549230815",
+    "text": "@Leooweb3 Dot Dot Dot",
+    "url": "https://x.com/thsottiaux/status/2108064684549230815",
+    "postCreatedAt": "2026-10-08T05:19:21.000Z"
   },
   "latest": {
     "reset": {
