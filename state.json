@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108080036725354918",
-  "lastCheckedAt": "2026-10-08T06:37:22.492Z",
-  "lastSuccessAt": "2026-10-08T06:37:22.492Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 367,
+  "sinceId": "2108084615349170480",
+  "lastCheckedAt": "2026-10-08T06:42:33.430Z",
+  "lastSuccessAt": "2026-10-08T06:42:33.430Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 368,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -947,15 +947,16 @@
     "2108064454831427702": "9db3edec0a34c01aa7a6e270cacdc8cc0437bb85de32eda4cae1e359d9d8f9ef",
     "2108064684549230815": "0876462888bcc6f6052f670ef0ab8c91e2f94e208b1657aff1ab44b267b24eb5",
     "2108067119980319111": "3099f52e705369b47ab7319a736c9d8f81829d7298e62f7122df94997932bf4b",
-    "2108080036725354918": "452511710f9edc43a9ade2aaea380bce441e0dc53fe39c3e5965b308788aac91"
+    "2108080036725354918": "452511710f9edc43a9ade2aaea380bce441e0dc53fe39c3e5965b308788aac91",
+    "2108084615349170480": "204eb882b48d1c8c9b8f41ab713c5fe88580cc581ba5cd4f3131e0d82df0f5a3"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108080036725354918",
-    "canonicalId": "2108080036725354918",
-    "text": "@poteto @bot lmao 💀 get it to work on your models",
-    "createdAt": "2026-10-08T06:20:21.000Z",
-    "url": "https://x.com/thsottiaux/status/2108080036725354918",
+    "id": "2108084615349170480",
+    "canonicalId": "2108084615349170480",
+    "text": "Day 3 (encore)/\n\nWe silently re-shipped codex cloud. It’s pretty good now",
+    "createdAt": "2026-10-08T06:38:33.000Z",
+    "url": "https://x.com/thsottiaux/status/2108084615349170480",
     "media": []
   }
 }

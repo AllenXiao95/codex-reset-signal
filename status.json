@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-08T06:37:22.497Z",
+  "updatedAt": "2026-10-08T06:42:33.437Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-08T06:37:22.492Z",
-    "lastSuccessAt": "2026-10-08T06:37:22.492Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-08T06:42:33.430Z",
+    "lastSuccessAt": "2026-10-08T06:42:33.430Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108080036725354918",
-    "text": "@poteto @bot lmao 💀 get it to work on your models",
-    "url": "https://x.com/thsottiaux/status/2108080036725354918",
-    "postCreatedAt": "2026-10-08T06:20:21.000Z"
+    "id": "2108084615349170480",
+    "text": "Day 3 (encore)/\n\nWe silently re-shipped codex cloud. It’s pretty good now",
+    "url": "https://x.com/thsottiaux/status/2108084615349170480",
+    "postCreatedAt": "2026-10-08T06:38:33.000Z"
   },
   "latest": {
     "reset": {
