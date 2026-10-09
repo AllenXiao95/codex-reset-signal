@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108428560822424062",
-  "lastCheckedAt": "2026-10-09T19:47:42.108Z",
-  "lastSuccessAt": "2026-10-09T19:47:42.108Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 374,
+  "sinceId": "2108646052178092403",
+  "lastCheckedAt": "2026-10-09T19:52:32.593Z",
+  "lastSuccessAt": "2026-10-09T19:52:32.593Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 376,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -954,15 +954,17 @@
     "2108275041276420573": "34670360218fff409e9e91accca3831b20440a7426fe839fc6ed04fa2f94da04",
     "2108349826727588000": "36e8fac2ba90f7a79588626457241129a89e4fb42eca6bedbab6e2a19df96adb",
     "2108391597834727636": "3a0d851579acc9979c8eaea9f0cc6bdc2f33213da60402e296ca903d2cc32522",
-    "2108428560822424062": "342c79139ce74116a4289677099a4d72e1ff949a40feb5422075afea91453057"
+    "2108428560822424062": "342c79139ce74116a4289677099a4d72e1ff949a40feb5422075afea91453057",
+    "2108645667451318747": "f0d1963639231afa93698eada3be2b2f142b82127d951dc51143256024bff3fc",
+    "2108646052178092403": "c810709c899e5d8c18e5888da1c90239e258f9a935704703a433443470427a9e"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108428560822424062",
-    "canonicalId": "2108428560822424062",
-    "text": "@SimonasLTU1 This was all client-side + network for playground only. Shipped optimized rendering logic that can keep up with ultrafast, try again",
-    "createdAt": "2026-10-09T05:25:16.000Z",
-    "url": "https://x.com/thsottiaux/status/2108428560822424062",
+    "id": "2108646052178092403",
+    "canonicalId": "2108646052178092403",
+    "text": "Day 5 (dots edition)/\n\nYou can now create and text your dot entirely from the ChatGPT mobile app. Impressed so many created them via the desktop/web app previously. Time to scale!",
+    "createdAt": "2026-10-09T19:49:30.000Z",
+    "url": "https://x.com/thsottiaux/status/2108646052178092403",
     "media": []
   }
 }

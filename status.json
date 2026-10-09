@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T19:47:42.113Z",
+  "updatedAt": "2026-10-09T19:52:32.598Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-09T19:47:42.108Z",
-    "lastSuccessAt": "2026-10-09T19:47:42.108Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-09T19:52:32.593Z",
+    "lastSuccessAt": "2026-10-09T19:52:32.593Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2108428560822424062",
-    "text": "@SimonasLTU1 This was all client-side + network for playground only. Shipped optimized rendering logic that can keep up with ultrafast, try again",
-    "url": "https://x.com/thsottiaux/status/2108428560822424062",
-    "postCreatedAt": "2026-10-09T05:25:16.000Z"
+    "id": "2108646052178092403",
+    "text": "Day 5 (dots edition)/\n\nYou can now create and text your dot entirely from the ChatGPT mobile app. Impressed so many created them via the desktop/web app previously. Time to scale!",
+    "url": "https://x.com/thsottiaux/status/2108646052178092403",
+    "postCreatedAt": "2026-10-09T19:49:30.000Z"
   },
   "latest": {
     "reset": {
