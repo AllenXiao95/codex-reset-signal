@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108275041276420573",
-  "lastCheckedAt": "2026-10-09T00:07:28.261Z",
-  "lastSuccessAt": "2026-10-09T00:07:28.261Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 371,
+  "sinceId": "2108349826727588000",
+  "lastCheckedAt": "2026-10-09T00:12:33.213Z",
+  "lastSuccessAt": "2026-10-09T00:12:33.213Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 372,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -951,23 +951,16 @@
     "2108084615349170480": "204eb882b48d1c8c9b8f41ab713c5fe88580cc581ba5cd4f3131e0d82df0f5a3",
     "2108086116683526498": "8f443877e0b832730267bf9a1b416886bb3928a9f838f653a2454df512a686eb",
     "2108199520836485472": "a3e24d3bfdc5b5f64fb1bb6ad119d9efbf0c70401b59869e7d4ae215d45629a4",
-    "2108275041276420573": "34670360218fff409e9e91accca3831b20440a7426fe839fc6ed04fa2f94da04"
+    "2108275041276420573": "34670360218fff409e9e91accca3831b20440a7426fe839fc6ed04fa2f94da04",
+    "2108349826727588000": "36e8fac2ba90f7a79588626457241129a89e4fb42eca6bedbab6e2a19df96adb"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108275041276420573",
-    "canonicalId": "2108275041276420573",
-    "text": "Day 4/\n\nWe have improved steering to be instant, leading to the model now reacting much faster to adjustments you make, allowing you to course-correct direction in realtime and not have the model waste effort.\n\nAlso releasing GPT-6.1 Sol ultrafast. The two work very well together.",
-    "createdAt": "2026-10-08T19:15:14.000Z",
-    "url": "https://x.com/thsottiaux/status/2108275041276420573",
-    "media": [
-      {
-        "mediaKey": "2108274873684652032",
-        "type": "video",
-        "url": "https://video.twimg.com/amplify_video/2108274873684652032/vid/avc1/734x1140/HWdxOt8ZNzKUz1Zk.mp4?tag=29",
-        "previewImageUrl": "https://pbs.twimg.com/amplify_video_thumb/2108274873684652032/img/mNi9_fwNNhOCN5UX.jpg",
-        "altText": null
-      }
-    ]
+    "id": "2108349826727588000",
+    "canonicalId": "2108349826727588000",
+    "text": "Today, we are announcing ChatGPT.\n\nIt is here: https://t.co/Pgk3THSyOJ",
+    "createdAt": "2026-10-09T00:12:24.000Z",
+    "url": "https://x.com/thsottiaux/status/2108349826727588000",
+    "media": []
   }
 }

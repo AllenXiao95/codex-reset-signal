@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T00:07:28.265Z",
+  "updatedAt": "2026-10-09T00:12:33.217Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-09T00:07:28.261Z",
-    "lastSuccessAt": "2026-10-09T00:07:28.261Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-09T00:12:33.213Z",
+    "lastSuccessAt": "2026-10-09T00:12:33.213Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108275041276420573",
-    "text": "Day 4/\n\nWe have improved steering to be instant, leading to the model now reacting much faster to adjustments you make, allowing you to course-correct direction in realtime and not have the model waste effort.\n\nAlso releasing GPT-6.1 Sol ultrafast. The two work very well together.",
-    "url": "https://x.com/thsottiaux/status/2108275041276420573",
-    "postCreatedAt": "2026-10-08T19:15:14.000Z"
+    "id": "2108349826727588000",
+    "text": "Today, we are announcing ChatGPT.\n\nIt is here: https://t.co/Pgk3THSyOJ",
+    "url": "https://x.com/thsottiaux/status/2108349826727588000",
+    "postCreatedAt": "2026-10-09T00:12:24.000Z"
   },
   "latest": {
     "reset": {
