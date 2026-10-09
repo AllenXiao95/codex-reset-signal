@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108349826727588000",
-  "lastCheckedAt": "2026-10-09T02:57:31.955Z",
-  "lastSuccessAt": "2026-10-09T02:57:31.955Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 372,
+  "sinceId": "2108391597834727636",
+  "lastCheckedAt": "2026-10-09T03:02:36.767Z",
+  "lastSuccessAt": "2026-10-09T03:02:36.767Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 373,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -952,15 +952,16 @@
     "2108086116683526498": "8f443877e0b832730267bf9a1b416886bb3928a9f838f653a2454df512a686eb",
     "2108199520836485472": "a3e24d3bfdc5b5f64fb1bb6ad119d9efbf0c70401b59869e7d4ae215d45629a4",
     "2108275041276420573": "34670360218fff409e9e91accca3831b20440a7426fe839fc6ed04fa2f94da04",
-    "2108349826727588000": "36e8fac2ba90f7a79588626457241129a89e4fb42eca6bedbab6e2a19df96adb"
+    "2108349826727588000": "36e8fac2ba90f7a79588626457241129a89e4fb42eca6bedbab6e2a19df96adb",
+    "2108391597834727636": "3a0d851579acc9979c8eaea9f0cc6bdc2f33213da60402e296ca903d2cc32522"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108349826727588000",
-    "canonicalId": "2108349826727588000",
-    "text": "Today, we are announcing ChatGPT.\n\nIt is here: https://t.co/Pgk3THSyOJ",
-    "createdAt": "2026-10-09T00:12:24.000Z",
-    "url": "https://x.com/thsottiaux/status/2108349826727588000",
+    "id": "2108391597834727636",
+    "canonicalId": "2108391597834727636",
+    "text": "@Deepusleepy i am retired",
+    "createdAt": "2026-10-09T02:58:23.000Z",
+    "url": "https://x.com/thsottiaux/status/2108391597834727636",
     "media": []
   }
 }
