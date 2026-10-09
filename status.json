@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T05:22:42.149Z",
+  "updatedAt": "2026-10-09T05:27:24.826Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-09T05:22:42.143Z",
-    "lastSuccessAt": "2026-10-09T05:22:42.143Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-09T05:27:24.818Z",
+    "lastSuccessAt": "2026-10-09T05:27:24.818Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108391597834727636",
-    "text": "@Deepusleepy i am retired",
-    "url": "https://x.com/thsottiaux/status/2108391597834727636",
-    "postCreatedAt": "2026-10-09T02:58:23.000Z"
+    "id": "2108428560822424062",
+    "text": "@SimonasLTU1 This was all client-side + network for playground only. Shipped optimized rendering logic that can keep up with ultrafast, try again",
+    "url": "https://x.com/thsottiaux/status/2108428560822424062",
+    "postCreatedAt": "2026-10-09T05:25:16.000Z"
   },
   "latest": {
     "reset": {
