@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-09T20:02:33.511Z",
+  "updatedAt": "2026-10-09T20:07:35.979Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-09T20:02:33.505Z",
-    "lastSuccessAt": "2026-10-09T20:02:33.505Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-09T20:07:35.974Z",
+    "lastSuccessAt": "2026-10-09T20:07:35.974Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108646052178092403",
-    "text": "Day 5 (dots edition)/\n\nYou can now create and text your dot entirely from the ChatGPT mobile app. Impressed so many created them via the desktop/web app previously. Time to scale!",
-    "url": "https://x.com/thsottiaux/status/2108646052178092403",
-    "postCreatedAt": "2026-10-09T19:49:30.000Z"
+    "id": "2108650026671231468",
+    "text": "Send feedback to @keyanzhang and @sharifshameem !",
+    "url": "https://x.com/thsottiaux/status/2108650026671231468",
+    "postCreatedAt": "2026-10-09T20:05:17.000Z"
   },
   "latest": {
     "reset": {
