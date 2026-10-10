@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T04:42:23.337Z",
+  "updatedAt": "2026-10-10T04:47:25.045Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-10T04:42:23.321Z",
-    "lastSuccessAt": "2026-10-10T04:42:23.321Z",
+    "lastCheckedAt": "2026-10-10T04:47:25.031Z",
+    "lastSuccessAt": "2026-10-10T04:47:25.031Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108778939057664357",
-    "text": "@rohit3a Folks. Why do you think we picked 300k for context length for Codex. \n\nWe ran the numbers and it’s better. We can run it at 1M too but it would just cost more of the usage. Good defaults are important.",
-    "url": "https://x.com/thsottiaux/status/2108778939057664357",
-    "postCreatedAt": "2026-10-10T04:37:32.000Z"
+    "id": "2108780620583403652",
+    "text": "@ConnorTalksAI What the heck",
+    "url": "https://x.com/thsottiaux/status/2108780620583403652",
+    "postCreatedAt": "2026-10-10T04:44:13.000Z"
   },
   "latest": {
     "reset": {
