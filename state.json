@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2109045392684032299",
-  "lastCheckedAt": "2026-10-10T22:17:22.922Z",
-  "lastSuccessAt": "2026-10-10T22:17:22.922Z",
-  "lastRunStatus": "checked-2-posts",
+  "lastCheckedAt": "2026-10-10T22:22:28.620Z",
+  "lastSuccessAt": "2026-10-10T22:22:28.620Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 387,
   "matches": [
     {
       "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
       "id": "2109045392684032299",
-      "canonicalId": "2109045392684032299",
       "text": "Global reset by EOD. May the tokens do good things for you.",
       "createdAt": "2026-10-10T22:16:20.000Z",
       "url": "https://x.com/thsottiaux/status/2109045392684032299",
@@ -32,15 +31,14 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-10T22:17:22.931Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-10T22:17:22.931Z"
+      ]
     },
     {
       "version": "e3dcd7beacba2d69639523394e1e5b92bbdd64ad09cef8ece8716a7cba867c6b",
       "id": "2109045220411351517",
-      "canonicalId": "2109045220411351517",
       "text": "Day 6/ Reset",
       "createdAt": "2026-10-10T22:15:39.000Z",
       "url": "https://x.com/thsottiaux/status/2109045220411351517",
@@ -60,10 +58,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-10T22:17:22.926Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-10T22:17:22.926Z"
+      ]
     },
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
