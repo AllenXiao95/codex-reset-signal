@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T20:37:28.438Z",
+  "updatedAt": "2026-10-10T20:42:27.821Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-10T20:37:28.432Z",
-    "lastSuccessAt": "2026-10-10T20:37:28.432Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-10T20:42:27.816Z",
+    "lastSuccessAt": "2026-10-10T20:42:27.816Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108852361536098422",
-    "text": "@theo @LukeParkerDev Me too",
-    "url": "https://x.com/thsottiaux/status/2108852361536098422",
-    "postCreatedAt": "2026-10-10T09:29:18.000Z"
+    "id": "2109021594576470290",
+    "text": "@ryanvogel 👀",
+    "url": "https://x.com/thsottiaux/status/2109021594576470290",
+    "postCreatedAt": "2026-10-10T20:41:46.000Z"
   },
   "latest": {
     "reset": {
