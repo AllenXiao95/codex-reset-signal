@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T22:12:25.952Z",
+  "updatedAt": "2026-10-10T22:17:22.938Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-10T22:12:25.944Z",
-    "lastSuccessAt": "2026-10-10T22:12:25.944Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-10T22:17:22.922Z",
+    "lastSuccessAt": "2026-10-10T22:17:22.922Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2109021594576470290",
-    "text": "@ryanvogel 👀",
-    "url": "https://x.com/thsottiaux/status/2109021594576470290",
-    "postCreatedAt": "2026-10-10T20:41:46.000Z"
+    "id": "2109045392684032299",
+    "text": "Global reset by EOD. May the tokens do good things for you.",
+    "url": "https://x.com/thsottiaux/status/2109045392684032299",
+    "postCreatedAt": "2026-10-10T22:16:20.000Z"
   },
   "latest": {
     "reset": {
-      "version": "8d648cfa3f70b05d1282442dffd0dadac8cd4f88b8eb31561308956090ce3da1",
-      "id": "2106233145163141249",
-      "text": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier. Investigating and will make up for it",
-      "url": "https://x.com/thsottiaux/status/2106233145163141249",
-      "postCreatedAt": "2026-10-03T04:01:28.000Z",
-      "detectedAt": "2026-10-03T04:02:27.379Z",
+      "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
+      "id": "2109045392684032299",
+      "text": "Global reset by EOD. May the tokens do good things for you.",
+      "url": "https://x.com/thsottiaux/status/2109045392684032299",
+      "postCreatedAt": "2026-10-10T22:16:20.000Z",
+      "detectedAt": "2026-10-10T22:17:22.922Z",
       "events": [
         {
           "type": "reset",
           "status": "announced",
-          "evidence": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier",
+          "evidence": "Global reset by EOD",
           "time": {
             "kind": "unknown",
             "start": null,
             "end": null,
-            "evidence": "Seeing some reports that the Pro 500 didn’t get the reset as expected earlier",
+            "evidence": "Global reset by EOD",
             "note": "原文没有可确定的时间"
           }
         }
@@ -67,6 +67,54 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
+      "id": "2109045392684032299",
+      "text": "Global reset by EOD. May the tokens do good things for you.",
+      "url": "https://x.com/thsottiaux/status/2109045392684032299",
+      "postCreatedAt": "2026-10-10T22:16:20.000Z",
+      "detectedAt": "2026-10-10T22:17:22.922Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "announced",
+          "evidence": "Global reset by EOD",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Global reset by EOD",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
+    {
+      "version": "e3dcd7beacba2d69639523394e1e5b92bbdd64ad09cef8ece8716a7cba867c6b",
+      "id": "2109045220411351517",
+      "text": "Day 6/ Reset",
+      "url": "https://x.com/thsottiaux/status/2109045220411351517",
+      "postCreatedAt": "2026-10-10T22:15:39.000Z",
+      "detectedAt": "2026-10-10T22:17:22.892Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Day 6/ Reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Day 6/ Reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
       "id": "2107913674593644711",
@@ -527,54 +575,6 @@
             "start": null,
             "end": null,
             "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex",
-            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
-          }
-        }
-      ],
-      "deliveryChannels": [],
-      "origin": "live"
-    },
-    {
-      "version": "b50e754a6dcfb2d10e42750477c3affac9d40364b3543919f0e537a0c5574e7b",
-      "id": "2097183639356489952",
-      "text": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
-      "url": "https://x.com/thsottiaux/status/2097183639356489952",
-      "postCreatedAt": "2026-09-08T04:41:58.000Z",
-      "detectedAt": "2026-09-09T03:27:28.321Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
-            "note": "未形成明确的重置承诺或完成确认"
-          }
-        }
-      ],
-      "deliveryChannels": [],
-      "origin": "live"
-    },
-    {
-      "version": "83da6efba27a699e3da0bd2f5597fff04ac688939dacedde1a3d368dc3bd1c40",
-      "id": "2097175062566846501",
-      "text": "@FelipeFr1702 There is no schedule, only resets",
-      "url": "https://x.com/thsottiaux/status/2097175062566846501",
-      "postCreatedAt": "2026-09-08T04:07:53.000Z",
-      "detectedAt": "2026-09-09T03:27:28.321Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "@FelipeFr1702 There is no schedule, only resets",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "@FelipeFr1702 There is no schedule, only resets",
             "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
           }
         }

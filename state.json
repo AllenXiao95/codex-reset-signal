@@ -3,12 +3,68 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109021594576470290",
-  "lastCheckedAt": "2026-10-10T22:12:25.944Z",
-  "lastSuccessAt": "2026-10-10T22:12:25.944Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 385,
+  "sinceId": "2109045392684032299",
+  "lastCheckedAt": "2026-10-10T22:17:22.922Z",
+  "lastSuccessAt": "2026-10-10T22:17:22.922Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 387,
   "matches": [
+    {
+      "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
+      "id": "2109045392684032299",
+      "canonicalId": "2109045392684032299",
+      "text": "Global reset by EOD. May the tokens do good things for you.",
+      "createdAt": "2026-10-10T22:16:20.000Z",
+      "url": "https://x.com/thsottiaux/status/2109045392684032299",
+      "media": [],
+      "detectedAt": "2026-10-10T22:17:22.922Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "announced",
+          "evidence": "Global reset by EOD",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Global reset by EOD",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-10T22:17:22.931Z"
+    },
+    {
+      "version": "e3dcd7beacba2d69639523394e1e5b92bbdd64ad09cef8ece8716a7cba867c6b",
+      "id": "2109045220411351517",
+      "canonicalId": "2109045220411351517",
+      "text": "Day 6/ Reset",
+      "createdAt": "2026-10-10T22:15:39.000Z",
+      "url": "https://x.com/thsottiaux/status/2109045220411351517",
+      "media": [],
+      "detectedAt": "2026-10-10T22:17:22.892Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Day 6/ Reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Day 6/ Reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-10T22:17:22.926Z"
+    },
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
       "id": "2107913674593644711",
@@ -529,54 +585,6 @@
       "channels": [
         "github-actions"
       ]
-    },
-    {
-      "version": "b50e754a6dcfb2d10e42750477c3affac9d40364b3543919f0e537a0c5574e7b",
-      "id": "2097183639356489952",
-      "text": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
-      "createdAt": "2026-09-08T04:41:58.000Z",
-      "url": "https://x.com/thsottiaux/status/2097183639356489952",
-      "media": [],
-      "detectedAt": "2026-09-09T03:27:28.321Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "@0x0SojalSec You forgot the part where I reset usage twice in the middle",
-            "note": "未形成明确的重置承诺或完成确认"
-          }
-        }
-      ],
-      "channels": []
-    },
-    {
-      "version": "83da6efba27a699e3da0bd2f5597fff04ac688939dacedde1a3d368dc3bd1c40",
-      "id": "2097175062566846501",
-      "text": "@FelipeFr1702 There is no schedule, only resets",
-      "createdAt": "2026-09-08T04:07:53.000Z",
-      "url": "https://x.com/thsottiaux/status/2097175062566846501",
-      "media": [],
-      "detectedAt": "2026-09-09T03:27:28.321Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "@FelipeFr1702 There is no schedule, only resets",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "@FelipeFr1702 There is no schedule, only resets",
-            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
-          }
-        }
-      ],
-      "channels": []
     }
   ],
   "outbox": [],
@@ -965,15 +973,17 @@
     "2108780620583403652": "1101e00ab631025e861aeb94632ba45eeee7646e8eb5df14da55316d5a7218a8",
     "2108840070648397933": "cff8b6c32e3ba78930fa3b3ffbe4799cb558425af81558c3c3cc035d8e1a132b",
     "2108852361536098422": "389e519b66b5085c6b65e6c613cdb139c2458d58dedd72b7fde2e46e555e55c1",
-    "2109021594576470290": "b0381c45a76ebc20ba59345a81216578cdd6c78be1cbebd43a6fecd20a573abe"
+    "2109021594576470290": "b0381c45a76ebc20ba59345a81216578cdd6c78be1cbebd43a6fecd20a573abe",
+    "2109045220411351517": "e3dcd7beacba2d69639523394e1e5b92bbdd64ad09cef8ece8716a7cba867c6b",
+    "2109045392684032299": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109021594576470290",
-    "canonicalId": "2109021594576470290",
-    "text": "@ryanvogel 👀",
-    "createdAt": "2026-10-10T20:41:46.000Z",
-    "url": "https://x.com/thsottiaux/status/2109021594576470290",
+    "id": "2109045392684032299",
+    "canonicalId": "2109045392684032299",
+    "text": "Global reset by EOD. May the tokens do good things for you.",
+    "createdAt": "2026-10-10T22:16:20.000Z",
+    "url": "https://x.com/thsottiaux/status/2109045392684032299",
     "media": []
   }
 }
