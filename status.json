@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T08:37:27.603Z",
+  "updatedAt": "2026-10-10T08:42:33.736Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-10T08:37:27.598Z",
-    "lastSuccessAt": "2026-10-10T08:37:27.598Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-10T08:42:33.731Z",
+    "lastSuccessAt": "2026-10-10T08:42:33.731Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108780620583403652",
-    "text": "@ConnorTalksAI What the heck",
-    "url": "https://x.com/thsottiaux/status/2108780620583403652",
-    "postCreatedAt": "2026-10-10T04:44:13.000Z"
+    "id": "2108840070648397933",
+    "text": "Blinked and it’s already Saturday",
+    "url": "https://x.com/thsottiaux/status/2108840070648397933",
+    "postCreatedAt": "2026-10-10T08:40:27.000Z"
   },
   "latest": {
     "reset": {
