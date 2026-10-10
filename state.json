@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108840070648397933",
-  "lastCheckedAt": "2026-10-10T09:27:30.038Z",
-  "lastSuccessAt": "2026-10-10T09:27:30.038Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 383,
+  "sinceId": "2108852361536098422",
+  "lastCheckedAt": "2026-10-10T09:32:33.199Z",
+  "lastSuccessAt": "2026-10-10T09:32:33.199Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 384,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -963,15 +963,16 @@
     "2108777962053292398": "45c1b6641c012f5ab3239848307cf63054c3e7d4522ee523505be550bff74fd4",
     "2108778939057664357": "34dfaa945d977b79f85e644d03ead935c0aa4978b010f343e4b68522918425f1",
     "2108780620583403652": "1101e00ab631025e861aeb94632ba45eeee7646e8eb5df14da55316d5a7218a8",
-    "2108840070648397933": "cff8b6c32e3ba78930fa3b3ffbe4799cb558425af81558c3c3cc035d8e1a132b"
+    "2108840070648397933": "cff8b6c32e3ba78930fa3b3ffbe4799cb558425af81558c3c3cc035d8e1a132b",
+    "2108852361536098422": "389e519b66b5085c6b65e6c613cdb139c2458d58dedd72b7fde2e46e555e55c1"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108840070648397933",
-    "canonicalId": "2108840070648397933",
-    "text": "Blinked and it’s already Saturday",
-    "createdAt": "2026-10-10T08:40:27.000Z",
-    "url": "https://x.com/thsottiaux/status/2108840070648397933",
+    "id": "2108852361536098422",
+    "canonicalId": "2108852361536098422",
+    "text": "@theo @LukeParkerDev Me too",
+    "createdAt": "2026-10-10T09:29:18.000Z",
+    "url": "https://x.com/thsottiaux/status/2108852361536098422",
     "media": []
   }
 }
