@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108650026671231468",
-  "lastCheckedAt": "2026-10-10T04:12:26.347Z",
-  "lastSuccessAt": "2026-10-10T04:12:26.347Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 377,
+  "sinceId": "2108773866281795814",
+  "lastCheckedAt": "2026-10-10T04:17:34.604Z",
+  "lastSuccessAt": "2026-10-10T04:17:34.604Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 379,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -957,15 +957,17 @@
     "2108428560822424062": "342c79139ce74116a4289677099a4d72e1ff949a40feb5422075afea91453057",
     "2108645667451318747": "f0d1963639231afa93698eada3be2b2f142b82127d951dc51143256024bff3fc",
     "2108646052178092403": "c810709c899e5d8c18e5888da1c90239e258f9a935704703a433443470427a9e",
-    "2108650026671231468": "0f338b4e5abadb0eb55bd833f63616facc2a5e4795294f17f5d19f7e7b6ed454"
+    "2108650026671231468": "0f338b4e5abadb0eb55bd833f63616facc2a5e4795294f17f5d19f7e7b6ed454",
+    "2108773703064657936": "2e470e9346f00429e9762876400e97682cf09d2f78afb705c991be174fab4eaa",
+    "2108773866281795814": "5a930d34bcb9334de0a6cbd390696c5c891c1008ce1487b2af92da5f2ecce03b"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108650026671231468",
-    "canonicalId": "2108650026671231468",
-    "text": "Send feedback to @keyanzhang and @sharifshameem !",
-    "createdAt": "2026-10-09T20:05:17.000Z",
-    "url": "https://x.com/thsottiaux/status/2108650026671231468",
+    "id": "2108773866281795814",
+    "canonicalId": "2108773866281795814",
+    "text": "@kunchenguid Dot goes brrrrrrr",
+    "createdAt": "2026-10-10T04:17:23.000Z",
+    "url": "https://x.com/thsottiaux/status/2108773866281795814",
     "media": []
   }
 }

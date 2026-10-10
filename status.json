@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T04:12:26.425Z",
+  "updatedAt": "2026-10-10T04:17:34.609Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-10T04:12:26.347Z",
-    "lastSuccessAt": "2026-10-10T04:12:26.347Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-10T04:17:34.604Z",
+    "lastSuccessAt": "2026-10-10T04:17:34.604Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2108650026671231468",
-    "text": "Send feedback to @keyanzhang and @sharifshameem !",
-    "url": "https://x.com/thsottiaux/status/2108650026671231468",
-    "postCreatedAt": "2026-10-09T20:05:17.000Z"
+    "id": "2108773866281795814",
+    "text": "@kunchenguid Dot goes brrrrrrr",
+    "url": "https://x.com/thsottiaux/status/2108773866281795814",
+    "postCreatedAt": "2026-10-10T04:17:23.000Z"
   },
   "latest": {
     "reset": {
