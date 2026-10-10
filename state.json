@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2108773866281795814",
-  "lastCheckedAt": "2026-10-10T04:32:22.737Z",
-  "lastSuccessAt": "2026-10-10T04:32:22.737Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 379,
+  "sinceId": "2108777962053292398",
+  "lastCheckedAt": "2026-10-10T04:37:27.559Z",
+  "lastSuccessAt": "2026-10-10T04:37:27.559Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 380,
   "matches": [
     {
       "version": "ecc7339da4eebb3dc39327664289521ad6dfb66f2129c71a7e50119a4ced0557",
@@ -959,15 +959,16 @@
     "2108646052178092403": "c810709c899e5d8c18e5888da1c90239e258f9a935704703a433443470427a9e",
     "2108650026671231468": "0f338b4e5abadb0eb55bd833f63616facc2a5e4795294f17f5d19f7e7b6ed454",
     "2108773703064657936": "2e470e9346f00429e9762876400e97682cf09d2f78afb705c991be174fab4eaa",
-    "2108773866281795814": "5a930d34bcb9334de0a6cbd390696c5c891c1008ce1487b2af92da5f2ecce03b"
+    "2108773866281795814": "5a930d34bcb9334de0a6cbd390696c5c891c1008ce1487b2af92da5f2ecce03b",
+    "2108777962053292398": "45c1b6641c012f5ab3239848307cf63054c3e7d4522ee523505be550bff74fd4"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2108773866281795814",
-    "canonicalId": "2108773866281795814",
-    "text": "@kunchenguid Dot goes brrrrrrr",
-    "createdAt": "2026-10-10T04:17:23.000Z",
-    "url": "https://x.com/thsottiaux/status/2108773866281795814",
+    "id": "2108777962053292398",
+    "canonicalId": "2108777962053292398",
+    "text": "Your ChatGPT subscription is now also a Devin subscription",
+    "createdAt": "2026-10-10T04:33:40.000Z",
+    "url": "https://x.com/thsottiaux/status/2108777962053292398",
     "media": []
   }
 }

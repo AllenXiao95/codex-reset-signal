@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-10T04:32:22.742Z",
+  "updatedAt": "2026-10-10T04:37:27.565Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-10T04:32:22.737Z",
-    "lastSuccessAt": "2026-10-10T04:32:22.737Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-10T04:37:27.559Z",
+    "lastSuccessAt": "2026-10-10T04:37:27.559Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2108773866281795814",
-    "text": "@kunchenguid Dot goes brrrrrrr",
-    "url": "https://x.com/thsottiaux/status/2108773866281795814",
-    "postCreatedAt": "2026-10-10T04:17:23.000Z"
+    "id": "2108777962053292398",
+    "text": "Your ChatGPT subscription is now also a Devin subscription",
+    "url": "https://x.com/thsottiaux/status/2108777962053292398",
+    "postCreatedAt": "2026-10-10T04:33:40.000Z"
   },
   "latest": {
     "reset": {
