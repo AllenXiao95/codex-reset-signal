@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109142061014466866",
-  "lastCheckedAt": "2026-10-11T05:22:29.345Z",
-  "lastSuccessAt": "2026-10-11T05:22:29.345Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 396,
+  "sinceId": "2109152716954222849",
+  "lastCheckedAt": "2026-10-11T05:27:25.293Z",
+  "lastSuccessAt": "2026-10-11T05:27:25.293Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 397,
   "matches": [
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
@@ -982,15 +982,16 @@
     "2109092087501332816": "171ab31828d5d640f9dc577fe4a2dbb900ee9e4b063def590388760fb3bf6142",
     "2109132167112782291": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
     "2109135750054957556": "c8e19a51bcc59384a8be4cd3c6b0df5d73dcff1e8e958858c7af72c5ec18a82f",
-    "2109142061014466866": "abebd6a6cb3724884777977d674b7d81bd1ac4f0c8904765b0aaf3223e3eaca2"
+    "2109142061014466866": "abebd6a6cb3724884777977d674b7d81bd1ac4f0c8904765b0aaf3223e3eaca2",
+    "2109152716954222849": "f3bf29034a4eef82246ab778d2783c196c697f83c5e8c10f6c44561a99c0e232"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109142061014466866",
-    "canonicalId": "2109142061014466866",
-    "text": "@SiftByte You are doing more math than I am",
-    "createdAt": "2026-10-11T04:40:27.000Z",
-    "url": "https://x.com/thsottiaux/status/2109142061014466866",
+    "id": "2109152716954222849",
+    "canonicalId": "2109152716954222849",
+    "text": "Pro users, would you rather have",
+    "createdAt": "2026-10-11T05:22:48.000Z",
+    "url": "https://x.com/thsottiaux/status/2109152716954222849",
     "media": []
   }
 }
