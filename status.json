@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T04:12:35.355Z",
+  "updatedAt": "2026-10-11T04:17:26.378Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-11T04:12:35.348Z",
-    "lastSuccessAt": "2026-10-11T04:12:35.348Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-11T04:17:26.371Z",
+    "lastSuccessAt": "2026-10-11T04:17:26.371Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109132167112782291",
-    "text": "Put the reset in the bag. All propagated.",
-    "url": "https://x.com/thsottiaux/status/2109132167112782291",
-    "postCreatedAt": "2026-10-11T04:01:09.000Z"
+    "id": "2109135750054957556",
+    "text": "@theo Dare you to invite everyone to a party",
+    "url": "https://x.com/thsottiaux/status/2109135750054957556",
+    "postCreatedAt": "2026-10-11T04:15:23.000Z"
   },
   "latest": {
     "reset": {
