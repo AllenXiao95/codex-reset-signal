@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109092087501332816",
-  "lastCheckedAt": "2026-10-11T03:57:25.067Z",
-  "lastSuccessAt": "2026-10-11T03:57:25.067Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 393,
+  "sinceId": "2109132167112782291",
+  "lastCheckedAt": "2026-10-11T04:02:34.425Z",
+  "lastSuccessAt": "2026-10-11T04:02:34.425Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 394,
   "matches": [
+    {
+      "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
+      "id": "2109132167112782291",
+      "canonicalId": "2109132167112782291",
+      "text": "Put the reset in the bag. All propagated.",
+      "createdAt": "2026-10-11T04:01:09.000Z",
+      "url": "https://x.com/thsottiaux/status/2109132167112782291",
+      "media": [],
+      "detectedAt": "2026-10-11T04:02:34.425Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "announced",
+          "evidence": "Put the reset in the bag",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Put the reset in the bag",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-11T04:02:34.430Z"
+    },
     {
       "version": "abca362ee0544431ccd2bfa33bf8f109ce8b25e2e2278b68f226033103c32626",
       "id": "2109090080497508356",
@@ -556,33 +584,6 @@
       "channels": [
         "github-actions"
       ]
-    },
-    {
-      "version": "cf4e5702dd315e9db837725b9e3dcef89f0f8bb41cabab67bb6abf76e47cf902",
-      "id": "2098300424520687965",
-      "text": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
-      "createdAt": "2026-09-11T06:39:40.000Z",
-      "url": "https://x.com/thsottiaux/status/2098300424520687965",
-      "media": [],
-      "detectedAt": "2026-09-11T06:42:55.377Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
-            "note": "未形成明确的重置承诺或完成确认"
-          }
-        }
-      ],
-      "notifiedAt": "2026-09-11T06:42:55.379Z",
-      "channels": [
-        "github-actions"
-      ]
     }
   ],
   "outbox": [],
@@ -979,15 +980,16 @@
     "2109089556675137886": "7e361f8097104f2aacb13bd10ea4866888e75449251ade54b1dc52fd81f1a259",
     "2109090080497508356": "abca362ee0544431ccd2bfa33bf8f109ce8b25e2e2278b68f226033103c32626",
     "2109091159784198475": "56a5ca07c41b4daf9c3fd972825e759c8406d06c303f0e2902f15a2d8606c807",
-    "2109092087501332816": "171ab31828d5d640f9dc577fe4a2dbb900ee9e4b063def590388760fb3bf6142"
+    "2109092087501332816": "171ab31828d5d640f9dc577fe4a2dbb900ee9e4b063def590388760fb3bf6142",
+    "2109132167112782291": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109092087501332816",
-    "canonicalId": "2109092087501332816",
-    "text": "@ConnorTalksAI Actually had a nightmare about this",
-    "createdAt": "2026-10-11T01:21:53.000Z",
-    "url": "https://x.com/thsottiaux/status/2109092087501332816",
+    "id": "2109132167112782291",
+    "canonicalId": "2109132167112782291",
+    "text": "Put the reset in the bag. All propagated.",
+    "createdAt": "2026-10-11T04:01:09.000Z",
+    "url": "https://x.com/thsottiaux/status/2109132167112782291",
     "media": []
   }
 }
