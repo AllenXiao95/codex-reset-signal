@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109430343346581527",
-  "lastCheckedAt": "2026-10-11T23:47:28.809Z",
-  "lastSuccessAt": "2026-10-11T23:47:28.809Z",
+  "sinceId": "2109430894604026039",
+  "lastCheckedAt": "2026-10-11T23:52:29.555Z",
+  "lastSuccessAt": "2026-10-11T23:52:29.555Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 398,
+  "postsScanned": 399,
   "matches": [
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
@@ -984,15 +984,16 @@
     "2109135750054957556": "c8e19a51bcc59384a8be4cd3c6b0df5d73dcff1e8e958858c7af72c5ec18a82f",
     "2109142061014466866": "abebd6a6cb3724884777977d674b7d81bd1ac4f0c8904765b0aaf3223e3eaca2",
     "2109152716954222849": "f3bf29034a4eef82246ab778d2783c196c697f83c5e8c10f6c44561a99c0e232",
-    "2109430343346581527": "c023b981828ac7d0e07fcafa0252b983dcc82f7d06b39651874d67803491112a"
+    "2109430343346581527": "c023b981828ac7d0e07fcafa0252b983dcc82f7d06b39651874d67803491112a",
+    "2109430894604026039": "95760ed910193466553cb4d20941c445418d5b4bc78eee3ab0aea57d59b6bd4e"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109430343346581527",
-    "canonicalId": "2109430343346581527",
-    "text": "Day 7/\n\nWe have increased default context length for GPT-6.1 Sol to 500k when used through Codex & Work, up from 272k or an ~ 80% increase.\n\nWe will go higher in the future, but it helps reduce occurrence of compactions and with tasks that require keeping a lot of context and nuance over periods of time. It was carefully tested and is the new sweet spot for most of our users. You can still override it if you want to be higher our lower, with maximum context length of GPT-6.1 Sol of 1M.",
-    "createdAt": "2026-10-11T23:45:59.000Z",
-    "url": "https://x.com/thsottiaux/status/2109430343346581527",
+    "id": "2109430894604026039",
+    "canonicalId": "2109430894604026039",
+    "text": "With this change, we are not charging long context fees for GPT-6.1 Sol when drawing usage from the subscription.",
+    "createdAt": "2026-10-11T23:48:11.000Z",
+    "url": "https://x.com/thsottiaux/status/2109430894604026039",
     "media": []
   }
 }
