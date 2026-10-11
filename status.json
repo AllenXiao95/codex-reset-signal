@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T00:52:23.434Z",
+  "updatedAt": "2026-10-11T00:57:22.234Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-11T00:52:23.426Z",
-    "lastSuccessAt": "2026-10-11T00:52:23.426Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-11T00:57:22.230Z",
+    "lastSuccessAt": "2026-10-11T00:57:22.230Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109072811113488768",
-    "text": "@elonmusk @bot Might as well just post it here https://t.co/ZGHpL9JLbX",
-    "url": "https://x.com/thsottiaux/status/2109072811113488768",
-    "postCreatedAt": "2026-10-11T00:05:17.000Z"
+    "id": "2109084804625158541",
+    "text": "@maria_rcks That’s right, no more ships",
+    "url": "https://x.com/thsottiaux/status/2109084804625158541",
+    "postCreatedAt": "2026-10-11T00:52:56.000Z"
   },
   "latest": {
     "reset": {
