@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2109132167112782291",
-  "lastCheckedAt": "2026-10-11T04:02:34.425Z",
-  "lastSuccessAt": "2026-10-11T04:02:34.425Z",
-  "lastRunStatus": "checked-1-posts",
+  "lastCheckedAt": "2026-10-11T04:07:24.616Z",
+  "lastSuccessAt": "2026-10-11T04:07:24.616Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 394,
   "matches": [
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
       "id": "2109132167112782291",
-      "canonicalId": "2109132167112782291",
       "text": "Put the reset in the bag. All propagated.",
       "createdAt": "2026-10-11T04:01:09.000Z",
       "url": "https://x.com/thsottiaux/status/2109132167112782291",
@@ -32,10 +31,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-11T04:02:34.430Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-11T04:02:34.430Z"
+      ]
     },
     {
       "version": "abca362ee0544431ccd2bfa33bf8f109ce8b25e2e2278b68f226033103c32626",
