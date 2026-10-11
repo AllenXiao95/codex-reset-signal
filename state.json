@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109089556675137886",
-  "lastCheckedAt": "2026-10-11T01:12:27.235Z",
-  "lastSuccessAt": "2026-10-11T01:12:27.235Z",
+  "sinceId": "2109090080497508356",
+  "lastCheckedAt": "2026-10-11T01:17:24.100Z",
+  "lastSuccessAt": "2026-10-11T01:17:24.100Z",
   "lastRunStatus": "checked-1-posts",
-  "postsScanned": 390,
+  "postsScanned": 391,
   "matches": [
+    {
+      "version": "abca362ee0544431ccd2bfa33bf8f109ce8b25e2e2278b68f226033103c32626",
+      "id": "2109090080497508356",
+      "canonicalId": "2109090080497508356",
+      "text": "The day we reach perfection it will be resets from there onwards",
+      "createdAt": "2026-10-11T01:13:54.000Z",
+      "url": "https://x.com/thsottiaux/status/2109090080497508356",
+      "media": [],
+      "detectedAt": "2026-10-11T01:17:24.100Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "scheduled",
+          "evidence": "The day we reach perfection it will be resets from there onwards",
+          "time": {
+            "kind": "date",
+            "start": "2026-10-11T07:13:54.000Z",
+            "end": "2026-10-12T07:13:54.000Z",
+            "evidence": "The day",
+            "note": "按配置假设原文时区为 America/Los_Angeles"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-11T01:17:24.104Z"
+    },
     {
       "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
       "id": "2109045392684032299",
@@ -556,33 +584,6 @@
       "channels": [
         "github-actions"
       ]
-    },
-    {
-      "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
-      "id": "2097752790177370535",
-      "text": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
-      "createdAt": "2026-09-09T18:23:34.000Z",
-      "url": "https://x.com/thsottiaux/status/2097752790177370535",
-      "media": [],
-      "detectedAt": "2026-09-09T18:27:56.374Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex",
-            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
-          }
-        }
-      ],
-      "notifiedAt": "2026-09-09T18:27:56.377Z",
-      "channels": [
-        "github-actions"
-      ]
     }
   ],
   "outbox": [],
@@ -976,15 +977,16 @@
     "2109045392684032299": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
     "2109072811113488768": "1dec58670a99465acf4ea097f084bdd6a7bb92a7286880ed02479d204288effa",
     "2109084804625158541": "239a2b915fc5e863ccdb867745917df0408c0ddebfaa4c58b15a8cf6c2345d00",
-    "2109089556675137886": "7e361f8097104f2aacb13bd10ea4866888e75449251ade54b1dc52fd81f1a259"
+    "2109089556675137886": "7e361f8097104f2aacb13bd10ea4866888e75449251ade54b1dc52fd81f1a259",
+    "2109090080497508356": "abca362ee0544431ccd2bfa33bf8f109ce8b25e2e2278b68f226033103c32626"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109089556675137886",
-    "canonicalId": "2109089556675137886",
-    "text": "@TrustAgentic @elonmusk @bot Buy something nice",
-    "createdAt": "2026-10-11T01:11:49.000Z",
-    "url": "https://x.com/thsottiaux/status/2109089556675137886",
+    "id": "2109090080497508356",
+    "canonicalId": "2109090080497508356",
+    "text": "The day we reach perfection it will be resets from there onwards",
+    "createdAt": "2026-10-11T01:13:54.000Z",
+    "url": "https://x.com/thsottiaux/status/2109090080497508356",
     "media": []
   }
 }

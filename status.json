@@ -1,39 +1,39 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T01:12:27.240Z",
+  "updatedAt": "2026-10-11T01:17:24.109Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-11T01:12:27.235Z",
-    "lastSuccessAt": "2026-10-11T01:12:27.235Z",
+    "lastCheckedAt": "2026-10-11T01:17:24.100Z",
+    "lastSuccessAt": "2026-10-11T01:17:24.100Z",
     "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109089556675137886",
-    "text": "@TrustAgentic @elonmusk @bot Buy something nice",
-    "url": "https://x.com/thsottiaux/status/2109089556675137886",
-    "postCreatedAt": "2026-10-11T01:11:49.000Z"
+    "id": "2109090080497508356",
+    "text": "The day we reach perfection it will be resets from there onwards",
+    "url": "https://x.com/thsottiaux/status/2109090080497508356",
+    "postCreatedAt": "2026-10-11T01:13:54.000Z"
   },
   "latest": {
     "reset": {
-      "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
-      "id": "2109045392684032299",
-      "text": "Global reset by EOD. May the tokens do good things for you.",
-      "url": "https://x.com/thsottiaux/status/2109045392684032299",
-      "postCreatedAt": "2026-10-10T22:16:20.000Z",
-      "detectedAt": "2026-10-10T22:17:22.922Z",
+      "version": "abca362ee0544431ccd2bfa33bf8f109ce8b25e2e2278b68f226033103c32626",
+      "id": "2109090080497508356",
+      "text": "The day we reach perfection it will be resets from there onwards",
+      "url": "https://x.com/thsottiaux/status/2109090080497508356",
+      "postCreatedAt": "2026-10-11T01:13:54.000Z",
+      "detectedAt": "2026-10-11T01:17:24.100Z",
       "events": [
         {
           "type": "reset",
-          "status": "announced",
-          "evidence": "Global reset by EOD",
+          "status": "scheduled",
+          "evidence": "The day we reach perfection it will be resets from there onwards",
           "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "Global reset by EOD",
-            "note": "原文没有可确定的时间"
+            "kind": "date",
+            "start": "2026-10-11T07:13:54.000Z",
+            "end": "2026-10-12T07:13:54.000Z",
+            "evidence": "The day",
+            "note": "按配置假设原文时区为 America/Los_Angeles"
           }
         }
       ],
@@ -67,6 +67,30 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "abca362ee0544431ccd2bfa33bf8f109ce8b25e2e2278b68f226033103c32626",
+      "id": "2109090080497508356",
+      "text": "The day we reach perfection it will be resets from there onwards",
+      "url": "https://x.com/thsottiaux/status/2109090080497508356",
+      "postCreatedAt": "2026-10-11T01:13:54.000Z",
+      "detectedAt": "2026-10-11T01:17:24.100Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "scheduled",
+          "evidence": "The day we reach perfection it will be resets from there onwards",
+          "time": {
+            "kind": "date",
+            "start": "2026-10-11T07:13:54.000Z",
+            "end": "2026-10-12T07:13:54.000Z",
+            "evidence": "The day",
+            "note": "按配置假设原文时区为 America/Los_Angeles"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
       "id": "2109045392684032299",
@@ -552,30 +576,6 @@
             "end": null,
             "evidence": "@CtrlAltDwayne When I say excellent service for existing users, that includes the occasional reset",
             "note": "未形成明确的重置承诺或完成确认"
-          }
-        }
-      ],
-      "deliveryChannels": [],
-      "origin": "live"
-    },
-    {
-      "version": "08b117d6d28d473dc40d1bf19351d65743759db5f07f1109dd94b4241c040e6e",
-      "id": "2097752790177370535",
-      "text": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex. Everyone who used one in the affected time window is getting another one and an email to apologize.",
-      "url": "https://x.com/thsottiaux/status/2097752790177370535",
-      "postCreatedAt": "2026-09-09T18:23:34.000Z",
-      "detectedAt": "2026-09-09T18:27:56.374Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "There was a bit of a kerfuffle this morning with some banked resets not fully applying when used in ChatGPT Work and Codex",
-            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
           }
         }
       ],
