@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T00:02:34.021Z",
+  "updatedAt": "2026-10-11T00:07:31.610Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-11T00:02:34.015Z",
-    "lastSuccessAt": "2026-10-11T00:02:34.015Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-11T00:07:31.604Z",
+    "lastSuccessAt": "2026-10-11T00:07:31.604Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109045392684032299",
-    "text": "Global reset by EOD. May the tokens do good things for you.",
-    "url": "https://x.com/thsottiaux/status/2109045392684032299",
-    "postCreatedAt": "2026-10-10T22:16:20.000Z"
+    "id": "2109072811113488768",
+    "text": "@elonmusk @bot Might as well just post it here https://t.co/ZGHpL9JLbX",
+    "url": "https://x.com/thsottiaux/status/2109072811113488768",
+    "postCreatedAt": "2026-10-11T00:05:17.000Z"
   },
   "latest": {
     "reset": {
