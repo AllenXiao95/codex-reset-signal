@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T23:42:30.794Z",
+  "updatedAt": "2026-10-11T23:47:28.816Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-11T23:42:30.788Z",
-    "lastSuccessAt": "2026-10-11T23:42:30.788Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-11T23:47:28.809Z",
+    "lastSuccessAt": "2026-10-11T23:47:28.809Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109152716954222849",
-    "text": "Pro users, would you rather have",
-    "url": "https://x.com/thsottiaux/status/2109152716954222849",
-    "postCreatedAt": "2026-10-11T05:22:48.000Z"
+    "id": "2109430343346581527",
+    "text": "Day 7/\n\nWe have increased default context length for GPT-6.1 Sol to 500k when used through Codex & Work, up from 272k or an ~ 80% increase.\n\nWe will go higher in the future, but it helps reduce occurrence of compactions and with tasks that require keeping a lot of context and nuance over periods of time. It was carefully tested and is the new sweet spot for most of our users. You can still override it if you want to be higher our lower, with maximum context length of GPT-6.1 Sol of 1M.",
+    "url": "https://x.com/thsottiaux/status/2109430343346581527",
+    "postCreatedAt": "2026-10-11T23:45:59.000Z"
   },
   "latest": {
     "reset": {
