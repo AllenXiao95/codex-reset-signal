@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T01:07:25.611Z",
+  "updatedAt": "2026-10-11T01:12:27.240Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-11T01:07:25.583Z",
-    "lastSuccessAt": "2026-10-11T01:07:25.583Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-11T01:12:27.235Z",
+    "lastSuccessAt": "2026-10-11T01:12:27.235Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109084804625158541",
-    "text": "@maria_rcks That’s right, no more ships",
-    "url": "https://x.com/thsottiaux/status/2109084804625158541",
-    "postCreatedAt": "2026-10-11T00:52:56.000Z"
+    "id": "2109089556675137886",
+    "text": "@TrustAgentic @elonmusk @bot Buy something nice",
+    "url": "https://x.com/thsottiaux/status/2109089556675137886",
+    "postCreatedAt": "2026-10-11T01:11:49.000Z"
   },
   "latest": {
     "reset": {

@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109084804625158541",
-  "lastCheckedAt": "2026-10-11T01:07:25.583Z",
-  "lastSuccessAt": "2026-10-11T01:07:25.583Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 389,
+  "sinceId": "2109089556675137886",
+  "lastCheckedAt": "2026-10-11T01:12:27.235Z",
+  "lastSuccessAt": "2026-10-11T01:12:27.235Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 390,
   "matches": [
     {
       "version": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
@@ -975,15 +975,16 @@
     "2109045220411351517": "e3dcd7beacba2d69639523394e1e5b92bbdd64ad09cef8ece8716a7cba867c6b",
     "2109045392684032299": "deea556e60505c6fff4fc2857a2dc967dd803fbd6102c60704a5bd92ed4e822a",
     "2109072811113488768": "1dec58670a99465acf4ea097f084bdd6a7bb92a7286880ed02479d204288effa",
-    "2109084804625158541": "239a2b915fc5e863ccdb867745917df0408c0ddebfaa4c58b15a8cf6c2345d00"
+    "2109084804625158541": "239a2b915fc5e863ccdb867745917df0408c0ddebfaa4c58b15a8cf6c2345d00",
+    "2109089556675137886": "7e361f8097104f2aacb13bd10ea4866888e75449251ade54b1dc52fd81f1a259"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109084804625158541",
-    "canonicalId": "2109084804625158541",
-    "text": "@maria_rcks That’s right, no more ships",
-    "createdAt": "2026-10-11T00:52:56.000Z",
-    "url": "https://x.com/thsottiaux/status/2109084804625158541",
+    "id": "2109089556675137886",
+    "canonicalId": "2109089556675137886",
+    "text": "@TrustAgentic @elonmusk @bot Buy something nice",
+    "createdAt": "2026-10-11T01:11:49.000Z",
+    "url": "https://x.com/thsottiaux/status/2109089556675137886",
     "media": []
   }
 }
