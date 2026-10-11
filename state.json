@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109135750054957556",
-  "lastCheckedAt": "2026-10-11T04:37:29.698Z",
-  "lastSuccessAt": "2026-10-11T04:37:29.698Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 395,
+  "sinceId": "2109142061014466866",
+  "lastCheckedAt": "2026-10-11T04:42:23.325Z",
+  "lastSuccessAt": "2026-10-11T04:42:23.325Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 396,
   "matches": [
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
@@ -981,15 +981,16 @@
     "2109091159784198475": "56a5ca07c41b4daf9c3fd972825e759c8406d06c303f0e2902f15a2d8606c807",
     "2109092087501332816": "171ab31828d5d640f9dc577fe4a2dbb900ee9e4b063def590388760fb3bf6142",
     "2109132167112782291": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
-    "2109135750054957556": "c8e19a51bcc59384a8be4cd3c6b0df5d73dcff1e8e958858c7af72c5ec18a82f"
+    "2109135750054957556": "c8e19a51bcc59384a8be4cd3c6b0df5d73dcff1e8e958858c7af72c5ec18a82f",
+    "2109142061014466866": "abebd6a6cb3724884777977d674b7d81bd1ac4f0c8904765b0aaf3223e3eaca2"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109135750054957556",
-    "canonicalId": "2109135750054957556",
-    "text": "@theo Dare you to invite everyone to a party",
-    "createdAt": "2026-10-11T04:15:23.000Z",
-    "url": "https://x.com/thsottiaux/status/2109135750054957556",
+    "id": "2109142061014466866",
+    "canonicalId": "2109142061014466866",
+    "text": "@SiftByte You are doing more math than I am",
+    "createdAt": "2026-10-11T04:40:27.000Z",
+    "url": "https://x.com/thsottiaux/status/2109142061014466866",
     "media": []
   }
 }

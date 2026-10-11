@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-11T04:37:29.704Z",
+  "updatedAt": "2026-10-11T04:42:23.329Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-11T04:37:29.698Z",
-    "lastSuccessAt": "2026-10-11T04:37:29.698Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-11T04:42:23.325Z",
+    "lastSuccessAt": "2026-10-11T04:42:23.325Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109135750054957556",
-    "text": "@theo Dare you to invite everyone to a party",
-    "url": "https://x.com/thsottiaux/status/2109135750054957556",
-    "postCreatedAt": "2026-10-11T04:15:23.000Z"
+    "id": "2109142061014466866",
+    "text": "@SiftByte You are doing more math than I am",
+    "url": "https://x.com/thsottiaux/status/2109142061014466866",
+    "postCreatedAt": "2026-10-11T04:40:27.000Z"
   },
   "latest": {
     "reset": {
