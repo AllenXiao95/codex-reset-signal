@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109439315570999598",
-  "lastCheckedAt": "2026-10-12T00:22:30.376Z",
-  "lastSuccessAt": "2026-10-12T00:22:30.376Z",
-  "lastRunStatus": "checked-2-posts",
-  "postsScanned": 401,
+  "sinceId": "2109439813900493102",
+  "lastCheckedAt": "2026-10-12T00:27:24.549Z",
+  "lastSuccessAt": "2026-10-12T00:27:24.549Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 402,
   "matches": [
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
@@ -987,15 +987,16 @@
     "2109430343346581527": "c023b981828ac7d0e07fcafa0252b983dcc82f7d06b39651874d67803491112a",
     "2109430894604026039": "95760ed910193466553cb4d20941c445418d5b4bc78eee3ab0aea57d59b6bd4e",
     "2109438305188327838": "117ebe01c5ecd579f5ca07aa6dc40dd6ea1284cc756cd93bfec3ab819a3b22cb",
-    "2109439315570999598": "67c8832ae94d333c3964c273ef99a7b18aacbe46ba7472ad10935a1ae02b0866"
+    "2109439315570999598": "67c8832ae94d333c3964c273ef99a7b18aacbe46ba7472ad10935a1ae02b0866",
+    "2109439813900493102": "b2e2a2946515a6f25bdff224f96ff4ef0bcb33e688f78febe5280d34fab1aacc"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109439315570999598",
-    "canonicalId": "2109439315570999598",
-    "text": "The results of this poll has gotten me confused. I definitely thought it would sway much more favorably in the 2X direction across Pro 100/200/500 at the cost of bringing back 5h limits in order to smoothen the demand curve.",
-    "createdAt": "2026-10-12T00:21:38.000Z",
-    "url": "https://x.com/thsottiaux/status/2109439315570999598",
+    "id": "2109439813900493102",
+    "canonicalId": "2109439813900493102",
+    "text": "@AnkanXplorer Neither. It's all about coding by hand these days",
+    "createdAt": "2026-10-12T00:23:37.000Z",
+    "url": "https://x.com/thsottiaux/status/2109439813900493102",
     "media": []
   }
 }
