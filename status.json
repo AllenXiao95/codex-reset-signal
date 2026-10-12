@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T00:17:28.476Z",
+  "updatedAt": "2026-10-12T00:22:30.384Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-12T00:17:28.471Z",
-    "lastSuccessAt": "2026-10-12T00:17:28.471Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-12T00:22:30.376Z",
+    "lastSuccessAt": "2026-10-12T00:22:30.376Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2109430894604026039",
-    "text": "With this change, we are not charging long context fees for GPT-6.1 Sol when drawing usage from the subscription.",
-    "url": "https://x.com/thsottiaux/status/2109430894604026039",
-    "postCreatedAt": "2026-10-11T23:48:11.000Z"
+    "id": "2109439315570999598",
+    "text": "The results of this poll has gotten me confused. I definitely thought it would sway much more favorably in the 2X direction across Pro 100/200/500 at the cost of bringing back 5h limits in order to smoothen the demand curve.",
+    "url": "https://x.com/thsottiaux/status/2109439315570999598",
+    "postCreatedAt": "2026-10-12T00:21:38.000Z"
   },
   "latest": {
     "reset": {
