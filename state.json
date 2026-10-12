@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109730998867112161",
-  "lastCheckedAt": "2026-10-12T22:47:22.087Z",
-  "lastSuccessAt": "2026-10-12T22:47:22.087Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 405,
+  "sinceId": "2109778880341151901",
+  "lastCheckedAt": "2026-10-12T22:52:37.472Z",
+  "lastSuccessAt": "2026-10-12T22:52:37.472Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 406,
   "matches": [
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
@@ -991,15 +991,16 @@
     "2109439813900493102": "b2e2a2946515a6f25bdff224f96ff4ef0bcb33e688f78febe5280d34fab1aacc",
     "2109491121441402912": "35e0a87b175146fd46c567f5d2e47acdab7afb53fe0e90cbc3322c552c4e1928",
     "2109491524358795714": "dd68bbeb7d9d4d7c1d93b8859211924ab96529ebbb4344e25ea2be442d1ee0c0",
-    "2109730998867112161": "1a24fbbbfee5909271383236c3372f1e1972b1602c6118485be98a71b6da3561"
+    "2109730998867112161": "1a24fbbbfee5909271383236c3372f1e1972b1602c6118485be98a71b6da3561",
+    "2109778880341151901": "1c3268291594db849e154768ef424f5831293f3ce0ff74a169e71780edae7ad7"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109730998867112161",
-    "canonicalId": "2109730998867112161",
-    "text": "@gen_tt @poteto Solid step towards world peace",
-    "createdAt": "2026-10-12T19:40:41.000Z",
-    "url": "https://x.com/thsottiaux/status/2109730998867112161",
+    "id": "2109778880341151901",
+    "canonicalId": "2109778880341151901",
+    "text": "@steipete 250 tokens per *second* (TPS)!",
+    "createdAt": "2026-10-12T22:50:57.000Z",
+    "url": "https://x.com/thsottiaux/status/2109778880341151901",
     "media": []
   }
 }

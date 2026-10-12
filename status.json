@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-12T22:47:22.091Z",
+  "updatedAt": "2026-10-12T22:52:37.734Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-12T22:47:22.087Z",
-    "lastSuccessAt": "2026-10-12T22:47:22.087Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-12T22:52:37.472Z",
+    "lastSuccessAt": "2026-10-12T22:52:37.472Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109730998867112161",
-    "text": "@gen_tt @poteto Solid step towards world peace",
-    "url": "https://x.com/thsottiaux/status/2109730998867112161",
-    "postCreatedAt": "2026-10-12T19:40:41.000Z"
+    "id": "2109778880341151901",
+    "text": "@steipete 250 tokens per *second* (TPS)!",
+    "url": "https://x.com/thsottiaux/status/2109778880341151901",
+    "postCreatedAt": "2026-10-12T22:50:57.000Z"
   },
   "latest": {
     "reset": {
