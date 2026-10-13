@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T04:27:22.335Z",
+  "updatedAt": "2026-10-13T04:32:26.667Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-13T04:27:22.329Z",
-    "lastSuccessAt": "2026-10-13T04:27:22.329Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-13T04:32:26.660Z",
+    "lastSuccessAt": "2026-10-13T04:32:26.660Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109832541956194798",
-    "text": "@aliansarinik @hark_labs @OpenAI Nice",
-    "url": "https://x.com/thsottiaux/status/2109832541956194798",
-    "postCreatedAt": "2026-10-13T02:24:11.000Z"
+    "id": "2109864370465628584",
+    "text": "@theo How much did they pay you",
+    "url": "https://x.com/thsottiaux/status/2109864370465628584",
+    "postCreatedAt": "2026-10-13T04:30:39.000Z"
   },
   "latest": {
     "reset": {
