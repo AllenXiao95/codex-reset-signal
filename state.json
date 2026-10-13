@@ -4,15 +4,14 @@
   "keyword": "reset",
   "userId": "1953337039510003712",
   "sinceId": "2109812360596865224",
-  "lastCheckedAt": "2026-10-13T01:07:25.822Z",
-  "lastSuccessAt": "2026-10-13T01:07:25.822Z",
-  "lastRunStatus": "checked-2-posts",
+  "lastCheckedAt": "2026-10-13T01:12:21.410Z",
+  "lastSuccessAt": "2026-10-13T01:12:21.410Z",
+  "lastRunStatus": "checked-0-posts",
   "postsScanned": 408,
   "matches": [
     {
       "version": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
       "id": "2109812360596865224",
-      "canonicalId": "2109812360596865224",
       "text": "Global reset landing by EOD PST time. Enjoy",
       "createdAt": "2026-10-13T01:03:59.000Z",
       "url": "https://x.com/thsottiaux/status/2109812360596865224",
@@ -32,15 +31,14 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-13T01:07:25.833Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-13T01:07:25.833Z"
+      ]
     },
     {
       "version": "ca823a56be82e9b5268af58b19074f5b9beef0c85b5ef480343d9f8c60ef16c8",
       "id": "2109812216212099456",
-      "canonicalId": "2109812216212099456",
       "text": "Day 8/ Reset",
       "createdAt": "2026-10-13T01:03:25.000Z",
       "url": "https://x.com/thsottiaux/status/2109812216212099456",
@@ -60,10 +58,10 @@
           }
         }
       ],
+      "notifiedAt": "2026-10-13T01:07:25.828Z",
       "channels": [
         "github-actions"
-      ],
-      "notifiedAt": "2026-10-13T01:07:25.828Z"
+      ]
     },
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
