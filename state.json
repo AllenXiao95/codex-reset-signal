@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2110151690641154499",
-  "lastCheckedAt": "2026-10-13T23:32:27.091Z",
-  "lastSuccessAt": "2026-10-13T23:32:27.091Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 419,
+  "sinceId": "2110152344029778279",
+  "lastCheckedAt": "2026-10-13T23:37:33.819Z",
+  "lastSuccessAt": "2026-10-13T23:37:33.819Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 421,
   "matches": [
     {
       "version": "0c2365f179f9ebd9526f6652d6d5b41cd355a42feb13a8dbdee1544d6ad1da78",
@@ -993,15 +993,17 @@
     "2109873287853707513": "0c2365f179f9ebd9526f6652d6d5b41cd355a42feb13a8dbdee1544d6ad1da78",
     "2109873307722121591": "fe1678fa963750e9b262732c0a3e599c9ef5cf16697a4dc12848d387a1258389",
     "2109892247580000595": "9ec684f1bc771ec2ed569308307348e25b287a006afaa8270650930947328856",
-    "2110151690641154499": "3d4b7ae272c606e6902b22580e19540122402f60df254678d56ec9b996c3bc4f"
+    "2110151690641154499": "3d4b7ae272c606e6902b22580e19540122402f60df254678d56ec9b996c3bc4f",
+    "2110151780478927344": "6fb0a19e1cc24589d3a2e26192f7b9693d1ac458ab3d2509ca13c6dab062c6d4",
+    "2110152344029778279": "bdb0a1b76f67a430b626f2175bbb4f1186a5060816e216830f8d55bd2e3dbc91"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2110151690641154499",
-    "canonicalId": "2110151690641154499",
-    "text": "Day 8/\n\nWe've rolled out optimizations to how we store state on disk for the chatgpt &amp; codex desktop app that should reduce the amount stored on disk by 60%. Small ship but we've heard enough feedback about power users running out of disk space.",
-    "createdAt": "2026-10-13T23:32:22.000Z",
-    "url": "https://x.com/thsottiaux/status/2110151690641154499",
+    "id": "2110152344029778279",
+    "canonicalId": "2110152344029778279",
+    "text": "@StefanoGPT Legit how I look like. Must have trained on my face data",
+    "createdAt": "2026-10-13T23:34:58.000Z",
+    "url": "https://x.com/thsottiaux/status/2110152344029778279",
     "media": []
   }
 }

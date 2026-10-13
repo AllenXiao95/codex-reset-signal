@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T23:32:27.097Z",
+  "updatedAt": "2026-10-13T23:37:33.826Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-13T23:32:27.091Z",
-    "lastSuccessAt": "2026-10-13T23:32:27.091Z",
-    "lastRunStatus": "checked-1-posts"
+    "lastCheckedAt": "2026-10-13T23:37:33.819Z",
+    "lastSuccessAt": "2026-10-13T23:37:33.819Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2110151690641154499",
-    "text": "Day 8/\n\nWe've rolled out optimizations to how we store state on disk for the chatgpt &amp; codex desktop app that should reduce the amount stored on disk by 60%. Small ship but we've heard enough feedback about power users running out of disk space.",
-    "url": "https://x.com/thsottiaux/status/2110151690641154499",
-    "postCreatedAt": "2026-10-13T23:32:22.000Z"
+    "id": "2110152344029778279",
+    "text": "@StefanoGPT Legit how I look like. Must have trained on my face data",
+    "url": "https://x.com/thsottiaux/status/2110152344029778279",
+    "postCreatedAt": "2026-10-13T23:34:58.000Z"
   },
   "latest": {
     "reset": {
