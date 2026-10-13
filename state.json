@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109812360596865224",
-  "lastCheckedAt": "2026-10-13T01:27:20.918Z",
-  "lastSuccessAt": "2026-10-13T01:27:20.918Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 408,
+  "sinceId": "2109819517325205735",
+  "lastCheckedAt": "2026-10-13T01:32:40.066Z",
+  "lastSuccessAt": "2026-10-13T01:32:40.066Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 410,
   "matches": [
     {
       "version": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
@@ -982,15 +982,17 @@
     "2109730998867112161": "1a24fbbbfee5909271383236c3372f1e1972b1602c6118485be98a71b6da3561",
     "2109778880341151901": "1c3268291594db849e154768ef424f5831293f3ce0ff74a169e71780edae7ad7",
     "2109812216212099456": "ca823a56be82e9b5268af58b19074f5b9beef0c85b5ef480343d9f8c60ef16c8",
-    "2109812360596865224": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e"
+    "2109812360596865224": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
+    "2109819027912798611": "e1ea005ab8f0971a9a2456170c9207ac582a178d91f780c912d2302f5f028960",
+    "2109819517325205735": "71626e1219c52fbdf15db616177cd84565c76027aebd3a5120b90f5d976a3ea9"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109812360596865224",
-    "canonicalId": "2109812360596865224",
-    "text": "Global reset landing by EOD PST time. Enjoy",
-    "createdAt": "2026-10-13T01:03:59.000Z",
-    "url": "https://x.com/thsottiaux/status/2109812360596865224",
+    "id": "2109819517325205735",
+    "canonicalId": "2109819517325205735",
+    "text": "@songkeys No worries. Cooking up a solution",
+    "createdAt": "2026-10-13T01:32:26.000Z",
+    "url": "https://x.com/thsottiaux/status/2109819517325205735",
     "media": []
   }
 }

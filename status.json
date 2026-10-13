@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T01:27:21.039Z",
+  "updatedAt": "2026-10-13T01:32:40.073Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-13T01:27:20.918Z",
-    "lastSuccessAt": "2026-10-13T01:27:20.918Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-13T01:32:40.066Z",
+    "lastSuccessAt": "2026-10-13T01:32:40.066Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2109812360596865224",
-    "text": "Global reset landing by EOD PST time. Enjoy",
-    "url": "https://x.com/thsottiaux/status/2109812360596865224",
-    "postCreatedAt": "2026-10-13T01:03:59.000Z"
+    "id": "2109819517325205735",
+    "text": "@songkeys No worries. Cooking up a solution",
+    "url": "https://x.com/thsottiaux/status/2109819517325205735",
+    "postCreatedAt": "2026-10-13T01:32:26.000Z"
   },
   "latest": {
     "reset": {
