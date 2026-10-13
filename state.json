@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109873307722121591",
-  "lastCheckedAt": "2026-10-13T06:17:28.532Z",
-  "lastSuccessAt": "2026-10-13T06:17:28.532Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 417,
+  "sinceId": "2109892247580000595",
+  "lastCheckedAt": "2026-10-13T06:22:32.834Z",
+  "lastSuccessAt": "2026-10-13T06:22:32.834Z",
+  "lastRunStatus": "checked-1-posts",
+  "postsScanned": 418,
   "matches": [
     {
       "version": "0c2365f179f9ebd9526f6652d6d5b41cd355a42feb13a8dbdee1544d6ad1da78",
@@ -991,15 +991,16 @@
     "2109864370465628584": "934f279b4e45c7837a43b9dea54892137c399d861dde7426523ff8ca169c9a65",
     "2109865627628507222": "d25691d13be3699516346c3a179d68173a55352978239cdfd9433e97f7f51832",
     "2109873287853707513": "0c2365f179f9ebd9526f6652d6d5b41cd355a42feb13a8dbdee1544d6ad1da78",
-    "2109873307722121591": "fe1678fa963750e9b262732c0a3e599c9ef5cf16697a4dc12848d387a1258389"
+    "2109873307722121591": "fe1678fa963750e9b262732c0a3e599c9ef5cf16697a4dc12848d387a1258389",
+    "2109892247580000595": "9ec684f1bc771ec2ed569308307348e25b287a006afaa8270650930947328856"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109873307722121591",
-    "canonicalId": "2109873307722121591",
-    "text": "Mashed @poteto on the house.",
-    "createdAt": "2026-10-13T05:06:10.000Z",
-    "url": "https://x.com/thsottiaux/status/2109873307722121591",
+    "id": "2109892247580000595",
+    "canonicalId": "2109892247580000595",
+    "text": "Good plans are simple. I have one that should result in significantly more usage for everyone. Hope to get it done soon.",
+    "createdAt": "2026-10-13T06:21:26.000Z",
+    "url": "https://x.com/thsottiaux/status/2109892247580000595",
     "media": []
   }
 }
