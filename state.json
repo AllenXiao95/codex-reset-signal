@@ -3,11 +3,11 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109831908620390553",
-  "lastCheckedAt": "2026-10-13T02:22:26.309Z",
-  "lastSuccessAt": "2026-10-13T02:22:26.309Z",
-  "lastRunStatus": "checked-1-posts",
-  "postsScanned": 411,
+  "sinceId": "2109832541956194798",
+  "lastCheckedAt": "2026-10-13T02:27:31.588Z",
+  "lastSuccessAt": "2026-10-13T02:27:31.588Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 413,
   "matches": [
     {
       "version": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
@@ -985,15 +985,17 @@
     "2109812360596865224": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
     "2109819027912798611": "e1ea005ab8f0971a9a2456170c9207ac582a178d91f780c912d2302f5f028960",
     "2109819517325205735": "71626e1219c52fbdf15db616177cd84565c76027aebd3a5120b90f5d976a3ea9",
-    "2109831908620390553": "6361a8106e551754bf5c06e6b2d38dc9e36ed040aaefed75efe2e96f2e85dd81"
+    "2109831908620390553": "6361a8106e551754bf5c06e6b2d38dc9e36ed040aaefed75efe2e96f2e85dd81",
+    "2109832216029352391": "e7c85ef3f7362337b38c03147fd1646e8abea8d60cf5ecf75dadc9c767c70f02",
+    "2109832541956194798": "400e9c3e611504b52b43faef730e4ea8f9885d2ac079683bad3ab293ce207a6e"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109831908620390553",
-    "canonicalId": "2109831908620390553",
-    "text": "Perhaps I shall try to explain. There are significant differences between the 6.1 generation and prior models and therefore the optimal defaults are different between GPT-6 Astra and GPT-6.1 Sol. \n\nAnd even for 6.1 Sol we wanted to be careful with the change and make sure we felt good about the results. We do now and therefore we changed it.",
-    "createdAt": "2026-10-13T02:21:40.000Z",
-    "url": "https://x.com/thsottiaux/status/2109831908620390553",
+    "id": "2109832541956194798",
+    "canonicalId": "2109832541956194798",
+    "text": "@aliansarinik @hark_labs @OpenAI Nice",
+    "createdAt": "2026-10-13T02:24:11.000Z",
+    "url": "https://x.com/thsottiaux/status/2109832541956194798",
     "media": []
   }
 }
