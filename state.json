@@ -3,12 +3,40 @@
   "username": "thsottiaux",
   "keyword": "reset",
   "userId": "1953337039510003712",
-  "sinceId": "2109865627628507222",
-  "lastCheckedAt": "2026-10-13T05:02:51.913Z",
-  "lastSuccessAt": "2026-10-13T05:02:51.913Z",
-  "lastRunStatus": "checked-0-posts",
-  "postsScanned": 415,
+  "sinceId": "2109873307722121591",
+  "lastCheckedAt": "2026-10-13T05:07:26.117Z",
+  "lastSuccessAt": "2026-10-13T05:07:26.117Z",
+  "lastRunStatus": "checked-2-posts",
+  "postsScanned": 417,
   "matches": [
+    {
+      "version": "0c2365f179f9ebd9526f6652d6d5b41cd355a42feb13a8dbdee1544d6ad1da78",
+      "id": "2109873287853707513",
+      "canonicalId": "2109873287853707513",
+      "text": "What would you like with your side of reset? It's done.",
+      "createdAt": "2026-10-13T05:06:06.000Z",
+      "url": "https://x.com/thsottiaux/status/2109873287853707513",
+      "media": [],
+      "detectedAt": "2026-10-13T05:07:26.117Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "What would you like with your side of reset? It's done",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "What would you like with your side of reset? It's done",
+            "note": "讨论、请求、弱判断或否定，不代表已确认的重置"
+          }
+        }
+      ],
+      "channels": [
+        "github-actions"
+      ],
+      "notifiedAt": "2026-10-13T05:07:26.122Z"
+    },
     {
       "version": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
       "id": "2109812360596865224",
@@ -544,33 +572,6 @@
       "channels": [
         "github-actions"
       ]
-    },
-    {
-      "version": "e05dd323527a8b908b4c23cec5e46b4d980f00ee8251f16490c8b74ff1ee9235",
-      "id": "2102254445082116335",
-      "text": "Ladies and gentlemen... start... your... ENGINES. We are almost Tuesday and I promised a reset for Tuesday. Among some other things. See you soon.",
-      "createdAt": "2026-09-22T04:31:32.000Z",
-      "url": "https://x.com/thsottiaux/status/2102254445082116335",
-      "media": [],
-      "detectedAt": "2026-09-22T04:32:36.635Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "We are almost Tuesday and I promised a reset for Tuesday",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "We are almost Tuesday and I promised a reset for Tuesday",
-            "note": "未形成明确的重置承诺或完成确认"
-          }
-        }
-      ],
-      "notifiedAt": "2026-09-22T04:32:36.639Z",
-      "channels": [
-        "github-actions"
-      ]
     }
   ],
   "outbox": [],
@@ -989,15 +990,17 @@
     "2109832216029352391": "e7c85ef3f7362337b38c03147fd1646e8abea8d60cf5ecf75dadc9c767c70f02",
     "2109832541956194798": "400e9c3e611504b52b43faef730e4ea8f9885d2ac079683bad3ab293ce207a6e",
     "2109864370465628584": "934f279b4e45c7837a43b9dea54892137c399d861dde7426523ff8ca169c9a65",
-    "2109865627628507222": "d25691d13be3699516346c3a179d68173a55352978239cdfd9433e97f7f51832"
+    "2109865627628507222": "d25691d13be3699516346c3a179d68173a55352978239cdfd9433e97f7f51832",
+    "2109873287853707513": "0c2365f179f9ebd9526f6652d6d5b41cd355a42feb13a8dbdee1544d6ad1da78",
+    "2109873307722121591": "fe1678fa963750e9b262732c0a3e599c9ef5cf16697a4dc12848d387a1258389"
   },
   "eventParserVersion": 5,
   "latestObservedPost": {
-    "id": "2109865627628507222",
-    "canonicalId": "2109865627628507222",
-    "text": "@OfficialLoganK Carrot",
-    "createdAt": "2026-10-13T04:35:39.000Z",
-    "url": "https://x.com/thsottiaux/status/2109865627628507222",
+    "id": "2109873307722121591",
+    "canonicalId": "2109873307722121591",
+    "text": "Mashed @poteto on the house.",
+    "createdAt": "2026-10-13T05:06:10.000Z",
+    "url": "https://x.com/thsottiaux/status/2109873307722121591",
     "media": []
   }
 }
