@@ -4,8 +4,21 @@
     <title>Codex Reset Signal · @thsottiaux</title>
     <link>https://x.com/thsottiaux</link>
     <description>Actionable reset and bank-credit signals detected by codex-reset-signal.</description>
-    <lastBuildDate>Tue, 13 Oct 2026 01:02:30 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 01:07:25 GMT</lastBuildDate>
     <generator>codex-reset-signal</generator>
+    <item>
+      <guid isPermaLink="false">2109812360596865224:reset</guid>
+      <title>Reset · announced · @thsottiaux</title>
+      <link>https://x.com/thsottiaux/status/2109812360596865224</link>
+      <pubDate>Tue, 13 Oct 2026 01:03:59 GMT</pubDate>
+      <category>reset</category>
+      <description>Reset · announced
+Timing: Global reset landing by EOD PST time
+Note: 原文没有可确定的时间
+Evidence: Global reset landing by EOD PST time
+
+Global reset landing by EOD PST time. Enjoy</description>
+    </item>
     <item>
       <guid isPermaLink="false">2109132167112782291:reset</guid>
       <title>Reset · announced · @thsottiaux</title>
@@ -95,43 +108,6 @@ Note: 使用公告发布时间；不代表账户实际到账时刻
 Evidence: Resets all propagated
 
 Resets all propagated. That will be all. Have a fantastic weekend.</description>
-    </item>
-    <item>
-      <guid isPermaLink="false">2098685367058612394:reset</guid>
-      <title>Reset · completed · @thsottiaux</title>
-      <link>https://x.com/thsottiaux/status/2098685367058612394</link>
-      <pubDate>Sat, 12 Sep 2026 08:09:17 GMT</pubDate>
-      <category>reset</category>
-      <description>Reset · completed
-Time: 2026-09-12T08:09:17.000Z
-Note: 使用公告发布时间；不代表账户实际到账时刻
-Evidence: Reset all propagated
-
-Reset all propagated. Sweet dreams.</description>
-    </item>
-    <item>
-      <guid isPermaLink="false">2098612714704891959:reset</guid>
-      <title>Reset · scheduled · @thsottiaux</title>
-      <link>https://x.com/thsottiaux/status/2098612714704891959</link>
-      <pubDate>Sat, 12 Sep 2026 03:20:36 GMT</pubDate>
-      <category>reset</category>
-      <description>Reset · scheduled
-Time: 2026-09-12T07:00:00.000Z
-Note: “by midnight” 按 America/Los_Angeles 当日本地日终解释；这是截止时刻，不代表实际到账一定发生在该时刻
-Evidence: And of course, a reset is also landing by midnight today
-
-Hi Astra users. A reset and a quick update on quality issues that have been posted around.
-
-Working with some of you, we have found and fixed the following issues:
-- Some skills written for previous models were triggering too often or preventing the model from checking its work.
-- An opt-in context management experiment that could cause early stops or replies to older messages. We&apos;ve disabled it. Our rough estimate is that 4-5k users were affected by this experiment.
-- We&apos;ve also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.
-
-We’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.
-
-The examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.
-
-And of course, a reset is also landing by midnight today.</description>
     </item>
   </channel>
 </rss>

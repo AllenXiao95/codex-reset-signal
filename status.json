@@ -1,38 +1,38 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T01:02:30.129Z",
+  "updatedAt": "2026-10-13T01:07:25.839Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-13T01:02:30.124Z",
-    "lastSuccessAt": "2026-10-13T01:02:30.124Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-13T01:07:25.822Z",
+    "lastSuccessAt": "2026-10-13T01:07:25.822Z",
+    "lastRunStatus": "checked-2-posts"
   },
   "latestObservedPost": {
-    "id": "2109778880341151901",
-    "text": "@steipete 250 tokens per *second* (TPS)!",
-    "url": "https://x.com/thsottiaux/status/2109778880341151901",
-    "postCreatedAt": "2026-10-12T22:50:57.000Z"
+    "id": "2109812360596865224",
+    "text": "Global reset landing by EOD PST time. Enjoy",
+    "url": "https://x.com/thsottiaux/status/2109812360596865224",
+    "postCreatedAt": "2026-10-13T01:03:59.000Z"
   },
   "latest": {
     "reset": {
-      "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
-      "id": "2109132167112782291",
-      "text": "Put the reset in the bag. All propagated.",
-      "url": "https://x.com/thsottiaux/status/2109132167112782291",
-      "postCreatedAt": "2026-10-11T04:01:09.000Z",
-      "detectedAt": "2026-10-11T04:02:34.425Z",
+      "version": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
+      "id": "2109812360596865224",
+      "text": "Global reset landing by EOD PST time. Enjoy",
+      "url": "https://x.com/thsottiaux/status/2109812360596865224",
+      "postCreatedAt": "2026-10-13T01:03:59.000Z",
+      "detectedAt": "2026-10-13T01:07:25.822Z",
       "events": [
         {
           "type": "reset",
           "status": "announced",
-          "evidence": "Put the reset in the bag",
+          "evidence": "Global reset landing by EOD PST time",
           "time": {
             "kind": "unknown",
             "start": null,
             "end": null,
-            "evidence": "Put the reset in the bag",
+            "evidence": "Global reset landing by EOD PST time",
             "note": "原文没有可确定的时间"
           }
         }
@@ -67,6 +67,54 @@
     "bankExpiry": null
   },
   "recent": [
+    {
+      "version": "b67fd59b479a6010d7bf14dcd27b877ed837898b135d1997697b6e882227239e",
+      "id": "2109812360596865224",
+      "text": "Global reset landing by EOD PST time. Enjoy",
+      "url": "https://x.com/thsottiaux/status/2109812360596865224",
+      "postCreatedAt": "2026-10-13T01:03:59.000Z",
+      "detectedAt": "2026-10-13T01:07:25.822Z",
+      "events": [
+        {
+          "type": "reset",
+          "status": "announced",
+          "evidence": "Global reset landing by EOD PST time",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Global reset landing by EOD PST time",
+            "note": "原文没有可确定的时间"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
+    {
+      "version": "ca823a56be82e9b5268af58b19074f5b9beef0c85b5ef480343d9f8c60ef16c8",
+      "id": "2109812216212099456",
+      "text": "Day 8/ Reset",
+      "url": "https://x.com/thsottiaux/status/2109812216212099456",
+      "postCreatedAt": "2026-10-13T01:03:25.000Z",
+      "detectedAt": "2026-10-13T01:07:25.796Z",
+      "events": [
+        {
+          "type": "mention",
+          "status": "uncertain",
+          "evidence": "Day 8/ Reset",
+          "time": {
+            "kind": "unknown",
+            "start": null,
+            "end": null,
+            "evidence": "Day 8/ Reset",
+            "note": "未形成明确的重置承诺或完成确认"
+          }
+        }
+      ],
+      "deliveryChannels": [],
+      "origin": "live"
+    },
     {
       "version": "275b46f975c69285658a1df2115587cb1c7f9d972ad251252b4809955f2079b0",
       "id": "2109132167112782291",
@@ -516,66 +564,6 @@
             "end": null,
             "evidence": "We are almost Tuesday and I promised a reset for Tuesday",
             "note": "未形成明确的重置承诺或完成确认"
-          }
-        }
-      ],
-      "deliveryChannels": [],
-      "origin": "live"
-    },
-    {
-      "version": "fef1125987d70b562afe2b7e25fdd1222126c4e6cc0e32810cc750f806ddc567",
-      "id": "2098685367058612394",
-      "text": "Reset all propagated. Sweet dreams.",
-      "url": "https://x.com/thsottiaux/status/2098685367058612394",
-      "postCreatedAt": "2026-09-12T08:09:17.000Z",
-      "detectedAt": "2026-09-12T08:12:33.444Z",
-      "events": [
-        {
-          "type": "reset",
-          "status": "completed",
-          "evidence": "Reset all propagated",
-          "time": {
-            "kind": "observed",
-            "start": "2026-09-12T08:09:17.000Z",
-            "end": null,
-            "evidence": "Reset all propagated",
-            "note": "使用公告发布时间；不代表账户实际到账时刻"
-          }
-        }
-      ],
-      "deliveryChannels": [],
-      "origin": "live"
-    },
-    {
-      "version": "b5599265e296069a3cddf337f505d762daa0094bca841bc4d1cc39a191ccb482",
-      "id": "2098612714704891959",
-      "text": "Hi Astra users. A reset and a quick update on quality issues that have been posted around.\n\nWorking with some of you, we have found and fixed the following issues:\n- Some skills written for previous models were triggering too often or preventing the model from checking its work.\n- An opt-in context management experiment that could cause early stops or replies to older messages. We've disabled it. Our rough estimate is that 4-5k users were affected by this experiment.\n- We've also removed some badly configured engines that resulted in a measured quality degradation for a long tail of traffic flowing through them.\n\nWe’ve also made some more minor improvements and things should feel significantly better across the board. More consistent follow-through, better tracking of your latest message, and better checks on the work as it’s going through the motions.\n\nThe examples posted and all the users who worked directly with us were incredibly useful in helping fix things quickly. Always grateful for this incredible community.\n\nAnd of course, a reset is also landing by midnight today.",
-      "url": "https://x.com/thsottiaux/status/2098612714704891959",
-      "postCreatedAt": "2026-09-12T03:20:36.000Z",
-      "detectedAt": "2026-09-12T03:22:27.737Z",
-      "events": [
-        {
-          "type": "mention",
-          "status": "uncertain",
-          "evidence": "A reset and a quick update on quality issues that have been posted around",
-          "time": {
-            "kind": "unknown",
-            "start": null,
-            "end": null,
-            "evidence": "A reset and a quick update on quality issues that have been posted around",
-            "note": "未形成明确的重置承诺或完成确认"
-          }
-        },
-        {
-          "type": "reset",
-          "status": "scheduled",
-          "evidence": "And of course, a reset is also landing by midnight today",
-          "time": {
-            "kind": "exact",
-            "start": "2026-09-12T07:00:00.000Z",
-            "end": null,
-            "evidence": "by midnight today",
-            "note": "“by midnight” 按 America/Los_Angeles 当日本地日终解释；这是截止时刻，不代表实际到账一定发生在该时刻"
           }
         }
       ],
