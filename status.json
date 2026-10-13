@@ -1,19 +1,19 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-13T23:27:29.640Z",
+  "updatedAt": "2026-10-13T23:32:27.097Z",
   "username": "thsottiaux",
   "keyword": "reset",
   "monitor": {
     "provider": "fxembed",
-    "lastCheckedAt": "2026-10-13T23:27:29.633Z",
-    "lastSuccessAt": "2026-10-13T23:27:29.633Z",
-    "lastRunStatus": "checked-0-posts"
+    "lastCheckedAt": "2026-10-13T23:32:27.091Z",
+    "lastSuccessAt": "2026-10-13T23:32:27.091Z",
+    "lastRunStatus": "checked-1-posts"
   },
   "latestObservedPost": {
-    "id": "2109892247580000595",
-    "text": "Good plans are simple. I have one that should result in significantly more usage for everyone. Hope to get it done soon.",
-    "url": "https://x.com/thsottiaux/status/2109892247580000595",
-    "postCreatedAt": "2026-10-13T06:21:26.000Z"
+    "id": "2110151690641154499",
+    "text": "Day 8/\n\nWe've rolled out optimizations to how we store state on disk for the chatgpt &amp; codex desktop app that should reduce the amount stored on disk by 60%. Small ship but we've heard enough feedback about power users running out of disk space.",
+    "url": "https://x.com/thsottiaux/status/2110151690641154499",
+    "postCreatedAt": "2026-10-13T23:32:22.000Z"
   },
   "latest": {
     "reset": {
